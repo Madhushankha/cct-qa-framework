@@ -2,6 +2,7 @@
 data. temporal_intent drives the today-relative flight date; delay/status feed the FDM message."""
 from __future__ import annotations
 
+import datetime
 import re
 
 TEMPORAL = ("completed", "pending", "pre_travel", "no_travel")
@@ -43,3 +44,14 @@ def delay_minutes(uc) -> int:
 
 def segment_status(uc) -> str:
     return "UN" if temporal_intent(uc) == "no_travel" else "HK"
+
+
+_OFFSET_DAYS = {"completed": -7, "pending": -1, "pre_travel": 3, "no_travel": -7}
+
+
+def scenario_date(intent: str, now: datetime.datetime) -> str:
+    return (now.date() + datetime.timedelta(days=_OFFSET_DAYS.get(intent, -7))).isoformat()
+
+
+def flight_date_for(uc, now: datetime.datetime) -> str:
+    return scenario_date(temporal_intent(uc), now)
