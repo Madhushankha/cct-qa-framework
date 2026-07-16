@@ -372,8 +372,11 @@ def main(argv: list[str] | None = None) -> int:
     except SystemExit as exc:
         return int(exc.code) if exc.code is not None else 2
 
-    clone_dir = args.clone_dir or str(Path("runs") / "seed" /
-                                      datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S"))
+    # Identifiable run folder carrying the full key: runs/seed/<feed>_<product>_<env>_<date>_<time>
+    # so any file inside is self-describing (matches the results/<date>/<cell> convention).
+    _stamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    _key = f"{args.feed}_{args.product}_{args.env}_{_stamp}"
+    clone_dir = args.clone_dir or str(Path("runs") / "seed" / _key)
     if args.all:
         return run_seed_all(args.product, args.env, args.feed, clone_dir=clone_dir,
                             days_ago=args.days_ago, verify=not args.no_verify, limit=args.limit,

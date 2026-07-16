@@ -69,10 +69,17 @@ def render_preseed(rows: list[dict], *, product: str = "", env: str = "", feed: 
             f"<table><thead><tr>{th}</tr></thead><tbody>{''.join(trs)}</tbody></table>")
 
 
+def preseed_filename(product: str, env: str, feed: str, date: str) -> str:
+    """Identifiable filename carrying the run key, e.g. `fd_brove_int_2026-07-17_preseed.html`, so
+    the report is self-describing even when downloaded/shared out of its folder."""
+    stem = "_".join(x for x in (feed, product, env, date) if x)
+    return f"{stem}_preseed.html" if stem else "preseed.html"
+
+
 def build_preseed_report(clone_dir, *, product: str = "", env: str = "", feed: str = "",
                          date: str = "") -> Path:
     rows = collect_preseed(clone_dir)
     html = render_preseed(rows, product=product, env=env, feed=feed, date=date)
-    out = Path(clone_dir) / "preseed.html"
+    out = Path(clone_dir) / preseed_filename(product, env, feed, date)
     out.write_text(html, encoding="utf-8")
     return out
