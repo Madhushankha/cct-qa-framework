@@ -1,31 +1,32 @@
-"""seed --all case selection: DDS family derived from systemCode (regime is blank on gap-doc
-cases), and only families with a registered template are seedable today."""
+"""seed --all case selection: every FD disruption verdict (EL/NE/ND/PE/DB across APPR/EU/ASL) is
+seedable from the one base template via canonicalize_verdict; currency/delay derive from the case."""
 from catalog.model import SeedSpec, UseCase
-from seed.cli import _dds_family, _templated_family
-
-TEMPLATES = {"APPR_CAD_400", "APPR_CAD_700", "APPR_CAD_1000"}
+from seed.cli import _case_currency, _case_delay, _seedable_verdict
 
 
-def _c(sc, cur="CAD", val=400.0):
+def _c(sc, cur=None, val=400.0):
+    amount = {"currency": cur, "value": val} if cur else {"value": val}
     return UseCase(id="X", regime="", verdict="", system_code=sc, title="", third_party=False,
                    checkpoint_vector=[], customer_intent="", expected_transcript=[],
-                   seed=SeedSpec(pnr="MHGQHS", passenger="A B", system_code=sc,
-                                 amount={"currency": cur, "value": val}),
+                   seed=SeedSpec(pnr="MHGQHS", passenger="A B", system_code=sc, amount=amount),
                    seed_pending=False)
 
 
-def test_appr_cad_tiers():
-    assert _dds_family(_c("FD-APPR-EL-400", val=400)) == "APPR_CAD_400"
-    assert _dds_family(_c("FD-APPR-EL-700", val=700)) == "APPR_CAD_700"
-    assert _dds_family(_c("FD-APPR-EL-1000", val=1000)) == "APPR_CAD_1000"
+def test_all_disruption_verdicts_seedable():
+    for sc in ("FD-APPR-EL-400", "FD-APPR-NE-05", "FD-APPR-ND-02", "FD-APPR-PE-01",
+               "FD-EU-EL-600", "FD-ASL-NE-01", "FD-MIXED-EL-1", "FD-DUP-NE-1"):
+        assert _seedable_verdict(_c(sc)), sc
 
 
-def test_non_appr_and_non_cad_have_no_template_today():
-    assert _dds_family(_c("FD-EU-EL-250", cur="EUR", val=250)) is None
-    assert _dds_family(_c("FD-ASL-EL-1", cur="ILS", val=1)) is None
-    assert _dds_family(_c("FD-APPR-NE-BT")) is None  # not eligible -> no template yet
+def test_currency_from_regime_when_amount_has_none():
+    assert _case_currency(_c("FD-APPR-EL-400")) == "CAD"
+    assert _case_currency(_c("FD-EU-EL-600")) == "EUR"
+    assert _case_currency(_c("FD-ASL-EL-3580")) == "ILS"
+    # explicit amount currency wins
+    assert _case_currency(_c("FD-EU-EL-600", cur="GBP")) == "GBP"
 
 
-def test_templated_family_gate():
-    assert _templated_family(_c("FD-APPR-EL-400", val=400), TEMPLATES) == "APPR_CAD_400"
-    assert _templated_family(_c("FD-APPR-EL-400", val=400), set()) is None  # unregistered
+def test_delay_tier_from_amount():
+    assert _case_delay(_c("FD-APPR-EL-400", val=400)) == 240
+    assert _case_delay(_c("FD-APPR-EL-700", val=700)) == 400
+    assert _case_delay(_c("FD-APPR-EL-1000", val=1000)) == 600

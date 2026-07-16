@@ -102,25 +102,40 @@ def run_seed(product: str, env: str, feed: str, mapping: list[tuple[str, str]], 
     return 0 if ok else 1
 
 
-def _dds_family(uc) -> str | None:
-    """Derive the DDS template family from the case's systemCode (regime is blank on gap-doc cases,
-    so the systemCode `FD-<REGIME>-<CLASS>-<n>` is the reliable signal). Today only APPR-eligible
-    CAD tiers have a template: FD-APPR-EL-* + CAD amount -> APPR_CAD_400/700/1000."""
-    sc = (uc.seed.system_code or uc.system_code or "").upper()
-    amt = (uc.seed.amount or {})
-    if sc.startswith("FD-APPR-EL") and amt.get("currency") == "CAD":
-        try:
-            return {400: "APPR_CAD_400", 700: "APPR_CAD_700",
-                    1000: "APPR_CAD_1000"}.get(int(amt.get("value", 0)))
-        except (TypeError, ValueError):
-            return None
-    return None
+# FD disruption verdicts the general canonicalizer (dds_pin.canonicalize_verdict) can pin from the
+# one base template. PAY-* / EDGE-* / N/A cases are a different mechanism and stay skipped.
+_DISRUPTION_REGIMES = {"APPR", "EU", "UK", "ASL", "MIXED", "DUP"}
+_DISRUPTION_CLASSES = {"EL", "NE", "ND", "PE", "DB"}
+_REGIME_CURRENCY = {"APPR": "CAD", "EU": "EUR", "UK": "GBP", "ASL": "ILS", "MIXED": "CAD", "DUP": "CAD"}
 
 
-def _templated_family(uc, templates: set) -> str | None:
-    """The DDS template family this case can pin with today, or None if unavailable/unregistered."""
-    fam = _dds_family(uc)
-    return fam if fam and fam in templates else None
+def _sys_code(uc) -> str:
+    return (uc.seed.system_code or uc.system_code or "").upper()
+
+
+def _seedable_verdict(uc) -> bool:
+    """True if the case is a disruption verdict (EL/NE/ND/PE/DB in a known regime) — pinnable from
+    the base template via canonicalize_verdict. Skips PAY-*/EDGE-*/N/A cases."""
+    from seed.dds_pin import parse_system_code
+    regime, cls = parse_system_code(_sys_code(uc))
+    return regime in _DISRUPTION_REGIMES and cls in _DISRUPTION_CLASSES
+
+
+def _case_currency(uc) -> str:
+    amt = uc.seed.amount or {}
+    if amt.get("currency"):
+        return amt["currency"]
+    from seed.dds_pin import parse_system_code
+    regime, _ = parse_system_code(_sys_code(uc))
+    return _REGIME_CURRENCY.get(regime, "CAD")
+
+
+def _case_delay(uc) -> int:
+    """FDM delay minutes from the compensation tier (eligible cases); default 240 for others."""
+    try:
+        return {400: 240, 700: 400, 1000: 600}.get(int((uc.seed.amount or {}).get("value", 0)), 240)
+    except (TypeError, ValueError):
+        return 240
 
 
 def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
@@ -137,11 +152,13 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
             print(f"  [trip] {c.id} {loc}: NOT FOUND — skipping DDS pin", flush=True)
             return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
         o, dst = (c.seed.route.split("-") + ["", ""])[:2]
-        fam = _dds_family(c) or "APPR_CAD_400"
+        amt = (c.seed.amount or {}).get("value", 0) or 0
         res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
                                flight_number=flight_number, origin=o, destination=dst, date=today,
-                               passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
-        line = f"  [ok] {c.id} {loc} dds={res['pin']}"
+                               passenger_id=f"{pnr_id}-PT-1", family="APPR_CAD_400", timestamp=ts,
+                               system_code=_sys_code(c), amount=amt, currency=_case_currency(c),
+                               delay_minutes=_case_delay(c))
+        line = f"  [ok] {c.id} {loc} [{_sys_code(c)}] dds={res['pin']}"
         gate = "seeded"
         if verify:
             v = dds_pin.verify_by_pnr(e, pnr_id)
@@ -187,12 +204,12 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     for c in cat.cases:
         if c.seed_pending or not c.seed.pnr:
             skipped.append((c.id, "no_data"))
-        elif _templated_family(c, templates) is None:
-            skipped.append((c.id, "no_template"))
+        elif not _seedable_verdict(c):
+            skipped.append((c.id, "non_disruption"))  # PAY-*/EDGE-*/N-A: different mechanism
         else:
             seedable.append(c)
-    if limit:
-        seedable = seedable[:limit]
+    if limit is not None:
+        seedable = seedable[:limit]  # limit=0 -> seed nothing (dry preview), not "all"
 
     print(f"[seed-all] {product}.{env}.{feed} contact={contact} flight_date={flight_date}")
     print(f"[seed-all] seedable={len(seedable)} skipped={len(skipped)} -> {clone_dir}", flush=True)
