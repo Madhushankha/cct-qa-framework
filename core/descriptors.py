@@ -1,7 +1,7 @@
 """Frozen dataclasses for Feed/Product/Env descriptors and the resolved RunContext."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 # P0 pins the SeedSpec field names; P1 (catalog) fills their values from the gap doc.
 SEEDSPEC_REQUIRED: tuple[str, ...] = (
@@ -46,6 +46,15 @@ class RunContext:
     env: Env
     feed: Feed
     scenario_prefix: str
+    # feed persona/judge with the product's overrides layered on top (see registry.resolve)
+    persona: dict = field(default_factory=dict)
+    judge: dict = field(default_factory=dict)
 
     def scenario_id(self, case_id: str) -> str:
         return f"{self.scenario_prefix}.{case_id}"
+
+    def secret(self, name: str) -> str:
+        """Resolve a named secret via the env's resolver (env-var based in P0). Called lazily so
+        resolution stays offline until a secret is actually needed."""
+        from core.secrets import resolve_secret
+        return resolve_secret(name)

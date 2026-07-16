@@ -1,0 +1,14 @@
+id: bat
+label: BAT
+chatbot:
+  base_url: https://bat-placeholder.execute-api.ca-central-1.amazonaws.com/prod
+  endpoint_path: /start-chat
+  region: ca-central-1
+aws:
+  profile: bat-sso
+  account: "000000000000"
+otp:
+  strategy: fixed
+  code: "123456"
+seed_targets:
+  kafka_topic: emh-bat.ALTEA-PNRDATA-BAT

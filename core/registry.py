@@ -80,4 +80,9 @@ def resolve(product: str, env: str, feed: str) -> RunContext:
     if env not in allowed_envs:
         raise RegistryError(f"product '{product}' does not allow env '{env}' (allowed: {allowed_envs})")
 
-    return RunContext(product=p, env=e, feed=f, scenario_prefix=f"{product}.{env}.{feed}")
+    # layer the product's overrides onto the feed's persona/judge (product wins on key collision)
+    overrides = p.overrides or {}
+    persona = {**f.persona, **(overrides.get("persona") or {})}
+    judge = {**f.judge, **(overrides.get("judge") or {})}
+    return RunContext(product=p, env=e, feed=f, scenario_prefix=f"{product}.{env}.{feed}",
+                      persona=persona, judge=judge)

@@ -61,6 +61,8 @@ def validate_all() -> list[str]:
         try:
             f = load_feed(fid)
             validate_feed(f)
+            # The gap-doc HTML itself is a P1 input that may not exist yet; we assert its
+            # containing directory exists so the path is well-formed and wired to a real location.
             parent = (REGISTRY_DIR.parent.parent / Path(f.gap_doc)).parent
             if not parent.exists():
                 errors.append(f"feed '{fid}': gap_doc directory does not exist: {parent}")
