@@ -138,6 +138,26 @@ def _case_delay(uc) -> int:
         return 240
 
 
+def preflight_credentials(env) -> tuple[bool, str]:
+    """Validate (and let botocore refresh) the AWS credentials right before a phase that needs them.
+
+    The verify phase runs AFTER the ~180s Kafka settle. If the run began near the 1-hour SSO-token
+    boundary, the token can lapse during that sleep — and a dead SSO token cannot be refreshed in
+    code (only `aws sso login` revives it). Creating a fresh Session here lets the SSO provider
+    re-mint role creds from a still-valid token; a StsClient call then proves the identity resolves.
+    Returns (ok, detail) so the caller can fail fast and clean instead of exploding per-worker."""
+    try:
+        import boto3  # lazy
+        profile = (env.aws or {}).get("profile")
+        region = (env.chatbot or {}).get("region") or (env.aws or {}).get("region") or "ca-central-1"
+        sess = boto3.Session(profile_name=profile)
+        sess.get_credentials().get_frozen_credentials()  # triggers refresh if within the window
+        ident = sess.client("sts", region_name=region).get_caller_identity()
+        return True, ident.get("Arn", "")
+    except Exception as exc:  # noqa: BLE001 — surface any credential/identity failure to the caller
+        return False, f"{type(exc).__name__}: {exc}"
+
+
 def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
                         clone_dir: str, verify: bool, flight_number: int = 8002) -> dict:
     """Pin DDS + (optionally) verify one already-published case. Independent per pnr_id, so the
@@ -226,6 +246,22 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
 
     print(f"[seed-all] Kafka-injecting {len(locs)} PNR(s) ...", flush=True)
     kafka_seed.seed(e, locs, fixtures_dir=clone_dir)
+
+    if verify:
+        ok_creds, detail = preflight_credentials(e)
+        if not ok_creds:
+            # SSO token likely lapsed during the settle. The PNRs ARE published/cascading — record
+            # them so a re-run after `aws sso login` skips nothing, and exit clean (not 239 errors).
+            mapping = [{"case_id": by_loc[loc].id, "locator": loc, "pnr_id": f"{loc}-{flight_date}",
+                        "gate": "published_unverified"} for loc in locs]
+            _write_mapping(clone_dir, feed, mapping, skipped)
+            print(f"\n[seed-all] CREDENTIALS EXPIRED before verify ({detail}).", flush=True)
+            print(f"    {len(locs)} PNR(s) were published (cascading now). To finish verification:")
+            print(f"    aws sso login --profile {(e.aws or {}).get('profile')}   # fresh 1h token")
+            print(f"    python -m seed.cli {product} {env} {feed} --all   # re-run; republish is deduped")
+            print(f"    mapping: {clone_dir}/seed-mapping.json", flush=True)
+            return 2
+        print(f"[seed-all] creds OK ({detail})", flush=True)
 
     print(f"[seed-all] pin+verify {len(locs)} case(s) with {workers} workers ...", flush=True)
     cases = [by_loc[loc] for loc in locs]
