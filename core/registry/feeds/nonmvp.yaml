@@ -1,0 +1,38 @@
+id: nonmvp
+label: Non-MVP (Intent Routing)
+gap_doc: data/gap-docs/nonmvp/Non_MVP_Miro_Gap_Analysis.html
+# NON-MVP has NO seed at all. It reuses an existing PNR and tests pure chat intent-routing: the agent
+# sorts the stated intent into a category and routes to Claims Dashboard, Live Agent Handoff, FAQ, or
+# Manual Handling. Nothing is published to Kafka and no DDS is pinned. The gap doc carries no tabular
+# PNR dataset (no datagrid cards); every case parses as seed_pending. The SeedSpec columns below exist
+# only to satisfy the registry schema — the only "seed" this feed needs is a live pool PNR to identify
+# against (see the nonmvp-seed plan).
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: Ticket
+  status: "Routing verdict"
+  system_code: "Intent category"
+  amount: Amount
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER with a request that is outside the automated MVP scope (e.g. a general
+    question, a change the bot cannot make, or a live-agent matter).
+    Booking: {first} {last}; PNR {pnr}. You want help with your request.
+  branches: {}
+judge:
+  # Non-MVP "verdict" is the routing destination the intent-router chose.
+  verdict_enum: [CLAIMS_DASHBOARD, LIVE_AGENT, FAQ, MANUAL_HANDLING, NO_DETERMINATION, UNKNOWN]
+  match_on: [status, system_code]
+checkpoints:
+  auditor: nonmvp
+  areas:
+    - intent_extraction
+    - intent_category_match
+    - routing_destination
+    - faq_first
+    - live_agent_handoff

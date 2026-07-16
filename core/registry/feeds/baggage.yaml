@@ -1,0 +1,41 @@
+id: baggage
+label: Baggage (Mid-Journey)
+gap_doc: data/gap-docs/baggage/Baggage_Miro_Gap_Analysis.html
+# BAGGAGE is NOT a PNR create/update feed. It is a LIVE eligibility decision made by a baggage-rules
+# API over SmartSuite bag events (BagReadyForLoading / BagLoaded / BagSeen / BagMishandled). There is
+# no FDM/Kafka PNR message and no DDS pin. The gap doc describes chat routing over live bag-tracking
+# state, so cases carry no tabular PNR dataset (no datagrid cards) and parse as seed_pending. The
+# SeedSpec columns below are placeholders to satisfy the registry schema; the real "seed" is a bag
+# event stream on its own lane (see the baggage-seed plan) rather than these fields.
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: "Bag tag"
+  status: "Bag status"
+  system_code: "Bag event"
+  amount: "Delay window"
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER whose checked bag is delayed, lost, or mishandled mid-journey.
+    Booking: {first} {last}; PNR {pnr}. You want to know where your bag is and what happens next.
+  branches:
+    third_party: |
+      You are an ADULT asking ON BEHALF OF another passenger {first} {last}.
+      If asked whether you are the passenger, choose "filing on behalf of someone else".
+judge:
+  # Baggage verdicts are routing / tracking outcomes rather than compensation determinations.
+  verdict_enum: [TRACKED, DELIVERED, MISHANDLED, HANDOFF, NO_DETERMINATION, UNKNOWN]
+  match_on: [status, system_code]
+checkpoints:
+  auditor: baggage
+  areas:
+    - trip_active
+    - passenger
+    - bag_event_ingested
+    - baggage_rules_eligibility
+    - live_tracking_status
+    - non_mvp_handoff

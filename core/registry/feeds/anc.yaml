@@ -1,0 +1,43 @@
+id: anc
+label: Ancillaries (Seat / Bag Refund)
+gap_doc: data/gap-docs/anc/Ancillaries_Seat_Bag_Miro_Gap_Analysis.html
+# ANC is a CREATE feed representing an ALREADY-PURCHASED ancillary: pnr + ticket + EMD (03_emd_issue
+# + correlation). Refund-eligibility variants additionally pin a DDS carrying
+# seatFeeRefundEligibility[] / baggageRefundEligibility[]. The gap doc embeds no tabular PNR dataset
+# (no datagrid cards), so cases parse as seed_pending and the seed columns are placeholders that a
+# future EMD-aware dataset (or the generic seeder manifest) would fill.
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: Ticket
+  status: "Refund verdict"
+  system_code: "EMD status"
+  amount: "Refund amount"
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER requesting a refund for a purchased ancillary (paid seat selection or extra
+    baggage) that you did not receive or that was cancelled.
+    Booking: {first} {last}; PNR {pnr}. You want your seat/bag fee refunded.
+  branches:
+    third_party: |
+      You are an ADULT filing ON BEHALF OF another passenger {first} {last}.
+      If asked whether you are the passenger, choose "filing on behalf of someone else".
+judge:
+  verdict_enum: [ELIGIBLE, NOT_ELIGIBLE, NO_DETERMINATION, PENDING, ESCALATED, UNKNOWN]
+  match_on: [status, system_code]
+checkpoints:
+  auditor: anc
+  areas:
+    - trip_active
+    - passenger
+    - ticket
+    - emd_issued
+    - emd_correlation
+    - eds_pnr_output
+    - eds_contact_email
+    - dds_seat_refund_eligibility
+    - dds_bag_refund_eligibility
