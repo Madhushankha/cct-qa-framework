@@ -16,8 +16,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import yaml
+
 from seed import scenario
 from seed.clone import ac_docnum
+from seed.engine import evaluate_identity
 
 # systemCode amount -> FDM delay minutes (APPR tiers): 400=3-6h, 700=6-9h, 1000=9h+.
 # (kept as the fallback default inside seed.scenario.delay_minutes; src_delay below still needs a
@@ -139,6 +142,32 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
         new_meta["leg_id"] = meta["leg_id"].replace(src_date, flight_date)
     (dst / "meta.json").write_text(json.dumps(new_meta, ensure_ascii=False, indent=2),
                                    encoding="utf-8")
+    return dst
+
+
+def render_from_manifest(feed: str, case, *, out_root, contact_email: str, now,
+                         index: int = 1, flight_number: int | None = None) -> Path:
+    """Thin wrapper around `render_case`: load `data/seed-templates/<feed>/manifest.yaml`, run its
+    `identity` block through `seed.engine.evaluate_identity` (today-relative date via
+    `seed.scenario.flight_date_for`), then delegate to `render_case` with the identity's date.
+    `render_case` still does the locator/name/route/flight/delay rewrites — the manifest only
+    supplies the today-relative `date`, so feed behavior stays identical while routing the date
+    through the engine/manifest instead of a hardcoded Python constant."""
+    manifest_path = Path("data/seed-templates") / feed / "manifest.yaml"
+    manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+    base_dir = manifest["base_dir"]
+
+    ctx0 = {"scenario_pnr": case.seed.pnr, "scenario_date": scenario.flight_date_for(case, now)}
+    identity = evaluate_identity(manifest["identity"], ctx0, now)
+    status = scenario.segment_status(case)
+
+    dst = render_case(base_dir, out_root, case, contact_email=contact_email,
+                      flight_date=identity["date"], index=index, flight_number=flight_number)
+
+    meta_path = dst / "meta.json"
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    meta["segment_status"] = status
+    meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     return dst
 
 

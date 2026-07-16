@@ -1,0 +1,6 @@
+feed: fd
+base_dir: data/fd-templates/base_appr
+identity:
+  $locator:  "{{ $scenario_pnr }}"
+  $date:     "{{ $scenario_date }}"
+  $pnrId:    "{{ $locator }}-{{ $date }}"
