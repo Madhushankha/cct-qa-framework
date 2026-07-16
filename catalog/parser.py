@@ -273,17 +273,15 @@ def join_dataset(catalog: Catalog, dataset_html: str, feed: Feed) -> Catalog:
 
     new_cases = []
     for uc in catalog.cases:
-        if not uc.seed_pending:
-            new_cases.append(uc)
-            continue
         pairs = by_norm_id.get(_norm_id(uc.id))
         if pairs is None:
-            pairs = by_syscode.get(uc.system_code)
+            pairs = by_syscode.get(uc.system_code) if uc.system_code else None
         if pairs is None:
-            new_cases.append(uc)
+            new_cases.append(uc)  # no dataset row: keep as-is (incl. seed_pending)
             continue
         seed, third_party = _build_seed(pairs, feed)
-        new_cases.append(dataclasses.replace(uc, seed=seed, third_party=third_party, seed_pending=False))
+        new_cases.append(dataclasses.replace(uc, seed=seed, third_party=third_party,
+                                             seed_pending=False))
 
     joined = dataclasses.replace(catalog, cases=new_cases)
     return _finalize(joined)

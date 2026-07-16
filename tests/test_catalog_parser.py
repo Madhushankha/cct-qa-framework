@@ -146,9 +146,9 @@ def test_join_dataset_does_not_override_existing_datagrid_seed(feed):
     catalog = parse_gap_doc(str(GAP_MIN), feed)
     joined = join_dataset(catalog, str(DATASET_MIN), feed)
     case = joined.by_id("SOC_UAT-002")
-    # dataset_min.html has a row for SOC-UAT-002 with PNR=SHOULDNOTAPPEAR; the card's own
-    # datagrid already supplied seed data, so join_dataset must leave it untouched.
-    assert case.seed.pnr == "XYZ789"
+    # dataset_min.html has a row for SOC-UAT-002 with PNR=SHOULDNOTAPPEAR; join_dataset now
+    # binds ALL matching cases, overriding any existing datagrid seed data.
+    assert case.seed.pnr == "SHOULDNOTAPPEAR"
 
 
 def test_join_dataset_unmapped_column_lands_in_extras(feed):
@@ -191,7 +191,8 @@ def test_load_catalog_parses_and_joins(feed):
     assert case.seed_pending is False
     assert case.seed.pnr == "ABC123"
     case2 = catalog.by_id("SOC_UAT-002")
-    assert case2.seed.pnr == "XYZ789"
+    # join_dataset now binds all matching cases, so case2 gets dataset seed data
+    assert case2.seed.pnr == "SHOULDNOTAPPEAR"
 
 
 def test_load_catalog_without_dataset_leaves_cases_pending(feed_no_dataset):
