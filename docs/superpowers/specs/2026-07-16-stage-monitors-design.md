@@ -163,4 +163,15 @@ Joins three sources — gap-doc catalog (expected), ledger (claimed), live re-ve
 - Monitors for evidence, metrics, analysis, jira stages (they implement `StageReport` later).
 - Auto-healing / auto-reseeding of `MISSING`/`BROKEN` cases.
 - Scheduled/continuous auditing (the audit is on-demand; scheduling can wrap the CLI later).
-- Feeds other than FD for ledger/backfill (the code is feed-parameterized; only FD is validated).
+- **Feeds other than FD.** This phase targets FD end-to-end (ledger, backfill, audit, chat gate
+  thresholds). The code stays feed-parameterized throughout, so extending to the other feeds
+  (`soc`, `nc`, `anc`, `baggage`, `seatchange`, `bookingchange`, `nonmvp`) is a follow-up phase:
+  register the feed (registry YAML), validate the parser against its gap doc, add its checkpoint
+  auditor, and start its ledger. No redesign expected.
+- **Dashboard "pipeline strip" (P7 follow-up).** Once StageReports exist on disk, the dashboard
+  gains a per-cell pipeline strip — `Seed ✅ 48/239 · Run ✅ 3P/0F · Quality ⚠ 1 gated ·
+  Metrics ✅` — one chip per stage, each linking to that stage's existing HTML artifact
+  (`audit-report.html`, run `index.html`, `*.quality.html`, `report.html`). Because `StageReport`
+  is one uniform schema, the dashboard renders chips without stage-specific knowledge, and future
+  monitors light up automatically. The UI stays strictly read-only: ordering/orchestration remain
+  in the CLI and seed gate, never in the dashboard.
