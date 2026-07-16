@@ -1,0 +1,21 @@
+# envs/int.yaml — INT environment descriptor (ILLUSTRATIVE STUB)
+id: int
+label: INT
+
+chatbot:
+  base_url: https://bcnxq39777.execute-api.ca-central-1.amazonaws.com/prod
+  endpoint_path: /start-chat
+  region: ca-central-1
+
+aws:
+  profile: int-sso
+  account: "982081066747"
+
+# INT accepts any 6-digit code
+otp:
+  strategy: fixed
+  code: "123456"
+
+seed_targets:
+  kafka_topic: emh-int.ALTEA-PNRDATA-INT
+  # aurora/dds targets for INT filled during P2

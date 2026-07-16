@@ -1,0 +1,16 @@
+# products/brove.yaml — product (chatbot deployment) descriptor (ILLUSTRATIVE STUB)
+# One file per product. Swap the product name freely; env + feed are chosen separately.
+id: brove
+label: Brove
+
+# which transcript dialect evalkit (P5) uses for stage/anomaly/intent regex
+transcript_dialect: brove
+
+# optional overrides layered on top of a feed's persona/judge (usually empty)
+overrides:
+  persona: {}
+  judge: {}
+
+defaults:
+  envs: [crt, int]
+  feeds: [fd, soc, nc, anc, baggage, seatchange, bookingchange, nonmvp]
