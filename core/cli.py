@@ -5,6 +5,15 @@ import argparse
 import sys
 from pathlib import Path
 
+# Force UTF-8 stdout/stderr so bot/seed messages containing Unicode (arrows →, bullets •, ✓) don't
+# crash the run on a legacy Windows console (cp1252 can't encode them -> UnicodeEncodeError). This
+# makes every `cctqa` command encoding-safe without needing PYTHONIOENCODING in the environment.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 from core.registry import list_feeds, list_products, list_envs, load_product, RegistryError
 from core.validate import validate_all
 
