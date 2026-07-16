@@ -126,28 +126,35 @@ def _templated_family(uc, templates: set) -> str | None:
 def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
                         clone_dir: str, verify: bool, flight_number: int = 8002) -> dict:
     """Pin DDS + (optionally) verify one already-published case. Independent per pnr_id, so the
-    whole set can run concurrently. Returns the case's mapping/gate record."""
+    whole set can run concurrently. Catches its own errors and returns a gate=error record so one
+    transient failure (e.g. an expired SSO token on a single worker) never aborts the whole batch
+    or loses the mapping for the cases that did succeed."""
     from seed import dds_pin
     loc = c.seed.pnr
     pnr_id = f"{loc}-{flight_date}"
-    if verify and not _trip_landed(e, loc):
-        print(f"  [trip] {c.id} {loc}: NOT FOUND — skipping DDS pin", flush=True)
-        return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
-    o, dst = (c.seed.route.split("-") + ["", ""])[:2]
-    fam = _dds_family(c) or "APPR_CAD_400"
-    res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
-                           flight_number=flight_number, origin=o, destination=dst, date=today,
-                           passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
-    line = f"  [ok] {c.id} {loc} dds={res['pin']}"
-    gate = "seeded"
-    if verify:
-        v = dds_pin.verify_by_pnr(e, pnr_id)
-        line += f" by-pnr={v['status_code']} {'ELIGIBLE' if v['eligible'] else '-'} {v['amount']}"
-        vec = _audit_checkpoints(e, c, contact, v)
-        _write_checkpoints(clone_dir, loc, vec)
-        gate = "all-pass" if all(x.get("pass") is not False for x in vec) else "checkpoint_fail"
-    print(line, flush=True)
-    return {"case_id": c.id, "locator": loc, "pnr_id": pnr_id, "gate": gate}
+    try:
+        if verify and not _trip_landed(e, loc):
+            print(f"  [trip] {c.id} {loc}: NOT FOUND — skipping DDS pin", flush=True)
+            return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
+        o, dst = (c.seed.route.split("-") + ["", ""])[:2]
+        fam = _dds_family(c) or "APPR_CAD_400"
+        res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
+                               flight_number=flight_number, origin=o, destination=dst, date=today,
+                               passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
+        line = f"  [ok] {c.id} {loc} dds={res['pin']}"
+        gate = "seeded"
+        if verify:
+            v = dds_pin.verify_by_pnr(e, pnr_id)
+            line += f" by-pnr={v['status_code']} {'ELIGIBLE' if v['eligible'] else '-'} {v['amount']}"
+            vec = _audit_checkpoints(e, c, contact, v)
+            _write_checkpoints(clone_dir, loc, vec)
+            gate = "all-pass" if all(x.get("pass") is not False for x in vec) else "checkpoint_fail"
+        print(line, flush=True)
+        return {"case_id": c.id, "locator": loc, "pnr_id": pnr_id, "gate": gate}
+    except Exception as exc:  # noqa: BLE001 — isolate a single case's failure from the batch
+        print(f"  [ERR] {c.id} {loc}: {type(exc).__name__}: {exc}", flush=True)
+        return {"case_id": c.id, "locator": loc, "pnr_id": pnr_id, "gate": "error",
+                "error": f"{type(exc).__name__}: {exc}"}
 
 
 def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago: int = 7,
