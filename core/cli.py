@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from core.registry import list_feeds, list_products, list_envs, load_product, RegistryError
 from core.validate import validate_all
@@ -35,6 +36,15 @@ def _cmd_validate() -> int:
     return 1
 
 
+def _cmd_evidence(run_dir: str, out_dir: str | None) -> int:
+    from evidence.build import build_evidence
+
+    resolved_out = out_dir or str(Path(run_dir) / "evidence")
+    build_evidence(run_dir, resolved_out)
+    print(f"wrote evidence to {resolved_out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cctqa")
     sub = parser.add_subparsers(dest="cmd")
@@ -44,6 +54,10 @@ def main(argv: list[str] | None = None) -> int:
     # Forward everything after `catalog` as-is to catalog.cli.main (P1), which owns its own
     # <feed> / --diff argument parsing — avoids duplicating that parser here.
     catalog_parser.add_argument("catalog_args", nargs=argparse.REMAINDER)
+    evidence_parser = sub.add_parser("evidence")
+    evidence_parser.add_argument("run_dir")
+    evidence_parser.add_argument("--out", dest="out_dir", default=None,
+                                  help="output dir (default: <run_dir>/evidence)")
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -55,6 +69,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "catalog":
         from catalog.cli import main as catalog_main
         return catalog_main(args.catalog_args)
+    if args.cmd == "evidence":
+        return _cmd_evidence(args.run_dir, args.out_dir)
     parser.print_usage()
     return 2
 
