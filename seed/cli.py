@@ -172,12 +172,16 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
             return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
         o, dst = (c.seed.route.split("-") + ["", ""])[:2]
         amt = (c.seed.amount or {}).get("value", 0) or 0
+        # Pin the GAP-DOC systemCode (uc.system_code) — that is what the checkpoint auditor expects
+        # (verify.py `want = uc.system_code`). The CRT dataset's amount-encoded code (seed.system_code,
+        # e.g. FD-APPR-EL-400) is only a fallback when the gap doc has none.
+        pin_sys = c.system_code or c.seed.system_code
         res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
                                flight_number=flight_number, origin=o, destination=dst, date=today,
                                passenger_id=f"{pnr_id}-PT-1", family="APPR_CAD_400", timestamp=ts,
-                               system_code=_sys_code(c), amount=amt, currency=_case_currency(c),
+                               system_code=pin_sys, amount=amt, currency=_case_currency(c),
                                delay_minutes=_case_delay(c))
-        line = f"  [ok] {c.id} {loc} [{_sys_code(c)}] dds={res['pin']}"
+        line = f"  [ok] {c.id} {loc} [{pin_sys}] dds={res['pin']}"
         gate = "seeded"
         if verify:
             v = dds_pin.verify_by_pnr(e, pnr_id)
