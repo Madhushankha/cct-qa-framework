@@ -1,0 +1,14 @@
+{
+  "base_url": "https://aircanada.atlassian.net",
+  "project": "CHAI",
+  "issuetype_id": "10004",
+  "component_id": "21829",
+  "priority_id": "2",
+  "affects_version_id": "30837",
+  "cf_testing_type": "customfield_10153",
+  "testing_type_id": "14669",
+  "cf_severity": "customfield_10158",
+  "severity_id": "10413",
+  "test_plan_key": null,
+  "labels": ["cct-qa-p8"]
+}

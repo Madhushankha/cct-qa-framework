@@ -68,6 +68,12 @@ def _cmd_analyze(run_dir: str, prev_dir: str | None, out_file: str | None) -> in
     return 0
 
 
+def _cmd_jira(run_dir: str, file_flag: bool, limit: int | None, out_file: str | None) -> int:
+    from jira.cli import run_jira
+
+    return run_jira(run_dir, file=file_flag, limit=limit, out_file=out_file)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cctqa")
     sub = parser.add_subparsers(dest="cmd")
@@ -91,6 +97,14 @@ def main(argv: list[str] | None = None) -> int:
                                  help="previous run dir to diff against (default: no diff)")
     analyze_parser.add_argument("--out", dest="out_file", default=None,
                                  help="output JSON file (default: <run_dir>/analysis/analysis.json)")
+    jira_parser = sub.add_parser("jira")
+    jira_parser.add_argument("run_dir")
+    jira_parser.add_argument("--file", action="store_true",
+                              help="actually file defects in JIRA (default: dry-run, files nothing)")
+    jira_parser.add_argument("--limit", type=int, default=None,
+                              help="cap how many defects to file (dry-run also caps the plan)")
+    jira_parser.add_argument("--out", dest="out_file", default=None,
+                              help="review HTML output path (default: <run_dir>/jira/review.html)")
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -109,6 +123,8 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_metrics(args.run_dir, args.out_dir)
         if args.cmd == "analyze":
             return _cmd_analyze(args.run_dir, args.prev_dir, args.out_file)
+        if args.cmd == "jira":
+            return _cmd_jira(args.run_dir, args.file, args.limit, args.out_file)
         parser.print_usage()
         return 2
     except SystemExit as exc:  # a subcommand's own exit (e.g. no results found)
