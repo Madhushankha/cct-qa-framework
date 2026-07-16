@@ -13,10 +13,36 @@ otp_provider, so a fake case that calls otp_provider.wait_for_otp is admitted at
 from __future__ import annotations
 
 import asyncio
+import json
 import threading
 from pathlib import Path
 
 from core.result import write_result
+
+
+def _write_incremental_reports(out: Path, result: dict) -> None:
+    """After a case's Result lands, write its per-case evidence + quality HTML and rebuild the run's
+    index / bot-issues / quality-index from every Result present so far. Deterministic (no LLM), so
+    it's cheap enough to run per case; keyed by the case's test id so files are FD_TC_###.*."""
+    from evidence.render import render_bot_issues, render_case, render_index
+    from quality.grade import quality_report
+    from quality.render import render_quality, render_quality_index
+
+    cid = (result.get("case") or {}).get("test_case") or result.get("scenario_id") or "case"
+    (out / f"{cid}.evidence.html").write_text(render_case(result), encoding="utf-8")
+    (out / f"{cid}.quality.html").write_text(
+        render_quality(quality_report(result, use_llm=False)), encoding="utf-8")
+
+    results = []
+    for p in sorted(out.glob("*.result.json")):
+        try:
+            results.append(json.loads(p.read_text(encoding="utf-8")))
+        except Exception:
+            continue
+    (out / "index.html").write_text(render_index(results), encoding="utf-8")
+    (out / "bot-issues.html").write_text(render_bot_issues(results), encoding="utf-8")
+    (out / "quality-index.html").write_text(
+        render_quality_index([quality_report(r, use_llm=False) for r in results]), encoding="utf-8")
 
 
 def _gate_provider(otp_provider, gate: threading.Semaphore):
@@ -44,7 +70,7 @@ async def _stagger(lock: asyncio.Lock, last: list, stagger: float, loop):
 
 def run_batch(ctx, use_cases, out_dir, *, conc=14, otp_conc=6, stagger=2.0, limit=None,
               bedrock_conc=8, chat_config=None, otp_provider=None, run_case_fn=None,
-              run_id=None, run_date=None) -> list[Path]:
+              run_id=None, run_date=None, checkpoints_dir=None) -> list[Path]:
     """Drive run_case over use_cases and write each canonical Result to out_dir/<id>.result.json.
 
     Returns the written paths. conc = max concurrent sessions; otp_conc = OTP-phase gate width;
@@ -73,6 +99,7 @@ def run_batch(ctx, use_cases, out_dir, *, conc=14, otp_conc=6, stagger=2.0, limi
         loop = asyncio.get_running_loop()
         sem = asyncio.Semaphore(conc)
         lock = asyncio.Lock()
+        report_lock = asyncio.Lock()
         last = [0.0]
         written: list[Path] = []
 
@@ -81,13 +108,18 @@ def run_batch(ctx, use_cases, out_dir, *, conc=14, otp_conc=6, stagger=2.0, limi
                 await _stagger(lock, last, stagger, loop)
                 result = await asyncio.to_thread(
                     run_case_fn, ctx, uc, chat_config, gated_provider,
-                    run_id=run_id, run_date=run_date)
+                    run_id=run_id, run_date=run_date, checkpoints_dir=checkpoints_dir)
                 path = out / f"{uc.id}.result.json"
                 write_result(result, path)  # re-validates before writing
                 written.append(path)
                 print(f"   wrote {path.name} "
                       f"(otp={result.get('auth', {}).get('otp_fetched')} "
                       f"decision={result.get('verdict', {}).get('decision')})", flush=True)
+                # Incremental reports: write THIS case's evidence + quality HTML and refresh the
+                # indexes now, so the folder fills up as each test finishes — no waiting for the
+                # whole batch. Serialized so concurrent cases don't race the index files.
+                async with report_lock:
+                    await asyncio.to_thread(_write_incremental_reports, out, result)
                 return path
 
         await asyncio.gather(*[asyncio.create_task(one(uc)) for uc in cases])

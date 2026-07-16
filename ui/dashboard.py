@@ -44,10 +44,13 @@ _DASH_CSS = """<style>
 </style>"""
 
 
-# a run folder is named "<env>_<product>_<feed>_<time>"
+# A run folder is "<feed>_<product>_<env>_<date>_<time>" (current) or "<env>_<product>_<feed>_<time>"
+# (legacy). The current form is detected by the date segment (YYYY-MM-DD, contains dashes) second-last.
 def _parse_cell(name: str) -> dict:
     parts = name.split("_")
-    if len(parts) >= 4:
+    if len(parts) >= 5 and "-" in parts[-2]:  # current: feed_product_env_date_time
+        feed, product, env, time = parts[0], parts[1], parts[2], parts[-1]
+    elif len(parts) >= 4:  # legacy: env_product_feed_time
         env, product, feed, time = parts[0], parts[1], parts[2], parts[-1]
     else:
         env = product = feed = time = name
