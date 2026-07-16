@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Gap Min Fixture</title></head>
+<body>
+<details class="spine" open>
+<summary>Miro Spine</summary>
+<div class="spwrap">
+<div class="spx"><span class="spid">GLOB-01</span><span class="spl">Conversation Entry</span><span class="spm m-a">core</span><span class="spn">81</span></div>
+<div class="spx"><span class="spid">GLOB-02</span><span class="spl">Identity Verification</span><span class="spm m-a">core</span><span class="spn">50</span></div>
+<div class="spx"><span class="spid">GLOB-03</span><span class="spl">Branch: Third Party</span><span class="spm m-b">branch</span><span class="spn">12</span></div>
+<div class="spx"><span class="spid">GLOB-04</span><span class="spl">Escalation Path</span><span class="spm m-a">core</span><span class="spn">0</span></div>
+</div>
+<div class="uncov"><span class="spid">GLOB-04</span></div>
+</details>
+
+<section class="card" id="SOC_UAT-001" data-feat="APPR" data-out="Not Eligible" data-gaps="0">
+<header class="ch">
+<span class="tcid">SOC_UAT-001</span>
+<span class="badge req">SoC-APPR-NE-01</span>
+<span class="outb o-not">Not Eligible</span>
+<span class="tcname">APPR - Not Eligible - Employee Booking AC</span>
+</header>
+<div class="stagerow">
+<span class="stage sc-cov" title="Conversation Entry">GLOB-01</span>
+<span class="stage sc-miss" title="Identity Verification">GLOB-02</span>
+</div>
+<div class="intbub">👤 My flight was delayed and I want reimbursement for my hotel.</div>
+<div class="row bot">🤖 I can help. Can you confirm your booking reference?</div>
+<div class="row user">ABC123 👤</div>
+<div class="row bot">🤖 Thanks - I see this is an employee booking, which is not eligible for SoC reimbursement.</div>
+</section>
+
+<section class="card" id="SOC_UAT-002" data-feat="APPR" data-out="Eligible" data-gaps="0">
+<header class="ch">
+<span class="tcid">SOC_UAT-002</span>
+<span class="badge req">SoC-APPR-EL-01</span>
+<span class="outb o-elig">Eligible</span>
+<span class="tcname">APPR - Eligible - Meal Reimbursement</span>
+</header>
+<div class="stagerow">
+<span class="stage sc-cov" title="Conversation Entry">GLOB-01</span>
+<span class="stage sc-na" title="Branch: Third Party">GLOB-03</span>
+</div>
+<div class="intbub">👤 My flight was delayed 6 hours and I bought dinner, can I get reimbursed?</div>
+<div class="datagrid">
+<span class="dk">PNR</span><span class="dv">XYZ789</span>
+<span class="dk">pnrId</span><span class="dv">900111</span>
+<span class="dk">Passenger</span><span class="dv">Jane Doe</span>
+<span class="dk">Route</span><span class="dv">YYZ-YUL</span>
+<span class="dk">Ticket</span><span class="dv">0142345678901</span>
+<span class="dk">Status</span><span class="dv">Eligible</span>
+<span class="dk">SysCode</span><span class="dv">SoC-APPR-EL-01</span>
+<span class="dk">Amount</span><span class="dv">45.00</span>
+<span class="dk">Currency</span><span class="dv">CAD</span>
+<span class="dk">Flags</span><span class="dv">none</span>
+<span class="dk">ThirdParty</span><span class="dv"></span>
+<span class="dk">Notes</span><span class="dv">VIP passenger</span>
+</div>
+<div class="row bot">🤖 I can help with that. Can you confirm your booking reference?</div>
+<div class="row user">XYZ789 👤</div>
+<div class="row bot">🤖 You're eligible for meal reimbursement up to $45.00 CAD.</div>
+</section>
+
+<section class="card" id="SOC_UAT-003" data-feat="PROP" data-out="Pending" data-gaps="1">
+<header class="ch">
+<span class="tcid">SOC_UAT-003</span>
+<span class="badge req">SoC-PEND-01</span>
+<span class="outb o-pend">Pending</span>
+<span class="tcname">PROP - Pending - Awaiting Receipts</span>
+</header>
+<div class="stagerow">
+<span class="stage sc-cov" title="Conversation Entry">GLOB-01</span>
+<span class="stage sc-cov" title="Identity Verification">GLOB-02</span>
+<span class="stage sc-miss" title="Branch: Third Party">GLOB-03</span>
+</div>
+<div class="intbub">👤 I submitted my SoC claim but haven't heard back.</div>
+<div class="row bot">🤖 Let me check the status of your claim.</div>
+<div class="row user">Sure, my PNR is DEF456 👤</div>
+<div class="row bot">🤖 Your claim is pending - we're still waiting on your submitted receipts.</div>
+</section>
+
+<section class="card" id="SOC_UAT-004" data-feat="APPR" data-out="No Determination" data-gaps="2">
+<header class="ch">
+<span class="tcid">SOC_UAT-004</span>
+<span class="badge req">SoC-ND-01</span>
+<span class="outb o-nd">No Determination</span>
+<span class="tcname">APPR - No Determination - Missing Ticket Data</span>
+</header>
+<div class="stagerow">
+<span class="stage sc-miss" title="Conversation Entry">GLOB-01</span>
+<span class="stage sc-na" title="Escalation Path">GLOB-04</span>
+</div>
+<div class="intbub">👤 Can you tell me if my SoC claim was approved?</div>
+<div class="row bot">🤖 I'm unable to determine the outcome due to missing ticket data.</div>
+</section>
+</body>
+</html>

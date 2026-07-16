@@ -40,6 +40,10 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="cmd")
     sub.add_parser("list")
     sub.add_parser("validate")
+    catalog_parser = sub.add_parser("catalog")
+    # Forward everything after `catalog` as-is to catalog.cli.main (P1), which owns its own
+    # <feed> / --diff argument parsing — avoids duplicating that parser here.
+    catalog_parser.add_argument("catalog_args", nargs=argparse.REMAINDER)
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -48,6 +52,9 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_list()
     if args.cmd == "validate":
         return _cmd_validate()
+    if args.cmd == "catalog":
+        from catalog.cli import main as catalog_main
+        return catalog_main(args.catalog_args)
     parser.print_usage()
     return 2
 

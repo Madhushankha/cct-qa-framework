@@ -35,7 +35,8 @@ def load_feed(id: str) -> Feed:
     d = _load_yaml("feeds", id)
     return Feed(id=d["id"], label=d.get("label", id), gap_doc=d.get("gap_doc", ""),
                 columns=d.get("columns", {}), persona=d.get("persona", {}),
-                judge=d.get("judge", {}), checkpoints=d.get("checkpoints", {}))
+                judge=d.get("judge", {}), checkpoints=d.get("checkpoints", {}),
+                dataset=d.get("dataset", ""))
 
 
 def load_product(id: str) -> Product:

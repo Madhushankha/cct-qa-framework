@@ -19,6 +19,7 @@ class Feed:
     persona: dict
     judge: dict
     checkpoints: dict
+    dataset: str = ""  # optional tabular PNR-data HTML joined to gap-doc cases (P1); "" = data embedded in gap doc
 
 
 @dataclass(frozen=True)
