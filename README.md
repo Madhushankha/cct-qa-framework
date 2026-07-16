@@ -5,9 +5,10 @@ ad-hoc scripts in `cct-qa-1/` with one pipeline that is driven by the **Miro gap
 parameterized by three axes so any product / environment / feed can be run, verified, evidenced,
 scored, analyzed, and ticketed the same way.
 
-> **Status:** design / scaffolding. Each folder currently holds a `README.md` describing its purpose,
-> inputs/outputs, and what it harvests from the existing code. No implementation yet — see
-> [`docs/context.md`](docs/context.md) for the findings behind this design and the build order below.
+> **Status:** P0 (core) implemented — descriptors, registry, `resolve()→RunContext`, the canonical
+> `Result` schema, and the `cctqa list|validate` CLI are working and unit-tested (29 tests, offline).
+> P1 (catalog) is next. See [`docs/context.md`](docs/context.md) for the findings behind this design,
+> and `docs/superpowers/` for the spec + plan.
 
 ---
 
