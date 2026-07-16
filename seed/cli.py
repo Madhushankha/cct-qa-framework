@@ -123,16 +123,46 @@ def _templated_family(uc, templates: set) -> str | None:
     return fam if fam and fam in templates else None
 
 
+def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
+                        clone_dir: str, verify: bool) -> dict:
+    """Pin DDS + (optionally) verify one already-published case. Independent per pnr_id, so the
+    whole set can run concurrently. Returns the case's mapping/gate record."""
+    from seed import dds_pin
+    loc = c.seed.pnr
+    pnr_id = f"{loc}-{flight_date}"
+    if verify and not _trip_landed(e, loc):
+        print(f"  [trip] {c.id} {loc}: NOT FOUND — skipping DDS pin", flush=True)
+        return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
+    o, dst = (c.seed.route.split("-") + ["", ""])[:2]
+    fam = _dds_family(c) or "APPR_CAD_400"
+    res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
+                           flight_number=8002, origin=o, destination=dst, date=today,
+                           passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
+    line = f"  [ok] {c.id} {loc} dds={res['pin']}"
+    gate = "seeded"
+    if verify:
+        v = dds_pin.verify_by_pnr(e, pnr_id)
+        line += f" by-pnr={v['status_code']} {'ELIGIBLE' if v['eligible'] else '-'} {v['amount']}"
+        vec = _audit_checkpoints(e, c, contact, v)
+        _write_checkpoints(clone_dir, loc, vec)
+        gate = "all-pass" if all(x.get("pass") is not False for x in vec) else "checkpoint_fail"
+    print(line, flush=True)
+    return {"case_id": c.id, "locator": loc, "pnr_id": pnr_id, "gate": gate}
+
+
 def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago: int = 7,
-                 verify: bool = True, limit: int | None = None) -> int:
+                 verify: bool = True, limit: int | None = None, workers: int = 8) -> int:
     """Seed the WHOLE gap-doc catalog: render each case from the framework base template with its
     own dataset 6-char locator + independent name (seed/render.py), then publish -> pin -> verify.
     Staged: only cases whose DDS family has a registered template are seeded; the rest are reported
-    as skipped (need a harvested template). Prints a case_id -> locator mapping."""
+    as skipped (need a harvested template). The pin/verify pass runs concurrently (`workers`
+    threads) since each pnr_id is independent; the Kafka publish + settle is already one shared
+    batch. Prints a case_id -> locator mapping."""
+    from concurrent.futures import ThreadPoolExecutor
     from core.registry import resolve
     from catalog.parser import load_catalog
     from core.descriptors import Feed  # noqa: F401 (documents the resolve dependency)
-    from seed import dds_pin, kafka_seed, render
+    from seed import kafka_seed, render
 
     ctx = resolve(product, env, feed)
     e = ctx.env
@@ -171,37 +201,17 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     print(f"[seed-all] Kafka-injecting {len(locs)} PNR(s) ...", flush=True)
     kafka_seed.seed(e, locs, fixtures_dir=clone_dir)
 
-    ok = 0
-    mapping = []
-    for loc in locs:
-        c = by_loc[loc]
-        pnr_id = f"{loc}-{flight_date}"
-        landed = _trip_landed(e, loc) if verify else True
-        if not landed:
-            print(f"  [trip] {loc}: NOT FOUND — skipping DDS pin")
-            mapping.append({"case_id": c.id, "locator": loc, "gate": "trip_missing"})
-            continue
-        o, dst = (c.seed.route.split("-") + ["", ""])[:2]
-        fam = _dds_family(c) or "APPR_CAD_400"
-        res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
-                               flight_number=8002, origin=o, destination=dst, date=today,
-                               passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
-        line = f"  [ok] {c.id} {loc} trip=ACTIVE dds={res['pin']}"
-        gate = "seeded"
-        if verify:
-            v = dds_pin.verify_by_pnr(e, pnr_id)
-            line += f" by-pnr={v['status_code']} {'ELIGIBLE' if v['eligible'] else '-'} {v['amount']}"
-            print(line, flush=True)
-            vec = _audit_checkpoints(e, c, contact, v)
-            _write_checkpoints(clone_dir, loc, vec)
-            gate = "all-pass" if all(x.get("pass") is not False for x in vec) else "checkpoint_fail"
-        else:
-            print(line, flush=True)
-        mapping.append({"case_id": c.id, "locator": loc, "pnr_id": pnr_id, "gate": gate})
-        ok += 1
+    print(f"[seed-all] pin+verify {len(locs)} case(s) with {workers} workers ...", flush=True)
+    cases = [by_loc[loc] for loc in locs]
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        mapping = list(pool.map(
+            lambda c: _pin_and_verify_one(e, c, flight_date=flight_date, today=today, ts=ts,
+                                          contact=contact, clone_dir=clone_dir, verify=verify),
+            cases))
 
+    ok = sum(1 for m in mapping if m.get("gate") in ("seeded", "all-pass"))
     _write_mapping(clone_dir, feed, mapping, skipped)
-    print(f"\n=== seed-all: {ok}/{len(locs)} verified · {len(skipped)} skipped · clone_dir={clone_dir} ===")
+    print(f"\n=== seed-all: {ok}/{len(locs)} ok · {len(skipped)} skipped · clone_dir={clone_dir} ===")
     return 0 if ok else 1
 
 
@@ -276,6 +286,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--all", action="store_true",
                    help="seed the WHOLE gap-doc catalog (render each case from data/fd-templates)")
     p.add_argument("--limit", type=int, default=None, help="with --all: cap the number of cases")
+    p.add_argument("--workers", type=int, default=8,
+                   help="with --all: concurrent pin/verify workers (default 8)")
     p.add_argument("--clone-dir", default=None, help="output dir for cloned fixtures (default: runs/seed/<ts>)")
     p.add_argument("--family", default="APPR_CAD_400", help="DDS template family")
     p.add_argument("--days-ago", type=int, default=7, help="flight date = N days ago (FD window 3..14)")
@@ -289,7 +301,8 @@ def main(argv: list[str] | None = None) -> int:
                                       datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S"))
     if args.all:
         return run_seed_all(args.product, args.env, args.feed, clone_dir=clone_dir,
-                            days_ago=args.days_ago, verify=not args.no_verify, limit=args.limit)
+                            days_ago=args.days_ago, verify=not args.no_verify, limit=args.limit,
+                            workers=args.workers)
     if not args.mapping:
         print("provide --from SRC:NEW pairs, or --all to seed the whole catalog")
         return 2
