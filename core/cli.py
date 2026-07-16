@@ -45,6 +45,15 @@ def _cmd_evidence(run_dir: str, out_dir: str | None) -> int:
     return 0
 
 
+def _cmd_metrics(run_dir: str, out_dir: str | None) -> int:
+    from metrics.run import build_metrics
+
+    resolved_out = out_dir or str(Path(run_dir) / "metrics")
+    build_metrics(run_dir, resolved_out)
+    print(f"wrote metrics to {resolved_out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cctqa")
     sub = parser.add_subparsers(dest="cmd")
@@ -58,21 +67,35 @@ def main(argv: list[str] | None = None) -> int:
     evidence_parser.add_argument("run_dir")
     evidence_parser.add_argument("--out", dest="out_dir", default=None,
                                   help="output dir (default: <run_dir>/evidence)")
+    metrics_parser = sub.add_parser("metrics")
+    metrics_parser.add_argument("run_dir")
+    metrics_parser.add_argument("--out", dest="out_dir", default=None,
+                                 help="output dir (default: <run_dir>/metrics)")
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
         return int(exc.code) if exc.code is not None else 2
-    if args.cmd == "list":
-        return _cmd_list()
-    if args.cmd == "validate":
-        return _cmd_validate()
-    if args.cmd == "catalog":
-        from catalog.cli import main as catalog_main
-        return catalog_main(args.catalog_args)
-    if args.cmd == "evidence":
-        return _cmd_evidence(args.run_dir, args.out_dir)
-    parser.print_usage()
-    return 2
+    try:
+        if args.cmd == "list":
+            return _cmd_list()
+        if args.cmd == "validate":
+            return _cmd_validate()
+        if args.cmd == "catalog":
+            from catalog.cli import main as catalog_main
+            return catalog_main(args.catalog_args)
+        if args.cmd == "evidence":
+            return _cmd_evidence(args.run_dir, args.out_dir)
+        if args.cmd == "metrics":
+            return _cmd_metrics(args.run_dir, args.out_dir)
+        parser.print_usage()
+        return 2
+    except SystemExit as exc:  # a subcommand's own exit (e.g. no results found)
+        if exc.code is None:
+            return 1
+        if isinstance(exc.code, int):
+            return exc.code
+        print(exc.code, file=sys.stderr)  # e.g. SystemExit("message") from build_metrics
+        return 1
 
 
 if __name__ == "__main__":
