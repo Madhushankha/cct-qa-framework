@@ -1,9 +1,10 @@
 id: fd
 label: Flight Disruption
 gap_doc: data/gap-docs/fd/FD_UAT_Miro_Gap_Analysis.html
+dataset: ../cct-qa-1/doc/source/FD_ALL239_CRT_v15.html
 columns:
   pnr: Locator
-  pnr_id: "PNR ID"
+  pnr_id: PNR ID
   passenger: Passenger
   route: Route
   ticket: Ticket
@@ -12,33 +13,57 @@ columns:
   amount: Amount
   currency: Cur
   flags: Flags
-  third_party: [Scenario, Type, Claimant, Third-party, TP]
+  third_party:
+  - Scenario
+  - Type
+  - Claimant
+  - Third-party
+  - TP
 persona:
-  default: |
-    You are a CUSTOMER filing an Air Canada flight-disruption (APPR compensation) claim.
+  default: 'You are a CUSTOMER filing an Air Canada flight-disruption compensation claim.
+
     Booking: {first} {last}; PNR {pnr}. Disruption: {disruption}. You want compensation.
+
+    If the bot asks for your country of residence or where you are travelling from/based,
+    answer {country}.
+
+    '
   branches:
-    third_party: |
-      You are an ADULT filing ON BEHALF OF another passenger {first} {last} ({minor_or_pax}).
-      If asked whether you are the passenger, choose "filing on behalf of someone else".
+    third_party: 'You are an ADULT filing ON BEHALF OF another passenger {first} {last}
+      ({minor_or_pax}).
+
+      If asked whether you are the passenger, choose "filing on behalf of someone
+      else".
+
+      '
 judge:
-  verdict_enum: [ELIGIBLE, NOT_ELIGIBLE, NO_DETERMINATION, PENDING, ESCALATED, UNKNOWN]
-  match_on: [status, system_code, amount]
+  verdict_enum:
+  - ELIGIBLE
+  - NOT_ELIGIBLE
+  - NO_DETERMINATION
+  - PENDING
+  - ESCALATED
+  - UNKNOWN
+  match_on:
+  - status
+  - system_code
+  - amount
 checkpoints:
   auditor: fd
   areas:
-    - trip_active
-    - trip_details
-    - passenger
-    - dob
-    - ticket
-    - eds_pnr_output
-    - eds_contact_email
-    - group_context
-    - dds_endpoint_systemcode_match
-    - dds_amount_match
-    - ne_nd_reason_text
-    - ac_wallet_loyalty
-    - passenger_count
-    - pending_flight_le_72h
-    - name_uniqueness
+  - trip_active
+  - trip_details
+  - passenger
+  - dob
+  - ticket
+  - eds_pnr_output
+  - eds_contact_email
+  - group_context
+  - dds_endpoint_systemcode_match
+  - dds_amount_match
+  - ne_nd_reason_text
+  - ac_wallet_loyalty
+  - passenger_count
+  - pending_flight_le_72h
+  - name_uniqueness
+test_case_doc: ../cct-qa-1/CCT_Agent_New 3/CCT_Agent_New/scenarios/fd-sit/FD_SIT_PNR_MAPPING.md

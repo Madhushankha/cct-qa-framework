@@ -34,6 +34,17 @@ def _split_passenger(full: str) -> tuple[str, str]:
     return (" ".join(toks[:-1]), toks[-1]) if len(toks) >= 2 else ("", (full or "").strip().upper())
 
 
+# Regime (from the case systemCode) -> a representative country of residence, so the booking's
+# country matches the compensation regime (EU261 needs an EU country, ASL an Israeli one, etc.).
+_REGIME_COUNTRY = {"APPR": "CA", "EU": "FR", "UK": "GB", "ASL": "IL", "MIXED": "CA", "DUP": "CA"}
+
+
+def _country_for(case) -> str:
+    from seed.dds_pin import parse_system_code
+    regime, _ = parse_system_code(case.seed.system_code or case.system_code or "")
+    return _REGIME_COUNTRY.get(regime, "CA")
+
+
 def _delay_for(case) -> int:
     """FDM delay minutes for this case — delegates to seed.scenario.delay_minutes so the title's
     delay band/hours (when present) win over the flat compensation-tier default."""
@@ -75,6 +86,17 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
     # route: "YYZ-LHR" -> ("YYZ", "LHR"); rewrite each airport code independently.
     src_o, src_d = (src_route.split("-") + ["", ""])[:2]
     new_o, new_d = ((case.seed.route or src_route).split("-") + ["", ""])[:2]
+    # country of residence per regime, so a non-CAD case (EU/ASL/UK) isn't a Canadian booking —
+    # the base template is Canadian (countryOfResidence "CA"); an inconsistent EU determination on a
+    # Canadian booking makes the bot apply APPR and escalate to manual (the FD_TC_112 defect).
+    new_country = _country_for(case)
+
+    def _reair(text: str, src: str, new: str) -> str:
+        # rewrite an airport code in BOTH JSON ("YYZ") and FDM XML (>YYZ<); quoted-exact so office
+        # codes like "YYZAC08AA" are untouched.
+        if src and new and src != new:
+            text = text.replace(f'"{src}"', f'"{new}"').replace(f">{src}<", f">{new}<")
+        return text
 
     def _retext(text: str) -> str:
         text = text.replace(src_loc, new_loc)
@@ -86,10 +108,12 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
             text = text.replace(src_sur, new_sur)
         if src_first and new_first and len(src_first) >= 3:
             text = text.replace(src_first, new_first)
-        if src_o and new_o and src_o != new_o:
-            text = text.replace(f">{src_o}<", f">{new_o}<")
-        if src_d and new_d and src_d != new_d:
-            text = text.replace(f">{src_d}<", f">{new_d}<")
+        # origin before destination so an origin==dest overlap (base YYZ-LHR -> case CDG-YYZ) is safe
+        text = _reair(text, src_o, new_o)
+        text = _reair(text, src_d, new_d)
+        if new_country and new_country != "CA":
+            for pat in ('"countryOfResidence": "CA"', '"countryOfResidence":"CA"'):
+                text = text.replace(pat, pat.replace("CA", new_country))
         if src_delay != new_delay:
             text = text.replace(f"<delayTime>{src_delay}</delayTime>",
                                 f"<delayTime>{new_delay}</delayTime>")

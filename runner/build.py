@@ -7,6 +7,7 @@ from __future__ import annotations
 import datetime
 import re
 import uuid
+from pathlib import Path
 
 from core.result import validate_result
 from core.secrets import resolve_secret
@@ -40,9 +41,22 @@ def _split_name(passenger: str):
     return first, last
 
 
+# Regime (from the case systemCode) -> the country the customer should state, so a EU261/ASL case
+# doesn't answer "Canada" and get routed into APPR (which then escalates to manual). Matches the
+# booking's countryOfResidence set by seed.render._country_for.
+_REGIME_COUNTRY_NAME = {"APPR": "Canada", "EU": "France", "UK": "the United Kingdom",
+                        "ASL": "Israel", "MIXED": "Canada", "DUP": "Canada"}
+
+
+def _persona_country(uc) -> str:
+    sc = (uc.seed.system_code or uc.system_code or "").upper().split("-")
+    return _REGIME_COUNTRY_NAME.get(sc[1] if len(sc) > 1 else "APPR", "Canada")
+
+
 def build_persona(ctx, uc) -> str:
-    """Feed-specific customer-sim system prompt with {first}{last}{pnr}{disruption} (+ seed extras) filled
-    from the use-case seed. Uses the third_party branch when uc.third_party, else persona['default']."""
+    """Feed-specific customer-sim system prompt with {first}{last}{pnr}{country}{disruption} (+ seed
+    extras) filled from the use-case seed. Uses the third_party branch when uc.third_party, else
+    persona['default']."""
     persona = ctx.persona or {}
     branches = persona.get("branches") or {}
     if uc.third_party and branches.get("third_party"):
@@ -53,6 +67,7 @@ def build_persona(ctx, uc) -> str:
     first, last = _split_name(uc.seed.passenger)
     extras = dict(uc.seed.extras or {})
     slots = {"first": first, "last": last, "pnr": uc.seed.pnr,
+             "country": _persona_country(uc),
              "disruption": extras.get("disruption") or extras.get("Disruption") or ""}
     # make seed extras available as slots too (raw + normalized key), without overriding the core four
     for k, v in extras.items():
@@ -192,6 +207,26 @@ def _error_bucket(error):
     return "other"
 
 
+def _seed_from_sidecar(checkpoints_dir, uc):
+    """Load the checkpoint vector the seeder wrote next to the fixture (<dir>/<id>.checkpoints.json)
+    into a seed block. Returns None when there's no sidecar (caller falls back to live verify)."""
+    if not checkpoints_dir:
+        return None
+    import json as _json
+
+    p = Path(checkpoints_dir) / f"{uc.id}.checkpoints.json"
+    if not p.exists():
+        return None
+    try:
+        vec = _json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    verifiable = [c for c in vec if c.get("pass") is not None]
+    checkpoints = [{"area": c["area"], "pass": bool(c["pass"])} for c in verifiable]
+    verified = bool(verifiable) and all(c["pass"] for c in verifiable)
+    return {"verified": verified, "checkpoints": checkpoints, "dds": None}
+
+
 def _seed_block(ctx, uc, seed_source):
     """Verify the case's seed via seed.verify.verify_case when a source is available, else the offline
     stub (verified=false, checkpoints=[], dds=None). Never raises — a run works without the seed extra."""
@@ -220,7 +255,7 @@ def _default_flow(uc, persona, first, chat_config, otp_provider, br):
 
 
 def run_case(ctx, uc, chat_config, otp_provider, *, flow_fn=None, judge_fn=None, br=None,
-             seed_source=None, run_id=None, run_date=None) -> dict:
+             seed_source=None, run_id=None, run_date=None, checkpoints_dir=None) -> dict:
     """Build persona, drive the flow, judge the transcript, and assemble a schema-valid canonical Result.
 
     flow_fn / judge_fn are injectable so the pure assembly path is unit-testable with NO network:
@@ -266,7 +301,7 @@ def run_case(ctx, uc, chat_config, otp_provider, *, flow_fn=None, judge_fn=None,
                  "expected_system_code": uc.system_code or "",
                  "expected_amount": _norm_amount(uc.seed.amount),
                  "flags": _flags(uc.seed.flags), "third_party": bool(uc.third_party)},
-        "seed": _seed_block(ctx, uc, seed_source),
+        "seed": _seed_from_sidecar(checkpoints_dir, uc) or _seed_block(ctx, uc, seed_source),
         "auth": {"otp_fetched": bool(run.get("otp_fetched")), "contact_id": run.get("contact_id")},
         "verdict": {"decision": str(verdict.get("decision", "UNKNOWN")),
                     "amount": _parse_amount_text(verdict.get("amount")),
