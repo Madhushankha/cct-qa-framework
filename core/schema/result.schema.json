@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CCT-QA Result v1.0",
+  "type": "object",
+  "required": ["schema_version", "scenario_id", "run", "case", "seed", "auth",
+               "verdict", "harness", "transcript", "evidence"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "scenario_id": {"type": "string", "pattern": "^[^.]+\\.[^.]+\\.[^.]+\\..+$"},
+    "run": {
+      "type": "object",
+      "required": ["product", "env", "feed", "date", "run_id", "started", "duration_s"],
+      "properties": {
+        "product": {"type": "string"}, "env": {"type": "string"}, "feed": {"type": "string"},
+        "date": {"type": "string"}, "run_id": {"type": "string"},
+        "started": {"type": "string"}, "duration_s": {"type": "number"}
+      }
+    },
+    "case": {
+      "type": "object",
+      "required": ["test_case", "pnr", "pnr_id", "passenger", "regime",
+                   "expected_status", "expected_system_code", "expected_amount",
+                   "flags", "third_party"],
+      "properties": {
+        "test_case": {"type": "string"}, "pnr": {"type": "string"},
+        "pnr_id": {"type": "string"}, "passenger": {"type": "string"},
+        "regime": {"type": "string"}, "expected_status": {"type": "string"},
+        "expected_system_code": {"type": "string"},
+        "expected_amount": {"$ref": "#/$defs/amountOrNull"},
+        "flags": {"type": "array", "items": {"type": "string"}},
+        "third_party": {"type": "boolean"}
+      }
+    },
+    "seed": {
+      "type": "object",
+      "required": ["verified", "checkpoints", "dds"],
+      "properties": {
+        "verified": {"type": "boolean"},
+        "checkpoints": {
+          "type": "array",
+          "items": {"type": "object", "required": ["area", "pass"],
+                    "properties": {"area": {"type": "string"}, "pass": {"type": "boolean"}}}
+        },
+        "dds": {
+          "oneOf": [
+            {"type": "null"},
+            {"type": "object", "required": ["status", "system_code", "amount", "trace_s3"],
+             "properties": {"status": {"type": "string"}, "system_code": {"type": "string"},
+                            "amount": {"$ref": "#/$defs/amountOrNull"}, "trace_s3": {"type": "string"}}}
+          ]
+        }
+      }
+    },
+    "auth": {
+      "type": "object", "required": ["otp_fetched", "contact_id"],
+      "properties": {"otp_fetched": {"type": "boolean"},
+                     "contact_id": {"type": ["string", "null"]}}
+    },
+    "verdict": {
+      "type": "object",
+      "required": ["decision", "amount", "reached_determination", "matches_expected",
+                   "checks", "reasoning"],
+      "properties": {
+        "decision": {"type": "string"},
+        "amount": {"$ref": "#/$defs/amountOrNull"},
+        "reached_determination": {"type": "boolean"},
+        "matches_expected": {"type": "boolean"},
+        "checks": {
+          "type": "array",
+          "items": {"type": "object", "required": ["name", "expected", "actual", "pass"],
+                    "properties": {"name": {"type": "string"}, "expected": {"type": "string"},
+                                   "actual": {"type": "string"}, "pass": {"type": "boolean"}}}
+        },
+        "reasoning": {"type": "string"}
+      }
+    },
+    "harness": {
+      "type": "object", "required": ["error", "error_bucket"],
+      "properties": {"error": {"type": ["string", "null"]},
+                     "error_bucket": {"type": ["string", "null"]}}
+    },
+    "transcript": {
+      "type": "array",
+      "items": {"type": "object", "required": ["role", "text"],
+                "properties": {"role": {"type": "string"}, "text": {"type": "string"},
+                               "ts": {"type": ["string", "null"]},
+                               "note": {"type": ["string", "null"]}}}
+    },
+    "evidence": {
+      "type": "object", "required": ["chat_html", "evidence_html"],
+      "properties": {"chat_html": {"type": ["string", "null"]},
+                     "evidence_html": {"type": ["string", "null"]}}
+    }
+  },
+  "$defs": {
+    "amountOrNull": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "object", "required": ["currency", "value"],
+         "properties": {"currency": {"type": "string"}, "value": {"type": "number"}}}
+      ]
+    }
+  }
+}

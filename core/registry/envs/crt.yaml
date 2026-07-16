@@ -1,25 +1,17 @@
-# envs/crt.yaml — CRT environment descriptor (ILLUSTRATIVE STUB)
-# One file per env. Secrets are referenced by NAME only — never inlined.
 id: crt
 label: CRT
-
 chatbot:
   base_url: https://jz18i65199.execute-api.ca-central-1.amazonaws.com/prod
   endpoint_path: /start-chat
   region: ca-central-1
-
 aws:
   profile: crt-sso
   account: "050752605169"
-
-# OTP strategy: crt = real Mailinator inbox; int = fixed 123456
 otp:
   strategy: mailinator
   domain: ae-qa1-aircanada.mailinator.com
   inbox: lahiru
-  token_secret: MAILINATOR_TOKEN     # name of secret, resolved at runtime
-
-# seed targets (P2) — where the two sources live for this env
+  token_secret: MAILINATOR_TOKEN
 seed_targets:
   kafka_topic: emh-crt.ALTEA-PNRDATA-CRT
   aurora_secret: "/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials"
