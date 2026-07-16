@@ -130,12 +130,27 @@ def _case_currency(uc) -> str:
     return _REGIME_CURRENCY.get(regime, "CAD")
 
 
+def _flight_days_ago(uc) -> int:
+    """Per-case flight date offset (days before today; NEGATIVE = future), read from the gap-doc
+    SCENARIO (the case title), compared to today — because the title is the source of truth for the
+    case's temporal state, not the verdict class:
+      - 'Pre-Travel'                    -> upcoming flight, not yet departed  -> +3 days (future)
+      - 'Pending | 72 Hours Not Elapsed'-> disruption <72h ago, still pending -> 1 day ago
+      - everything else (Travel Completed / No Travel / Not Eligible / ...)   -> 7 days ago,
+        comfortably inside the FD window (>72h past, <14 days)."""
+    t = (uc.title or "").lower()
+    if "pre-travel" in t or "pre travel" in t:
+        return -3
+    if "pending" in t or "72 hours not elapsed" in t or "72 hrs not elapsed" in t:
+        return 1
+    return 7
+
+
 def _case_delay(uc) -> int:
-    """FDM delay minutes from the compensation tier (eligible cases); default 240 for others."""
-    try:
-        return {400: 240, 700: 400, 1000: 600}.get(int((uc.seed.amount or {}).get("value", 0)), 240)
-    except (TypeError, ValueError):
-        return 240
+    """FDM delay minutes: parsed from the case title's delay band/hours when present, else the
+    compensation tier (eligible cases), else 240 default — see seed.scenario.delay_minutes."""
+    from seed import scenario
+    return scenario.delay_minutes(uc)
 
 
 def preflight_credentials(env) -> tuple[bool, str]:
@@ -234,15 +249,19 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     print(f"[seed-all] {product}.{env}.{feed} contact={contact} flight_date={flight_date}")
     print(f"[seed-all] seedable={len(seedable)} skipped={len(skipped)} -> {clone_dir}", flush=True)
 
-    by_loc, flight_of, locs = {}, {}, []
+    from seed import scenario
+    by_loc, flight_of, date_of, locs = {}, {}, {}, []
     for i, c in enumerate(seedable):
         flt = 8000 + (i + 1)  # unique per case so each FDM leg_id is distinct
+        fdate = scenario.flight_date_for(c, now)
         d = render.render_case(base_dir, clone_dir, c, contact_email=contact,
-                               flight_date=flight_date, index=docnum_base + i, flight_number=flt)
+                               flight_date=fdate, index=docnum_base + i, flight_number=flt)
         by_loc[c.seed.pnr] = c
         flight_of[c.seed.pnr] = flt
+        date_of[c.seed.pnr] = fdate
         locs.append(c.seed.pnr)
-        print(f"  [render] {c.id} -> {c.seed.pnr} {c.seed.passenger} {c.seed.route} AC{flt}")
+        print(f"  [render] {c.id} -> {c.seed.pnr} {c.seed.passenger} {c.seed.route} "
+              f"AC{flt} {fdate} ({scenario.temporal_intent(c)})")
 
     print(f"[seed-all] Kafka-injecting {len(locs)} PNR(s) ...", flush=True)
     kafka_seed.seed(e, locs, fixtures_dir=clone_dir)
@@ -252,7 +271,7 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
         if not ok_creds:
             # SSO token likely lapsed during the settle. The PNRs ARE published/cascading — record
             # them so a re-run after `aws sso login` skips nothing, and exit clean (not 239 errors).
-            mapping = [{"case_id": by_loc[loc].id, "locator": loc, "pnr_id": f"{loc}-{flight_date}",
+            mapping = [{"case_id": by_loc[loc].id, "locator": loc, "pnr_id": f"{loc}-{date_of[loc]}",
                         "gate": "published_unverified"} for loc in locs]
             _write_mapping(clone_dir, feed, mapping, skipped)
             print(f"\n[seed-all] CREDENTIALS EXPIRED before verify ({detail}).", flush=True)
@@ -267,7 +286,7 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     cases = [by_loc[loc] for loc in locs]
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         mapping = list(pool.map(
-            lambda c: _pin_and_verify_one(e, c, flight_date=flight_date, today=today, ts=ts,
+            lambda c: _pin_and_verify_one(e, c, flight_date=date_of[c.seed.pnr], today=today, ts=ts,
                                           contact=contact, clone_dir=clone_dir, verify=verify,
                                           flight_number=flight_of[c.seed.pnr]),
             cases))

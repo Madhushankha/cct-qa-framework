@@ -16,9 +16,12 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from seed import scenario
 from seed.clone import ac_docnum
 
 # systemCode amount -> FDM delay minutes (APPR tiers): 400=3-6h, 700=6-9h, 1000=9h+.
+# (kept as the fallback default inside seed.scenario.delay_minutes; src_delay below still needs a
+# base-template value to string-replace against.)
 _TIER_DELAY = {400: 240, 700: 420, 1000: 600}
 
 
@@ -29,11 +32,9 @@ def _split_passenger(full: str) -> tuple[str, str]:
 
 
 def _delay_for(case) -> int:
-    amt = (case.seed.amount or {})
-    try:
-        return _TIER_DELAY.get(int(amt.get("value", 0)), 240)
-    except (TypeError, ValueError):
-        return 240
+    """FDM delay minutes for this case — delegates to seed.scenario.delay_minutes so the title's
+    delay band/hours (when present) win over the flat compensation-tier default."""
+    return scenario.delay_minutes(case)
 
 
 def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: str,
