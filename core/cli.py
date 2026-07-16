@@ -54,6 +54,20 @@ def _cmd_metrics(run_dir: str, out_dir: str | None) -> int:
     return 0
 
 
+def _cmd_analyze(run_dir: str, prev_dir: str | None, out_file: str | None) -> int:
+    import json
+
+    from analysis.build import analyze
+
+    doc = analyze(run_dir, prev_dir=prev_dir)
+    resolved_out = out_file or str(Path(run_dir) / "analysis" / "analysis.json")
+    out_path = Path(resolved_out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(doc, indent=2, sort_keys=True), encoding="utf-8")
+    print(f"wrote analysis to {resolved_out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cctqa")
     sub = parser.add_subparsers(dest="cmd")
@@ -71,6 +85,12 @@ def main(argv: list[str] | None = None) -> int:
     metrics_parser.add_argument("run_dir")
     metrics_parser.add_argument("--out", dest="out_dir", default=None,
                                  help="output dir (default: <run_dir>/metrics)")
+    analyze_parser = sub.add_parser("analyze")
+    analyze_parser.add_argument("run_dir")
+    analyze_parser.add_argument("--prev", dest="prev_dir", default=None,
+                                 help="previous run dir to diff against (default: no diff)")
+    analyze_parser.add_argument("--out", dest="out_file", default=None,
+                                 help="output JSON file (default: <run_dir>/analysis/analysis.json)")
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -87,6 +107,8 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_evidence(args.run_dir, args.out_dir)
         if args.cmd == "metrics":
             return _cmd_metrics(args.run_dir, args.out_dir)
+        if args.cmd == "analyze":
+            return _cmd_analyze(args.run_dir, args.prev_dir, args.out_file)
         parser.print_usage()
         return 2
     except SystemExit as exc:  # a subcommand's own exit (e.g. no results found)
