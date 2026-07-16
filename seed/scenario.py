@@ -10,6 +10,12 @@ _HR_RE = re.compile(r"delay\s*(\d+)\s*hr", re.IGNORECASE)
 _BAND_RE = re.compile(r"delay\s*(\d+)\s*[-–]?\s*<?\s*(\d+)?", re.IGNORECASE)
 _TIER = {400: 240, 700: 400, 1000: 600}
 
+# soc titles use a 2-hour eligibility threshold ("Transit Delay ≥2h", "No Travel Origin – Delay
+# Below 2h" / "Transit Delay Below 2 Hours"), not fd's 3/6/9-hour compensation bands — neither
+# _BAND_RE nor _HR_RE matches them (no digit immediately after "delay", no literal "hr" suffix).
+_GE_HR_RE = re.compile(r"[≥>=]{1,2}\s*(\d+)\s*h", re.IGNORECASE)
+_BELOW_HR_RE = re.compile(r"below\s*(\d+)\s*h(?:our)?s?", re.IGNORECASE)
+
 
 def temporal_intent(uc) -> str:
     t = (uc.title or "").lower()
@@ -36,6 +42,14 @@ def delay_minutes(uc) -> int:
     m = _HR_RE.search(t)
     if m:
         return int(m.group(1)) * 60
+    # soc's 2-hour threshold vocabulary (checked before the fd amount-tier fallback, since soc
+    # cases carry no compensation amount to key that fallback off of).
+    m = _GE_HR_RE.search(t)
+    if m:
+        return int(m.group(1)) * 60
+    m = _BELOW_HR_RE.search(t)
+    if m:
+        return max(0, int(m.group(1)) * 60 - 60)
     try:
         return _TIER.get(int((uc.seed.amount or {}).get("value", 0)), 240)
     except (TypeError, ValueError):

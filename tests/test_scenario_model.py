@@ -25,3 +25,19 @@ def test_delay_minutes_from_title_then_amount():
 def test_segment_status():
     assert segment_status(_uc("No Travel Origin | APPR")) == "UN"
     assert segment_status(_uc("Travel Completed | APPR")) == "HK"
+
+
+# --- soc vocabulary: "Transit Delay >=2h" / "Delay Below 2h", not fd's 3/6/9-hour bands ----------
+
+def test_temporal_intent_soc_titles():
+    assert temporal_intent(_uc("APPR – Eligible – Transit Delay ≥2h – Within Carrier Control")) == "completed"
+    assert temporal_intent(_uc("APPR – Pending – 72 Hours")) == "pending"
+    assert temporal_intent(_uc("APPR – Not Eligible – No Travel Origin – Outside Carrier Control")) == "no_travel"
+    assert temporal_intent(_uc("EU – Eligible – No Travel Return – Delay ≥2h")) == "no_travel"
+
+
+def test_delay_minutes_soc_two_hour_threshold():
+    assert delay_minutes(_uc("APPR – Eligible – Transit Delay ≥2h – Within Carrier Control")) == 120
+    assert delay_minutes(_uc("APPR – Not Eligible – Transit Delay Below 2 Hours")) == 60
+    assert delay_minutes(_uc("APPR – Not Eligible – No Travel Origin – Delay Below 2h")) == 60
+    assert delay_minutes(_uc("EU – Eligible – No Travel Origin – Delay ≥2h")) == 120

@@ -1,0 +1,18 @@
+# bookingchange seed manifest — SCAFFOLD, not yet wired into seed/cli.py (same caveats as
+# data/seed-templates/soc/manifest.yaml). See
+# docs/superpowers/plans/2026-07-17-soc-bookingchange-seed.md.
+#
+# base_dir reuses FD's base_appr template for the same reason soc does: the PNR/TKT/FDM cascade is
+# feed-agnostic, and bookingchange's CREATE message shape (pnr, tkt, fdm) matches FD's per the
+# design doc's per-feed table. This is a placeholder: bookingchange INVOL scenarios likely want a
+# CANCELLED segment (segmentStatus UN) rather than a delay leg, which base_appr's FDM legs don't
+# encode as a distinct XML event today (segment_status is written to meta.json but not yet applied
+# to the PNR/FDM XML content — a gap that predates this feed, see the plan doc). VOL scenarios
+# (voluntary fare/route/date change) may need a different base entirely (no disruption at all, just
+# an eligible-for-self-service booking) — flagged as an open question in the plan, not resolved here.
+feed: bookingchange
+base_dir: data/fd-templates/base_appr
+identity:
+  $locator:  "{{ $scenario_pnr }}"
+  $date:     "{{ $scenario_date }}"
+  $pnrId:    "{{ $locator }}-{{ $date }}"

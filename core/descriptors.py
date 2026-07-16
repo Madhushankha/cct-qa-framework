@@ -20,6 +20,11 @@ class Feed:
     judge: dict
     checkpoints: dict
     dataset: str = ""  # optional tabular PNR-data HTML joined to gap-doc cases (P1); "" = data embedded in gap doc
+    # optional: a feed whose UAT coverage is split across MULTIPLE gap docs (e.g. bookingchange's
+    # separate VOL/INVOL analyses). When set, catalog.parser.load_catalog parses every doc and
+    # merges the cases into one Catalog instead of reading the singular `gap_doc`. "" / () means
+    # "single doc" (the common case) — `gap_doc` stays the source of truth then.
+    gap_docs: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)

@@ -1,0 +1,51 @@
+id: bookingchange
+label: Booking Change
+# Two gap docs, one feed: Booking Change is analyzed as two separate Miro flows — Involuntary
+# (BCInvol, airline-initiated: cancel/delay -> rebook) and Voluntary (BCVol, customer-initiated
+# fare/route/date change). catalog.parser.load_catalog parses BOTH and merges them into one
+# Catalog (gap_doc stays unset; gap_docs drives the merge — see core/descriptors.Feed.gap_docs).
+# Case ids already disambiguate by convention (InVOL_TC### vs VOL_TC###, no collisions across the
+# two docs); the merge also stamps seed.extras.source_doc with each doc's filename stem.
+gap_doc: ""
+gap_docs:
+  - data/gap-docs/bookingchange/Booking_Change_INVOL_Miro_Gap_Analysis.html
+  - data/gap-docs/bookingchange/Booking_Change_VOL_Miro_Gap_Analysis.html
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: Passenger
+  route: Route
+  ticket: Ticket
+  status: Status
+  system_code: SysCode
+  amount: Amount
+  currency: Cur
+  flags: Flags
+  third_party:
+  - ThirdParty
+persona:
+  default: |
+    You are a CUSTOMER whose booking was changed or disrupted.
+    Booking: {first} {last}; PNR {pnr}. You want to review/complete your booking change.
+  branches: {}
+judge:
+  # NOTE: neither gap doc badges a data-out verdict per card (unlike fd/soc) — the Eligible /
+  # Ineligible / System-Edge / Other bucket lives in data-feat, which the parser lands in
+  # UseCase.regime, not UseCase.verdict (verdict is "" for every case today). Until the docs are
+  # enriched with a real data-out attribute, the judge should treat regime as the expected-outcome
+  # signal for this feed. See docs/superpowers/plans/2026-07-17-soc-bookingchange-seed.md.
+  verdict_enum: [ELIGIBLE, NOT_ELIGIBLE, NO_DETERMINATION, PENDING, ESCALATED, UNKNOWN]
+  match_on: [status]
+checkpoints:
+  # No live bookingchange auditor exists yet (design doc: rebuild per feed as onboarded). This is a
+  # placeholder area list mirroring fd's structurally-relevant checks minus compensation-amount
+  # fields (bookingchange verdict lives in compensationEligibility as a rebooking-offered code, not
+  # a cash amount).
+  auditor: bookingchange
+  areas:
+    - trip_active
+    - trip_details
+    - passenger
+    - eds_pnr_output
+    - eds_contact_email
+    - dds_endpoint_systemcode_match

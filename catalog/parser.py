@@ -287,8 +287,43 @@ def join_dataset(catalog: Catalog, dataset_html: str, feed: Feed) -> Catalog:
     return _finalize(joined)
 
 
+def _tag_doc(catalog: Catalog, doc_path: str) -> Catalog:
+    """Stamp every case's seed.extras with the source doc's stem (e.g. 'Booking_Change_INVOL_...'),
+    so a multi-doc feed's cases stay traceable to which analysis they came from even though the
+    gap-doc case ids (InVOL_TC001 vs VOL_TC001) already disambiguate by convention."""
+    tag = Path(doc_path).stem
+    cases = [
+        dataclasses.replace(c, seed=dataclasses.replace(c.seed, extras={**c.seed.extras, "source_doc": tag}))
+        for c in catalog.cases
+    ]
+    return dataclasses.replace(catalog, cases=cases)
+
+
+def _merge_catalogs(feed_id: str, catalogs: list[Catalog]) -> Catalog:
+    """Concatenate cases/uncovered across docs; checkpoints are deduped by id (both docs assert a
+    largely-shared canonical flow, e.g. GLOB-01/BC-02) so the spine doesn't double-count."""
+    cases: list = []
+    uncovered: list = []
+    checkpoints: dict = {}
+    for cat in catalogs:
+        cases.extend(cat.cases)
+        uncovered.extend(cat.uncovered)
+        for cp in cat.checkpoints:
+            checkpoints.setdefault(cp.id, cp)
+    return Catalog(feed_id=feed_id, checkpoints=list(checkpoints.values()), cases=cases,
+                   uncovered=uncovered)
+
+
 def load_catalog(feed: Feed) -> Catalog:
-    catalog = parse_gap_doc(feed.gap_doc, feed)
+    """parse_gap_doc (feed.gap_doc), or — for a feed whose UAT coverage is split across multiple
+    docs (feed.gap_docs, e.g. bookingchange's VOL + INVOL analyses) — parse EACH doc and merge them
+    into one Catalog, tagging every case with its source doc. Then, as always, join the optional
+    tabular dataset to fill any seed_pending cases."""
+    if feed.gap_docs:
+        catalogs = [_tag_doc(parse_gap_doc(doc, feed), doc) for doc in feed.gap_docs]
+        catalog = _merge_catalogs(feed.id, catalogs)
+    else:
+        catalog = parse_gap_doc(feed.gap_doc, feed)
     if feed.dataset:
         catalog = join_dataset(catalog, feed.dataset, feed)
     return catalog

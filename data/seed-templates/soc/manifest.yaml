@@ -1,0 +1,18 @@
+# soc seed manifest — SCAFFOLD, not yet wired into seed/cli.py's run_seed_all (which still hardcodes
+# feed="fd" throughout: base_dir, the DDS template-family gate, the checkpoints auditor lookup, and
+# the compensationEligibility-only canonicalizer). See
+# docs/superpowers/plans/2026-07-17-soc-bookingchange-seed.md for the remaining wiring work.
+#
+# base_dir is the FD base_appr template REUSED as-is: the ALTEA PNR/ticket/FDM cascade it carries
+# (01_pnr.json/02_ticket.json/03_fdm_skd_leg1.xml/04_fdm_delay_leg1.xml) has no fd-specific content —
+# every fd marker (compensation amount, systemCode, ...) lives ONLY in the DDS side-channel (S3 +
+# execution_traces), never in the PNR/TKT/FDM fixture itself. soc asserts the same "does this PNR's
+# segment show a disruption" trip data, so the same booking skeleton works; only the DDS verdict
+# array differs (socFlightEligibility, not compensationEligibility — see dds-templates/appr_cad_400
+# .json, which already carries both arrays in one template file).
+feed: soc
+base_dir: data/fd-templates/base_appr
+identity:
+  $locator:  "{{ $scenario_pnr }}"
+  $date:     "{{ $scenario_date }}"
+  $pnrId:    "{{ $locator }}-{{ $date }}"

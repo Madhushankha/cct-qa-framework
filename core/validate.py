@@ -17,8 +17,8 @@ class DescriptorError(Exception):
 
 
 def validate_feed(f: Feed) -> None:
-    if not f.id or not f.gap_doc:
-        raise DescriptorError(f"feed '{f.id}': 'id' and 'gap_doc' are required")
+    if not f.id or not (f.gap_doc or f.gap_docs):
+        raise DescriptorError(f"feed '{f.id}': 'id' and 'gap_doc' (or 'gap_docs') are required")
     for field in SEEDSPEC_REQUIRED:
         if field not in f.columns:
             raise DescriptorError(f"feed '{f.id}': columns missing SeedSpec field '{field}'")
@@ -63,9 +63,11 @@ def validate_all() -> list[str]:
             validate_feed(f)
             # The gap-doc HTML itself is a P1 input that may not exist yet; we assert its
             # containing directory exists so the path is well-formed and wired to a real location.
-            parent = (REGISTRY_DIR.parent.parent / Path(f.gap_doc)).parent
-            if not parent.exists():
-                errors.append(f"feed '{fid}': gap_doc directory does not exist: {parent}")
+            docs = list(f.gap_docs) if f.gap_docs else ([f.gap_doc] if f.gap_doc else [])
+            for doc in docs:
+                parent = (REGISTRY_DIR.parent.parent / Path(doc)).parent
+                if not parent.exists():
+                    errors.append(f"feed '{fid}': gap_doc directory does not exist: {parent}")
         except (DescriptorError, RegistryError) as ex:
             errors.append(str(ex))
     for eid in envs:
