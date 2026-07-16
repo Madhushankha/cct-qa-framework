@@ -1,14 +1,8 @@
-# feeds/fd.yaml — Flight Disruption feed descriptor (ILLUSTRATIVE STUB)
-# One file per feed. The generic engine reads this; adding a feed adds no engine code.
 id: fd
 label: Flight Disruption
-
-# source of truth — parsed by catalog (P1)
 gap_doc: data/gap-docs/fd/FD_UAT_Miro_Gap_Analysis.html
-
-# how the catalog maps this domain's datagrid columns → SeedSpec
 columns:
-  locator: Locator
+  pnr: Locator
   pnr_id: "PNR ID"
   passenger: Passenger
   route: Route
@@ -18,25 +12,18 @@ columns:
   amount: Amount
   currency: Cur
   flags: Flags
-  # domain extras
-  third_party: [Scenario, Type, Claimant, Third-party, TP]   # any of these → third-party branch
-
-# customer persona the runner (P3) uses; {slots} filled from the use-case
+  third_party: [Scenario, Type, Claimant, Third-party, TP]
 persona:
   default: |
-    You are a CUSTOMER filing an Air Canada flight-disruption (APPR compensation) claim...
-    Booking: {first} {last}; PNR {locator}. Disruption: {disruption}. You want compensation.
+    You are a CUSTOMER filing an Air Canada flight-disruption (APPR compensation) claim.
+    Booking: {first} {last}; PNR {pnr}. Disruption: {disruption}. You want compensation.
   branches:
     third_party: |
-      You are an ADULT filing ON BEHALF OF another passenger {first} {last} ({minor_or_pax})...
+      You are an ADULT filing ON BEHALF OF another passenger {first} {last} ({minor_or_pax}).
       If asked whether you are the passenger, choose "filing on behalf of someone else".
-
-# judge (P3) — verdict + tool schema for this feed
 judge:
   verdict_enum: [ELIGIBLE, NOT_ELIGIBLE, NO_DETERMINATION, PENDING, ESCALATED, UNKNOWN]
-  match_on: [status, system_code, amount]   # systemCode-match, amount-aware
-
-# checkpoint auditor (P2) — areas verified before running (from the gap-doc spine)
+  match_on: [status, system_code, amount]
 checkpoints:
   auditor: fd
   areas:
@@ -46,7 +33,7 @@ checkpoints:
     - dob
     - ticket
     - eds_pnr_output
-    - eds_contact_email      # the OTP gate — {email,phone} injected here
+    - eds_contact_email
     - group_context
     - dds_endpoint_systemcode_match
     - dds_amount_match

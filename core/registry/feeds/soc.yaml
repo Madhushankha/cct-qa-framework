@@ -1,0 +1,29 @@
+id: soc
+label: Standards of Care
+gap_doc: data/gap-docs/soc/SOC_Miro_Gap_Analysis.html
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: Ticket
+  status: "SOC verdict"
+  system_code: Requirement
+  amount: "SOC verdict"
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER filing a Standards of Care (expense reimbursement) request.
+    Booking: {first} {last}; PNR {pnr}. Your flight was disrupted and you paid for meals/hotel.
+  branches: {}
+judge:
+  verdict_enum: [ELIGIBLE, NOT_ELIGIBLE, NO_DETERMINATION, PENDING, ESCALATED, UNKNOWN]
+  match_on: [status, system_code]
+checkpoints:
+  auditor: soc
+  areas:
+    - trip_active
+    - eds_pnr_output
+    - eds_contact_email
+    - dds_endpoint_systemcode_match
