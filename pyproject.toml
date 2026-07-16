@@ -1,0 +1,25 @@
+[project]
+name = "cct-qa-framework"
+version = "0.0.1"
+description = "CCT-QA-FRAMEWORK — gap-doc-driven QA framework for the Ask AC chatbot"
+requires-python = ">=3.11"
+dependencies = [
+    "PyYAML>=6.0",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+cctqa = "core.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["core*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
