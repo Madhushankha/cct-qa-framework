@@ -281,7 +281,10 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
 
     ok = sum(1 for m in mapping if m.get("gate") in ("seeded", "all-pass"))
     _write_mapping(clone_dir, feed, mapping, skipped)
+    from seed.report import build_preseed_report
+    rpt = build_preseed_report(clone_dir, product=product, env=env, feed=feed, date=today)
     print(f"\n=== seed-all: {ok}/{len(locs)} ok · {len(skipped)} skipped · clone_dir={clone_dir} ===")
+    print(f"    preseed report: {rpt}")
     return 0 if ok else 1
 
 
