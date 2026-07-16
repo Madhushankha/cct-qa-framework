@@ -13,6 +13,7 @@ class TripTracerSource(Protocol):
     def trip(self, pnr: str) -> dict | None: ...        # {"last_name": str, "status": str}
     def tickets(self, pnr: str) -> list[str]: ...       # ticket numbers
     def passengers(self, pnr: str) -> list[str]: ...    # passenger full names
+    def dob(self, pnr: str) -> str | None: ...          # a passenger date_of_birth, or None
 
 
 class FakeSource:
@@ -27,6 +28,7 @@ class FakeSource:
     def trip(self, pnr): return self._get(pnr, "trip", None)
     def tickets(self, pnr): return self._get(pnr, "tickets", [])
     def passengers(self, pnr): return self._get(pnr, "passengers", [])
+    def dob(self, pnr): return self._get(pnr, "dob", None)
 
 
 _EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+")
@@ -79,6 +81,12 @@ class AuroraSource:
             out.append(f"{fn or ''} {ln or ''}".strip())
         return out
 
+    def dob(self, pnr):
+        rows = self._q(
+            "select date_of_birth from passenger where substring(pnr_id from 1 for 6)=%s "
+            "and date_of_birth is not null limit 1", (pnr,))
+        return str(rows[0][0]) if rows and rows[0][0] else None
+
 
 def connect(env):
     """Build an AuroraSource from an Env descriptor's seed_targets. Requires boto3 + psycopg2
@@ -88,7 +96,12 @@ def connect(env):
     st = env.seed_targets
     secret_id = st["aurora_secret"]
     host = st["aurora_host"]
-    sm = boto3.client("secretsmanager", region_name=env.chatbot.get("region", "ca-central-1"))
+    # Use the env's AWS profile (SSO) explicitly — a bare boto3.client() would fall back to the
+    # default credential chain (often absent/expired), which is why the checkpoint audit hit
+    # ExpiredToken while the pin/trip paths (which pass profile_name) succeeded.
+    region = env.chatbot.get("region", "ca-central-1")
+    profile = (env.aws or {}).get("profile")
+    sm = boto3.Session(profile_name=profile).client("secretsmanager", region_name=region)
     creds = json.loads(sm.get_secret_value(SecretId=secret_id)["SecretString"])
     conn = psycopg2.connect(host=host, port=5432, dbname="trip-tracer",
                             user=creds["username"], password=creds["password"],
