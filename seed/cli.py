@@ -306,7 +306,9 @@ def _audit_checkpoints(env, uc, contact_email, dds_verdict) -> list[dict]:
     n_pass = sum(1 for c in rep.checks if c.ok is True)
     n_fail = sum(1 for c in rep.checks if c.ok is False)
     for c in rep.checks:
-        flag = "  " if c.ok is None else ("✓ " if c.ok else "✗ ")
+        # ASCII markers only — the Windows console (cp1252) can't encode ✓/✗ and a bare print
+        # would crash the worker with UnicodeEncodeError.
+        flag = "  " if c.ok is None else ("ok " if c.ok else "XX ")
         print(f"      {flag}{c.area:30} {sym[c.ok]:5} {c.detail}")
     print(f"      checkpoints: {n_pass} PASS / {n_fail} FAIL "
           f"({sum(1 for c in rep.checks if c.ok is None)} skip)", flush=True)
