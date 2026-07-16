@@ -1,0 +1,32 @@
+# NC (Name Correction) seed manifest — SCAFFOLD, not yet wired into seed/cli.py's run_seed_all
+# (which still hardcodes feed="fd": base_dir, the DDS template-family gate, the checkpoints auditor
+# lookup, and the compensationEligibility-only canonicalizer). See
+# docs/superpowers/plans/2026-07-17-nc-seatchange-seed.md.
+#
+# NC is an UPDATE feed (message_kind: create+update), NOT a pure CREATE like fd/soc/anc/bookingchange
+# — the base body below is a booking-only CREATE (pnr + ticket, no FDM, no DDS) that establishes the
+# parent passenger row a name-change UPDATE needs to FK to (a bare UPDATE on a fresh locator has no
+# parent row and produces NO Aurora write — see seed/feeds/prelude.py's module docstring). The full
+# per-case seed path is TWO Kafka bursts, not one:
+#
+#   1. render this base (pnr+ticket) with the case's real passenger name (the UPDATE's to-name) —
+#      same text-replace render.py already does for fd/soc/anc/bookingchange;
+#   2. seed/feeds/prelude.build_create_payload(payload, revert_fields) on that rendered body, using
+#      base/meta.json's prelude.revert_fields, to synthesize a CREATE with names[0] reverted to
+#      JOAO/MAIA — publish this FIRST;
+#   3. seed/feeds/prelude.wait_for(source, "passenger", pnr_id) until the passenger row lands;
+#   4. publish the real name-change UPDATE (the case's to-name, an RPH, and the channel/op_carrier
+#      routing fields several NC cases test — see the plan doc's NameCorrection_TC029..TC054 note).
+#
+# CAVEAT: seed/render.py's render_case only copies 01_pnr.json / 02_ticket*.json / *.xml and does the
+# identity/name/route/flight/delay text-replace — it does NOT yet build the two-burst CREATE-prelude
+# sequence above (that needs a renderer/orchestrator extension: apply the manifest's mutable name,
+# call build_create_payload, publish+wait, then publish the real UPDATE). Until that lands this
+# manifest is scaffolding, matching anc's manifest.yaml status; the offline-testable prelude mechanism
+# lives in seed/feeds/prelude.py and the offline-testable outcome reader in seed/feeds/nc_outcome.py.
+feed: nc
+base_dir: data/seed-templates/nc/base
+identity:
+  $locator:  "{{ $scenario_pnr }}"
+  $date:     "{{ $scenario_date }}"
+  $pnrId:    "{{ $locator }}-{{ $date }}"

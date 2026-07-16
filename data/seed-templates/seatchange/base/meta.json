@@ -1,0 +1,36 @@
+{
+  "locator": "FDAP36",
+  "pnr_id": "FDAP36-2026-06-13",
+  "ticket": "0142000800200",
+  "tickets": [
+    "0142000800200"
+  ],
+  "leg_id": "AC#8002#YYZ#2026-06-13",
+  "carrier": "AC",
+  "flight": 8002,
+  "route": "YYZ-LHR",
+  "date": "2026-06-13",
+  "surname": "OKONKWO",
+  "first": "MARA",
+  "pax": "ADT",
+  "party": [
+    "MARA OKONKWO (ADT)"
+  ],
+  "ssr": null,
+  "email": "l.xgklmx@gmail.com",
+  "change_kind": "seat",
+  "seat": "14C",
+  "prelude": {
+    "detector_path": "^/products/(\\d+)/seating$",
+    "revert_fields": {
+      "processedPnr.products[0].seating.seats[0].number": "14C"
+    },
+    "wait_for": {
+      "table": "trip_details",
+      "column": "pnr_id",
+      "note": "journey_updates (the seating UPDATE's Aurora write) FKs to trip_details, not passenger -- see seed/feeds/prelude.py's module docstring caveat: AuroraSource has no dedicated trip_details probe today, so wait_for(..., 'trip_details', ...) proxies through trip()."
+    },
+    "note": "seed/feeds/prelude.py's build_create_payload(payload, revert_fields) consumes revert_fields verbatim (same dotted/[n] path syntax as seed/engine.set_dotpath). This base template's own seating.seats[0].number (14C) already IS the CREATE-prelude's pre-change default (contrail's SCS-01 baseline) -- a per-case render (not yet wired) would set the manifest's mutable seat to the case's real target (the UPDATE's to-seat), and build_create_payload would revert products[0].seating.seats[0].number back to 14C for the synthetic CREATE burst only, so the later real UPDATE (a genuine 14C->new-seat change) lands. See README.md."
+  },
+  "note": "SeatChange seed base: pnr + ticket ONLY (no FDM/disruption leg, no EMD, no DDS pin) -- an UPDATE feed's CREATE-prelude parent. The products[0].seating block (seats[0].number=14C) is the pre-existing seat assignment the CREATE-prelude establishes before the real seat-change UPDATE fires. See README.md and docs/superpowers/plans/2026-07-17-nc-seatchange-seed.md."
+}

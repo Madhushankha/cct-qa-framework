@@ -1,0 +1,35 @@
+{
+  "locator": "FDAP36",
+  "pnr_id": "FDAP36-2026-06-13",
+  "ticket": "0142000800200",
+  "tickets": [
+    "0142000800200"
+  ],
+  "leg_id": "AC#8002#YYZ#2026-06-13",
+  "carrier": "AC",
+  "flight": 8002,
+  "route": "YYZ-LHR",
+  "date": "2026-06-13",
+  "surname": "OKONKWO",
+  "first": "MARA",
+  "pax": "ADT",
+  "party": [
+    "MARA OKONKWO (ADT)"
+  ],
+  "ssr": null,
+  "email": "l.xgklmx@gmail.com",
+  "change_kind": "name",
+  "prelude": {
+    "detector_path": "^/travelers/(\\d+)/names/(\\d+)/(firstName|middleName|lastName)$",
+    "revert_fields": {
+      "processedPnr.travelers[0].names[0].firstName": "JOAO",
+      "processedPnr.travelers[0].names[0].lastName": "MAIA"
+    },
+    "wait_for": {
+      "table": "passenger",
+      "column": "pnr_id"
+    },
+    "note": "seed/feeds/prelude.py's build_create_payload(payload, revert_fields) consumes revert_fields verbatim (same dotted/[n] path syntax as seed/engine.set_dotpath). This base template's own names[0] (MARA/OKONKWO) is the CREATE-prelude's OWN identity, not the pre-change value -- a per-case render (not yet wired) would first text-replace MARA/OKONKWO to the case's real passenger (the real UPDATE's to-name, per the seed plan's step 4), THEN build_create_payload reverts names[0] to JOAO/MAIA for the synthetic CREATE burst only, so the later real UPDATE lands as a genuine transition. See README.md."
+  },
+  "note": "NC (Name Correction) seed base: pnr + ticket ONLY (no FDM/disruption leg, no EMD, no DDS pin) -- an UPDATE feed's CREATE-prelude parent. See README.md and docs/superpowers/plans/2026-07-17-nc-seatchange-seed.md."
+}

@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "triggerEventLog": {
+      "id": "FDAP36-2026-06-13-TKT"
+    },
+    "version": "3.5.0"
+  },
+  "processedTicket": {
+    "id": "0142000800200-2026-06-13",
+    "version": "1759520979000",
+    "latestEvent": {
+      "code": "130",
+      "dateTimeGMT": "2026-06-13T20:00:00Z"
+    },
+    "documentType": "T",
+    "primaryDocumentNumber": "0142000800200",
+    "documentNumbers": [
+      "0142000800200"
+    ],
+    "numberOfBooklets": 1,
+    "issuanceLocalDate": "2026-06-13",
+    "issuanceType": "F",
+    "validatingCarrierCode": "AC",
+    "validatingCarrierRecordLocator": "FDAP36",
+    "pnrReferences": [
+      {
+        "systemId": "AC",
+        "recordLocator": "FDAP36"
+      },
+      {
+        "systemId": "1A",
+        "recordLocator": "FDAP36"
+      }
+    ],
+    "traveler": {
+      "name": {
+        "firstName": "MARA",
+        "lastName": "OKONKWO"
+      },
+      "passengerTypeCode": "ADT"
+    },
+    "price": {
+      "currency": "CAD",
+      "total": "612.00"
+    },
+    "coupons": [
+      {
+        "id": "0142000800200-2026-06-13-1",
+        "number": 1,
+        "status": "OPEN_FOR_USE",
+        "fareBasisCode": "YFLEX"
+      }
+    ]
+  },
+  "events": {
+    "recordDomain": "TICKET",
+    "recordId": "0142000800200-2026-06-13",
+    "originFeedTimeStamp": "2026-06-13T19:49:38",
+    "events": [
+      {
+        "origin": "COMPARISON",
+        "eventType": "CREATED"
+      }
+    ]
+  }
+}
