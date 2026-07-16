@@ -39,11 +39,10 @@ def build_metrics(run_dir: str | Path, out_dir: str | Path) -> Path:
     for r in records:
         bucket, fatal = taxonomy.bucket_error(r["run_error"])
         r["error_bucket"], r["error_fatal"] = bucket, fatal
-        # fmt is a per-product transcript-dialect key in evalkit's taxonomy; canonical
-        # Results have no transcript_path (see metrics/adapter.py), so annotate_trajectory
-        # takes its early "no transcript on disk" exit and sets trajectory=None regardless
-        # of fmt — this call is future-proofed for when a dialect is registered, not a guess.
-        annotate_trajectory(r, fmt="cctqa")
+        # This bot's transcript dialect matches evalkit's `alpha` detectors (greeting text +
+        # [mailinator-otp]/[widget:...] notes). The adapter renders the inline transcript to that
+        # dialect as transcript_text, so annotate_trajectory runs the real flow-stage detectors.
+        annotate_trajectory(r, fmt="alpha")
 
     m = compute_metrics(records)
 

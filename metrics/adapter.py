@@ -31,6 +31,27 @@ def _amount_raw(amount: dict | None) -> str:
     return f"{amount['currency']} {amount['value']}"
 
 
+# Role -> the transcript-line marker evalkit's `alpha` stage detectors are anchored on. The
+# canonical Result transcript ({role, note, text}) renders to `**🤖 BOT** [note]: text` lines, the
+# exact dialect the alpha regexes were mined from (this bot's greeting + [mailinator-otp] notes match
+# alpha), so the trajectory analysis works off the inline transcript with no file on disk.
+_ROLE_MARK = {"assistant": "🤖 BOT", "bot": "🤖 BOT", "customer": "🧑 CUSTOMER", "user": "🧑 CUSTOMER"}
+
+
+def render_transcript_md(transcript) -> str:
+    """Render an inline canonical transcript to the alpha markdown dialect the stage detectors read."""
+    lines = []
+    for t in transcript or []:
+        mark = _ROLE_MARK.get(str(t.get("role") or "").lower())
+        if not mark:
+            continue
+        note = t.get("note")
+        tag = f" [{note}]" if note else ""
+        text = str(t.get("text") or "").replace("\r", " ").replace("\n", " ")
+        lines.append(f"**{mark}**{tag}: {text}")
+    return "\n".join(lines)
+
+
 def result_to_record(result: dict) -> dict:
     """Map ONE canonical Result document to evalkit's normalized EvalRecord dict."""
     run = result["run"]
@@ -67,14 +88,13 @@ def result_to_record(result: dict) -> dict:
         "checks": checks,
         "run_error": harness.get("error"),
         "duration_s": run.get("duration_s"),
-        # Not tracked by the canonical Result schema (no turn counter field);
-        # evalkit's ops.turns aggregation already tolerates None ("not captured by this agent").
-        "turns": None,
-        # Canonical Results carry their transcript inline (result["transcript"]), not as a
-        # standalone file on disk; evalkit.trajectory.annotate_trajectory degrades to
-        # trajectory=None whenever transcript_path is falsy, so this is a safe, deliberate no-op
-        # rather than a per-product transcript-dialect registration (future work, see metrics/README.md).
+        # Turn count from the inline transcript (the canonical schema has no separate counter).
+        "turns": len(result.get("transcript") or []) or None,
+        # Canonical Results carry the transcript INLINE. Render it to the alpha markdown dialect and
+        # hand it over as transcript_text so evalkit.trajectory.annotate_trajectory can run the
+        # deterministic flow-stage detectors on it (no transcript file on disk needed).
         "transcript_path": None,
+        "transcript_text": render_transcript_md(result.get("transcript")),
         "contact_id": auth.get("contact_id"),
         "started": run.get("started"),
     }

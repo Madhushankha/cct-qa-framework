@@ -78,8 +78,9 @@ def test_result_to_record_maps_eligible_case():
     assert rec["contact_id"] == "c1"
     assert rec["duration_s"] == 12.5
     assert rec["started"] == "2026-07-14T00:00:00Z"
-    assert rec["turns"] is None
+    assert rec["turns"] == 1  # derived from the inline transcript (1 turn in the fixture)
     assert rec["transcript_path"] is None
+    assert "🧑 CUSTOMER" in rec["transcript_text"] and "hi" in rec["transcript_text"]
     assert len(rec["checks"]) == 1
     assert rec["checks"][0] == {"raw_name": "Eligibility status", "canonical": "eligibility_status",
                                  "passed": True}

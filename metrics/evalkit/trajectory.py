@@ -49,11 +49,15 @@ def _lis_length(seq):
 def annotate_trajectory(record, fmt):
     """Attach record['trajectory'] = {stages_hit, anomalies, intent_recognized, score}."""
     path = record.get("transcript_path")
-    if not path:
+    if path:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+    elif record.get("transcript_text"):
+        # canonical Results carry the transcript inline, already rendered to the detector dialect
+        text = record["transcript_text"]
+    else:
         record["trajectory"] = None
         return
-    with open(path, encoding="utf-8") as f:
-        text = f.read()
 
     # Strip file-header metadata: harness error lines can echo bot text (e.g. the
     # post-chat survey prompt), which would corrupt stage detection and ordering.
