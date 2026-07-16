@@ -328,8 +328,37 @@ def pin_trace_ecs(env, pnr_id: str, s3_key: str, *, correlation_id: str = "cctqa
     return "inserted-ecs"
 
 
+def extract_verdict(body: str, code: int) -> dict:
+    """Parse a by-pnr determination body into {status_code, eligible, amount, system_code, reason,
+    raw}. Surfaces the REAL verdict — whether ELIGIBLE or a negative one (NOT_ELIGIBLE /
+    NO_DETERMINATION / PENDING) — by picking the passengerEligibility with the case's own systemCode
+    (a non-`-NA-` code), preferring an ELIGIBLE one. The old code only read ELIGIBLE, so every
+    negative scenario came back systemCode=none / amount=None / no reason and failed its checkpoints
+    even though the pinned determination was correct."""
+    out = {"status_code": code, "eligible": False, "amount": None, "system_code": None,
+           "reason": None, "raw": body[:400]}
+    try:
+        d = json.loads(body)
+    except Exception:
+        return out
+    best = None  # (priority, pe, status); prefer ELIGIBLE(2) > real negative verdict(1) > NA(0)
+    for c in d.get("compensationEligibility", []):
+        for pe in c.get("passengerEligibility", []):
+            status = pe.get("eligibilityStatus") or ""
+            sc = pe.get("systemCode") or ""
+            prio = 2 if status == "ELIGIBLE" else (1 if (sc and "-NA-" not in sc) else 0)
+            if best is None or prio > best[0]:
+                best = (prio, pe, status)
+    if best and best[0] > 0:
+        _prio, pe, status = best
+        cd = pe.get("compensationDetails") or {}
+        out.update(eligible=(status == "ELIGIBLE"), amount=cd.get("amount"),
+                   system_code=pe.get("systemCode"), reason=pe.get("reason"))
+    return out
+
+
 def verify_by_pnr(env, pnr_id: str, *, timeout: int = 20) -> dict:
-    """GET the DDS by-pnr endpoint the bot uses; return {status_code, eligible, amount, system_code, raw}."""
+    """GET the DDS by-pnr endpoint the bot uses; return the extracted verdict (see extract_verdict)."""
     import urllib.request  # lazy
     from core.secrets import resolve_secret
 
@@ -340,17 +369,7 @@ def verify_by_pnr(env, pnr_id: str, *, timeout: int = 20) -> dict:
     with urllib.request.urlopen(req, timeout=timeout) as r:
         body = r.read().decode("utf-8")
         code = r.getcode()
-    out = {"status_code": code, "eligible": False, "amount": None, "system_code": None, "raw": body[:400]}
-    try:
-        d = json.loads(body)
-        for c in d.get("compensationEligibility", []):
-            for pe in c.get("passengerEligibility", []):
-                if pe.get("eligibilityStatus") == "ELIGIBLE":
-                    cd = pe.get("compensationDetails") or {}
-                    out.update(eligible=True, amount=cd.get("amount"), system_code=pe.get("systemCode"))
-    except Exception:
-        pass
-    return out
+    return extract_verdict(body, code)
 
 
 def _default_expiry(date: str) -> str:
