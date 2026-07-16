@@ -12,3 +12,6 @@ otp:
   code: "123456"
 seed_targets:
   kafka_topic: emh-int.ALTEA-PNRDATA-INT
+  aurora_secret: "/int-cac1/ac-cct-trip-tracer-rds-cluster-int-cac1/db-credentials"
+  aurora_host: ac-cct-trip-tracer-rds-cluster-int-cac1-instance1.czy2ye8u22qy.ca-central-1.rds.amazonaws.com
+  rule_engine_secret: "/intca1/ac-cct-rule-engine-int-cac1-cluster/db-credentials"

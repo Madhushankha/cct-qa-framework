@@ -10,6 +10,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
+live = ["boto3>=1.28", "psycopg2-binary>=2.9"]  # P2 live seed verification against Aurora/DDS
 
 [project.scripts]
 cctqa = "core.cli:main"
