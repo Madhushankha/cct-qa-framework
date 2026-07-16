@@ -120,6 +120,10 @@ def main(argv: list[str] | None = None) -> int:
                                  help="output dir (default: <run_dir>/quality)")
     quality_parser.add_argument("--llm", action="store_true",
                                  help="enable the optional Bedrock LLM judge (default: deterministic only)")
+    run_parser = sub.add_parser("run")
+    # Forward everything after `run` as-is to runner.cli.main (P3), which owns its own
+    # <product> <env> <feed> / --n / --conc argument parsing.
+    run_parser.add_argument("run_args", nargs=argparse.REMAINDER)
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -142,6 +146,9 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_jira(args.run_dir, args.file, args.limit, args.out_file)
         if args.cmd == "quality":
             return _cmd_quality(args.run_dir, args.out_dir, args.llm)
+        if args.cmd == "run":
+            from runner.cli import main as runner_main
+            return runner_main(args.run_args)
         parser.print_usage()
         return 2
     except SystemExit as exc:  # a subcommand's own exit (e.g. no results found)

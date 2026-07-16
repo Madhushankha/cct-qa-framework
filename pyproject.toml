@@ -10,7 +10,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
-live = ["boto3>=1.28", "psycopg2-binary>=2.9"]  # P2 live seed verification against Aurora/DDS
+live = ["boto3>=1.28", "psycopg2-binary>=2.9", "websocket-client>=1.6"]  # P2 seed verify + P3 live chatbot runner
 
 [project.scripts]
 cctqa = "core.cli:main"
