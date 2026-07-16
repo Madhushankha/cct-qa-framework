@@ -58,3 +58,17 @@ def test_render_ticket_unique(tmp_path):
     t2 = json.loads((d2 / "02_ticket.json").read_text(encoding="utf-8"))
     assert t1["processedTicket"]["primaryDocumentNumber"] != \
         t2["processedTicket"]["primaryDocumentNumber"]
+
+
+def test_render_rewrites_flight_uniquely(tmp_path):
+    d = render_case(BASE, tmp_path, _case(), contact_email="x@m.com",
+                    flight_date="2026-07-10", index=1, flight_number=8042)
+    fdm = (d / "04_fdm_delay_leg1.xml").read_text(encoding="utf-8")
+    assert "<fnNumber>8042</fnNumber>" in fdm and "<fnNumber>8002</fnNumber>" not in fdm
+    assert "ACA8042" in fdm and "ACA8002" not in fdm
+    # ticket number (contains the substring '8002') must NOT be corrupted by the flight rewrite
+    tkt = (d / "02_ticket.json").read_text(encoding="utf-8")
+    assert "0142000800200" not in tkt  # docnum was rewritten to a run-unique value
+    import json as _j
+    meta = _j.loads((d / "meta.json").read_text(encoding="utf-8"))
+    assert meta["flight"] == 8042

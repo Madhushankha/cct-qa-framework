@@ -124,7 +124,7 @@ def _templated_family(uc, templates: set) -> str | None:
 
 
 def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
-                        clone_dir: str, verify: bool) -> dict:
+                        clone_dir: str, verify: bool, flight_number: int = 8002) -> dict:
     """Pin DDS + (optionally) verify one already-published case. Independent per pnr_id, so the
     whole set can run concurrently. Returns the case's mapping/gate record."""
     from seed import dds_pin
@@ -136,7 +136,7 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
     o, dst = (c.seed.route.split("-") + ["", ""])[:2]
     fam = _dds_family(c) or "APPR_CAD_400"
     res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
-                           flight_number=8002, origin=o, destination=dst, date=today,
+                           flight_number=flight_number, origin=o, destination=dst, date=today,
                            passenger_id=f"{pnr_id}-PT-1", family=fam, timestamp=ts)
     line = f"  [ok] {c.id} {loc} dds={res['pin']}"
     gate = "seeded"
@@ -190,13 +190,15 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     print(f"[seed-all] {product}.{env}.{feed} contact={contact} flight_date={flight_date}")
     print(f"[seed-all] seedable={len(seedable)} skipped={len(skipped)} -> {clone_dir}", flush=True)
 
-    by_loc, locs = {}, []
+    by_loc, flight_of, locs = {}, {}, []
     for i, c in enumerate(seedable):
+        flt = 8000 + (i + 1)  # unique per case so each FDM leg_id is distinct
         d = render.render_case(base_dir, clone_dir, c, contact_email=contact,
-                               flight_date=flight_date, index=docnum_base + i)
+                               flight_date=flight_date, index=docnum_base + i, flight_number=flt)
         by_loc[c.seed.pnr] = c
+        flight_of[c.seed.pnr] = flt
         locs.append(c.seed.pnr)
-        print(f"  [render] {c.id} -> {c.seed.pnr} {c.seed.passenger} {c.seed.route}")
+        print(f"  [render] {c.id} -> {c.seed.pnr} {c.seed.passenger} {c.seed.route} AC{flt}")
 
     print(f"[seed-all] Kafka-injecting {len(locs)} PNR(s) ...", flush=True)
     kafka_seed.seed(e, locs, fixtures_dir=clone_dir)
@@ -206,7 +208,8 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         mapping = list(pool.map(
             lambda c: _pin_and_verify_one(e, c, flight_date=flight_date, today=today, ts=ts,
-                                          contact=contact, clone_dir=clone_dir, verify=verify),
+                                          contact=contact, clone_dir=clone_dir, verify=verify,
+                                          flight_number=flight_of[c.seed.pnr]),
             cases))
 
     ok = sum(1 for m in mapping if m.get("gate") in ("seeded", "all-pass"))

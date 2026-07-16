@@ -37,7 +37,7 @@ def _delay_for(case) -> int:
 
 
 def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: str,
-                index: int = 1) -> Path:
+                index: int = 1, flight_number: int | None = None) -> Path:
     """Render `case` into `out_root/<locator>/` from the base template at `base_dir`.
 
     Rewrites (source value read from the base `meta.json`):
@@ -65,6 +65,8 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
     new_first, new_sur = _split_passenger(case.seed.passenger)
     new_docnum = ac_docnum(index)
     new_delay = str(_delay_for(case))
+    src_flight = str(meta.get("flight") or "")
+    new_flight = str(flight_number) if flight_number else src_flight
 
     # route: "YYZ-LHR" -> ("YYZ", "LHR"); rewrite each airport code independently.
     src_o, src_d = (src_route.split("-") + ["", ""])[:2]
@@ -100,8 +102,21 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
         obj = json.loads(_retext(tf.read_text(encoding="utf-8")))
         (dst / tf.name).write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
 
+    def _reflight(text: str) -> str:
+        """Flight rewrite is XML-only (the FDM leg): a global 8002->NNNN would corrupt the ticket
+        number, which happens to contain '8002'. Rewrites fnNumber, callSign (ACA<flt>) and
+        registration (AC<flt>) so each case's leg_id (carrier#flight#origin#date) is unique."""
+        if not new_flight or new_flight == src_flight:
+            return text
+        text = text.replace(f"<fnNumber>{src_flight}</fnNumber>",
+                            f"<fnNumber>{new_flight}</fnNumber>")
+        text = text.replace(f"ACA{src_flight}", f"ACA{new_flight}")
+        text = text.replace(f"AC{src_flight}", f"AC{new_flight}")
+        return text
+
     for xf in sorted(base.glob("*.xml")):
-        (dst / xf.name).write_text(_retext(xf.read_text(encoding="utf-8")), encoding="utf-8")
+        (dst / xf.name).write_text(_reflight(_retext(xf.read_text(encoding="utf-8"))),
+                                   encoding="utf-8")
 
     new_meta = dict(meta)
     new_meta.update({
@@ -113,6 +128,7 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
         "first": new_first or meta.get("first"),
         "surname": new_sur or meta.get("surname"),
         "route": case.seed.route or src_route,
+        "flight": int(new_flight) if new_flight.isdigit() else meta.get("flight"),
         "email": contact_email,
         "system_code": case.system_code or case.seed.system_code,
         "rendered_from": src_loc,
