@@ -171,13 +171,27 @@ def _build_seed(pairs: dict, feed: Feed) -> tuple:
     return seed, third_party
 
 
+# systemCode class (FD-<REGIME>-<CLASS>-<n> / SoC-<REGIME>-<CLASS>-<n>) -> verdict, used to read the
+# verdict off the systemCode for the feeds whose gap doc carries no explicit `data-out` (nc,
+# seatchange, bookingchange, anc, baggage — only soc/fd datagrids set data-out directly).
+_CLASS_VERDICT = {"EL": "ELIGIBLE", "NE": "NOT_ELIGIBLE", "ND": "NO_DETERMINATION", "PE": "PENDING"}
+
+
+def _verdict_from_syscode(system_code: str) -> str:
+    parts = (system_code or "").upper().split("-")
+    return _CLASS_VERDICT.get(parts[2], "") if len(parts) > 2 else ""
+
+
 def _parse_card(attrs_raw: str, body: str, feed: Feed) -> UseCase:
     attrs = dict(_ATTR_RE.findall(attrs_raw))
     case_id = attrs.get("id", "")
-    regime = attrs.get("data-feat", "")
-    verdict = attrs.get("data-out", "")
+    # regime/category: FD/SoC use data-feat (APPR/EU/ASL); ancillaries use data-flow (seat/bag).
+    regime = attrs.get("data-feat", "") or attrs.get("data-flow", "")
 
     system_code = _text(_first(_SYSCODE_RE, body))
+    # verdict: explicit data-out when present (soc), else derived from the systemCode class so every
+    # feed's eligibility outcome (ELIGIBLE/NOT_ELIGIBLE/NO_DETERMINATION/PENDING) is read, not blank.
+    verdict = attrs.get("data-out", "") or _verdict_from_syscode(system_code)
     title = _text(_first(_TCNAME_RE, body))
 
     checkpoint_vector = []
