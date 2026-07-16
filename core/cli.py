@@ -74,6 +74,15 @@ def _cmd_jira(run_dir: str, file_flag: bool, limit: int | None, out_file: str | 
     return run_jira(run_dir, file=file_flag, limit=limit, out_file=out_file)
 
 
+def _cmd_quality(run_dir: str, out_dir: str | None, use_llm: bool) -> int:
+    from quality.build import build_quality
+
+    resolved_out = out_dir or str(Path(run_dir) / "quality")
+    build_quality(run_dir, resolved_out, use_llm=use_llm)
+    print(f"wrote quality to {resolved_out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cctqa")
     sub = parser.add_subparsers(dest="cmd")
@@ -105,6 +114,12 @@ def main(argv: list[str] | None = None) -> int:
                               help="cap how many defects to file (dry-run also caps the plan)")
     jira_parser.add_argument("--out", dest="out_file", default=None,
                               help="review HTML output path (default: <run_dir>/jira/review.html)")
+    quality_parser = sub.add_parser("quality")
+    quality_parser.add_argument("run_dir")
+    quality_parser.add_argument("--out", dest="out_dir", default=None,
+                                 help="output dir (default: <run_dir>/quality)")
+    quality_parser.add_argument("--llm", action="store_true",
+                                 help="enable the optional Bedrock LLM judge (default: deterministic only)")
     try:
         args = parser.parse_args(argv)
     except SystemExit as exc:  # argparse hard-exits on an invalid/unknown command
@@ -125,6 +140,8 @@ def main(argv: list[str] | None = None) -> int:
             return _cmd_analyze(args.run_dir, args.prev_dir, args.out_file)
         if args.cmd == "jira":
             return _cmd_jira(args.run_dir, args.file, args.limit, args.out_file)
+        if args.cmd == "quality":
+            return _cmd_quality(args.run_dir, args.out_dir, args.llm)
         parser.print_usage()
         return 2
     except SystemExit as exc:  # a subcommand's own exit (e.g. no results found)
