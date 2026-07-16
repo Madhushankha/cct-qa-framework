@@ -130,22 +130,6 @@ def _case_currency(uc) -> str:
     return _REGIME_CURRENCY.get(regime, "CAD")
 
 
-def _flight_days_ago(uc) -> int:
-    """Per-case flight date offset (days before today; NEGATIVE = future), read from the gap-doc
-    SCENARIO (the case title), compared to today — because the title is the source of truth for the
-    case's temporal state, not the verdict class:
-      - 'Pre-Travel'                    -> upcoming flight, not yet departed  -> +3 days (future)
-      - 'Pending | 72 Hours Not Elapsed'-> disruption <72h ago, still pending -> 1 day ago
-      - everything else (Travel Completed / No Travel / Not Eligible / ...)   -> 7 days ago,
-        comfortably inside the FD window (>72h past, <14 days)."""
-    t = (uc.title or "").lower()
-    if "pre-travel" in t or "pre travel" in t:
-        return -3
-    if "pending" in t or "72 hours not elapsed" in t or "72 hrs not elapsed" in t:
-        return 1
-    return 7
-
-
 def _case_delay(uc) -> int:
     """FDM delay minutes: parsed from the case title's delay band/hours when present, else the
     compensation tier (eligible cases), else 240 default — see seed.scenario.delay_minutes."""
