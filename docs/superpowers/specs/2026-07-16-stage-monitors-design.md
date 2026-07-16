@@ -140,6 +140,41 @@ Joins three sources — gap-doc catalog (expected), ledger (claimed), live re-ve
 - `cctqa audit --include chat` folds the latest run's chat StageReports into the audit report, so
   one page answers "is the data healthy?" and "is the bot conversation quality healthy?"
 
+## Component 6 — `seed/campaign.py` + `cctqa seed-campaign`: seed the full corpus
+
+**Goal:** seed every seedable gap-doc case (239 for FD today) onto a target env, each provably
+mapped to its `FD_TC_###` id, gate-verified, and ledgered. User-initiated (`cctqa seed-campaign
+<product> <env> fd`), staged (pilot batch first), resumable (skip cases already `HEALTHY` in the
+ledger).
+
+Prerequisite gaps this component closes:
+
+1. **Dataset join for all cases.** `catalog.parser.join_dataset` currently binds dataset rows only
+   to `seed_pending` cases; extend it to bind every case whose id matches a dataset row (the
+   `FD_ALL239_CRT_v15` dataset carries locator/passenger/route/ticket/status/systemCode/amount for
+   all 239). Cases keep `seed_pending` semantics only when no dataset row matches.
+2. **Cloner rewrites for passenger.** `seed.clone.clone_fixture` gains passenger-name rewrite
+   (surname + given name across 01_pnr / 02_ticket / FDM XML / meta) so each seeded PNR carries the
+   dataset's passenger, keeping the `passenger` and `name_uniqueness` checkpoints meaningful.
+   Route rewrite is NOT attempted (airport codes are entangled with FDM legs/timings); instead the
+   matcher (below) selects a source fixture and the case's *bound* route is updated in the ledger
+   entry to the fixture's actual route.
+3. **Source-fixture matcher.** For each case, pick the clone source by (regime, verdict/systemCode
+   family, structural flags: pax count / group / infant / multi-segment); prefer exact systemCode
+   family match, then same regime+verdict, else report the case as `UNSEEDABLE(no_source)` — never
+   silently seed a structurally wrong fixture.
+4. **DDS template families.** Harvest real determination JSONs from the env's by-pnr endpoint for
+   existing NE / ND / PENDING / EU / ASL / UK / MIXED fixtures, store them under
+   `data/dds-templates/<family>.json`, and register them in the env descriptor. A family with no
+   harvestable sample is reported `UNSEEDABLE(no_template)`.
+5. **Batching + ledger.** Seed in batches (default 25): clone all → one Kafka publish per batch →
+   settle → pin DDS → gate-verify each case → ledger entry with `case_id` = the gap-doc id.
+   Re-running the campaign skips ledgered `HEALTHY` cases, so it converges over multiple sessions.
+   Every batch ends by printing the running coverage tally (`HEALTHY x/239`).
+
+The campaign never invents data: anything it cannot seed faithfully lands in the final report as
+`UNSEEDABLE` with a machine-readable reason, feeding the audit's `MISSING` bucket honestly.
+
 ## Testing (all offline, repo convention — no AWS in CI)
 
 - **Gate:** each `PhaseCheck` with faked sources — ≥1 pass and ≥1 fail case each; `GateFailure`
