@@ -1,0 +1,49 @@
+id: nc
+label: Name Correction
+gap_doc: data/gap-docs/nc/Name_Correction_Miro_Gap_Analysis.html
+# NC is an UPDATE feed: a booking-only CREATE (pnr + ticket, no FDM/DDS) establishes the parent
+# passenger row, then a LIVE name-change UPDATE event (at
+# /travelers/{n}/names/{n}/(first|last)Name) carries the old->new name, RPH, and channel/op_carrier
+# routing. A bare UPDATE on a fresh locator has no parent row for the change detector to FK to, so
+# the seed path needs a CREATE-prelude: build the CREATE with the name field reverted to its 'from'
+# value, wait for the passenger row, then send the UPDATE with the 'to' value (see
+# docs/superpowers/plans/2026-07-17-nc-seatchange-seed.md). The gap doc embeds no tabular PNR
+# dataset (no datagrid cards), so cases parse as seed_pending; the seed columns below are
+# placeholders for the generic seeder manifest.
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: Ticket
+  status: Window
+  system_code: "Correction type"
+  amount: Amount
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER who needs to correct the spelling of a name on your booking (not a
+    passenger transfer).
+    Booking: {first} {last}; PNR {pnr}. You want the name corrected to match your travel ID.
+  branches:
+    third_party: |
+      You are an ADULT correcting the name ON BEHALF OF another passenger {first} {last}.
+      If asked whether you are the passenger, choose "filing on behalf of someone else".
+judge:
+  # NC has no DDS/compensation determination; the "verdict" is whether the correction was applied.
+  verdict_enum: [CORRECTED, DOCS_REQUIRED, NOT_ELIGIBLE, LIVE_AGENT, NO_DETERMINATION, UNKNOWN]
+  match_on: [status]
+checkpoints:
+  auditor: nc
+  areas:
+    - trip_active
+    - passenger
+    - name_uniqueness
+    - eligibility_window
+    - previous_correction_check
+    - yp_um_aeroplan_check
+    - doc_requirement_check
+    - name_change_event
+    - eds_pnr_output
+    - eds_contact_email

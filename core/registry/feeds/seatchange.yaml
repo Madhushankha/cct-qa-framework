@@ -1,0 +1,48 @@
+id: seatchange
+label: Seat Change
+gap_doc: data/gap-docs/seatchange/Seat_Change_Miro_Gap_Analysis.html
+# SEATCHANGE is an UPDATE feed: an eligible-booking CREATE (pnr + ticket, no FDM/DDS) establishes
+# the parent journey row, then a LIVE seating UPDATE event (products/{n} subType=SEATING) carries
+# bookingSource, the window (NON_VOID), and the eligible flag. A bare UPDATE on a fresh locator has
+# no parent row for the change detector to FK to, so the seed path needs a CREATE-prelude: build the
+# CREATE with the seat field reverted to its 'from' value, wait for the journey row, then send the
+# UPDATE with the 'to' value (see docs/superpowers/plans/2026-07-17-nc-seatchange-seed.md). The gap
+# doc embeds no tabular PNR dataset (no datagrid cards), so cases parse as seed_pending; the seed
+# columns below are placeholders for the generic seeder manifest.
+columns:
+  pnr: PNR
+  pnr_id: pnrId
+  passenger: "Passenger (unique)"
+  route: Flight
+  ticket: Ticket
+  status: Eligibility
+  system_code: "Change type"
+  amount: "Fee amount"
+  currency: Cur
+  flags: Flags
+persona:
+  default: |
+    You are a CUSTOMER who wants to change or add a seat on an upcoming flight.
+    Booking: {first} {last}; PNR {pnr}. You want to select a different seat, paid or free.
+  branches:
+    third_party: |
+      You are an ADULT changing the seat ON BEHALF OF another passenger {first} {last}.
+      If asked whether you are the passenger, choose "filing on behalf of someone else".
+judge:
+  # SEATCHANGE has no DDS/compensation determination; the "verdict" is the outcome of the seat
+  # selection flow.
+  verdict_enum: [SEAT_CHANGED, PAYMENT_REQUIRED, DECLINED, LIVE_AGENT, NO_DETERMINATION, UNKNOWN]
+  match_on: [status]
+checkpoints:
+  auditor: seatchange
+  areas:
+    - trip_active
+    - passenger
+    - journey_selection
+    - eligibility_checkin_group
+    - seat_map_selection
+    - fee_alert
+    - payment_confirmation
+    - seating_change_event
+    - eds_pnr_output
+    - eds_contact_email
