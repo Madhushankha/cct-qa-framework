@@ -212,7 +212,7 @@ def _testdata(feed: str, product: str, env: str, latest_only: bool = True) -> li
                 "passenger": f"{meta.get('first','')} {meta.get('surname','')}".strip(),
                 "system_code": meta.get("system_code"), "flight_date": meta.get("date"),
                 "created_date": dt.strftime("%Y-%m-%d"), "created_time": dt.strftime("%H:%M:%S"),
-                "buffer": False,
+                "set": d.name, "buffer": False,
             })
     seen: set = set()
     for r in rows:
@@ -926,14 +926,16 @@ function drawTD(){
   ||'<tr><td colspan=9 class=mut>No matching test data.</td></tr>';
 }
 async function renderExec(m){
- const d=await jget('/api/testdata?'+q());
- const sets=[...new Set(d.map(r=>r.set))];
- m.innerHTML=`<div class=bar>Run the bot against a seeded set — validates data belongs to ${S.env}/${S.feed}.
-   <span style=margin-left:auto></span>
-   <select id=exSet>${sets.map(s=>`<option>${s}</option>`).join('')||'<option>— seed data first —</option>'}</select>
-   <label class=mut><input type=checkbox id=exPipe checked> + metrics/analysis</label>
+ const d=await jget(`/api/testdata?product=${S.product}&env=${S.env}&feed=${S.feed}&latest=0`);
+ const cnt={};d.forEach(r=>{if(r.set)cnt[r.set]=(cnt[r.set]||0)+1});
+ const sets=Object.keys(cnt).sort().reverse();
+ m.innerHTML=`<div class=hint>▶ <b>Execution</b> drives the live "Ask AC" bot against a seeded data set: it opens a chat per test case, plays the customer, fetches the OTP, lets the bot reach a determination, then a judge scores actual vs expected and writes the evidence + result. Optionally chains metrics + analysis.</div>
+  <div class=bar>Seeded data set:
+   <select id=exSet>${sets.map(s=>`<option value="${s}">${s} — ${cnt[s]} case(s)</option>`).join('')||'<option value="">— no data yet, seed from Test Cases first —</option>'}</select>
+   <label class=mut><input type=checkbox id=exPipe checked> run metrics + analysis after</label>
    <button class=act onclick=doRun()>Run ▶</button></div>
-   <div id=log style="display:none"></div>`;
+  <div class=mut style=margin:-6px 0 10px>Before running it validates the data belongs to the selected <b>${S.env}</b> / <b>${S.feed}</b>. Results appear in <b>Reports</b> and <b>Analytics</b>.</div>
+  <div id=log style="display:none"></div>`;
 }
 async function doRun(){
  const set=$('#exSet').value;if(!set||set.startsWith('—')){alert('Seed data first');return}
