@@ -160,7 +160,11 @@ def _executed_case_status(feed, product, env) -> dict:
 
 
 # ── created test data ─────────────────────────────────────────────────────────
-def _testdata(feed: str, product: str, env: str) -> list:
+def _testdata(feed: str, product: str, env: str, latest_only: bool = True) -> list:
+    """Created test-data records for a cell. Each re-seed mints a NEW PNR, so the same test case
+    accumulates many records over time — only the most recent per case is 'Available'; earlier PNRs
+    are 'Superseded' (their trip rows are stale). `latest_only` (default) returns just the current
+    record per case so the list stays accurate as you seed more; pass latest_only=false to see history."""
     rows = []
     prefix = f"{feed}_{product}_{env}_"
     if not SEED_ROOT.is_dir():
@@ -180,8 +184,17 @@ def _testdata(feed: str, product: str, env: str) -> list:
                 "passenger": f"{meta.get('first','')} {meta.get('surname','')}".strip(),
                 "system_code": meta.get("system_code"), "date": meta.get("date"),
                 "created_utc": datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-                "set": d.name, "status": "Available",
+                "set": d.name, "_ts": ts,
             })
+    # newest-first already; the FIRST time we see a case_id it's the current record, the rest superseded
+    seen: set = set()
+    for r in rows:
+        cur = r["case_id"] not in seen
+        seen.add(r["case_id"])
+        r["status"] = "Available" if cur else "Superseded"
+        del r["_ts"]
+    if latest_only:
+        rows = [r for r in rows if r["status"] == "Available"]
     return rows
 
 
@@ -388,13 +401,25 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/dashboard":
             return self._send(200, _dashboard(q.get("product", "bravo"), q.get("env", "int"), q.get("feed", "fd")))
         if u.path == "/api/testdata":
-            return self._send(200, _testdata(q.get("feed", "fd"), q.get("product", "bravo"), q.get("env", "int")))
+            return self._send(200, _testdata(q.get("feed", "fd"), q.get("product", "bravo"),
+                                             q.get("env", "int"), q.get("latest", "1") != "0"))
         if u.path == "/api/reports":
             return self._send(200, _report_runs(q.get("feed", "fd")))
         if u.path == "/api/runcases":
             return self._send(200, _run_cases(q.get("run", "")))
         if u.path == "/api/analytics":
             return self._send(200, _analytics(q.get("run", "")))
+        if u.path == "/gapdoc":
+            # serve the flow's UAT gap-doc HTML so the browser can jump to a case anchor (#FD_TC_001)
+            # and show the complete, styled card content the UAT doc defines.
+            from core.registry import resolve
+            try:
+                fd = resolve(q.get("product", "bravo"), q.get("env", "int"), q.get("feed", "fd")).feed
+                doc = fd.gap_doc or (fd.gap_docs or [None])[0]
+                p = (ROOT / doc) if not Path(doc).is_absolute() else Path(doc)
+                return self._send(200, p.read_bytes(), "text/html; charset=utf-8")
+            except Exception as exc:  # noqa: BLE001
+                return self._send(404, {"error": f"gap doc not found: {exc}"})
         if u.path == "/api/job":
             return self._send(200, _job(q.get("id", ""), None))
         if u.path.startswith("/r/"):
@@ -627,7 +652,7 @@ function drawCases(){
  $('#selInfo').textContent=`${S.sel.size} selected · ${rows.length} shown · ${S.cat.length} total`;
  $('#ctab').innerHTML=`<tr><th></th><th>Test Case</th><th>Scenario (UAT)</th><th>Expected</th><th>systemCode</th><th>Amount</th><th>Data</th><th>Last Run</th><th></th></tr>`+
   rows.map((c,i)=>`<tr><td><input type=checkbox ${S.sel.has(c.id)?'checked':''} onchange=tog('${c.id}',this.checked)></td>
-   <td><b>${c.id}</b>${c.third_party?' 👤':''}</td>
+   <td><a href="/gapdoc?${q()}#${c.id}" target=_blank title="Open full UAT gap-doc card" style=color:#f87171;font-weight:700;text-decoration:none>${c.id}</a>${c.third_party?' 👤':''}</td>
    <td style=max-width:320px>${esc(c.name)}</td>
    <td><b>${c.status}</b></td><td class=mut style=font-size:11px>${c.system_code}</td>
    <td>${c.amount||'—'}</td>
@@ -652,6 +677,7 @@ function det(id,i){
    ${c.detail?`<div style=margin-bottom:8px><span class=mut>UAT gap-doc spec:</span><br>${esc(c.detail)}</div>`:''}
    ${c.intent?`<div style=margin-bottom:8px><span class=mut>Customer intent:</span> ${esc(c.intent)}</div>`:''}
    ${tr?`<div><span class=mut>Expected conversation:</span>${tr}</div>`:''}
+   <div style=margin-top:8px><a href="/gapdoc?${q()}#${c.id}" target=_blank><button class=act>Open full UAT gap-doc card ↗</button></a></div>
  </div>`;
 }
 function tog(id,on){on?S.sel.add(id):S.sel.delete(id);drawCases()}
@@ -672,12 +698,16 @@ async function doSeed(ids){
  poll(r.job,lg,()=>{drawCases();renderCases($('#main'))});
 }
 async function renderData(m){
- const d=await jget('/api/testdata?'+q());
- m.innerHTML=`<div class=bar><b>${d.length}</b> test-data records — ${S.feed}/${S.product}/${S.env}</div>
+ const latest=S.tdAll?'0':'1';
+ const d=await jget('/api/testdata?'+q()+'&latest='+latest);
+ m.innerHTML=`<div class=bar><b>${d.length}</b> test-data records — ${S.feed}/${S.product}/${S.env}
+   <span style=margin-left:auto></span>
+   <label class=mut><input type=checkbox ${S.tdAll?'checked':''} onchange="S.tdAll=this.checked;render()"> Show superseded history</label></div>
+  <div class=mut style=margin:-6px 0 10px>Each re-seed mints a fresh PNR; only the latest per test case is <b>Available</b>${S.tdAll?' — older ones are Superseded (stale trip data)':''}.</div>
   <table><tr><th>Data ID (PNR)</th><th>Test Case</th><th>Passenger</th><th>systemCode</th><th>Flight date</th><th>Created (UTC)</th><th>Status</th><th>Set</th></tr>
   ${d.map(r=>`<tr><td><b>${r.data_id||''}</b></td><td>${r.case_id||''}</td><td>${r.passenger}</td>
    <td class=mut style=font-size:11px>${r.system_code||''}</td><td>${r.date||''}</td><td>${r.created_utc}</td>
-   <td><span class="pill Seeded">${r.status}</span></td><td class=mut style=font-size:11px>${r.set}</td></tr>`).join('')}</table>`;
+   <td><span class="pill ${r.status=='Available'?'Seeded':'Not'}">${r.status}</span></td><td class=mut style=font-size:11px>${r.set}</td></tr>`).join('')}</table>`;
 }
 async function renderExec(m){
  const d=await jget('/api/testdata?'+q());
