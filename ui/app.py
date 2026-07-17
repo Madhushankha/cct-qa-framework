@@ -293,6 +293,95 @@ def _analytics(run_rel: str) -> dict:
     return out
 
 
+_SEV_BY_DECISION = {"ESCALATED": "Major", "NO_DETERMINATION": "Major", "PENDING": "Minor",
+                    "UNKNOWN": "Major"}
+
+
+def _defect_category(result: dict, g: dict) -> str:
+    """Sort a failing case into: environment (infra/outage — not a defect), data (OUR seed/data to
+    fix), or bot (a real product defect to file). Mirrors the reference split of Bot-Defect vs
+    Data-Seeding vs Environment tickets."""
+    grade = g.get("grade", "")
+    if grade in ("Environment ERROR", "Harness FAIL"):
+        return "environment"
+    txt = " ".join(str(t.get("text", "")).lower() for t in result.get("transcript") or [])
+    if "couldn't find a booking" in txt or "could not find a booking" in txt \
+            or "couldn't find your booking" in txt:
+        return "data"  # the booking didn't cascade / wasn't found — OUR seeding side to fix
+    # everything else that failed is bot behaviour: the DDS determination is seeded correct (verified
+    # 239/239 against the UAT doc), so a wrong bot outcome (escalated / wrong amount / etc.) is a
+    # product defect. Only an explicit "booking not found" points back at seeding.
+    return "bot"
+
+
+def _defects(run_rel: str) -> dict:
+    run = (ROOT / run_rel).resolve()
+    if not str(run).startswith(str(RESULTS_ROOT.resolve())) or not run.is_dir():
+        return {"error": "run not found"}
+    from analysis.grade import grade as _grade
+    buckets: dict = {"bot": [], "data": [], "environment": []}
+    for res in sorted(run.glob("*.result.json")):
+        try:
+            d = json.loads(res.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if d["verdict"].get("matches_expected"):
+            continue  # only failures become tickets
+        g = _grade(d)
+        cat = _defect_category(d, g)
+        case, verdict, seed = d["case"], d["verdict"], d.get("seed") or {}
+        exp_amt = case.get("expected_amount") or {}
+        cid = case["test_case"]
+        findings = "; ".join(f.get("message", "") for f in g.get("findings", [])) or \
+            f"expected {case['expected_status']}, bot returned {verdict['decision']}"
+        buckets[cat].append({
+            "id": cid, "flow": d["run"]["feed"], "severity": _SEV_BY_DECISION.get(verdict["decision"], "Minor"),
+            "pnr": case.get("pnr"), "contact_id": (d.get("auth") or {}).get("contact_id"),
+            "expected": f"{case['expected_status']} · {case.get('expected_system_code','')}"
+                        + (f" · {exp_amt.get('currency','')} {exp_amt.get('value','')}" if exp_amt else ""),
+            "actual": verdict["decision"], "root_cause": findings, "grade": g["grade"],
+            "reasoning": (verdict.get("reasoning") or "")[:300],
+            "evidence": f"{run_rel}/{cid}.evidence.html" if (run / f"{cid}.evidence.html").exists() else None,
+        })
+    return {"name": run.name, "run": run_rel,
+            "counts": {k: len(v) for k, v in buckets.items()}, **buckets}
+
+
+def _defects_html(run_rel: str) -> str:
+    """A self-contained Jira-ready bug-tickets HTML for a run — Bot Defects / Data-Seeding / Environment,
+    each ticket with severity, PNR, ContactId, expected vs actual, and root cause (reference format)."""
+    import html as _h
+    d = _defects(run_rel)
+    if d.get("error"):
+        return f"<h1>{d['error']}</h1>"
+    secs = [("🐞 Bot Defects (file to Jira)", "bot", "#7f1d1d"),
+            ("🛠️ Data / Seeding Issues (our side to fix)", "data", "#78350f"),
+            ("🌐 Environment / Infra (not a defect)", "environment", "#334155")]
+    parts = [f"""<!doctype html><meta charset=utf-8><title>Bug Tickets — {_h.escape(d['name'])}</title>
+<style>body{{font-family:system-ui,Segoe UI,sans-serif;margin:24px;color:#1f2937}}
+h1{{margin:0 0 4px}}.sub{{color:#6b7280;margin-bottom:18px}}
+h2{{margin:22px 0 10px;padding:6px 10px;border-radius:6px;color:#fff}}
+.t{{border:1px solid #e5e7eb;border-left:4px solid #b91c1c;border-radius:8px;padding:12px 14px;margin:10px 0}}
+.t.data{{border-left-color:#b45309}}.t.environment{{border-left-color:#64748b}}
+.t h3{{margin:0 0 6px;font-size:15px}}.kv{{font-size:13px;color:#374151;margin:2px 0}}
+.kv b{{color:#111}}.sev{{float:right;font-size:11px;padding:2px 8px;border-radius:9px;background:#b91c1c;color:#fff}}
+.rc{{background:#f9fafb;border-radius:6px;padding:8px;margin-top:6px;font-size:13px}}</style>
+<h1>📋 Bug Tickets — {_h.escape(d['name'])}</h1>
+<div class=sub>Bot {d['counts']['bot']} · Data/Seeding {d['counts']['data']} · Environment {d['counts']['environment']}</div>"""]
+    for title, key, color in secs:
+        parts.append(f'<h2 style="background:{color}">{title} ({len(d[key])})</h2>')
+        if not d[key]:
+            parts.append('<div class=sub>None.</div>')
+        for t in d[key]:
+            parts.append(f"""<div class="t {key}"><span class=sev>{t['severity']}</span>
+<h3>{_h.escape(t['id'])} — {_h.escape(t['root_cause'][:90])}</h3>
+<div class=kv><b>Flow:</b> {t['flow']} &nbsp; <b>PNR:</b> {_h.escape(str(t['pnr']))} &nbsp; <b>Session (ContactId):</b> {_h.escape(str(t['contact_id']))}</div>
+<div class=kv><b>Expected:</b> {_h.escape(t['expected'])}</div>
+<div class=kv><b>Actual (bot):</b> {_h.escape(str(t['actual']))} &nbsp; <b>Grade:</b> {t['grade']}</div>
+<div class=rc><b>Root cause:</b> {_h.escape(t['root_cause'])}<br><b>Judge:</b> {_h.escape(t['reasoning'])}</div></div>""")
+    return "\n".join(parts)
+
+
 def _run_cases(run_rel: str) -> list:
     run = (ROOT / run_rel).resolve()
     out = []
@@ -436,6 +525,12 @@ class H(BaseHTTPRequestHandler):
             return self._send(200, _run_cases(q.get("run", "")))
         if u.path == "/api/analytics":
             return self._send(200, _analytics(q.get("run", "")))
+        if u.path == "/api/defects":
+            return self._send(200, _defects(q.get("run", "")))
+        if u.path == "/defects-html":
+            html = _defects_html(q.get("run", ""))
+            return self._serve_bytes(html.encode(), f"{Path(q.get('run','')).name}_bug_tickets.html",
+                                     "text/html; charset=utf-8")
         if u.path == "/gapdoc":
             # serve the flow's UAT gap-doc HTML so the browser can jump to a case anchor (#FD_TC_001)
             # and show the complete, styled card content the UAT doc defines.
@@ -594,7 +689,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
 <main id=main></main>
 <script>
 const S={product:'bravo',env:'int',type:'UAT',feed:'fd',cat:[],sel:new Set(),tab:'Dashboard',lastClone:null};
-const TABS=['Dashboard','Test Cases','Test Data','Execution','Reports','Analytics'];
+const TABS=['Dashboard','Test Cases','Test Data','Execution','Reports','Analytics','Defects'];
 const $=s=>document.querySelector(s), el=(h)=>{const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild};
 async function jget(u){return (await fetch(u)).json()}
 async function jpost(u,b){return (await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)})).json()}
@@ -621,6 +716,33 @@ async function render(){
  if(S.tab=='Execution')return renderExec(m);
  if(S.tab=='Reports')return renderReports(m);
  if(S.tab=='Analytics')return renderAnalytics(m);
+ if(S.tab=='Defects')return renderDefects(m);
+}
+async function renderDefects(m){
+ const runs=await jget('/api/reports?feed='+S.feed);
+ if(!runs.length){m.innerHTML='<div class=mut>No runs yet — execute a flow first.</div>';return}
+ m.innerHTML=`<div class=hint>🐞 Failures sorted into <b>Bot Defects</b> (file to Jira), <b>Data/Seeding Issues</b> (our side to fix), and <b>Environment</b> (not a defect) — with PNR, ContactId, expected vs actual, and root cause.</div>
+   <div class=bar>Run <select id=dfRun onchange=drawDefects()>${runs.map(r=>`<option value="${r.path}">${r.name} (${r.failed}✗)</option>`).join('')}</select>
+   <span style=margin-left:auto></span>
+   <button class=act onclick="window.open('/defects-html?run='+$('#dfRun').value)">Open Jira-ready doc ↗</button>
+   <button class="act gh" onclick="location.href='/defects-html?run='+$('#dfRun').value">Download bug-tickets HTML ⬇</button></div>
+   <div id=dfBody class=mut>Loading…</div>`;
+ drawDefects();
+}
+async function drawDefects(){
+ const d=await jget('/api/defects?run='+$('#dfRun').value);
+ if(d.error){$('#dfBody').innerHTML=`<div class=fail>${d.error}</div>`;return}
+ const secs=[['🐞 Bot Defects — file to Jira','bot','#f87171'],['🛠️ Data / Seeding Issues — our side','data','#fbbf24'],['🌐 Environment — not a defect','environment','#94a3b8']];
+ $('#dfBody').innerHTML=`<div class=cards>
+   <div class=card><b class=fail>${d.counts.bot}</b><span>Bot defects</span></div>
+   <div class=card><b style=color:#fbbf24>${d.counts.data}</b><span>Data/seeding</span></div>
+   <div class=card><b class=mut>${d.counts.environment}</b><span>Environment</span></div></div>`+
+  secs.map(([title,key,col])=>`<h3 style=color:${col}>${title} (${d[key].length})</h3>
+   ${d[key].length?`<table><tr><th>Case</th><th>Sev</th><th>PNR</th><th>ContactId</th><th>Expected</th><th>Actual</th><th>Root cause</th><th></th></tr>
+   ${d[key].map(t=>`<tr><td><b>${t.id}</b></td><td>${t.severity}</td><td>${t.pnr||''}</td>
+     <td class=mut style=font-size:10px>${t.contact_id||''}</td><td style=font-size:12px>${esc(t.expected)}</td>
+     <td>${t.actual}</td><td style=max-width:340px;font-size:12px>${esc(t.root_cause)}</td>
+     <td>${t.evidence?`<button class="act gh" onclick="window.open('/r/${t.evidence}')">Evidence</button>`:''}</td></tr>`).join('')}</table>`:'<div class=mut>None.</div>'}`).join('');
 }
 async function renderAnalytics(m){
  const runs=await jget('/api/reports?feed='+S.feed);
