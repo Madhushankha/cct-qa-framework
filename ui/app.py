@@ -534,9 +534,14 @@ main{padding:20px;max-width:1400px;margin:0 auto}
 .card{background:var(--pnl);border:1px solid var(--bd);border-radius:10px;padding:14px 18px;min-width:130px}
 .card b{font-size:26px;display:block}.card span{color:var(--mut);font-size:12px}
 table{border-collapse:collapse;width:100%;font-size:13px;background:var(--pnl);border-radius:8px;overflow:hidden}
-th,td{border-bottom:1px solid var(--bd);padding:7px 10px;text-align:left}th{background:#0f172a;position:sticky;top:0;font-size:12px}
+th,td{border-bottom:1px solid var(--bd);padding:8px 10px;text-align:left}th{background:#0f172a;position:sticky;top:0;font-size:12px}
+tbody tr:hover td,table tr:hover td{background:#243044}
 button.act{background:var(--ac);color:#fff;border:0;border-radius:6px;padding:7px 13px;cursor:pointer;font-size:13px}
-button.act:hover{filter:brightness(1.1)}button.gh{background:var(--bd)}button:disabled{opacity:.4;cursor:not-allowed}
+button.act:hover{filter:brightness(1.15)}button.gh{background:var(--bd)}button.gh:hover{background:#475569}
+button:disabled{opacity:.4;cursor:not-allowed}
+.idbtn{background:#1e293b;border:1px solid var(--ac);color:#fca5a5;font-weight:700;border-radius:6px;padding:4px 9px;cursor:pointer;font-size:12px}
+.idbtn:hover{background:var(--ac);color:#fff}
+.hint{background:#0f172a;border:1px solid var(--bd);border-left:3px solid var(--ac);border-radius:6px;padding:8px 12px;margin-bottom:12px;font-size:13px;color:var(--mut)}
 .pass{color:#4ade80}.fail{color:#f87171}.mut{color:var(--mut)}
 .pill{padding:1px 8px;border-radius:9px;font-size:11px}.pill.Seeded{background:#065f46}.pill.No{background:#7c2d12}
 .pill.Passed{background:#065f46}.pill.Failed{background:#7f1d1d}.pill.Not{background:#334155}
@@ -635,8 +640,9 @@ async function renderDash(m){
 async function renderCases(m){
  S.cat=await jget('/api/catalog?'+q());
  if(S.cat[0]&&S.cat[0].error){m.innerHTML=`<div class=fail>${S.cat[0].error}</div>`;return}
- m.innerHTML=`<div class=filt>
-   <input id=fId placeholder="Test case ID…" oninput=drawCases()>
+ m.innerHTML=`<div class=hint>💡 Click a <b>test-case ID</b> to see its full UAT gap-doc info. Tick cases and <b>Seed selected</b> to create test data, then run them from the <b>Execution</b> tab.</div>
+ <div class=filt>
+   <input id=fId placeholder="🔍 Search ID or scenario…" oninput=drawCases()>
    <select id=fStatus onchange=drawCases()><option value="">All verdicts</option>
      ${[...new Set(S.cat.map(c=>c.status))].map(s=>`<option>${s}</option>`).join('')}</select>
    <select id=fData onchange=drawCases()><option value="">All data</option><option>Seeded</option><option>No Data</option></select>
@@ -650,8 +656,8 @@ async function renderCases(m){
  drawCases();
 }
 function filtered(){
- const id=($('#fId').value||'').toLowerCase(),st=$('#fStatus').value,dt=$('#fData').value;
- return S.cat.filter(c=>(!id||c.id.toLowerCase().includes(id))&&(!st||c.status==st)&&(!dt||c.data_status==dt));
+ const kw=($('#fId').value||'').toLowerCase(),st=$('#fStatus').value,dt=$('#fData').value;
+ return S.cat.filter(c=>(!kw||c.id.toLowerCase().includes(kw)||(c.name||'').toLowerCase().includes(kw)||(c.detail||'').toLowerCase().includes(kw))&&(!st||c.status==st)&&(!dt||c.data_status==dt));
 }
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function drawCases(){
@@ -659,8 +665,8 @@ function drawCases(){
  $('#selInfo').textContent=`${S.sel.size} selected · ${rows.length} shown · ${S.cat.length} total`;
  $('#ctab').innerHTML=`<tr><th></th><th>Test Case</th><th>Scenario (UAT)</th><th>Expected</th><th>systemCode</th><th>Amount</th><th>Data</th><th>Last Run</th><th></th></tr>`+
   rows.map((c,i)=>`<tr><td><input type=checkbox ${S.sel.has(c.id)?'checked':''} onchange=tog('${c.id}',this.checked)></td>
-   <td><a href="javascript:void(0)" onclick="showInfo('${c.id}')" title="Show UAT gap-doc info" style=color:#f87171;font-weight:700;text-decoration:none>${c.id}</a>${c.third_party?' 👤':''}</td>
-   <td style=max-width:320px>${esc(c.name)}</td>
+   <td><button class=idbtn onclick="showInfo('${c.id}')" title="Show UAT gap-doc info">${c.id}</button>${c.third_party?' 👤':''}</td>
+   <td style=max-width:340px;cursor:pointer onclick="showInfo('${c.id}')">${esc(c.name)}</td>
    <td><b>${c.status}</b></td><td class=mut style=font-size:11px>${c.system_code}</td>
    <td>${c.amount||'—'}</td>
    <td><span class="pill ${c.data_status=='Seeded'?'Seeded':'No'}">${c.data_status}</span></td>
