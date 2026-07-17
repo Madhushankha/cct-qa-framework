@@ -1,0 +1,20 @@
+# ANC (Ancillaries — Seat / Bag Refund) seed manifest — SCAFFOLD, not yet wired into
+# seed/cli.py's run_seed_all (which still hardcodes feed="fd": base_dir, the DDS template-family
+# gate, the checkpoints auditor lookup, and the compensationEligibility-only canonicalizer). See
+# docs/superpowers/plans/2026-07-17-anc-seed.md.
+#
+# UNLIKE soc/bookingchange (which reuse FD's base_appr as-is), ANC has its OWN base dir: an ANC
+# message is pnr + ticket + EMD (03_emd_issue.json) + correlation (04_emd_correlation.json), NOT the
+# FD pnr+ticket+FDM trio. There is no disruption leg (no FDM XML), so ANC needs no CREATE-prelude.
+#
+# CAVEAT: seed/render.py's render_case only copies 01_pnr.json / 02_ticket*.json / *.xml — it does
+# NOT yet emit the 03_emd_issue.json / 04_emd_correlation.json EMD family. Rendering ANC through the
+# generic engine therefore needs a renderer extension (emit + rekey the EMD document family: EMD
+# docnum, status, RFISC, correlation segment/passenger ids). Until that lands this is scaffolding;
+# the offline-testable refund-DDS canonicalizer lives in seed/feeds/anc_refund.py.
+feed: anc
+base_dir: data/seed-templates/anc/base
+identity:
+  $locator:  "{{ $scenario_pnr }}"
+  $date:     "{{ $scenario_date }}"
+  $pnrId:    "{{ $locator }}-{{ $date }}"

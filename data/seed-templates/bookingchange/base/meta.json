@@ -1,0 +1,25 @@
+{
+  "locator": "FDAP36",
+  "pnr_id": "FDAP36-2026-06-13",
+  "ticket": "0142000800200",
+  "tickets": [
+    "0142000800200"
+  ],
+  "leg_id": "AC#8002#YYZ#2026-06-13",
+  "carrier": "AC",
+  "flight": 8002,
+  "route": "YYZ-LHR",
+  "date": "2026-06-13",
+  "surname": "OKONKWO",
+  "first": "MARA",
+  "pax": "ADT",
+  "party": [
+    "MARA OKONKWO (ADT)"
+  ],
+  "ssr": null,
+  "email": "l.xgklmx@gmail.com",
+  "fdm_spec": "240m/43 x1",
+  "_note": "Copied verbatim from data/fd-templates/base_appr/meta.json (see README.md in this dir). The identity fields above (locator/pnr_id/ticket/leg_id/carrier/flight/route/date/surname/first/email) are the ones seed.render.render_case actually string-rewrites and are feed-agnostic. FD's 'expected'/'covers_sits' keys were dropped here (bookingchange doesn't have a cash amount or FD-SIT coverage IDs) rather than left in with stale FD values. See README.md: this delay-leg FDM cascade is a placeholder -- INVOL/VOL scenarios likely need a cancelled-segment or no-disruption base instead.",
+  "expected": null,
+  "covers_sits": []
+}

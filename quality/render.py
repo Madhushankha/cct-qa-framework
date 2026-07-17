@@ -19,6 +19,8 @@ td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-al
 th { background: #0b3d6b; color: #fff; }
 .kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
 .kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
 code { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
 @media (prefers-color-scheme: dark) {
   body { background: #14181f; color: #dfe6ee; }
@@ -82,7 +84,7 @@ def render_quality(report: dict) -> str:
     return f"""<!doctype html>
 <html><head><meta charset="utf-8"><title>Quality — {_esc(test_case)}</title>{CSS}</head>
 <body>
-<h1>Response Quality — {_esc(test_case)}</h1>
+<h1>Response Quality — {_esc(test_case)} <a class="dl" download href="{_esc(test_case)}.quality.html">&#11015; download</a></h1>
 <p class="mono" style="color:#667">{_esc(scenario_id)}</p>
 <div>
 <span class="kpi"><b style="color:{_score_color(score)}">{score}</b>/100 quality score</span>

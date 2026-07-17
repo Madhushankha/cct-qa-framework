@@ -1,7 +1,8 @@
 """Build the quality package for a run: load every ``*.result.json`` in ``run_dir``,
 validate each against the canonical Result schema (P0), grade it for response QUALITY
 (deterministic + optional LLM judge), and write ``<test_case>.quality.html`` +
-``index.html`` into ``out_dir``.
+``quality-index.html`` into ``out_dir``. (``index.html`` belongs exclusively to the
+evidence Expected-vs-Actual report.)
 """
 from __future__ import annotations
 
@@ -30,4 +31,4 @@ def build_quality(run_dir: str | Path, out_dir: str | Path, use_llm: bool = Fals
         out_path = out_dir / f"{test_case}.quality.html"
         out_path.write_text(render_quality(report), encoding="utf-8")
 
-    (out_dir / "index.html").write_text(render_quality_index(reports), encoding="utf-8")
+    (out_dir / "quality-index.html").write_text(render_quality_index(reports), encoding="utf-8")

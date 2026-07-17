@@ -1,0 +1,152 @@
+{
+  "eventMetadata": {
+    "trigger": "DISRUPTION_DETECTION_SERVICE",
+    "timestamp": "2026-06-03T16:25:19.387Z"
+  },
+  "pnrIdentifier": {
+    "pnrId": "ZZTMPL-2000-01-01",
+    "pnr": "ZZTMPL"
+  },
+  "itineraryDetails": [
+    {
+      "bound": 1,
+      "isOAL": false,
+      "promisedItinerary": {
+        "origin": "YYZ",
+        "destination": "LHR",
+        "associatedSegments": [
+          {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "segmentStatus": "HK",
+            "departureDatetime": "2026-06-13T08:00:00.000Z",
+            "arrivalDatetime": "2026-06-13T11:00:00.000Z",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "marketingFlightNumber": 8002,
+            "marketingCarrierCode": "AC",
+            "operatingFlightNumber": 8002,
+            "operatingCarrierCode": "AC",
+            "flightId": "AC#8002#YYZ#2026-06-13"
+          }
+        ]
+      },
+      "actualItinerary": {
+        "origin": "YYZ",
+        "destination": "LHR",
+        "associatedSegments": [
+          {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "segmentStatus": "HK",
+            "departureDatetime": "2026-06-13T08:00:00.000Z",
+            "arrivalDatetime": "2026-06-13T11:00:00.000Z",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "marketingFlightNumber": 8002,
+            "marketingCarrierCode": "AC",
+            "operatingFlightNumber": 8002,
+            "operatingCarrierCode": "AC",
+            "flightId": "AC#8002#YYZ#2026-06-13"
+          }
+        ]
+      }
+    }
+  ],
+  "socFlightEligibility": [
+    {
+      "regime": "APPR",
+      "boundRph": 1,
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": 8002,
+      "departureAirport": "YYZ",
+      "arrivalAirport": "LHR",
+      "segmentStatus": "HK",
+      "disruptionType": "INVOLUNTARY",
+      "delayType": "OTHER",
+      "delayCode": "",
+      "disruptionReason": "",
+      "customerFriendlyDisruptionReason": "",
+      "delayMinutes": 0,
+      "delayCategory": "DELAY_LT_2_HOURS",
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "bookingClass": null,
+          "cabinClass": "Y",
+          "eligibilityStatus": "NO_DETERMINATION",
+          "systemCode": "SoC-APPR-ND-04",
+          "reason": "Data missing - 14 days",
+          "reasonEnglish": "Our assessment tool can't determine your entitlement. Please note that situations surrounding flight disruptions can be complex and have multiple causes. You may still submit your claim for review if you wish to continue, and an Air Canada representative will get back to you within 30 days.",
+          "reasonFrench": "",
+          "expiryDate": "",
+          "expenseCategories": []
+        }
+      ]
+    },
+    {
+      "regime": "EU",
+      "boundRph": 1,
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": 8002,
+      "departureAirport": "YYZ",
+      "arrivalAirport": "LHR",
+      "segmentStatus": "HK",
+      "disruptionType": "INVOLUNTARY",
+      "delayType": "OTHER",
+      "delayCode": "",
+      "disruptionReason": "",
+      "customerFriendlyDisruptionReason": "",
+      "delayMinutes": 0,
+      "delayCategory": "DELAY_LT_2_HOURS",
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "bookingClass": null,
+          "cabinClass": "Y",
+          "eligibilityStatus": "NOT_ELIGIBLE",
+          "systemCode": "SoC-EU-NE-06",
+          "reason": "Itinerary did not start in the UK or EU",
+          "reasonEnglish": "Our assessment tool has determined that you are not eligible to submit expenses because your itinerary did not start in the European Union.",
+          "reasonFrench": "",
+          "expiryDate": "",
+          "expenseCategories": []
+        }
+      ]
+    },
+    {
+      "regime": "ASL",
+      "boundRph": 1,
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": 8002,
+      "departureAirport": "YYZ",
+      "arrivalAirport": "LHR",
+      "segmentStatus": "HK",
+      "disruptionType": "INVOLUNTARY",
+      "delayType": "OTHER",
+      "delayCode": "",
+      "disruptionReason": "",
+      "customerFriendlyDisruptionReason": "",
+      "delayMinutes": 0,
+      "delayCategory": "DELAY_LT_2_HOURS",
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "bookingClass": null,
+          "cabinClass": "Y",
+          "eligibilityStatus": "NOT_ELIGIBLE",
+          "systemCode": "SoC-ASL-NE-06",
+          "reason": "Itinerary did not start or end in Israel",
+          "reasonEnglish": "",
+          "reasonFrench": "",
+          "expiryDate": "",
+          "expenseCategories": []
+        }
+      ]
+    }
+  ]
+}

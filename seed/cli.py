@@ -13,6 +13,7 @@ output dir so the runner can pick it up with `--fixtures <clone_dir> --only <loc
 from __future__ import annotations
 
 import argparse
+import dataclasses
 import datetime
 import json
 from pathlib import Path
@@ -121,6 +122,21 @@ def _seedable_verdict(uc) -> bool:
     return regime in _DISRUPTION_REGIMES and cls in _DISRUPTION_CLASSES
 
 
+def _pin_system_code(uc) -> str:
+    """The systemCode to PIN into DDS. The gap-doc code (uc.system_code) is authoritative for real FD
+    disruption verdicts (FD-APPR-EL-01, checked by the auditor). But EDGE-*/FD-PAY-* cases carry a
+    non-DDS label there (EDGE-ID-01) while their real disruption code lives in seed.system_code
+    (FD-APPR-EL-400) — pinning the label makes the bot read an unrecognizable determination and
+    escalate (FD_ED_TC_01). So fall back to seed.system_code when the gap-doc code isn't a valid
+    FD-<regime>-<class> disruption code."""
+    from seed.dds_pin import parse_system_code
+    gap = uc.system_code or ""
+    regime, cls = parse_system_code(gap)
+    if gap and regime in _DISRUPTION_REGIMES and cls in _DISRUPTION_CLASSES:
+        return gap
+    return uc.seed.system_code or gap
+
+
 def _case_currency(uc) -> str:
     amt = uc.seed.amount or {}
     if amt.get("currency"):
@@ -172,15 +188,19 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
             return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
         o, dst = (c.seed.route.split("-") + ["", ""])[:2]
         amt = (c.seed.amount or {}).get("value", 0) or 0
-        # Pin the GAP-DOC systemCode (uc.system_code) — that is what the checkpoint auditor expects
-        # (verify.py `want = uc.system_code`). The CRT dataset's amount-encoded code (seed.system_code,
-        # e.g. FD-APPR-EL-400) is only a fallback when the gap doc has none.
-        pin_sys = c.system_code or c.seed.system_code
+        # Pin the GAP-DOC systemCode for real FD verdicts (auditor expects verify.py `want =
+        # uc.system_code`); fall back to the amount-tier code for EDGE-*/FD-PAY-* label cases. See
+        # _pin_system_code.
+        pin_sys = _pin_system_code(c)
+        # expected verdict: the gap-doc/catalog status is authoritative over the systemCode class
+        # letter — a MIXED/DUP case reads ELIGIBLE via its most-generous leg even though its code
+        # says NE/ND (FD_TC_150/152). Empty falls back to the class letter inside canonicalize_verdict.
+        exp_status = (c.verdict or c.seed.status or "")
         res = dds_pin.pin_case(e, pnr_id=pnr_id, locator=loc, carrier="AC",
                                flight_number=flight_number, origin=o, destination=dst, date=today,
                                passenger_id=f"{pnr_id}-PT-1", family="APPR_CAD_400", timestamp=ts,
                                system_code=pin_sys, amount=amt, currency=_case_currency(c),
-                               delay_minutes=_case_delay(c))
+                               delay_minutes=_case_delay(c), status=exp_status)
         line = f"  [ok] {c.id} {loc} [{pin_sys}] dds={res['pin']}"
         gate = "seeded"
         if verify:
@@ -198,7 +218,8 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
 
 
 def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago: int = 7,
-                 verify: bool = True, limit: int | None = None, workers: int = 8) -> int:
+                 verify: bool = True, limit: int | None = None, workers: int = 8,
+                 only: list | None = None) -> int:
     """Seed the WHOLE gap-doc catalog: render each case from the framework base template with its
     own dataset 6-char locator + independent name (seed/render.py), then publish -> pin -> verify.
     Staged: only cases whose DDS family has a registered template are seeded; the rest are reported
@@ -223,8 +244,11 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     base_dir = "data/fd-templates/base_appr"
 
     cat = load_catalog(ctx.feed)
+    only_set = {x.strip().upper().replace("-", "_") for x in only} if only else None
     seedable, skipped = [], []
     for c in cat.cases:
+        if only_set is not None and c.id.upper().replace("-", "_") not in only_set:
+            continue  # focused seed: only the requested case ids
         if c.seed_pending or not c.seed.pnr:
             skipped.append((c.id, "no_data"))
         elif not _seedable_verdict(c):
@@ -237,9 +261,15 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     print(f"[seed-all] {product}.{env}.{feed} contact={contact} flight_date={flight_date}")
     print(f"[seed-all] seedable={len(seedable)} skipped={len(skipped)} -> {clone_dir}", flush=True)
 
-    from seed import scenario
+    from seed import identity, scenario
+    # mint a BRAND-NEW locator + independent first/last name for every case each run, so re-seeding
+    # never collides with a prior run's trip-tracer row (the stale-INACTIVE-row bug that made the bot
+    # report "couldn't find a booking"). The dataset still supplies the scenario; only identity is fresh.
+    used_pnr, used_name = set(), set()
     by_loc, flight_of, date_of, locs = {}, {}, {}, []
     for i, c in enumerate(seedable):
+        c = dataclasses.replace(c, seed=dataclasses.replace(
+            c.seed, pnr=identity.fresh_pnr(used_pnr), passenger=identity.fresh_name(used_name)))
         flt = 8000 + (i + 1)  # unique per case so each FDM leg_id is distinct
         fdate = scenario.flight_date_for(c, now)
         d = render.render_case(base_dir, clone_dir, c, contact_email=contact,

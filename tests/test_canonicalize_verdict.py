@@ -35,12 +35,17 @@ def test_appr_eligible():
                                          "expiryDate": "2026-09-01"}
 
 
-def test_not_eligible_zero_comp():
+def test_not_eligible_carries_disruption_no_comp():
+    """NE target: status/systemCode/reason set, NO compensationDetails, and the real disruption context
+    is kept at the regime level (delayMinutes/delayType) so the backend classifies it not_eligible
+    instead of manual_required — matches the set-5 shape the bot renders."""
     r = canonicalize_verdict(_fresh(), system_code="FD-APPR-NE-05", currency="CAD",
-                             expiry_date="2026-09-01")
+                             delay_minutes=240, expiry_date="2026-09-01")
     pe = _target_pe(r, "APPR")
     assert pe["eligibilityStatus"] == "NOT_ELIGIBLE" and pe["systemCode"] == "FD-APPR-NE-05"
-    assert pe["compensationDetails"]["amount"] == 0
+    assert "compensationDetails" not in pe
+    reg = next(c for c in r["compensationEligibility"] if c["regime"] == "APPR")
+    assert reg["delayMinutes"] == 240 and reg["delayType"] == "CONTROLLABLE"
 
 
 def test_no_determination():

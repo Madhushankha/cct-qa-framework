@@ -97,11 +97,51 @@ _CLASS_STATUS = {"EL": "ELIGIBLE", "NE": "NOT_ELIGIBLE", "ND": "NO_DETERMINATION
 # REGIME token in the systemCode -> the compensationEligibility.regime it targets. MIXED/DUP are
 # APPR-driven in the FD catalog, so their determination lands on the APPR regime entry.
 _REGIME_TARGET = {"APPR": "APPR", "EU": "EU", "UK": "EU", "ASL": "ASL", "MIXED": "APPR", "DUP": "APPR"}
+# compensation currency -> the compensationEligibility.regime that currency's leg belongs to. Used to
+# pick the ELIGIBLE leg of a MIXED/DUP itinerary: its systemCode regime defaults to APPR, but when the
+# eligible leg is the EU/UK (GBP/EUR) or ASL (ILS) one, the determination must land there, not on APPR.
+_CURRENCY_REGIME = {"CAD": "APPR", "EUR": "EU", "GBP": "EU", "ILS": "ASL"}
 _CLASS_REASON = {
     "NE": "Not eligible for compensation for this disruption.",
     "ND": "A determination could not be made for this disruption.",
     "PE": "Your claim is pending — the disruption is within the assessment window.",
 }
+
+
+def _load_reason_codes() -> dict:
+    """systemCode -> the rule-engine's specific determination reason text (e.g. FD-ASL-NE-01 ->
+    'Employee booking AC'). Mined from the reference DDS-RULE `*-reason.md` rules; the bot renders its
+    customer-friendly not-eligible message from THIS reason, so a generic reason makes it escalate."""
+    try:
+        return json.loads((Path(__file__).resolve().parent.parent / "data" / "fd_reason_codes.json")
+                          .read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001 — fall back to the class-generic reason if the map is absent
+        return {}
+
+
+_REASON_CODES = _load_reason_codes()
+
+
+def reason_for(system_code: str, cls: str) -> str:
+    """The determination reason to pin: the systemCode-specific text (FD-<reg>-NE-<n> -> its rule
+    reason) when known, else the class-generic fallback."""
+    return _REASON_CODES.get((system_code or "").upper()) or _CLASS_REASON.get(cls, "Not eligible.")
+
+
+def ne_disruption(reason: str) -> tuple:
+    """(delayType, disruptionReason, customerFriendlyDisruptionReason) for a NOT_ELIGIBLE case, derived
+    from its rule reason. The controllability MUST match the reason or the determination is incoherent
+    (a 'not eligible because it was uncontrollable weather' case pinned as CONTROLLABLE makes the
+    customer/persona dispute it — FD_TC_052). Weather/extraordinary/outside-control and safety cases are
+    NOT_CONTROLLABLE; employee/OAL/denied-boarding/threshold cases keep the real controllable delay."""
+    r = (reason or "").lower()
+    if "safety" in r:
+        return ("NOT_CONTROLLABLE", "SAFETY",
+                "Your flight was disrupted for reasons required for safety.")
+    if "control" in r or "extraordinary" in r or "weather" in r:
+        return ("NOT_CONTROLLABLE", "WEATHER",
+                "Your flight was disrupted by circumstances outside the carrier's control.")
+    return ("CONTROLLABLE", "MECHANICAL", "Your flight was disrupted.")
 
 
 def _delay_band(delay_minutes: int) -> str:
@@ -122,7 +162,7 @@ def parse_system_code(system_code: str) -> tuple[str, str]:
 
 def canonicalize_verdict(response: dict, *, system_code: str, amount: float = 0.0,
                          currency: str = "CAD", delay_minutes: int = 240,
-                         expiry_date: str, delay_code: str = "64") -> dict:
+                         expiry_date: str, delay_code: str = "64", status: str = "") -> dict:
     """Rewrite a determination in place to the bot's assess_eligibility shape for ANY FD verdict —
     ELIGIBLE / NOT_ELIGIBLE / NO_DETERMINATION / PENDING — driven by the case's `system_code`
     (`FD-<REGIME>-<CLASS>-<n>`). The target regime carries the case's exact systemCode + status;
@@ -130,29 +170,53 @@ def canonicalize_verdict(response: dict, *, system_code: str, amount: float = 0.
     the itinerary is set by rewrite_determination, the verdict by this function.
 
     For eligible cases (EL/DB) the target regime gets compensationDetails{amount,currency,delayBand,
-    expiryDate}; NE/ND/PE get a zero compensation + a class-appropriate reason."""
+    expiryDate}; NE/ND/PE get a zero compensation + a class-appropriate reason.
+
+    `status`: the case's EXPECTED verdict, when known. It overrides the systemCode class letter —
+    essential for MIXED/DUP cases, whose class letter describes only ONE leg (FD-MIXED-NE-01 = the
+    APPR leg is not eligible) while the customer is ELIGIBLE via the most-generous OTHER leg. Trusting
+    the class letter alone wrongly seeds those as not-eligible (FD_TC_150/152)."""
     regime_tok, cls = parse_system_code(system_code)
-    target = _REGIME_TARGET.get(regime_tok, "APPR")
-    status = _CLASS_STATUS.get(cls, "NOT_ELIGIBLE")
+    # verdict: an explicit expected status wins over the class letter (see MIXED/DUP note above).
+    status = (status or _CLASS_STATUS.get(cls, "NOT_ELIGIBLE")).upper()
     eligible = status == "ELIGIBLE"
+    # target regime: the systemCode's regime, EXCEPT an eligible MIXED/DUP case is eligible on the leg
+    # matching the compensation currency (GBP/EUR->EU, ILS->ASL, CAD->APPR), not the default APPR leg.
+    target = _REGIME_TARGET.get(regime_tok, "APPR")
+    if regime_tok in ("MIXED", "DUP") and eligible:
+        target = _CURRENCY_REGIME.get((currency or "").upper(), target)
     band = _delay_band(delay_minutes) if eligible else "NOT_APPLICABLE"
 
     for c in response.get("compensationEligibility", []):
         reg = (c.get("regime") or "").upper()
         is_target = reg == target
-        if is_target and eligible:
+        # The target regime carries the REAL disruption context at the regime level whether or not the
+        # passenger is eligible — an employee whose flight was genuinely delayed still had a disruption.
+        # The backend reads this regime-level context to know there IS something to assess; zeroing it
+        # for NE (the old path) made it return manual_required and the bot escalate. This matches the
+        # set-5 determination shape the bot renders ("not eligible because <reason>").
+        if is_target:
             c["delayMinutes"] = delay_minutes
-            c["delayType"] = "CONTROLLABLE"
             c["delayCode"] = delay_code
-            c["disruptionReason"] = "MECHANICAL"
-            c["customerFriendlyDisruptionReason"] = _FRIENDLY
+            c["disruptionType"] = c.get("disruptionType") or "INVOLUNTARY"
+            if eligible:
+                c["delayType"] = "CONTROLLABLE"
+                c["disruptionReason"] = "MECHANICAL"
+                c["customerFriendlyDisruptionReason"] = _FRIENDLY
+            else:
+                # controllability + reason must match the NE cause, else the determination is incoherent
+                # ("not eligible" + "within carrier's control" makes the customer dispute — FD_TC_052).
+                dtype, dreason, friendly = ne_disruption(reason_for(system_code, cls))
+                c["delayType"] = dtype
+                c["disruptionReason"] = dreason
+                c["customerFriendlyDisruptionReason"] = friendly
         else:
             c["delayMinutes"] = 0
             c["delayType"] = ""
             c["delayCode"] = ""
         for pe in c.get("passengerEligibility", []):
             pe["passengerType"] = pe.get("passengerType") or "ADT"
-            pe.pop("failureReasons", None)
+            pe["failureReasons"] = None  # set-5 carries failureReasons: null on every entry
             if is_target:
                 pe["eligibilityStatus"] = status
                 pe["systemCode"] = system_code
@@ -161,9 +225,11 @@ def canonicalize_verdict(response: dict, *, system_code: str, amount: float = 0.
                     pe["compensationDetails"] = {"amount": amount, "currency": currency,
                                                  "delayBand": band, "expiryDate": expiry_date}
                 else:
-                    pe["reason"] = _CLASS_REASON.get(cls, "Not eligible.")
-                    pe["compensationDetails"] = {"amount": 0, "currency": currency,
-                                                 "delayBand": "NOT_APPLICABLE"}
+                    # case-specific determination reason (e.g. 'Employee booking AC') keyed by the
+                    # systemCode, so the bot renders "not eligible because X" instead of escalating.
+                    # NE entries carry NO compensationDetails (matches set-5).
+                    pe["reason"] = reason_for(system_code, cls)
+                    pe.pop("compensationDetails", None)
             else:
                 pe["eligibilityStatus"] = "NOT_ELIGIBLE"
                 pe["systemCode"] = _NA_SYS.get(reg, f"FD-{reg}-NA-01")
@@ -388,7 +454,7 @@ def pin_case(env, *, pnr_id: str, locator: str, carrier: str, flight_number, ori
              passenger_id: str | None = None, timestamp: str | None = None,
              expiry_date: str | None = None, system_code: str | None = None,
              amount: float | None = None, currency: str = "CAD",
-             delay_minutes: int = 240) -> dict:
+             delay_minutes: int = 240, status: str = "") -> dict:
     """Full DDS pin for one case: rewrite the base template -> canonicalize to the bot shape ->
     S3 PutObject -> execution_traces INSERT. Returns {s3_key, pnr_id, family}.
 
@@ -407,7 +473,8 @@ def pin_case(env, *, pnr_id: str, locator: str, carrier: str, flight_number, ori
     expiry = expiry_date or _default_expiry(date)
     if system_code:
         canonicalize_verdict(response, system_code=system_code, amount=amount or 0.0,
-                             currency=currency, delay_minutes=delay_minutes, expiry_date=expiry)
+                             currency=currency, delay_minutes=delay_minutes, expiry_date=expiry,
+                             status=status)
     else:
         canonicalize_appr(response, family, expiry_date=expiry)
     key = put_response(env, response, date=date)

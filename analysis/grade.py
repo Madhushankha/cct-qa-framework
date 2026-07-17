@@ -47,6 +47,27 @@ def _finding(level: str, code: str, message: str, severity: str) -> dict:
     return {"level": level, "code": code, "message": message, "severity": severity}
 
 
+import re as _re
+
+# The bot ITSELF reports a transient backend outage in the chat (the case-intake/DDS system was
+# unreachable at submit), so it never surfaces as a harness exception — yet it is an ENVIRONMENT
+# failure, not a product defect (the bot handled the flow correctly up to the outage). Detect the
+# bot's own outage language so these aren't graded "Valid FAIL" and filed as false Jira tickets.
+_OUTAGE_RE = _re.compile(
+    r"trouble reaching our case system|reaching our case system|having trouble reaching|"
+    r"case system right now|try again in a few|temporarily unavailable|"
+    r"system is (?:currently |temporarily )?unavailable|unable to (?:process|reach)[^.]*(?:right now|at this time)",
+    _re.I)
+
+
+def _backend_outage(result: dict) -> bool:
+    """True if a bot turn reports a transient backend/case-system outage (see _OUTAGE_RE)."""
+    for t in result.get("transcript") or []:
+        if t.get("role") in ("assistant", "bot") and _OUTAGE_RE.search(str(t.get("text") or "")):
+            return True
+    return False
+
+
 def _determination_gap_finding(result: dict) -> dict | None:
     """The recurring determination-gap: DDS already reached an eligible-shaped verdict but
     the bot escalated / reached no determination instead of surfacing it."""
@@ -112,6 +133,15 @@ def grade(result: dict) -> dict:
             ))
         else:
             grade_name = "Strong PASS"
+    elif _backend_outage(result):
+        # bot handled the flow correctly but the case/DDS backend was unreachable at submit — an
+        # environment failure, NOT a product defect (so it is excluded from Jira defect selection).
+        grade_name = "Environment ERROR"
+        findings.append(_finding(
+            "error", "BACKEND_OUTAGE",
+            "bot reported a transient backend/case-system outage at submit; not a product defect",
+            "high",
+        ))
     else:
         grade_name = "Valid FAIL"
 

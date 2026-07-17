@@ -76,7 +76,16 @@ def usecase_from_meta(meta: dict) -> UseCase:
     case_id = meta.get("case_id") or loc
     passenger = " ".join(x for x in (meta.get("first"), meta.get("surname")) if x).strip()
     expected = str(meta.get("expected") or "")
-    amount = parse_amount(expected)
+    # Prefer the REAL per-case amount render_case carried from the catalog (meta.amount/currency); only
+    # fall back to parsing the free-text note when it's absent (legacy fixtures). The note is the base
+    # template's flat "CAD 400 cash", which mislabels every 700/1000/EU-600 tier as 400.
+    if meta.get("amount") is not None:
+        try:
+            amount = {"currency": meta.get("currency") or "", "value": float(meta["amount"])}
+        except (TypeError, ValueError):
+            amount = parse_amount(expected)
+    else:
+        amount = parse_amount(expected)
     # Prefer the verdict encoded in the gap-doc systemCode class (FD-<regime>-<CLASS>-n): EL/NE/ND/PE
     # -> ELIGIBLE/NOT_ELIGIBLE/NO_DETERMINATION/PENDING. The free-text `expected` note defaults to
     # ELIGIBLE, which mislabels every negative case; the systemCode is the reliable per-case truth.
@@ -84,6 +93,12 @@ def usecase_from_meta(meta: dict) -> UseCase:
     sc_cls = sc_parts[2] if len(sc_parts) > 2 else ""
     verdict = {"EL": "ELIGIBLE", "NE": "NOT_ELIGIBLE", "ND": "NO_DETERMINATION",
                "PE": "PENDING", "DB": "ELIGIBLE"}.get(sc_cls) or derive_verdict(expected, amount)
+    # Only an ELIGIBLE verdict has a compensation amount. The base template's leftover free-text note
+    # ("CAD 400 cash") parses to CAD 400 for every case, which mislabels the EXPECTED amount on
+    # not-eligible / no-determination / pending cases (FD_TC_121 is NOT_ELIGIBLE with no payout, yet the
+    # report showed expected 400). Gate the amount on the verdict so the report matches the gap doc.
+    if verdict != "ELIGIBLE":
+        amount = None
     extras = {
         "disruption": meta.get("fdm_spec") or "",
         "expected_note": expected,
@@ -92,7 +107,13 @@ def usecase_from_meta(meta: dict) -> UseCase:
         "flight": meta.get("flight"),
         "date": meta.get("date") or "",
         "minor_or_pax": meta.get("pax") or "",
+        # persona/outcome type carried from the gap-doc card through render_case's meta.json
+        "scenario": meta.get("scenario") or "",
+        "group": meta.get("group") or "",
     }
+    # third_party: the gap-doc card's data-arch="thirdparty" (or an explicit meta flag) selects the
+    # "filing on behalf of someone else" persona branch in runner.build.build_persona.
+    third_party = bool(meta.get("third_party")) or (str(meta.get("scenario") or "").lower() == "thirdparty")
     seed = SeedSpec(
         pnr=loc,
         pnr_id=meta.get("pnr_id", ""),
@@ -112,7 +133,7 @@ def usecase_from_meta(meta: dict) -> UseCase:
               f"compensation I'm owed.")
     return UseCase(
         id=case_id, regime=regime, verdict=verdict, system_code=meta.get("system_code", ""),
-        title=expected or case_id, third_party=False, checkpoint_vector=[],
+        title=expected or case_id, third_party=third_party, checkpoint_vector=[],
         customer_intent=intent, expected_transcript=[], seed=seed, seed_pending=False,
         content_hash="",
     )

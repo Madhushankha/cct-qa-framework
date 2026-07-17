@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "triggerEventLog": {
+      "id": "FDAP36-2026-06-13-EMD"
+    },
+    "version": "3.5.0"
+  },
+  "processedEmd": {
+    "id": "0142900800201-2026-06-13",
+    "documentType": "EMD",
+    "emdType": "EMD-A",
+    "primaryDocumentNumber": "0142900800201",
+    "documentNumbers": [
+      "0142900800201"
+    ],
+    "numberOfBooklets": 1,
+    "issuanceLocalDate": "2026-06-13",
+    "issuanceType": "F",
+    "validatingCarrierCode": "AC",
+    "validatingCarrierRecordLocator": "FDAP36",
+    "status": "ISSUED",
+    "pnrReferences": [
+      {
+        "systemId": "AC",
+        "recordLocator": "FDAP36"
+      },
+      {
+        "systemId": "1A",
+        "recordLocator": "FDAP36"
+      }
+    ],
+    "traveler": {
+      "name": {
+        "firstName": "MARA",
+        "lastName": "OKONKWO"
+      },
+      "passengerTypeCode": "ADT"
+    },
+    "price": {
+      "currency": "CAD",
+      "total": "45.00"
+    },
+    "coupons": [
+      {
+        "id": "0142900800201-2026-06-13-1",
+        "number": 1,
+        "status": "OPEN_FOR_USE",
+        "reasonForIssuanceCode": "C",
+        "reasonForIssuanceSubCode": "0B5",
+        "serviceDescription": "PRE RESERVED SEAT ASSIGNMENT",
+        "inConnectionWith": {
+          "documentNumber": "0142000800200",
+          "couponNumber": 1
+        },
+        "soldSegment": {
+          "flightNumber": "8002",
+          "departure": {
+            "iataCode": "YYZ"
+          },
+          "arrival": {
+            "iataCode": "LHR"
+          },
+          "carrierCode": "AC"
+        }
+      }
+    ]
+  },
+  "events": {
+    "recordDomain": "EMD",
+    "recordId": "0142900800201-2026-06-13",
+    "originFeedTimeStamp": "2026-06-13T19:49:38",
+    "events": [
+      {
+        "origin": "COMPARISON",
+        "eventType": "CREATED"
+      }
+    ]
+  }
+}

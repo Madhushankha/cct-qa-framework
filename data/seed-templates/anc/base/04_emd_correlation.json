@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "triggerEventLog": {
+      "id": "FDAP36-2026-06-13-EMDCORR"
+    },
+    "version": "3.5.0"
+  },
+  "processedEmdCorrelation": {
+    "id": "FDAP36-2026-06-13-EMDCORR-1",
+    "recordLocator": "FDAP36",
+    "pnrId": "FDAP36-2026-06-13",
+    "emdDocumentNumber": "0142900800201",
+    "ticketDocumentNumber": "0142000800200",
+    "links": [
+      {
+        "emdCoupon": 1,
+        "ticketCoupon": 1,
+        "segmentId": "FDAP36-2026-06-13-ST-1",
+        "passengerId": "FDAP36-2026-06-13-PT-1",
+        "reasonForIssuanceSubCode": "0B5",
+        "serviceType": "SEAT"
+      }
+    ]
+  },
+  "events": {
+    "recordDomain": "EMD_CORRELATION",
+    "recordId": "FDAP36-2026-06-13-EMDCORR-1",
+    "originFeedTimeStamp": "2026-06-13T19:49:40",
+    "events": [
+      {
+        "origin": "COMPARISON",
+        "eventType": "CREATED"
+      }
+    ]
+  }
+}

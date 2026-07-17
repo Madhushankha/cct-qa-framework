@@ -187,6 +187,12 @@ def _parse_card(attrs_raw: str, body: str, feed: Feed) -> UseCase:
     case_id = attrs.get("id", "")
     # regime/category: FD/SoC use data-feat (APPR/EU/ASL); ancillaries use data-flow (seat/bag).
     regime = attrs.get("data-feat", "") or attrs.get("data-flow", "")
+    # scenario TYPE / grouping: the FD gap-doc card encodes each case's persona/outcome type in
+    # data-arch (eligible / ne / nd / pending / thirdparty) and its section in data-grp (Main /
+    # Payment / Edge). thirdparty is what selects the "filing on behalf of" persona branch; the
+    # grouping lets the seeder skip out-of-scope Payment/Edge cases.
+    scenario = attrs.get("data-arch", "").strip()
+    group = attrs.get("data-grp", "").strip()
 
     system_code = _text(_first(_SYSCODE_RE, body))
     # verdict: explicit data-out when present (soc), else derived from the systemCode class so every
@@ -215,6 +221,16 @@ def _parse_card(attrs_raw: str, body: str, feed: Feed) -> UseCase:
         seed = SeedSpec()
         third_party = False
         seed_pending = True
+
+    # data-arch="thirdparty" is the card-level signal (FD gap doc has no third_party datagrid column);
+    # OR it in so the "filing on behalf of" persona branch is selected. Stash scenario/group on the
+    # seed so they survive into the fixture meta.json and the runner.
+    if scenario.lower() == "thirdparty":
+        third_party = True
+    if scenario or group:
+        seed = dataclasses.replace(seed, extras={**seed.extras,
+                                                 **({"scenario": scenario} if scenario else {}),
+                                                 **({"group": group} if group else {})})
 
     return UseCase(
         id=case_id, regime=regime, verdict=verdict, system_code=system_code, title=title,
@@ -293,7 +309,13 @@ def join_dataset(catalog: Catalog, dataset_html: str, feed: Feed) -> Catalog:
         if pairs is None:
             new_cases.append(uc)  # no dataset row: keep as-is (incl. seed_pending)
             continue
-        seed, third_party = _build_seed(pairs, feed)
+        seed, tp_dataset = _build_seed(pairs, feed)
+        # the dataset never carries the card's data-arch signal, so OR its third_party in and carry
+        # the card's scenario/group extras across the seed replacement (else the join wipes them).
+        third_party = uc.third_party or tp_dataset
+        carry = {k: v for k, v in (uc.seed.extras or {}).items() if k in ("scenario", "group")}
+        if carry:
+            seed = dataclasses.replace(seed, extras={**seed.extras, **carry})
         new_cases.append(dataclasses.replace(uc, seed=seed, third_party=third_party,
                                              seed_pending=False))
 

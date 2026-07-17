@@ -14,9 +14,15 @@ from datetime import timezone
 
 from runner.engine import bedrock as B
 
-# ── phrase heuristics (verbatim from the CRT runner) ─────────────────────────
+# ── phrase heuristics (CRT runner + INT bot wording) ─────────────────────────
+# The trigger fires once the bot says it SENT the code, so the runner fetches the REAL code from the
+# inbox instead of letting the customer-sim guess a 6-digit (which INT would accept — masking the real
+# mailinator flow). Keep post-send signals ("sent a verification code", "please enter it") here.
 OTP_ASK = ("enter the 6-digit", "enter the code", "enter the 6 digit", "received the code",
-           "6-digit code here", "please enter the verification", "type the code")
+           "6-digit code here", "please enter the verification", "type the code",
+           "sent a verification code", "sent a one-time", "sent a code to your email",
+           "verification code to your email", "please enter it", "enter it within",
+           "code we sent", "code sent to your email")
 
 PLACEHOLDER = ("processing your request and will assist", "air canada assistant", "how i can help")
 

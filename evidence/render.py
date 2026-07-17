@@ -39,13 +39,30 @@ th { background: #0b3d6b; color: #fff; }
 .fail { color: #b00020; font-weight: 700; }
 .badge.pass { background: #1b7e34; color: #fff; }
 .badge.fail { background: #b00020; color: #fff; }
-.chat { border: 1px solid #eee; border-radius: 6px; padding: 8px; max-height: 640px; overflow: auto; }
-.turn { margin: 4px 0; }
-.turn .who { font-size: 11px; color: #667; font-weight: 600; }
-.turn .ts { color: #99a; font-weight: 400; }
-.turn .text { padding: 7px 10px; border-radius: 7px; font-size: 12.5px; white-space: pre-wrap; }
-.turn.customer .text { background: #eaf2fb; }
-.turn.bot .text { background: #eafbea; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
 .kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
 .kpi b { font-size: 17px; display: block; color: #0b3d6b; }
 .issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
@@ -61,6 +78,12 @@ code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px;
   .turn.customer .text { background: #1c2c3d; }
   .turn.bot .text { background: #1c3322; }
   .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
   a { color: #6db3ff; }
 }
 </style>"""
@@ -88,6 +111,52 @@ def _cls(ok) -> str:
     return "pass" if ok else "fail"
 
 
+# friendly speaker labels (match the reference evidence style)
+_WHO = {"customer": "\U0001f464 Customer", "assistant": "\U0001f916 Ask AC",
+        "bot": "\U0001f916 Ask AC"}
+
+# widget markup embedded in bot text: §W§<TYPE>§<body>
+_WIDGET_SPLIT = re.compile(r"(§W§[A-Z_]+§)")
+_WIDGET_HEAD = re.compile(r"§W§([A-Z_]+)§")
+_BOLD_RE = re.compile(r"\*\*(.+?)\*\*", re.S)
+
+
+def _md(text: str) -> str:
+    """Escape, then render **bold** — the only markdown the bot emits."""
+    return _BOLD_RE.sub(r"<b>\1</b>", _esc(text))
+
+
+def _widget_html(wtype: str, body: str) -> str:
+    """Render one embedded widget as a chat-UI element (chips / banner / flight card)."""
+    body = body.strip()
+    if not body:
+        return ""
+    if wtype in ("OPTIONS", "QUICK_REPLIES", "SINGLE_SELECT", "MULTI_SELECT"):
+        chips = "".join(f'<span class="chip">{_md(o.strip())}</span>'
+                        for o in body.split("•") if o.strip())
+        return f'<div class="opts">{chips}</div>'
+    if wtype in ("FLIGHT", "FLIGHT_SAME_PNR"):
+        return f'<div class="flightcard">{_md(body)}</div>'
+    # BANNER, INFO_BANNER, and anything else -> a subtle callout
+    return f'<div class="banner">{_md(body)}</div>'
+
+
+def _fmt_msg(text: str) -> str:
+    """A message body -> bubble text + any widgets. Splits on §W§TYPE§ markers so option lists,
+    banners, and flight cards render as chat-UI elements instead of raw control codes."""
+    parts = _WIDGET_SPLIT.split(text or "")
+    plain = parts[0].strip()
+    out = f'<div class="bubble">{_md(plain)}</div>' if plain else ""
+    i = 1
+    while i < len(parts):
+        m = _WIDGET_HEAD.match(parts[i])
+        body = parts[i + 1] if i + 1 < len(parts) else ""
+        if m:
+            out += _widget_html(m.group(1), body)
+        i += 2
+    return out or '<div class="bubble"></div>'
+
+
 def _chat_html(transcript: list[dict]) -> str:
     rows = []
     for turn in transcript or []:
@@ -96,10 +165,13 @@ def _chat_html(transcript: list[dict]) -> str:
         if role == "customer":
             text = _mask_otp(text)
         who_cls = "customer" if role == "customer" else "bot"
+        who = _WHO.get(role, role or "?")
+        note = turn.get("note")
+        note_html = f' <span class="ts">· {_esc(note)}</span>' if note else ""
         rows.append(
             f'<div class="turn {who_cls}">'
-            f'<div class="who">{_esc(role)} <span class="ts">{_esc(turn.get("ts") or "")}</span></div>'
-            f'<div class="text">{_esc(text)}</div>'
+            f'<div class="who">{who} <span class="ts">{_esc(turn.get("ts") or "")}</span>{note_html}</div>'
+            f"{_fmt_msg(text)}"
             f"</div>"
         )
     return "".join(rows) or "<p>(no transcript)</p>"
@@ -155,7 +227,7 @@ def render_case(result: dict) -> str:
     return f"""<!doctype html>
 <html><head><meta charset="utf-8"><title>{_esc(case.get('test_case'))} — {_esc(case.get('passenger'))}</title>{CSS}</head>
 <body>
-<h1>{_esc(case.get('test_case'))} <span class="badge {_cls(ok)}">{_pass_fail(ok)}</span></h1>
+<h1>{_esc(case.get('test_case'))} <span class="badge {_cls(ok)}">{_pass_fail(ok)}</span> <a class="dl" download href="{_esc(case.get('test_case'))}.evidence.html">&#11015; download</a></h1>
 <table class="meta">
 <tr><td>PNR</td><td>{_esc(case.get('pnr'))}</td><td>Passenger</td><td>{_esc(case.get('passenger'))}</td></tr>
 <tr><td>Regime</td><td>{_esc(case.get('regime'))}</td><td>ContactId</td><td class="mono">{_esc(auth.get('contact_id'))}</td></tr>

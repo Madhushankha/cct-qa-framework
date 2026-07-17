@@ -1,6 +1,7 @@
 id: crt
 label: CRT
 chatbot:
+  # the "alpha" chatbot instance deployed to CRT
   base_url: https://jz18i65199.execute-api.ca-central-1.amazonaws.com/prod
   endpoint_path: /start-chat
   region: ca-central-1
@@ -13,8 +14,42 @@ otp:
   inbox: lahiru
   token_secret: MAILINATOR_TOKEN
 seed_targets:
-  kafka_topic: emh-crt.ALTEA-PNRDATA-CRT
+  # ── Kafka seed (VERIFIED under crt-sso) ──────────────────────────────────────
+  msk_secret: AmazonMSK_ac-cct-msk-crt-cac1
+  bootstrap: "b-1.accctmskcrtcac1.05hf7o.c4.kafka.ca-central-1.amazonaws.com:9096,b-2.accctmskcrtcac1.05hf7o.c4.kafka.ca-central-1.amazonaws.com:9096,b-3.accctmskcrtcac1.05hf7o.c4.kafka.ca-central-1.amazonaws.com:9096"
+  topics:
+    # CRT uniquely uses the emh-dev.*-UAT lane (NOT emh-crt.*-CRT) — confirmed from the live injector
+    pnr: emh-dev.ALTEA-PNRDATA-UAT
+    tkt: emh-dev.ALTEA-TKT-UAT
+    fdm: emh-dev.EAI-FDM-UAT
+    aacc: emh-dev.ALTEA-AACC-UAT
+  settle:
+    pnr: 45
+    tkt: 30
+    fdm_skd: 45
+    fdm_delay: 60
+    aacc: 40
+  kafka_topic: emh-dev.ALTEA-PNRDATA-UAT   # back-compat (== topics.pnr)
+  # ── Aurora verify (trip-tracer CRT) ──────────────────────────────────────────
   aurora_secret: "/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials"
-  aurora_host: ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com
-  dds_s3_bucket: cct-ask-ac-crt-logs
-  dds_endpoint: /rule-engine/dds/output/{pnrId}
+  aurora_host: ac-cct-trip-tracer-rds-proxy-crt-cac1.proxy-cxqe2wacy866.ca-central-1.rds.amazonaws.com
+  rule_engine_secret: "/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials"
+  fixtures_dir: "../cct-qa-1/test-data-creation/preseed-data/FD"
+  # ── DDS determination pin (PARTIAL — CRT differs from INT) ───────────────────
+  # store_bucket verified to exist. BUT: (1) the by-pnr endpoint below returns HTTP 403 with the INT
+  # URL/key — the CRT DDS host/path/key still needs confirming; (2) there is NO
+  # ac-cct-rule-engine-platform-cluster-crt ECS cluster, so the INT ECS-exec execution_traces write
+  # does NOT apply here — the CRT execution_traces write path is unresolved. So `cctqa seed alpha crt fd`
+  # can Kafka-seed + S3-put today, but the DDS pin's execution_traces step is NOT wired for CRT yet.
+  dds:
+    store_bucket: cct-ask-ac-crt-logs        # VERIFIED exists
+    trace_prefix: traces/DDS
+    rule_engine_host: null                   # TODO: CRT rule-engine cluster endpoint (not confirmed)
+    rule_engine_db: postgres
+    ecs_cluster: null                        # TODO: no rule-engine-platform ECS cluster on CRT
+    by_pnr_url: https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output  # 403 — needs confirming
+    api_key_secret: DDS_API_KEY
+    templates:
+      APPR_CAD_400: data/dds-templates/appr_cad_400.json
+      APPR_CAD_700: data/dds-templates/appr_cad_400.json
+      APPR_CAD_1000: data/dds-templates/appr_cad_400.json

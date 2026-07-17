@@ -8,10 +8,50 @@ aws:
   profile: int-sso
   account: "982081066747"
 otp:
-  strategy: fixed
-  code: "123456"
+  # Uniform OTP across every env: seed the mailinator contact and fetch the REAL code.
+  # INT accepts any 6-digit code, so the real fetched code works here too — no special "fixed" path.
+  strategy: mailinator
+  domain: ae-qa1-aircanada.mailinator.com
+  inbox: lahiru
+  token_secret: MAILINATOR_TOKEN
 seed_targets:
-  kafka_topic: emh-int.ALTEA-PNRDATA-INT
+  # MSK (Kafka) inject coordinates — the seeder reads EVERYTHING from here, so the seed
+  # code stays env-independent. The MSK secret's sourceBootstrapServers wins over `bootstrap`
+  # if present; `bootstrap` is the documented fallback.
+  msk_secret: AmazonMSK_ac-cct-msk-int-cac1
+  bootstrap: "b-1.accctmskintcac1.z22bz6.c3.kafka.ca-central-1.amazonaws.com:9096,b-2.accctmskintcac1.z22bz6.c3.kafka.ca-central-1.amazonaws.com:9096,b-3.accctmskintcac1.z22bz6.c3.kafka.ca-central-1.amazonaws.com:9096"
+  topics:
+    pnr: emh-int.ALTEA-PNRDATA-INT
+    tkt: emh-int.ALTEA-TKT-INT
+    fdm: emh-int.EAI-FDM-INT
+    aacc: emh-int.ALTEA-AACC-INT
+  # PNR->TKT->FDM cascade settle windows (seconds). Descriptor-driven so a slower env can widen them.
+  settle:
+    pnr: 45
+    tkt: 30
+    fdm_skd: 45
+    fdm_delay: 60
+    aacc: 40
+  kafka_topic: emh-int.ALTEA-PNRDATA-INT   # kept for back-compat (== topics.pnr)
   aurora_secret: "/int-cac1/ac-cct-trip-tracer-rds-cluster-int-cac1/db-credentials"
   aurora_host: ac-cct-trip-tracer-rds-cluster-int-cac1-instance1.czy2ye8u22qy.ca-central-1.rds.amazonaws.com
   rule_engine_secret: "/intca1/ac-cct-rule-engine-int-cac1-cluster/db-credentials"
+  # FD preseed fixtures (locator dirs w/ 01_pnr.json, 02_ticket*.json, *.xml, meta.json).
+  # REFERENCED from cct-qa-1, never copied — the framework reads them in place.
+  fixtures_dir: "../cct-qa-1/test-data-creation/preseed-data/FD"
+  # DDS determination pin — the bot reads DDS via by_pnr_url -> execution_traces -> S3 response.json.
+  # DDS is NOT auto-computed on INT, so P2b pins it: S3 PutObject + execution_traces INSERT.
+  dds:
+    store_bucket: ac-cct-rule-engine-store-int
+    trace_prefix: traces/DDS
+    rule_engine_host: ac-cct-rule-engine-int-cac1-rds-cluster.cluster-czy2ye8u22qy.ca-central-1.rds.amazonaws.com
+    rule_engine_db: postgres
+    ecs_cluster: ac-cct-rule-engine-platform-cluster-int
+    ecs_service: ac-cct-rule-engine-platform-int-service
+    by_pnr_url: https://rule-engine-platform-service.ac-cct-int.cloud.aircanada.com/rule-engine/dds/output
+    api_key_secret: DDS_API_KEY
+    templates:
+      # one base APPR template; canonicalize_appr rewrites amount/systemCode/delayBand per family
+      APPR_CAD_400: data/dds-templates/appr_cad_400.json
+      APPR_CAD_700: data/dds-templates/appr_cad_400.json
+      APPR_CAD_1000: data/dds-templates/appr_cad_400.json

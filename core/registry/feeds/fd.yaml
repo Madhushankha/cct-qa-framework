@@ -27,6 +27,10 @@ persona:
     If the bot asks for your country of residence or where you are travelling from/based,
     answer {country}.
 
+    If the assistant reaches a clear determination — eligible OR not eligible — and explains
+    the reason, ACCEPT it politely and end the conversation. Do NOT argue, dispute, or ask for
+    a manual/agent review. Your goal is to receive the determination, not to contest it.
+
     '
   branches:
     third_party: 'You are an ADULT filing ON BEHALF OF another passenger {first} {last}
@@ -44,9 +48,13 @@ judge:
   - PENDING
   - ESCALATED
   - UNKNOWN
+  # The chat judge compares only what the customer actually sees: the verdict and the amount. The
+  # systemCode (FD-ASL-NE-01 etc.) is an INTERNAL DDS code the bot never speaks, so judging the
+  # transcript for it always reports "none provided" and falsely fails correct conversations. The
+  # systemCode IS still verified — against the DDS determination via the dds_endpoint_systemcode_match
+  # checkpoint, where it belongs.
   match_on:
   - status
-  - system_code
   - amount
 checkpoints:
   auditor: fd

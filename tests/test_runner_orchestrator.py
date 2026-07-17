@@ -68,7 +68,7 @@ def test_run_batch_writes_files_and_returns_paths(tmp_path):
     otp = CountingOtp()
     otp_conc = 2
 
-    def fake_run_case(ctx, uc, chat_config, otp_provider, *, run_id=None, run_date=None):
+    def fake_run_case(ctx, uc, chat_config, otp_provider, *, run_id=None, run_date=None, checkpoints_dir=None):
         # enter the OTP window (gated by run_batch), then assemble a real, schema-valid Result
         otp_provider.wait_for_otp(datetime.datetime.now(timezone.utc))
         return build.run_case(ctx, uc, chat_config, otp_provider,
@@ -93,7 +93,7 @@ def test_run_batch_limit(tmp_path):
     cases = [make_uc(i) for i in range(1, 6)]
     otp = CountingOtp()
 
-    def fake_run_case(ctx, uc, chat_config, otp_provider, *, run_id=None, run_date=None):
+    def fake_run_case(ctx, uc, chat_config, otp_provider, *, run_id=None, run_date=None, checkpoints_dir=None):
         return build.run_case(ctx, uc, chat_config, otp_provider,
                               flow_fn=_fake_flow, judge_fn=_fake_judge,
                               run_id=run_id, run_date=run_date)

@@ -15,11 +15,29 @@ from pathlib import Path
 
 from core.result import validate_result
 
-from metrics.adapter import result_to_record
+from metrics.adapter import render_transcript_md, result_to_record
 from metrics.evalkit import taxonomy
 from metrics.evalkit.metrics import compute_metrics
 from metrics.evalkit.report import render_report, write_json
 from metrics.evalkit.trajectory import annotate_trajectory
+
+_DIALECTS = ("bravo", "alpha")
+
+
+def _detect_dialect(records: list) -> str:
+    """Pick the transcript dialect whose stage detectors hit the most canonical stages across the run.
+    Ties break toward the first in `_DIALECTS`. Records are left re-rendered; the caller re-annotates
+    with the winner so every record ends up on the same dialect."""
+    best_fmt, best_hits = _DIALECTS[0], -1
+    for fmt in _DIALECTS:
+        hits = 0
+        for r in records:
+            r["transcript_text"] = render_transcript_md(r.get("transcript_raw"), fmt)
+            annotate_trajectory(r, fmt=fmt)
+            hits += len((r.get("trajectory") or {}).get("stages_hit") or [])
+        if hits > best_hits:
+            best_fmt, best_hits = fmt, hits
+    return best_fmt
 
 
 def build_metrics(run_dir: str | Path, out_dir: str | Path) -> Path:
@@ -39,10 +57,16 @@ def build_metrics(run_dir: str | Path, out_dir: str | Path) -> Path:
     for r in records:
         bucket, fatal = taxonomy.bucket_error(r["run_error"])
         r["error_bucket"], r["error_fatal"] = bucket, fatal
-        # This bot's transcript dialect matches evalkit's `alpha` detectors (greeting text +
-        # [mailinator-otp]/[widget:...] notes). The adapter renders the inline transcript to that
-        # dialect as transcript_text, so annotate_trajectory runs the real flow-stage detectors.
-        annotate_trajectory(r, fmt="alpha")
+
+    # Auto-detect the bot's transcript dialect: render each record in a dialect, run the stage
+    # detectors, and keep whichever dialect hits the most canonical stages across the run. The bot has
+    # moved from the `alpha` wording to the `bravo` wording (greeting "How can I help you today?", OTP
+    # "I've sent a verification code", "§W§INFO§FEEDBACK"), so hardcoding alpha left most flow stages at
+    # 0%. Detection makes the trajectory correct regardless of which wording a run used.
+    fmt = _detect_dialect(records)
+    for r in records:
+        r["transcript_text"] = render_transcript_md(r.get("transcript_raw"), fmt)
+        annotate_trajectory(r, fmt=fmt)
 
     m = compute_metrics(records)
 

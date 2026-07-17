@@ -1,0 +1,300 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-03T16:25:19.387Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "ZZTMPL-2000-01-01",
+  "pnr": "ZZTMPL"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YUL",
+    "destination": "CUN",
+    "associatedSegments": [
+     {
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-07-15T16:10:00.000Z",
+      "arrivalDatetime": "2026-07-15T17:35:00.000Z",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 409,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 409,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#409#2026-07-15#YUL"
+     },
+     {
+      "segmentId": "ZZTMPL-2000-01-01-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-07-15T21:10:00.000Z",
+      "arrivalDatetime": "2026-07-16T01:10:00.000Z",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "CUN",
+      "marketingFlightNumber": 1812,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 1812,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#1812#2026-07-15#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YUL",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-07-15T16:10:00.000Z",
+      "arrivalDatetime": "2026-07-15T17:35:00.000Z",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 409,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 409,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#409#2026-07-15#YUL"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "mslFlight": {
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": "409",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "isStarSegment": false,
+      "isOalSegment": false
+     },
+     "disruptionType": "INVOLUNTARY",
+     "delayMinutes": 0,
+     "delayType": "CONTROLLABLE",
+     "delayCode": "COMM",
+     "customerFriendlyDisruptionReason": "Cancelled due to commercial reasons.",
+     "disruptionReason": "COMMERCIAL",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-13",
+     "reason": "No travel Origin - Within carrier's control",
+     "reasonEnglish": "You're eligible for compensation.",
+     "reasonFrench": "",
+     "compensationDetails": {
+      "currency": "CAD",
+      "amount": 400,
+      "walletAmount": 440,
+      "delayBand": "NO_TRAVEL",
+      "expiryDate": "2027-07-16",
+      "refundType": "FULL_TICKET"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "mslFlight": {
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": "409",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "isStarSegment": false,
+      "isOalSegment": false
+     },
+     "disruptionType": "INVOLUNTARY",
+     "delayMinutes": 0,
+     "delayType": "CONTROLLABLE",
+     "delayCode": "COMM",
+     "customerFriendlyDisruptionReason": "Cancelled due to commercial reasons.",
+     "disruptionReason": "COMMERCIAL",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-13",
+     "reason": "No travel Origin - Delay below 3 hours",
+     "reasonEnglish": "Our assessment tool has determined that you are not eligible for compensation because you didn't travel to your final destination with AC,  following a delay of less than three hours on the most significant portion of your itinerary.",
+     "reasonFrench": "",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "mslFlight": {
+      "segmentId": "ZZTMPL-2000-01-01-ST-1",
+      "carrierCode": "AC",
+      "flightNumber": "409",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "isStarSegment": false,
+      "isOalSegment": false
+     },
+     "disruptionType": "INVOLUNTARY",
+     "delayMinutes": 0,
+     "delayType": "CONTROLLABLE",
+     "delayCode": "COMM",
+     "customerFriendlyDisruptionReason": "Cancelled due to commercial reasons.",
+     "disruptionReason": "COMMERCIAL",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NE-20",
+     "reason": "Itinerary did not start in Israel",
+     "reasonEnglish": "",
+     "reasonFrench": "",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "ZZTMPL-2000-01-01-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 409,
+   "departureAirport": "YUL",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "G",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "reasonEnglish": "Our assessment tool can\ufffdt determine your entitlement.\nPlease note that situations surrounding flight disruptions can be complex and have multiple causes. The reasons provided for a flight disruption may change as the situation evolves, new issues arise, or new information is received. \nYou may still submit your claim for review if you wish to continue, and an Air Canada representative will get back to you within 30 days.",
+     "reasonFrench": "",
+     "expiryDate": "",
+     "expenseCategories": []
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "ZZTMPL-2000-01-01-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 409,
+   "departureAirport": "YUL",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "G",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-EU-NE-06",
+     "reason": "Itinerary did not start in the UK or EU",
+     "reasonEnglish": "Our assessment tool has determined that you are not eligible to submit expenses because your itinerary did not start in the European Union.",
+     "reasonFrench": "",
+     "expiryDate": "",
+     "expenseCategories": []
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "ZZTMPL-2000-01-01-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 409,
+   "departureAirport": "YUL",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "ZZTMPL-2000-01-01-PT-2",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "G",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-ASL-NE-06",
+     "reason": "Itinerary did not start or end in Israel",
+     "reasonEnglish": "",
+     "reasonFrench": "",
+     "expiryDate": "",
+     "expenseCategories": []
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": [
+  {
+   "segmentId": "",
+   "passengerId": "ZZTMPL-2000-01-01-PT-2",
+   "passengerType": "ADT",
+   "emdNumber": "",
+   "eligibilityStatus": "NOT_ELIGIBLE",
+   "systemCode": "SF-NE-01",
+   "reason": "No EMD found for the seat fee \u2014 no seat fee was charged for this segment",
+   "bookingSource": "NDC",
+   "emdCouponStatus": "",
+   "couponStatusUpdatedAt": "",
+   "hasSeatCharacteristicsChanged": false,
+   "isEmdType014": false,
+   "isRefunded": false
+  },
+  {
+   "segmentId": "ZZTMPL-2000-01-01-ST-1",
+   "passengerId": "ZZTMPL-2000-01-01-PT-2",
+   "passengerType": "ADT",
+   "emdNumber": "",
+   "eligibilityStatus": "NOT_ELIGIBLE",
+   "systemCode": "SF-NE-01",
+   "reason": "No EMD found for the seat fee \u2014 no seat fee was charged for this segment",
+   "bookingSource": "NDC",
+   "emdCouponStatus": "",
+   "couponStatusUpdatedAt": "",
+   "hasSeatCharacteristicsChanged": false,
+   "isEmdType014": false,
+   "isRefunded": false
+  }
+ ]
+}

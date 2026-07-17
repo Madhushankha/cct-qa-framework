@@ -161,6 +161,17 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
         "system_code": case.system_code or case.seed.system_code,
         "rendered_from": src_loc,
         "case_id": case.id,
+        # persona/outcome type + section from the gap-doc card (data-arch / data-grp), so the runner
+        # rebuilds the same UseCase.third_party and scenario type the parser saw (3rd-party cases must
+        # use the "filing on behalf of" persona branch, not the self-claim default).
+        "third_party": bool(getattr(case, "third_party", False)),
+        "scenario": (case.seed.extras or {}).get("scenario", ""),
+        "group": (case.seed.extras or {}).get("group", ""),
+        # the case's REAL expected compensation (from the catalog), so the runner/report show the right
+        # amount per tier (EL-700 -> 700, EL-1000 -> 1000, EU 600) instead of the base template's flat
+        # "CAD 400 cash" note. None/0 for non-eligible cases.
+        "amount": (case.seed.amount or {}).get("value"),
+        "currency": (case.seed.amount or {}).get("currency"),
     })
     if meta.get("leg_id") and src_date and flight_date:
         new_meta["leg_id"] = meta["leg_id"].replace(src_date, flight_date)

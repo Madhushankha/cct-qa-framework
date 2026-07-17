@@ -1,0 +1,165 @@
+{
+  "eventMetadata": {
+    "trigger": "DISRUPTION_DETECTION_SERVICE",
+    "timestamp": "2026-06-03T16:25:19.387Z"
+  },
+  "pnrIdentifier": {
+    "pnrId": "ZZTMPL-2000-01-01",
+    "pnr": "ZZTMPL"
+  },
+  "itineraryDetails": [
+    {
+      "bound": 1,
+      "isOAL": false,
+      "promisedItinerary": {
+        "origin": "YYZ",
+        "destination": "LHR",
+        "associatedSegments": [
+          {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "segmentStatus": "HK",
+            "departureDatetime": "2026-06-13T08:00:00.000Z",
+            "arrivalDatetime": "2026-06-13T11:00:00.000Z",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "marketingFlightNumber": 8002,
+            "marketingCarrierCode": "AC",
+            "operatingFlightNumber": 8002,
+            "operatingCarrierCode": "AC",
+            "flightId": "AC#8002#YYZ#2026-06-13"
+          }
+        ]
+      },
+      "actualItinerary": {
+        "origin": "YYZ",
+        "destination": "LHR",
+        "associatedSegments": [
+          {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "segmentStatus": "HK",
+            "departureDatetime": "2026-06-13T08:00:00.000Z",
+            "arrivalDatetime": "2026-06-13T11:00:00.000Z",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "marketingFlightNumber": 8002,
+            "marketingCarrierCode": "AC",
+            "operatingFlightNumber": 8002,
+            "operatingCarrierCode": "AC",
+            "flightId": "AC#8002#YYZ#2026-06-13"
+          }
+        ]
+      }
+    }
+  ],
+  "compensationEligibility": [
+    {
+      "regime": "APPR",
+      "boundRph": 1,
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "mslFlight": {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "carrierCode": "AC",
+            "flightNumber": "8002",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "isStarSegment": false,
+            "isOalSegment": false
+          },
+          "disruptionType": "INVOLUNTARY",
+          "delayMinutes": 0,
+          "delayType": "",
+          "delayCode": "",
+          "customerFriendlyDisruptionReason": "",
+          "disruptionReason": "",
+          "eligibilityStatus": "NO_DETERMINATION",
+          "systemCode": "",
+          "reason": "",
+          "reasonEnglish": "",
+          "reasonFrench": "",
+          "compensationDetails": {
+            "currency": "CAD",
+            "amount": 0,
+            "delayBand": "NOT_APPLICABLE",
+            "expiryDate": ""
+          },
+          "failureReasons": null
+        }
+      ]
+    },
+    {
+      "regime": "EU",
+      "boundRph": 1,
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "mslFlight": {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "carrierCode": "AC",
+            "flightNumber": "8002",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "isStarSegment": false,
+            "isOalSegment": false
+          },
+          "disruptionType": "INVOLUNTARY",
+          "delayMinutes": 0,
+          "delayType": "",
+          "delayCode": "",
+          "customerFriendlyDisruptionReason": "",
+          "disruptionReason": "",
+          "eligibilityStatus": "NOT_ELIGIBLE",
+          "systemCode": "BC-EU-NA-01",
+          "reason": "Regime not applicable to this itinerary",
+          "reasonEnglish": "",
+          "reasonFrench": "",
+          "compensationDetails": {
+            "currency": "CAD",
+            "amount": 0,
+            "delayBand": "NOT_APPLICABLE"
+          },
+          "failureReasons": null
+        }
+      ]
+    },
+    {
+      "regime": "ASL",
+      "boundRph": 1,
+      "passengerEligibility": [
+        {
+          "passengerId": "ZZTMPL-2000-01-01-PT-2",
+          "passengerType": "ADT",
+          "mslFlight": {
+            "segmentId": "ZZTMPL-2000-01-01-ST-1",
+            "carrierCode": "AC",
+            "flightNumber": "8002",
+            "departureAirport": "YYZ",
+            "arrivalAirport": "LHR",
+            "isStarSegment": false,
+            "isOalSegment": false
+          },
+          "disruptionType": "INVOLUNTARY",
+          "delayMinutes": 0,
+          "delayType": "",
+          "delayCode": "",
+          "customerFriendlyDisruptionReason": "",
+          "disruptionReason": "",
+          "eligibilityStatus": "NOT_ELIGIBLE",
+          "systemCode": "BC-ASL-NA-01",
+          "reason": "Regime not applicable to this itinerary",
+          "reasonEnglish": "",
+          "reasonFrench": "",
+          "compensationDetails": {
+            "currency": "CAD",
+            "amount": 0,
+            "delayBand": "NOT_APPLICABLE"
+          },
+          "failureReasons": null
+        }
+      ]
+    }
+  ]
+}

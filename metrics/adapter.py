@@ -31,18 +31,34 @@ def _amount_raw(amount: dict | None) -> str:
     return f"{amount['currency']} {amount['value']}"
 
 
-# Role -> the transcript-line marker evalkit's `alpha` stage detectors are anchored on. The
-# canonical Result transcript ({role, note, text}) renders to `**🤖 BOT** [note]: text` lines, the
-# exact dialect the alpha regexes were mined from (this bot's greeting + [mailinator-otp] notes match
-# alpha), so the trajectory analysis works off the inline transcript with no file on disk.
-_ROLE_MARK = {"assistant": "🤖 BOT", "bot": "🤖 BOT", "customer": "🧑 CUSTOMER", "user": "🧑 CUSTOMER"}
+# Role -> the transcript-line marker evalkit's stage detectors are anchored on. The two supported bot
+# dialects render the canonical Result transcript ({role, note, text}) differently:
+#   alpha: `**🤖 BOT** [note]: text`      (single line, [note] tag)
+#   bravo: `🤖 **Assistant** _(note)_:`   then the utterance on a `> text` blockquote line
+# The metrics runner renders BOTH and auto-picks the dialect whose detectors hit the most stages, so a
+# bot that has moved from the alpha wording to the bravo wording still gets a correct trajectory.
+_ROLE_MARK_ALPHA = {"assistant": "🤖 BOT", "bot": "🤖 BOT", "customer": "🧑 CUSTOMER", "user": "🧑 CUSTOMER"}
+_ROLE_MARK_BRAVO = {"assistant": "🤖 **Assistant**", "bot": "🤖 **Assistant**",
+                    "customer": "🧑 **Customer**", "user": "🧑 **Customer**"}
 
 
-def render_transcript_md(transcript) -> str:
-    """Render an inline canonical transcript to the alpha markdown dialect the stage detectors read."""
+def render_transcript_md(transcript, fmt: str = "alpha") -> str:
+    """Render an inline canonical transcript to the `fmt` markdown dialect the stage detectors read."""
+    if fmt == "bravo":
+        lines = []
+        for t in transcript or []:
+            mark = _ROLE_MARK_BRAVO.get(str(t.get("role") or "").lower())
+            if not mark:
+                continue
+            note = t.get("note")
+            tag = f" _({note})_" if note else ""
+            text = str(t.get("text") or "").replace("\r", " ").replace("\n", " ")
+            # bravo customer replies (OTP code, "End chat") are detected on a `> text` blockquote line
+            lines.append(f"{mark}{tag}:\n> {text}")
+        return "\n".join(lines)
     lines = []
     for t in transcript or []:
-        mark = _ROLE_MARK.get(str(t.get("role") or "").lower())
+        mark = _ROLE_MARK_ALPHA.get(str(t.get("role") or "").lower())
         if not mark:
             continue
         note = t.get("note")
@@ -95,6 +111,8 @@ def result_to_record(result: dict) -> dict:
         # deterministic flow-stage detectors on it (no transcript file on disk needed).
         "transcript_path": None,
         "transcript_text": render_transcript_md(result.get("transcript")),
+        # raw turns kept so the runner can re-render per dialect during auto-detection
+        "transcript_raw": result.get("transcript") or [],
         "contact_id": auth.get("contact_id"),
         "started": run.get("started"),
     }

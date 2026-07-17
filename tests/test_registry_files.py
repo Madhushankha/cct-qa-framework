@@ -20,8 +20,10 @@ def test_fd_columns_cover_seedspec():
 def test_env_otp_strategies():
     crt = yaml.safe_load((REG / "envs" / "crt.yaml").read_text(encoding="utf-8"))
     intd = yaml.safe_load((REG / "envs" / "int.yaml").read_text(encoding="utf-8"))
+    # OTP is uniform across envs: every env fetches the REAL code from the mailinator inbox
+    # (INT accepts any 6-digit, so the real fetched code works there too — no special "fixed" path).
     assert crt["otp"]["strategy"] == "mailinator"
-    assert intd["otp"]["strategy"] == "fixed"
+    assert intd["otp"]["strategy"] == "mailinator"
 
 
 def test_env_has_no_inline_token():
