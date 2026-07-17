@@ -543,7 +543,14 @@ button.act:hover{filter:brightness(1.1)}button.gh{background:var(--bd)}button:di
 .bar{display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
 #log{background:#020617;border:1px solid var(--bd);border-radius:8px;padding:12px;font-family:ui-monospace,Consolas,monospace;font-size:12px;white-space:pre-wrap;max-height:260px;overflow:auto;margin-top:12px}
 .filt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:50;padding:40px 20px;overflow:auto}
+#modal.on{display:block}
+#modalC{background:var(--pnl);border:1px solid var(--bd);border-top:3px solid var(--ac);border-radius:12px;max-width:820px;margin:0 auto;padding:22px 26px}
+#modalC h2{margin:0 0 4px}#modalC .x{float:right;cursor:pointer;color:var(--mut);font-size:22px;line-height:1}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;margin:12px 0;font-size:14px}
+.kv .k{color:var(--mut)}.spec{background:#0f172a;border:1px solid var(--bd);border-radius:8px;padding:12px;margin:10px 0;font-size:13px;line-height:1.5}
 </style></head><body>
+<div id=modal onclick="if(event.target.id=='modal')closeInfo()"><div id=modalC></div></div>
 <header><h1>✈ Air Canada — Test Data Management &amp; Execution</h1>
 <div class=sel>
  <select id=fProduct onchange=reload()></select>
@@ -652,7 +659,7 @@ function drawCases(){
  $('#selInfo').textContent=`${S.sel.size} selected · ${rows.length} shown · ${S.cat.length} total`;
  $('#ctab').innerHTML=`<tr><th></th><th>Test Case</th><th>Scenario (UAT)</th><th>Expected</th><th>systemCode</th><th>Amount</th><th>Data</th><th>Last Run</th><th></th></tr>`+
   rows.map((c,i)=>`<tr><td><input type=checkbox ${S.sel.has(c.id)?'checked':''} onchange=tog('${c.id}',this.checked)></td>
-   <td><a href="/gapdoc?${q()}#${c.id}" target=_blank title="Open full UAT gap-doc card" style=color:#f87171;font-weight:700;text-decoration:none>${c.id}</a>${c.third_party?' 👤':''}</td>
+   <td><a href="javascript:void(0)" onclick="showInfo('${c.id}')" title="Show UAT gap-doc info" style=color:#f87171;font-weight:700;text-decoration:none>${c.id}</a>${c.third_party?' 👤':''}</td>
    <td style=max-width:320px>${esc(c.name)}</td>
    <td><b>${c.status}</b></td><td class=mut style=font-size:11px>${c.system_code}</td>
    <td>${c.amount||'—'}</td>
@@ -680,6 +687,34 @@ function det(id,i){
    <div style=margin-top:8px><a href="/gapdoc?${q()}#${c.id}" target=_blank><button class=act>Open full UAT gap-doc card ↗</button></a></div>
  </div>`;
 }
+function closeInfo(){$('#modal').classList.remove('on')}
+function showInfo(id){
+ const c=S.cat.find(x=>x.id==id);if(!c)return;
+ const tr=(c.expected_transcript||[]).map(t=>`<div><b class=mut>${t.role}:</b> ${esc(t.text)}</div>`).join('');
+ $('#modalC').innerHTML=`<span class=x onclick=closeInfo()>✕</span>
+  <h2>${c.id} ${c.third_party?'👤':''}</h2>
+  <div class=mut>${esc(c.name)}</div>
+  <div class=kv>
+   <div class=k>Test type</div><div>${S.type} · ${S.product}/${S.env}/${S.feed}</div>
+   <div class=k>Expected verdict</div><div><b>${c.status}</b></div>
+   <div class=k>systemCode</div><div>${c.system_code||'—'}</div>
+   <div class=k>Expected amount</div><div>${c.amount||'— (none)'}</div>
+   <div class=k>Regime</div><div>${c.regime||'—'}</div>
+   <div class=k>Group</div><div>${c.group||'—'}</div>
+   <div class=k>Scenario type</div><div>${c.scenario||'—'}</div>
+   <div class=k>Route</div><div>${c.route||'—'}</div>
+   <div class=k>3rd-party</div><div>${c.third_party?'Yes':'No'}</div>
+   <div class=k>Data status</div><div>${c.data_status}</div>
+   <div class=k>Last run</div><div>${c.exec_status}</div>
+  </div>
+  ${c.detail?`<div class=k style=color:var(--mut)>UAT gap-doc specification</div><div class=spec>${esc(c.detail)}</div>`:''}
+  ${c.intent?`<div class=k style=color:var(--mut)>Customer intent</div><div class=spec>${esc(c.intent)}</div>`:''}
+  ${tr?`<div class=k style=color:var(--mut)>Expected conversation</div><div class=spec>${tr}</div>`:''}
+  <div style=margin-top:14px>
+    <a href="/gapdoc?${q()}#${c.id}" target=_blank><button class="act gh">Open original gap-doc card ↗</button></a>
+  </div>`;
+ $('#modal').classList.add('on');
+}
 function tog(id,on){on?S.sel.add(id):S.sel.delete(id);drawCases()}
 function selAll(){filtered().forEach(c=>S.sel.add(c.id));drawCases()}
 async function seedSel(){
@@ -704,10 +739,10 @@ async function renderData(m){
    <span style=margin-left:auto></span>
    <label class=mut><input type=checkbox ${S.tdAll?'checked':''} onchange="S.tdAll=this.checked;render()"> Show superseded history</label></div>
   <div class=mut style=margin:-6px 0 10px>Each re-seed mints a fresh PNR; only the latest per test case is <b>Available</b>${S.tdAll?' — older ones are Superseded (stale trip data)':''}.</div>
-  <table><tr><th>Data ID (PNR)</th><th>Test Case</th><th>Passenger</th><th>systemCode</th><th>Flight date</th><th>Created (UTC)</th><th>Status</th><th>Set</th></tr>
+  <table><tr><th>Data ID (PNR)</th><th>Test Case</th><th>Passenger</th><th>systemCode</th><th>Flight date</th><th>Created (UTC)</th><th>Status</th></tr>
   ${d.map(r=>`<tr><td><b>${r.data_id||''}</b></td><td>${r.case_id||''}</td><td>${r.passenger}</td>
    <td class=mut style=font-size:11px>${r.system_code||''}</td><td>${r.date||''}</td><td>${r.created_utc}</td>
-   <td><span class="pill ${r.status=='Available'?'Seeded':'Not'}">${r.status}</span></td><td class=mut style=font-size:11px>${r.set}</td></tr>`).join('')}</table>`;
+   <td><span class="pill ${r.status=='Available'?'Seeded':'Not'}">${r.status}</span></td></tr>`).join('')}</table>`;
 }
 async function renderExec(m){
  const d=await jget('/api/testdata?'+q());
