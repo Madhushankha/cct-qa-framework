@@ -77,7 +77,13 @@ def usecase_from_meta(meta: dict) -> UseCase:
     passenger = " ".join(x for x in (meta.get("first"), meta.get("surname")) if x).strip()
     expected = str(meta.get("expected") or "")
     amount = parse_amount(expected)
-    verdict = derive_verdict(expected, amount)
+    # Prefer the verdict encoded in the gap-doc systemCode class (FD-<regime>-<CLASS>-n): EL/NE/ND/PE
+    # -> ELIGIBLE/NOT_ELIGIBLE/NO_DETERMINATION/PENDING. The free-text `expected` note defaults to
+    # ELIGIBLE, which mislabels every negative case; the systemCode is the reliable per-case truth.
+    sc_parts = str(meta.get("system_code") or "").upper().split("-")
+    sc_cls = sc_parts[2] if len(sc_parts) > 2 else ""
+    verdict = {"EL": "ELIGIBLE", "NE": "NOT_ELIGIBLE", "ND": "NO_DETERMINATION",
+               "PE": "PENDING", "DB": "ELIGIBLE"}.get(sc_cls) or derive_verdict(expected, amount)
     extras = {
         "disruption": meta.get("fdm_spec") or "",
         "expected_note": expected,
