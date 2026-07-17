@@ -170,6 +170,47 @@ def _report_runs(feed: str) -> list:
     return out
 
 
+def _analytics(run_rel: str) -> dict:
+    """Metrics (trajectory funnel + decision/error mix) + analysis (grades, clusters) for one run —
+    read from the run's metrics/metrics.json + analysis/analysis.json when the pipeline produced them,
+    else computed on the fly from the result set so the tab always has something to show."""
+    run = (ROOT / run_rel).resolve()
+    if not str(run).startswith(str(RESULTS_ROOT.resolve())) or not run.is_dir():
+        return {"error": "run not found"}
+    out: dict = {"name": run.name, "has_metrics": (run / "metrics" / "report.html").exists()}
+    mp = run / "metrics" / "metrics.json"
+    if mp.exists():
+        try:
+            m = json.loads(mp.read_text(encoding="utf-8"))
+            out["stage_coverage"] = m.get("trajectory", {}).get("stage_coverage", {})
+            out["anomaly_rates"] = m.get("trajectory", {}).get("anomaly_rates", {})
+        except Exception:
+            pass
+    ap = run / "analysis" / "analysis.json"
+    if ap.exists():
+        try:
+            a = json.loads(ap.read_text(encoding="utf-8"))
+            out["findings"] = a.get("findings", {})
+            out["clusters"] = a.get("clusters", [])
+        except Exception:
+            pass
+    # always-present roll-ups computed straight from the results (decision + grade mix)
+    from analysis.grade import grade as _grade
+    dec: dict = {}
+    grd: dict = {}
+    for res in run.glob("*.result.json"):
+        try:
+            d = json.loads(res.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        dec[d["verdict"]["decision"]] = dec.get(d["verdict"]["decision"], 0) + 1
+        g = _grade(d)["grade"]
+        grd[g] = grd.get(g, 0) + 1
+    out["decisions"] = dec
+    out["grades"] = grd
+    return out
+
+
 def _run_cases(run_rel: str) -> list:
     run = (ROOT / run_rel).resolve()
     out = []
@@ -310,6 +351,8 @@ class H(BaseHTTPRequestHandler):
             return self._send(200, _report_runs(q.get("feed", "fd")))
         if u.path == "/api/runcases":
             return self._send(200, _run_cases(q.get("run", "")))
+        if u.path == "/api/analytics":
+            return self._send(200, _analytics(q.get("run", "")))
         if u.path == "/api/job":
             return self._send(200, _job(q.get("id", ""), None))
         if u.path.startswith("/r/"):
@@ -409,7 +452,7 @@ button.act:hover{filter:brightness(1.1)}button.gh{background:var(--bd)}button:di
 <main id=main></main>
 <script>
 const S={product:'bravo',env:'int',type:'UAT',feed:'fd',cat:[],sel:new Set(),tab:'Dashboard',lastClone:null};
-const TABS=['Dashboard','Test Cases','Test Data','Execution','Reports'];
+const TABS=['Dashboard','Test Cases','Test Data','Execution','Reports','Analytics'];
 const $=s=>document.querySelector(s), el=(h)=>{const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild};
 async function jget(u){return (await fetch(u)).json()}
 async function jpost(u,b){return (await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)})).json()}
@@ -435,6 +478,33 @@ async function render(){
  if(S.tab=='Test Data')return renderData(m);
  if(S.tab=='Execution')return renderExec(m);
  if(S.tab=='Reports')return renderReports(m);
+ if(S.tab=='Analytics')return renderAnalytics(m);
+}
+async function renderAnalytics(m){
+ const runs=await jget('/api/reports?feed='+S.feed);
+ if(!runs.length){m.innerHTML='<div class=mut>No runs yet — execute a flow first.</div>';return}
+ m.innerHTML=`<div class=bar>Analytics &amp; metrics for run
+   <select id=anRun onchange=drawAnalytics()>${runs.map(r=>`<option value="${r.path}">${r.name} (${r.passed}✓/${r.failed}✗)</option>`).join('')}</select>
+   <span id=anMetaBtn style=margin-left:auto></span></div>
+   <div id=anBody class=mut>Loading…</div>`;
+ drawAnalytics();
+}
+async function drawAnalytics(){
+ const run=$('#anRun').value, a=await jget('/api/analytics?run='+run);
+ $('#anMetaBtn').innerHTML=a.has_metrics?`<button class="act gh" onclick="window.open('/r/${run}/metrics/report.html')">Open full metrics report ↗</button>`:'<span class=mut>metrics/analysis not generated (run Full pipeline)</span>';
+ const bar=(o,color)=>{const tot=Object.values(o||{}).reduce((s,v)=>s+v,0)||1;
+   return Object.entries(o||{}).sort((x,y)=>y[1]-x[1]).map(([k,v])=>`<div style=margin:3px 0><span style=display:inline-block;width:190px>${k}</span>
+   <span style="display:inline-block;height:14px;width:${Math.round(300*v/tot)}px;background:${color};vertical-align:middle;border-radius:3px"></span> <b>${v}</b></div>`).join('')};
+ const funnel=Object.entries(a.stage_coverage||{}).map(([k,v])=>`<tr><td>${k}</td><td>${Math.round((v.rate||0)*100)}%</td>
+   <td><span style="display:inline-block;height:10px;width:${Math.round(240*(v.rate||0))}px;background:#d0021b;border-radius:3px"></span></td></tr>`).join('');
+ $('#anBody').innerHTML=`
+  <div style=display:grid;grid-template-columns:1fr 1fr;gap:20px>
+   <div><h3>Decision mix</h3>${bar(a.decisions,'#2563eb')}</div>
+   <div><h3>Grade mix (P6)</h3>${bar(a.grades,'#7c3aed')}</div>
+  </div>
+  <h3 style=margin-top:20px>Business-flow trajectory ${a.stage_coverage?'':'<span class=mut>(run Full pipeline to populate)</span>'}</h3>
+  ${funnel?`<table style=max-width:600px><tr><th>Stage</th><th>%</th><th></th></tr>${funnel}</table>`:'<div class=mut>No trajectory metrics for this run.</div>'}
+  ${a.clusters&&a.clusters.length?`<h3 style=margin-top:20px>Failure clusters</h3><table><tr><th>Count</th><th>Reason</th></tr>${a.clusters.map(c=>`<tr><td>${c.count}</td><td>${c.reason}</td></tr>`).join('')}</table>`:''}`;
 }
 async function renderDash(m){
  const d=await jget('/api/dashboard?'+q());
