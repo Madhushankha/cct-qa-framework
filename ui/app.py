@@ -160,39 +160,66 @@ def _executed_case_status(feed, product, env) -> dict:
 
 
 # ── created test data ─────────────────────────────────────────────────────────
+_KNOWN_FLOWS = {"fd", "soc", "nc", "anc", "baggage", "seatchange", "bookingchange", "nonmvp"}
+_NAME_CACHE: dict = {}
+
+
+def _case_names(product: str, env: str, feed: str) -> dict:
+    """case_id -> scenario name (cached), so the Test Data screen can show the human name."""
+    key = (product, env, feed)
+    if key in _NAME_CACHE:
+        return _NAME_CACHE[key]
+    names: dict = {}
+    try:
+        from core.registry import resolve
+        from catalog.parser import load_catalog
+        for c in load_catalog(resolve(product, env, feed).feed).cases:
+            names[c.id] = c.title
+    except Exception:
+        pass
+    _NAME_CACHE[key] = names
+    return names
+
+
 def _testdata(feed: str, product: str, env: str, latest_only: bool = True) -> list:
-    """Created test-data records for a cell. Each re-seed mints a NEW PNR, so the same test case
-    accumulates many records over time — only the most recent per case is 'Available'; earlier PNRs
-    are 'Superseded' (their trip rows are stale). `latest_only` (default) returns just the current
-    record per case so the list stays accurate as you seed more; pass latest_only=false to see history."""
+    """Created test-data records for product/env, across ALL flows (or one when `feed` is set). Each
+    re-seed mints a NEW PNR, so a case accumulates records over time — only the most recent per
+    (flow, case) is 'Available'; earlier PNRs are 'Superseded'. `latest_only` (default) hides history.
+    The Test Data screen filters these by flow / status / created-date / search client-side."""
     rows = []
-    prefix = f"{feed}_{product}_{env}_"
     if not SEED_ROOT.is_dir():
         return rows
     for d in sorted(SEED_ROOT.iterdir(), key=lambda p: p.stat().st_mtime, reverse=True):
-        if not d.is_dir() or not (d.name.startswith(prefix) or (feed in d.name and product in d.name)):
+        if not d.is_dir():
             continue
+        toks = d.name.split("_")
+        dflow = toks[0] if toks and toks[0] in _KNOWN_FLOWS else ""
+        if not (product in d.name and env in d.name and dflow):
+            continue
+        if feed and dflow != feed:
+            continue
+        names = _case_names(product, env, dflow)
         for m in sorted(d.glob("*/meta.json")):
             try:
                 meta = json.loads(m.read_text(encoding="utf-8"))
             except Exception:
                 continue
-            ts = int(m.stat().st_mtime)
+            dt = datetime.fromtimestamp(int(m.stat().st_mtime), timezone.utc)
+            cid = meta.get("case_id")
             rows.append({
-                "data_id": meta.get("locator"), "case_id": meta.get("case_id"),
-                "pnr_id": meta.get("pnr_id"), "product": product, "flow": feed, "env": env,
+                "data_id": meta.get("locator"), "case_id": cid, "case_name": names.get(cid, ""),
+                "pnr_id": meta.get("pnr_id"), "product": product, "flow": dflow, "env": env,
                 "passenger": f"{meta.get('first','')} {meta.get('surname','')}".strip(),
-                "system_code": meta.get("system_code"), "date": meta.get("date"),
-                "created_utc": datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-                "set": d.name, "_ts": ts,
+                "system_code": meta.get("system_code"), "flight_date": meta.get("date"),
+                "created_date": dt.strftime("%Y-%m-%d"), "created_time": dt.strftime("%H:%M:%S"),
+                "buffer": False,
             })
-    # newest-first already; the FIRST time we see a case_id it's the current record, the rest superseded
     seen: set = set()
     for r in rows:
-        cur = r["case_id"] not in seen
-        seen.add(r["case_id"])
+        k = (r["flow"], r["case_id"])
+        cur = k not in seen
+        seen.add(k)
         r["status"] = "Available" if cur else "Superseded"
-        del r["_ts"]
     if latest_only:
         rows = [r for r in rows if r["status"] == "Available"]
     return rows
@@ -401,7 +428,7 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/dashboard":
             return self._send(200, _dashboard(q.get("product", "bravo"), q.get("env", "int"), q.get("feed", "fd")))
         if u.path == "/api/testdata":
-            return self._send(200, _testdata(q.get("feed", "fd"), q.get("product", "bravo"),
+            return self._send(200, _testdata(q.get("feed", ""), q.get("product", "bravo"),
                                              q.get("env", "int"), q.get("latest", "1") != "0"))
         if u.path == "/api/reports":
             return self._send(200, _report_runs(q.get("feed", "fd")))
@@ -739,16 +766,42 @@ async function doSeed(ids){
  poll(r.job,lg,()=>{drawCases();renderCases($('#main'))});
 }
 async function renderData(m){
- const latest=S.tdAll?'0':'1';
- const d=await jget('/api/testdata?'+q()+'&latest='+latest);
- m.innerHTML=`<div class=bar><b>${d.length}</b> test-data records — ${S.feed}/${S.product}/${S.env}
-   <span style=margin-left:auto></span>
-   <label class=mut><input type=checkbox ${S.tdAll?'checked':''} onchange="S.tdAll=this.checked;render()"> Show superseded history</label></div>
-  <div class=mut style=margin:-6px 0 10px>Each re-seed mints a fresh PNR; only the latest per test case is <b>Available</b>${S.tdAll?' — older ones are Superseded (stale trip data)':''}.</div>
-  <table><tr><th>Data ID (PNR)</th><th>Test Case</th><th>Passenger</th><th>systemCode</th><th>Flight date</th><th>Created (UTC)</th><th>Status</th></tr>
-  ${d.map(r=>`<tr><td><b>${r.data_id||''}</b></td><td>${r.case_id||''}</td><td>${r.passenger}</td>
-   <td class=mut style=font-size:11px>${r.system_code||''}</td><td>${r.date||''}</td><td>${r.created_utc}</td>
-   <td><span class="pill ${r.status=='Available'?'Seeded':'Not'}">${r.status}</span></td></tr>`).join('')}</table>`;
+ // fetch ALL flows for product/env once (incl. history), then filter client-side
+ S.td=await jget(`/api/testdata?product=${S.product}&env=${S.env}&latest=0`);
+ const flows=[...new Set(S.td.map(r=>r.flow))].sort();
+ m.innerHTML=`<div class=hint>🔎 Search &amp; filter existing test data across flows, status, and created date.</div>
+  <div class=filt>
+   <input id=tSearch placeholder="🔍 PNR, test case, passenger, systemCode…" oninput=drawTD()>
+   <select id=tFlow onchange=drawTD()><option value="">All flows</option>${flows.map(f=>`<option>${f}</option>`).join('')}</select>
+   <select id=tStatus onchange=drawTD()><option value="">Available only</option><option value=all>Available + Superseded</option><option>Superseded</option></select>
+   <label class=mut>From <input type=date id=tFrom onchange=drawTD()></label>
+   <label class=mut>To <input type=date id=tTo onchange=drawTD()></label>
+   <span class=mut id=tInfo style=margin-left:auto></span>
+  </div>
+  <table id=tdtab></table>`;
+ drawTD();
+}
+function drawTD(){
+ const kw=($('#tSearch').value||'').toLowerCase(),fl=$('#tFlow').value,st=$('#tStatus').value,
+   from=$('#tFrom').value,to=$('#tTo').value;
+ let rows=S.td.filter(r=>{
+   if(fl&&r.flow!=fl)return false;
+   if(st==''&&r.status!='Available')return false;
+   if(st=='Superseded'&&r.status!='Superseded')return false;
+   if(from&&r.created_date<from)return false;
+   if(to&&r.created_date>to)return false;
+   if(kw&&![r.data_id,r.case_id,r.case_name,r.passenger,r.system_code].some(x=>(x||'').toLowerCase().includes(kw)))return false;
+   return true;
+ });
+ $('#tInfo').textContent=`${rows.length} record(s)`;
+ $('#tdtab').innerHTML=`<tr><th>Data ID (PNR)</th><th>Test Case</th><th>Scenario</th><th>Flow</th><th>Passenger</th><th>systemCode</th><th>Flight date</th><th>Created (UTC)</th><th>Status</th></tr>`+
+  rows.map(r=>`<tr><td><b>${r.data_id||''}</b></td><td>${r.case_id||''}</td>
+   <td style=max-width:280px;color:var(--mut);font-size:12px>${esc(r.case_name)}</td>
+   <td>${r.flow}</td><td>${r.passenger}</td>
+   <td class=mut style=font-size:11px>${r.system_code||''}</td><td>${r.flight_date||''}</td>
+   <td>${r.created_date} ${r.created_time}</td>
+   <td><span class="pill ${r.status=='Available'?'Seeded':'Not'}">${r.status}</span></td></tr>`).join('')
+  ||'<tr><td colspan=9 class=mut>No matching test data.</td></tr>';
 }
 async function renderExec(m){
  const d=await jget('/api/testdata?'+q());
