@@ -1,6 +1,6 @@
 """GUARDED live smoke: drive ONE real case against an env and assert a canonical Result file is produced.
 Skipped by default so offline runs never touch the network — set CCTQA_LIVE=1 (plus AWS creds + the live
-extra) to enable. Cell defaults to brove.int.fd; override via CCTQA_PRODUCT / CCTQA_ENV / CCTQA_FEED."""
+extra) to enable. Cell defaults to bravo.int.fd; override via CCTQA_PRODUCT / CCTQA_ENV / CCTQA_FEED."""
 from __future__ import annotations
 
 import json
@@ -20,7 +20,7 @@ def test_live_one_case(tmp_path):
     from core.result import validate_result
     from runner.orchestrator import run_batch
 
-    product = os.getenv("CCTQA_PRODUCT", "brove")
+    product = os.getenv("CCTQA_PRODUCT", "bravo")
     env = os.getenv("CCTQA_ENV", "int")
     feed = os.getenv("CCTQA_FEED", "fd")
 

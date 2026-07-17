@@ -64,7 +64,7 @@ A chatbot deployment/brand.
 
 | Field | Type | Meaning |
 |---|---|---|
-| `id`, `label` | str | e.g. `brove` |
+| `id`, `label` | str | e.g. `bravo` |
 | `transcript_dialect` | str | selects evalkit taxonomy regex block (P5) |
 | `overrides.persona` | map (optional) | per-feed persona overrides |
 | `overrides.judge` | map (optional) | per-feed judge overrides |
@@ -99,7 +99,7 @@ computed downstream.
 ```jsonc
 {
   "schema_version": "1.0",
-  "scenario_id": "brove.crt.fd.FD_TC_089",       // product.env.feed.case
+  "scenario_id": "bravo.crt.fd.FD_TC_089",       // product.env.feed.case
   "run":   { "product","env","feed","date","run_id","started","duration_s" },
   "case":  {                                      // EXPECTED, from the catalog use-case (P1)
     "test_case","pnr","pnr_id","passenger","regime",
@@ -180,7 +180,7 @@ core/
 
 ## 8. Deliverables
 
-- `core/` package as above, with the four stub descriptors filled to real (fd/crt/int/brove) + one
+- `core/` package as above, with the four stub descriptors filled to real (fd/crt/int/bravo) + one
   more feed stub to prove "add a file, no code".
 - `result.schema.json` v1.0 + validator.
 - `cctqa list` / `cctqa validate` working against the checked-in registry.

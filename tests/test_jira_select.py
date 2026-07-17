@@ -21,7 +21,7 @@ def _base(scenario_id, test_case, pnr, decision, matches_expected, *,
     doc = {
         "schema_version": "1.0",
         "scenario_id": scenario_id,
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 12.5},
         "case": {"test_case": test_case, "pnr": pnr, "pnr_id": f"{pnr}-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": "EU",
@@ -50,23 +50,23 @@ def _base(scenario_id, test_case, pnr, decision, matches_expected, *,
 def determination_gap_result():
     """A Valid FAIL where DDS already reached an eligible-shaped verdict but the bot
     escalated — the recurring determination-gap defect this package exists to file."""
-    return _base("brove.crt.fd.FD_TC_002", "FD_TC_002", "HQNVYV", "ESCALATED", False,
+    return _base("bravo.crt.fd.FD_TC_002", "FD_TC_002", "HQNVYV", "ESCALATED", False,
                  expected_status="ELIGIBLE", dds_status="ELIGIBLE")
 
 
 def pass_result():
-    return _base("brove.crt.fd.FD_TC_001", "FD_TC_001", "GQWKRH", "ELIGIBLE", True,
+    return _base("bravo.crt.fd.FD_TC_001", "FD_TC_001", "GQWKRH", "ELIGIBLE", True,
                  expected_status="ELIGIBLE", dds_status="ELIGIBLE")
 
 
 def harness_fail_result():
-    return _base("brove.crt.fd.FD_TC_003", "FD_TC_003", "ABCDEF", "NO_DETERMINATION", False,
+    return _base("bravo.crt.fd.FD_TC_003", "FD_TC_003", "ABCDEF", "NO_DETERMINATION", False,
                  expected_status="ELIGIBLE", dds_status=None,
                  harness_error="reached max_turns", harness_bucket="max_turns_exhausted")
 
 
 def environment_error_result():
-    return _base("brove.crt.fd.FD_TC_004", "FD_TC_004", "ZFPQRS", "NO_DETERMINATION", False,
+    return _base("bravo.crt.fd.FD_TC_004", "FD_TC_004", "ZFPQRS", "NO_DETERMINATION", False,
                  expected_status="ELIGIBLE", dds_status=None,
                  harness_error="No bot reply received within 30s", harness_bucket="bot_reply_timeout")
 

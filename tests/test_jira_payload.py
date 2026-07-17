@@ -78,7 +78,7 @@ def test_dedup_key_differs_for_a_different_pnr():
     result_a = determination_gap_result()
     result_b = determination_gap_result()
     result_b["case"]["pnr"] = "OTHERX"
-    result_b["scenario_id"] = "brove.crt.fd.FD_TC_099"
+    result_b["scenario_id"] = "bravo.crt.fd.FD_TC_099"
 
     key_a = build_payload(result_a, grade(result_a), _conf())["dedup_key"]
     key_b = build_payload(result_b, grade(result_b), _conf())["dedup_key"]

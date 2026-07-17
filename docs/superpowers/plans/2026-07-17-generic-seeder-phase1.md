@@ -479,11 +479,11 @@ git commit -m "feat(seed): FD renders through the manifest engine (today-relativ
 **Files:** none (operational)
 
 - [ ] **Step 1:** `aws sso login --profile int-sso` (fresh 1h token).
-- [ ] **Step 2 (pilot):** `DDS_API_KEY=... python -m seed.cli brove int fd --all --limit 5 --workers 4`
+- [ ] **Step 2 (pilot):** `DDS_API_KEY=... python -m seed.cli bravo int fd --all --limit 5 --workers 4`
   — confirm the render lines show per-case dates + intent, and 5/5 verify all-pass.
 - [ ] **Step 3 (PENDING check):** run with `--limit` sized to include FD_TC_060 (or a targeted run);
   confirm its flight date is within 72h of today and its PENDING checkpoint passes.
-- [ ] **Step 4 (full):** `python -m seed.cli brove int fd --all` → all 239, resumable; commit the
+- [ ] **Step 4 (full):** `python -m seed.cli bravo int fd --all` → all 239, resumable; commit the
   final `seed-mapping.json`.
 
 ---

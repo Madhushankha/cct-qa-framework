@@ -5,7 +5,7 @@ verdict / systemCode / amount against the gap-doc expected for that test case. T
 correct independently of the chatbot (the bot can escalate a perfectly-good determination for its own
 reasons; this checks the data we injected). Usage:
 
-    python -m seed.verify_uat <clone_dir> [--product brove --env int --feed fd]
+    python -m seed.verify_uat <clone_dir> [--product bravo --env int --feed fd]
 """
 from __future__ import annotations
 
@@ -99,7 +99,7 @@ def verify_clone(clone_dir: str, product: str, env: str, feed: str) -> dict:
 def main(argv=None):
     p = argparse.ArgumentParser(prog="cctqa verify-uat")
     p.add_argument("clone_dir")
-    p.add_argument("--product", default="brove")
+    p.add_argument("--product", default="bravo")
     p.add_argument("--env", default="int")
     p.add_argument("--feed", default="fd")
     a = p.parse_args(argv)

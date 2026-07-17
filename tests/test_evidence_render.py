@@ -14,7 +14,7 @@ def _base(scenario_id, test_case, passenger, pnr, decision, matches_expected,
     return {
         "schema_version": "1.0",
         "scenario_id": scenario_id,
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 12.0},
         "case": {"test_case": test_case, "pnr": pnr, "pnr_id": f"{pnr}-2026-06-15",
                  "passenger": passenger, "regime": "EU", "expected_status": "ELIGIBLE",
@@ -41,7 +41,7 @@ def _base(scenario_id, test_case, passenger, pnr, decision, matches_expected,
 
 
 def result_pass():
-    r = _base("brove.crt.fd.FD_TC_001", "FD_TC_001", "OONA BROOKINGDALE", "GQWKRH",
+    r = _base("bravo.crt.fd.FD_TC_001", "FD_TC_001", "OONA BROOKINGDALE", "GQWKRH",
                "ELIGIBLE", True,
                transcript=[
                    {"role": "customer", "text": "Hi, my flight was delayed.", "ts": "t1", "note": None},
@@ -52,7 +52,7 @@ def result_pass():
 
 
 def result_fail():
-    r = _base("brove.crt.fd.FD_TC_002", "FD_TC_002", "MARCUS FENN", "HQNVYV",
+    r = _base("bravo.crt.fd.FD_TC_002", "FD_TC_002", "MARCUS FENN", "HQNVYV",
                "ESCALATED", False,
                transcript=[
                    {"role": "customer", "text": "My verification code is 483920, please confirm.",
@@ -65,7 +65,7 @@ def result_fail():
 
 
 def result_dds():
-    r = _base("brove.crt.fd.FD_TC_003", "FD_TC_003", "IVY CALLOWAY", "ZFPQRS",
+    r = _base("bravo.crt.fd.FD_TC_003", "FD_TC_003", "IVY CALLOWAY", "ZFPQRS",
                "ELIGIBLE", True,
                dds={"status": "ELIGIBLE", "system_code": "FD-EU-EL-27",
                     "amount": {"currency": "GBP", "value": 520}, "trace_s3": "s3://bucket/trace.json"})
@@ -152,7 +152,7 @@ def test_render_index_shows_checkpoint_pass_count():
 
 def test_render_bot_issues_groups_fails_by_decision():
     a = result_fail()
-    b = _base("brove.crt.fd.FD_TC_004", "FD_TC_004", "RENA OKAFOR", "ABCDEF",
+    b = _base("bravo.crt.fd.FD_TC_004", "FD_TC_004", "RENA OKAFOR", "ABCDEF",
                "ESCALATED", False)
     validate_result(b)
     html_out = render_bot_issues([result_pass(), a, b])

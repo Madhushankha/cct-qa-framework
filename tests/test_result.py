@@ -7,8 +7,8 @@ from core.result import validate_result, write_result, ResultError, RESULT_SCHEM
 def _good_result():
     return {
         "schema_version": "1.0",
-        "scenario_id": "brove.crt.fd.FD_TC_089",
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "scenario_id": "bravo.crt.fd.FD_TC_089",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 42.1},
         "case": {"test_case": "FD_TC_089", "pnr": "GQWKRH", "pnr_id": "GQWKRH-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": "EU", "expected_status": "ELIGIBLE",
@@ -57,4 +57,4 @@ def test_write_result_roundtrip(tmp_path):
     out = tmp_path / "r.json"
     write_result(_good_result(), out)
     reloaded = json.loads(out.read_text(encoding="utf-8"))
-    assert reloaded["scenario_id"] == "brove.crt.fd.FD_TC_089"
+    assert reloaded["scenario_id"] == "bravo.crt.fd.FD_TC_089"

@@ -21,8 +21,8 @@ def test_feed_is_frozen():
 
 
 def test_runcontext_scenario_id():
-    p = Product(id="brove", label="Brove", transcript_dialect="brove", overrides={}, defaults={})
+    p = Product(id="bravo", label="Bravo", transcript_dialect="bravo", overrides={}, defaults={})
     e = Env(id="crt", label="CRT", chatbot={}, aws={}, otp={}, seed_targets={})
     f = Feed(id="fd", label="FD", gap_doc="x", columns={}, persona={}, judge={}, checkpoints={})
-    ctx = RunContext(product=p, env=e, feed=f, scenario_prefix="brove.crt.fd")
-    assert ctx.scenario_id("FD_TC_089") == "brove.crt.fd.FD_TC_089"
+    ctx = RunContext(product=p, env=e, feed=f, scenario_prefix="bravo.crt.fd")
+    assert ctx.scenario_id("FD_TC_089") == "bravo.crt.fd.FD_TC_089"

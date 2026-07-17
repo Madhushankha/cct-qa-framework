@@ -4,7 +4,7 @@ from __future__ import annotations
 from analysis.rollup import rollup
 
 
-def _item(scenario_id, grade, status, product="brove", env="crt", feed="fd"):
+def _item(scenario_id, grade, status, product="bravo", env="crt", feed="fd"):
     return {
         "scenario_id": scenario_id,
         "grade": grade,
@@ -72,13 +72,13 @@ def test_weak_pass_counts_as_pass_in_denominator():
 
 def test_breakdown_by_product_env_feed():
     items = [
-        _item("a.b.c.T1", "Strong PASS", "PASS", product="brove", env="crt", feed="fd"),
-        _item("a.b.c.T2", "Valid FAIL", "FAIL", product="brove", env="int", feed="soc"),
+        _item("a.b.c.T1", "Strong PASS", "PASS", product="bravo", env="crt", feed="fd"),
+        _item("a.b.c.T2", "Valid FAIL", "FAIL", product="bravo", env="int", feed="soc"),
     ]
 
     r = rollup(items)
 
-    assert r["by_product"]["brove"]["total"] == 2
+    assert r["by_product"]["bravo"]["total"] == 2
     assert r["by_env"]["crt"]["total"] == 1
     assert r["by_env"]["int"]["total"] == 1
     assert r["by_feed"]["fd"]["pass_rate"] == 1.0

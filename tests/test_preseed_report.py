@@ -26,7 +26,7 @@ def test_collect_and_render(tmp_path):
     assert rows[0]["pnr"] == "MHGQHS" and rows[0]["passenger"] == "YANNICK THORNENLOW"
     assert rows[0]["last_name"] == "THORNENLOW" and rows[0]["gate"] == "all-pass"
 
-    out = build_preseed_report(tmp_path, product="brove", env="int", feed="fd", date="2026-07-17")
+    out = build_preseed_report(tmp_path, product="bravo", env="int", feed="fd", date="2026-07-17")
     html = out.read_text(encoding="utf-8")
     assert "MHGQHS" in html and "THORNENLOW" in html and "0142000000011" in html
     assert "lahiru@ae-qa1-aircanada.mailinator.com" in html

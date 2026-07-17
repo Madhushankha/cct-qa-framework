@@ -1,7 +1,7 @@
 id: alpha
 label: Alpha
 # The "alpha" chatbot build — the instance deployed to CRT (base_url lives in envs/crt.yaml).
-# Shares the widget-aware CRT engine dialect with brove; per-product persona/judge overrides go here.
+# Shares the widget-aware CRT engine dialect with bravo; per-product persona/judge overrides go here.
 transcript_dialect: alpha
 overrides:
   persona: {}

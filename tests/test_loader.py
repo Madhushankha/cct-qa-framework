@@ -15,7 +15,7 @@ def test_load_env_and_product():
     e = load_env("crt")
     assert isinstance(e, Env)
     assert e.otp["strategy"] == "mailinator"
-    p = load_product("brove")
+    p = load_product("bravo")
     assert isinstance(p, Product)
     assert p.defaults["feeds"] == ["fd", "soc"]
 

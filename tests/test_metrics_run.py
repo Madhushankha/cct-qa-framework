@@ -14,8 +14,8 @@ def _base(test_case, system_code, regime, expected_status, expected_amount,
           decision, matches_expected, actual_amount=None, error=None):
     return {
         "schema_version": "1.0",
-        "scenario_id": f"brove.crt.fd.{test_case}",
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "scenario_id": f"bravo.crt.fd.{test_case}",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 12.5},
         "case": {"test_case": test_case, "pnr": "GQWKRH", "pnr_id": "GQWKRH-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": regime,
@@ -83,7 +83,7 @@ def test_build_metrics_json_has_schema_version_and_headline_metrics(tmp_path):
 
     assert m["schema_version"]
     assert m["n_cases"] == 2
-    assert m["agent"] == "brove"
+    assert m["agent"] == "bravo"
     assert m["env"] == "crt"
     for top_key in ("headline", "confusion", "checks", "slices", "trajectory", "ops", "cases"):
         assert top_key in m

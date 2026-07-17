@@ -22,7 +22,7 @@ def _conf() -> dict:
     }
 
 
-def _payload(pnr="HQNVYV", scenario_id="brove.crt.fd.FD_TC_002"):
+def _payload(pnr="HQNVYV", scenario_id="bravo.crt.fd.FD_TC_002"):
     result = determination_gap_result()
     result["case"]["pnr"] = pnr
     result["scenario_id"] = scenario_id
@@ -73,8 +73,8 @@ def test_file_defects_dedup_skips_a_key_already_in_the_ledger(tmp_path):
 
 
 def test_file_defects_dedup_only_skips_the_matching_key(tmp_path):
-    filed_payload = _payload(pnr="HQNVYV", scenario_id="brove.crt.fd.FD_TC_002")
-    new_payload = _payload(pnr="OTHERXX", scenario_id="brove.crt.fd.FD_TC_777")
+    filed_payload = _payload(pnr="HQNVYV", scenario_id="bravo.crt.fd.FD_TC_002")
+    new_payload = _payload(pnr="OTHERXX", scenario_id="bravo.crt.fd.FD_TC_777")
     ledger_path = tmp_path / "jira_created.json"
     ledger_path.write_text(json.dumps([{"dedup_key": filed_payload["dedup_key"], "key": "CHAI-99999"}]),
                             encoding="utf-8")
@@ -98,8 +98,8 @@ def test_file_defects_second_dry_run_is_idempotent(tmp_path):
 
 
 def test_file_defects_respects_limit_in_dry_run(tmp_path):
-    payload_a = _payload(pnr="AAAAAA", scenario_id="brove.crt.fd.FD_TC_100")
-    payload_b = _payload(pnr="BBBBBB", scenario_id="brove.crt.fd.FD_TC_200")
+    payload_a = _payload(pnr="AAAAAA", scenario_id="bravo.crt.fd.FD_TC_100")
+    payload_b = _payload(pnr="BBBBBB", scenario_id="bravo.crt.fd.FD_TC_200")
     ledger_path = tmp_path / "jira_created.json"
 
     outcome = file_defects([payload_a, payload_b], _conf(), ledger_path, dry_run=True, limit=1)

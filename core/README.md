@@ -14,7 +14,7 @@ which engine you import, producing two incompatible result schemas. See
 
 - **`Feed` descriptor** — one per business domain (`fd`, `soc`, …): the customer persona template,
   the judge + verdict tool schema, the expected-outcome shape, and a reference to its gap doc + checkpoints.
-- **`Product` descriptor** — a chatbot deployment (`brove`, `alpha`): display name, defaults, any
+- **`Product` descriptor** — a chatbot deployment (`bravo`, `alpha`): display name, defaults, any
   product-specific persona/judge overrides, transcript dialect id (for evalkit taxonomy).
 - **`Env` descriptor** — an environment (`crt`, `int`, `bat`): API-Gateway endpoint, **OTP strategy**
   (real Mailinator vs fixed `123456`), config, AWS profile/account, and **seed targets** (Kafka topics,

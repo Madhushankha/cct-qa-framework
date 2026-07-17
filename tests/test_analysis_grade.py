@@ -14,8 +14,8 @@ def _base(*, matches_expected=True, seed_verified=True, checks=None,
     ]
     doc = {
         "schema_version": "1.0",
-        "scenario_id": "brove.crt.fd.FD_TC_001",
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "scenario_id": "bravo.crt.fd.FD_TC_001",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 12.5},
         "case": {"test_case": "FD_TC_001", "pnr": "GQWKRH", "pnr_id": "GQWKRH-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": "EU",

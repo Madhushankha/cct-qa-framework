@@ -16,13 +16,13 @@ from runner.orchestrator import run_batch
 
 
 def make_ctx() -> RunContext:
-    product = Product(id="brove", label="Brove", transcript_dialect="brove", overrides={}, defaults={})
+    product = Product(id="bravo", label="Bravo", transcript_dialect="bravo", overrides={}, defaults={})
     env = Env(id="int", label="INT", chatbot={}, aws={}, otp={"strategy": "fixed"}, seed_targets={})
     feed = Feed(id="fd", label="FD", gap_doc="", columns={},
                 persona={"default": "You are CUSTOMER {first} {last} PNR {pnr}."},
                 judge={"verdict_enum": ["ELIGIBLE", "UNKNOWN"], "match_on": ["status"]},
                 checkpoints={"areas": []})
-    return RunContext(product=product, env=env, feed=feed, scenario_prefix="brove.int.fd",
+    return RunContext(product=product, env=env, feed=feed, scenario_prefix="bravo.int.fd",
                       persona=feed.persona, judge=feed.judge)
 
 

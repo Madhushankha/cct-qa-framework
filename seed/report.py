@@ -71,7 +71,7 @@ def render_preseed(rows: list[dict], *, product: str = "", env: str = "", feed: 
 
 def preseed_filename(product: str, env: str, feed: str, date: str, time: str = "") -> str:
     """Identifiable filename carrying the full run key incl. time, e.g.
-    `fd_brove_int_2026-07-17_143022_preseed.html` — time is included because one day can hold
+    `fd_bravo_int_2026-07-17_143022_preseed.html` — time is included because one day can hold
     several seed runs, so the report stays self-describing and unique even out of its folder."""
     stem = "_".join(x for x in (feed, product, env, date, time) if x)
     return f"{stem}_preseed.html" if stem else "preseed.html"

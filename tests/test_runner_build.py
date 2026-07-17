@@ -19,14 +19,14 @@ JUDGE = {"verdict_enum": ["ELIGIBLE", "NOT_ELIGIBLE", "NO_DETERMINATION", "UNKNO
 
 
 def make_ctx() -> RunContext:
-    product = Product(id="brove", label="Brove", transcript_dialect="brove", overrides={}, defaults={})
+    product = Product(id="bravo", label="Bravo", transcript_dialect="bravo", overrides={}, defaults={})
     env = Env(id="int", label="INT",
               chatbot={"base_url": "https://x.example/prod", "endpoint_path": "/start-chat",
                        "region": "ca-central-1", "response_timeout_seconds": 120},
               aws={}, otp={"strategy": "fixed", "code": "654321"}, seed_targets={})
     feed = Feed(id="fd", label="Flight Disruption", gap_doc="", columns={}, persona=PERSONA,
                 judge=JUDGE, checkpoints={"areas": []})
-    return RunContext(product=product, env=env, feed=feed, scenario_prefix="brove.int.fd",
+    return RunContext(product=product, env=env, feed=feed, scenario_prefix="bravo.int.fd",
                       persona=PERSONA, judge=JUDGE)
 
 
@@ -107,8 +107,8 @@ def test_run_case_assembles_valid_result():
                             flow_fn=_fake_flow, judge_fn=_fake_judge, run_date="2026-07-16")
     validate_result(result)   # explicit belt-and-suspenders (run_case already validated)
 
-    assert result["scenario_id"] == "brove.int.fd.FD_TC_001"
-    assert result["run"]["product"] == "brove" and result["run"]["env"] == "int" and result["run"]["feed"] == "fd"
+    assert result["scenario_id"] == "bravo.int.fd.FD_TC_001"
+    assert result["run"]["product"] == "bravo" and result["run"]["env"] == "int" and result["run"]["feed"] == "fd"
     assert result["case"]["test_case"] == "FD_TC_001"
     assert result["case"]["expected_status"] == "ELIGIBLE"
     assert result["case"]["expected_system_code"] == "FD-APPR-NE-01"

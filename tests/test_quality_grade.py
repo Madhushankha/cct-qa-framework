@@ -7,8 +7,8 @@ from quality.grade import quality_report
 def _base_result(transcript):
     return {
         "schema_version": "1.0",
-        "scenario_id": "brove.crt.fd.FD_TC_089",
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": "2026-07-14",
+        "scenario_id": "bravo.crt.fd.FD_TC_089",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": "2026-07-14",
                 "run_id": "r1", "started": "2026-07-14T00:00:00Z", "duration_s": 42.1},
         "case": {"test_case": "FD_TC_089", "pnr": "GQWKRH", "pnr_id": "GQWKRH-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": "EU", "expected_status": "ELIGIBLE",
@@ -53,7 +53,7 @@ def test_clean_transcript_scores_high_with_no_llm_call(monkeypatch):
     assert report["llm"] is None
     assert report["deterministic"] == []
     assert report["score"] >= 90
-    assert report["scenario_id"] == "brove.crt.fd.FD_TC_089"
+    assert report["scenario_id"] == "bravo.crt.fd.FD_TC_089"
 
 
 def test_defective_transcript_scores_lower():

@@ -736,7 +736,7 @@ from seed.campaign_cli import main
 
 
 def test_dry_run_prints_plan(capsys, tmp_path, monkeypatch):
-    rc = main(["brove", "int", "fd", "--dry-run"])
+    rc = main(["bravo", "int", "fd", "--dry-run"])
     out = capsys.readouterr().out
     assert rc == 0 and "todo" in out and "unseedable" in out
 ```
@@ -878,11 +878,11 @@ git commit -m "feat(seed): corpus audit — six-bucket coverage report over cata
 **Files:** none (operational task; produces `data/seed-ledger/fd.yaml` growth + `campaign-report.json` + audit reports)
 
 - [ ] **Step 1:** `aws sts get-caller-identity --profile int-sso` → session valid.
-- [ ] **Step 2:** `cctqa dds-harvest brove int fd` → then register harvested families in `int.yaml` (Task 5 Step 5 if not yet done); commit.
-- [ ] **Step 3:** `cctqa seed-campaign brove int fd --dry-run` → review todo/unseedable counts; sanity-check a few case→source pairings by hand.
-- [ ] **Step 4 (pilot):** `cctqa seed-campaign brove int fd --limit 10` → expect 10/10 gate-pass; inspect `campaign-report.json`; commit the ledger.
-- [ ] **Step 5 (full):** `cctqa seed-campaign brove int fd --batch-size 25` → resumable; re-run on any interruption (ledgered HEALTHY cases skip). Commit the ledger after each session.
-- [ ] **Step 6:** `cctqa audit brove int fd` → final coverage report; expected shape: `HEALTHY ≈ todo count`, `SEED_PENDING` + `UNSEEDABLE`-derived `MISSING` for the remainder, `BROKEN = 0`. Commit the audit JSON under `results/<date>/`.
+- [ ] **Step 2:** `cctqa dds-harvest bravo int fd` → then register harvested families in `int.yaml` (Task 5 Step 5 if not yet done); commit.
+- [ ] **Step 3:** `cctqa seed-campaign bravo int fd --dry-run` → review todo/unseedable counts; sanity-check a few case→source pairings by hand.
+- [ ] **Step 4 (pilot):** `cctqa seed-campaign bravo int fd --limit 10` → expect 10/10 gate-pass; inspect `campaign-report.json`; commit the ledger.
+- [ ] **Step 5 (full):** `cctqa seed-campaign bravo int fd --batch-size 25` → resumable; re-run on any interruption (ledgered HEALTHY cases skip). Commit the ledger after each session.
+- [ ] **Step 6:** `cctqa audit bravo int fd` → final coverage report; expected shape: `HEALTHY ≈ todo count`, `SEED_PENDING` + `UNSEEDABLE`-derived `MISSING` for the remainder, `BROKEN = 0`. Commit the audit JSON under `results/<date>/`.
 
 ---
 

@@ -1,6 +1,6 @@
-id: brove
-label: Brove
-transcript_dialect: brove
+id: bravo
+label: Bravo
+transcript_dialect: bravo
 overrides:
   persona: {}
   judge: {}

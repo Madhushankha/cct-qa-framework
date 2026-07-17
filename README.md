@@ -28,7 +28,7 @@ Everything flows one direction, and every artifact is keyed on **`(product, env,
 
 | Axis | Values (examples) | Meaning |
 |---|---|---|
-| **product** | `brove`, `alpha`, … | which chatbot deployment / brand |
+| **product** | `bravo`, `alpha`, … | which chatbot deployment / brand |
 | **env** | `crt`, `int`, `bat` | which environment (endpoint + OTP strategy + seed targets) |
 | **feed** | `fd`, `soc`, `nc`, `anc`, `baggage`, `seatchange`, `bookingchange`, `nonmvp` | which business domain |
 

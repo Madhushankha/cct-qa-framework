@@ -7,7 +7,7 @@ each folder: `product × env × feed`.
 ```
 registry/
 ├── feeds/       one file per business domain  (fd, soc, nc, anc, baggage, seatchange, bookingchange, nonmvp)
-├── products/    one file per chatbot deployment (brove, alpha, …)
+├── products/    one file per chatbot deployment (bravo, alpha, …)
 └── envs/        one file per environment        (crt, int, bat)
 ```
 

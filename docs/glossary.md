@@ -1,6 +1,6 @@
 # Glossary
 
-**product** — a chatbot deployment / brand (e.g. `brove`, `alpha`). One of the three run axes.
+**product** — a chatbot deployment / brand (e.g. `bravo`, `alpha`). One of the three run axes.
 
 **env** — an environment: `crt`, `int`, `bat`. Carries endpoint, OTP strategy, AWS profile/account,
 and seed targets. In the old code this was baked into imports; here it's a descriptor/parameter.

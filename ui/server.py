@@ -99,14 +99,14 @@ def _cases(run_rel: str) -> list:
 
 
 def _cell_axes(seed_name: str) -> tuple:
-    """Best-effort (product, env, feed) from a seed dir name like 'fd_brove_int_...'; default brove/int/fd."""
+    """Best-effort (product, env, feed) from a seed dir name like 'fd_bravo_int_...'; default bravo/int/fd."""
     toks = seed_name.split("_")
     feeds = {"fd", "soc", "nc", "anc", "baggage", "seatchange", "bookingchange", "nonmvp"}
     envs = {"int", "crt", "bat"}
-    prods = {"brove"}
+    prods = {"bravo"}
     feed = next((t for t in toks if t in feeds), "fd")
     env = next((t for t in toks if t in envs), "int")
-    prod = next((t for t in toks if t in prods), "brove")
+    prod = next((t for t in toks if t in prods), "bravo")
     return prod, env, feed
 
 
@@ -272,7 +272,7 @@ _PAGE = """<!doctype html><html><head><meta charset=utf-8><title>CCT QA — Cont
  .muted{color:#64748b;font-size:12px}
  select,input{background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:6px;padding:5px}
 </style></head><body>
-<header><h1>CCT QA — Control Panel <span class=muted>brove · int · fd</span></h1></header>
+<header><h1>CCT QA — Control Panel <span class=muted>bravo · int · fd</span></h1></header>
 <div class=wrap>
  <div class=card>
    <h2>1 · Load existing seeded data</h2>

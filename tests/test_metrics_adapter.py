@@ -9,7 +9,7 @@ from metrics.adapter import result_to_record
 
 def _base(test_case, system_code, regime, expected_status, expected_amount,
           decision, matches_expected, actual_amount=None, error=None,
-          checks=None, product="brove", env="crt", contact_id="c1"):
+          checks=None, product="bravo", env="crt", contact_id="c1"):
     return {
         "schema_version": "1.0",
         "scenario_id": f"{product}.{env}.fd.{test_case}",
@@ -62,7 +62,7 @@ def not_eligible_result():
 def test_result_to_record_maps_eligible_case():
     rec = result_to_record(eligible_result())
 
-    assert rec["agent"] == "brove"
+    assert rec["agent"] == "bravo"
     assert rec["env"] == "crt"
     assert rec["test_id"] == "FD_TC_001"
     assert rec["family"] == "CORE"

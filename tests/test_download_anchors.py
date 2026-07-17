@@ -20,7 +20,7 @@ def _download_anchors(html_out: str) -> list[str]:
 
 def _quality_report():
     return {
-        "scenario_id": "brove.crt.fd.FD_TC_001",
+        "scenario_id": "bravo.crt.fd.FD_TC_001",
         "test_case": "FD_TC_001",
         "deterministic": [],
         "llm": None,

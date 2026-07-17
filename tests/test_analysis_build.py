@@ -14,8 +14,8 @@ def _result(test_case, decision, matches_expected, error=None, error_bucket=None
             expected_status="ELIGIBLE", dds_status="ELIGIBLE", date="2026-07-14"):
     doc = {
         "schema_version": "1.0",
-        "scenario_id": f"brove.crt.fd.{test_case}",
-        "run": {"product": "brove", "env": "crt", "feed": "fd", "date": date,
+        "scenario_id": f"bravo.crt.fd.{test_case}",
+        "run": {"product": "bravo", "env": "crt", "feed": "fd", "date": date,
                 "run_id": "r1", "started": f"{date}T00:00:00Z", "duration_s": 12.5},
         "case": {"test_case": test_case, "pnr": "GQWKRH", "pnr_id": "GQWKRH-2026-06-15",
                  "passenger": "OONA BROOKINGDALE", "regime": "EU",
@@ -71,7 +71,7 @@ def test_analyze_with_prev_dir_adds_diff(tmp_path):
 
     doc = analyze(curr_dir, prev_dir=prev_dir)
 
-    assert doc["diff"]["newly_failing"] == ["brove.crt.fd.FD_TC_001"]
+    assert doc["diff"]["newly_failing"] == ["bravo.crt.fd.FD_TC_001"]
 
 
 def test_analyze_raises_systemexit_when_no_results(tmp_path):
@@ -107,7 +107,7 @@ def test_cli_analyze_subcommand_with_prev_and_custom_out(tmp_path):
 
     assert rc == 0
     doc = json.loads(out_file.read_text(encoding="utf-8"))
-    assert doc["diff"]["newly_failing"] == ["brove.crt.fd.FD_TC_001"]
+    assert doc["diff"]["newly_failing"] == ["bravo.crt.fd.FD_TC_001"]
 
 
 def test_cli_analyze_subcommand_returns_nonzero_on_no_results(tmp_path):
