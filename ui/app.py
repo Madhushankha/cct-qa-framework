@@ -42,6 +42,17 @@ _CLASS_STATUS = {"EL": "ELIGIBLE", "DB": "ELIGIBLE", "NE": "NOT_ELIGIBLE",
                  "ND": "NO_DETERMINATION", "PE": "PENDING"}
 
 
+def _kind_filter(kind: str):
+    """Return a predicate over a file NAME for a download `kind`: all / evidence / quality / reports."""
+    if kind == "evidence":
+        return lambda n: n.endswith(".evidence.html")
+    if kind == "quality":
+        return lambda n: n.endswith(".quality.html")
+    if kind == "reports":  # the HTML reports, not the raw result JSON
+        return lambda n: n.endswith(".html")
+    return lambda n: True  # all
+
+
 # ── registry / catalog (read-only over the framework) ─────────────────────────
 def _registry() -> dict:
     def _ids(sub):
@@ -366,22 +377,58 @@ class H(BaseHTTPRequestHandler):
                 ct += "; charset=utf-8"
             return self._send(200, f.read_bytes(), ct)
         if u.path == "/download":
-            run = (ROOT / q.get("run", "")).resolve()
-            if not str(run).startswith(str(RESULTS_ROOT.resolve())) or not run.is_dir():
+            return self._download(q)
+        return self._send(404, {"error": "not found"})
+
+    def _in_results(self, p: Path) -> bool:
+        return str(p.resolve()).startswith(str(RESULTS_ROOT.resolve()))
+
+    def _serve_bytes(self, data: bytes, fname: str, ctype="application/zip"):
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Disposition", f'attachment; filename="{fname}"')
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
+    def _download(self, q):
+        """Every download option:
+          ?file=<path>                         single report (evidence/quality/json) as a download
+          ?run=<path>[&kind=all|evidence|quality]   one run's reports (optionally filtered)
+          ?feed=<feed>&scope=all[&kind=...]    BULK — every run for a flow, filtered
+        """
+        kind = q.get("kind", "all")
+        keep = _kind_filter(kind)
+
+        # 1) single file
+        if q.get("file"):
+            f = (ROOT / q["file"]).resolve()
+            if not self._in_results(f) or not f.is_file():
                 return self._send(404, {"error": "not found"})
+            return self._serve_bytes(f.read_bytes(), f.name, "text/html; charset=utf-8")
+
+        # 2) bulk across all runs for a flow
+        if q.get("scope") == "all" and q.get("feed"):
+            feed = q["feed"]
+            runs = [Path(ROOT / r["path"]) for r in _report_runs(feed)]
             buf = io.BytesIO()
             with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
-                for fp in run.rglob("*"):
-                    if fp.is_file():
-                        z.write(fp, fp.relative_to(run.parent))
-            data = buf.getvalue()
-            self.send_response(200)
-            self.send_header("Content-Type", "application/zip")
-            self.send_header("Content-Disposition", f'attachment; filename="{run.name}_reports.zip"')
-            self.send_header("Content-Length", str(len(data)))
-            self.end_headers()
-            return self.wfile.write(data)
-        return self._send(404, {"error": "not found"})
+                for run in runs:
+                    for fp in run.rglob("*"):
+                        if fp.is_file() and keep(fp.name):
+                            z.write(fp, Path(run.name) / fp.relative_to(run))
+            return self._serve_bytes(buf.getvalue(), f"{feed}_ALL_{kind}.zip")
+
+        # 3) one run (optionally filtered by kind)
+        run = (ROOT / q.get("run", "")).resolve()
+        if not self._in_results(run) or not run.is_dir():
+            return self._send(404, {"error": "not found"})
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+            for fp in run.rglob("*"):
+                if fp.is_file() and keep(fp.name):
+                    z.write(fp, fp.relative_to(run.parent))
+        return self._serve_bytes(buf.getvalue(), f"{run.name}_{kind}.zip")
 
     def do_POST(self):
         u = urlparse(self.path)
@@ -597,26 +644,36 @@ async function doRun(){
 }
 async function renderReports(m){
  const runs=await jget('/api/reports?feed='+S.feed);
- m.innerHTML=`<div class=bar><b>${runs.length}</b> execution runs — ${S.feed}</div>
-  <table><tr><th>Run</th><th>When (UTC)</th><th>Cases</th><th>Passed</th><th>Failed</th><th>Actions</th></tr>
+ const dl=`/download?feed=${S.feed}&scope=all`;
+ m.innerHTML=`<div class=bar><b>${runs.length}</b> execution runs — ${S.feed}
+   <span style=margin-left:auto></span>
+   <span class=mut>Bulk (all runs):</span>
+   <button class=act onclick="location.href='${dl}&kind=all'">Everything ⬇</button>
+   <button class="act gh" onclick="location.href='${dl}&kind=evidence'">All evidence ⬇</button>
+   <button class="act gh" onclick="location.href='${dl}&kind=reports'">All HTML reports ⬇</button></div>
+  <table><tr><th>Run</th><th>When (UTC)</th><th>Cases</th><th>Passed</th><th>Failed</th><th>View</th><th>Download</th></tr>
   ${runs.map((r,i)=>`<tr><td><b>${r.name}</b></td><td>${r.utc}</td><td>${r.cases}</td>
    <td class=pass>${r.passed}</td><td class=fail>${r.failed}</td>
-   <td>${r.has_index?`<button class="act gh" onclick="window.open('/r/${r.path}/index.html')">View</button>`:''}
+   <td>${r.has_index?`<button class="act gh" onclick="window.open('/r/${r.path}/index.html')">Index</button>`:''}
    ${r.has_metrics?`<button class="act gh" onclick="window.open('/r/${r.path}/metrics/report.html')">Metrics</button>`:''}
-   <button class="act gh" onclick="cases('${r.path}',${i})">Cases ▾</button>
-   <button class=act onclick="location.href='/download?run=${r.path}'">Download ⬇</button></td></tr>
-   <tr id=rc_${i} style=display:none><td colspan=6></td></tr>`).join('')}</table>`;
+   <button class="act gh" onclick="cases('${r.path}',${i})">Cases ▾</button></td>
+   <td><button class=act onclick="location.href='/download?run=${r.path}&kind=all'">All ⬇</button>
+   <button class="act gh" onclick="location.href='/download?run=${r.path}&kind=evidence'">Evidence ⬇</button>
+   <button class="act gh" onclick="location.href='/download?run=${r.path}&kind=quality'">Quality ⬇</button></td></tr>
+   <tr id=rc_${i} style=display:none><td colspan=7></td></tr>`).join('')}</table>`;
 }
 async function cases(path,i){
  const row=$('#rc_'+i);if(row.style.display!='none'){row.style.display='none';return}
  row.style.display='table-row';row.firstElementChild.innerHTML='<span class=mut>loading…</span>';
  const cs=await jget('/api/runcases?run='+path);
  row.firstElementChild.innerHTML=`<table style=margin:4px 0>
-  <tr><th>Case</th><th>Result</th><th>Expected</th><th>Actual</th><th>Evidence</th></tr>
+  <tr><th>Case</th><th>Result</th><th>Expected</th><th>Actual</th><th>Evidence</th><th>Download</th></tr>
   ${cs.map(c=>`<tr><td>${c.id}</td><td class="${c.result=='Passed'?'pass':'fail'}">${c.result}</td>
    <td>${c.expected}</td><td>${c.actual}</td>
-   <td>${c.evidence?`<button class="act gh" onclick="window.open('/r/${c.evidence}')">Evidence</button>`:''}
-   ${c.quality?`<button class="act gh" onclick="window.open('/r/${c.quality}')">Quality</button>`:''}</td></tr>`).join('')}</table>`;
+   <td>${c.evidence?`<button class="act gh" onclick="window.open('/r/${c.evidence}')">View evidence</button>`:''}
+   ${c.quality?`<button class="act gh" onclick="window.open('/r/${c.quality}')">View quality</button>`:''}</td>
+   <td>${c.evidence?`<button class=act onclick="location.href='/download?file=${c.evidence}'">Evidence ⬇</button>`:''}
+   ${c.quality?`<button class="act gh" onclick="location.href='/download?file=${c.quality}'">Quality ⬇</button>`:''}</td></tr>`).join('')}</table>`;
 }
 function poll(job,lg,done){
  const t=setInterval(async()=>{
