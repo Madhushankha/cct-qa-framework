@@ -64,17 +64,44 @@ def _registry() -> dict:
             "types": ["UAT", "SIT"]}
 
 
+def _gapdoc_detail(feed_desc) -> dict:
+    """case_id -> the rich gap-doc description (the card's data-search spec: DDS code, trip-tracer
+    promise/actual/delay, controllability, dashboard expectation). Read straight from the gap-doc HTML
+    so the Test Cases tab shows exactly what the UAT doc specifies for each case."""
+    import re
+    import html as _html
+    out: dict = {}
+    for doc in ([feed_desc.gap_doc] if getattr(feed_desc, "gap_doc", None) else []) + list(getattr(feed_desc, "gap_docs", []) or []):
+        try:
+            raw = Path(ROOT / doc if not Path(doc).is_absolute() else doc).read_text(encoding="utf-8", errors="ignore")
+        except Exception:
+            try:
+                raw = Path(doc).read_text(encoding="utf-8", errors="ignore")
+            except Exception:
+                continue
+        for cid, attrs in re.findall(r'<section class="card" id="([A-Za-z0-9_]+)"([^>]*)>', raw):
+            m = re.search(r'data-search="([^"]*)"', attrs)
+            if m:
+                txt = _html.unescape(m.group(1))
+                # the data-search starts with "<id> <name> <detail>"; keep it as the human detail
+                out[cid] = re.sub(r"\s+", " ", txt).strip()
+    return out
+
+
 def _catalog(product: str, env: str, feed: str) -> list:
-    """Test cases for a product/env/flow, from the gap-doc catalog, enriched with data + exec status."""
+    """Test cases for a product/env/flow, from the gap-doc catalog, enriched with the full UAT gap-doc
+    detail (name, expected, scenario spec, intent) plus data + exec status."""
     from core.registry import resolve
     from catalog.parser import load_catalog
     from seed.dds_pin import parse_system_code
     try:
-        cat = load_catalog(resolve(product, env, feed).feed)
+        fd = resolve(product, env, feed).feed
+        cat = load_catalog(fd)
     except Exception as exc:  # noqa: BLE001
         return [{"error": f"{type(exc).__name__}: {exc}"}]
     seeded = _seeded_case_ids(feed, product, env)
     executed = _executed_case_status(feed, product, env)
+    detail = _gapdoc_detail(fd)
     rows = []
     for c in cat.cases:
         sc = c.system_code or c.seed.system_code or ""
@@ -82,11 +109,15 @@ def _catalog(product: str, env: str, feed: str) -> list:
         status = (c.verdict or c.seed.status or _CLASS_STATUS.get(cls, "")).upper()
         amt = c.seed.amount or {}
         rows.append({
-            "id": c.id, "status": status, "system_code": sc,
+            "id": c.id, "name": c.title, "status": status, "system_code": sc,
             "amount": f"{amt.get('currency','')} {amt.get('value','')}".strip() if amt else "",
-            "group": (c.seed.extras or {}).get("group", ""),
+            "regime": c.regime, "group": (c.seed.extras or {}).get("group", ""),
             "scenario": (c.seed.extras or {}).get("scenario", ""),
             "third_party": bool(c.third_party),
+            "intent": c.customer_intent or "",
+            "expected_transcript": [{"role": t.get("role"), "text": t.get("text")} for t in (c.expected_transcript or [])][:8],
+            "detail": detail.get(c.id, ""),
+            "route": c.seed.route or "",
             "data_status": "Seeded" if c.id in seeded else "No Data",
             "exec_status": executed.get(c.id, "Not Run"),
         })
@@ -590,15 +621,38 @@ function filtered(){
  const id=($('#fId').value||'').toLowerCase(),st=$('#fStatus').value,dt=$('#fData').value;
  return S.cat.filter(c=>(!id||c.id.toLowerCase().includes(id))&&(!st||c.status==st)&&(!dt||c.data_status==dt));
 }
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function drawCases(){
  const rows=filtered();
  $('#selInfo').textContent=`${S.sel.size} selected · ${rows.length} shown · ${S.cat.length} total`;
- $('#ctab').innerHTML=`<tr><th></th><th>Test Case</th><th>Verdict</th><th>systemCode</th><th>Amount</th><th>Group</th><th>3rd-party</th><th>Data</th><th>Last Run</th></tr>`+
-  rows.map(c=>`<tr><td><input type=checkbox ${S.sel.has(c.id)?'checked':''} onchange=tog('${c.id}',this.checked)></td>
-   <td><b>${c.id}</b></td><td>${c.status}</td><td class=mut style=font-size:11px>${c.system_code}</td>
-   <td>${c.amount||'—'}</td><td>${c.group||''}</td><td>${c.third_party?'👤':''}</td>
+ $('#ctab').innerHTML=`<tr><th></th><th>Test Case</th><th>Scenario (UAT)</th><th>Expected</th><th>systemCode</th><th>Amount</th><th>Data</th><th>Last Run</th><th></th></tr>`+
+  rows.map((c,i)=>`<tr><td><input type=checkbox ${S.sel.has(c.id)?'checked':''} onchange=tog('${c.id}',this.checked)></td>
+   <td><b>${c.id}</b>${c.third_party?' 👤':''}</td>
+   <td style=max-width:320px>${esc(c.name)}</td>
+   <td><b>${c.status}</b></td><td class=mut style=font-size:11px>${c.system_code}</td>
+   <td>${c.amount||'—'}</td>
    <td><span class="pill ${c.data_status=='Seeded'?'Seeded':'No'}">${c.data_status}</span></td>
-   <td><span class="pill ${c.exec_status.replace(' ','')}">${c.exec_status}</span></td></tr>`).join('');
+   <td><span class="pill ${c.exec_status.replace(' ','')}">${c.exec_status}</span></td>
+   <td><button class="act gh" onclick=det('${c.id}',${i})>Details ▾</button></td></tr>
+   <tr id=det_${i} style=display:none><td colspan=9 style=background:#0f172a></td></tr>`).join('');
+}
+function det(id,i){
+ const row=$('#det_'+i);if(row.style.display!='none'){row.style.display='none';return}
+ const c=S.cat.find(x=>x.id==id);row.style.display='table-row';
+ const tr=(c.expected_transcript||[]).map(t=>`<div><b class=mut>${t.role}:</b> ${esc(t.text)}</div>`).join('');
+ row.firstElementChild.innerHTML=`<div style=padding:6px 10px>
+   <div style=display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;margin-bottom:8px>
+     <div><span class=mut>Scenario:</span> <b>${esc(c.name)}</b></div>
+     <div><span class=mut>Expected verdict:</span> <b>${c.status}</b></div>
+     <div><span class=mut>systemCode:</span> ${c.system_code}</div>
+     <div><span class=mut>Expected amount:</span> ${c.amount||'— (none)'}</div>
+     <div><span class=mut>Regime:</span> ${c.regime||''} &nbsp; <span class=mut>Group:</span> ${c.group||''} &nbsp; <span class=mut>Scenario type:</span> ${c.scenario||''}</div>
+     <div><span class=mut>Route:</span> ${c.route||''} &nbsp; <span class=mut>3rd-party:</span> ${c.third_party?'Yes':'No'}</div>
+   </div>
+   ${c.detail?`<div style=margin-bottom:8px><span class=mut>UAT gap-doc spec:</span><br>${esc(c.detail)}</div>`:''}
+   ${c.intent?`<div style=margin-bottom:8px><span class=mut>Customer intent:</span> ${esc(c.intent)}</div>`:''}
+   ${tr?`<div><span class=mut>Expected conversation:</span>${tr}</div>`:''}
+ </div>`;
 }
 function tog(id,on){on?S.sel.add(id):S.sel.delete(id);drawCases()}
 function selAll(){filtered().forEach(c=>S.sel.add(c.id));drawCases()}
