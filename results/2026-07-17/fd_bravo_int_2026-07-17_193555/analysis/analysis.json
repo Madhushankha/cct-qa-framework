@@ -1,0 +1,3757 @@
+{
+  "clusters": [
+    {
+      "count": 107,
+      "reason": "Weak PASS | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_ED_TC_01",
+        "bravo.int.fd.FD_ED_TC_02",
+        "bravo.int.fd.FD_ED_TC_03",
+        "bravo.int.fd.FD_ED_TC_04",
+        "bravo.int.fd.FD_ED_TC_05"
+      ]
+    },
+    {
+      "count": 46,
+      "reason": "Weak PASS | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_036",
+        "bravo.int.fd.FD_TC_038",
+        "bravo.int.fd.FD_TC_039",
+        "bravo.int.fd.FD_TC_040",
+        "bravo.int.fd.FD_TC_041"
+      ]
+    },
+    {
+      "count": 17,
+      "reason": "Invalid PASS | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_035",
+        "bravo.int.fd.FD_TC_037",
+        "bravo.int.fd.FD_TC_095",
+        "bravo.int.fd.FD_TC_096",
+        "bravo.int.fd.FD_TC_105"
+      ]
+    },
+    {
+      "count": 17,
+      "reason": "Valid FAIL | decision=NO_DETERMINATION vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_ED_TC_09",
+        "bravo.int.fd.FD_ED_TC_16",
+        "bravo.int.fd.FD_TC_185",
+        "bravo.int.fd.FD_TC_186",
+        "bravo.int.fd.FD_TC_187"
+      ]
+    },
+    {
+      "count": 12,
+      "reason": "Harness FAIL | decision=NO_DETERMINATION vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_ED_TC_06",
+        "bravo.int.fd.FD_ED_TC_22",
+        "bravo.int.fd.FD_ED_TC_24",
+        "bravo.int.fd.FD_TC_007",
+        "bravo.int.fd.FD_TC_071"
+      ]
+    },
+    {
+      "count": 7,
+      "reason": "Valid FAIL | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_067",
+        "bravo.int.fd.FD_TC_073",
+        "bravo.int.fd.FD_TC_086",
+        "bravo.int.fd.FD_TC_089",
+        "bravo.int.fd.FD_TC_092"
+      ]
+    },
+    {
+      "count": 7,
+      "reason": "Weak PASS | decision=ESCALATED vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_055",
+        "bravo.int.fd.FD_TC_058",
+        "bravo.int.fd.FD_TC_059",
+        "bravo.int.fd.FD_TC_139",
+        "bravo.int.fd.FD_TC_140"
+      ]
+    },
+    {
+      "count": 7,
+      "reason": "Weak PASS | decision=NO_DETERMINATION vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_054",
+        "bravo.int.fd.FD_TC_056",
+        "bravo.int.fd.FD_TC_057",
+        "bravo.int.fd.FD_TC_065",
+        "bravo.int.fd.FD_TC_114"
+      ]
+    },
+    {
+      "count": 5,
+      "reason": "Invalid PASS | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_070",
+        "bravo.int.fd.FD_TC_072",
+        "bravo.int.fd.FD_TC_076",
+        "bravo.int.fd.FD_TC_093",
+        "bravo.int.fd.FD_TC_094"
+      ]
+    },
+    {
+      "count": 4,
+      "reason": "Harness FAIL | decision=NO_DETERMINATION vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "bravo.int.fd.FD_TC_051",
+        "bravo.int.fd.FD_TC_097",
+        "bravo.int.fd.FD_TC_101",
+        "bravo.int.fd.FD_TC_127"
+      ]
+    }
+  ],
+  "findings": {
+    "BACKEND_OUTAGE": 1,
+    "HARNESS_ERROR": 17,
+    "PASS_WITHOUT_SEED_VERIFICATION": 170,
+    "PASS_WITH_FAILED_ASSERTION": 22
+  },
+  "grades": [
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b27dee2f9605",
+        "started": "2026-07-17T14:31:07Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_01",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 264.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2822f2a00186",
+        "started": "2026-07-17T14:56:45Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_02",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 287.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a79f275b55a6",
+        "started": "2026-07-17T15:11:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_03",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 393.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ee271c82f0cd",
+        "started": "2026-07-17T14:36:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_04",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5342c9a20652",
+        "started": "2026-07-17T15:20:46Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_05",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 179.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "738a50ef225f",
+        "started": "2026-07-17T14:05:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_06",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6c4a03969fc1",
+        "started": "2026-07-17T15:13:36Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_07",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 268.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "791af3b873ed",
+        "started": "2026-07-17T14:17:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_08",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 208.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5a77ee87a9fa",
+        "started": "2026-07-17T14:41:41Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_09",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0fc8abd55330",
+        "started": "2026-07-17T15:04:48Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_10",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 355.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "17fb11a1d930",
+        "started": "2026-07-17T14:48:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_11",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 325.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "658d752c91de",
+        "started": "2026-07-17T14:16:34Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_12",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 264.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d1e674321767",
+        "started": "2026-07-17T14:16:28Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_13",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "9223575a7194",
+        "started": "2026-07-17T14:59:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_14",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 334.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fbddeec9462a",
+        "started": "2026-07-17T14:16:11Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_15",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 173.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "180a94ab5675",
+        "started": "2026-07-17T14:55:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_16",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "76ea50e156e9",
+        "started": "2026-07-17T14:26:48Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_17",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 333.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "29d11ab6201d",
+        "started": "2026-07-17T15:10:07Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_18",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 342.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "69e507aa7b9a",
+        "started": "2026-07-17T15:19:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_19",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 399.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ecc3bda9c41c",
+        "started": "2026-07-17T15:10:59Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_20",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 358.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0da9544aa424",
+        "started": "2026-07-17T15:10:53Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_21",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 160.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7182bade2e5f",
+        "started": "2026-07-17T14:06:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_22",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 272.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "9bcd01ecdb9b",
+        "started": "2026-07-17T14:54:41Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_23",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 279.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7996f8c9087a",
+        "started": "2026-07-17T14:06:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_24",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 308.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "14bf61991c74",
+        "started": "2026-07-17T14:22:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_25",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 378.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e04a70e733ab",
+        "started": "2026-07-17T14:35:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_26",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "064ac7d2bbce",
+        "started": "2026-07-17T14:17:27Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_ED_TC_27",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 342.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "bd533ae51b65",
+        "started": "2026-07-17T15:01:04Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_001",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 334.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "1bbd35afde7b",
+        "started": "2026-07-17T14:55:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_002",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 291.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3b476afe7225",
+        "started": "2026-07-17T14:43:57Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_003",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 322.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "bbdede2df1b1",
+        "started": "2026-07-17T14:16:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_004",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "acad6cc353c0",
+        "started": "2026-07-17T14:45:23Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_005",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f587b36d0058",
+        "started": "2026-07-17T15:03:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_006",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 316.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "cd3a791c8bce",
+        "started": "2026-07-17T15:07:19Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_007",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 314.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2d196a8b3072",
+        "started": "2026-07-17T14:22:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_008",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c7a112989c1d",
+        "started": "2026-07-17T15:10:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_009",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 347.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2b7bced08024",
+        "started": "2026-07-17T14:43:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_010",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 342.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b1b03990b092",
+        "started": "2026-07-17T15:18:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_011",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 367.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "55c160541b03",
+        "started": "2026-07-17T14:47:37Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_PAY_TC_012",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "456dbdace68e",
+        "started": "2026-07-17T15:10:17Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_001",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 380.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "4221f9cc2592",
+        "started": "2026-07-17T14:10:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_002",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 372.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "52736ee6257c",
+        "started": "2026-07-17T14:11:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_003",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "683dfe96e00a",
+        "started": "2026-07-17T14:11:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_004",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 347.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3d31366a7e02",
+        "started": "2026-07-17T14:50:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_005",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 348.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f07f9f65faf2",
+        "started": "2026-07-17T15:00:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_006",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 273.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a0b6351dfee3",
+        "started": "2026-07-17T14:06:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_007",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 358.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "459e7ddcc466",
+        "started": "2026-07-17T14:11:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_008",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 338.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fcae078632bf",
+        "started": "2026-07-17T15:18:42Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_009",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e498ce65858e",
+        "started": "2026-07-17T15:16:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_010",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 319.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6d3e5cf5c1a1",
+        "started": "2026-07-17T14:21:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_011",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 379.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "52cca31b9b69",
+        "started": "2026-07-17T14:37:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_012",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 326.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2d9f5adb4853",
+        "started": "2026-07-17T15:15:40Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_013",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 322.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0b4931f33c34",
+        "started": "2026-07-17T15:01:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_014",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6f1d6f0e3c23",
+        "started": "2026-07-17T15:04:43Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_015",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 319.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b8007a4e51f7",
+        "started": "2026-07-17T14:26:51Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_016",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 324.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f690962af6d6",
+        "started": "2026-07-17T15:07:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_017",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3ffdd8235ff7",
+        "started": "2026-07-17T14:53:59Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_018",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 364.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7aaea8411502",
+        "started": "2026-07-17T14:49:15Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_019",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2c8683313d51",
+        "started": "2026-07-17T15:16:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_020",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "9e4f84faaeb8",
+        "started": "2026-07-17T14:31:42Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_021",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 377.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d0e97e7512bc",
+        "started": "2026-07-17T14:37:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_022",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 283.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7f92a7268291",
+        "started": "2026-07-17T14:49:46Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_023",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2c6556cda7b8",
+        "started": "2026-07-17T14:32:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_024",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2606f20772cf",
+        "started": "2026-07-17T15:20:05Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_025",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "713b4b394b6a",
+        "started": "2026-07-17T14:25:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_026",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 325.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e44d47882366",
+        "started": "2026-07-17T14:26:42Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_027",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "89bdf3491b1a",
+        "started": "2026-07-17T15:05:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_028",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 332.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "bc607c56e2da",
+        "started": "2026-07-17T15:14:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_029",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b498ea56d5a5",
+        "started": "2026-07-17T15:15:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_030",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 345.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "da01ce7ca32f",
+        "started": "2026-07-17T14:32:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_031",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 290.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f59644dbd86e",
+        "started": "2026-07-17T14:50:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_032",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 342.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ade6a3a7c65c",
+        "started": "2026-07-17T15:00:11Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_033",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 344.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c4ffbf9b175e",
+        "started": "2026-07-17T15:12:42Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_034",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 258.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fcc933f8d3e6",
+        "started": "2026-07-17T14:16:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_035",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 275.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "4cf3240cddd2",
+        "started": "2026-07-17T14:43:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_036",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 265.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "00016947de4a",
+        "started": "2026-07-17T15:13:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_037",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 258.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5f1f3e75be3e",
+        "started": "2026-07-17T14:27:49Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_038",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fee0c95d7952",
+        "started": "2026-07-17T14:32:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_039",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 312.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "271b5b2803c1",
+        "started": "2026-07-17T14:37:46Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_040",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 266.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ee6e564555b2",
+        "started": "2026-07-17T14:56:34Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_041",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 281.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5dffcb1b2dd1",
+        "started": "2026-07-17T14:35:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_042",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 265.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6d296cad847e",
+        "started": "2026-07-17T14:24:52Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_043",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 261.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6d06eaf8aa5f",
+        "started": "2026-07-17T14:56:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_044",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 273.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3a1929a87657",
+        "started": "2026-07-17T15:00:25Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_045",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 261.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "4674bb17a55d",
+        "started": "2026-07-17T14:55:27Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_046",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 270.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3bda0e103b1b",
+        "started": "2026-07-17T14:58:48Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_047",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 257.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "698dc5b5db45",
+        "started": "2026-07-17T14:26:37Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_048",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 283.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "500f1f0e8863",
+        "started": "2026-07-17T14:42:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_049",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "dbd9fd226b9b",
+        "started": "2026-07-17T14:11:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_050",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 273.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a8efe6a52822",
+        "started": "2026-07-17T14:06:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_051",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 295.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f2077c84cb42",
+        "started": "2026-07-17T15:10:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_052",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 311.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "1085b33c2498",
+        "started": "2026-07-17T14:49:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_053",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 259.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "dffce2ef2623",
+        "started": "2026-07-17T14:31:51Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_054",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 320.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "204e3ec6eb72",
+        "started": "2026-07-17T14:37:38Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_055",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 311.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "66175f04cf3c",
+        "started": "2026-07-17T14:10:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_056",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 300.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "97d792638fcf",
+        "started": "2026-07-17T14:11:04Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_057",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 257.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "49efdd732768",
+        "started": "2026-07-17T14:22:11Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_058",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 261.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "daf440f83e7b",
+        "started": "2026-07-17T14:21:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_059",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e13e3157a040",
+        "started": "2026-07-17T14:16:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_060",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 251.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c84d68b5e65b",
+        "started": "2026-07-17T14:27:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_061",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 281.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8a30266a6d0f",
+        "started": "2026-07-17T15:09:47Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_062",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 316.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "39d3684fbed4",
+        "started": "2026-07-17T14:39:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_063",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 258.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5eb2705a8150",
+        "started": "2026-07-17T15:07:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_064",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "69f0b962afa8",
+        "started": "2026-07-17T15:04:45Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_065",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 398.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "49cda1e9de23",
+        "started": "2026-07-17T14:49:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_066",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6cdf56db4723",
+        "started": "2026-07-17T14:10:52Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_067",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 280.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ac1646a6f9af",
+        "started": "2026-07-17T15:06:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_068",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 287.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "650c44a84115",
+        "started": "2026-07-17T14:59:48Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_069",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 461.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c733c8165f1c",
+        "started": "2026-07-17T14:36:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_070",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 174.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d9ecb5537ef2",
+        "started": "2026-07-17T14:06:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_071",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 373.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "18a443d1a0ac",
+        "started": "2026-07-17T15:20:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_072",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 306.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "dece26e54da9",
+        "started": "2026-07-17T14:45:39Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_073",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 378.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "98428036fcd0",
+        "started": "2026-07-17T15:17:54Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_074",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8e4f1cfa6a7b",
+        "started": "2026-07-17T15:15:45Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_075",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5fdc5f87c906",
+        "started": "2026-07-17T15:00:35Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_076",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 322.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ae2aa890fd17",
+        "started": "2026-07-17T14:44:11Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_077",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 291.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d3292827acf7",
+        "started": "2026-07-17T15:19:25Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_078",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 155.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b22f771f13b4",
+        "started": "2026-07-17T14:06:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_079",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 277.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7ce8f4a1b0b5",
+        "started": "2026-07-17T14:31:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_080",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 161.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d4220be52645",
+        "started": "2026-07-17T14:06:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_081",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 374.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a6d42be52e50",
+        "started": "2026-07-17T14:56:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_082",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 340.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8377a81baad8",
+        "started": "2026-07-17T14:37:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_083",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 358.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d46a99f3e9a4",
+        "started": "2026-07-17T14:16:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_084",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 287.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d87669c7ba4a",
+        "started": "2026-07-17T15:00:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_085",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 294.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c9529d5a4adf",
+        "started": "2026-07-17T14:54:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_086",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e062da1c5281",
+        "started": "2026-07-17T15:17:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_087",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 303.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ec1859fe742a",
+        "started": "2026-07-17T14:11:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_088",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 306.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ab74d9e1c7ef",
+        "started": "2026-07-17T14:49:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_089",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 267.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "eaf7bdc22a11",
+        "started": "2026-07-17T14:27:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_090",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 382.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c6c1435acd1f",
+        "started": "2026-07-17T14:43:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_091",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 306.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "17bbf9da9d2a",
+        "started": "2026-07-17T14:35:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_092",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 380.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "52942dc25c78",
+        "started": "2026-07-17T14:31:13Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_093",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 280.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "213d47496d5a",
+        "started": "2026-07-17T14:22:04Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_094",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 260.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f0d2f5bf471f",
+        "started": "2026-07-17T14:21:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_095",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 286.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a832591ad08d",
+        "started": "2026-07-17T15:09:29Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_096",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 269.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ccab2ad8554e",
+        "started": "2026-07-17T14:06:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_097",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 283.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0cd471600bb7",
+        "started": "2026-07-17T14:43:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_098",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 309.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "137425e5349b",
+        "started": "2026-07-17T14:45:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_099",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 311.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2ed6fa8e2a90",
+        "started": "2026-07-17T14:44:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_100",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 178.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "afdec4035a03",
+        "started": "2026-07-17T14:06:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_101",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 307.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "371fe7b859cf",
+        "started": "2026-07-17T14:34:25Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_102",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 265.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7ef3be3ffe6c",
+        "started": "2026-07-17T14:22:13Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_103",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 266.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d1437082247d",
+        "started": "2026-07-17T14:21:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_104",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 298.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0c3b5b95122d",
+        "started": "2026-07-17T15:10:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_105",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 279.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3983fdfa6b76",
+        "started": "2026-07-17T14:20:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_106",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 296.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8dcd1c96d045",
+        "started": "2026-07-17T14:51:23Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_107",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 282.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d7231362eb7d",
+        "started": "2026-07-17T15:15:07Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_108",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "42752e7654e4",
+        "started": "2026-07-17T15:04:27Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_109",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 283.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "64c869aab9ef",
+        "started": "2026-07-17T15:14:43Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_110",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 263.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "66a87605682e",
+        "started": "2026-07-17T14:31:47Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_111",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 298.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3e34dabcef72",
+        "started": "2026-07-17T14:48:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_112",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 286.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2e38ec41a4f9",
+        "started": "2026-07-17T14:27:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_113",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "321e0d1f89d7",
+        "started": "2026-07-17T14:16:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_114",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "efda50dccb52",
+        "started": "2026-07-17T14:05:58Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_115",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 305.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c119c3d6bace",
+        "started": "2026-07-17T15:12:49Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_116",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e348c1714d45",
+        "started": "2026-07-17T14:26:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_117",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 294.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8b9a998b2f75",
+        "started": "2026-07-17T15:05:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_118",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 317.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "20309152718b",
+        "started": "2026-07-17T14:11:00Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_119",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 284.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "39254e471c1f",
+        "started": "2026-07-17T14:59:46Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_120",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 264.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "efeed25bc2ad",
+        "started": "2026-07-17T14:25:50Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_121",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 264.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a8d8cb79ba7f",
+        "started": "2026-07-17T14:17:29Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_122",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 307.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a89ab6a3287b",
+        "started": "2026-07-17T14:11:10Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_123",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 288.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "84cbceee67aa",
+        "started": "2026-07-17T14:45:52Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_124",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 327.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2b33a73c5f8e",
+        "started": "2026-07-17T14:56:04Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_125",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 301.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b747353cbf2c",
+        "started": "2026-07-17T14:42:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_126",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "32f6261fe83b",
+        "started": "2026-07-17T14:06:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_127",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "dfb25e277bb7",
+        "started": "2026-07-17T14:32:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_128",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 270.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "9ea6464efc53",
+        "started": "2026-07-17T14:26:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_129",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 311.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "4d0a27466438",
+        "started": "2026-07-17T14:11:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_130",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 283.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ab12208763f9",
+        "started": "2026-07-17T14:29:29Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_131",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 282.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "02de4ce28ea1",
+        "started": "2026-07-17T15:15:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_132",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 308.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f6e845e77a37",
+        "started": "2026-07-17T14:10:54Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_133",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3fb4cb64b029",
+        "started": "2026-07-17T14:40:50Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_134",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 270.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "4b3c104878c4",
+        "started": "2026-07-17T14:21:54Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_135",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 275.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ea5f470e5c0c",
+        "started": "2026-07-17T15:15:54Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_136",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 269.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "53c01c9e422f",
+        "started": "2026-07-17T14:21:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_137",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 322.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8550f1a3e54e",
+        "started": "2026-07-17T14:36:50Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_138",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 291.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "87a4002adff3",
+        "started": "2026-07-17T14:31:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_139",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6151fe3eebfa",
+        "started": "2026-07-17T14:55:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_140",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 358.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ed21380ee31c",
+        "started": "2026-07-17T14:36:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_141",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 301.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "1b21046a8eb1",
+        "started": "2026-07-17T14:11:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_142",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5f01e7191d7a",
+        "started": "2026-07-17T14:55:33Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_143",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "828a32c9c8a7",
+        "started": "2026-07-17T14:26:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_144",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 302.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a8d660dfe1fe",
+        "started": "2026-07-17T15:03:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_145",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 263.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "56ff56e13f90",
+        "started": "2026-07-17T14:22:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_146",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 324.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d429162351ea",
+        "started": "2026-07-17T14:25:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_147",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 320.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "ff6e87f18756",
+        "started": "2026-07-17T14:16:30Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_148",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 317.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "67ec93acb702",
+        "started": "2026-07-17T14:30:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_149",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 293.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f2adfee100ee",
+        "started": "2026-07-17T14:11:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_150",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 266.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "bb73047f1a2b",
+        "started": "2026-07-17T15:01:21Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_151",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 395.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "602ef89484fb",
+        "started": "2026-07-17T14:36:31Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_152",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 274.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "54992c6fb6f3",
+        "started": "2026-07-17T14:50:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_153",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c62b2923f2d0",
+        "started": "2026-07-17T14:38:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_154",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 258.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "1dc5e16ed6e4",
+        "started": "2026-07-17T14:16:36Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_155",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 279.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "70828c088096",
+        "started": "2026-07-17T14:53:57Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_156",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 273.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "c6a7fc9b2f12",
+        "started": "2026-07-17T15:17:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_157",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "810c5efadacc",
+        "started": "2026-07-17T15:19:39Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_158",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 274.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6e6cbbd9e633",
+        "started": "2026-07-17T15:05:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_159",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 264.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5b4c27601d0e",
+        "started": "2026-07-17T14:06:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_160",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 357.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "1db1fbefd953",
+        "started": "2026-07-17T14:49:54Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_161",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 318.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "da1bfa28f1ef",
+        "started": "2026-07-17T14:44:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_162",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a391c2d3348e",
+        "started": "2026-07-17T14:31:24Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_163",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "21f195cb7f8b",
+        "started": "2026-07-17T14:21:11Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_164",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b6144ab34acd",
+        "started": "2026-07-17T14:49:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_165",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 332.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "e8d69b6c07a4",
+        "started": "2026-07-17T14:16:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_166",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "625373939dac",
+        "started": "2026-07-17T14:59:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_167",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 345.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7e86ac16b4dc",
+        "started": "2026-07-17T14:43:16Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_168",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 341.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "66692edd0106",
+        "started": "2026-07-17T15:20:48Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_169",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 368.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a239573611a5",
+        "started": "2026-07-17T14:43:53Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_170",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "57a672378a4c",
+        "started": "2026-07-17T14:47:28Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_171",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 294.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "2341106fe869",
+        "started": "2026-07-17T14:06:02Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_172",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "88f85fd22be0",
+        "started": "2026-07-17T14:50:50Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_173",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 178.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3d982f58ce86",
+        "started": "2026-07-17T14:06:04Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_174",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 268.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a7c186aa2b3d",
+        "started": "2026-07-17T14:23:08Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_175",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "5e5dfc984399",
+        "started": "2026-07-17T14:58:50Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_176",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "7d8ead936c27",
+        "started": "2026-07-17T14:20:56Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_177",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 352.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f42d993b1cfc",
+        "started": "2026-07-17T15:08:59Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_178",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8dbafa0916b5",
+        "started": "2026-07-17T15:01:12Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_179",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 257.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fe043875bf34",
+        "started": "2026-07-17T14:27:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_180",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 266.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d2d4c6a9f895",
+        "started": "2026-07-17T14:55:07Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_181",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 277.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "fe4fac4031ed",
+        "started": "2026-07-17T15:08:44Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_182",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "be8ab4fa8fcc",
+        "started": "2026-07-17T15:20:46Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_183",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 326.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b8ba835e6d91",
+        "started": "2026-07-17T15:06:03Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_184",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 185.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "575c8ccddf4f",
+        "started": "2026-07-17T14:15:01Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_185",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 213.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "f2646806e8a9",
+        "started": "2026-07-17T15:05:59Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_186",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 177.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a93e7d85a734",
+        "started": "2026-07-17T14:31:59Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_187",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 245.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "943e20ce81bb",
+        "started": "2026-07-17T14:38:14Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_188",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 207.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "aec162f1dbbf",
+        "started": "2026-07-17T14:11:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_189",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 179.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "8fd3837ef8eb",
+        "started": "2026-07-17T15:11:45Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_190",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 195.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "b70375cf010e",
+        "started": "2026-07-17T14:16:32Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_191",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 178.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "888e3e3cf836",
+        "started": "2026-07-17T15:07:06Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_192",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 198.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "0a70e4baf350",
+        "started": "2026-07-17T15:09:45Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_193",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 190.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "a4339e640bb1",
+        "started": "2026-07-17T14:53:22Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_194",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 192.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "71c97ad85110",
+        "started": "2026-07-17T14:42:26Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_195",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 162.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "6dc35591b715",
+        "started": "2026-07-17T14:06:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_196",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 173.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "29ef37d66e9f",
+        "started": "2026-07-17T14:18:18Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_197",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 171.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "3fa0318013d6",
+        "started": "2026-07-17T14:32:20Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_198",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 208.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "cf94ffac47b0",
+        "started": "2026-07-17T14:40:42Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_199",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 187.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "bravo",
+        "run_id": "d3bd4050dfa5",
+        "started": "2026-07-17T14:56:41Z"
+      },
+      "scenario_id": "bravo.int.fd.FD_TC_200",
+      "status": "FAIL"
+    }
+  ],
+  "summary": {
+    "by_env": {
+      "int": {
+        "fail": 29,
+        "infra": 18,
+        "invalid": 22,
+        "pass": 170,
+        "pass_rate": 0.8542713567839196,
+        "total": 239,
+        "working": 199
+      }
+    },
+    "by_feed": {
+      "fd": {
+        "fail": 29,
+        "infra": 18,
+        "invalid": 22,
+        "pass": 170,
+        "pass_rate": 0.8542713567839196,
+        "total": 239,
+        "working": 199
+      }
+    },
+    "by_product": {
+      "bravo": {
+        "fail": 29,
+        "infra": 18,
+        "invalid": 22,
+        "pass": 170,
+        "pass_rate": 0.8542713567839196,
+        "total": 239,
+        "working": 199
+      }
+    },
+    "grade_mix": {
+      "Environment ERROR": 1,
+      "Harness FAIL": 17,
+      "Invalid PASS": 22,
+      "Valid FAIL": 29,
+      "Weak PASS": 170
+    },
+    "totals": {
+      "fail": 29,
+      "infra": 18,
+      "invalid": 22,
+      "pass": 170,
+      "pass_rate": 0.8542713567839196,
+      "total": 239,
+      "working": 199
+    }
+  }
+}

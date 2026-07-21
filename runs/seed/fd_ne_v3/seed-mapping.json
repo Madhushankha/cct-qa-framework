@@ -1,0 +1,12 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_121",
+   "locator": "E2L9YF",
+   "pnr_id": "E2L9YF-2026-07-10",
+   "gate": "checkpoint_fail"
+  }
+ ],
+ "skipped": []
+}

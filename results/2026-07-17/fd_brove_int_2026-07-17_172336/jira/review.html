@@ -1,0 +1,2548 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>JIRA review — 38 defect(s)</title><style>
+:root { color-scheme: light dark; }
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 22px; max-width: 1080px;
+  color: #1a2330; background: #fafbfc; }
+h1 { margin: 0 0 4px; font-size: 21px; }
+h2 { font-size: 14px; margin: 16px 0 6px; color: #0b3d6b; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.3px; text-align: left; vertical-align: top; }
+th { background: #22344a; color: #fff; }
+.card { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px;
+  padding: 12px 14px; margin: 14px 0; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px;
+  padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+pre.desc { background: #f7f9fb; border: 1px solid #e2e7ee; border-radius: 6px; padding: 9px;
+  font-size: 11.5px; white-space: pre-wrap; overflow-x: auto; }
+.chat { border: 1px solid #eee; border-radius: 6px; padding: 8px; max-height: 520px; overflow: auto; }
+.turn { margin: 4px 0; }
+.turn .who { font-size: 11px; color: #667; font-weight: 600; }
+.turn .text { padding: 7px 10px; border-radius: 7px; font-size: 12.5px; white-space: pre-wrap; }
+.turn.customer .text { background: #eaf2fb; }
+.turn.bot .text { background: #eafbea; }
+.mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .card, .kpi { background: #1c222c; border-color: #2a323d; }
+  pre.desc { background: #1c222c; border-color: #2a323d; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+}
+</style></head>
+<body>
+<h1>JIRA bug review</h1>
+<div><span class="kpi"><b>38</b>defect(s) selected (Valid FAIL only)</span></div>
+<div class="card">
+<h2>[INT][FD] EHXFY6 — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">59d9da7113ab6905</td>
+    <th>PNR</th><td class="mono">EHXFY6</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_ED_TC_09</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_ED_TC_09\n* *Test case:* FD_ED_TC_09\n* *Regime:* APPR\n* *Booking:* PNR EHXFY6 (pnrId EHXFY6-2026-07-10)\n* *Passenger:* JOELLE FAIRHOLME\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 EDGE-AUTH-05 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 73637ad0-2190-4818-b53f-fea87b88d7b7\n* *Reasoning:* The expected outcome was for the chatbot to determine the passenger ELIGIBLE with CAD 400.0 compensation for PNR EHXFY6. However, the chatbot only collected information and submitted the claim for manual review (reference CCD-1008696-F48YVI), stating the user would hear back within 30 days. The bot never made an eligibility determination or quoted any compensation amount. The customer also provided incorrect booking reference (ABC123) instead of the expected EHXFY6, and incorrect ticket number, which may have prevented the bot from looking up the actual booking details. Since no determination was reached, this does not match the expected outcome.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] EHXFY6 \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_ED_TC_09
+* *Test case:* FD_ED_TC_09
+* *Regime:* APPR
+* *Booking:* PNR EHXFY6 (pnrId EHXFY6-2026-07-10)
+* *Passenger:* JOELLE FAIRHOLME
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · EDGE-AUTH-05 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 73637ad0-2190-4818-b53f-fea87b88d7b7
+* *Reasoning:* The expected outcome was for the chatbot to determine the passenger ELIGIBLE with CAD 400.0 compensation for PNR EHXFY6. However, the chatbot only collected information and submitted the claim for manual review (reference CCD-1008696-F48YVI), stating the user would hear back within 30 days. The bot never made an eligibility determination or quoted any compensation amount. The customer also provided incorrect booking reference (ABC123) instead of the expected EHXFY6, and incorrect ticket number, which may have prevented the bot from looking up the actual booking details. Since no determination was reached, this does not match the expected outcome.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] E27GQR — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">f369cab78cba0720</td>
+    <th>PNR</th><td class="mono">E27GQR</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_ED_TC_16</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_ED_TC_16\n* *Test case:* FD_ED_TC_16\n* *Regime:* APPR\n* *Booking:* PNR E27GQR (pnrId E27GQR-2026-07-10)\n* *Passenger:* OTTO LINDQVIST\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 EDGE-PAX-03 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 53f6f381-ff37-47a7-80b2-8d49ed396090\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR E27GQR under APPR regime. However, the chatbot never made any eligibility determination or quoted any amount. Instead, it simply collected information and forwarded the claim to a review team with a 30-day response time. The bot did not process the claim through any automated eligibility assessment system. Additionally, the customer provided booking reference \&quot;ABC123\&quot; instead of the expected \&quot;E27GQR\&quot;, and the bot accepted this without validation. Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.0.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] E27GQR \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_ED_TC_16
+* *Test case:* FD_ED_TC_16
+* *Regime:* APPR
+* *Booking:* PNR E27GQR (pnrId E27GQR-2026-07-10)
+* *Passenger:* OTTO LINDQVIST
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · EDGE-PAX-03 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 53f6f381-ff37-47a7-80b2-8d49ed396090
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR E27GQR under APPR regime. However, the chatbot never made any eligibility determination or quoted any amount. Instead, it simply collected information and forwarded the claim to a review team with a 30-day response time. The bot did not process the claim through any automated eligibility assessment system. Additionally, the customer provided booking reference &quot;ABC123&quot; instead of the expected &quot;E27GQR&quot;, and the bot accepted this without validation. Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.0.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] J3JAYA — ELIGIBLE vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">5db167619aab5662</td>
+    <th>PNR</th><td class="mono">J3JAYA</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_ED_TC_27</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_ED_TC_27\n* *Test case:* FD_ED_TC_27\n* *Regime:* APPR\n* *Booking:* PNR J3JAYA (pnrId J3JAYA-2026-07-10)\n* *Passenger:* THADDEUS THORNENLOW\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 EDGE-REPORT-01 \u00b7 EUR 300.0\n\nh3. Actual (bot)\n* ELIGIBLE \u00b7 CAD 485.12\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ELIGIBLE\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* dc6fea5d-3ed3-4f08-8f76-537b1ed39c04\n* *Reasoning:* The chatbot reached a determination of ELIGIBLE, which matches the expected eligibility status. However, there are critical mismatches: (1) The expected amount was EUR 300.0 but the bot quoted 485.12 CAD - these are different currencies and amounts; (2) The expected regime was APPR (Canadian regulation) but the bot applied EU Regulation 261/2004. The system code EDGE-REPORT-01 suggests this should have been processed under APPR. While the eligibility decision is correct, the amount and regulatory regime do not match expectations, resulting in an overall mismatch.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] J3JAYA \u2014 ELIGIBLE vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_ED_TC_27
+* *Test case:* FD_ED_TC_27
+* *Regime:* APPR
+* *Booking:* PNR J3JAYA (pnrId J3JAYA-2026-07-10)
+* *Passenger:* THADDEUS THORNENLOW
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · EDGE-REPORT-01 · EUR 300.0
+
+h3. Actual (bot)
+* ELIGIBLE · CAD 485.12
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ELIGIBLE
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* dc6fea5d-3ed3-4f08-8f76-537b1ed39c04
+* *Reasoning:* The chatbot reached a determination of ELIGIBLE, which matches the expected eligibility status. However, there are critical mismatches: (1) The expected amount was EUR 300.0 but the bot quoted 485.12 CAD - these are different currencies and amounts; (2) The expected regime was APPR (Canadian regulation) but the bot applied EU Regulation 261/2004. The system code EDGE-REPORT-01 suggests this should have been processed under APPR. While the eligibility decision is correct, the amount and regulatory regime do not match expectations, resulting in an overall mismatch.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] L6LAD3 — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">31e30fe150158658</td>
+    <th>PNR</th><td class="mono">L6LAD3</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_039</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_039\n* *Test case:* FD_TC_039\n* *Regime:* APPR\n* *Booking:* PNR L6LAD3 (pnrId L6LAD3-2026-07-10)\n* *Passenger:* LEOPOLD FENWICKE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-07 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* a6464c0b-12a4-4795-8dea-2a06090699f0\n* *Reasoning:* The chatbot did initially render a NOT_ELIGIBLE determination (matching the expected outcome), but when challenged by the customer about the unclear reasoning, it failed to maintain that determination. Instead of clarifying or standing by its decision, the bot looped back to restart the claim process multiple times, asking for information already provided. This represents a system failure. The customer ultimately requested human escalation due to frustration with the bot&#x27;s malfunction, and the bot agreed to connect them to a live agent. The FINAL outcome is therefore ESCALATED, not NOT_ELIGIBLE. While the bot technically reached an initial determination, it abandoned it and ended in escalation, which does not match the expected NOT_ELIGIBLE verdict. The test case expects a clear NOT_ELIGIBLE determination to be maintained, not an escalation due to bot failure.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] L6LAD3 \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_039
+* *Test case:* FD_TC_039
+* *Regime:* APPR
+* *Booking:* PNR L6LAD3 (pnrId L6LAD3-2026-07-10)
+* *Passenger:* LEOPOLD FENWICKE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-07 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* a6464c0b-12a4-4795-8dea-2a06090699f0
+* *Reasoning:* The chatbot did initially render a NOT_ELIGIBLE determination (matching the expected outcome), but when challenged by the customer about the unclear reasoning, it failed to maintain that determination. Instead of clarifying or standing by its decision, the bot looped back to restart the claim process multiple times, asking for information already provided. This represents a system failure. The customer ultimately requested human escalation due to frustration with the bot&#x27;s malfunction, and the bot agreed to connect them to a live agent. The FINAL outcome is therefore ESCALATED, not NOT_ELIGIBLE. While the bot technically reached an initial determination, it abandoned it and ended in escalation, which does not match the expected NOT_ELIGIBLE verdict. The test case expects a clear NOT_ELIGIBLE determination to be maintained, not an escalation due to bot failure.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] P65ULH — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">376f1ee843ba76c4</td>
+    <th>PNR</th><td class="mono">P65ULH</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_040</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_040\n* *Test case:* FD_TC_040\n* *Regime:* APPR\n* *Booking:* PNR P65ULH (pnrId P65ULH-2026-07-10)\n* *Passenger:* PERCY MARCHETTI\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-08 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 0568c094-abb4-4468-bcd5-a0314b2cfe9e\n* *Reasoning:* The chatbot initially attempted to render a NOT_ELIGIBLE decision (which would have matched the expected outcome), but provided an illogical reason (\&quot;Your flight was disrupted\&quot; as the reason for ineligibility). When the customer rightfully challenged this nonsensical explanation, the bot failed to maintain its determination, became confused, looped back to the start of the conversation flow (re-asking for passenger status and booking details already provided), and ultimately escalated to a human agent. Since the bot did not maintain a final determination and instead transferred the case to human review, the final outcome is ESCALATED, not NOT_ELIGIBLE. This does not match the expected verdict of NOT_ELIGIBLE with a proper system code (FD-APPR-NE-08). The bot failed to complete its automated decision-making process successfully.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] P65ULH \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_040
+* *Test case:* FD_TC_040
+* *Regime:* APPR
+* *Booking:* PNR P65ULH (pnrId P65ULH-2026-07-10)
+* *Passenger:* PERCY MARCHETTI
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-08 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 0568c094-abb4-4468-bcd5-a0314b2cfe9e
+* *Reasoning:* The chatbot initially attempted to render a NOT_ELIGIBLE decision (which would have matched the expected outcome), but provided an illogical reason (&quot;Your flight was disrupted&quot; as the reason for ineligibility). When the customer rightfully challenged this nonsensical explanation, the bot failed to maintain its determination, became confused, looped back to the start of the conversation flow (re-asking for passenger status and booking details already provided), and ultimately escalated to a human agent. Since the bot did not maintain a final determination and instead transferred the case to human review, the final outcome is ESCALATED, not NOT_ELIGIBLE. This does not match the expected verdict of NOT_ELIGIBLE with a proper system code (FD-APPR-NE-08). The bot failed to complete its automated decision-making process successfully.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] V4YYXW — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">a963042e6d5b6190</td>
+    <th>PNR</th><td class="mono">V4YYXW</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_041</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_041\n* *Test case:* FD_TC_041\n* *Regime:* APPR\n* *Booking:* PNR V4YYXW (pnrId V4YYXW-2026-07-10)\n* *Passenger:* AMBROSE CROWHURST\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-10 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 760b4848-909d-4528-82f1-973b41fef535\n* *Reasoning:* The chatbot initially stated the passenger was NOT_ELIGIBLE, which would have matched the expected outcome. However, this determination was not final or reliable because: (1) The bot immediately retracted its decision when questioned, claiming it didn&#x27;t actually have the flight details; (2) The bot then malfunctioned by looping back to the start of the conversation, asking for information already provided; (3) The passenger became frustrated and requested human assistance; (4) The bot escalated to a human agent. Since the bot did not maintain a coherent final determination and instead escalated the case, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a valid, final determination that it stood by.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] V4YYXW \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_041
+* *Test case:* FD_TC_041
+* *Regime:* APPR
+* *Booking:* PNR V4YYXW (pnrId V4YYXW-2026-07-10)
+* *Passenger:* AMBROSE CROWHURST
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-10 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 760b4848-909d-4528-82f1-973b41fef535
+* *Reasoning:* The chatbot initially stated the passenger was NOT_ELIGIBLE, which would have matched the expected outcome. However, this determination was not final or reliable because: (1) The bot immediately retracted its decision when questioned, claiming it didn&#x27;t actually have the flight details; (2) The bot then malfunctioned by looping back to the start of the conversation, asking for information already provided; (3) The passenger became frustrated and requested human assistance; (4) The bot escalated to a human agent. Since the bot did not maintain a coherent final determination and instead escalated the case, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a valid, final determination that it stood by.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] ACYBZ2 — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">521fe82556d19434</td>
+    <th>PNR</th><td class="mono">ACYBZ2</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_045</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_045\n* *Test case:* FD_TC_045\n* *Regime:* APPR\n* *Booking:* PNR ACYBZ2 (pnrId ACYBZ2-2026-07-10)\n* *Passenger:* ANNIKA INGLEWOOD\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-18 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* c8f17255-a4f0-4fa7-b2b8-491a33d181dd\n* *Reasoning:* The chatbot briefly stated the passenger was not eligible for compensation, which would have matched the expected outcome of NOT_ELIGIBLE. However, this determination was incomplete and poorly explained (\&quot;the reason is: Your flight was disrupted\&quot; is circular and unhelpful). When challenged by the customer, the bot failed to maintain context, looped back to the start of the conversation flow, and ultimately escalated to a human agent. Since the bot did not maintain its initial determination and instead transferred the case to an agent, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a proper final determination that it stood by.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] ACYBZ2 \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_045
+* *Test case:* FD_TC_045
+* *Regime:* APPR
+* *Booking:* PNR ACYBZ2 (pnrId ACYBZ2-2026-07-10)
+* *Passenger:* ANNIKA INGLEWOOD
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-18 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* c8f17255-a4f0-4fa7-b2b8-491a33d181dd
+* *Reasoning:* The chatbot briefly stated the passenger was not eligible for compensation, which would have matched the expected outcome of NOT_ELIGIBLE. However, this determination was incomplete and poorly explained (&quot;the reason is: Your flight was disrupted&quot; is circular and unhelpful). When challenged by the customer, the bot failed to maintain context, looped back to the start of the conversation flow, and ultimately escalated to a human agent. Since the bot did not maintain its initial determination and instead transferred the case to an agent, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a proper final determination that it stood by.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] PBMVM7 — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">73e3fdff80f0ae80</td>
+    <th>PNR</th><td class="mono">PBMVM7</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_047</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_047\n* *Test case:* FD_TC_047\n* *Regime:* APPR\n* *Booking:* PNR PBMVM7 (pnrId PBMVM7-2026-07-10)\n* *Passenger:* MARNIE THISTLEWOOD\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-21 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 19805b1b-5d16-47b4-a756-bacae81f4fec\n* *Reasoning:* The chatbot made an initial NOT_ELIGIBLE determination based on a 2-hour delay. However, when the passenger disputed this and provided corrected arrival information (15:00 instead of 11:00, indicating a 4-hour delay), the bot malfunctioned and looped back to the start of the claim process. The passenger became frustrated and requested human assistance, which the bot granted by escalating. Since the bot never rendered a FINAL determination after the passenger&#x27;s correction (it only made a preliminary assessment that was disputed), and ultimately escalated to a human agent, the final outcome is ESCALATED, not NOT_ELIGIBLE. This does not match the expected NOT_ELIGIBLE verdict. The bot failed to properly handle the dispute and reach a conclusive determination.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] PBMVM7 \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_047
+* *Test case:* FD_TC_047
+* *Regime:* APPR
+* *Booking:* PNR PBMVM7 (pnrId PBMVM7-2026-07-10)
+* *Passenger:* MARNIE THISTLEWOOD
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-21 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 19805b1b-5d16-47b4-a756-bacae81f4fec
+* *Reasoning:* The chatbot made an initial NOT_ELIGIBLE determination based on a 2-hour delay. However, when the passenger disputed this and provided corrected arrival information (15:00 instead of 11:00, indicating a 4-hour delay), the bot malfunctioned and looped back to the start of the claim process. The passenger became frustrated and requested human assistance, which the bot granted by escalating. Since the bot never rendered a FINAL determination after the passenger&#x27;s correction (it only made a preliminary assessment that was disputed), and ultimately escalated to a human agent, the final outcome is ESCALATED, not NOT_ELIGIBLE. This does not match the expected NOT_ELIGIBLE verdict. The bot failed to properly handle the dispute and reach a conclusive determination.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] TAQ9DJ — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">93bb00cc59ea2a9a</td>
+    <th>PNR</th><td class="mono">TAQ9DJ</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_048</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_048\n* *Test case:* FD_TC_048\n* *Regime:* APPR\n* *Booking:* PNR TAQ9DJ (pnrId TAQ9DJ-2026-07-10)\n* *Passenger:* WESLEY WHITLOCKE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-22 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* cf2f4034-be5f-4d4e-b0ee-99683fad0976\n* *Reasoning:* The expected outcome was NOT_ELIGIBLE with no compensation. The chatbot did initially state the passenger was not eligible due to a 2-hour delay not meeting the threshold. However, this was NOT the final outcome. When the passenger challenged this assessment and provided conflicting information (240 minutes = 4 hours delay), the chatbot failed to handle the dispute properly. Instead of re-evaluating or maintaining its determination, it reset the conversation flow multiple times, asking for information already provided. The passenger became frustrated and requested human assistance, which the bot granted by escalating to a live agent. Since the case was escalated without a final determination being maintained or confirmed, the actual decision is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a proper final determination, so this does not match the expected outcome.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] TAQ9DJ \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_048
+* *Test case:* FD_TC_048
+* *Regime:* APPR
+* *Booking:* PNR TAQ9DJ (pnrId TAQ9DJ-2026-07-10)
+* *Passenger:* WESLEY WHITLOCKE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-22 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* cf2f4034-be5f-4d4e-b0ee-99683fad0976
+* *Reasoning:* The expected outcome was NOT_ELIGIBLE with no compensation. The chatbot did initially state the passenger was not eligible due to a 2-hour delay not meeting the threshold. However, this was NOT the final outcome. When the passenger challenged this assessment and provided conflicting information (240 minutes = 4 hours delay), the chatbot failed to handle the dispute properly. Instead of re-evaluating or maintaining its determination, it reset the conversation flow multiple times, asking for information already provided. The passenger became frustrated and requested human assistance, which the bot granted by escalating to a live agent. Since the case was escalated without a final determination being maintained or confirmed, the actual decision is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a proper final determination, so this does not match the expected outcome.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] KXP34W — NO_DETERMINATION vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">4006bb24db4abc01</td>
+    <th>PNR</th><td class="mono">KXP34W</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_049</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_049\n* *Test case:* FD_TC_049\n* *Regime:* APPR\n* *Booking:* PNR KXP34W (pnrId KXP34W-2026-07-10)\n* *Passenger:* PRIYA ELLINGHAM\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-23 \u00b7 n/a\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 0af819f3-1041-41cd-8164-515bc77260cc\n* *Reasoning:* The chatbot initially stated \&quot;you&#x27;re not eligible for compensation for this flight\&quot; which appeared to match the expected NOT_ELIGIBLE outcome. However, when the customer questioned this decision, the bot immediately backtracked, claiming it \&quot;hasn&#x27;t actually run a compensation eligibility check yet\&quot; and doesn&#x27;t have the tools to process claims. This self-contradiction invalidates the initial determination. The bot then reset the conversation flow, asking the customer to re-identify themselves despite having already verified their identity. This represents a critical failure - the bot either: (1) hallucinated a determination it never actually made, or (2) made a determination but then lost track of its own state. Either way, no valid final determination was reached. The conversation ended in a loop with the customer frustrated and no clear outcome established.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] KXP34W \u2014 NO_DETERMINATION vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_049
+* *Test case:* FD_TC_049
+* *Regime:* APPR
+* *Booking:* PNR KXP34W (pnrId KXP34W-2026-07-10)
+* *Passenger:* PRIYA ELLINGHAM
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-23 · n/a
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 0af819f3-1041-41cd-8164-515bc77260cc
+* *Reasoning:* The chatbot initially stated &quot;you&#x27;re not eligible for compensation for this flight&quot; which appeared to match the expected NOT_ELIGIBLE outcome. However, when the customer questioned this decision, the bot immediately backtracked, claiming it &quot;hasn&#x27;t actually run a compensation eligibility check yet&quot; and doesn&#x27;t have the tools to process claims. This self-contradiction invalidates the initial determination. The bot then reset the conversation flow, asking the customer to re-identify themselves despite having already verified their identity. This represents a critical failure - the bot either: (1) hallucinated a determination it never actually made, or (2) made a determination but then lost track of its own state. Either way, no valid final determination was reached. The conversation ended in a loop with the customer frustrated and no clear outcome established.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] HD7XPW — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">f83509819582eaa9</td>
+    <th>PNR</th><td class="mono">HD7XPW</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_050</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_050\n* *Test case:* FD_TC_050\n* *Regime:* APPR\n* *Booking:* PNR HD7XPW (pnrId HD7XPW-2026-07-10)\n* *Passenger:* SVEN ASHCOMBE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-26 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 24d09e0f-191e-413c-bdf7-e4e382b0703b\n* *Reasoning:* The chatbot did briefly state the customer was NOT_ELIGIBLE with the reason \&quot;Your flight was disrupted\&quot; (which matches the expected outcome), but this was clearly an error in the bot&#x27;s logic/messaging as it provided no meaningful explanation. When challenged by the customer, the bot failed to defend or clarify its decision and instead looped back to re-ask already-answered questions (identity verification, booking details, etc.). This indicates a system malfunction rather than a proper determination. The customer became frustrated and requested human assistance, which the bot granted by escalating to a live agent. Since the bot never provided a coherent, final determination that it stood by, and instead escalated the case, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot did not successfully complete its adjudication process.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] HD7XPW \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_050
+* *Test case:* FD_TC_050
+* *Regime:* APPR
+* *Booking:* PNR HD7XPW (pnrId HD7XPW-2026-07-10)
+* *Passenger:* SVEN ASHCOMBE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-26 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 24d09e0f-191e-413c-bdf7-e4e382b0703b
+* *Reasoning:* The chatbot did briefly state the customer was NOT_ELIGIBLE with the reason &quot;Your flight was disrupted&quot; (which matches the expected outcome), but this was clearly an error in the bot&#x27;s logic/messaging as it provided no meaningful explanation. When challenged by the customer, the bot failed to defend or clarify its decision and instead looped back to re-ask already-answered questions (identity verification, booking details, etc.). This indicates a system malfunction rather than a proper determination. The customer became frustrated and requested human assistance, which the bot granted by escalating to a live agent. Since the bot never provided a coherent, final determination that it stood by, and instead escalated the case, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot did not successfully complete its adjudication process.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] BVWS7Y — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">5fcec0c64a7e84ca</td>
+    <th>PNR</th><td class="mono">BVWS7Y</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_052</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_052\n* *Test case:* FD_TC_052\n* *Regime:* APPR\n* *Booking:* PNR BVWS7Y (pnrId BVWS7Y-2026-07-10)\n* *Passenger:* THADDEUS DARLINGTON\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-28 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 801ad705-500c-409c-9f12-2449676fc2f9\n* *Reasoning:* The chatbot initially rendered a NOT_ELIGIBLE determination (matching the expected outcome), explaining the delay was due to safety/weather reasons outside the airline&#x27;s control. However, when the passenger disputed this and requested manual review, the bot escalated the case to an agent rather than maintaining its NOT_ELIGIBLE determination. The expected outcome was a firm NOT_ELIGIBLE decision with system code FD-APPR-NE-28, but the actual final outcome is ESCALATED for agent review. While the bot did reach an initial determination, it changed course and escalated, meaning the final state does not match the expected NOT_ELIGIBLE verdict.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] BVWS7Y \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_052
+* *Test case:* FD_TC_052
+* *Regime:* APPR
+* *Booking:* PNR BVWS7Y (pnrId BVWS7Y-2026-07-10)
+* *Passenger:* THADDEUS DARLINGTON
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-28 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 801ad705-500c-409c-9f12-2449676fc2f9
+* *Reasoning:* The chatbot initially rendered a NOT_ELIGIBLE determination (matching the expected outcome), explaining the delay was due to safety/weather reasons outside the airline&#x27;s control. However, when the passenger disputed this and requested manual review, the bot escalated the case to an agent rather than maintaining its NOT_ELIGIBLE determination. The expected outcome was a firm NOT_ELIGIBLE decision with system code FD-APPR-NE-28, but the actual final outcome is ESCALATED for agent review. While the bot did reach an initial determination, it changed course and escalated, meaning the final state does not match the expected NOT_ELIGIBLE verdict.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] THTL8P — ESCALATED vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">7b7163c79f6fdd24</td>
+    <th>PNR</th><td class="mono">THTL8P</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_063</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_063\n* *Test case:* FD_TC_063\n* *Regime:* APPR\n* *Booking:* PNR THTL8P (pnrId THTL8P-2026-07-20)\n* *Passenger:* SVEN VANEINGHAM\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 N/A (Pre-Travel Rejection) \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 41edf44e-7782-496b-b6dc-7dc6d36ced23\n* *Reasoning:* The expected outcome was ELIGIBLE with CAD 400.0 compensation. However, the chatbot did not reach a determination. After collecting all necessary information and verifying identity, the bot stated \&quot;I&#x27;m sorry \u2014 I can&#x27;t review this case automatically right now\&quot; and escalated the case to an agent. This is a failure because the bot should have been able to automatically determine eligibility for this APPR regime case (pre-travel rejection scenario). The bot never rendered the expected ELIGIBLE decision nor quoted the CAD 400 amount.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] THTL8P \u2014 ESCALATED vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_063
+* *Test case:* FD_TC_063
+* *Regime:* APPR
+* *Booking:* PNR THTL8P (pnrId THTL8P-2026-07-20)
+* *Passenger:* SVEN VANEINGHAM
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · N/A (Pre-Travel Rejection) · CAD 400.0
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 41edf44e-7782-496b-b6dc-7dc6d36ced23
+* *Reasoning:* The expected outcome was ELIGIBLE with CAD 400.0 compensation. However, the chatbot did not reach a determination. After collecting all necessary information and verifying identity, the bot stated &quot;I&#x27;m sorry — I can&#x27;t review this case automatically right now&quot; and escalated the case to an agent. This is a failure because the bot should have been able to automatically determine eligibility for this APPR regime case (pre-travel rejection scenario). The bot never rendered the expected ELIGIBLE decision nor quoted the CAD 400 amount.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] VEL6C8 — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">711460c6568b5bb9</td>
+    <th>PNR</th><td class="mono">VEL6C8</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_107</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_107\n* *Test case:* FD_TC_107\n* *Regime:* APPR\n* *Booking:* PNR VEL6C8 (pnrId VEL6C8-2026-07-10)\n* *Passenger:* PRIYA VANEINGHAM\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-EU-NE-18 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 0f76761f-4080-4b87-a43d-5c7f5202823d\n* *Reasoning:* The chatbot did initially render a NOT_ELIGIBLE decision, which matches the expected outcome. However, when challenged by the customer, the bot failed to maintain its determination and instead looped back to restart the claim process. When the customer persisted and requested human assistance, the bot escalated the case to a live agent. The FINAL outcome of the conversation is ESCALATED, not NOT_ELIGIBLE. Since the bot did not maintain its initial determination and instead transferred the case to a human agent, the final decision status does not match the expected NOT_ELIGIBLE verdict. The bot reached a determination initially but failed to uphold it, resulting in escalation as the final outcome.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] VEL6C8 \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_107
+* *Test case:* FD_TC_107
+* *Regime:* APPR
+* *Booking:* PNR VEL6C8 (pnrId VEL6C8-2026-07-10)
+* *Passenger:* PRIYA VANEINGHAM
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-EU-NE-18 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 0f76761f-4080-4b87-a43d-5c7f5202823d
+* *Reasoning:* The chatbot did initially render a NOT_ELIGIBLE decision, which matches the expected outcome. However, when challenged by the customer, the bot failed to maintain its determination and instead looped back to restart the claim process. When the customer persisted and requested human assistance, the bot escalated the case to a live agent. The FINAL outcome of the conversation is ESCALATED, not NOT_ELIGIBLE. Since the bot did not maintain its initial determination and instead transferred the case to a human agent, the final decision status does not match the expected NOT_ELIGIBLE verdict. The bot reached a determination initially but failed to uphold it, resulting in escalation as the final outcome.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] FWSLX3 — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">7a08a6b554317d8d</td>
+    <th>PNR</th><td class="mono">FWSLX3</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_108</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_108\n* *Test case:* FD_TC_108\n* *Regime:* APPR\n* *Booking:* PNR FWSLX3 (pnrId FWSLX3-2026-07-10)\n* *Passenger:* SASKIA RAVENSCAR\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-EU-NE-19 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* d22d4616-d01c-440f-b050-1a9aeb3d16bd\n* *Reasoning:* The expected outcome was NOT_ELIGIBLE with system code FD-EU-NE-19, indicating the bot should have automatically determined the passenger was not eligible for compensation. However, the bot escalated the case to an agent for manual review instead of making an automated determination. The bot never reached a final eligibility determination (NOT_ELIGIBLE), so this does not match the expected verdict. The case was escalated rather than automatically adjudicated as NOT_ELIGIBLE.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] FWSLX3 \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_108
+* *Test case:* FD_TC_108
+* *Regime:* APPR
+* *Booking:* PNR FWSLX3 (pnrId FWSLX3-2026-07-10)
+* *Passenger:* SASKIA RAVENSCAR
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-EU-NE-19 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* d22d4616-d01c-440f-b050-1a9aeb3d16bd
+* *Reasoning:* The expected outcome was NOT_ELIGIBLE with system code FD-EU-NE-19, indicating the bot should have automatically determined the passenger was not eligible for compensation. However, the bot escalated the case to an agent for manual review instead of making an automated determination. The bot never reached a final eligibility determination (NOT_ELIGIBLE), so this does not match the expected verdict. The case was escalated rather than automatically adjudicated as NOT_ELIGIBLE.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] E3K9ZG — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">a09131e68ccd2d3e</td>
+    <th>PNR</th><td class="mono">E3K9ZG</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_109</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_109\n* *Test case:* FD_TC_109\n* *Regime:* APPR\n* *Booking:* PNR E3K9ZG (pnrId E3K9ZG-2026-07-10)\n* *Passenger:* PERCY HARTWELL\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-EU-NE-20 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* a2a1e51d-741f-4d2f-9dce-d861e3e3b8fa\n* *Reasoning:* The bot initially made a NOT_ELIGIBLE determination for the correct flight (YYZ\u2192LHR, Jul 10, 4h delay), which matches the expected outcome. However, when challenged by the passenger, the bot lost context, retrieved incorrect flight data (DEL\u2192BLR instead of YYZ\u2192LHR), and escalated to a human agent. The FINAL outcome is ESCALATED, not NOT_ELIGIBLE. While the bot briefly reached the correct determination, it failed to maintain it and ended by transferring the case to human support. The final state is escalation, which does not match the expected NOT_ELIGIBLE verdict.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] E3K9ZG \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_109
+* *Test case:* FD_TC_109
+* *Regime:* APPR
+* *Booking:* PNR E3K9ZG (pnrId E3K9ZG-2026-07-10)
+* *Passenger:* PERCY HARTWELL
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-EU-NE-20 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* a2a1e51d-741f-4d2f-9dce-d861e3e3b8fa
+* *Reasoning:* The bot initially made a NOT_ELIGIBLE determination for the correct flight (YYZ→LHR, Jul 10, 4h delay), which matches the expected outcome. However, when challenged by the passenger, the bot lost context, retrieved incorrect flight data (DEL→BLR instead of YYZ→LHR), and escalated to a human agent. The FINAL outcome is ESCALATED, not NOT_ELIGIBLE. While the bot briefly reached the correct determination, it failed to maintain it and ended by transferring the case to human support. The final state is escalation, which does not match the expected NOT_ELIGIBLE verdict.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] F2ZGXE — ESCALATED vs expected NO_DETERMINATION</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">79d06f068eebc94e</td>
+    <th>PNR</th><td class="mono">F2ZGXE</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_140</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_140\n* *Test case:* FD_TC_140\n* *Regime:* ASL\n* *Booking:* PNR F2ZGXE (pnrId F2ZGXE-2026-07-10)\n* *Passenger:* INGRID YARDLEY\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NO_DETERMINATION \u00b7 FD-ASL-ND-02 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* c452cc09-840a-4f9b-9293-107d0ccb0934\n* *Reasoning:* The expected outcome was NO_DETERMINATION (systemCode FD-ASL-ND-02), which typically means the bot should decline to make a determination but not necessarily escalate to an agent. However, the bot&#x27;s actual behavior was to ESCALATE the case for agent review after determining it could not process the claim automatically (due to the passenger&#x27;s country of residence being Israel). While both outcomes result in no automated determination being reached, they are semantically different: NO_DETERMINATION suggests the bot abstains without escalation, while ESCALATED means the case is actively sent to human agents. The decision enum value must match exactly, so ESCALATED \u2260 NO_DETERMINATION, making this a mismatch.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] F2ZGXE \u2014 ESCALATED vs expected NO_DETERMINATION&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_140
+* *Test case:* FD_TC_140
+* *Regime:* ASL
+* *Booking:* PNR F2ZGXE (pnrId F2ZGXE-2026-07-10)
+* *Passenger:* INGRID YARDLEY
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NO_DETERMINATION · FD-ASL-ND-02 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* c452cc09-840a-4f9b-9293-107d0ccb0934
+* *Reasoning:* The expected outcome was NO_DETERMINATION (systemCode FD-ASL-ND-02), which typically means the bot should decline to make a determination but not necessarily escalate to an agent. However, the bot&#x27;s actual behavior was to ESCALATE the case for agent review after determining it could not process the claim automatically (due to the passenger&#x27;s country of residence being Israel). While both outcomes result in no automated determination being reached, they are semantically different: NO_DETERMINATION suggests the bot abstains without escalation, while ESCALATED means the case is actively sent to human agents. The decision enum value must match exactly, so ESCALATED ≠ NO_DETERMINATION, making this a mismatch.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] K7TATY — ELIGIBLE vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">1072fc09b6e26323</td>
+    <th>PNR</th><td class="mono">K7TATY</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_147</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_147\n* *Test case:* FD_TC_147\n* *Regime:* APPR\n* *Booking:* PNR K7TATY (pnrId K7TATY-2026-07-10)\n* *Passenger:* WESLEY ASHCOMBE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-MIXED-EL-02 \u00b7 EUR 600.0\n\nh3. Actual (bot)\n* ELIGIBLE \u00b7 CAD 970.25\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ELIGIBLE\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 9210ba8e-b72d-42ce-a04a-943dd80cb57e\n* *Reasoning:* The chatbot reached a determination and correctly identified the passenger as ELIGIBLE for compensation under EU 261/2004 (APPR regime). However, there is a currency mismatch: the expected amount was EUR 600.0, but the bot quoted CAD 970.25. While the passenger selected Canada as their location (which may explain the CAD currency), the expected test case specified EUR 600.0. The eligibility decision matches, but the amount does not match the expected value in both currency and numerical amount. Therefore, matches_expected is set to false due to the amount discrepancy.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] K7TATY \u2014 ELIGIBLE vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_147
+* *Test case:* FD_TC_147
+* *Regime:* APPR
+* *Booking:* PNR K7TATY (pnrId K7TATY-2026-07-10)
+* *Passenger:* WESLEY ASHCOMBE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-MIXED-EL-02 · EUR 600.0
+
+h3. Actual (bot)
+* ELIGIBLE · CAD 970.25
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ELIGIBLE
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 9210ba8e-b72d-42ce-a04a-943dd80cb57e
+* *Reasoning:* The chatbot reached a determination and correctly identified the passenger as ELIGIBLE for compensation under EU 261/2004 (APPR regime). However, there is a currency mismatch: the expected amount was EUR 600.0, but the bot quoted CAD 970.25. While the passenger selected Canada as their location (which may explain the CAD currency), the expected test case specified EUR 600.0. The eligibility decision matches, but the amount does not match the expected value in both currency and numerical amount. Therefore, matches_expected is set to false due to the amount discrepancy.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] LNG94P — ELIGIBLE vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">5ac87d40d8a3a313</td>
+    <th>PNR</th><td class="mono">LNG94P</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_148</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_148\n* *Test case:* FD_TC_148\n* *Regime:* APPR\n* *Booking:* PNR LNG94P (pnrId LNG94P-2026-07-10)\n* *Passenger:* BEATRIX NETHERBY\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-MIXED-EL-03 \u00b7 EUR 600.0\n\nh3. Actual (bot)\n* ELIGIBLE \u00b7 CAD 970.25\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ELIGIBLE\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 20a65760-7810-45ac-b0bf-69d60225ccd4\n* *Reasoning:* The chatbot correctly identified the passenger and PNR, and reached an ELIGIBLE determination as expected. However, there is a critical mismatch in the compensation amount: the expected amount was EUR 600.0, but the bot quoted 970.25 CAD. While these could potentially be equivalent amounts after currency conversion, the test case explicitly specifies EUR 600.0 as the expected amount. The bot provided a different currency (CAD) and a different numerical value when converted. This represents a failure in the amount verification check, making the overall outcome not match the expected result despite the eligibility status being correct.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] LNG94P \u2014 ELIGIBLE vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_148
+* *Test case:* FD_TC_148
+* *Regime:* APPR
+* *Booking:* PNR LNG94P (pnrId LNG94P-2026-07-10)
+* *Passenger:* BEATRIX NETHERBY
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-MIXED-EL-03 · EUR 600.0
+
+h3. Actual (bot)
+* ELIGIBLE · CAD 970.25
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ELIGIBLE
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 20a65760-7810-45ac-b0bf-69d60225ccd4
+* *Reasoning:* The chatbot correctly identified the passenger and PNR, and reached an ELIGIBLE determination as expected. However, there is a critical mismatch in the compensation amount: the expected amount was EUR 600.0, but the bot quoted 970.25 CAD. While these could potentially be equivalent amounts after currency conversion, the test case explicitly specifies EUR 600.0 as the expected amount. The bot provided a different currency (CAD) and a different numerical value when converted. This represents a failure in the amount verification check, making the overall outcome not match the expected result despite the eligibility status being correct.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] S9LDC5 — ELIGIBLE vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">02ca25ce8e1209f1</td>
+    <th>PNR</th><td class="mono">S9LDC5</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_150</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_150\n* *Test case:* FD_TC_150\n* *Regime:* APPR\n* *Booking:* PNR S9LDC5 (pnrId S9LDC5-2026-07-10)\n* *Passenger:* ELOWEN SACKVILLE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-MIXED-NE-01 \u00b7 n/a\n\nh3. Actual (bot)\n* ELIGIBLE \u00b7 CAD 973.97\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ELIGIBLE\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* f8a95a4b-c93a-405f-abe0-14a2c707902a\n* *Reasoning:* The expected outcome for test case FD_TC_150 (PNR S9LDC5, system code FD-MIXED-NE-01) was NOT_ELIGIBLE with no compensation amount. However, the chatbot determined the passenger was ELIGIBLE and quoted 973.97 CAD compensation under EU Regulation 261/2004. The bot successfully reached a determination and processed the claim to submission, but this determination does NOT match the expected NOT_ELIGIBLE verdict. This is a test failure.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] S9LDC5 \u2014 ELIGIBLE vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_150
+* *Test case:* FD_TC_150
+* *Regime:* APPR
+* *Booking:* PNR S9LDC5 (pnrId S9LDC5-2026-07-10)
+* *Passenger:* ELOWEN SACKVILLE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-MIXED-NE-01 · n/a
+
+h3. Actual (bot)
+* ELIGIBLE · CAD 973.97
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ELIGIBLE
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* f8a95a4b-c93a-405f-abe0-14a2c707902a
+* *Reasoning:* The expected outcome for test case FD_TC_150 (PNR S9LDC5, system code FD-MIXED-NE-01) was NOT_ELIGIBLE with no compensation amount. However, the chatbot determined the passenger was ELIGIBLE and quoted 973.97 CAD compensation under EU Regulation 261/2004. The bot successfully reached a determination and processed the claim to submission, but this determination does NOT match the expected NOT_ELIGIBLE verdict. This is a test failure.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] FW232Y — ELIGIBLE vs expected NO_DETERMINATION</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">23299921fef927c9</td>
+    <th>PNR</th><td class="mono">FW232Y</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_152</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_152\n* *Test case:* FD_TC_152\n* *Regime:* ASL\n* *Booking:* PNR FW232Y (pnrId FW232Y-2026-07-10)\n* *Passenger:* JOELLE COPPERSMITH\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NO_DETERMINATION \u00b7 FD-MIXED-ND-01 \u00b7 n/a\n\nh3. Actual (bot)\n* ELIGIBLE \u00b7 CAD 646.83\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ELIGIBLE\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 60bdf2a9-fd9c-42a4-93a0-301048579d55\n* *Reasoning:* The expected outcome for test case FD_TC_152 (systemCode FD-MIXED-ND-01) was NO_DETERMINATION with no compensation amount. However, the chatbot reached a clear determination of ELIGIBLE and quoted 646.83 CAD compensation under EU Regulation 261/2004. The bot completed the full claim submission process including identity verification and payment setup, which is inconsistent with the expected NO_DETERMINATION outcome. This is a test failure as the bot should not have made a determination for this case.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] FW232Y \u2014 ELIGIBLE vs expected NO_DETERMINATION&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_152
+* *Test case:* FD_TC_152
+* *Regime:* ASL
+* *Booking:* PNR FW232Y (pnrId FW232Y-2026-07-10)
+* *Passenger:* JOELLE COPPERSMITH
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NO_DETERMINATION · FD-MIXED-ND-01 · n/a
+
+h3. Actual (bot)
+* ELIGIBLE · CAD 646.83
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ELIGIBLE
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 60bdf2a9-fd9c-42a4-93a0-301048579d55
+* *Reasoning:* The expected outcome for test case FD_TC_152 (systemCode FD-MIXED-ND-01) was NO_DETERMINATION with no compensation amount. However, the chatbot reached a clear determination of ELIGIBLE and quoted 646.83 CAD compensation under EU Regulation 261/2004. The bot completed the full claim submission process including identity verification and payment setup, which is inconsistent with the expected NO_DETERMINATION outcome. This is a test failure as the bot should not have made a determination for this case.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] AR2FCX — ESCALATED vs expected NOT_ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">62d581e068cb68c8</td>
+    <th>PNR</th><td class="mono">AR2FCX</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_158</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_158\n* *Test case:* FD_TC_158\n* *Regime:* APPR\n* *Booking:* PNR AR2FCX (pnrId AR2FCX-2026-07-10)\n* *Passenger:* DAGNY SACKVILLE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* NOT_ELIGIBLE \u00b7 FD-APPR-NE-27 \u00b7 n/a\n\nh3. Actual (bot)\n* ESCALATED \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot ESCALATED\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* be058ee3-abf8-473e-a561-25efe8d8de50\n* *Reasoning:* The chatbot did initially state the passenger was NOT_ELIGIBLE with the reason \&quot;Your flight was disrupted\&quot; - which matches the expected outcome. However, when challenged by the customer about this nonsensical explanation, the bot failed to maintain its determination. Instead of clarifying or standing by the decision, it: (1) apologized for the \&quot;wrong\&quot; message, (2) asked for more information, (3) completely reset the conversation flow multiple times, and (4) ultimately escalated to a human agent. Since the bot abandoned its initial determination and ended by escalating rather than maintaining a clear NOT_ELIGIBLE verdict, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a stable, defensible determination.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] AR2FCX \u2014 ESCALATED vs expected NOT_ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_158
+* *Test case:* FD_TC_158
+* *Regime:* APPR
+* *Booking:* PNR AR2FCX (pnrId AR2FCX-2026-07-10)
+* *Passenger:* DAGNY SACKVILLE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* NOT_ELIGIBLE · FD-APPR-NE-27 · n/a
+
+h3. Actual (bot)
+* ESCALATED · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot ESCALATED
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* be058ee3-abf8-473e-a561-25efe8d8de50
+* *Reasoning:* The chatbot did initially state the passenger was NOT_ELIGIBLE with the reason &quot;Your flight was disrupted&quot; - which matches the expected outcome. However, when challenged by the customer about this nonsensical explanation, the bot failed to maintain its determination. Instead of clarifying or standing by the decision, it: (1) apologized for the &quot;wrong&quot; message, (2) asked for more information, (3) completely reset the conversation flow multiple times, and (4) ultimately escalated to a human agent. Since the bot abandoned its initial determination and ended by escalating rather than maintaining a clear NOT_ELIGIBLE verdict, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a stable, defensible determination.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] HAPPMP — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">9105782b76870ed9</td>
+    <th>PNR</th><td class="mono">HAPPMP</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_185</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_185\n* *Test case:* FD_TC_185\n* *Regime:* APPR\n* *Booking:* PNR HAPPMP (pnrId HAPPMP-2026-07-10)\n* *Passenger:* PERCY RUTHERGLEN\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 61505aa5-310d-4933-aba2-dc5afc651146\n* *Reasoning:* The expected outcome was for the bot to determine the passenger ELIGIBLE for CAD 400 compensation under APPR regime (systemCode FD-APPR-EL-400). However, the chatbot never made any eligibility determination or quoted any compensation amount. Instead, it simply collected the claim information, accepted the submission, and told the user they would hear back within 30 days. The bot did not assess the claim or provide any verdict on eligibility or compensation. This is a clear mismatch - the test expected an immediate determination of ELIGIBLE with CAD 400, but the bot deferred to manual review without making any determination.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] HAPPMP \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_185
+* *Test case:* FD_TC_185
+* *Regime:* APPR
+* *Booking:* PNR HAPPMP (pnrId HAPPMP-2026-07-10)
+* *Passenger:* PERCY RUTHERGLEN
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 61505aa5-310d-4933-aba2-dc5afc651146
+* *Reasoning:* The expected outcome was for the bot to determine the passenger ELIGIBLE for CAD 400 compensation under APPR regime (systemCode FD-APPR-EL-400). However, the chatbot never made any eligibility determination or quoted any compensation amount. Instead, it simply collected the claim information, accepted the submission, and told the user they would hear back within 30 days. The bot did not assess the claim or provide any verdict on eligibility or compensation. This is a clear mismatch - the test expected an immediate determination of ELIGIBLE with CAD 400, but the bot deferred to manual review without making any determination.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] T4NH2J — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">151e2dfeac910699</td>
+    <th>PNR</th><td class="mono">T4NH2J</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_186</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_186\n* *Test case:* FD_TC_186\n* *Regime:* APPR\n* *Booking:* PNR T4NH2J (pnrId T4NH2J-2026-07-10)\n* *Passenger:* MARISOL HARROWGATE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 6b7ee47a-6e21-43cf-a2b1-d026e361dbd5\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR T4NH2J under the APPR regime. However, the chatbot never performed any eligibility assessment or quoted any compensation amount. Instead, it simply collected information and submitted the claim for manual review with a 30-day response time. The bot did not reach a determination on eligibility or compensation, which means it failed to match the expected outcome. Additionally, the user provided booking reference \&quot;ABC123\&quot; instead of the correct PNR \&quot;T4NH2J\&quot;, which may have contributed to the bot&#x27;s inability to assess eligibility automatically.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] T4NH2J \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_186
+* *Test case:* FD_TC_186
+* *Regime:* APPR
+* *Booking:* PNR T4NH2J (pnrId T4NH2J-2026-07-10)
+* *Passenger:* MARISOL HARROWGATE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 6b7ee47a-6e21-43cf-a2b1-d026e361dbd5
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR T4NH2J under the APPR regime. However, the chatbot never performed any eligibility assessment or quoted any compensation amount. Instead, it simply collected information and submitted the claim for manual review with a 30-day response time. The bot did not reach a determination on eligibility or compensation, which means it failed to match the expected outcome. Additionally, the user provided booking reference &quot;ABC123&quot; instead of the correct PNR &quot;T4NH2J&quot;, which may have contributed to the bot&#x27;s inability to assess eligibility automatically.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] LBGRWK — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">48c5eaafabfb5be2</td>
+    <th>PNR</th><td class="mono">LBGRWK</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_187</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_187\n* *Test case:* FD_TC_187\n* *Regime:* APPR\n* *Booking:* PNR LBGRWK (pnrId LBGRWK-2026-07-10)\n* *Passenger:* JOELLE RAVENSCAR\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 77e47fae-232c-49f5-880f-41e022e87f29\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR LBGRWK under regime APPR. However, the chatbot never performed an eligibility assessment or quoted any amount. Instead, it simply collected information and forwarded the claim for manual review with a reference number. The bot reached no determination on eligibility or compensation. Additionally, the customer provided booking reference \&quot;ABC123\&quot; instead of the expected \&quot;LBGRWK\&quot;, which may have contributed to the bot&#x27;s inability to assess the claim automatically. Since the bot did not reach a determination and did not match the expected outcome, this is a FAIL.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] LBGRWK \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_187
+* *Test case:* FD_TC_187
+* *Regime:* APPR
+* *Booking:* PNR LBGRWK (pnrId LBGRWK-2026-07-10)
+* *Passenger:* JOELLE RAVENSCAR
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 77e47fae-232c-49f5-880f-41e022e87f29
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR LBGRWK under regime APPR. However, the chatbot never performed an eligibility assessment or quoted any amount. Instead, it simply collected information and forwarded the claim for manual review with a reference number. The bot reached no determination on eligibility or compensation. Additionally, the customer provided booking reference &quot;ABC123&quot; instead of the expected &quot;LBGRWK&quot;, which may have contributed to the bot&#x27;s inability to assess the claim automatically. Since the bot did not reach a determination and did not match the expected outcome, this is a FAIL.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] FA6QR4 — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">2e708e3d88551ac2</td>
+    <th>PNR</th><td class="mono">FA6QR4</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_188</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_188\n* *Test case:* FD_TC_188\n* *Regime:* APPR\n* *Booking:* PNR FA6QR4 (pnrId FA6QR4-2026-07-10)\n* *Passenger:* LARISSA VANEINGHAM\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* e27b804d-3084-4978-a8d3-a3f48065ae83\n* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation for PNR FA6QR4. However, the chatbot never performed any eligibility assessment or quoted any amount. Instead, it followed a third-party representative workflow, collected claim information, and submitted the case for manual review within 30 days (reference CCD-1008706-AAR7I0). The bot reached no determination on eligibility or compensation. Additionally, the customer provided a different booking reference (ABC123) than the expected PNR (FA6QR4), which may have contributed to the different handling path. The outcome does not match the expected ELIGIBLE/CAD 400 result.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] FA6QR4 \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_188
+* *Test case:* FD_TC_188
+* *Regime:* APPR
+* *Booking:* PNR FA6QR4 (pnrId FA6QR4-2026-07-10)
+* *Passenger:* LARISSA VANEINGHAM
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* e27b804d-3084-4978-a8d3-a3f48065ae83
+* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation for PNR FA6QR4. However, the chatbot never performed any eligibility assessment or quoted any amount. Instead, it followed a third-party representative workflow, collected claim information, and submitted the case for manual review within 30 days (reference CCD-1008706-AAR7I0). The bot reached no determination on eligibility or compensation. Additionally, the customer provided a different booking reference (ABC123) than the expected PNR (FA6QR4), which may have contributed to the different handling path. The outcome does not match the expected ELIGIBLE/CAD 400 result.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] E5DEGV — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">79606a16477f174e</td>
+    <th>PNR</th><td class="mono">E5DEGV</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_189</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_189\n* *Test case:* FD_TC_189\n* *Regime:* APPR\n* *Booking:* PNR E5DEGV (pnrId E5DEGV-2026-07-10)\n* *Passenger:* ODESSA INGLEWOOD\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 7f0c7f86-b291-4d9a-a6d8-ac74856992fe\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR E5DEGV / passenger Odessa Inglewood under regime APPR. However, the chatbot never performed any eligibility assessment or quoted any amount. Instead, it simply collected information and submitted the claim for manual review (reference CCD-1008693-TTUK3E), stating the customer would hear back within 30 days. The bot did not reach a determination on eligibility or compensation amount, which is a critical failure. Additionally, the customer provided booking reference ABC123 instead of the expected E5DEGV, which may have contributed to the bot&#x27;s inability to assess the claim automatically.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] E5DEGV \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_189
+* *Test case:* FD_TC_189
+* *Regime:* APPR
+* *Booking:* PNR E5DEGV (pnrId E5DEGV-2026-07-10)
+* *Passenger:* ODESSA INGLEWOOD
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 7f0c7f86-b291-4d9a-a6d8-ac74856992fe
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR E5DEGV / passenger Odessa Inglewood under regime APPR. However, the chatbot never performed any eligibility assessment or quoted any amount. Instead, it simply collected information and submitted the claim for manual review (reference CCD-1008693-TTUK3E), stating the customer would hear back within 30 days. The bot did not reach a determination on eligibility or compensation amount, which is a critical failure. Additionally, the customer provided booking reference ABC123 instead of the expected E5DEGV, which may have contributed to the bot&#x27;s inability to assess the claim automatically.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] PHCYX9 — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">f23bf03d268bf3df</td>
+    <th>PNR</th><td class="mono">PHCYX9</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_190</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_190\n* *Test case:* FD_TC_190\n* *Regime:* APPR\n* *Booking:* PNR PHCYX9 (pnrId PHCYX9-2026-07-10)\n* *Passenger:* ZORA RAVENSCAR\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 4682a79e-8ee1-4529-a94d-bb4def930784\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR PHCYX9 passenger Zora Ravenscar under regime APPR. However, the chatbot only collected information and submitted the claim for manual review (stating \&quot;You should hear from a team member within 30 days\&quot;). The bot never looked up the actual booking reference PHCYX9 (the customer provided ABC123 instead), never assessed eligibility, and never quoted any compensation amount. The bot essentially acted as a claim intake form rather than an automated eligibility assessment tool. This is a complete mismatch with the expected automated determination of ELIGIBLE/CAD 400.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] PHCYX9 \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_190
+* *Test case:* FD_TC_190
+* *Regime:* APPR
+* *Booking:* PNR PHCYX9 (pnrId PHCYX9-2026-07-10)
+* *Passenger:* ZORA RAVENSCAR
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 4682a79e-8ee1-4529-a94d-bb4def930784
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR PHCYX9 passenger Zora Ravenscar under regime APPR. However, the chatbot only collected information and submitted the claim for manual review (stating &quot;You should hear from a team member within 30 days&quot;). The bot never looked up the actual booking reference PHCYX9 (the customer provided ABC123 instead), never assessed eligibility, and never quoted any compensation amount. The bot essentially acted as a claim intake form rather than an automated eligibility assessment tool. This is a complete mismatch with the expected automated determination of ELIGIBLE/CAD 400.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] UA7SWJ — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">3703eb1606a3da31</td>
+    <th>PNR</th><td class="mono">UA7SWJ</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_191</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_191\n* *Test case:* FD_TC_191\n* *Regime:* APPR\n* *Booking:* PNR UA7SWJ (pnrId UA7SWJ-2026-07-10)\n* *Passenger:* DAGNY CROWHURST\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* d6e7b4f9-f2fb-4b51-9785-4b27c4218fc8\n* *Reasoning:* The chatbot did not reach an eligibility determination. Instead of evaluating the claim against APPR regulations and determining eligibility with a CAD 400 compensation amount, the bot simply collected information and submitted the claim for manual review (reference CCD-1008842-XWQ96E) with a 30-day response time. The expected outcome was an immediate ELIGIBLE determination with CAD 400 compensation, but the bot never assessed eligibility or quoted any amount. Additionally, the user provided booking reference \&quot;ABC123\&quot; instead of the expected PNR \&quot;UA7SWJ\&quot;, which the bot accepted without validation. This is a clear mismatch with the expected automated determination.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] UA7SWJ \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_191
+* *Test case:* FD_TC_191
+* *Regime:* APPR
+* *Booking:* PNR UA7SWJ (pnrId UA7SWJ-2026-07-10)
+* *Passenger:* DAGNY CROWHURST
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* d6e7b4f9-f2fb-4b51-9785-4b27c4218fc8
+* *Reasoning:* The chatbot did not reach an eligibility determination. Instead of evaluating the claim against APPR regulations and determining eligibility with a CAD 400 compensation amount, the bot simply collected information and submitted the claim for manual review (reference CCD-1008842-XWQ96E) with a 30-day response time. The expected outcome was an immediate ELIGIBLE determination with CAD 400 compensation, but the bot never assessed eligibility or quoted any amount. Additionally, the user provided booking reference &quot;ABC123&quot; instead of the expected PNR &quot;UA7SWJ&quot;, which the bot accepted without validation. This is a clear mismatch with the expected automated determination.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] BCEK7A — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">07dd35d763723ba3</td>
+    <th>PNR</th><td class="mono">BCEK7A</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_192</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_192\n* *Test case:* FD_TC_192\n* *Regime:* APPR\n* *Booking:* PNR BCEK7A (pnrId BCEK7A-2026-07-10)\n* *Passenger:* ANOUK VANEINGHAM\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* fb678838-92d7-4ff6-9871-2639be9bf96e\n* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation for PNR BCEK7A under regime APPR. However, the chatbot did not perform any eligibility assessment or quote any amount. Instead, it simply collected information for a third-party claim submission and forwarded it for manual review within 30 days. The bot never accessed the actual booking (customer provided ABC123 instead of the expected BCEK7A), never evaluated the disruption details, and never rendered a compensation decision. This is a complete mismatch - the bot should have determined eligibility and quoted CAD 400, but instead it only submitted the claim for later processing.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] BCEK7A \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_192
+* *Test case:* FD_TC_192
+* *Regime:* APPR
+* *Booking:* PNR BCEK7A (pnrId BCEK7A-2026-07-10)
+* *Passenger:* ANOUK VANEINGHAM
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* fb678838-92d7-4ff6-9871-2639be9bf96e
+* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation for PNR BCEK7A under regime APPR. However, the chatbot did not perform any eligibility assessment or quote any amount. Instead, it simply collected information for a third-party claim submission and forwarded it for manual review within 30 days. The bot never accessed the actual booking (customer provided ABC123 instead of the expected BCEK7A), never evaluated the disruption details, and never rendered a compensation decision. This is a complete mismatch - the bot should have determined eligibility and quoted CAD 400, but instead it only submitted the claim for later processing.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] DVPWFV — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">d17279d22e35cec6</td>
+    <th>PNR</th><td class="mono">DVPWFV</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_193</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_193\n* *Test case:* FD_TC_193\n* *Regime:* APPR\n* *Booking:* PNR DVPWFV (pnrId DVPWFV-2026-07-10)\n* *Passenger:* BJORN DARLINGTON\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* fc02893b-e705-4bd2-9ae5-90f3f00b69ff\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR DVPWFV under the APPR regime. However, the chatbot never performed any eligibility assessment or quoted any compensation amount. Instead, it followed a third-party claim submission workflow that simply collected information and created a manual review ticket (CCD-1008690-JF8UN9). The bot never looked up the actual PNR (DVPWFV) - the customer provided a different booking reference (ABC123). Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] DVPWFV \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_193
+* *Test case:* FD_TC_193
+* *Regime:* APPR
+* *Booking:* PNR DVPWFV (pnrId DVPWFV-2026-07-10)
+* *Passenger:* BJORN DARLINGTON
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* fc02893b-e705-4bd2-9ae5-90f3f00b69ff
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for PNR DVPWFV under the APPR regime. However, the chatbot never performed any eligibility assessment or quoted any compensation amount. Instead, it followed a third-party claim submission workflow that simply collected information and created a manual review ticket (CCD-1008690-JF8UN9). The bot never looked up the actual PNR (DVPWFV) - the customer provided a different booking reference (ABC123). Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] LESMDX — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">8aa44cb5b8f14f69</td>
+    <th>PNR</th><td class="mono">LESMDX</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_194</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_194\n* *Test case:* FD_TC_194\n* *Regime:* APPR\n* *Booking:* PNR LESMDX (pnrId LESMDX-2026-07-10)\n* *Passenger:* SOREN YARDLEY\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 1ce2752c-924e-4d09-97b4-7bfb64ab9b68\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR LESMDX, passenger Soren Yardley under APPR regime. However, the chatbot did not make any eligibility determination or quote any compensation amount. Instead, it accepted the claim submission from a third-party representative and escalated it for manual review (30-day response time). The bot never assessed eligibility or calculated compensation - it simply collected information and generated a reference number. This is a clear mismatch with the expected outcome of an immediate ELIGIBLE determination with CAD 400 compensation.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] LESMDX \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_194
+* *Test case:* FD_TC_194
+* *Regime:* APPR
+* *Booking:* PNR LESMDX (pnrId LESMDX-2026-07-10)
+* *Passenger:* SOREN YARDLEY
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 1ce2752c-924e-4d09-97b4-7bfb64ab9b68
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR LESMDX, passenger Soren Yardley under APPR regime. However, the chatbot did not make any eligibility determination or quote any compensation amount. Instead, it accepted the claim submission from a third-party representative and escalated it for manual review (30-day response time). The bot never assessed eligibility or calculated compensation - it simply collected information and generated a reference number. This is a clear mismatch with the expected outcome of an immediate ELIGIBLE determination with CAD 400 compensation.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] RZU4HL — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">6bd7991dae67b70b</td>
+    <th>PNR</th><td class="mono">RZU4HL</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_195</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_195\n* *Test case:* FD_TC_195\n* *Regime:* APPR\n* *Booking:* PNR RZU4HL (pnrId RZU4HL-2026-07-10)\n* *Passenger:* TOBIAS UNDERCOTT\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 0ff48509-9cab-4737-bbbb-3cbda7467dca\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR RZU4HL. However, the chatbot simply accepted the claim submission and provided a reference number without making any eligibility determination or quoting any compensation amount. The bot indicated the user would hear back within 30 days, suggesting manual review rather than automated determination. Additionally, the user provided booking reference ABC123 instead of the expected RZU4HL, which may have contributed to the lack of automated determination. The bot never reached a final eligibility decision or quoted the expected CAD 400 amount, so this does not match the expected outcome.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] RZU4HL \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_195
+* *Test case:* FD_TC_195
+* *Regime:* APPR
+* *Booking:* PNR RZU4HL (pnrId RZU4HL-2026-07-10)
+* *Passenger:* TOBIAS UNDERCOTT
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 0ff48509-9cab-4737-bbbb-3cbda7467dca
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR RZU4HL. However, the chatbot simply accepted the claim submission and provided a reference number without making any eligibility determination or quoting any compensation amount. The bot indicated the user would hear back within 30 days, suggesting manual review rather than automated determination. Additionally, the user provided booking reference ABC123 instead of the expected RZU4HL, which may have contributed to the lack of automated determination. The bot never reached a final eligibility decision or quoted the expected CAD 400 amount, so this does not match the expected outcome.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] BMCM3J — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">eeed5872518ec76f</td>
+    <th>PNR</th><td class="mono">BMCM3J</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_196</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_196\n* *Test case:* FD_TC_196\n* *Regime:* APPR\n* *Booking:* PNR BMCM3J (pnrId BMCM3J-2026-07-10)\n* *Passenger:* RONAN INGLEWOOD\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* d9915ff9-54f0-4d31-8677-2e1e02ec8bb1\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 compensation for PNR BMCM3J under the APPR regime (systemCode FD-APPR-EL-400). However, the chatbot only collected information and submitted the claim for manual review within 30 days, without making any eligibility determination or quoting any compensation amount. The bot never looked up the actual PNR (BMCM3J) - the customer provided a different booking reference (ABC123). The bot did not reach a determination on eligibility or amount, so this does not match the expected outcome.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] BMCM3J \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_196
+* *Test case:* FD_TC_196
+* *Regime:* APPR
+* *Booking:* PNR BMCM3J (pnrId BMCM3J-2026-07-10)
+* *Passenger:* RONAN INGLEWOOD
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* d9915ff9-54f0-4d31-8677-2e1e02ec8bb1
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 compensation for PNR BMCM3J under the APPR regime (systemCode FD-APPR-EL-400). However, the chatbot only collected information and submitted the claim for manual review within 30 days, without making any eligibility determination or quoting any compensation amount. The bot never looked up the actual PNR (BMCM3J) - the customer provided a different booking reference (ABC123). The bot did not reach a determination on eligibility or amount, so this does not match the expected outcome.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] YQCCCW — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">66312fa45b7d40ff</td>
+    <th>PNR</th><td class="mono">YQCCCW</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_197</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_197\n* *Test case:* FD_TC_197\n* *Regime:* APPR\n* *Booking:* PNR YQCCCW (pnrId YQCCCW-2026-07-10)\n* *Passenger:* NIKOLAI ALDERCOTT\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* eb0ab720-20f3-4209-a478-934a55a13067\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR YQCCCW under the APPR regime. However, the chatbot did not perform any eligibility assessment or quote any amount. Instead, it followed a third-party representative workflow, collected information, and submitted the claim for manual review with a 30-day response time. The bot never looked up the actual PNR (YQCCCW) - the customer provided a different booking reference (ABC123). The bot reached no determination on eligibility or compensation, making this a failed test case.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] YQCCCW \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_197
+* *Test case:* FD_TC_197
+* *Regime:* APPR
+* *Booking:* PNR YQCCCW (pnrId YQCCCW-2026-07-10)
+* *Passenger:* NIKOLAI ALDERCOTT
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* eb0ab720-20f3-4209-a478-934a55a13067
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR YQCCCW under the APPR regime. However, the chatbot did not perform any eligibility assessment or quote any amount. Instead, it followed a third-party representative workflow, collected information, and submitted the claim for manual review with a 30-day response time. The bot never looked up the actual PNR (YQCCCW) - the customer provided a different booking reference (ABC123). The bot reached no determination on eligibility or compensation, making this a failed test case.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] UWEQG7 — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">f9e580e7a425c76a</td>
+    <th>PNR</th><td class="mono">UWEQG7</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_198</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_198\n* *Test case:* FD_TC_198\n* *Regime:* APPR\n* *Booking:* PNR UWEQG7 (pnrId UWEQG7-2026-07-10)\n* *Passenger:* GARETH WHITLOCKE\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 231734da-d987-4551-9fa5-9657173a9e5b\n* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation quoted. However, the chatbot only facilitated claim submission and escalated to manual review (30-day response time mentioned). The bot never assessed eligibility or quoted any amount. The customer provided booking reference ABC123 (not the expected UWEQG7 PNR), which may have contributed to the bot&#x27;s inability to retrieve and assess the booking. Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] UWEQG7 \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_198
+* *Test case:* FD_TC_198
+* *Regime:* APPR
+* *Booking:* PNR UWEQG7 (pnrId UWEQG7-2026-07-10)
+* *Passenger:* GARETH WHITLOCKE
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 231734da-d987-4551-9fa5-9657173a9e5b
+* *Reasoning:* The expected outcome was an ELIGIBLE determination with CAD 400 compensation quoted. However, the chatbot only facilitated claim submission and escalated to manual review (30-day response time mentioned). The bot never assessed eligibility or quoted any amount. The customer provided booking reference ABC123 (not the expected UWEQG7 PNR), which may have contributed to the bot&#x27;s inability to retrieve and assess the booking. Since no determination was reached and no amount was quoted, this does not match the expected outcome of ELIGIBLE with CAD 400.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] BUFYRB — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">48d45957e9075142</td>
+    <th>PNR</th><td class="mono">BUFYRB</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_199</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_199\n* *Test case:* FD_TC_199\n* *Regime:* APPR\n* *Booking:* PNR BUFYRB (pnrId BUFYRB-2026-07-10)\n* *Passenger:* ISOLDE MARCHETTI\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* bb9416e3-8a2a-4f48-83e1-80e530427e48\n* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR BUFYRB (passenger Isolde Marchetti under APPR regime). However, the chatbot never looked up the actual booking reference BUFYRB - the user provided a different reference \&quot;ABC123\&quot; and ticket number. The bot did not validate these details against the actual booking, did not assess eligibility, and did not quote any compensation amount. Instead, it simply collected information and forwarded the claim for manual review within 30 days. This is a complete mismatch with the expected outcome where the bot should have made an immediate eligibility determination and quoted CAD 400.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] BUFYRB \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_199
+* *Test case:* FD_TC_199
+* *Regime:* APPR
+* *Booking:* PNR BUFYRB (pnrId BUFYRB-2026-07-10)
+* *Passenger:* ISOLDE MARCHETTI
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* bb9416e3-8a2a-4f48-83e1-80e530427e48
+* *Reasoning:* The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR BUFYRB (passenger Isolde Marchetti under APPR regime). However, the chatbot never looked up the actual booking reference BUFYRB - the user provided a different reference &quot;ABC123&quot; and ticket number. The bot did not validate these details against the actual booking, did not assess eligibility, and did not quote any compensation amount. Instead, it simply collected information and forwarded the claim for manual review within 30 days. This is a complete mismatch with the expected outcome where the bot should have made an immediate eligibility determination and quoted CAD 400.
+</pre></details>
+</div><div class="card">
+<h2>[INT][FD] BJUL6U — NO_DETERMINATION vs expected ELIGIBLE</h2>
+<table>
+<tr><th>dedup_key</th><td class="mono">5c0aac13f1090efc</td>
+    <th>PNR</th><td class="mono">BJUL6U</td></tr>
+<tr><th>scenario</th><td class="mono" colspan="3">brove.int.fd.FD_TC_200</td></tr>
+</table>
+<details><summary>fields (JIRA create payload)</summary>
+<pre class="desc">{
+  &quot;components&quot;: [
+    {
+      &quot;id&quot;: &quot;21829&quot;
+    }
+  ],
+  &quot;customfield_10153&quot;: {
+    &quot;id&quot;: &quot;14669&quot;
+  },
+  &quot;customfield_10158&quot;: {
+    &quot;id&quot;: &quot;10413&quot;
+  },
+  &quot;description&quot;: &quot;h3. Test\n* *Scenario:* brove.int.fd.FD_TC_200\n* *Test case:* FD_TC_200\n* *Regime:* APPR\n* *Booking:* PNR BJUL6U (pnrId BJUL6U-2026-07-10)\n* *Passenger:* ROSALIND INGLEWOOD\n* *Environment:* int (brove), feed fd\n\nh3. Expected\n* ELIGIBLE \u00b7 FD-APPR-EL-400 \u00b7 CAD 400.0\n\nh3. Actual (bot)\n* NO_DETERMINATION \u00b7 n/a\n\nh3. DDS determination (proof)\n* No DDS determination recorded for this case., but bot NO_DETERMINATION\n\nh3. Grade findings\n|| Code || Severity || Message ||\n| \u2014 | \u2014 | (no findings) |\n\nh3. Evidence\n* *ContactId:* 4c930fc2-e60b-4c82-9c40-b55a18fe7b8f\n* *Reasoning:* The expected outcome was for the bot to determine the passenger ELIGIBLE for CAD 400 compensation under regime APPR for PNR BJUL6U. However, the chatbot never assessed eligibility or quoted any amount. Instead, it collected information for a third-party claim and forwarded it to a team for manual review (reference CCD-1008666-7HQTKT), stating the passenger would hear back within 30 days. The bot did not reach a determination on eligibility or compensation, so this does not match the expected outcome of ELIGIBLE with CAD 400.\n&quot;,
+  &quot;issuetype&quot;: {
+    &quot;id&quot;: &quot;10004&quot;
+  },
+  &quot;labels&quot;: [
+    &quot;cct-qa-p8&quot;
+  ],
+  &quot;priority&quot;: {
+    &quot;id&quot;: &quot;2&quot;
+  },
+  &quot;project&quot;: {
+    &quot;key&quot;: &quot;CHAI&quot;
+  },
+  &quot;summary&quot;: &quot;[INT][FD] BJUL6U \u2014 NO_DETERMINATION vs expected ELIGIBLE&quot;,
+  &quot;versions&quot;: [
+    {
+      &quot;id&quot;: &quot;30837&quot;
+    }
+  ]
+}</pre></details>
+<details><summary>description (wiki markup)</summary>
+<pre class="desc">h3. Test
+* *Scenario:* brove.int.fd.FD_TC_200
+* *Test case:* FD_TC_200
+* *Regime:* APPR
+* *Booking:* PNR BJUL6U (pnrId BJUL6U-2026-07-10)
+* *Passenger:* ROSALIND INGLEWOOD
+* *Environment:* int (brove), feed fd
+
+h3. Expected
+* ELIGIBLE · FD-APPR-EL-400 · CAD 400.0
+
+h3. Actual (bot)
+* NO_DETERMINATION · n/a
+
+h3. DDS determination (proof)
+* No DDS determination recorded for this case., but bot NO_DETERMINATION
+
+h3. Grade findings
+|| Code || Severity || Message ||
+| — | — | (no findings) |
+
+h3. Evidence
+* *ContactId:* 4c930fc2-e60b-4c82-9c40-b55a18fe7b8f
+* *Reasoning:* The expected outcome was for the bot to determine the passenger ELIGIBLE for CAD 400 compensation under regime APPR for PNR BJUL6U. However, the chatbot never assessed eligibility or quoted any amount. Instead, it collected information for a third-party claim and forwarded it to a team for manual review (reference CCD-1008666-7HQTKT), stating the passenger would hear back within 30 days. The bot did not reach a determination on eligibility or compensation, so this does not match the expected outcome of ELIGIBLE with CAD 400.
+</pre></details>
+</div>
+</body></html>

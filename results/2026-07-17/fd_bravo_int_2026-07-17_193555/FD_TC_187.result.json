@@ -1,0 +1,206 @@
+{
+  "auth": {
+    "contact_id": "79001f8c-4221-4889-b341-41117a65e2bd",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-APPR-EL-400",
+    "flags": [],
+    "passenger": "DELPHINE BRAMBLEWOOD",
+    "pnr": "KCMNYP",
+    "pnr_id": "KCMNYP-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_187",
+    "third_party": true
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 177.5,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "a93e7d85a734",
+    "started": "2026-07-17T14:31:59Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_187",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:32:05Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:32:06Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T14:33:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T14:33:20Z"
+    },
+    {
+      "note": "Indicating I'm filing on behalf of another passenger (Delphine Bramblewood)",
+      "role": "customer",
+      "text": "I need to file a claim for someone else",
+      "ts": "2026-07-17T14:33:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To help us direct you correctly, could you tell me your relationship to the passenger?",
+      "ts": "2026-07-17T14:33:28Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Claims company \u2022 Travel Agency \u2022 A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:33:28Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->A parent / guardian ",
+      "role": "customer",
+      "text": "A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:33:35Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks \u2014 to forward your claim I'll need all of the following, so you can send them together:\n\n- The **ticket number**, **booking reference**, and **full passenger name(s)**\n- **Flight details** \u2014 origin, destination, flight number, and flight date\n- Any **additional passengers** on the claim\n- The passenger's **contact information** and **your email address** for correspondence\n- **Your country of residence**\n\nYou'll also need to upload a **Power of Attorney or Notice of Authorization** for the claim to be actioned.",
+      "ts": "2026-07-17T14:33:46Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:33:47Z"
+    },
+    {
+      "note": "Starting to provide the required information for the claim",
+      "role": "customer",
+      "text": "Okay, I have all the information ready. The passenger name is Delphine Bramblewood.",
+      "ts": "2026-07-17T14:33:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks for that. I have the passenger name as **Delphine Bramblewood**.\n\nStill need a few more details to complete the submission:\n\n- **Ticket number**\n- **Booking reference**\n- **Origin and destination**\n- **Flight number**\n- **Flight date**\n- **Your full name** (as the claimant)\n- **Your email address**\n- **Your country of residence**\n\nAnd don't forget to upload the **Power of Attorney** or **Notice of Authorization** using the upload box above. Feel free to share everything at once!",
+      "ts": "2026-07-17T14:33:59Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:34:00Z"
+    },
+    {
+      "note": "Providing all the required flight and contact details",
+      "role": "customer",
+      "text": "The ticket number is 0142536789012, booking reference is ABC123, flight was from Toronto to Paris on flight AC870 on March 15, 2024. My name is Robert Chen, email is robert.chen@email.com, and I'm in Canada.",
+      "ts": "2026-07-17T14:34:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Here's a summary of everything I have \u2014 please confirm it's all correct:\n\n**Passenger:**\n- Name: **Delphine Bramblewood**\n- Ticket number: **0142536789012**\n- Booking reference: **ABC123**\n\n**Flight:**\n- Route: **Toronto \u2192 Paris**\n- Flight: **AC870**\n- Date: **March 15, 2024**\n\n**Claimant (you):**\n- Name: **Robert Chen**\n- Email: **robert.chen@email.com**\n- Country of residence: **Canada**\n\nAlso, please make sure your **Power of Attorney** or **Notice of Authorization** has been uploaded using the box shown above \u2014 this is required before I can submit.\n\nDoes everything look correct?",
+      "ts": "2026-07-17T14:34:25Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:34:25Z"
+    },
+    {
+      "note": "Confirming all details and indicating the POA has been uploaded",
+      "role": "customer",
+      "text": "Yes, everything looks correct. I've uploaded the Power of Attorney document.",
+      "ts": "2026-07-17T14:34:31Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your claim has been submitted! You should hear from a team member within 30 days.\n\nYour reference is **CCD-1008960-TYKYMU**.",
+      "ts": "2026-07-17T14:34:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-17T14:34:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T14:34:42Z"
+    },
+    {
+      "note": "Claim has been successfully submitted with reference number. Conversation complete.",
+      "role": "customer",
+      "text": "No, that's all. Thank you!",
+      "ts": "2026-07-17T14:34:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T14:34:51Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION - claim submitted for review",
+        "expected": "ELIGIBLE",
+        "name": "Eligibility Decision",
+        "pass": false
+      },
+      {
+        "actual": "none quoted",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      },
+      {
+        "actual": "ABC123",
+        "expected": "KCMNYP",
+        "name": "PNR Match",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400 for PNR KCMNYP under regime APPR (systemCode FD-APPR-EL-400). However, the chatbot only facilitated claim submission through a third-party representative flow and did not perform any eligibility assessment or provide a compensation quote. The bot simply collected information, confirmed document upload, and submitted the claim for manual review within 30 days. Additionally, the PNR used in the conversation (ABC123) does not match the expected PNR (KCMNYP). Since no determination was reached and no amount was quoted, this does not match the expected outcome."
+  }
+}

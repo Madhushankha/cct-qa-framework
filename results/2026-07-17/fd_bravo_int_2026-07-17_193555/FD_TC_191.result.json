@@ -1,0 +1,200 @@
+{
+  "auth": {
+    "contact_id": "a3420914-fb34-4a15-968e-0d496c5bd1e8",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-APPR-EL-400",
+    "flags": [],
+    "passenger": "CASPIAN WEXLEIGH",
+    "pnr": "EZHXF3",
+    "pnr_id": "EZHXF3-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_191",
+    "third_party": true
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 195.7,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "b70375cf010e",
+    "started": "2026-07-17T14:16:32Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_191",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:16:38Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:16:38Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T14:17:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T14:17:53Z"
+    },
+    {
+      "note": "Starting the claim process for flight delay",
+      "role": "customer",
+      "text": "I need to file a claim for a delayed flight",
+      "ts": "2026-07-17T14:18:01Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T14:18:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T14:18:10Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Filing on behalf of ",
+      "role": "customer",
+      "text": "Filing on behalf of someone else",
+      "ts": "2026-07-17T14:18:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To help us direct you correctly, could you tell me your relationship to the passenger?",
+      "ts": "2026-07-17T14:18:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Claims company \u2022 Travel Agency \u2022 A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:18:30Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->A parent / guardian ",
+      "role": "customer",
+      "text": "A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:18:36Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks \u2014 to forward your claim I'll need all of the following, so you can send them together:\n\n- The **ticket number**, **booking reference**, and **full passenger name(s)**\n- **Flight details** \u2014 origin, destination, flight number, and flight date\n- Any **additional passengers** on the claim\n- The passenger's **contact information** and **your email address** for correspondence\n- **Your country of residence**\n\nYou'll also need to upload a **Power of Attorney or Notice of Authorization** for the claim to be actioned.",
+      "ts": "2026-07-17T14:18:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:18:45Z"
+    },
+    {
+      "note": "Providing all required information for the claim on behalf of Caspian Wexleigh",
+      "role": "customer",
+      "text": "The passenger is Caspian Wexleigh, booking reference ABC123, ticket number 014-1234567890. The flight was AC100 from Toronto to London on January 15, 2025. My email is john.smith@email.com and I'm in Canada. I have the authorization document ready to upload.",
+      "ts": "2026-07-17T14:18:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks for all of that \u2014 almost everything I need is here. Just one thing still missing: **your full name** (as the claimant filing on Caspian's behalf)?",
+      "ts": "2026-07-17T14:19:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:19:04Z"
+    },
+    {
+      "note": "Providing my name as the claimant",
+      "role": "customer",
+      "text": "My name is John Smith",
+      "ts": "2026-07-17T14:19:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your claim has been submitted! You should hear from a team member within 30 days.\n\nYour reference is **CCD-1008908-MO2B7U**.",
+      "ts": "2026-07-17T14:19:33Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-17T14:19:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T14:19:34Z"
+    },
+    {
+      "note": "Claim successfully submitted with reference number. Conversation complete.",
+      "role": "customer",
+      "text": "No, that's all. Thank you!",
+      "ts": "2026-07-17T14:19:39Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T14:19:42Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION",
+        "expected": "ELIGIBLE",
+        "name": "Eligibility Decision",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was for the bot to determine ELIGIBLE status with CAD 400 compensation for PNR EZHXF3 under regime APPR (systemCode FD-APPR-EL-400). However, the chatbot only accepted the claim submission and provided a reference number (CCD-1008908-MO2B7U), stating the user would hear back within 30 days. The bot never assessed eligibility or quoted any compensation amount. Note: The customer provided booking reference \"ABC123\" instead of the expected \"EZHXF3\", which may have contributed to the bot's inability to look up the booking and make a determination. Since no eligibility determination or amount was provided, this does not match the expected outcome."
+  }
+}

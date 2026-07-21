@@ -1,0 +1,898 @@
+{
+ "agent": "brove",
+ "cases": [
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch",
+    "escalation_to_human"
+   ],
+   "decision_class": "NE",
+   "duration_s": 384.1,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_053",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch",
+    "escalation_to_human"
+   ],
+   "decision_class": "NE",
+   "duration_s": 385.3,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_100",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [
+    "bot_output_glitch",
+    "otp_trouble"
+   ],
+   "decision_class": "NE",
+   "duration_s": 472.8,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": true,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_104",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [
+    "otp_trouble"
+   ],
+   "decision_class": "NE",
+   "duration_s": 433.0,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": true,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_110",
+   "trajectory_score": 0.8182
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch",
+    "escalation_to_human"
+   ],
+   "decision_class": "NE",
+   "duration_s": 385.9,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "ASL",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_124",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch",
+    "escalation_to_human"
+   ],
+   "decision_class": "NE",
+   "duration_s": 351.6,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "ASL",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_131",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch"
+   ],
+   "decision_class": "NE",
+   "duration_s": 344.0,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "ASL",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_132",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [
+    "escalation_to_human"
+   ],
+   "decision_class": "ND",
+   "duration_s": 314.5,
+   "expected_amount": "\u2014",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_139",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [
+    "escalation_to_human"
+   ],
+   "decision_class": "ND",
+   "duration_s": 317.1,
+   "expected_amount": "\u2014",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "ASL",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_141",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "CAD 646.83",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch"
+   ],
+   "decision_class": "ND",
+   "duration_s": 388.1,
+   "expected_amount": "\u2014",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-ND",
+   "test_id": "FD_TC_152",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch"
+   ],
+   "decision_class": "NE",
+   "duration_s": 343.6,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_155",
+   "trajectory_score": 0.9091
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NOT_ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch"
+   ],
+   "decision_class": "NE",
+   "duration_s": 313.6,
+   "expected_amount": "\u2014",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_159",
+   "trajectory_score": 0.9091
+  }
+ ],
+ "checks": {
+  "compensation_amount": {
+   "cases": 6,
+   "pass": 5,
+   "rate": 0.8333,
+   "total": 6
+  },
+  "other": {
+   "cases": 12,
+   "pass": 15,
+   "rate": 0.75,
+   "total": 20
+  },
+  "passenger_name": {
+   "cases": 8,
+   "pass": 8,
+   "rate": 1.0,
+   "total": 8
+  },
+  "pnr_match": {
+   "cases": 8,
+   "pass": 8,
+   "rate": 1.0,
+   "total": 8
+  },
+  "regime": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  },
+  "system_code": {
+   "cases": 5,
+   "pass": 4,
+   "rate": 0.8,
+   "total": 5
+  }
+ },
+ "confusion": {
+  "labels": [
+   "ELIGIBLE",
+   "NOT_ELIGIBLE",
+   "NO_DETERMINATION",
+   "ESCALATED"
+  ],
+  "matrix": [
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    7,
+    2,
+    0
+   ],
+   [
+    1,
+    0,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "env": "int",
+ "headline": {
+  "amount_accuracy": {
+   "den": 12,
+   "num": 11,
+   "rate": 0.9167
+  },
+  "clean_run_rate": {
+   "den": 12,
+   "num": 10,
+   "rate": 0.8333
+  },
+  "decision_accuracy": {
+   "den": 12,
+   "num": 8,
+   "rate": 0.6667
+  },
+  "goal_success_rate": {
+   "den": 12,
+   "num": 9,
+   "rate": 0.75
+  },
+  "intent_recognition_rate": {
+   "den": 12,
+   "num": 12,
+   "rate": 1.0
+  },
+  "judge_agreement": {
+   "den": 12,
+   "num": 11,
+   "rate": 0.9167
+  },
+  "rescored_success_rate": {
+   "den": 12,
+   "num": 8,
+   "rate": 0.6667
+  },
+  "terminal_decision_rate": {
+   "den": 12,
+   "num": 11,
+   "rate": 0.9167
+  },
+  "trajectory_match_mean": 0.9015
+ },
+ "n_cases": 12,
+ "ops": {
+  "duration_s": {
+   "mean": 369.5,
+   "p50": 384.1,
+   "p90": 433.0
+  },
+  "error_buckets": {
+   "max_turns_exhausted (fatal)": 2
+  },
+  "turns": {
+   "mean": 46.2,
+   "p50": 49,
+   "p90": 58
+  }
+ },
+ "schema_version": "1.1",
+ "slices": {
+  "decision_class": {
+   "ND \u2014 should abstain": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 2,
+     "rate": 0.6667
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 2,
+     "rate": 0.6667
+    },
+    "trajectory_mean": 0.9091
+   },
+   "NE \u2014 should be refused": {
+    "clean_run": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "decision_accuracy": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "goal_success": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "n": 9,
+    "rescored_success": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "terminal_decision": {
+     "den": 9,
+     "num": 9,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.899
+   }
+  },
+  "expected_status": {
+   "NOT_ELIGIBLE": {
+    "clean_run": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "decision_accuracy": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "goal_success": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "n": 9,
+    "rescored_success": {
+     "den": 9,
+     "num": 7,
+     "rate": 0.7778
+    },
+    "terminal_decision": {
+     "den": 9,
+     "num": 9,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.899
+   },
+   "NO_DETERMINATION": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 2,
+     "rate": 0.6667
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 2,
+     "rate": 0.6667
+    },
+    "trajectory_mean": 0.9091
+   }
+  },
+  "family": {
+   "CORE": {
+    "clean_run": {
+     "den": 12,
+     "num": 10,
+     "rate": 0.8333
+    },
+    "decision_accuracy": {
+     "den": 12,
+     "num": 8,
+     "rate": 0.6667
+    },
+    "goal_success": {
+     "den": 12,
+     "num": 9,
+     "rate": 0.75
+    },
+    "n": 12,
+    "rescored_success": {
+     "den": 12,
+     "num": 8,
+     "rate": 0.6667
+    },
+    "terminal_decision": {
+     "den": 12,
+     "num": 11,
+     "rate": 0.9167
+    },
+    "trajectory_mean": 0.9015
+   }
+  },
+  "regime": {
+   "APPR": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.9091
+   },
+   "ASL": {
+    "clean_run": {
+     "den": 5,
+     "num": 5,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 5,
+     "num": 4,
+     "rate": 0.8
+    },
+    "goal_success": {
+     "den": 5,
+     "num": 5,
+     "rate": 1.0
+    },
+    "n": 5,
+    "rescored_success": {
+     "den": 5,
+     "num": 4,
+     "rate": 0.8
+    },
+    "terminal_decision": {
+     "den": 5,
+     "num": 4,
+     "rate": 0.8
+    },
+    "trajectory_mean": 0.9091
+   },
+   "EU": {
+    "clean_run": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8788
+   },
+   "MIXED": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.9091
+   }
+  },
+  "system_code_prefix": {
+   "FD-APPR-NE": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.9091
+   },
+   "FD-ASL-ND": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 1,
+     "rate": 0.5
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 1,
+     "rate": 0.5
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 1,
+     "rate": 0.5
+    },
+    "trajectory_mean": 0.9091
+   },
+   "FD-ASL-NE": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.9091
+   },
+   "FD-EU-NE": {
+    "clean_run": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8788
+   },
+   "FD-MIXED-ND": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.9091
+   }
+  }
+ },
+ "trajectory": {
+  "anomaly_rates": {
+   "bot_output_glitch": {
+    "den": 12,
+    "num": 9,
+    "rate": 0.75
+   },
+   "escalation_to_human": {
+    "den": 12,
+    "num": 6,
+    "rate": 0.5
+   },
+   "otp_trouble": {
+    "den": 12,
+    "num": 2,
+    "rate": 0.1667
+   }
+  },
+  "by_family": {
+   "CORE": 0.9015
+  },
+  "stage_coverage": {
+   "amount_quoted": {
+    "den": 12,
+    "num": 1,
+    "rate": 0.0833
+   },
+   "booking_retrieved": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "case_reference_issued": {
+    "den": 12,
+    "num": 1,
+    "rate": 0.0833
+   },
+   "claim_submitted": {
+    "den": 12,
+    "num": 3,
+    "rate": 0.25
+   },
+   "decision_disclosure": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "decision_rendered": {
+    "den": 12,
+    "num": 11,
+    "rate": 0.9167
+   },
+   "greeting": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "identity_collection": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "identity_provided": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "identity_verified": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "intent_recognized": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "intent_stated": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "otp_channel_selection": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "otp_entered": {
+    "den": 12,
+    "num": 12,
+    "rate": 1.0
+   },
+   "payment_method": {
+    "den": 12,
+    "num": 1,
+    "rate": 0.0833
+   },
+   "terminal_outcome": {
+    "den": 12,
+    "num": 11,
+    "rate": 0.9167
+   },
+   "wrapup": {
+    "den": 12,
+    "num": 11,
+    "rate": 0.9167
+   }
+  }
+ }
+}

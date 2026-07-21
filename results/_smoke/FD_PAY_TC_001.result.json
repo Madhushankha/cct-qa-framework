@@ -1,0 +1,85 @@
+{
+  "auth": {
+    "contact_id": "039e67e7-41f9-4ade-8676-b69042ce72d2",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-PAY-BSM-US-01",
+    "flags": [],
+    "passenger": "YARDLEY SEDGEOWMARSH",
+    "pnr": "DHANII",
+    "pnr_id": "DHANII-2026-06-15",
+    "regime": "",
+    "test_case": "FD_PAY_TC_001",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "driver bedrock error: An error occurred (ResourceNotFoundException) when calling the Converse operation: Model use case details have not been submitted for this account. Fill out the Anthropic use case details form before using the model. If you have already filled out the form, try again in 15 minutes.",
+    "error_bucket": "driver"
+  },
+  "run": {
+    "date": "2026-07-16",
+    "duration_s": 82.3,
+    "env": "crt",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "a22862f81949",
+    "started": "2026-07-16T12:00:54Z"
+  },
+  "scenario_id": "brove.crt.fd.FD_PAY_TC_001",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T12:01:08Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T12:01:08Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi TestUser! I will be your virtual assistant today.",
+      "ts": "2026-07-16T12:01:09Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that by using this service, you will interact with an automated chatbot which uses AI to answer your questions and requests. Your personal information will be used to identify and authenticate you, to answer your request, and for other purposes detailed in the [Privacy Notice](https://www.aircanada.com/ca/en/aco/home/legal/privacy-policy.html).",
+      "ts": "2026-07-16T12:01:09Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-16T12:01:09Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [],
+    "decision": "UNKNOWN",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "An error occurred (ResourceNotFoundException) when calling the Converse operation: Model use case details have not been submitted for this account. Fill out the Anthropic use case details form before using the model. If you have already filled out the form, try again in 15 minutes."
+  }
+}

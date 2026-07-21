@@ -1,0 +1,12 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_ED_TC_01",
+   "locator": "VNNOOV",
+   "pnr_id": "VNNOOV-2026-07-10",
+   "gate": "checkpoint_fail"
+  }
+ ],
+ "skipped": []
+}

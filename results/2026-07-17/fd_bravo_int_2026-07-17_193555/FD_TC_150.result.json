@@ -1,0 +1,296 @@
+{
+  "auth": {
+    "contact_id": "6e75d73d-84d6-4d06-91fe-f0379e4b0799",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "NOT_ELIGIBLE",
+    "expected_system_code": "FD-MIXED-NE-01",
+    "flags": [],
+    "passenger": "INGRID UNDERHILL",
+    "pnr": "D4RN4K",
+    "pnr_id": "D4RN4K-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_150",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 293.6,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "f2adfee100ee",
+    "started": "2026-07-17T14:11:06Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_150",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:11:13Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:11:13Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T14:12:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T14:12:27Z"
+    },
+    {
+      "note": "Opening the claim request for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I'd like to file a claim for compensation. My flight was delayed and I want to know if I'm eligible.",
+      "ts": "2026-07-17T14:12:33Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T14:12:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T14:12:41Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T14:12:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T14:12:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T14:12:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T14:12:57Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T14:12:57Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T14:13:02Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a bit of information to identify you. Could you please provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T14:13:09Z"
+    },
+    {
+      "note": "Providing my full name as on the booking",
+      "role": "customer",
+      "text": "Ingrid Underhill",
+      "ts": "2026-07-17T14:13:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Ingrid**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-17T14:13:20Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "D4RN4K",
+      "ts": "2026-07-17T14:13:26Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm \u2014 here's what I have:\n\n- **First name:** Ingrid\n- **Last name:** Underhill\n- **Booking reference:** D4RN4K\n\nIs that all correct?",
+      "ts": "2026-07-17T14:13:32Z"
+    },
+    {
+      "note": "Confirming the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T14:13:39Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T14:14:03Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T14:14:03Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T14:14:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T14:14:28Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "220731",
+      "ts": "2026-07-17T14:14:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T14:15:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T14:15:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 YYZ \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T14:15:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T14:15:05Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T14:15:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T14:15:21Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Canada",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-17T14:15:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've checked your flight details, and it looks like your flight on **Jul 15, 2026** was delayed by about **4h**.\n\nBased on **EU Regulation 261/2004**, you may be eligible for compensation for this disruption. I'll guide you through the next steps to get your claim submitted and processed as quickly as possible.",
+      "ts": "2026-07-17T14:15:38Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "You are entitled to receive a **973.97 CAD** compensation. Please note that it will take 5 to 10 business days to process payment. Would you like to proceed?",
+      "ts": "2026-07-17T14:15:38Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No, dispute",
+      "ts": "2026-07-17T14:15:39Z"
+    },
+    {
+      "note": "Assistant has determined I'm eligible for 973.97 CAD compensation. Accepting the determination politely as instructed.",
+      "role": "customer",
+      "text": "Yes, I'd like to proceed. Thank you!",
+      "ts": "2026-07-17T14:15:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your payment will be made through **Interac e-transfer**.\n\nBefore we move forward, please confirm the email address where you'd like to receive your payment and all updates about this case.\n\nWould you like to use **lahiru@ae-qa1-aircanada.mailinator.com**? Please note that only one email address can be used for this compensation and it **can't be changed once confirmed**.",
+      "ts": "2026-07-17T14:15:53Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, use this email \u2022 Use a different email",
+      "ts": "2026-07-17T14:15:53Z"
+    }
+  ],
+  "verdict": {
+    "amount": {
+      "currency": "CAD",
+      "value": 973.97
+    },
+    "checks": [
+      {
+        "actual": "ELIGIBLE",
+        "expected": "NOT_ELIGIBLE",
+        "name": "Eligibility Decision",
+        "pass": false
+      },
+      {
+        "actual": "CAD 973.97",
+        "expected": "n/a",
+        "name": "Compensation Amount",
+        "pass": false
+      },
+      {
+        "actual": "EU 261/2004",
+        "expected": "APPR",
+        "name": "Regime Applied",
+        "pass": false
+      }
+    ],
+    "decision": "ELIGIBLE",
+    "matches_expected": false,
+    "reached_determination": true,
+    "reasoning": "The chatbot reached a final determination of ELIGIBLE with a compensation amount of CAD 973.97 under EU Regulation 261/2004. However, the expected outcome for test case FD_TC_150 was NOT_ELIGIBLE with no compensation amount (n/a) under the APPR regime (systemCode FD-MIXED-NE-01). The bot's decision does not match the expected verdict on multiple dimensions: (1) eligibility status is wrong (ELIGIBLE vs NOT_ELIGIBLE), (2) amount is wrong (CAD 973.97 vs n/a), and (3) the regime applied is wrong (EU 261/2004 vs APPR). This is a clear failure of the test case."
+  }
+}

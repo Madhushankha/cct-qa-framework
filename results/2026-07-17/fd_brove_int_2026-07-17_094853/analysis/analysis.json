@@ -1,0 +1,78 @@
+{
+  "clusters": [
+    {
+      "count": 1,
+      "reason": "Weak PASS | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_ED_TC_01"
+      ]
+    }
+  ],
+  "findings": {
+    "PASS_WITHOUT_SEED_VERIFICATION": 1
+  },
+  "grades": [
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 392.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1442715c9333",
+        "started": "2026-07-17T04:18:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_01",
+      "status": "WARN"
+    }
+  ],
+  "summary": {
+    "by_env": {
+      "int": {
+        "fail": 0,
+        "infra": 0,
+        "invalid": 0,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "total": 1,
+        "working": 1
+      }
+    },
+    "by_feed": {
+      "fd": {
+        "fail": 0,
+        "infra": 0,
+        "invalid": 0,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "total": 1,
+        "working": 1
+      }
+    },
+    "by_product": {
+      "brove": {
+        "fail": 0,
+        "infra": 0,
+        "invalid": 0,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "total": 1,
+        "working": 1
+      }
+    },
+    "grade_mix": {
+      "Weak PASS": 1
+    },
+    "totals": {
+      "fail": 0,
+      "infra": 0,
+      "invalid": 0,
+      "pass": 1,
+      "pass_rate": 1.0,
+      "total": 1,
+      "working": 1
+    }
+  }
+}

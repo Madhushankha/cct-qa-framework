@@ -1,0 +1,249 @@
+{
+  "auth": {
+    "contact_id": "58984f32-23ac-4fe7-890c-9be88e101445",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "",
+    "flags": [],
+    "passenger": "BRENNA TATLEWORTH",
+    "pnr": "BMULDV",
+    "pnr_id": "BMULDV-2026-07-09",
+    "regime": "APPR",
+    "test_case": "BMULDV",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "No Mailinator OTP matching from~'' subject~'' arrived within 300s in lahiru@ae-qa1-aircanada.mailinator.com",
+    "error_bucket": "otp"
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 483.0,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "6735188268e5",
+    "started": "2026-07-16T21:44:58Z"
+  },
+  "scenario_id": "brove.int.fd.BMULDV",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [
+      {
+        "area": "trip_active",
+        "pass": true
+      },
+      {
+        "area": "trip_details",
+        "pass": true
+      },
+      {
+        "area": "passenger",
+        "pass": true
+      },
+      {
+        "area": "dob",
+        "pass": true
+      },
+      {
+        "area": "ticket",
+        "pass": true
+      },
+      {
+        "area": "eds_pnr_output",
+        "pass": true
+      },
+      {
+        "area": "eds_contact_email",
+        "pass": true
+      },
+      {
+        "area": "dds_endpoint_systemcode_match",
+        "pass": true
+      },
+      {
+        "area": "dds_amount_match",
+        "pass": true
+      },
+      {
+        "area": "ne_nd_reason_text",
+        "pass": true
+      },
+      {
+        "area": "passenger_count",
+        "pass": true
+      },
+      {
+        "area": "name_uniqueness",
+        "pass": true
+      }
+    ],
+    "dds": null,
+    "verified": true
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T21:45:04Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T21:45:04Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-16T21:46:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-16T21:46:18Z"
+    },
+    {
+      "note": "Starting the claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I want to file a claim for compensation",
+      "ts": "2026-07-16T21:46:24Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-16T21:46:35Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-16T21:46:36Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-16T21:46:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-16T21:46:50Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-16T21:46:51Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-16T21:46:51Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-16T21:46:51Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-16T21:46:58Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-16T21:47:03Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Brenna Tatleworth",
+      "ts": "2026-07-16T21:47:09Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Brenna**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-16T21:47:15Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "BMULDV",
+      "ts": "2026-07-16T21:47:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n\n- **First name:** Brenna\n- **Last name:** Tatleworth\n- **Booking reference:** BMULDV\n\nIs that all correct?",
+      "ts": "2026-07-16T21:47:26Z"
+    },
+    {
+      "note": "Confirming all details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-16T21:47:31Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-16T21:47:46Z"
+    },
+    {
+      "note": "error",
+      "role": "assistant",
+      "text": "[error] No Mailinator OTP matching from~'' subject~'' arrived within 300s in lahiru@ae-qa1-aircanada.mailinator.com",
+      "ts": "2026-07-16T21:52:57Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      },
+      {
+        "actual": "",
+        "expected": "",
+        "name": "System Code",
+        "pass": true
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot failed to complete the claims process due to an OTP verification error. While the expected outcome was ELIGIBLE with CAD 400.0 compensation, the bot never reached the stage where it could assess eligibility or quote an amount. The process was interrupted at the identity verification step, preventing any determination from being made. Since no final outcome was rendered, this does not match the expected verdict of ELIGIBLE with CAD 400.0."
+  }
+}

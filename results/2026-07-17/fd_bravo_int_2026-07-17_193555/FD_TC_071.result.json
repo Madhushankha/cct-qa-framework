@@ -1,0 +1,152 @@
+{
+  "auth": {
+    "contact_id": "9293fc6c-41aa-42b4-87de-c2860e7fe270",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "GBP",
+      "value": 520.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-EU-EL-06",
+    "flags": [],
+    "passenger": "FREYA BRAMBLEWOOD",
+    "pnr": "AWPX7P",
+    "pnr_id": "AWPX7P-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_071",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "WebSocket receive error: [WinError 10054] An existing connection was forcibly closed by the remote host",
+    "error_bucket": "transient"
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 174.8,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "d9ecb5537ef2",
+    "started": "2026-07-17T14:06:10Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_071",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:06:21Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:06:21Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English please",
+      "role": "customer",
+      "text": "English please",
+      "ts": "2026-07-17T14:07:28Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T14:07:35Z"
+    },
+    {
+      "note": "Starting the claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, my flight was delayed and I'd like to claim compensation",
+      "ts": "2026-07-17T14:07:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T14:07:50Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T14:07:50Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T14:07:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T14:08:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T14:08:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T14:08:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T14:08:07Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T14:08:13Z"
+    },
+    {
+      "note": "error",
+      "role": "assistant",
+      "text": "[ChatbotError] WebSocket receive error: [WinError 10054] An existing connection was forcibly closed by the remote host",
+      "ts": "2026-07-17T14:08:22Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION (system error)",
+        "expected": "ELIGIBLE",
+        "name": "Eligibility Decision",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "GBP 520.0",
+        "name": "Compensation Amount",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot began the claim process normally, collecting initial information (language preference, confirming the user is the passenger, explaining the process). However, immediately after the customer agreed to proceed with \"Yes, let's go\", the system encountered a fatal WebSocket error and crashed. The bot never reached the point of collecting the PNR (AWPX7P), assessing the claim, or making any eligibility determination. Since no determination was reached and the expected outcome was ELIGIBLE with GBP 520.0, this is a clear failure that does not match expectations."
+  }
+}

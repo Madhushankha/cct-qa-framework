@@ -1,0 +1,323 @@
+{
+  "auth": {
+    "contact_id": "930afaaa-beeb-4981-b690-4f3826895d49",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "PENDING",
+    "expected_system_code": "FD-ASL-PE-01",
+    "flags": [],
+    "passenger": "YARA WEXLEIGH",
+    "pnr": "UWAQS7",
+    "pnr_id": "UWAQS7-2026-07-16",
+    "regime": "ASL",
+    "test_case": "FD_TC_145",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 302.1,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "a8d660dfe1fe",
+    "started": "2026-07-17T15:03:30Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_145",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T15:03:36Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T15:03:36Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T15:04:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T15:04:50Z"
+    },
+    {
+      "note": "Starting the claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a compensation claim.",
+      "ts": "2026-07-17T15:04:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T15:05:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T15:05:07Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T15:05:12Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T15:05:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T15:05:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T15:05:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T15:05:24Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T15:05:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I can definitely help with that. To get started, I'll need some information to identify you \u2014 could you provide your **full name** exactly as it appears on your ticket, including any middle names?",
+      "ts": "2026-07-17T15:05:35Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Yara Wexleigh",
+      "ts": "2026-07-17T15:05:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Yara**! Could you also share your **booking reference** number? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-17T15:05:48Z"
+    },
+    {
+      "note": "Providing my booking reference PNR",
+      "role": "customer",
+      "text": "UWAQS7",
+      "ts": "2026-07-17T15:05:53Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm \u2014 **first name** Yara, **last name** Wexleigh, **booking reference** UWAQS7 \u2014 is that all correct?",
+      "ts": "2026-07-17T15:05:58Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T15:06:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T15:06:19Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T15:06:19Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T15:06:25Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T15:06:36Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "259078",
+      "ts": "2026-07-17T15:06:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T15:07:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T15:07:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 TLV \u00b7 Thu, Jul 16 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T15:07:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T15:07:10Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T15:07:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T15:07:28Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Other",
+      "role": "customer",
+      "text": "Other",
+      "ts": "2026-07-17T15:07:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Could you let me know your **specific country** of residence?",
+      "ts": "2026-07-17T15:07:40Z"
+    },
+    {
+      "note": "Providing my country of residence as instructed",
+      "role": "customer",
+      "text": "Israel",
+      "ts": "2026-07-17T15:07:46Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "We require a 72-hour waiting period after the aircraft's arrival before we can finalize your eligibility review. Once the review is complete, we'll contact you by email with the outcome.\n\nBefore we close this conversation, please confirm if you'd like to receive this update at **l\\*\\*\\*\\*\\*@a\\*\\*\\*\\*\\*.com**.",
+      "ts": "2026-07-17T15:07:57Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, use this email \u2022 Use a different email",
+      "ts": "2026-07-17T15:07:57Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, use this email",
+      "role": "customer",
+      "text": "Yes, use this email",
+      "ts": "2026-07-17T15:08:03Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your case has been submitted for agent review.",
+      "ts": "2026-07-17T15:08:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "An agent will follow up with you by email with the next steps.",
+      "ts": "2026-07-17T15:08:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T15:08:17Z"
+    },
+    {
+      "note": "The assistant has provided a final outcome - case submitted for agent review due to Israel residence. Accepting this outcome politely and ending conversation.",
+      "role": "customer",
+      "text": "No, that's all. Thank you for your help!",
+      "ts": "2026-07-17T15:08:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T15:08:26Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "PENDING",
+        "expected": "PENDING",
+        "name": "Decision Status",
+        "pass": true
+      },
+      {
+        "actual": "none",
+        "expected": "n/a",
+        "name": "Amount",
+        "pass": true
+      },
+      {
+        "actual": "UWAQS7",
+        "expected": "UWAQS7",
+        "name": "PNR",
+        "pass": true
+      },
+      {
+        "actual": "Yara Wexleigh",
+        "expected": "YARA WEXLEIGH",
+        "name": "Passenger Name",
+        "pass": true
+      }
+    ],
+    "decision": "PENDING",
+    "matches_expected": true,
+    "reached_determination": true,
+    "reasoning": "The chatbot successfully processed the claim and reached a determination of PENDING status, which matches the expected outcome. The bot explicitly stated that a 72-hour waiting period is required before finalizing eligibility and that the case has been submitted for agent review with email follow-up. This aligns perfectly with the expected PENDING decision for test case FD_TC_145 under regime ASL with system code FD-ASL-PE-01. No compensation amount was quoted (n/a as expected). All key identifiers (PNR UWAQS7, passenger Yara Wexleigh) match correctly."
+  }
+}

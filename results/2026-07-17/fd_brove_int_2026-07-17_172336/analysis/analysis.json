@@ -1,0 +1,3742 @@
+{
+  "clusters": [
+    {
+      "count": 109,
+      "reason": "Weak PASS | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_ED_TC_01",
+        "brove.int.fd.FD_ED_TC_02",
+        "brove.int.fd.FD_ED_TC_03",
+        "brove.int.fd.FD_ED_TC_04",
+        "brove.int.fd.FD_ED_TC_05"
+      ]
+    },
+    {
+      "count": 34,
+      "reason": "Weak PASS | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_035",
+        "brove.int.fd.FD_TC_036",
+        "brove.int.fd.FD_TC_038",
+        "brove.int.fd.FD_TC_042",
+        "brove.int.fd.FD_TC_044"
+      ]
+    },
+    {
+      "count": 18,
+      "reason": "Valid FAIL | decision=NO_DETERMINATION vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_ED_TC_09",
+        "brove.int.fd.FD_ED_TC_16",
+        "brove.int.fd.FD_TC_185",
+        "brove.int.fd.FD_TC_186",
+        "brove.int.fd.FD_TC_187"
+      ]
+    },
+    {
+      "count": 13,
+      "reason": "Invalid PASS | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_075",
+        "brove.int.fd.FD_TC_076",
+        "brove.int.fd.FD_TC_077",
+        "brove.int.fd.FD_TC_078",
+        "brove.int.fd.FD_TC_079"
+      ]
+    },
+    {
+      "count": 12,
+      "reason": "Valid FAIL | decision=ESCALATED vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_039",
+        "brove.int.fd.FD_TC_040",
+        "brove.int.fd.FD_TC_041",
+        "brove.int.fd.FD_TC_045",
+        "brove.int.fd.FD_TC_047"
+      ]
+    },
+    {
+      "count": 8,
+      "reason": "Weak PASS | decision=NO_DETERMINATION vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_054",
+        "brove.int.fd.FD_TC_055",
+        "brove.int.fd.FD_TC_056",
+        "brove.int.fd.FD_TC_057",
+        "brove.int.fd.FD_TC_058"
+      ]
+    },
+    {
+      "count": 7,
+      "reason": "Invalid PASS | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_100",
+        "brove.int.fd.FD_TC_102",
+        "brove.int.fd.FD_TC_106",
+        "brove.int.fd.FD_TC_121",
+        "brove.int.fd.FD_TC_124"
+      ]
+    },
+    {
+      "count": 7,
+      "reason": "Weak PASS | decision=ESCALATED vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_113",
+        "brove.int.fd.FD_TC_115",
+        "brove.int.fd.FD_TC_139",
+        "brove.int.fd.FD_TC_141",
+        "brove.int.fd.FD_TC_142"
+      ]
+    },
+    {
+      "count": 6,
+      "reason": "Harness FAIL | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_043",
+        "brove.int.fd.FD_TC_053",
+        "brove.int.fd.FD_TC_110",
+        "brove.int.fd.FD_TC_111",
+        "brove.int.fd.FD_TC_128"
+      ]
+    },
+    {
+      "count": 4,
+      "reason": "Environment ERROR | decision=ELIGIBLE vs expected=ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_068",
+        "brove.int.fd.FD_TC_071",
+        "brove.int.fd.FD_TC_073",
+        "brove.int.fd.FD_TC_092"
+      ]
+    }
+  ],
+  "findings": {
+    "BACKEND_OUTAGE": 6,
+    "HARNESS_ERROR": 9,
+    "PASS_WITHOUT_SEED_VERIFICATION": 164,
+    "PASS_WITH_FAILED_ASSERTION": 21
+  },
+  "grades": [
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4561d6c57dd3",
+        "started": "2026-07-17T12:33:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_01",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4c54973047b5",
+        "started": "2026-07-17T12:57:56Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_02",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f5c5d5bd1283",
+        "started": "2026-07-17T12:34:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_03",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 340.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "667f12368e01",
+        "started": "2026-07-17T12:52:13Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_04",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0115c4a243a0",
+        "started": "2026-07-17T12:06:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_05",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 341.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "674fac273a01",
+        "started": "2026-07-17T13:01:57Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_06",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 399.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "91ac2db40391",
+        "started": "2026-07-17T11:53:36Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_07",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "45b021588805",
+        "started": "2026-07-17T12:37:39Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_08",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 185.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "036621b8b634",
+        "started": "2026-07-17T12:09:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_09",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ba07371d2191",
+        "started": "2026-07-17T12:05:51Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_10",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 347.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "89c03bbb86c2",
+        "started": "2026-07-17T12:54:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_11",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5fee2800eb33",
+        "started": "2026-07-17T12:29:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_12",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 375.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7902502eb5a6",
+        "started": "2026-07-17T11:54:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_13",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3c2bf118c148",
+        "started": "2026-07-17T13:05:15Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_14",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "665583502b48",
+        "started": "2026-07-17T12:02:55Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_15",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 193.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5d2363105f99",
+        "started": "2026-07-17T12:06:58Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_16",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4d15e99ca1cd",
+        "started": "2026-07-17T12:39:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_17",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 326.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c0ca5b2f7e1f",
+        "started": "2026-07-17T13:17:31Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_18",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 345.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "785b767775ed",
+        "started": "2026-07-17T12:35:32Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_19",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 347.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7ffe217cb0fc",
+        "started": "2026-07-17T13:13:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_20",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 353.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ccec02bcbbfd",
+        "started": "2026-07-17T12:33:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_21",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0b8a90e56ca1",
+        "started": "2026-07-17T12:33:03Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_22",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d1244e3726cd",
+        "started": "2026-07-17T12:32:48Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_23",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "da7fdc6b0205",
+        "started": "2026-07-17T12:17:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_24",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 338.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d83abd478628",
+        "started": "2026-07-17T12:12:05Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_25",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 340.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "fa67437f3822",
+        "started": "2026-07-17T12:00:37Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_26",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6d96b2e1c762",
+        "started": "2026-07-17T12:21:29Z"
+      },
+      "scenario_id": "brove.int.fd.FD_ED_TC_27",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 345.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "86ce237487da",
+        "started": "2026-07-17T12:31:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_001",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "392c8b04193f",
+        "started": "2026-07-17T12:41:56Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_002",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 355.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e2218ee555b9",
+        "started": "2026-07-17T12:20:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_003",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1fe95d192142",
+        "started": "2026-07-17T12:40:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_004",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 350.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c2b9eb4e5dfa",
+        "started": "2026-07-17T12:25:49Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_005",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c5da8f3bf341",
+        "started": "2026-07-17T12:04:03Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_006",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 317.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "34aff74aa62e",
+        "started": "2026-07-17T13:17:59Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_007",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 350.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "052f1c7bcfdd",
+        "started": "2026-07-17T12:32:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_008",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9694477cc4d0",
+        "started": "2026-07-17T12:55:53Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_009",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 324.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4362e6647d59",
+        "started": "2026-07-17T13:13:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_010",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 333.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "da16fc2c53aa",
+        "started": "2026-07-17T13:16:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_011",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 375.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "91f79a6a608c",
+        "started": "2026-07-17T11:54:00Z"
+      },
+      "scenario_id": "brove.int.fd.FD_PAY_TC_012",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 332.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "dffe64529c64",
+        "started": "2026-07-17T12:58:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_001",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1f5515310b54",
+        "started": "2026-07-17T12:50:29Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_002",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9dba65a5208d",
+        "started": "2026-07-17T13:14:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_003",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 326.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d8d70d92fa46",
+        "started": "2026-07-17T12:11:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_004",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f7ec0e22b7d2",
+        "started": "2026-07-17T13:04:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_005",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 324.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0b60f0963ab4",
+        "started": "2026-07-17T12:47:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_006",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 320.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d483e7191314",
+        "started": "2026-07-17T12:06:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_007",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 341.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "56034da0ad7c",
+        "started": "2026-07-17T13:07:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_008",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b0c61d7f1b5a",
+        "started": "2026-07-17T12:34:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_009",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 398.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6b8a131d39b2",
+        "started": "2026-07-17T11:53:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_010",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "097c4b774bb8",
+        "started": "2026-07-17T12:00:29Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_011",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4d145c4a74d6",
+        "started": "2026-07-17T13:12:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_012",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1e4adff0b2ad",
+        "started": "2026-07-17T12:49:51Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_013",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4857a5189a25",
+        "started": "2026-07-17T12:29:29Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_014",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "79d2ab328084",
+        "started": "2026-07-17T12:17:56Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_015",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 323.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d6f94e4f3269",
+        "started": "2026-07-17T13:17:12Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_016",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 324.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "81ee1531bd8d",
+        "started": "2026-07-17T12:56:20Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_017",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "da39328c0240",
+        "started": "2026-07-17T12:02:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_018",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9e263cc4a02c",
+        "started": "2026-07-17T13:11:23Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_019",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 323.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "884e1af15a9f",
+        "started": "2026-07-17T12:45:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_020",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f0943ff9ac27",
+        "started": "2026-07-17T12:50:08Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_021",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "05259f7870d3",
+        "started": "2026-07-17T13:03:35Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_022",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 373.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "919fa8fdb3b4",
+        "started": "2026-07-17T11:54:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_023",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "438870dd914b",
+        "started": "2026-07-17T12:39:52Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_024",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 325.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d11891eba1a3",
+        "started": "2026-07-17T12:06:25Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_025",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0914464e0f34",
+        "started": "2026-07-17T13:09:55Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_026",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "47a739ce828c",
+        "started": "2026-07-17T12:35:10Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_027",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 360.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d6ecf26edca2",
+        "started": "2026-07-17T11:59:37Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_028",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 331.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1a51b93f7a51",
+        "started": "2026-07-17T12:04:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_029",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 366.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0307315f5d10",
+        "started": "2026-07-17T12:23:07Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_030",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 310.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "be7aa5b38381",
+        "started": "2026-07-17T12:16:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_031",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 310.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ba87e7088d31",
+        "started": "2026-07-17T12:11:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_032",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 396.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "511051ed1c3c",
+        "started": "2026-07-17T12:45:22Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_033",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 317.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7f2e02d30865",
+        "started": "2026-07-17T12:17:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_034",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 458.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b781c0baefc9",
+        "started": "2026-07-17T11:53:58Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_035",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c79c543c860f",
+        "started": "2026-07-17T13:03:11Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_036",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 467.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "93b6cdbfbfe4",
+        "started": "2026-07-17T12:01:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_038",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "401be58e5f4b",
+        "started": "2026-07-17T12:28:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_039",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 346.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "541a85baa926",
+        "started": "2026-07-17T12:38:29Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_040",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 373.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3492062098a5",
+        "started": "2026-07-17T13:05:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_041",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 396.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5819d0e3fa42",
+        "started": "2026-07-17T13:09:16Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_042",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 495.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8435ccfe1dbd",
+        "started": "2026-07-17T13:06:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_043",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c0cceb1260e4",
+        "started": "2026-07-17T12:12:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_044",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 406.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "aa91e55ed880",
+        "started": "2026-07-17T11:53:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_045",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "14d002c8ab1a",
+        "started": "2026-07-17T12:21:07Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_046",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "fda816a2b571",
+        "started": "2026-07-17T12:39:12Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_047",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 357.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9edff9be223f",
+        "started": "2026-07-17T12:57:22Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_048",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 318.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "268039c6f496",
+        "started": "2026-07-17T12:27:58Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_049",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "abcef1eefbaf",
+        "started": "2026-07-17T12:19:18Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_050",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 307.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3d5a6fc8f03a",
+        "started": "2026-07-17T12:32:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_051",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 325.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "53fe275996be",
+        "started": "2026-07-17T12:00:43Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_052",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 500.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "25d2f1931c3b",
+        "started": "2026-07-17T11:53:48Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_053",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 271.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ccfca77c8320",
+        "started": "2026-07-17T13:18:32Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_054",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 294.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b1a518f5a3fa",
+        "started": "2026-07-17T13:01:44Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_055",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "dd3f10695d17",
+        "started": "2026-07-17T13:15:43Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_056",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 289.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "730054745db2",
+        "started": "2026-07-17T12:08:45Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_057",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 279.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ef67093ff77c",
+        "started": "2026-07-17T12:26:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_058",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 282.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8f462c6cb956",
+        "started": "2026-07-17T13:16:53Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_059",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 294.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1fadbb039af5",
+        "started": "2026-07-17T12:26:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_060",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 314.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b75a6f45e398",
+        "started": "2026-07-17T12:27:04Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_061",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3a7e2a9690c5",
+        "started": "2026-07-17T12:21:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_062",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 276.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4b1dba131915",
+        "started": "2026-07-17T12:58:20Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_063",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 459.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ea0ae3deacae",
+        "started": "2026-07-17T12:31:42Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_064",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 279.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9aa72f54685b",
+        "started": "2026-07-17T12:03:39Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_065",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 371.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9a2abfffe0da",
+        "started": "2026-07-17T12:58:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_066",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 399.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "04f333a9d6e5",
+        "started": "2026-07-17T13:06:07Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_067",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 375.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a1d375104d96",
+        "started": "2026-07-17T12:43:39Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_068",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 376.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1da57080d3a5",
+        "started": "2026-07-17T13:03:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_069",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 384.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "bf9897e3a1cb",
+        "started": "2026-07-17T12:37:51Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_070",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 380.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "623a4eb3e937",
+        "started": "2026-07-17T12:52:16Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_071",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 385.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d4405111c1ee",
+        "started": "2026-07-17T12:53:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_072",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 371.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d65588f784c1",
+        "started": "2026-07-17T12:32:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_073",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 372.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "61b3fc3b3d4d",
+        "started": "2026-07-17T13:10:24Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_074",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 372.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0bcfddfcda4d",
+        "started": "2026-07-17T12:50:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_075",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 371.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b051e6fc5915",
+        "started": "2026-07-17T12:27:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_076",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 375.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "21155eb461a5",
+        "started": "2026-07-17T13:01:55Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_077",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 363.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1db3f8a859bc",
+        "started": "2026-07-17T12:00:41Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_078",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 378.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1bda98166990",
+        "started": "2026-07-17T13:07:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_079",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 368.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b494f5714534",
+        "started": "2026-07-17T13:14:24Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_080",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 378.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "97d89ad83f22",
+        "started": "2026-07-17T12:06:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_081",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 393.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d00f17113e70",
+        "started": "2026-07-17T12:58:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_082",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 383.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5cc2171dbed7",
+        "started": "2026-07-17T12:47:00Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_083",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 395.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4c3932ba6638",
+        "started": "2026-07-17T12:19:43Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_084",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 381.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "da746f8a0c3d",
+        "started": "2026-07-17T12:35:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_085",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 384.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0928cf7f3cc1",
+        "started": "2026-07-17T12:44:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_086",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 366.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "bab78547d3fa",
+        "started": "2026-07-17T12:58:49Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_087",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 374.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "aea6c21e205e",
+        "started": "2026-07-17T13:11:31Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_088",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 362.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0eede17d0013",
+        "started": "2026-07-17T13:09:25Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_089",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 374.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a8021e373851",
+        "started": "2026-07-17T12:55:28Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_090",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 363.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "35a4626ea5bb",
+        "started": "2026-07-17T12:43:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_091",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Environment ERROR",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 417.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "015f0625b9dc",
+        "started": "2026-07-17T11:53:52Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_092",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 360.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b740cb62e081",
+        "started": "2026-07-17T12:11:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_093",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 384.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f7eb2fcc8d73",
+        "started": "2026-07-17T12:18:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_094",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 364.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c0f01a478599",
+        "started": "2026-07-17T12:15:27Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_095",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 355.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1cbce4e1ca0f",
+        "started": "2026-07-17T12:00:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_096",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 483.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c1502ebafad3",
+        "started": "2026-07-17T12:24:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_097",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 300.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7c0a83b5a4a1",
+        "started": "2026-07-17T11:54:04Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_098",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3c1efc46d34e",
+        "started": "2026-07-17T11:53:56Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_099",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 282.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "af0eb2dd948a",
+        "started": "2026-07-17T12:16:15Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_100",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 370.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7c718196c744",
+        "started": "2026-07-17T12:49:55Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_101",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 396.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d828aa14f5a4",
+        "started": "2026-07-17T12:08:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_102",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 435.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "65f6d268fc47",
+        "started": "2026-07-17T12:56:14Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_103",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 438.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3b9c0a9aeb80",
+        "started": "2026-07-17T12:39:31Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_104",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 302.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ba2d320a887d",
+        "started": "2026-07-17T12:47:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_105",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 437.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "eeee53ebd3cf",
+        "started": "2026-07-17T12:21:58Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_106",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 365.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e16a74e6ac8a",
+        "started": "2026-07-17T13:05:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_107",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 275.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a7594cfc8006",
+        "started": "2026-07-17T12:14:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_108",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 390.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "37c1b5e554ef",
+        "started": "2026-07-17T12:07:23Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_109",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 427.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8359a9f6a203",
+        "started": "2026-07-17T13:11:09Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_110",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 418.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "79164e623298",
+        "started": "2026-07-17T12:10:25Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_111",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 302.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f0b53b81fff0",
+        "started": "2026-07-17T12:40:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_112",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 385.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9c50387e6705",
+        "started": "2026-07-17T12:20:05Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_113",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 322.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "949df2dc27a0",
+        "started": "2026-07-17T12:21:44Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_114",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 285.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c827439a55d5",
+        "started": "2026-07-17T12:00:31Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_115",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 280.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "87c385dedfd8",
+        "started": "2026-07-17T12:17:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_116",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 389.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b3c8c3e28b7b",
+        "started": "2026-07-17T12:56:00Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_117",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 387.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "2cfc93a93925",
+        "started": "2026-07-17T12:00:45Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_118",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 383.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7f7171960dda",
+        "started": "2026-07-17T13:10:53Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_119",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 398.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5ee3eff2dfa2",
+        "started": "2026-07-17T12:27:27Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_120",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 351.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8329a8ae1c36",
+        "started": "2026-07-17T12:38:37Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_121",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 445.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "719ef0707066",
+        "started": "2026-07-17T12:27:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_122",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 357.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "3ad777649a33",
+        "started": "2026-07-17T12:43:41Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_123",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 362.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a4608d07b2f9",
+        "started": "2026-07-17T12:13:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_124",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 313.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "2c28907dfd87",
+        "started": "2026-07-17T12:09:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_125",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 348.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c805db6e1836",
+        "started": "2026-07-17T12:16:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_126",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 380.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7255be258999",
+        "started": "2026-07-17T12:43:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_127",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 431.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1f0e8be31de2",
+        "started": "2026-07-17T12:45:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_128",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 357.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5f7e538309d5",
+        "started": "2026-07-17T12:15:18Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_129",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 301.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "75fb8ad43529",
+        "started": "2026-07-17T13:16:05Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_130",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 358.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c60da45a7d25",
+        "started": "2026-07-17T13:15:53Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_131",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 338.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "78245e870c0f",
+        "started": "2026-07-17T12:22:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_132",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 341.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "445f8d5b28d6",
+        "started": "2026-07-17T12:22:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_133",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 312.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d773ace4d165",
+        "started": "2026-07-17T12:52:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_134",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 428.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f1f5faa45a98",
+        "started": "2026-07-17T12:44:31Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_135",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 373.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "956bcb2535e6",
+        "started": "2026-07-17T12:09:44Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_136",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 367.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9e96b5d67a30",
+        "started": "2026-07-17T12:08:08Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_137",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 368.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "628403dab6ef",
+        "started": "2026-07-17T12:00:27Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_138",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 278.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b6730078390f",
+        "started": "2026-07-17T12:45:35Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_139",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 269.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7006c5c87f4d",
+        "started": "2026-07-17T12:11:32Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_140",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 286.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8e7bb13a2d48",
+        "started": "2026-07-17T12:53:38Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_141",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 282.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c329753242b0",
+        "started": "2026-07-17T12:38:45Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_142",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 275.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6d78b14cf660",
+        "started": "2026-07-17T12:51:11Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_143",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 281.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9a8c6bdb7164",
+        "started": "2026-07-17T13:14:13Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_144",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 307.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d6440fe04260",
+        "started": "2026-07-17T12:59:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_145",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 365.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4e051e3006d3",
+        "started": "2026-07-17T12:22:59Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_146",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "04b2e064a554",
+        "started": "2026-07-17T12:26:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_147",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 345.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8249c7b2ccff",
+        "started": "2026-07-17T12:31:51Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_148",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "44bb02c11a5c",
+        "started": "2026-07-17T12:15:21Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_149",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 351.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "27a006d72322",
+        "started": "2026-07-17T12:51:55Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_150",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 352.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "0854a07b1ce3",
+        "started": "2026-07-17T12:59:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_151",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 326.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "d89416057348",
+        "started": "2026-07-17T12:14:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_152",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 392.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e998d1f21f62",
+        "started": "2026-07-17T11:53:44Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_153",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 356.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e8527170d81f",
+        "started": "2026-07-17T13:03:45Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_154",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "44e571b045d9",
+        "started": "2026-07-17T12:22:10Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_155",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 354.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8a7f2d097f6c",
+        "started": "2026-07-17T13:02:44Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_156",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 349.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "2fb183ee6e35",
+        "started": "2026-07-17T12:23:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_157",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 394.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ca6aeefaa548",
+        "started": "2026-07-17T11:53:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_158",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 273.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e8de31ede812",
+        "started": "2026-07-17T12:13:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_159",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c7353efa1c7f",
+        "started": "2026-07-17T12:28:00Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_160",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 334.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "cbecfa64698c",
+        "started": "2026-07-17T13:05:12Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_161",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6d8814660040",
+        "started": "2026-07-17T12:41:30Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_162",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 327.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "5a673b34ded1",
+        "started": "2026-07-17T12:51:43Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_163",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 335.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "8f925af28642",
+        "started": "2026-07-17T13:11:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_164",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 341.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c2178a174edf",
+        "started": "2026-07-17T13:08:28Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_165",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 339.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "888b311b2550",
+        "started": "2026-07-17T12:49:35Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_166",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 362.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a64014213603",
+        "started": "2026-07-17T13:08:53Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_167",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "fcc813f9ac0b",
+        "started": "2026-07-17T12:41:08Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_168",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 323.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6c3880d4fd64",
+        "started": "2026-07-17T12:52:42Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_169",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 334.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "558eb9ef9c3f",
+        "started": "2026-07-17T12:37:49Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_170",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 329.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "cda7943f5ee3",
+        "started": "2026-07-17T12:10:23Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_171",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "81ce5cbe956c",
+        "started": "2026-07-17T12:56:47Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_172",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 327.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "4e4c7ccd1113",
+        "started": "2026-07-17T12:46:01Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_173",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 334.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "47b89adc6d84",
+        "started": "2026-07-17T12:01:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_174",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9be8d84990f7",
+        "started": "2026-07-17T12:44:46Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_175",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 321.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f430584d5758",
+        "started": "2026-07-17T12:05:28Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_176",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 328.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "14a2a199a407",
+        "started": "2026-07-17T13:00:19Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_177",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 337.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c9ed8938d347",
+        "started": "2026-07-17T13:06:54Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_178",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 398.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "630a4f854a32",
+        "started": "2026-07-17T11:53:42Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_179",
+      "status": "WARN"
+    },
+    {
+      "confidence": 5,
+      "grade": "Invalid PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 330.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b38ec123077f",
+        "started": "2026-07-17T12:16:12Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_180",
+      "status": "INVALID"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 297.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6ddb7c18bcc6",
+        "started": "2026-07-17T12:47:04Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_181",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 336.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b2ab047e06c2",
+        "started": "2026-07-17T12:33:43Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_182",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 399.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7ba533138877",
+        "started": "2026-07-17T11:53:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_183",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 393.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1ed4586fc7ad",
+        "started": "2026-07-17T11:53:50Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_184",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 197.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "2fae8f7a65ff",
+        "started": "2026-07-17T12:18:14Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_185",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 172.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "95fb4059763a",
+        "started": "2026-07-17T12:56:02Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_186",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 190.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "fa4ffa1b3daa",
+        "started": "2026-07-17T12:29:24Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_187",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 190.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ad245db4d9f8",
+        "started": "2026-07-17T12:12:03Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_188",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 198.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e3fef15c205c",
+        "started": "2026-07-17T12:07:36Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_189",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 212.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1e35471d478b",
+        "started": "2026-07-17T12:39:14Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_190",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 187.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "980b4b715627",
+        "started": "2026-07-17T13:02:40Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_191",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 205.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a7ee91320957",
+        "started": "2026-07-17T11:59:17Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_192",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 195.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "9d96e3d01a3c",
+        "started": "2026-07-17T12:06:56Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_193",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 182.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b9af1e6f1af9",
+        "started": "2026-07-17T12:29:35Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_194",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 185.4,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "c53fb92ce3b8",
+        "started": "2026-07-17T12:50:58Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_195",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 194.7,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "00e2d410f289",
+        "started": "2026-07-17T12:00:35Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_196",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 183.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "75c7147de2e5",
+        "started": "2026-07-17T13:15:10Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_197",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 196.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "e1dc020af03a",
+        "started": "2026-07-17T13:04:08Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_198",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 195.2,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "73657e3076cc",
+        "started": "2026-07-17T12:00:39Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_199",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 174.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "a613a2573572",
+        "started": "2026-07-17T12:00:33Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_200",
+      "status": "FAIL"
+    }
+  ],
+  "summary": {
+    "by_env": {
+      "int": {
+        "fail": 38,
+        "infra": 15,
+        "invalid": 21,
+        "pass": 164,
+        "pass_rate": 0.8118811881188119,
+        "total": 238,
+        "working": 202
+      }
+    },
+    "by_feed": {
+      "fd": {
+        "fail": 38,
+        "infra": 15,
+        "invalid": 21,
+        "pass": 164,
+        "pass_rate": 0.8118811881188119,
+        "total": 238,
+        "working": 202
+      }
+    },
+    "by_product": {
+      "brove": {
+        "fail": 38,
+        "infra": 15,
+        "invalid": 21,
+        "pass": 164,
+        "pass_rate": 0.8118811881188119,
+        "total": 238,
+        "working": 202
+      }
+    },
+    "grade_mix": {
+      "Environment ERROR": 6,
+      "Harness FAIL": 9,
+      "Invalid PASS": 21,
+      "Valid FAIL": 38,
+      "Weak PASS": 164
+    },
+    "totals": {
+      "fail": 38,
+      "infra": 15,
+      "invalid": 21,
+      "pass": 164,
+      "pass_rate": 0.8118811881188119,
+      "total": 238,
+      "working": 202
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "auth": {
+    "contact_id": "0cdd667c-4655-425c-8e60-d380f4cd1e91",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "",
+    "flags": [],
+    "passenger": "MARA OKONKWO",
+    "pnr": "ZZFDAA",
+    "pnr_id": "ZZFDAA-2026-06-13",
+    "regime": "APPR",
+    "test_case": "ZZFDAA",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-16",
+    "duration_s": 246.7,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "05b5fd3ee935",
+    "started": "2026-07-16T13:17:31Z"
+  },
+  "scenario_id": "brove.int.fd.ZZFDAA",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T13:17:47Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T13:17:47Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-16T13:18:53Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-16T13:18:59Z"
+    },
+    {
+      "note": "Opening statement requesting APPR compensation for flight delay",
+      "role": "customer",
+      "text": "Hi, I need to file a claim for compensation. My flight was delayed and I want to get compensated under APPR.",
+      "ts": "2026-07-16T13:19:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-16T13:19:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-16T13:19:14Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-16T13:19:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-16T13:19:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-16T13:19:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-16T13:19:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-16T13:19:30Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-16T13:19:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you \u2014 could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-16T13:19:41Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Mara Okonkwo",
+      "ts": "2026-07-16T13:19:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Mara**! Could you share your **booking reference** \u2014 that's the 6-character code found in your booking confirmation email?",
+      "ts": "2026-07-16T13:19:53Z"
+    },
+    {
+      "note": "Providing the PNR booking reference",
+      "role": "customer",
+      "text": "ZZFDAA",
+      "ts": "2026-07-16T13:19:59Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n\n- **First name:** Mara\n- **Last name:** Okonkwo\n- **Booking reference:** ZZFDAA\n\nIs that all correct?",
+      "ts": "2026-07-16T13:20:06Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-16T13:20:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7I couldn't find a booking matching that information.",
+      "ts": "2026-07-16T13:20:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.",
+      "ts": "2026-07-16T13:20:21Z"
+    },
+    {
+      "note": "Reconfirming the same details - this might be a system issue or test scenario",
+      "role": "customer",
+      "text": "Let me check again. The booking reference is ZZFDAA and the last name is Okonkwo",
+      "ts": "2026-07-16T13:20:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thank you, can you now verify and share your booking reference again. It should contain 6 letters and/or numbers and can be found in your booking confirmation email.",
+      "ts": "2026-07-16T13:20:42Z"
+    },
+    {
+      "note": "Providing the PNR again as requested",
+      "role": "customer",
+      "text": "ZZFDAA",
+      "ts": "2026-07-16T13:20:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7I couldn't find a booking matching that information.",
+      "ts": "2026-07-16T13:20:57Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.",
+      "ts": "2026-07-16T13:20:57Z"
+    },
+    {
+      "note": "Expressing frustration and asking for human assistance since the system isn't finding my booking",
+      "role": "customer",
+      "text": "I'm sure the information is correct. Is there a technical issue? Can I speak to someone who can help me?",
+      "ts": "2026-07-16T13:21:03Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'm sorry for the frustration, Mara. Since you've explicitly asked to speak with someone, I'll connect you with a live agent right away.\n\nI'll connect you with a live Air Canada agent. In the meantime, you can also reach our team directly at **1-888-247-2262** (open **24/7**).\n\nThank you for your patience, Mara \u2014 I hope we can get this sorted for you quickly.",
+      "ts": "2026-07-16T13:21:21Z"
+    },
+    {
+      "note": "Assistant has handed off to live agent - this is a final outcome (not eligible for automated processing, escalated to human)",
+      "role": "customer",
+      "text": "Thank you",
+      "ts": "2026-07-16T13:21:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "You're welcome, Mara. Take care!",
+      "ts": "2026-07-16T13:21:32Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "ESCALATED",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Amount Quoted",
+        "pass": false
+      },
+      {
+        "actual": "false",
+        "expected": "true",
+        "name": "Reached Determination",
+        "pass": false
+      }
+    ],
+    "decision": "ESCALATED",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was ELIGIBLE with CAD 400.0 compensation for PNR ZZFDAA under APPR regime. However, the chatbot encountered a technical issue where it could not retrieve the booking despite the passenger providing correct information (ZZFDAA, Mara Okonkwo) multiple times. The bot repeatedly displayed a banner stating \"I couldn't find a booking matching that information\" and ultimately escalated to a live agent when the passenger requested human assistance. No eligibility determination was made, no compensation amount was quoted, and the case was not resolved by the bot. This is a system failure that prevented the expected outcome from being reached."
+  }
+}

@@ -1,0 +1,381 @@
+{
+ "agent": "brove",
+ "cases": [
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [
+    "bot_output_glitch"
+   ],
+   "decision_class": "01",
+   "duration_s": 392.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": true,
+   "regime": "ID",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "EDGE-ID-01",
+   "test_id": "FD_ED_TC_01",
+   "trajectory_score": 0.8571
+  }
+ ],
+ "checks": {
+  "compensation_amount": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  },
+  "other": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  },
+  "passenger_name": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  },
+  "pnr_match": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  },
+  "system_code": {
+   "cases": 1,
+   "pass": 1,
+   "rate": 1.0,
+   "total": 1
+  }
+ },
+ "confusion": {
+  "labels": [
+   "ELIGIBLE"
+  ],
+  "matrix": [
+   [
+    1
+   ]
+  ]
+ },
+ "env": "int",
+ "headline": {
+  "amount_accuracy": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "clean_run_rate": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "decision_accuracy": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "goal_success_rate": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "intent_recognition_rate": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "judge_agreement": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "rescored_success_rate": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "terminal_decision_rate": {
+   "den": 1,
+   "num": 1,
+   "rate": 1.0
+  },
+  "trajectory_match_mean": 0.8571
+ },
+ "n_cases": 1,
+ "ops": {
+  "duration_s": {
+   "mean": 392.1,
+   "p50": 392.1,
+   "p90": 392.1
+  },
+  "error_buckets": {},
+  "turns": {
+   "mean": 52,
+   "p50": 52,
+   "p90": 52
+  }
+ },
+ "schema_version": "1.1",
+ "slices": {
+  "decision_class": {
+   "01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8571
+   }
+  },
+  "expected_status": {
+   "ELIGIBLE": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8571
+   }
+  },
+  "family": {
+   "ED": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8571
+   }
+  },
+  "regime": {
+   "ID": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8571
+   }
+  },
+  "system_code_prefix": {
+   "EDGE-ID-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.8571
+   }
+  }
+ },
+ "trajectory": {
+  "anomaly_rates": {
+   "bot_output_glitch": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   }
+  },
+  "by_family": {
+   "ED": 0.8571
+  },
+  "stage_coverage": {
+   "amount_quoted": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "booking_retrieved": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "case_reference_issued": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "claim_submitted": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "decision_disclosure": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "decision_rendered": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "greeting": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "identity_collection": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "identity_provided": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "identity_verified": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "intent_recognized": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "intent_stated": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "otp_channel_selection": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "otp_entered": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "payment_method": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "terminal_outcome": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   },
+   "wrapup": {
+    "den": 1,
+    "num": 1,
+    "rate": 1.0
+   }
+  }
+ }
+}

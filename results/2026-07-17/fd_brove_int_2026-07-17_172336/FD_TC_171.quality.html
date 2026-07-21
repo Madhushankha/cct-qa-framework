@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Quality — FD_TC_171</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .kpi { background: #1c222c; border-color: #2a323d; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>Response Quality — FD_TC_171 <a class="dl" download href="FD_TC_171.quality.html">&#11015; download</a></h1>
+<p class="mono" style="color:#667">brove.int.fd.FD_TC_171</p>
+<div>
+<span class="kpi"><b style="color:#1b7e34">85</b>/100 quality score</span>
+<span class="kpi"><b>1</b>deterministic</span>
+<span class="kpi"><b>—</b>LLM</span>
+</div>
+<p>1 deterministic finding(s) — 1 High / 0 Medium / 0 Low — score 85/100</p>
+<h2>Deterministic checks</h2>
+<table><tr><th>Area</th><th>Severity</th><th>Issue</th><th>Evidence</th></tr><tr><td>1 Duplicate messages</td><td style="color:#b00020;font-weight:600">High</td><td>Duplicate bot response (same text sent again)</td><td><code>§W§OPTIONS§Yes • No</code></td></tr></table>
+
+</body></html>

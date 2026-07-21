@@ -1,0 +1,279 @@
+{
+  "clusters": [
+    {
+      "count": 7,
+      "reason": "Weak PASS | decision=NOT_ELIGIBLE vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_053",
+        "brove.int.fd.FD_TC_100",
+        "brove.int.fd.FD_TC_124",
+        "brove.int.fd.FD_TC_131",
+        "brove.int.fd.FD_TC_132"
+      ]
+    },
+    {
+      "count": 2,
+      "reason": "Harness FAIL | decision=NO_DETERMINATION vs expected=NOT_ELIGIBLE",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_104",
+        "brove.int.fd.FD_TC_110"
+      ]
+    },
+    {
+      "count": 1,
+      "reason": "Valid FAIL | decision=ELIGIBLE vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_152"
+      ]
+    },
+    {
+      "count": 1,
+      "reason": "Weak PASS | decision=ESCALATED vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_139"
+      ]
+    },
+    {
+      "count": 1,
+      "reason": "Weak PASS | decision=NO_DETERMINATION vs expected=NO_DETERMINATION",
+      "sample_scenario_ids": [
+        "brove.int.fd.FD_TC_141"
+      ]
+    }
+  ],
+  "findings": {
+    "HARNESS_ERROR": 2,
+    "PASS_WITHOUT_SEED_VERIFICATION": 9
+  },
+  "grades": [
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 384.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "1778982a697a",
+        "started": "2026-07-17T11:24:16Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_053",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 385.3,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f32081516b2e",
+        "started": "2026-07-17T11:24:12Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_100",
+      "status": "WARN"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 472.8,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "fea336db8dc8",
+        "started": "2026-07-17T11:24:06Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_104",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 25,
+      "grade": "Harness FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 433.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ef595b56dbd1",
+        "started": "2026-07-17T11:24:04Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_110",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 385.9,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "b0795f34710a",
+        "started": "2026-07-17T11:24:24Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_124",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 351.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "61ea235659b7",
+        "started": "2026-07-17T11:24:14Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_131",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 344.0,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "ff27ca55ff78",
+        "started": "2026-07-17T11:24:08Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_132",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 314.5,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7ee5f1df2645",
+        "started": "2026-07-17T11:24:22Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_139",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 317.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "cc57695d579e",
+        "started": "2026-07-17T11:24:20Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_141",
+      "status": "WARN"
+    },
+    {
+      "confidence": 85,
+      "grade": "Valid FAIL",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 388.1,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "6601ce06376d",
+        "started": "2026-07-17T11:24:10Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_152",
+      "status": "FAIL"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 343.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "7eea947b1d85",
+        "started": "2026-07-17T11:24:18Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_155",
+      "status": "WARN"
+    },
+    {
+      "confidence": 60,
+      "grade": "Weak PASS",
+      "run": {
+        "date": "2026-07-17",
+        "duration_s": 313.6,
+        "env": "int",
+        "feed": "fd",
+        "product": "brove",
+        "run_id": "f2291f5ad2f5",
+        "started": "2026-07-17T11:24:26Z"
+      },
+      "scenario_id": "brove.int.fd.FD_TC_159",
+      "status": "WARN"
+    }
+  ],
+  "summary": {
+    "by_env": {
+      "int": {
+        "fail": 1,
+        "infra": 2,
+        "invalid": 0,
+        "pass": 9,
+        "pass_rate": 0.9,
+        "total": 12,
+        "working": 10
+      }
+    },
+    "by_feed": {
+      "fd": {
+        "fail": 1,
+        "infra": 2,
+        "invalid": 0,
+        "pass": 9,
+        "pass_rate": 0.9,
+        "total": 12,
+        "working": 10
+      }
+    },
+    "by_product": {
+      "brove": {
+        "fail": 1,
+        "infra": 2,
+        "invalid": 0,
+        "pass": 9,
+        "pass_rate": 0.9,
+        "total": 12,
+        "working": 10
+      }
+    },
+    "grade_mix": {
+      "Harness FAIL": 2,
+      "Valid FAIL": 1,
+      "Weak PASS": 9
+    },
+    "totals": {
+      "fail": 1,
+      "infra": 2,
+      "invalid": 0,
+      "pass": 9,
+      "pass_rate": 0.9,
+      "total": 12,
+      "working": 10
+    }
+  }
+}

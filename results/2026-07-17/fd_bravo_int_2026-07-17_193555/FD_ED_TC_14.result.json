@@ -1,0 +1,311 @@
+{
+  "auth": {
+    "contact_id": "d3500544-52dc-4340-ab06-3d1397671fc6",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "EDGE-PAX-01",
+    "flags": [],
+    "passenger": "INGRID QUILLFEATHER",
+    "pnr": "TYEK39",
+    "pnr_id": "TYEK39-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_ED_TC_14",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 289.0,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "9223575a7194",
+    "started": "2026-07-17T14:59:26Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_ED_TC_14",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:59:34Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:59:34Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T15:00:40Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T15:00:48Z"
+    },
+    {
+      "note": "Starting the claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation.",
+      "ts": "2026-07-17T15:00:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T15:01:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T15:01:05Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T15:01:10Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T15:01:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T15:01:24Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T15:01:24Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T15:01:24Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T15:01:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T15:01:38Z"
+    },
+    {
+      "note": "Providing my full name as on the booking",
+      "role": "customer",
+      "text": "Ingrid Quillfeather",
+      "ts": "2026-07-17T15:01:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Ingrid**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-17T15:01:53Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "TYEK39",
+      "ts": "2026-07-17T15:01:59Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n- **First name:** Ingrid\n- **Last name:** Quillfeather\n- **Booking reference:** TYEK39\n\nIs that all correct?",
+      "ts": "2026-07-17T15:02:10Z"
+    },
+    {
+      "note": "Confirming all details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T15:02:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T15:02:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T15:02:38Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T15:02:43Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T15:02:52Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "555898",
+      "ts": "2026-07-17T15:02:59Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T15:03:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T15:03:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 LHR \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T15:03:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T15:03:21Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T15:03:26Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T15:03:37Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Canada",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-17T15:03:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've checked your flight details, and it looks like your flight on **Jul 15, 2026** was delayed by about **4h**.\n\nBased on **Canada's Air Passenger Protection Regulations**, you may be eligible for compensation for this disruption. I'll guide you through the next steps to get your claim submitted and processed as quickly as possible.",
+      "ts": "2026-07-17T15:03:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "You are entitled to receive a **400.00 CAD** compensation. Please note that it will take 5 to 10 business days to process payment. Would you like to proceed?",
+      "ts": "2026-07-17T15:03:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No, dispute",
+      "ts": "2026-07-17T15:03:52Z"
+    },
+    {
+      "note": "Assistant has determined I'm eligible for 400 CAD compensation. Accepting the determination politely and ending conversation.",
+      "role": "customer",
+      "text": "Yes, I'd like to proceed. Thank you!",
+      "ts": "2026-07-17T15:03:58Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your payment will be made through **Interac e-transfer**.\n\nBefore we move forward, please confirm the email address where you'd like to receive your payment and all updates about this case.\n\nWould you like to use **lahiru@ae-qa1-aircanada.mailinator.com**? Please note that only one email address can be used for this compensation and it **can't be changed once confirmed**.",
+      "ts": "2026-07-17T15:04:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, use this email \u2022 Use a different email",
+      "ts": "2026-07-17T15:04:09Z"
+    }
+  ],
+  "verdict": {
+    "amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "checks": [
+      {
+        "actual": "TYEK39",
+        "expected": "TYEK39",
+        "name": "PNR Match",
+        "pass": true
+      },
+      {
+        "actual": "Ingrid Quillfeather",
+        "expected": "INGRID QUILLFEATHER",
+        "name": "Passenger Name Match",
+        "pass": true
+      },
+      {
+        "actual": "ELIGIBLE",
+        "expected": "ELIGIBLE",
+        "name": "Decision Match",
+        "pass": true
+      },
+      {
+        "actual": "CAD 400.00",
+        "expected": "CAD 400.0",
+        "name": "Amount Match",
+        "pass": true
+      },
+      {
+        "actual": "APPR (Canada's Air Passenger Protection Regulations)",
+        "expected": "APPR",
+        "name": "Regime Match",
+        "pass": true
+      }
+    ],
+    "decision": "ELIGIBLE",
+    "matches_expected": true,
+    "reached_determination": true,
+    "reasoning": "The chatbot reached a clear determination of ELIGIBLE status with the correct compensation amount of CAD 400.00 for passenger Ingrid Quillfeather with PNR TYEK39 under Canada's APPR regime. All key parameters match the expected outcome: correct passenger, correct booking reference, correct eligibility decision, correct amount, and correct regulatory regime. The bot successfully completed identity verification and is proceeding to payment processing, which indicates a complete and successful claim determination."
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "auth": {
+    "contact_id": "cb0db4cf-d315-49bc-83bc-fc75feeaf27c",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "NO_DETERMINATION",
+    "expected_system_code": "FD-APPR-ND-04 (14 Days Exhausted \u2192 Agent)",
+    "flags": [],
+    "passenger": "OTTO VANTERPOOL",
+    "pnr": "CZ4SS4",
+    "pnr_id": "CZ4SS4-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_065",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 279.6,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "9aa72f54685b",
+    "started": "2026-07-17T12:03:39Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_065",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T12:03:45Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T12:03:46Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T12:04:51Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T12:05:00Z"
+    },
+    {
+      "note": "Starting the compensation claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation",
+      "ts": "2026-07-17T12:05:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T12:05:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T12:05:29Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T12:05:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T12:05:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T12:05:43Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T12:05:43Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T12:05:43Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T12:05:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T12:05:59Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Otto Vanterpool",
+      "ts": "2026-07-17T12:06:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Otto**! What's your **booking reference number**? It's a 6-character code you'll find in your booking confirmation email.",
+      "ts": "2026-07-17T12:06:12Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "CZ4SS4",
+      "ts": "2026-07-17T12:06:18Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm \u2014 here's what I have:\n\n- **First name:** Otto\n- **Last name:** Vanterpool\n- **Booking reference:** CZ4SS4\n\nIs that all correct?",
+      "ts": "2026-07-17T12:06:24Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T12:06:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T12:06:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:06:41Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:06:46Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T12:06:57Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "641376",
+      "ts": "2026-07-17T12:07:03Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T12:07:22Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T12:07:22Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YUL \u2192 YYZ \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T12:07:22Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:07:23Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:07:28Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T12:07:38Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Canada",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-17T12:07:44Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'm sorry \u2014 I can't review this case automatically right now. Would you like me to submit it for one of our agents to review?",
+      "ts": "2026-07-17T12:07:58Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, submit for review \u2022 No thanks",
+      "ts": "2026-07-17T12:07:58Z"
+    },
+    {
+      "note": "Bot cannot process automatically and is handing off to agent - this is a final outcome",
+      "role": "customer",
+      "text": "Yes, submit for review",
+      "ts": "2026-07-17T12:08:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your case has been submitted for agent review.",
+      "ts": "2026-07-17T12:08:12Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "An agent will follow up with you by email with the next steps.",
+      "ts": "2026-07-17T12:08:12Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T12:08:12Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION (escalated to agent)",
+        "expected": "NO_DETERMINATION",
+        "name": "Decision matches expected",
+        "pass": true
+      },
+      {
+        "actual": "none",
+        "expected": "n/a",
+        "name": "Amount matches expected",
+        "pass": true
+      },
+      {
+        "actual": "CZ4SS4",
+        "expected": "CZ4SS4",
+        "name": "PNR verified",
+        "pass": true
+      },
+      {
+        "actual": "Otto Vanterpool",
+        "expected": "OTTO VANTERPOOL",
+        "name": "Passenger name verified",
+        "pass": true
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": true,
+    "reached_determination": true,
+    "reasoning": "The expected outcome for test case FD_TC_065 is NO_DETERMINATION with systemCode FD-APPR-ND-04 (14 Days Exhausted \u2192 Agent), meaning the bot should escalate to an agent without making an automated determination. The chatbot correctly: 1) Verified the passenger identity (Otto Vanterpool, PNR CZ4SS4), 2) Confirmed the flight details, 3) Stated \"I can't review this case automatically right now\", 4) Escalated to agent review, and 5) Did not provide any compensation amount or eligibility decision. This matches the expected NO_DETERMINATION outcome perfectly."
+  }
+}

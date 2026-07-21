@@ -1,0 +1,285 @@
+{
+  "auth": {
+    "contact_id": "e85f0dc8-b53d-4ba2-ab75-a069413bdc1c",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "",
+    "flags": [],
+    "passenger": "QUENTIN PENWICK",
+    "pnr": "ALGITK",
+    "pnr_id": "ALGITK-2026-07-09",
+    "regime": "APPR",
+    "test_case": "ALGITK",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "'charmap' codec can't encode character '\\u2192' in position 81: character maps to <undefined>",
+    "error_bucket": "other"
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 246.5,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "c2c5116f2e25",
+    "started": "2026-07-16T21:32:18Z"
+  },
+  "scenario_id": "brove.int.fd.ALGITK",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [
+      {
+        "area": "trip_active",
+        "pass": true
+      },
+      {
+        "area": "trip_details",
+        "pass": true
+      },
+      {
+        "area": "passenger",
+        "pass": true
+      },
+      {
+        "area": "dob",
+        "pass": true
+      },
+      {
+        "area": "ticket",
+        "pass": true
+      },
+      {
+        "area": "eds_pnr_output",
+        "pass": true
+      },
+      {
+        "area": "eds_contact_email",
+        "pass": true
+      },
+      {
+        "area": "dds_endpoint_systemcode_match",
+        "pass": true
+      },
+      {
+        "area": "dds_amount_match",
+        "pass": true
+      },
+      {
+        "area": "ne_nd_reason_text",
+        "pass": true
+      },
+      {
+        "area": "passenger_count",
+        "pass": true
+      },
+      {
+        "area": "name_uniqueness",
+        "pass": true
+      }
+    ],
+    "dds": null,
+    "verified": true
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T21:32:26Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T21:32:26Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-16T21:33:32Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-16T21:33:38Z"
+    },
+    {
+      "note": "Starting the claim process, stating the reason for contact",
+      "role": "customer",
+      "text": "I need to file a claim for compensation. My flight was delayed.",
+      "ts": "2026-07-16T21:33:44Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-16T21:33:53Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-16T21:33:53Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-16T21:33:58Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-16T21:34:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-16T21:34:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-16T21:34:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-16T21:34:08Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-16T21:34:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-16T21:34:20Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Quentin Penwick",
+      "ts": "2026-07-16T21:34:25Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Quentin**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-16T21:34:31Z"
+    },
+    {
+      "note": "Providing my PNR/booking reference",
+      "role": "customer",
+      "text": "ALGITK",
+      "ts": "2026-07-16T21:34:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n- **First name:** Quentin\n- **Last name:** Penwick\n- **Booking reference:** ALGITK\n\nIs that all correct?",
+      "ts": "2026-07-16T21:34:42Z"
+    },
+    {
+      "note": "Confirming the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-16T21:34:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-16T21:35:12Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-16T21:35:12Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-16T21:35:17Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-16T21:35:48Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "813591",
+      "ts": "2026-07-16T21:35:54Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-16T21:36:21Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-16T21:36:21Z"
+    },
+    {
+      "note": "error",
+      "role": "assistant",
+      "text": "[error] 'charmap' codec can't encode character '\\u2192' in position 81: character maps to <undefined>",
+      "ts": "2026-07-16T21:36:22Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION (technical error before completion)",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      },
+      {
+        "actual": "not provided",
+        "expected": "blank/not specified",
+        "name": "System Code",
+        "pass": true
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot never reached a final determination. While it successfully collected passenger information (Quentin Penwick), verified the booking reference (ALGITK), completed identity verification, and was about to confirm the trip details, the process was interrupted by a technical encoding error before any eligibility decision or compensation amount could be rendered. The expected outcome was ELIGIBLE with CAD 400.0 compensation, but the bot failed to complete the assessment due to the technical failure. Therefore, reached_determination=false and matches_expected=false."
+  }
+}

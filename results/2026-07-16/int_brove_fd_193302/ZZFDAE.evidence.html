@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ZZFDAE — MARA OKONKWO</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.chat { border: 1px solid #eee; border-radius: 6px; padding: 8px; max-height: 640px; overflow: auto; }
+.turn { margin: 4px 0; }
+.turn .who { font-size: 11px; color: #667; font-weight: 600; }
+.turn .ts { color: #99a; font-weight: 400; }
+.turn .text { padding: 7px 10px; border-radius: 7px; font-size: 12.5px; white-space: pre-wrap; }
+.turn.customer .text { background: #eaf2fb; }
+.turn.bot .text { background: #eafbea; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>ZZFDAE <span class="badge fail">FAIL</span></h1>
+<table class="meta">
+<tr><td>PNR</td><td>ZZFDAE</td><td>Passenger</td><td>MARA OKONKWO</td></tr>
+<tr><td>Regime</td><td>APPR</td><td>ContactId</td><td class="mono">4e41b6b6-fc76-4ce2-9b06-3f111752f06c</td></tr>
+<tr><td>Expected</td><td>ELIGIBLE ·  · CAD 400.0</td><td>Actual (bot)</td><td>ESCALATED · —</td></tr>
+<tr><td>OTP fetched</td><td>no</td><td>Scenario</td><td class="mono">brove.int.fd.ZZFDAE</td></tr>
+</table>
+<h2>Verdict</h2>
+<p>The expected outcome was ELIGIBLE with CAD 400.0 compensation for PNR ZZFDAE under APPR. However, the chatbot did not render a determination. Instead, after collecting all necessary information and verifying identity, the bot stated &quot;I&#x27;m sorry — I can&#x27;t review this case automatically right now&quot; and escalated the case to an agent for manual review. The bot never assessed eligibility or quoted any compensation amount. Since the bot failed to reach the expected determination (ELIGIBLE with CAD 400), this is a FAIL. The decision is ESCALATED, reached_determination is false, and matches_expected is false.</p>
+<table><tr><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr><tr><td>Decision Status</td><td>ELIGIBLE</td><td>ESCALATED</td><td class="fail">FAIL</td></tr><tr><td>Amount Quoted</td><td>CAD 400.0</td><td>none</td><td class="fail">FAIL</td></tr><tr><td>Regime</td><td>APPR</td><td>APPR (customer stated)</td><td class="pass">PASS</td></tr></table>
+<h2>Seed checkpoint vector</h2>
+<table><tr><th>Seed checkpoint</th><th>Result</th></tr><tr><td colspan=2>no checkpoints</td></tr></table>
+<h2>DDS determination (proof)</h2>
+<p>No DDS determination recorded for this case.</p>
+<h2>Chat history</h2>
+<div class="chat"><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:03:14Z</span> <span class="ts">· greeting</span></div><div class="text">Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?
+
+Bonjour! Je serai votre assistante virtuelle aujourd&#x27;hui. Je peux vous aider en français ou en anglais. Quelle langue préférez-vous utiliser aujourd&#x27;hui ?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:03:14Z</span> <span class="ts">· greeting</span></div><div class="text">§W§OPTIONS§English • Français</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:04:21Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;English</span></div><div class="text">English</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:04:28Z</span></div><div class="text">How can I help you today?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:04:35Z</span> <span class="ts">· Opening statement to initiate the compensation claim process</span></div><div class="text">Hi, I need to file a claim for compensation. My flight was delayed and I want to get compensated under the APPR regulations.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:04:45Z</span></div><div class="text">Before we look at your booking — **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:04:45Z</span></div><div class="text">§W§OPTIONS§I&#x27;m the passenger • Filing on behalf of someone else</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:04:51Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;I&#x27;m the passenger</span></div><div class="text">I&#x27;m the passenger</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:00Z</span></div><div class="text">No problem — I can help you create a claim for your disrupted flight and check if you&#x27;re eligible for compensation.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:00Z</span></div><div class="text">§W§BANNER§Please note that the assessment and decision regarding your request will be made through an automated decision-making process.
+
+To file your claim, you&#x27;ll need your booking reference, the name associated to the booking and any receipts you&#x27;d like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you&#x27;d like the funds deposited.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:01Z</span></div><div class="text">Would you like to get started?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:01Z</span></div><div class="text">§W§OPTIONS§Yes, let&#x27;s go • Not right now</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:05:07Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, let&#x27;s go</span></div><div class="text">Yes, let&#x27;s go</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:13Z</span></div><div class="text">To get you started, I&#x27;ll need a little information to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:05:19Z</span> <span class="ts">· Providing my full name as it appears on the booking</span></div><div class="text">Mara Okonkwo</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:25Z</span></div><div class="text">Thanks, **Mara**! Could you share your **booking reference** — the 6-character code found in your booking confirmation email?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:05:30Z</span> <span class="ts">· Providing the PNR booking reference</span></div><div class="text">ZZFDAE</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:05:36Z</span></div><div class="text">Just to confirm — **first name Mara**, **last name Okonkwo**, **booking reference ZZFDAE** — is that all correct?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:05:41Z</span> <span class="ts">· Confirming all the details are correct</span></div><div class="text">Yes, that&#x27;s correct</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:06:06Z</span></div><div class="text">To keep your account secure and assist you further, I&#x27;ll need to verify your identity. I&#x27;ll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:06:06Z</span></div><div class="text">§W§OPTIONS§Yes • No</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:06:13Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="text">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:06:44Z</span></div><div class="text">I&#x27;ve sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven&#x27;t received a code, please wait 1 minute before requesting a new one.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:06:49Z</span> <span class="ts">· Entering a verification code (simulating that I received and entered it)</span></div><div class="text">••••••</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:07:22Z</span></div><div class="text">§W§BANNER§Your identity has been verified.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:07:22Z</span></div><div class="text">Can you confirm that this is the trip you&#x27;re claiming for?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:07:23Z</span></div><div class="text">§W§FLIGHT§YYZ → LHR · Thu, Jul 09 · AC8002 · 08:00→11:00 · nonstop</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:07:23Z</span></div><div class="text">§W§OPTIONS§Yes • No</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:07:29Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="text">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:07:39Z</span></div><div class="text">§W§OPTIONS§Canada • United States • Other</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:07:45Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Canada</span></div><div class="text">Canada</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:08:03Z</span></div><div class="text">I&#x27;m sorry — I can&#x27;t review this case automatically right now. Would you like me to submit it for one of our agents to review?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:08:04Z</span></div><div class="text">§W§OPTIONS§Yes, submit for review • No thanks</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T14:08:10Z</span> <span class="ts">· Assistant cannot process automatically and is handing off to agent - this is a final outcome (clear handed-to-agent result)</span></div><div class="text">Yes, submit for review</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:08:19Z</span></div><div class="text">§W§BANNER§Your case has been submitted for agent review.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:08:19Z</span></div><div class="text">An agent will follow up with you by email with the next steps.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T14:08:19Z</span></div><div class="text">Is there anything else I can help you with?</div></div></div>
+</body></html>

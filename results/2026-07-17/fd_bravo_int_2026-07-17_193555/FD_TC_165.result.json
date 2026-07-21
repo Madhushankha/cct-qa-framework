@@ -1,0 +1,80 @@
+{
+  "auth": {
+    "contact_id": "de7e0b44-9be0-43d1-a240-d9b82a7da7ee",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-APPR-EL-400",
+    "flags": [],
+    "passenger": "QUENTIN DARLINGTON",
+    "pnr": "R8J92Q",
+    "pnr_id": "R8J92Q-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_165",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "No bot reply received within 300s (1 frames observed)",
+    "error_bucket": "other"
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 376.0,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "b6144ab34acd",
+    "started": "2026-07-17T14:49:01Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_TC_165",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "Opening the conversation and stating my purpose - filing a compensation claim for a delayed flight.",
+      "role": "customer",
+      "text": "Hi, I'd like to file a claim for compensation for my delayed flight.",
+      "ts": "2026-07-17T14:50:13Z"
+    },
+    {
+      "note": "error",
+      "role": "assistant",
+      "text": "[ChatbotError] No bot reply received within 300s (1 frames observed)",
+      "ts": "2026-07-17T14:55:14Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION",
+        "expected": "ELIGIBLE",
+        "name": "Decision matches expected ELIGIBLE",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Amount matches expected CAD 400.0",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot failed to respond due to a technical error (timeout after 300 seconds). Since no bot reply was received, the chatbot never reached a determination on the passenger's eligibility or compensation amount. The expected outcome was ELIGIBLE with CAD 400.0 compensation for PNR R8J92Q under the APPR regime, but the bot provided no outcome at all. This is a complete system failure that prevented any assessment of the claim."
+  }
+}

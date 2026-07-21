@@ -1,0 +1,66 @@
+<style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
+  a { color: #6db3ff; }
+}
+</style><h1>Preseed — brove · int · fd · 2026-07-17</h1><div class="stat">2 cases · 2 seeded</div><p>To run a case in the chatbot: enter its <b>PNR</b> + <b>Last name</b>; the OTP goes to the <b>OTP email</b>.</p><table><thead><tr><th>Test Case</th><th>PNR</th><th>Passenger</th><th>Last name</th><th>Ticket</th><th>Flight date</th><th>Route</th><th>SystemCode</th><th>OTP email</th><th>Gate</th></tr></thead><tbody><tr><td>FD_TC_035</td><td>J6EESB</td><td>BEATRIX HARTWELL</td><td>HARTWELL</td><td>0149010305200</td><td>2026-07-10</td><td>YUL-YYZ</td><td>FD-APPR-NE-01</td><td>lahiru@ae-qa1-aircanada.mailinator.com</td><td class="pass">all-pass</td></tr><tr><td>FD_TC_121</td><td>RF9EEF</td><td>LINNEA RUTHERGLEN</td><td>RUTHERGLEN</td><td>0149010305201</td><td>2026-07-10</td><td>YYZ-TLV</td><td>FD-ASL-NE-01</td><td>lahiru@ae-qa1-aircanada.mailinator.com</td><td class="pass">all-pass</td></tr></tbody></table>

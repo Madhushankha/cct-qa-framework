@@ -1,0 +1,242 @@
+{
+  "auth": {
+    "contact_id": "8b9012e8-00e7-4a9c-8538-968e46931eb3",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "EDGE-ID-01",
+    "flags": [],
+    "passenger": "KENJI VANEINGHAM",
+    "pnr": "VNNOOV",
+    "pnr_id": "VNNOOV-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_ED_TC_01",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 241.3,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "6747b082656f",
+    "started": "2026-07-17T04:02:20Z"
+  },
+  "scenario_id": "brove.int.fd.FD_ED_TC_01",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T04:02:34Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T04:02:35Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T04:03:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T04:03:49Z"
+    },
+    {
+      "note": "Starting the compensation claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation",
+      "ts": "2026-07-17T04:03:55Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T04:04:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T04:04:05Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T04:04:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T04:04:19Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T04:04:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T04:04:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T04:04:20Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T04:04:26Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you please provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T04:04:32Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Kenji Vaneingham",
+      "ts": "2026-07-17T04:04:38Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Kenji**! Could you please share your **booking reference number**?",
+      "ts": "2026-07-17T04:04:44Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "VNNOOV",
+      "ts": "2026-07-17T04:04:49Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n\n- **First name:** Kenji\n- **Last name:** Vaneingham\n- **Booking reference:** VNNOOV\n\nIs that all correct?",
+      "ts": "2026-07-17T04:04:55Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T04:05:00Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7I couldn't find a booking matching that information.",
+      "ts": "2026-07-17T04:05:13Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.",
+      "ts": "2026-07-17T04:05:13Z"
+    },
+    {
+      "note": "Re-confirming the PNR and last name, maybe there's a system issue",
+      "role": "customer",
+      "text": "Let me try again - the booking reference is VNNOOV and the last name is Vaneingham",
+      "ts": "2026-07-17T04:05:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7I couldn't find a booking matching that information.",
+      "ts": "2026-07-17T04:05:44Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.",
+      "ts": "2026-07-17T04:05:45Z"
+    },
+    {
+      "note": "System can't find my booking even though I have the correct details - asking for human assistance",
+      "role": "customer",
+      "text": "I'm sure those details are correct. Is there a technical issue? Can I speak to someone who can help?",
+      "ts": "2026-07-17T04:05:53Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'm sorry for the frustration \u2014 I understand how concerning it is when things don't match up. Since you've explicitly asked to speak with someone, I'll connect you right away.\n\nI'll connect you with a live Air Canada agent. In the meantime, you can also reach our team directly at **1-888-247-2262** (open **24/7**).\n\nThank you for your patience, Kenji \u2014 I hope we can get this sorted for you quickly.",
+      "ts": "2026-07-17T04:06:02Z"
+    },
+    {
+      "note": "Assistant has handed off to a live agent - this is a final outcome (not eligible to proceed via bot, escalated to human)",
+      "role": "customer",
+      "text": "Thank you",
+      "ts": "2026-07-17T04:06:09Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "You're welcome \u2014 take care, and I hope your claim is resolved smoothly! \ud83d\ude0a",
+      "ts": "2026-07-17T04:06:15Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "ESCALATED",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "EDGE-ID-01",
+        "name": "System Code",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      }
+    ],
+    "decision": "ESCALATED",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot was expected to determine the passenger ELIGIBLE with system code EDGE-ID-01 and award CAD 400.0 compensation. However, the bot encountered a technical issue where it could not find the booking despite the customer providing correct information (PNR: VNNOOV, Name: Kenji Vaneingham). After two failed lookup attempts, the customer requested human assistance and the bot escalated to a live agent. The bot never reached an eligibility determination, never quoted any compensation amount, and never provided a system code. This is a system failure case where the bot could not complete its intended function."
+  }
+}

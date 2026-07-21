@@ -1,0 +1,18 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_035",
+   "locator": "J6EESB",
+   "pnr_id": "J6EESB-2026-07-10",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD_TC_121",
+   "locator": "RF9EEF",
+   "pnr_id": "RF9EEF-2026-07-10",
+   "gate": "all-pass"
+  }
+ ],
+ "skipped": []
+}

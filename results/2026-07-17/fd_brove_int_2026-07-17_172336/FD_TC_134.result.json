@@ -1,0 +1,293 @@
+{
+  "auth": {
+    "contact_id": "8df1b8d2-4446-4955-83c9-f133ea9af2b9",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "NOT_ELIGIBLE",
+    "expected_system_code": "FD-ASL-NE-20",
+    "flags": [],
+    "passenger": "ANNIKA ASHCOMBE",
+    "pnr": "SHE9J8",
+    "pnr_id": "SHE9J8-2026-07-10",
+    "regime": "ASL",
+    "test_case": "FD_TC_134",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 312.0,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "d773ace4d165",
+    "started": "2026-07-17T12:52:54Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_134",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T12:53:01Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T12:53:01Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T12:54:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T12:54:26Z"
+    },
+    {
+      "note": "Starting the compensation claim process",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation",
+      "ts": "2026-07-17T12:54:32Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T12:54:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T12:54:45Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T12:54:51Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T12:55:00Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T12:55:00Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T12:55:00Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T12:55:01Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T12:55:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you \u2014 could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T12:55:13Z"
+    },
+    {
+      "note": "Providing my full name as on the booking",
+      "role": "customer",
+      "text": "Annika Ashcombe",
+      "ts": "2026-07-17T12:55:19Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Annika**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, and can be found in your booking confirmation email.",
+      "ts": "2026-07-17T12:55:24Z"
+    },
+    {
+      "note": "Providing the PNR booking reference",
+      "role": "customer",
+      "text": "SHE9J8",
+      "ts": "2026-07-17T12:55:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n\n- **First name:** Annika\n- **Last name:** Ashcombe\n- **Booking reference:** SHE9J8\n\nIs that all correct?",
+      "ts": "2026-07-17T12:55:36Z"
+    },
+    {
+      "note": "Confirming the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T12:55:42Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T12:56:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:56:06Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:56:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T12:56:20Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "253045",
+      "ts": "2026-07-17T12:56:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T12:56:46Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T12:56:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 TLV \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T12:56:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:56:47Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:56:54Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T12:57:05Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Other",
+      "role": "customer",
+      "text": "Other",
+      "ts": "2026-07-17T12:57:11Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Could you let me know which **specific country** your reimbursement would be deposited in?",
+      "ts": "2026-07-17T12:57:18Z"
+    },
+    {
+      "note": "Providing my country of residence as instructed",
+      "role": "customer",
+      "text": "Israel",
+      "ts": "2026-07-17T12:57:24Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've reviewed the details of your flight. I understand your flight on **Jul 15, 2026** was delayed by **4h**. However, you're not eligible for compensation for this flight. After a full review, the reason is: Your flight was disrupted.\n\nWe sincerely apologize for the inconvenience and appreciate your understanding.",
+      "ts": "2026-07-17T12:57:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T12:57:37Z"
+    },
+    {
+      "note": "Assistant has given a final decision (not eligible) but the reasoning is nonsensical. Challenging the decision.",
+      "role": "customer",
+      "text": "Wait, that doesn't make sense. You said my flight was delayed by 4 hours but I'm not eligible because my flight was disrupted? That's circular reasoning. Can you explain why I'm not eligible?",
+      "ts": "2026-07-17T12:57:44Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I completely understand why that sounds confusing, and I'm sorry for the lack of clarity.\n\nHere's what determines eligibility for compensation:\n\n- **Delay length** is one factor, but it's not the only one. The **reason for the disruption** matters just as much.\n- If the delay was caused by something **outside Air Canada's control** \u2014 such as weather, air traffic control, a security issue, or a safety-related situation \u2014 compensation under our policy may not apply, even if the delay was 4 hours or more.\n- Compensation is available when the disruption is **within Air Canada's control** and **not required for safety reasons**.\n\nIf you believe the reason recorded for your delay is incorrect, or you'd like to **dispute the determination**, I can look into next steps for you.\n\nWould you like to proceed with a dispute, or is there anything else I can clarify?",
+      "ts": "2026-07-17T12:58:00Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NOT_ELIGIBLE",
+        "expected": "NOT_ELIGIBLE",
+        "name": "Decision Status",
+        "pass": true
+      },
+      {
+        "actual": "none",
+        "expected": "n/a",
+        "name": "Compensation Amount",
+        "pass": true
+      },
+      {
+        "actual": "true",
+        "expected": "true",
+        "name": "Reached Final Determination",
+        "pass": true
+      }
+    ],
+    "decision": "NOT_ELIGIBLE",
+    "matches_expected": true,
+    "reached_determination": true,
+    "reasoning": "The chatbot successfully completed the claim assessment process for passenger Annika Ashcombe (PNR SHE9J8) and reached a final determination of NOT_ELIGIBLE, which matches the expected outcome. The bot verified the passenger's identity, confirmed the flight details (AC8002, YYZ\u2192TLV, Jul 10/15, 2026, delayed 4 hours), and determined that despite the 4-hour delay, the passenger is not eligible for compensation. While the initial explanation was somewhat circular and confusing, the bot did provide a determination. No compensation amount was quoted, which is correct for a NOT_ELIGIBLE decision. The system code FD-ASL-NE-20 aligns with an ASL (Air Passenger Protection Regulations) regime NOT_ELIGIBLE determination. All key criteria match the expected verdict."
+  }
+}

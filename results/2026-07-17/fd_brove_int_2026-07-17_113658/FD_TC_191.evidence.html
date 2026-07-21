@@ -1,0 +1,101 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>FD_TC_191 — SVEN RAVENSCAR</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>FD_TC_191 <span class="badge fail">FAIL</span> <a class="dl" download href="FD_TC_191.evidence.html">&#11015; download</a></h1>
+<table class="meta">
+<tr><td>PNR</td><td>UXZJND</td><td>Passenger</td><td>SVEN RAVENSCAR</td></tr>
+<tr><td>Regime</td><td>APPR</td><td>ContactId</td><td class="mono">143c44bd-5c1b-48dc-9604-ca0f370a89b9</td></tr>
+<tr><td>Expected</td><td>ELIGIBLE · FD-APPR-EL-400 · CAD 400.0</td><td>Actual (bot)</td><td>NO_DETERMINATION · —</td></tr>
+<tr><td>OTP fetched</td><td>no</td><td>Scenario</td><td class="mono">brove.int.fd.FD_TC_191</td></tr>
+</table>
+<h2>Verdict</h2>
+<p>The expected outcome was for the bot to determine ELIGIBLE status with system code FD-APPR-EL-400 and amount CAD 400.0 for PNR UXZJND. However, the customer provided a different booking reference (ABC123) instead of UXZJND. More critically, the bot never performed any eligibility assessment or quoted any compensation amount. Instead, it simply collected information for a third-party claim submission and forwarded it for manual review (reference CCD-1008226-OA7MS4), stating a team member would respond within 30 days. The bot did not reach any determination about eligibility or compensation, so this fails all three checks.</p>
+<table><tr><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr><tr><td>Decision Status</td><td>ELIGIBLE</td><td>NO_DETERMINATION</td><td class="fail">FAIL</td></tr><tr><td>System Code</td><td>FD-APPR-EL-400</td><td>none provided</td><td class="fail">FAIL</td></tr><tr><td>Amount</td><td>CAD 400.0</td><td>none</td><td class="fail">FAIL</td></tr></table>
+<h2>Seed checkpoint vector</h2>
+<table><tr><th>Seed checkpoint</th><th>Result</th></tr><tr><td colspan=2>no checkpoints</td></tr></table>
+<h2>DDS determination (proof)</h2>
+<p>No DDS determination recorded for this case.</p>
+<h2>Chat history</h2>
+<div class="chat"><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:08:06Z</span> <span class="ts">· greeting</span></div><div class="bubble">Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?
+
+Bonjour! Je serai votre assistante virtuelle aujourd&#x27;hui. Je peux vous aider en français ou en anglais. Quelle langue préférez-vous utiliser aujourd&#x27;hui ?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:08:06Z</span> <span class="ts">· greeting</span></div><div class="opts"><span class="chip">English</span><span class="chip">Français</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:09:12Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;English</span></div><div class="bubble">English</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:09:18Z</span></div><div class="bubble">How can I help you today?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:09:24Z</span> <span class="ts">· Starting the claim process for flight delay</span></div><div class="bubble">I need to file a claim for a delayed flight</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:09:31Z</span></div><div class="bubble">Before we look at your booking — <b>are you the passenger who experienced the disruption</b>, or are you filing on behalf of someone else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:09:32Z</span></div><div class="opts"><span class="chip">I&#x27;m the passenger</span><span class="chip">Filing on behalf of someone else</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:09:37Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Filing on behalf of </span></div><div class="bubble">Filing on behalf of someone else</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:09:53Z</span></div><div class="bubble">To help us direct you correctly, could you tell me your relationship to the passenger?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:09:54Z</span></div><div class="opts"><span class="chip">Claims company</span><span class="chip">Travel Agency</span><span class="chip">A parent / guardian / caregiver / legal tutor / insurer or FI</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:09:59Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;A parent / guardian </span></div><div class="bubble">A parent / guardian / caregiver / legal tutor / insurer or FI</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:09Z</span></div><div class="bubble">Thanks — to forward your claim I&#x27;ll need all of the following, so you can send them together:
+
+- The <b>ticket number</b>, <b>booking reference</b>, and <b>full passenger name(s)</b>
+- <b>Flight details</b> — origin, destination, flight number, and flight date
+- Any <b>additional passengers</b> on the claim
+- The passenger&#x27;s <b>contact information</b> and <b>your email address</b> for correspondence
+- <b>Your country of residence</b>
+
+You&#x27;ll also need to upload a <b>Power of Attorney or Notice of Authorization</b> for the claim to be actioned.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:09Z</span></div><div class="banner">Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:10:17Z</span> <span class="ts">· Providing all required information for the claim</span></div><div class="bubble">The passenger is Sven Ravenscar, booking reference ABC123, ticket number 0142857654321, flight AC100 from Toronto to London on March 15th. The flight was delayed 5 hours. Passenger email is sven.ravenscar@email.com, phone is 416-555-0199. My email is filing.person@email.com. Country of residence is Canada.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:28Z</span></div><div class="bubble">Thanks for all of that — almost everything is in order! I just need one more detail:
+
+- <b>Your full name</b> (the person filing the claim)
+
+Also, please don&#x27;t forget to upload your <b>Power of Attorney</b> or <b>Notice of Authorization</b> using the upload box above if you haven&#x27;t already.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:29Z</span></div><div class="banner">Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:10:35Z</span> <span class="ts">· Providing my name and confirming document upload</span></div><div class="bubble">My name is John Smith and I&#x27;ve uploaded the authorization document</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:51Z</span></div><div class="bubble">Your claim has been submitted! You should hear from a team member within 30 days.
+
+Your reference is <b>CCD-1008226-OA7MS4</b>.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:51Z</span></div><div class="banner">Please note that an ID verification process will be required if you are deemed eligible for payment.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:10:51Z</span></div><div class="bubble">Is there anything else I can help you with?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T07:10:57Z</span> <span class="ts">· Claim has been submitted with reference number, marking conversation as complete</span></div><div class="bubble">No, that&#x27;s all. Thank you!</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T07:11:01Z</span></div><div class="banner">FEEDBACK</div></div></div>
+</body></html>

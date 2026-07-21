@@ -1,0 +1,29 @@
+{
+  "locator": "ZZFDBE",
+  "pnr_id": "ZZFDBE-2026-07-09",
+  "ticket": "0149018124701",
+  "tickets": [
+    "0149018124701"
+  ],
+  "leg_id": "AC#8003#YUL#2026-07-09",
+  "carrier": "AC",
+  "flight": 8003,
+  "route": "YUL-CDG",
+  "date": "2026-07-09",
+  "surname": "HABERMANN",
+  "first": "LEO",
+  "pax": "ADT",
+  "party": [
+    "LEO HABERMANN (ADT)"
+  ],
+  "ssr": null,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "fdm_spec": "420m/43 x1",
+  "expected": "CAD 700 cash",
+  "covers_sits": [
+    "FD-SIT-003",
+    "FD-SIT-004",
+    "FD-SIT-007"
+  ],
+  "cloned_from": "FDAP69"
+}

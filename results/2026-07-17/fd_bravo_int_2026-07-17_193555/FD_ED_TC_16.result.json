@@ -1,0 +1,188 @@
+{
+  "auth": {
+    "contact_id": "8ccc3aa4-2611-4a9d-baec-235997d01e89",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "EDGE-PAX-03",
+    "flags": [],
+    "passenger": "BEATRIX PRENDERGAST",
+    "pnr": "T94YYZ",
+    "pnr_id": "T94YYZ-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_ED_TC_16",
+    "third_party": true
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 173.8,
+    "env": "int",
+    "feed": "fd",
+    "product": "bravo",
+    "run_id": "180a94ab5675",
+    "started": "2026-07-17T14:55:44Z"
+  },
+  "scenario_id": "bravo.int.fd.FD_ED_TC_16",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T14:55:50Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T14:55:51Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T14:56:57Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T14:57:10Z"
+    },
+    {
+      "note": "Indicating I'm filing on behalf of another passenger (Beatrix Prendergast)",
+      "role": "customer",
+      "text": "I need to file a claim for someone else",
+      "ts": "2026-07-17T14:57:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To help us direct you correctly, could you tell me your relationship to the passenger?",
+      "ts": "2026-07-17T14:57:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Claims company \u2022 Travel Agency \u2022 A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:57:21Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->A parent / guardian ",
+      "role": "customer",
+      "text": "A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T14:57:26Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks \u2014 to forward your claim I'll need all of the following, so you can send them together:\n\n- The **ticket number**, **booking reference**, and **full passenger name(s)**\n- **Flight details** \u2014 origin, destination, flight number, and flight date\n- Any **additional passengers** on the claim\n- The passenger's **contact information** and **your email address** for correspondence\n- **Your country of residence**\n\nYou'll also need to upload a **Power of Attorney or Notice of Authorization** for the claim to be actioned.",
+      "ts": "2026-07-17T14:57:40Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:57:40Z"
+    },
+    {
+      "note": "Providing the passenger name to start the claim process",
+      "role": "customer",
+      "text": "Okay, I have all the information ready. The passenger name is Beatrix Prendergast.",
+      "ts": "2026-07-17T14:57:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks for that. I have **Beatrix Prendergast** as the passenger name.\n\nTo complete the submission, I still need:\n\n- **Your full name** (as the claimant)\n- **Your email address**\n- **Your country of residence**\n- **Booking reference** (6-character code)\n- **Ticket number** (13-digit number starting with **014**)\n- **Origin and destination**\n- **Flight number**\n- **Flight date**\n\nAnd don't forget to upload your **Power of Attorney or Notice of Authorization** using the upload box above whenever you're ready.",
+      "ts": "2026-07-17T14:57:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T14:57:56Z"
+    },
+    {
+      "note": "Providing all required information for the claim",
+      "role": "customer",
+      "text": "My name is John Smith, email john.smith@email.com, I'm from Canada. Booking reference is ABC123, ticket number is 0141234567890. The flight was AC100 from Toronto to London on March 15, 2024.",
+      "ts": "2026-07-17T14:58:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your claim has been submitted! You should hear from a team member within 30 days.\n\nYour reference is **CCD-1009029-O3F0XX**.",
+      "ts": "2026-07-17T14:58:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-17T14:58:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T14:58:23Z"
+    },
+    {
+      "note": "Claim has been successfully submitted with reference number CCD-1009029-O3F0XX. This is a final outcome - claim submitted and reference provided.",
+      "role": "customer",
+      "text": "No, that's all. Thank you!",
+      "ts": "2026-07-17T14:58:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T14:58:31Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION - claim submitted for review, no eligibility decision rendered",
+        "expected": "ELIGIBLE",
+        "name": "Eligibility Decision",
+        "pass": false
+      },
+      {
+        "actual": "none - no amount quoted",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      },
+      {
+        "actual": "Beatrix Prendergast",
+        "expected": "BEATRIX PRENDERGAST",
+        "name": "Passenger Name",
+        "pass": true
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was for the bot to determine ELIGIBLE status and quote CAD 400.0 for passenger Beatrix Prendergast under APPR regime with system code EDGE-PAX-03. However, the chatbot only accepted the claim submission and generated a reference number, stating the claimant would hear from a team member within 30 days. The bot never assessed eligibility or provided any compensation amount. It merely forwarded the claim for manual review. This is a clear mismatch - the bot should have evaluated the claim immediately and rendered an ELIGIBLE determination with CAD 400 compensation, but instead it deferred to human review without making any determination."
+  }
+}

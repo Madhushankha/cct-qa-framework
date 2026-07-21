@@ -1,0 +1,20 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_001",
+   "locator": "MHGQHS",
+   "pnr_id": "MHGQHS-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_002",
+   "locator": "MPGPAW",
+   "pnr_id": "MPGPAW-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  }
+ ],
+ "skipped": []
+}

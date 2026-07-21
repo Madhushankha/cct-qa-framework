@@ -1,0 +1,77 @@
+[
+ {
+  "area": "trip_active",
+  "pass": true,
+  "detail": "trip.status=ACTIVE"
+ },
+ {
+  "area": "trip_details",
+  "pass": true,
+  "detail": "trip row present"
+ },
+ {
+  "area": "passenger",
+  "pass": true,
+  "detail": "trip.last_name=ASHCOMBE expected=ASHCOMBE"
+ },
+ {
+  "area": "dob",
+  "pass": true,
+  "detail": "date_of_birth=1986-04-23"
+ },
+ {
+  "area": "ticket",
+  "pass": true,
+  "detail": "ticket row present"
+ },
+ {
+  "area": "eds_pnr_output",
+  "pass": true,
+  "detail": "booking present in eds_pnr_output"
+ },
+ {
+  "area": "eds_contact_email",
+  "pass": true,
+  "detail": "contact=['lahiru@ae-qa1-aircanada.mailinator.com'] expected=lahiru@ae-qa1-aircanada.mailinator.com"
+ },
+ {
+  "area": "group_context",
+  "pass": null,
+  "detail": "not verifiable by this auditor"
+ },
+ {
+  "area": "dds_endpoint_systemcode_match",
+  "pass": true,
+  "detail": "systemCode=FD-APPR-NE-02 expected=FD-APPR-NE-02"
+ },
+ {
+  "area": "dds_amount_match",
+  "pass": false,
+  "detail": "amount=None expected=0.0"
+ },
+ {
+  "area": "ne_nd_reason_text",
+  "pass": true,
+  "detail": "reason present"
+ },
+ {
+  "area": "ac_wallet_loyalty",
+  "pass": null,
+  "detail": "not verifiable by this auditor"
+ },
+ {
+  "area": "passenger_count",
+  "pass": true,
+  "detail": "1 passenger(s)"
+ },
+ {
+  "area": "pending_flight_le_72h",
+  "pass": null,
+  "detail": "not verifiable by this auditor"
+ },
+ {
+  "area": "name_uniqueness",
+  "pass": true,
+  "detail": "trip.last_name=ASHCOMBE expected=ASHCOMBE"
+ }
+]

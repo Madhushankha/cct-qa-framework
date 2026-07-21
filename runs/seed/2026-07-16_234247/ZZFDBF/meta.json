@@ -1,0 +1,28 @@
+{
+  "locator": "ZZFDBF",
+  "pnr_id": "ZZFDBF-2026-07-09",
+  "ticket": "0149018124702",
+  "tickets": [
+    "0149018124702"
+  ],
+  "leg_id": "AC#8004#YVR#2026-07-09",
+  "carrier": "AC",
+  "flight": 8004,
+  "route": "YVR-NRT",
+  "date": "2026-07-09",
+  "surname": "FIORENTINO",
+  "first": "NORA",
+  "pax": "ADT",
+  "party": [
+    "NORA FIORENTINO (ADT)"
+  ],
+  "ssr": null,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "fdm_spec": "600m/43 x1",
+  "expected": "CAD 1000 cash",
+  "covers_sits": [
+    "FD-SIT-005",
+    "FD-SIT-006"
+  ],
+  "cloned_from": "FDAP9P"
+}

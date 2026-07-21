@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DELAY leg AC#8002#YYZ#2026-07-10 code 43 240min -->
+<env:envelope xmlns:env="http://www.lsb.de/apc/ops/Envelope" xmlns:fld="http://www.lsb.de/apc/customer/aca/flightDetail">
+  <sender>FDM-OPS</sender>
+  <receiver>MessageBroker</receiver>
+  <created>2026-07-10T07:00:00Z</created>
+  <messages>
+    <fld:flightDetail>
+      <identifier>
+        <flight><fnCarrier>AC</fnCarrier><fnNumber>8204</fnNumber></flight>
+        <dayOfOrigin>2026-07-10</dayOfOrigin>
+      </identifier>
+      <leg modified="UPD">
+        <state modified="UPD">ETD</state>
+        <callSign>ACA8204</callSign>
+        <schedule>
+          <departureAirport>YYZ</departureAirport>
+          <departure>2026-07-10T08:00:00Z</departure>
+          <arrivalAirport>LHR</arrivalAirport>
+          <arrival>2026-07-10T11:00:00Z</arrival>
+          <serviceType>J</serviceType>
+          <aircraftOwner>AC</aircraftOwner>
+          <aircraftSubtype>320</aircraftSubtype>
+          <aircraftConfiguration>J16Y120P01</aircraftConfiguration>
+          <rotationIdentifier><registration>AC8204</registration></rotationIdentifier>
+          <employerCabin>AC</employerCabin>
+          <employerCockpit>AC</employerCockpit>
+          <seats><seatsF>16</seatsF><seatsC>0</seatsC><seatsY>120</seatsY></seats>
+        </schedule>
+        <actuals><estimatedTimeDeparture modified="NEW">2026-07-10T12:00:00Z</estimatedTimeDeparture><estimatedTimeArrival modified="NEW">2026-07-10T15:00:00Z</estimatedTimeArrival><delay modified="NEW"><delayCode>43</delayCode><delayTime>240</delayTime><subDelayCode>00</subDelayCode></delay></actuals>
+        <misc><depStand>D</depStand><depGate>15</depGate><arrGate>25</arrGate><arrStand>C15</arrStand></misc>
+        <lastUpdate><userId>TS099991</userId><timestamp>2026-07-10T07:00:00Z</timestamp></lastUpdate>
+      </leg>
+    </fld:flightDetail>
+  </messages>
+</env:envelope>

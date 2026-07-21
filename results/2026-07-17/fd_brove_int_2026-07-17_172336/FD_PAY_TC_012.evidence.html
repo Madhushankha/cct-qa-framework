@@ -1,0 +1,110 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>FD_PAY_TC_012 — DELPHINE UNDERCOTT</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>FD_PAY_TC_012 <span class="badge pass">PASS</span> <a class="dl" download href="FD_PAY_TC_012.evidence.html">&#11015; download</a></h1>
+<table class="meta">
+<tr><td>PNR</td><td>AXGFFS</td><td>Passenger</td><td>DELPHINE UNDERCOTT</td></tr>
+<tr><td>Regime</td><td>APPR</td><td>ContactId</td><td class="mono">f07e1085-7d86-4ca8-a62e-cd3876296986</td></tr>
+<tr><td>Expected</td><td>ELIGIBLE · FD-PAY-BSM-FR-01 · CAD 400.0</td><td>Actual (bot)</td><td>ELIGIBLE · CAD 400.0</td></tr>
+<tr><td>OTP fetched</td><td>yes</td><td>Scenario</td><td class="mono">brove.int.fd.FD_PAY_TC_012</td></tr>
+</table>
+<h2>Verdict</h2>
+<p>The chatbot successfully completed the entire claim process and reached a final determination. All key parameters match the expected outcome: PNR AXGFFS, passenger Delphine Undercott, decision ELIGIBLE, amount CAD 400, and regime APPR (Canada&#x27;s Air Passenger Protection Regulations). The bot properly verified identity, assessed the 4-hour delay, quoted the correct compensation amount, obtained payment details, and submitted the claim with a case reference number. This is a complete match with the expected test case FD_PAY_TC_012.</p>
+<table><tr><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr><tr><td>PNR Match</td><td>AXGFFS</td><td>AXGFFS</td><td class="pass">PASS</td></tr><tr><td>Passenger Name Match</td><td>DELPHINE UNDERCOTT</td><td>Delphine Undercott</td><td class="pass">PASS</td></tr><tr><td>Decision Match</td><td>ELIGIBLE</td><td>ELIGIBLE</td><td class="pass">PASS</td></tr><tr><td>Amount Match</td><td>CAD 400.0</td><td>CAD 400.00</td><td class="pass">PASS</td></tr><tr><td>Regime Match</td><td>APPR</td><td>APPR (Canada&#x27;s Air Passenger Protection Regulations)</td><td class="pass">PASS</td></tr></table>
+<h2>Seed checkpoint vector</h2>
+<table><tr><th>Seed checkpoint</th><th>Result</th></tr><tr><td colspan=2>no checkpoints</td></tr></table>
+<h2>DDS determination (proof)</h2>
+<p>No DDS determination recorded for this case.</p>
+<h2>Chat history</h2>
+<div class="chat"><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:54:07Z</span> <span class="ts">· greeting</span></div><div class="bubble">Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?
+
+Bonjour! Je serai votre assistante virtuelle aujourd&#x27;hui. Je peux vous aider en français ou en anglais. Quelle langue préférez-vous utiliser aujourd&#x27;hui ?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:54:07Z</span> <span class="ts">· greeting</span></div><div class="opts"><span class="chip">English</span><span class="chip">Français</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:55:12Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;English</span></div><div class="bubble">English</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:19Z</span></div><div class="bubble">How can I help you today?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:55:25Z</span> <span class="ts">· Starting the compensation claim process for my delayed flight</span></div><div class="bubble">Hi, I had a flight delay and I&#x27;d like to file a claim for compensation</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:34Z</span></div><div class="bubble">Before we look at your booking — <b>are you the passenger who experienced the disruption</b>, or are you filing on behalf of someone else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:34Z</span></div><div class="opts"><span class="chip">I&#x27;m the passenger</span><span class="chip">Filing on behalf of someone else</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:55:39Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;I&#x27;m the passenger</span></div><div class="bubble">I&#x27;m the passenger</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:52Z</span></div><div class="bubble">No problem — I can help you create a claim for your disrupted flight and check if you&#x27;re eligible for compensation.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:52Z</span></div><div class="banner">Please note that the assessment and decision regarding your request will be made through an automated decision-making process.
+
+To file your claim, you&#x27;ll need your booking reference, the name associated to the booking and any receipts you&#x27;d like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you&#x27;d like the funds deposited.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:53Z</span></div><div class="bubble">Would you like to get started?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:55:53Z</span></div><div class="opts"><span class="chip">Yes, let&#x27;s go</span><span class="chip">Not right now</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:55:58Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, let&#x27;s go</span></div><div class="bubble">Yes, let&#x27;s go</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:56:04Z</span></div><div class="bubble">To get started, I&#x27;ll need a little info to identify you. Could you provide your <b>full name exactly as it appears on your ticket</b>, including any middle names?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:56:09Z</span> <span class="ts">· Providing my full name as it appears on the booking</span></div><div class="bubble">Delphine Undercott</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:56:15Z</span></div><div class="bubble">Thanks, <b>Delphine</b>! Could you please share your <b>booking reference number</b>? It&#x27;s a 6-character code made up of letters and/or numbers, found in your booking confirmation email.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:56:21Z</span> <span class="ts">· Providing my booking reference (PNR)</span></div><div class="bubble">AXGFFS</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:56:26Z</span></div><div class="bubble">Just to confirm:
+
+- <b>First name:</b> Delphine
+- <b>Last name:</b> Undercott
+- <b>Booking reference:</b> AXGFFS
+
+Is that all correct?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:56:32Z</span> <span class="ts">· Confirming the booking details are correct</span></div><div class="bubble">Yes, that&#x27;s correct</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:56:54Z</span></div><div class="bubble">To keep your account secure and assist you further, I&#x27;ll need to verify your identity. I&#x27;ll send a one-time verification code to your email on file (l<b>*</b>@a<b>*</b>.com). Shall I go ahead?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:56:55Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:57:00Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="bubble">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:57:27Z</span></div><div class="bubble">I&#x27;ve sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven&#x27;t received a code, please wait 1 minute before requesting a new one.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:57:36Z</span> <span class="ts">· otp</span></div><div class="bubble">••••••</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:07Z</span></div><div class="banner">Your identity has been verified.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:08Z</span></div><div class="bubble">Can you confirm that this is the trip you&#x27;re claiming for?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:08Z</span></div><div class="flightcard">YYZ → LHR · Fri, Jul 10 · AC8002 · 08:00→11:00 · nonstop</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:08Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:58:13Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="bubble">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:22Z</span></div><div class="opts"><span class="chip">Canada</span><span class="chip">United States</span><span class="chip">Other</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:58:28Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Canada</span></div><div class="bubble">Canada</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:38Z</span></div><div class="bubble">I&#x27;ve checked your flight details, and it looks like your flight on <b>Jul 15, 2026</b> was delayed by about <b>4h</b>.
+
+Based on <b>Canada&#x27;s Air Passenger Protection Regulations</b>, you may be eligible for compensation for this disruption. I&#x27;ll guide you through the next steps to get your claim submitted and processed as quickly as possible.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:38Z</span></div><div class="bubble">You are entitled to receive a <b>400.00 CAD</b> compensation. Please note that it will take 5 to 10 business days to process payment. Would you like to proceed?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:38Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No, dispute</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:58:44Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="bubble">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:53Z</span></div><div class="bubble">Your payment will be made through <b>Interac e-transfer</b>.
+
+Before we move forward, please confirm the email address where you&#x27;d like to receive your payment and all updates about this case.
+
+Would you like to use <b>lahiru@ae-qa1-aircanada.mailinator.com</b>? Please note that only one email address can be used for this compensation and it <b>can&#x27;t be changed once confirmed</b>.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:58:53Z</span></div><div class="opts"><span class="chip">Yes, use this email</span><span class="chip">Use a different email</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:58:59Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, use this email</span></div><div class="bubble">Yes, use this email</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:22Z</span></div><div class="banner">Before we process your payment, we just need to quickly verify your identity. Please complete this secure verification: https://withpersona.com/verify?code=HAocRe-JR3TW5H</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:22Z</span></div><div class="bubble">It only takes a minute — just let me know once you&#x27;re done.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:59:28Z</span> <span class="ts">· Simulating completion of identity verification</span></div><div class="bubble">Done, I&#x27;ve completed the verification</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:35Z</span></div><div class="banner">You have been successfully verified.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:35Z</span></div><div class="bubble">Please review your compensation details:
+
+- <b>Deposit amount:</b> 400.00 CAD
+- <b>Payment method:</b> lahiru@ae-qa1-aircanada.mailinator.com
+
+After submission, you will receive a confirmation email summarizing your eligibility, claim details, and next steps that will also include the password required to access the secure payment link, which will be sent in a separate email.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:36Z</span></div><div class="banner">Please note that payment details cannot be changed after submission.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:36Z</span></div><div class="bubble">Would you like me to submit your claim?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:36Z</span></div><div class="opts"><span class="chip">Yes, submit my claim</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:59:41Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, submit my claim</span></div><div class="bubble">Yes, submit my claim</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:53Z</span></div><div class="bubble">Thank you. Your claim has been submitted and will now be processed within the next 15 days.
+
+- <b>Case reference:</b> CCD-1008658-DS6QXF
+
+Please check your email for a confirmation email summarizing your claim details, followed by a second email that will include the secure link where you&#x27;ll provide your information.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:53Z</span></div><div class="banner">Claim submission successful!</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T11:59:53Z</span></div><div class="bubble">Is there anything else I can help you with?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T11:59:59Z</span> <span class="ts">· Claim successfully submitted with $400 CAD compensation approved. Case reference CCD-1008658-DS6QXF provided. This is the final outcome.</span></div><div class="bubble">No, that&#x27;s all. Thank you!</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:00:09Z</span></div><div class="banner">FEEDBACK</div></div></div>
+</body></html>

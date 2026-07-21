@@ -1,0 +1,206 @@
+{
+  "auth": {
+    "contact_id": "dfbc1763-475b-4944-a40d-d875d8e83cac",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "EDGE-PAX-03",
+    "flags": [],
+    "passenger": "INGRID THISTLEWOOD",
+    "pnr": "KM5J22",
+    "pnr_id": "KM5J22-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_ED_TC_16",
+    "third_party": true
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 249.5,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "11933237fc28",
+    "started": "2026-07-17T05:30:04Z"
+  },
+  "scenario_id": "brove.int.fd.FD_ED_TC_16",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T05:30:12Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T05:30:12Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T05:31:18Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T05:31:36Z"
+    },
+    {
+      "note": "Indicating I'm filing on behalf of another passenger (Ingrid Thistlewood)",
+      "role": "customer",
+      "text": "I need to file a claim for someone else",
+      "ts": "2026-07-17T05:31:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To help us direct you correctly, could you tell me your relationship to the passenger?",
+      "ts": "2026-07-17T05:31:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Claims company \u2022 Travel Agency \u2022 A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T05:31:49Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->A parent / guardian ",
+      "role": "customer",
+      "text": "A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T05:31:54Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks \u2014 to forward your claim I'll need all of the following, so you can send them together:\n\n- The **ticket number**, **booking reference**, and **full passenger name(s)**\n- **Flight details** \u2014 origin, destination, flight number, and flight date\n- Any **additional passengers** on the claim\n- The passenger's **contact information** and **your email address** for correspondence\n- **Your country of residence**\n\nYou'll also need to upload a **Power of Attorney or Notice of Authorization** for the claim to be actioned.",
+      "ts": "2026-07-17T05:32:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T05:32:07Z"
+    },
+    {
+      "note": "Providing the passenger name to start the claim process",
+      "role": "customer",
+      "text": "Okay, I have all the information ready. The passenger name is Ingrid Thistlewood.",
+      "ts": "2026-07-17T05:32:13Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thank you for that. I still need a few more details to complete the handoff:\n\n- **Ticket number**\n- **Booking reference**\n- **Flight origin and destination**\n- **Flight number**\n- **Flight date**\n- **Your email address**\n- **Your country of residence**\n\nPlease also make sure to upload the **Power of Attorney or Notice of Authorization** using the upload box above if you haven't already.",
+      "ts": "2026-07-17T05:32:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T05:32:29Z"
+    },
+    {
+      "note": "Providing all the required flight and contact details",
+      "role": "customer",
+      "text": "Ticket number is 0142536789012, booking reference ABC123, flight from Toronto to London, flight AC850 on March 15, 2024. My email is helper@email.com and I'm in Canada.",
+      "ts": "2026-07-17T05:32:36Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thank you \u2014 almost there! I just need one more thing:\n\n- **Your full name** (as the parent/guardian/caregiver filing this claim)\n\nAlso, please make sure the **Power of Attorney or Notice of Authorization** has been uploaded using the upload box above.",
+      "ts": "2026-07-17T05:33:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T05:33:07Z"
+    },
+    {
+      "note": "Providing my name and confirming the authorization document upload",
+      "role": "customer",
+      "text": "My name is John Smith and I've uploaded the authorization document.",
+      "ts": "2026-07-17T05:33:13Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your claim has been submitted! You should hear from a team member within 30 days.\n\nYour reference is **CCD-1007985-3CFAXG**.",
+      "ts": "2026-07-17T05:33:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-17T05:33:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T05:33:30Z"
+    },
+    {
+      "note": "Claim has been successfully submitted with reference number. Conversation complete.",
+      "role": "customer",
+      "text": "No, that's all. Thank you!",
+      "ts": "2026-07-17T05:33:36Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T05:34:06Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION (escalated to human review)",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none provided",
+        "expected": "EDGE-PAX-03",
+        "name": "System Code",
+        "pass": false
+      },
+      {
+        "actual": "none quoted",
+        "expected": "CAD 400.0",
+        "name": "Compensation Amount",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was for the bot to determine ELIGIBLE status with system code EDGE-PAX-03 and quote CAD 400.0 compensation for PNR KM5J22 / passenger Ingrid Thistlewood. However, the chatbot followed a third-party claim submission workflow instead of performing an automated eligibility assessment. The bot collected information and escalated the claim to human review (reference CCD-1007985-3CFAXG) with a 30-day response time, without making any determination about eligibility, system code, or compensation amount. This represents a complete mismatch with the expected automated determination outcome."
+  }
+}

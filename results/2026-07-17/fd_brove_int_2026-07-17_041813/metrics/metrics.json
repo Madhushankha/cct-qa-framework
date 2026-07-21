@@ -1,0 +1,6817 @@
+{
+ "agent": "brove",
+ "cases": [
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 276.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "ID",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-ID-01",
+   "test_id": "FD_ED_TC_01",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 284.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "ID",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-ID-02",
+   "test_id": "FD_ED_TC_02",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 265.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "ID",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-ID-03",
+   "test_id": "FD_ED_TC_03",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "04",
+   "duration_s": 265.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "ID",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-ID-04",
+   "test_id": "FD_ED_TC_04",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 278.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "AUTH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-AUTH-01",
+   "test_id": "FD_ED_TC_05",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 286.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "AUTH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-AUTH-02",
+   "test_id": "FD_ED_TC_06",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 280.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "AUTH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-AUTH-03",
+   "test_id": "FD_ED_TC_07",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "04",
+   "duration_s": 259.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "AUTH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-AUTH-04",
+   "test_id": "FD_ED_TC_08",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "05",
+   "duration_s": 264.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "AUTH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-AUTH-05",
+   "test_id": "FD_ED_TC_09",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 274.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "INTENT",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-INTENT-01",
+   "test_id": "FD_ED_TC_10",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 294.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "INTENT",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-INTENT-02",
+   "test_id": "FD_ED_TC_11",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 265.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "INTENT",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-INTENT-03",
+   "test_id": "FD_ED_TC_12",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 274.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-PAY-03",
+   "test_id": "FD_ED_TC_13",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 273.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "PAX",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-PAX-01",
+   "test_id": "FD_ED_TC_14",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 294.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "PAX",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-PAX-02",
+   "test_id": "FD_ED_TC_15",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 286.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "PAX",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-PAX-03",
+   "test_id": "FD_ED_TC_16",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "04",
+   "duration_s": 276.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "PAX",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-PAX-04",
+   "test_id": "FD_ED_TC_17",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 258.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "DASH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-DASH-01",
+   "test_id": "FD_ED_TC_18",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 263.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "DASH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-DASH-02",
+   "test_id": "FD_ED_TC_19",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "03",
+   "duration_s": 290.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "DASH",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-DASH-03",
+   "test_id": "FD_ED_TC_20",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 274.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "SYS",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-SYS-01",
+   "test_id": "FD_ED_TC_21",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 265.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "SYS",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-SYS-02",
+   "test_id": "FD_ED_TC_22",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 251.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "CHANNEL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-CHANNEL-01",
+   "test_id": "FD_ED_TC_23",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 273.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "CHANNEL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-CHANNEL-02",
+   "test_id": "FD_ED_TC_24",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 263.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "EMPATHY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-EMPATHY-01",
+   "test_id": "FD_ED_TC_25",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "02",
+   "duration_s": 257.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "EMPATHY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-EMPATHY-02",
+   "test_id": "FD_ED_TC_26",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "01",
+   "duration_s": 271.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "ED",
+   "overall_pass": false,
+   "regime": "REPORT",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "EDGE-REPORT-01",
+   "test_id": "FD_ED_TC_27",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 263.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_001",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "CHQ",
+   "duration_s": 284.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-CHQ",
+   "test_id": "FD_PAY_TC_002",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "CHQ",
+   "duration_s": 270.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-CHQ",
+   "test_id": "FD_PAY_TC_003",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 285.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_004",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 266.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_005",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EFT",
+   "duration_s": 278.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-EFT",
+   "test_id": "FD_PAY_TC_006",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EFT",
+   "duration_s": 263.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-EFT",
+   "test_id": "FD_PAY_TC_007",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "MBP",
+   "duration_s": 259.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-MBP",
+   "test_id": "FD_PAY_TC_008",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "CHQ",
+   "duration_s": 272.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-CHQ",
+   "test_id": "FD_PAY_TC_009",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 294.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_010",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 276.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_011",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "BSM",
+   "duration_s": 261.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "PAY",
+   "overall_pass": false,
+   "regime": "PAY",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-PAY-BSM",
+   "test_id": "FD_PAY_TC_012",
+   "trajectory_score": 0.3333
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 337.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_001",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 337.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_002",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 341.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_003",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 317.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_004",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 318.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_005",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 346.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_006",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 332.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_007",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 330.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_008",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 339.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_009",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 337.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_010",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 325.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_011",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 329.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_012",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 267.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_013",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 323.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_014",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 335.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_015",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 330.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_016",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 342.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_017",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 363.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_018",
+   "trajectory_score": 0.4286
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 294.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_019",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 276.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_020",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 334.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_021",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 323.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_022",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 309.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_023",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 351.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_024",
+   "trajectory_score": 0.4286
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 350.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_025",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 332.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_026",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 305.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_027",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 346.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_028",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 318.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_029",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 700.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 345.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_030",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 312.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_031",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 314.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_032",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 264.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_033",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 323.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_034",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 298.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_035",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 257.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_036",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 265.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_037",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 271.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_038",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 258.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_039",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 278.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_040",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 277.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_041",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 258.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_042",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 262.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_043",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 264.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_044",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 272.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_045",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 268.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_046",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 289.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_047",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 273.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_048",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 282.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_049",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 275.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_050",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 300.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_051",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 265.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_052",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 299.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_053",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 293.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_054",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 277.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_055",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 287.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_056",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 275.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_057",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 267.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_058",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 281.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_059",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "PE",
+   "duration_s": 359.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "PENDING",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-PE",
+   "test_id": "FD_TC_060",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 264.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_061",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 267.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_062",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "UNKNOWN",
+   "duration_s": 254.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "TRAVEL REJECTION)",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "N/A (Pre-Travel Rejection)",
+   "test_id": "FD_TC_063",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 266.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_064",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 277.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-ND",
+   "test_id": "FD_TC_065",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "CAD 486.98",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 357.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_066",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 973.97",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 350.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_067",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 486.98",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 379.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_068",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 368.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_069",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 364.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_070",
+   "trajectory_score": 0.4286
+  },
+  {
+   "actual_amount": "CAD 973.97",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 363.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_071",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 486.98",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 358.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_072",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 973.97",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 352.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_073",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 646.83",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 373.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_074",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 646.83",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 372.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_075",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 356.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_076",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 646.83",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 341.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_077",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 485.12",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 372.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_078",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 377.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_079",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 367.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_080",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 371.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_081",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 362.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_082",
+   "trajectory_score": 0.4286
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "PENDING",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 361.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_083",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 485.12",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 359.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_084",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 379.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_085",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 973.97",
+   "actual_status": "PENDING",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 401.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_086",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 297.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_087",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 381.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_088",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 973.97",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 385.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_089",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 380.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_090",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "PENDING",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 380.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_091",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 974.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 363.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_092",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 377.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "EU",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_093",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 344.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-EL",
+   "test_id": "FD_TC_094",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 280.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_095",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 290.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_096",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 277.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_097",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 273.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_098",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 272.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_099",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 286.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_100",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 292.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_101",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 277.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_102",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 276.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_103",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 285.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_104",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 288.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_105",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 272.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_106",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 284.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_107",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 296.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_108",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 279.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_109",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 276.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_110",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 294.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_111",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 321.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-NE",
+   "test_id": "FD_TC_112",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 302.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-ND",
+   "test_id": "FD_TC_113",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 295.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-ND",
+   "test_id": "FD_TC_114",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 274.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-ND",
+   "test_id": "FD_TC_115",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "PE",
+   "duration_s": 254.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "PENDING",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "EU",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-EU-PE",
+   "test_id": "FD_TC_116",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "CAD 1754.72",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 396.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-EL",
+   "test_id": "FD_TC_117",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1754.72",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 393.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-EL",
+   "test_id": "FD_TC_118",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1754.72",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 382.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-EL",
+   "test_id": "FD_TC_119",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1754.72",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 371.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-EL",
+   "test_id": "FD_TC_120",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 300.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_121",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 286.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_122",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 346.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_123",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 304.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_124",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 276.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_125",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 311.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_126",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 281.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_127",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 268.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_128",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 278.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_129",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 277.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_130",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 277.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_131",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 293.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_132",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 298.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_133",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 304.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_134",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 284.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_135",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 278.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_136",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 306.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_137",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 299.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-NE",
+   "test_id": "FD_TC_138",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 297.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_139",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 305.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_140",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 272.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_141",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 280.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_142",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 307.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_143",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 351.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-ND",
+   "test_id": "FD_TC_144",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "PE",
+   "duration_s": 319.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "PENDING",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "ASL",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-ASL-PE",
+   "test_id": "FD_TC_145",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 320.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-EL",
+   "test_id": "FD_TC_146",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 317.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-EL",
+   "test_id": "FD_TC_147",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 970.25",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 329.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-EL",
+   "test_id": "FD_TC_148",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 311.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-EL",
+   "test_id": "FD_TC_149",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 262.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-NE",
+   "test_id": "FD_TC_150",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 267.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-NE",
+   "test_id": "FD_TC_151",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "ND",
+   "duration_s": 282.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NO_DETERMINATION",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "MIXED",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-MIXED-ND",
+   "test_id": "FD_TC_152",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 265.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "DUP",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-DUP-NE",
+   "test_id": "FD_TC_153",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 265.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "DUP",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-DUP-NE",
+   "test_id": "FD_TC_154",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 283.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_155",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 281.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_156",
+   "trajectory_score": 0.3636
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 289.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_157",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 280.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_158",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 257.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_159",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 334.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_160",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 314.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_161",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 277.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_162",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 336.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_163",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 700.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 317.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_164",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 344.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_165",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 342.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_166",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 319.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_167",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 322.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_168",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 317.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_169",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 335.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_170",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 352.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_171",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 351.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_172",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 326.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_173",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 318.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_174",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 366.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_175",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 343.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_176",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 321.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_177",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 327.8,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_178",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 332.9,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_179",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 263.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_180",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "ESCALATED",
+   "anomalies": [],
+   "decision_class": "NE",
+   "duration_s": 285.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "NOT_ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-NE",
+   "test_id": "FD_TC_181",
+   "trajectory_score": 0.4545
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 314.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_182",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 333.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_183",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 900.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "DB",
+   "duration_s": 310.7,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-DB",
+   "test_id": "FD_TC_184",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 311.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_185",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 344.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_186",
+   "trajectory_score": 0.2857
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 317.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_187",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 320.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_188",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 316.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_189",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "none",
+   "actual_status": "NO_DETERMINATION",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 275.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": false,
+   "regime": "APPR",
+   "rescored_pass": false,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_190",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 330.4,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_191",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 347.6,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_192",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 340.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_193",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 333.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_194",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 330.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_195",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 335.0,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_196",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 347.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_197",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 328.2,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_198",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 338.3,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_199",
+   "trajectory_score": 0.3571
+  },
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "EL",
+   "duration_s": 331.5,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "FD-APPR-EL",
+   "test_id": "FD_TC_200",
+   "trajectory_score": 0.3571
+  }
+ ],
+ "checks": {
+  "compensation_amount": {
+   "cases": 147,
+   "pass": 55,
+   "rate": 0.3741,
+   "total": 147
+  },
+  "eligibility_status": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  },
+  "other": {
+   "cases": 236,
+   "pass": 91,
+   "rate": 0.2766,
+   "total": 329
+  },
+  "passenger_name": {
+   "cases": 56,
+   "pass": 56,
+   "rate": 1.0,
+   "total": 56
+  },
+  "pnr_match": {
+   "cases": 56,
+   "pass": 56,
+   "rate": 1.0,
+   "total": 56
+  },
+  "regime": {
+   "cases": 43,
+   "pass": 43,
+   "rate": 1.0,
+   "total": 43
+  },
+  "system_code": {
+   "cases": 238,
+   "pass": 64,
+   "rate": 0.2689,
+   "total": 238
+  }
+ },
+ "confusion": {
+  "labels": [
+   "ELIGIBLE",
+   "NOT_ELIGIBLE",
+   "NO_DETERMINATION",
+   "PENDING",
+   "ESCALATED"
+  ],
+  "matrix": [
+   [
+    90,
+    0,
+    13,
+    3,
+    44
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    69
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    17
+   ],
+   [
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "env": "int",
+ "headline": {
+  "amount_accuracy": {
+   "den": 239,
+   "num": 57,
+   "rate": 0.2385
+  },
+  "clean_run_rate": {
+   "den": 239,
+   "num": 239,
+   "rate": 1.0
+  },
+  "decision_accuracy": {
+   "den": 239,
+   "num": 90,
+   "rate": 0.3766
+  },
+  "goal_success_rate": {
+   "den": 239,
+   "num": 58,
+   "rate": 0.2427
+  },
+  "intent_recognition_rate": {
+   "den": 239,
+   "num": 239,
+   "rate": 1.0
+  },
+  "judge_agreement": {
+   "den": 239,
+   "num": 234,
+   "rate": 0.9791
+  },
+  "rescored_success_rate": {
+   "den": 239,
+   "num": 57,
+   "rate": 0.2385
+  },
+  "terminal_decision_rate": {
+   "den": 239,
+   "num": 104,
+   "rate": 0.4351
+  },
+  "trajectory_match_mean": 0.3856
+ },
+ "n_cases": 239,
+ "ops": {
+  "duration_s": {
+   "mean": 307.4,
+   "p50": 298.6,
+   "p90": 362.9
+  },
+  "error_buckets": {},
+  "turns": {
+   "mean": 43.9,
+   "p50": 39,
+   "p90": 55
+  }
+ },
+ "schema_version": "1.1",
+ "slices": {
+  "decision_class": {
+   "01": {
+    "clean_run": {
+     "den": 9,
+     "num": 9,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 9,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 9,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 9,
+    "rescored_success": {
+     "den": 9,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 9,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "02": {
+    "clean_run": {
+     "den": 8,
+     "num": 8,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 8,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 8,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 8,
+    "rescored_success": {
+     "den": 8,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 8,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3482
+   },
+   "03": {
+    "clean_run": {
+     "den": 6,
+     "num": 6,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 6,
+    "rescored_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "04": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "05": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "BSM": {
+    "clean_run": {
+     "den": 6,
+     "num": 6,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 6,
+    "rescored_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "CHQ": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "DB \u2014 denied boarding": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "EFT": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "EL \u2014 should be eligible": {
+    "clean_run": {
+     "den": 109,
+     "num": 109,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 109,
+     "num": 89,
+     "rate": 0.8165
+    },
+    "goal_success": {
+     "den": 109,
+     "num": 58,
+     "rate": 0.5321
+    },
+    "n": 109,
+    "rescored_success": {
+     "den": 109,
+     "num": 57,
+     "rate": 0.5229
+    },
+    "terminal_decision": {
+     "den": 109,
+     "num": 102,
+     "rate": 0.9358
+    },
+    "trajectory_mean": 0.3519
+   },
+   "MBP": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "ND \u2014 should abstain": {
+    "clean_run": {
+     "den": 17,
+     "num": 17,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 17,
+    "rescored_success": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4492
+   },
+   "NE \u2014 should be refused": {
+    "clean_run": {
+     "den": 69,
+     "num": 69,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 69,
+    "rescored_success": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4479
+   },
+   "PE \u2014 pending claim": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "trajectory_mean": 0.4242
+   },
+   "UNKNOWN": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   }
+  },
+  "expected_status": {
+   "ELIGIBLE": {
+    "clean_run": {
+     "den": 150,
+     "num": 150,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 150,
+     "num": 90,
+     "rate": 0.6
+    },
+    "goal_success": {
+     "den": 150,
+     "num": 58,
+     "rate": 0.3867
+    },
+    "n": 150,
+    "rescored_success": {
+     "den": 150,
+     "num": 57,
+     "rate": 0.38
+    },
+    "terminal_decision": {
+     "den": 150,
+     "num": 103,
+     "rate": 0.6867
+    },
+    "trajectory_mean": 0.349
+   },
+   "NOT_ELIGIBLE": {
+    "clean_run": {
+     "den": 69,
+     "num": 69,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 69,
+    "rescored_success": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 69,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4479
+   },
+   "NO_DETERMINATION": {
+    "clean_run": {
+     "den": 17,
+     "num": 17,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 17,
+    "rescored_success": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 17,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4492
+   },
+   "PENDING": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 1,
+     "rate": 0.3333
+    },
+    "trajectory_mean": 0.4242
+   }
+  },
+  "family": {
+   "CORE": {
+    "clean_run": {
+     "den": 200,
+     "num": 200,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 200,
+     "num": 90,
+     "rate": 0.45
+    },
+    "goal_success": {
+     "den": 200,
+     "num": 58,
+     "rate": 0.29
+    },
+    "n": 200,
+    "rescored_success": {
+     "den": 200,
+     "num": 57,
+     "rate": 0.285
+    },
+    "terminal_decision": {
+     "den": 200,
+     "num": 104,
+     "rate": 0.52
+    },
+    "trajectory_mean": 0.3941
+   },
+   "ED": {
+    "clean_run": {
+     "den": 27,
+     "num": 27,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 27,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 27,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 27,
+    "rescored_success": {
+     "den": 27,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 27,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3465
+   },
+   "PAY": {
+    "clean_run": {
+     "den": 12,
+     "num": 12,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 12,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 12,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 12,
+    "rescored_success": {
+     "den": 12,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 12,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   }
+  },
+  "regime": {
+   "APPR": {
+    "clean_run": {
+     "den": 110,
+     "num": 110,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 110,
+     "num": 62,
+     "rate": 0.5636
+    },
+    "goal_success": {
+     "den": 110,
+     "num": 52,
+     "rate": 0.4727
+    },
+    "n": 110,
+    "rescored_success": {
+     "den": 110,
+     "num": 53,
+     "rate": 0.4818
+    },
+    "terminal_decision": {
+     "den": 110,
+     "num": 72,
+     "rate": 0.6545
+    },
+    "trajectory_mean": 0.3801
+   },
+   "ASL": {
+    "clean_run": {
+     "den": 29,
+     "num": 29,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 29,
+     "num": 4,
+     "rate": 0.1379
+    },
+    "goal_success": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 29,
+    "rescored_success": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 29,
+     "num": 4,
+     "rate": 0.1379
+    },
+    "trajectory_mean": 0.4411
+   },
+   "AUTH": {
+    "clean_run": {
+     "den": 5,
+     "num": 5,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 5,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 5,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 5,
+    "rescored_success": {
+     "den": 5,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 5,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3428
+   },
+   "CHANNEL": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "DASH": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "DUP": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "EMPATHY": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EU": {
+    "clean_run": {
+     "den": 51,
+     "num": 51,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 51,
+     "num": 21,
+     "rate": 0.4118
+    },
+    "goal_success": {
+     "den": 51,
+     "num": 6,
+     "rate": 0.1176
+    },
+    "n": 51,
+    "rescored_success": {
+     "den": 51,
+     "num": 4,
+     "rate": 0.0784
+    },
+    "terminal_decision": {
+     "den": 51,
+     "num": 24,
+     "rate": 0.4706
+    },
+    "trajectory_mean": 0.3952
+   },
+   "ID": {
+    "clean_run": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 4,
+    "rescored_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3214
+   },
+   "INTENT": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "MIXED": {
+    "clean_run": {
+     "den": 7,
+     "num": 7,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 7,
+     "num": 3,
+     "rate": 0.4286
+    },
+    "goal_success": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 7,
+    "rescored_success": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 7,
+     "num": 4,
+     "rate": 0.5714
+    },
+    "trajectory_mean": 0.3988
+   },
+   "PAX": {
+    "clean_run": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 4,
+    "rescored_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "PAY": {
+    "clean_run": {
+     "den": 13,
+     "num": 13,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 13,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 13,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 13,
+    "rescored_success": {
+     "den": 13,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 13,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3351
+   },
+   "REPORT": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "SYS": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3214
+   },
+   "TRAVEL REJECTION)": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   }
+  },
+  "system_code_prefix": {
+   "EDGE-AUTH-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "EDGE-AUTH-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-AUTH-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-AUTH-04": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-AUTH-05": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-CHANNEL-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-CHANNEL-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-DASH-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-DASH-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-DASH-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-EMPATHY-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-EMPATHY-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-ID-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "EDGE-ID-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "EDGE-ID-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-ID-04": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-INTENT-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-INTENT-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-INTENT-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-PAX-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-PAX-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-PAX-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-PAX-04": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-PAY-03": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-REPORT-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "EDGE-SYS-01": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "EDGE-SYS-02": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "FD-APPR-DB": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.2857
+   },
+   "FD-APPR-EL": {
+    "clean_run": {
+     "den": 72,
+     "num": 72,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 72,
+     "num": 61,
+     "rate": 0.8472
+    },
+    "goal_success": {
+     "den": 72,
+     "num": 52,
+     "rate": 0.7222
+    },
+    "n": 72,
+    "rescored_success": {
+     "den": 72,
+     "num": 53,
+     "rate": 0.7361
+    },
+    "terminal_decision": {
+     "den": 72,
+     "num": 70,
+     "rate": 0.9722
+    },
+    "trajectory_mean": 0.3482
+   },
+   "FD-APPR-ND": {
+    "clean_run": {
+     "den": 7,
+     "num": 7,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 7,
+    "rescored_success": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 7,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-APPR-NE": {
+    "clean_run": {
+     "den": 29,
+     "num": 29,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 29,
+    "rescored_success": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 29,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.442
+   },
+   "FD-APPR-PE": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-ASL-EL": {
+    "clean_run": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 4,
+    "rescored_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "FD-ASL-ND": {
+    "clean_run": {
+     "den": 6,
+     "num": 6,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 6,
+    "rescored_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-ASL-NE": {
+    "clean_run": {
+     "den": 18,
+     "num": 18,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 18,
+    "rescored_success": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-ASL-PE": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-DUP-NE": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-EU-EL": {
+    "clean_run": {
+     "den": 29,
+     "num": 29,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 29,
+     "num": 21,
+     "rate": 0.7241
+    },
+    "goal_success": {
+     "den": 29,
+     "num": 6,
+     "rate": 0.2069
+    },
+    "n": 29,
+    "rescored_success": {
+     "den": 29,
+     "num": 4,
+     "rate": 0.1379
+    },
+    "terminal_decision": {
+     "den": 29,
+     "num": 24,
+     "rate": 0.8276
+    },
+    "trajectory_mean": 0.3596
+   },
+   "FD-EU-ND": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4242
+   },
+   "FD-EU-NE": {
+    "clean_run": {
+     "den": 18,
+     "num": 18,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 18,
+    "rescored_success": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 18,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4495
+   },
+   "FD-EU-PE": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3636
+   },
+   "FD-MIXED-EL": {
+    "clean_run": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 4,
+     "num": 3,
+     "rate": 0.75
+    },
+    "goal_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 4,
+    "rescored_success": {
+     "den": 4,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 4,
+     "num": 4,
+     "rate": 1.0
+    },
+    "trajectory_mean": 0.3571
+   },
+   "FD-MIXED-ND": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-MIXED-NE": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.4545
+   },
+   "FD-PAY-BSM": {
+    "clean_run": {
+     "den": 6,
+     "num": 6,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 6,
+    "rescored_success": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 6,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "FD-PAY-CHQ": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "FD-PAY-EFT": {
+    "clean_run": {
+     "den": 2,
+     "num": 2,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 2,
+    "rescored_success": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 2,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "FD-PAY-MBP": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3333
+   },
+   "N/A (Pre-Travel Rejection)": {
+    "clean_run": {
+     "den": 1,
+     "num": 1,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "goal_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "n": 1,
+    "rescored_success": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "terminal_decision": {
+     "den": 1,
+     "num": 0,
+     "rate": 0.0
+    },
+    "trajectory_mean": 0.3571
+   }
+  }
+ },
+ "trajectory": {
+  "anomaly_rates": {},
+  "by_family": {
+   "CORE": 0.3941,
+   "ED": 0.3465,
+   "PAY": 0.3333
+  },
+  "stage_coverage": {
+   "claim_details_collection": {
+    "den": 239,
+    "num": 6,
+    "rate": 0.0251
+   },
+   "claim_submitted": {
+    "den": 239,
+    "num": 4,
+    "rate": 0.0167
+   },
+   "decision_disclosure": {
+    "den": 239,
+    "num": 239,
+    "rate": 1.0
+   },
+   "greeting": {
+    "den": 239,
+    "num": 239,
+    "rate": 1.0
+   },
+   "identity_collection": {
+    "den": 239,
+    "num": 215,
+    "rate": 0.8996
+   },
+   "identity_provided": {
+    "den": 239,
+    "num": 239,
+    "rate": 1.0
+   },
+   "intent_recognized": {
+    "den": 239,
+    "num": 239,
+    "rate": 1.0
+   },
+   "intent_stated": {
+    "den": 239,
+    "num": 239,
+    "rate": 1.0
+   },
+   "payment_method": {
+    "den": 239,
+    "num": 65,
+    "rate": 0.272
+   },
+   "terminal_outcome": {
+    "den": 239,
+    "num": 1,
+    "rate": 0.0042
+   },
+   "wrapup": {
+    "den": 239,
+    "num": 235,
+    "rate": 0.9833
+   }
+  }
+ }
+}

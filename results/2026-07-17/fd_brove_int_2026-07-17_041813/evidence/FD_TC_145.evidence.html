@@ -1,0 +1,101 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>FD_TC_145 — YANNICK FROSTENHOLT</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>FD_TC_145 <span class="badge fail">FAIL</span> <a class="dl" download href="FD_TC_145.evidence.html">&#11015; download</a></h1>
+<table class="meta">
+<tr><td>PNR</td><td>NAHSBJ</td><td>Passenger</td><td>YANNICK FROSTENHOLT</td></tr>
+<tr><td>Regime</td><td>ASL</td><td>ContactId</td><td class="mono">0a08e55b-139f-4d26-b733-2d578cc2dec4</td></tr>
+<tr><td>Expected</td><td>PENDING · FD-ASL-PE-01 · CAD 400.0</td><td>Actual (bot)</td><td>ESCALATED · —</td></tr>
+<tr><td>OTP fetched</td><td>no</td><td>Scenario</td><td class="mono">brove.int.fd.FD_TC_145</td></tr>
+</table>
+<h2>Verdict</h2>
+<p>The chatbot failed to complete the identity verification process despite the customer providing the correct PNR (NAHSBJ) and passenger name (Yannick Frostenholt) multiple times. The system repeatedly returned &quot;I couldn&#x27;t find a booking matching that information&quot; errors. The customer became frustrated and requested human assistance, which the bot granted by escalating to a live agent. Since the bot never successfully retrieved the booking, it could not assess eligibility, provide a system code, or quote the expected CAD 400 compensation amount. The expected outcome was ELIGIBLE with system code FD-ASL-PE-01 and CAD 400, but the actual outcome was ESCALATED with no determination made. This is a system failure case where the bot could not proceed past identity verification.</p>
+<table><tr><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr><tr><td>Decision Status</td><td>PENDING</td><td>ESCALATED</td><td class="fail">FAIL</td></tr><tr><td>System Code</td><td>FD-ASL-PE-01</td><td>none provided</td><td class="fail">FAIL</td></tr><tr><td>Compensation Amount</td><td>CAD 400.0</td><td>none quoted</td><td class="fail">FAIL</td></tr></table>
+<h2>Seed checkpoint vector</h2>
+<table><tr><th>Seed checkpoint</th><th>Result</th></tr><tr><td colspan=2>no checkpoints</td></tr></table>
+<h2>DDS determination (proof)</h2>
+<p>No DDS determination recorded for this case.</p>
+<h2>Chat history</h2>
+<div class="chat"><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:27:01Z</span> <span class="ts">· greeting</span></div><div class="bubble">Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?
+
+Bonjour! Je serai votre assistante virtuelle aujourd&#x27;hui. Je peux vous aider en français ou en anglais. Quelle langue préférez-vous utiliser aujourd&#x27;hui ?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:27:02Z</span> <span class="ts">· greeting</span></div><div class="opts"><span class="chip">English</span><span class="chip">Français</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:28:08Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;English</span></div><div class="bubble">English</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:15Z</span></div><div class="bubble">How can I help you today?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:28:21Z</span> <span class="ts">· Starting the claim process for my delayed flight</span></div><div class="bubble">Hi, I had a flight delay and I want to claim compensation</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:29Z</span></div><div class="bubble">Before we look at your booking — <b>are you the passenger who experienced the disruption</b>, or are you filing on behalf of someone else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:29Z</span></div><div class="opts"><span class="chip">I&#x27;m the passenger</span><span class="chip">Filing on behalf of someone else</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:28:35Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;I&#x27;m the passenger</span></div><div class="bubble">I&#x27;m the passenger</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:57Z</span></div><div class="bubble">No problem — I can help you create a claim for your disrupted flight and check if you&#x27;re eligible for compensation.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:57Z</span></div><div class="banner">Please note that the assessment and decision regarding your request will be made through an automated decision-making process.
+
+To file your claim, you&#x27;ll need your booking reference, the name associated to the booking and any receipts you&#x27;d like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you&#x27;d like the funds deposited.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:58Z</span></div><div class="bubble">Would you like to get started?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:28:58Z</span></div><div class="opts"><span class="chip">Yes, let&#x27;s go</span><span class="chip">Not right now</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:29:03Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, let&#x27;s go</span></div><div class="bubble">Yes, let&#x27;s go</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:29:20Z</span></div><div class="bubble">To get started, I&#x27;ll need a little info to identify you — could you provide your <b>full name exactly as it appears on your ticket</b>, including any middle names?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:29:25Z</span> <span class="ts">· Providing my full name as on the booking</span></div><div class="bubble">Yannick Frostenholt</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:29:35Z</span></div><div class="bubble">Thanks, <b>Yannick</b>! Could you please share your <b>booking reference number</b>? It&#x27;s a 6-character code made up of letters and/or numbers, found in your booking confirmation email.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:29:41Z</span> <span class="ts">· Providing my PNR booking reference</span></div><div class="bubble">NAHSBJ</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:29:46Z</span></div><div class="bubble">Just to confirm:
+
+- <b>First name:</b> Yannick
+- <b>Last name:</b> Frostenholt
+- <b>Booking reference:</b> NAHSBJ
+
+Is that all correct?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:29:52Z</span> <span class="ts">· Confirming the details are correct</span></div><div class="bubble">Yes, that&#x27;s correct</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:07Z</span></div><div class="banner">I couldn&#x27;t find a booking matching that information.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:08Z</span></div><div class="bubble">Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:30:13Z</span> <span class="ts">· Reconfirming the same details - maybe system issue</span></div><div class="bubble">Let me try again - the booking reference is NAHSBJ and the last name is Frostenholt</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:19Z</span></div><div class="bubble">Thank you, can you now verify and share your <b>booking reference</b> again. It should contain <b>6 letters and/or numbers</b> and can be found in your booking confirmation email.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:30:25Z</span> <span class="ts">· Providing the PNR again as requested</span></div><div class="bubble">NAHSBJ</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:37Z</span></div><div class="banner">I couldn&#x27;t find a booking matching that information.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:37Z</span></div><div class="bubble">Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:30:43Z</span> <span class="ts">· Expressing frustration with the system not finding my booking</span></div><div class="bubble">This is frustrating. The booking reference is definitely NAHSBJ and the name is Yannick Frostenholt. Can you check your system?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:30:52Z</span></div><div class="bubble">I&#x27;m sorry about that — I understand how frustrating this must be. I can see you&#x27;ve provided the same details, and I want to get this sorted for you.
+
+I still need to go through the verification steps. You&#x27;ve given me your name — <b>Yannick Frostenholt</b> — thank you. Now, could you please re-confirm your <b>booking reference</b>: a 6-character code made up of letters and/or numbers, found in your booking confirmation email or on your itinerary/receipt.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:30:58Z</span> <span class="ts">· Spelling out the PNR letter by letter to be absolutely clear</span></div><div class="bubble">N-A-H-S-B-J</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:31:05Z</span></div><div class="bubble">Ok now please share your <b>ticket number</b>: a <b>13-digit number starting with &quot;014&quot;</b> found on your passenger receipt, e-ticket itinerary, or confirmation email.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:31:11Z</span> <span class="ts">· Don&#x27;t have ticket number - asking if they can proceed without it</span></div><div class="bubble">I don&#x27;t have the ticket number with me right now. Can&#x27;t you look it up with the booking reference?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:31:28Z</span></div><div class="banner">I couldn&#x27;t find a booking matching that information.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:31:29Z</span></div><div class="bubble">Please double-check your 6-character booking reference (PNR) and the last name exactly as it appears on the booking, then share them again.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:31:35Z</span> <span class="ts">· Requesting escalation to human agent due to system issues</span></div><div class="bubble">I want to speak to a human agent. This system is not working.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:31:55Z</span></div><div class="bubble">I completely understand, Yannick — I&#x27;m sorry for the trouble. Let me connect you with a live agent right away.
+
+You&#x27;re being connected to a live agent now. In the meantime, you can also reach our team directly at <b>1-888-247-2262</b> (available <b>24/7</b>).
+
+I&#x27;m sorry we couldn&#x27;t get this resolved through the automated process — an agent will be able to help you with your compensation claim. Thank you for your patience, Yannick.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-16T23:32:00Z</span> <span class="ts">· Bot has escalated to human agent - this is a final outcome (handed to agent)</span></div><div class="bubble">Thank you</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-16T23:32:05Z</span></div><div class="bubble">Thank you, Yannick — I hope the agent gets everything sorted for you quickly. Take care! 😊</div></div></div>
+</body></html>

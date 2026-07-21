@@ -1,0 +1,76 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_001",
+   "locator": "MHGQHS",
+   "pnr_id": "MHGQHS-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_002",
+   "locator": "MPGPAW",
+   "pnr_id": "MPGPAW-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_003",
+   "locator": "ZQVXUI",
+   "pnr_id": "ZQVXUI-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_004",
+   "locator": "TEDDZN",
+   "pnr_id": "TEDDZN-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_005",
+   "locator": "HGGXZM",
+   "pnr_id": "HGGXZM-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_006",
+   "locator": "NMSLSK",
+   "pnr_id": "NMSLSK-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_007",
+   "locator": "OLRJDB",
+   "pnr_id": "OLRJDB-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_008",
+   "locator": "VDYQHO",
+   "pnr_id": "VDYQHO-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_009",
+   "locator": "RYAPIC",
+   "pnr_id": "RYAPIC-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  },
+  {
+   "case_id": "FD_TC_010",
+   "locator": "DRTYLN",
+   "pnr_id": "DRTYLN-2026-07-09",
+   "gate": "error",
+   "error": "ClientError: An error occurred (ExpiredTokenException) when calling the GetSecretValue operation: The security token included in the request is expired"
+  }
+ ],
+ "skipped": []
+}

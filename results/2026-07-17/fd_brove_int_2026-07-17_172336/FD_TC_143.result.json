@@ -1,0 +1,311 @@
+{
+  "auth": {
+    "contact_id": "6e06a7b5-e415-48ab-a8e9-4094535f76c9",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "NO_DETERMINATION",
+    "expected_system_code": "FD-ASL-ND-05",
+    "flags": [],
+    "passenger": "CAMILLE LOCKRIDGE",
+    "pnr": "S5NBZS",
+    "pnr_id": "S5NBZS-2026-07-10",
+    "regime": "ASL",
+    "test_case": "FD_TC_143",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 275.4,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "6d78b14cf660",
+    "started": "2026-07-17T12:51:11Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_143",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T12:51:20Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T12:51:20Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T12:52:27Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T12:52:33Z"
+    },
+    {
+      "note": "Starting the compensation claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation",
+      "ts": "2026-07-17T12:52:39Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T12:52:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T12:52:47Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T12:52:54Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T12:53:02Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T12:53:02Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T12:53:03Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T12:53:03Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T12:53:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T12:53:16Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Camille Lockridge",
+      "ts": "2026-07-17T12:53:22Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Camille**! Could you please share your **booking reference number**? It's a 6-character code made up of letters and/or numbers, and can be found in your booking confirmation email.",
+      "ts": "2026-07-17T12:53:27Z"
+    },
+    {
+      "note": "Providing my PNR booking reference",
+      "role": "customer",
+      "text": "S5NBZS",
+      "ts": "2026-07-17T12:53:33Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm:\n- **First name:** Camille\n- **Last name:** Lockridge\n- **Booking reference:** S5NBZS\n\nIs that all correct?",
+      "ts": "2026-07-17T12:53:39Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T12:53:44Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T12:53:57Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:53:58Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:54:04Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T12:54:12Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "324045",
+      "ts": "2026-07-17T12:54:19Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T12:54:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T12:54:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 TLV \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T12:54:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T12:54:38Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T12:54:43Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T12:54:55Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Other",
+      "role": "customer",
+      "text": "Other",
+      "ts": "2026-07-17T12:55:01Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Could you let me know which **specific country** your reimbursement will be deposited in?",
+      "ts": "2026-07-17T12:55:08Z"
+    },
+    {
+      "note": "Providing my country of residence as Israel",
+      "role": "customer",
+      "text": "Israel",
+      "ts": "2026-07-17T12:55:13Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'm sorry \u2014 I can't review this case automatically right now. Would you like me to submit it for one of our agents to review?",
+      "ts": "2026-07-17T12:55:26Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, submit for review \u2022 No thanks",
+      "ts": "2026-07-17T12:55:26Z"
+    },
+    {
+      "note": "Bot cannot handle Israel cases automatically, agreeing to submit for agent review - this is a final outcome (handed to agent)",
+      "role": "customer",
+      "text": "Yes, submit for review",
+      "ts": "2026-07-17T12:55:32Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your case has been submitted for agent review.",
+      "ts": "2026-07-17T12:55:40Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "An agent will follow up with you by email with the next steps.",
+      "ts": "2026-07-17T12:55:40Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T12:55:40Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "ESCALATED (no automated determination made)",
+        "expected": "NO_DETERMINATION",
+        "name": "Decision type matches expected NO_DETERMINATION",
+        "pass": true
+      },
+      {
+        "actual": "none",
+        "expected": "n/a",
+        "name": "Amount quoted",
+        "pass": true
+      },
+      {
+        "actual": "Process started under ASL but escalated before determination",
+        "expected": "ASL regime",
+        "name": "Regime ASL applied",
+        "pass": true
+      },
+      {
+        "actual": "Escalated due to country restriction (Israel) - consistent with ND-05 scenario",
+        "expected": "FD-ASL-ND-05",
+        "name": "System code FD-ASL-ND-05",
+        "pass": true
+      }
+    ],
+    "decision": "ESCALATED",
+    "matches_expected": true,
+    "reached_determination": false,
+    "reasoning": "The expected outcome is NO_DETERMINATION with system code FD-ASL-ND-05. The chatbot did not make an automated determination of eligibility or ineligibility. Instead, when the passenger indicated Israel as the country for reimbursement deposit, the bot stated it could not review the case automatically and escalated to an agent. This is consistent with NO_DETERMINATION because the bot never reached a final eligibility decision. The ESCALATED status means no automated determination was made, which aligns with the expected NO_DETERMINATION outcome. The system code FD-ASL-ND-05 appears to relate to cases where certain country restrictions prevent automated processing. No compensation amount was quoted, matching the expected \"n/a\"."
+  }
+}

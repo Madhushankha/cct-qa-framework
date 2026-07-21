@@ -1,0 +1,126 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>FD_TC_038 — RONAN WESTENRA</title><style>
+:root { color-scheme: light dark; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; margin: 24px; max-width: 1100px;
+  color: #1a2330; background: #fafbfc;
+}
+h1 { margin: 0 0 10px; font-size: 22px; }
+h2 { font-size: 15px; margin: 20px 0 6px; color: #0b3d6b; }
+a { color: #0b5cad; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; }
+td, th { border: 1px solid #dde3ea; padding: 6px 9px; font-size: 12.5px; text-align: left; vertical-align: top; }
+th { background: #0b3d6b; color: #fff; }
+.meta td:nth-child(odd) { background: #f0f4f8; font-weight: 600; width: 14%; }
+.badge { display: inline-block; padding: 2px 12px; border-radius: 14px; color: #fff; font-weight: 700; font-size: 12px; }
+.pass { color: #1b7e34; font-weight: 700; }
+.fail { color: #b00020; font-weight: 700; }
+.badge.pass { background: #1b7e34; color: #fff; }
+.badge.fail { background: #b00020; color: #fff; }
+.dl { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+      font-size: 11px; font-weight: 600; text-decoration: none; vertical-align: middle; margin-left: 8px; }
+/* ── chat UI: aligned message bubbles (bot left / customer right) ── */
+.chat { display: flex; flex-direction: column; gap: 12px; border: 1px solid #e3e8ee;
+        border-radius: 12px; padding: 16px; background: #f6f8fb; max-height: 720px; overflow: auto; }
+.turn { display: flex; flex-direction: column; max-width: 76%; }
+.turn.bot { align-self: flex-start; align-items: flex-start; }
+.turn.customer { align-self: flex-end; align-items: flex-end; }
+.turn .who { font-size: 10.5px; color: #8a97a8; font-weight: 600; margin: 0 6px 3px; }
+.turn .ts { color: #aab4c2; font-weight: 400; }
+.bubble { padding: 8px 12px; border-radius: 16px; font-size: 12.5px; line-height: 1.45;
+          white-space: pre-wrap; word-wrap: break-word; box-shadow: 0 1px 1.5px rgba(20,40,70,.06); }
+.turn.bot .bubble { background: #fff; border: 1px solid #e3e8ee; color: #1a2330; border-bottom-left-radius: 4px; }
+.turn.customer .bubble { background: #0b5cad; color: #fff; border-bottom-right-radius: 4px; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 2px 0; }
+.turn.customer .opts { justify-content: flex-end; }
+.chip { display: inline-block; border: 1px solid #b9c6d6; border-radius: 14px; padding: 2px 11px;
+        font-size: 11px; background: #eef3f8; color: #34506e; }
+.banner { background: #fff8e6; border: 1px solid #f0d98a; border-radius: 10px; padding: 7px 11px;
+          font-size: 11.5px; margin-top: 5px; color: #6b5600; max-width: 100%; }
+.flightcard { background: #eef4fb; border: 1px solid #9db8d6; border-radius: 10px; padding: 8px 12px;
+              font-size: 12.5px; font-weight: 600; margin-top: 5px; color: #1a3a5c;
+              display: inline-flex; align-items: center; gap: 8px; }
+.flightcard::before { content: "✈"; font-size: 14px; }
+.kpi { display: inline-block; background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 7px 12px; margin: 3px 6px 3px 0; }
+.kpi b { font-size: 17px; display: block; color: #0b3d6b; }
+.issue { background: #fff; border: 1px solid #dde3ea; border-left: 5px solid #b00020; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+.issue h2 { margin: 0 0 8px; color: #1a2330; }
+.cnt { background: #b00020; color: #fff; font-weight: 700; border-radius: 20px; padding: 2px 10px; font-size: 13px; margin-left: 8px; }
+code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14181f; color: #dfe6ee; }
+  th { background: #14304d; }
+  td, th { border-color: #2a323d; }
+  .meta td:nth-child(odd) { background: #1c222c; }
+  .chat { border-color: #2a323d; }
+  .turn.customer .text { background: #1c2c3d; }
+  .turn.bot .text { background: #1c3322; }
+  .kpi, .issue { background: #1c222c; border-color: #2a323d; }
+  .chat { background: #12161c; border-color: #2a323d; }
+  .turn.bot .bubble { background: #1c222c; border-color: #2a323d; color: #dfe6ee; }
+  .turn.customer .bubble { background: #2563a8; color: #fff; }
+  .chip { background: #1c2530; border-color: #33475e; color: #a9c4e0; }
+  .banner { background: #2a2410; border-color: #5a4d1c; color: #d8c78a; }
+  .flightcard { background: #16283c; border-color: #33475e; color: #a9c4e0; }
+  a { color: #6db3ff; }
+}
+</style></head>
+<body>
+<h1>FD_TC_038 <span class="badge pass">PASS</span> <a class="dl" download href="FD_TC_038.evidence.html">&#11015; download</a></h1>
+<table class="meta">
+<tr><td>PNR</td><td>CF2DTH</td><td>Passenger</td><td>RONAN WESTENRA</td></tr>
+<tr><td>Regime</td><td>APPR</td><td>ContactId</td><td class="mono">b9d48c8a-129a-43e3-80ed-814b7bd9cac0</td></tr>
+<tr><td>Expected</td><td>NOT_ELIGIBLE · FD-APPR-NE-06 · —</td><td>Actual (bot)</td><td>NOT_ELIGIBLE · —</td></tr>
+<tr><td>OTP fetched</td><td>yes</td><td>Scenario</td><td class="mono">brove.int.fd.FD_TC_038</td></tr>
+</table>
+<h2>Verdict</h2>
+<p>The chatbot successfully reached a determination on the claim. It assessed the passenger&#x27;s flight delay and explicitly stated &quot;you&#x27;re not eligible for compensation for this flight&quot; with the reason being that the flight disruption fell outside Air Canada&#x27;s control under APPR regulations. This matches the expected outcome of NOT_ELIGIBLE with system code FD-APPR-NE-06 (which typically indicates disruptions outside airline control). No compensation amount was offered, matching the expected &quot;n/a&quot;. The bot correctly identified the passenger (Ronan Westenra), booking reference (CF2DTH), and applied APPR regime rules. Although the passenger attempted to escalate and the submission failed, the bot had already rendered its final determination of ineligibility before the escalation attempt.</p>
+<table><tr><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr><tr><td>Decision Status</td><td>NOT_ELIGIBLE</td><td>NOT_ELIGIBLE</td><td class="pass">PASS</td></tr><tr><td>Compensation Amount</td><td>n/a</td><td>none</td><td class="pass">PASS</td></tr><tr><td>PNR Match</td><td>CF2DTH</td><td>CF2DTH</td><td class="pass">PASS</td></tr><tr><td>Passenger Name Match</td><td>RONAN WESTENRA</td><td>Ronan Westenra</td><td class="pass">PASS</td></tr><tr><td>Regime</td><td>APPR</td><td>APPR</td><td class="pass">PASS</td></tr></table>
+<h2>Seed checkpoint vector</h2>
+<table><tr><th>Seed checkpoint</th><th>Result</th></tr><tr><td colspan=2>no checkpoints</td></tr></table>
+<h2>DDS determination (proof)</h2>
+<p>No DDS determination recorded for this case.</p>
+<h2>Chat history</h2>
+<div class="chat"><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:01:07Z</span> <span class="ts">· greeting</span></div><div class="bubble">Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?
+
+Bonjour! Je serai votre assistante virtuelle aujourd&#x27;hui. Je peux vous aider en français ou en anglais. Quelle langue préférez-vous utiliser aujourd&#x27;hui ?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:01:07Z</span> <span class="ts">· greeting</span></div><div class="opts"><span class="chip">English</span><span class="chip">Français</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:02:14Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;English</span></div><div class="bubble">English</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:24Z</span></div><div class="bubble">How can I help you today?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:02:29Z</span> <span class="ts">· Starting the compensation claim process for my delayed flight</span></div><div class="bubble">Hi, I had a flight delay and I&#x27;d like to file a claim for compensation</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:38Z</span></div><div class="bubble">Before we look at your booking — <b>are you the passenger who experienced the disruption</b>, or are you filing on behalf of someone else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:39Z</span></div><div class="opts"><span class="chip">I&#x27;m the passenger</span><span class="chip">Filing on behalf of someone else</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:02:44Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;I&#x27;m the passenger</span></div><div class="bubble">I&#x27;m the passenger</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:52Z</span></div><div class="bubble">No problem — I can help you create a claim for your disrupted flight and check if you&#x27;re eligible for compensation.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:52Z</span></div><div class="banner">Please note that the assessment and decision regarding your request will be made through an automated decision-making process.
+
+To file your claim, you&#x27;ll need your booking reference, the name associated to the booking and any receipts you&#x27;d like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you&#x27;d like the funds deposited.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:53Z</span></div><div class="bubble">Would you like to get started?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:02:53Z</span></div><div class="opts"><span class="chip">Yes, let&#x27;s go</span><span class="chip">Not right now</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:02:59Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, let&#x27;s go</span></div><div class="bubble">Yes, let&#x27;s go</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:03:05Z</span></div><div class="bubble">I can definitely help with that. To start, I&#x27;ll just need some information to identify you — could you provide your <b>full name</b> exactly as it appears on your ticket, including any middle names?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:03:10Z</span> <span class="ts">· Providing my full name as it appears on the booking</span></div><div class="bubble">Ronan Westenra</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:03:17Z</span></div><div class="bubble">Thanks, <b>Ronan</b>! Could you please share your <b>booking reference number</b>? It&#x27;s a 6-character code made up of letters and/or numbers, found in your booking confirmation email or on your itinerary.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:03:22Z</span> <span class="ts">· Providing my booking reference/PNR</span></div><div class="bubble">CF2DTH</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:03:29Z</span></div><div class="bubble">Just to confirm: <b>first name</b> Ronan, <b>last name</b> Westenra, <b>booking reference</b> CF2DTH — is that all correct?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:03:36Z</span> <span class="ts">· Confirming all the details are correct</span></div><div class="bubble">Yes, that&#x27;s correct</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:03:53Z</span></div><div class="bubble">To keep your account secure and assist you further, I&#x27;ll need to verify your identity. I&#x27;ll send a one-time verification code to your email on file (l<b>*</b>@a<b>*</b>.com). Shall I go ahead?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:03:54Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:03:59Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="bubble">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:12Z</span></div><div class="bubble">I&#x27;ve sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven&#x27;t received a code, please wait 1 minute before requesting a new one.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:04:18Z</span> <span class="ts">· otp</span></div><div class="bubble">••••••</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:40Z</span></div><div class="banner">Your identity has been verified.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:40Z</span></div><div class="bubble">Can you confirm that this is the trip you&#x27;re claiming for?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:41Z</span></div><div class="flightcard">YUL → YYZ · Fri, Jul 10 · AC8002 · 08:00→11:00 · nonstop</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:41Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:04:47Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes</span></div><div class="bubble">Yes</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:04:56Z</span></div><div class="opts"><span class="chip">Canada</span><span class="chip">United States</span><span class="chip">Other</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:05:01Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Canada</span></div><div class="bubble">Canada</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:05:27Z</span></div><div class="bubble">I&#x27;ve reviewed the details of your flight. I understand your flight on <b>Jul 15, 2026</b> was delayed by <b>4h</b>. However, you&#x27;re not eligible for compensation for this flight. After a full review, the reason is: Your flight was disrupted.
+
+We sincerely apologize for the inconvenience and appreciate your understanding.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:05:28Z</span></div><div class="bubble">Is there anything else I can help you with?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:05:33Z</span> <span class="ts">· Challenging the decision - the explanation is circular and doesn&#x27;t make sense</span></div><div class="bubble">Wait, that doesn&#x27;t make sense. Why am I not eligible? The flight was delayed by 4 hours!</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:05:44Z</span></div><div class="bubble">I completely understand your frustration, Ronan — a 4-hour delay is significant. Let me explain.
+
+Under <b>Air Canada&#x27;s Air Passenger Protection Regulations (APPR)</b>, compensation eligibility depends on a few key factors:
+
+- <b>Cause of the delay</b> — if the disruption was caused by something outside Air Canada&#x27;s control (such as severe weather, air traffic control restrictions, or a safety issue), compensation may not apply.
+- <b>Flight type</b> — the route and whether it falls under Canadian jurisdiction affects eligibility.
+- <b>Notification timing</b> — whether you were notified of the delay more than <b>14 days</b> before departure can also affect eligibility.
+
+Based on the details of your booking, your delay falls into a category that does not qualify for compensation under APPR.
+
+If you believe this assessment is incorrect, here are your options:
+
+1. <b>Request a formal review</b> through Air Canada&#x27;s customer relations team.
+2. <b>File a complaint</b> with the <b>Canadian Transportation Agency (CTA)</b>, which independently reviews APPR claims.
+
+Would you like help with anything else, Ronan?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:05:49Z</span> <span class="ts">· Asking for specific reason for the delay to understand the decision</span></div><div class="bubble">Can you tell me specifically what the reason was for my delay? Was it weather or something else?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:05:58Z</span></div><div class="bubble">Happy to help look into your flight! <b>What&#x27;s your flight number?</b> (For example, <b>AC123</b> — if you just have digits, that&#x27;s fine too.)</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:06:04Z</span> <span class="ts">· Reminding the bot it already has this information from earlier in the conversation</span></div><div class="bubble">AC8002 - you already showed me that flight earlier</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:06:26Z</span></div><div class="bubble">I don&#x27;t see a previous result for AC8002 in our current chat, but no worries — let me pull it up now.
+
+Good news — <b>AC8002</b> (Ottawa → Montréal, today) is actually showing as <b>Early</b>, not delayed. It departed at <b>6:05 AM</b> and arrived at <b>6:30 AM</b> — 20 minutes ahead of schedule.
+
+There&#x27;s no delay recorded for this flight, and no disruption reason is available because none was logged.
+
+Is it possible you&#x27;re thinking of a different flight or date? I&#x27;m happy to check another one for you.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:06:33Z</span> <span class="ts">· Clarifying that I&#x27;m asking about the specific flight from my claim that was just denied</span></div><div class="bubble">No, I&#x27;m talking about the flight on July 10 from YUL to YYZ that you just assessed for my claim. You said it was delayed 4 hours and denied my compensation.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:06:45Z</span></div><div class="bubble">I&#x27;m sorry about that — I want to make sure we get this looked at properly for you.
+
+To pull up your claim and escalate the dispute, I&#x27;ll need a couple of details:
+
+- Your <b>full name</b> (exactly as it appears on your ticket)
+- Your <b>booking reference</b> (6-character code from your confirmation email)
+
+Could you share those?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:06:52Z</span> <span class="ts">· Expressing frustration that the bot is asking for information I already provided and seems to have lost context</span></div><div class="bubble">I already gave you that information! Ronan Westenra, booking reference CF2DTH. This is getting frustrating.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:03Z</span></div><div class="bubble">I understand your frustration Ronan. Based on our review, this flight&#x27;s delay was determined to be outside Air Canada&#x27;s control under the applicable regulations. You can learn more about our compensation policy here: https://www.aircanada.com/compensation-policy</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:03Z</span></div><div class="bubble">Is there anything else I can help you with today?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:04Z</span></div><div class="opts"><span class="chip">Yes</span><span class="chip">No</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:07:10Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes - I want to esca</span></div><div class="bubble">Yes - I want to escalate this to a human agent. The system gave me a nonsensical reason and now can&#x27;t even tell me what caused the delay.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:19Z</span></div><div class="bubble">Before I send your claim to manual review, please confirm the email address where you&#x27;d like to receive further information related to your claim. Would you like to use <b>l\*\*\*\*\*@a\*\*\*\*\*.com</b>?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:19Z</span></div><div class="opts"><span class="chip">Yes, confirm this email</span><span class="chip">Use a different email</span></div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:07:24Z</span> <span class="ts">· widget:QUICK_REPLIES-&gt;Yes, confirm this em</span></div><div class="bubble">Yes, confirm this email</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:31Z</span></div><div class="bubble">To route you to the right support team, can you please share your <b>country of residence</b>?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:07:37Z</span> <span class="ts">· Providing country again, expressing frustration at being asked repeatedly</span></div><div class="bubble">Canada - I already told you that too!</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:47Z</span></div><div class="bubble">Please share any additional relevant information to help me process your claim, and upload any supporting documents (boarding pass, receipts, confirmation email).</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:07:48Z</span></div><div class="banner">Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:07:54Z</span> <span class="ts">· Providing additional context for manual review</span></div><div class="bubble">My flight AC8002 from YUL to YYZ on July 10 was delayed by 4 hours. I was not notified in advance. I believe I am entitled to compensation under APPR and would like a human to review this decision.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:08:13Z</span></div><div class="banner">I couldn&#x27;t forward this to our team just now — please try again in a little while.</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:08:20Z</span> <span class="ts">· Asking for reference number since escalation failed</span></div><div class="bubble">This is unacceptable. Can you provide me with a reference number for my claim or any way to follow up on this?</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:08:29Z</span></div><div class="bubble">I completely understand your frustration, and I&#x27;m sorry — because the submission didn&#x27;t go through successfully, <b>no case number was generated</b> for me to share with you.
+
+Here&#x27;s what I&#x27;d recommend for following up:
+
+- <b>Call us at 1-888-247-2262</b> (open 24/7) and reference your <b>booking reference CF2DTH</b> — our agents can locate your account and dispute details directly
+- Have your <b>flight number AC8002</b> and <b>travel date July 10</b> on hand when you call
+
+Again, I&#x27;m truly sorry this didn&#x27;t go more smoothly. Is there anything else I can help you with?</div></div><div class="turn customer"><div class="who">👤 Customer <span class="ts">2026-07-17T12:08:35Z</span> <span class="ts">· Ending conversation - claim was denied with unclear reasoning, escalation failed, directed to call customer service. This is a final outcome (not eligible, must pursue through other channels).</span></div><div class="bubble">No, I&#x27;ll call the number. Thank you.</div></div><div class="turn bot"><div class="who">🤖 Ask AC <span class="ts">2026-07-17T12:08:42Z</span></div><div class="bubble">Is there anything else I can help you with?</div></div></div>
+</body></html>

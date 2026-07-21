@@ -9,10 +9,6 @@ dist/
 *.token
 secrets.local.*
 
-# generated run artifacts (seed fixtures + execution results) — not source
-results/
-runs/
-
 # local Claude Code config (may hold env secrets) + scratch
 .claude/
 scratch_titles.txt

@@ -1,0 +1,537 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_001",
+   "locator": "MHGQHS",
+   "pnr_id": "MHGQHS-2026-07-09",
+   "gate": "seeded"
+  },
+  {
+   "case_id": "FD_TC_002",
+   "locator": "MPGPAW",
+   "pnr_id": "MPGPAW-2026-07-09",
+   "gate": "seeded"
+  },
+  {
+   "case_id": "FD_TC_003",
+   "locator": "ZQVXUI",
+   "pnr_id": "ZQVXUI-2026-07-09",
+   "gate": "seeded"
+  }
+ ],
+ "skipped": [
+  {
+   "case_id": "FD_TC_035",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_036",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_037",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_038",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_039",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_040",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_041",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_042",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_043",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_044",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_045",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_046",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_047",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_048",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_049",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_050",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_051",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_052",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_053",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_054",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_055",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_056",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_057",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_058",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_059",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_060",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_061",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_062",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_064",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_065",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_066",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_067",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_068",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_069",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_070",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_071",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_072",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_073",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_074",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_075",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_076",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_077",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_078",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_079",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_080",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_081",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_082",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_083",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_084",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_085",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_086",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_087",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_088",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_089",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_090",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_091",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_092",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_093",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_094",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_095",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_096",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_097",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_098",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_099",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_100",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_101",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_102",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_103",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_104",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_105",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_106",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_107",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_108",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_109",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_110",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_111",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_112",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_113",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_114",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_115",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_116",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_117",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_118",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_119",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_120",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_121",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_122",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_123",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_124",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_125",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_126",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_127",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_128",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_129",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_130",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_131",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_132",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_133",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_134",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_135",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_136",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_137",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_138",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_139",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_140",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_141",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_142",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_143",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_144",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_145",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_146",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_147",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_148",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_149",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_150",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_151",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_152",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_153",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_154",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_155",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_156",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_157",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_158",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_159",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_180",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_181",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_TC_184",
+   "reason": "no_template"
+  },
+  {
+   "case_id": "FD_ED_TC_27",
+   "reason": "no_template"
+  }
+ ]
+}

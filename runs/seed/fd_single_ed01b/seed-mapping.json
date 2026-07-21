@@ -1,0 +1,12 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_ED_TC_01",
+   "locator": "Z25A8E",
+   "pnr_id": "Z25A8E-2026-07-10",
+   "gate": "all-pass"
+  }
+ ],
+ "skipped": []
+}

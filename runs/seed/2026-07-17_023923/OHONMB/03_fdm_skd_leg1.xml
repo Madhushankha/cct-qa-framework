@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SKD create leg AC#8002#YYZ#2026-07-09 -->
+<env:envelope xmlns:env="http://www.lsb.de/apc/ops/Envelope" xmlns:fld="http://www.lsb.de/apc/customer/aca/flightDetail">
+  <sender>FDM-OPS</sender>
+  <receiver>MessageBroker</receiver>
+  <created>2026-07-09T06:00:00Z</created>
+  <messages>
+    <fld:flightDetail>
+      <identifier>
+        <flight><fnCarrier>AC</fnCarrier><fnNumber>8183</fnNumber></flight>
+        <dayOfOrigin>2026-07-09</dayOfOrigin>
+      </identifier>
+      <leg modified="NEW">
+        <state modified="NEW">SKD</state>
+        <callSign>ACA8183</callSign>
+        <schedule>
+          <departureAirport>YUL</departureAirport>
+          <departure>2026-07-09T08:00:00Z</departure>
+          <arrivalAirport>MNL</arrivalAirport>
+          <arrival>2026-07-09T11:00:00Z</arrival>
+          <serviceType>J</serviceType>
+          <aircraftOwner>AC</aircraftOwner>
+          <aircraftSubtype>320</aircraftSubtype>
+          <aircraftConfiguration>J16Y120P01</aircraftConfiguration>
+          <rotationIdentifier><registration>AC8183</registration></rotationIdentifier>
+          <employerCabin>AC</employerCabin>
+          <employerCockpit>AC</employerCockpit>
+          <seats><seatsF>16</seatsF><seatsC>0</seatsC><seatsY>120</seatsY></seats>
+        </schedule>
+        <actuals></actuals>
+        <misc><depStand>D</depStand><depGate>15</depGate><arrGate>25</arrGate><arrStand>C15</arrStand></misc>
+        <lastUpdate><userId>TS099991</userId><timestamp>2026-07-09T06:00:00Z</timestamp></lastUpdate>
+      </leg>
+    </fld:flightDetail>
+  </messages>
+</env:envelope>

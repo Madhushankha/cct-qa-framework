@@ -1,0 +1,356 @@
+{
+  "auth": {
+    "contact_id": "5955dc09-2a18-4d5b-b058-e58fc1e26065",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-APPR-EL-05",
+    "flags": [],
+    "passenger": "SVEN IRONLELEY",
+    "pnr": "BHMTCP",
+    "pnr_id": "BHMTCP-2026-07-09",
+    "regime": "APPR",
+    "test_case": "FD_TC_024",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 337.8,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "5ac7888527e9",
+    "started": "2026-07-16T22:00:26Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_024",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T22:00:32Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T22:00:33Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-16T22:01:38Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-16T22:01:46Z"
+    },
+    {
+      "note": "Opening with compensation request for flight delay",
+      "role": "customer",
+      "text": "Hi, I need to file a claim for compensation. My flight was delayed and I arrived really late.",
+      "ts": "2026-07-16T22:01:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-16T22:02:00Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-16T22:02:00Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-16T22:02:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-16T22:02:15Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-16T22:02:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-16T22:02:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-16T22:02:16Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-16T22:02:22Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I can definitely help with that. To start, I'll just need some information to identify you \u2014 could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-16T22:02:37Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the booking",
+      "role": "customer",
+      "text": "Sven Ironleley",
+      "ts": "2026-07-16T22:02:43Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Sven**! Could you please provide your **booking reference number**? It's a 6-character code made up of letters and/or numbers, found in your booking confirmation email.",
+      "ts": "2026-07-16T22:02:50Z"
+    },
+    {
+      "note": "Providing my PNR/booking reference",
+      "role": "customer",
+      "text": "BHMTCP",
+      "ts": "2026-07-16T22:02:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm \u2014 here's what I have:\n\n- **First name:** Sven\n- **Last name:** Ironleley\n- **Booking reference:** BHMTCP\n\nIs that all correct?",
+      "ts": "2026-07-16T22:03:03Z"
+    },
+    {
+      "note": "Confirming the booking details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-16T22:03:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-16T22:03:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-16T22:03:23Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-16T22:03:28Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-16T22:03:38Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "284925",
+      "ts": "2026-07-16T22:03:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-16T22:04:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-16T22:04:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YYZ \u2192 LHR \u00b7 Thu, Jul 09 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-16T22:04:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-16T22:04:07Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-16T22:04:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-16T22:04:23Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Canada",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-16T22:04:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "It seems that a claim has already been submitted on your behalf by l*****@a*****.com (case number **#CCD-1007473-EAO9AL**).\n\nPlease refer to this email for status updates.",
+      "ts": "2026-07-16T22:04:38Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I don't know who this is! \u2022 Okay",
+      "ts": "2026-07-16T22:04:38Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I don't know who thi",
+      "role": "customer",
+      "text": "I don't know who this is!",
+      "ts": "2026-07-16T22:04:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I understand your concern. If you suspect any fraudulent activity, I can create a case for our team to investigate right away. Would you like to continue?",
+      "ts": "2026-07-16T22:04:51Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-16T22:04:52Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-16T22:04:58Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Could you briefly describe why you believe this claim is fraudulent or unauthorized? Any details you can share will help with the investigation.",
+      "ts": "2026-07-16T22:05:06Z"
+    },
+    {
+      "note": "Explaining that I never filed before and don't recognize the email",
+      "role": "customer",
+      "text": "I never filed a claim before and I don't recognize that email address. This is the first time I'm trying to file a claim for my delayed flight.",
+      "ts": "2026-07-16T22:05:12Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To route you to the right support team, can you please share your **country of residence**?",
+      "ts": "2026-07-16T22:05:23Z"
+    },
+    {
+      "note": "Providing country of residence",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-16T22:05:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your claim has been submitted! You should hear from a team member within 30 days.",
+      "ts": "2026-07-16T22:05:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your reference is **CCD-1007515-0ZP6PM**.",
+      "ts": "2026-07-16T22:05:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-16T22:05:47Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-16T22:05:47Z"
+    },
+    {
+      "note": "Assistant has provided a final outcome - fraud investigation case created with reference number CCD-1007515-0ZP6PM. Will hear back within 30 days. This is a clear final outcome.",
+      "role": "customer",
+      "text": "No, that's all. Thank you.",
+      "ts": "2026-07-16T22:05:55Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-16T22:05:58Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "ESCALATED",
+        "expected": "ELIGIBLE",
+        "name": "Decision Status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "FD-APPR-EL-05",
+        "name": "System Code",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "CAD 400.0",
+        "name": "Amount",
+        "pass": false
+      }
+    ],
+    "decision": "ESCALATED",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was ELIGIBLE with system code FD-APPR-EL-05 and amount CAD 400.0. However, the chatbot encountered a duplicate claim scenario where a claim had already been filed under a different email address. When the passenger indicated they did not recognize the email, the bot treated this as potential fraud and escalated to a human team for investigation within 30 days. The bot never reached an eligibility determination, never quoted an amount, and never provided a system code. This is a case handling exception that prevented the normal eligibility assessment flow from completing."
+  }
+}

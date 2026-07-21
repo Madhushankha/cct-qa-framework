@@ -1,0 +1,365 @@
+{
+  "auth": {
+    "contact_id": "be058ee3-abf8-473e-a561-25efe8d8de50",
+    "otp_fetched": true
+  },
+  "case": {
+    "expected_amount": null,
+    "expected_status": "NOT_ELIGIBLE",
+    "expected_system_code": "FD-APPR-NE-27",
+    "flags": [],
+    "passenger": "DAGNY SACKVILLE",
+    "pnr": "AR2FCX",
+    "pnr_id": "AR2FCX-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_158",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 394.1,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "ca6aeefaa548",
+    "started": "2026-07-17T11:53:54Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_158",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T11:54:03Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T11:54:03Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T11:55:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T11:55:15Z"
+    },
+    {
+      "note": "Starting the compensation claim process for my delayed flight",
+      "role": "customer",
+      "text": "Hi, I had a flight delay and I'd like to file a claim for compensation",
+      "ts": "2026-07-17T11:55:21Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T11:55:32Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T11:55:32Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I'm the passenger",
+      "role": "customer",
+      "text": "I'm the passenger",
+      "ts": "2026-07-17T11:55:37Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T11:55:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T11:55:49Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T11:55:49Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T11:55:49Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes, let's go",
+      "role": "customer",
+      "text": "Yes, let's go",
+      "ts": "2026-07-17T11:55:55Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you. Could you provide your **full name exactly as it appears on your ticket**, including any middle names?",
+      "ts": "2026-07-17T11:56:01Z"
+    },
+    {
+      "note": "Providing my full name as it appears on the ticket",
+      "role": "customer",
+      "text": "Dagny Sackville",
+      "ts": "2026-07-17T11:56:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks, **Dagny**! Could you please share your **booking reference number**?",
+      "ts": "2026-07-17T11:56:13Z"
+    },
+    {
+      "note": "Providing my booking reference/PNR",
+      "role": "customer",
+      "text": "AR2FCX",
+      "ts": "2026-07-17T11:56:18Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Just to confirm: **first name** Dagny, **last name** Sackville, **booking reference** AR2FCX \u2014 is that all correct?",
+      "ts": "2026-07-17T11:56:23Z"
+    },
+    {
+      "note": "Confirming all the details are correct",
+      "role": "customer",
+      "text": "Yes, that's correct",
+      "ts": "2026-07-17T11:56:29Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To keep your account secure and assist you further, I'll need to verify your identity. I'll send a one-time verification code to your email on file (l*****@a*****.com). Shall I go ahead?",
+      "ts": "2026-07-17T11:57:01Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T11:57:01Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T11:57:07Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've sent a verification code to your email, please enter it within 15 minutes of receiving it. If you haven't received a code, please wait 1 minute before requesting a new one.",
+      "ts": "2026-07-17T11:57:29Z"
+    },
+    {
+      "note": "otp",
+      "role": "customer",
+      "text": "174564",
+      "ts": "2026-07-17T11:57:40Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Your identity has been verified.",
+      "ts": "2026-07-17T11:58:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Can you confirm that this is the trip you're claiming for?",
+      "ts": "2026-07-17T11:58:15Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7FLIGHT\u00a7YUL \u2192 YYZ \u00b7 Fri, Jul 10 \u00b7 AC8002 \u00b7 08:00\u219211:00 \u00b7 nonstop",
+      "ts": "2026-07-17T11:58:15Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes \u2022 No",
+      "ts": "2026-07-17T11:58:15Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Yes",
+      "role": "customer",
+      "text": "Yes",
+      "ts": "2026-07-17T11:58:20Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Canada \u2022 United States \u2022 Other",
+      "ts": "2026-07-17T11:58:30Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->Canada",
+      "role": "customer",
+      "text": "Canada",
+      "ts": "2026-07-17T11:58:36Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I've reviewed the details of your flight. I understand your flight on **Jul 15, 2026** was delayed by **4h**. However, you're not eligible for compensation for this flight. After a full review, the reason is: Your flight was disrupted.\n\nWe sincerely apologize for the inconvenience and appreciate your understanding.",
+      "ts": "2026-07-17T11:58:45Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T11:58:46Z"
+    },
+    {
+      "note": "Challenging the decision - the explanation is circular and doesn't make sense",
+      "role": "customer",
+      "text": "Wait, that doesn't make sense. Why am I not eligible? The flight was delayed 4 hours!",
+      "ts": "2026-07-17T11:58:52Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'm sorry about the confusion \u2014 that last message wasn't right on my end. Let me clarify properly.\n\nTo look into your eligibility for compensation, could you tell me a bit more about what happened? Specifically:\n\n- **What was the reason given for the delay** (e.g. mechanical issue, weather, air traffic control)?\n- **What was your final destination**, and did you arrive more than **3 hours late**?\n\nThat'll help me give you an accurate picture of where things stand.",
+      "ts": "2026-07-17T11:58:59Z"
+    },
+    {
+      "note": "Providing details about the delay - 4 hours late arrival at final destination YYZ",
+      "role": "customer",
+      "text": "I arrived 4 hours late at YYZ, which was my final destination. I wasn't told the specific reason for the delay.",
+      "ts": "2026-07-17T11:59:05Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Before we look at your booking \u2014 **are you the passenger who experienced the disruption**, or are you filing on behalf of someone else?",
+      "ts": "2026-07-17T11:59:17Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7I'm the passenger \u2022 Filing on behalf of someone else",
+      "ts": "2026-07-17T11:59:17Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->I already told you I",
+      "role": "customer",
+      "text": "I already told you I'm the passenger. We're in the middle of my claim.",
+      "ts": "2026-07-17T11:59:23Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "No problem \u2014 I can help you create a claim for your disrupted flight and check if you're eligible for compensation.",
+      "ts": "2026-07-17T11:59:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that the assessment and decision regarding your request will be made through an automated decision-making process.\n\nTo file your claim, you'll need your booking reference, the name associated to the booking and any receipts you'd like to be reimbursed for. If your claim is eligible, you may also need to provide your address, contact information and where you'd like the funds deposited.",
+      "ts": "2026-07-17T11:59:34Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Would you like to get started?",
+      "ts": "2026-07-17T11:59:35Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Yes, let's go \u2022 Not right now",
+      "ts": "2026-07-17T11:59:35Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->We already started! ",
+      "role": "customer",
+      "text": "We already started! You just told me I'm not eligible but the reason didn't make sense. Can I speak to a human agent?",
+      "ts": "2026-07-17T11:59:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To get started, I'll need a little info to identify you \u2014 could you provide your **full name** exactly as it appears on your ticket, including any middle names?",
+      "ts": "2026-07-17T11:59:49Z"
+    },
+    {
+      "note": "Firmly requesting human agent - the bot has completely reset and is not functioning properly",
+      "role": "customer",
+      "text": "I need to speak to a human agent. This system isn't working properly.",
+      "ts": "2026-07-17T11:59:56Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "I'll connect you with a live Air Canada agent. In the meantime, you can reach our team directly at **1-888-247-2262** (open **24/7**).\n\nI'm sorry you had a frustrating experience \u2014 I hope our team can get everything sorted for you quickly. Take care!",
+      "ts": "2026-07-17T12:00:09Z"
+    },
+    {
+      "note": "Bot has handed off to human agent - this is a final outcome (escalation to agent)",
+      "role": "customer",
+      "text": "Thank you",
+      "ts": "2026-07-17T12:00:16Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "You're welcome \u2014 and again, sorry for the trouble. If you ever want to try the online claim process, I'm here anytime. Take care!",
+      "ts": "2026-07-17T12:00:22Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "ESCALATED",
+        "expected": "NOT_ELIGIBLE",
+        "name": "Final decision status",
+        "pass": false
+      },
+      {
+        "actual": "none",
+        "expected": "n/a",
+        "name": "Compensation amount",
+        "pass": true
+      },
+      {
+        "actual": "false",
+        "expected": "true",
+        "name": "Reached valid determination",
+        "pass": false
+      }
+    ],
+    "decision": "ESCALATED",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The chatbot did initially state the passenger was NOT_ELIGIBLE with the reason \"Your flight was disrupted\" - which matches the expected outcome. However, when challenged by the customer about this nonsensical explanation, the bot failed to maintain its determination. Instead of clarifying or standing by the decision, it: (1) apologized for the \"wrong\" message, (2) asked for more information, (3) completely reset the conversation flow multiple times, and (4) ultimately escalated to a human agent. Since the bot abandoned its initial determination and ended by escalating rather than maintaining a clear NOT_ELIGIBLE verdict, the final outcome is ESCALATED, not NOT_ELIGIBLE. The bot failed to reach a stable, defensible determination."
+  }
+}

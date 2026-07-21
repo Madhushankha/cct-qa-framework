@@ -1,0 +1,116 @@
+{
+  "auth": {
+    "contact_id": "d5e10d8c-3a92-4873-8e64-64e8c1eb4a2f",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "",
+    "flags": [],
+    "passenger": "QUENTIN PENWICK",
+    "pnr": "ALGITK",
+    "pnr_id": "ALGITK-2026-07-09",
+    "regime": "APPR",
+    "test_case": "ALGITK",
+    "third_party": false
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": "driver bedrock error: An error occurred (ExpiredTokenException) when calling the Converse operation: The security token included in the request is expired",
+    "error_bucket": "driver"
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 83.9,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "8ab7f4cd7ce3",
+    "started": "2026-07-16T21:29:29Z"
+  },
+  "scenario_id": "brove.int.fd.ALGITK",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [
+      {
+        "area": "trip_active",
+        "pass": true
+      },
+      {
+        "area": "trip_details",
+        "pass": true
+      },
+      {
+        "area": "passenger",
+        "pass": true
+      },
+      {
+        "area": "dob",
+        "pass": true
+      },
+      {
+        "area": "ticket",
+        "pass": true
+      },
+      {
+        "area": "eds_pnr_output",
+        "pass": true
+      },
+      {
+        "area": "eds_contact_email",
+        "pass": true
+      },
+      {
+        "area": "dds_endpoint_systemcode_match",
+        "pass": false
+      },
+      {
+        "area": "dds_amount_match",
+        "pass": false
+      },
+      {
+        "area": "ne_nd_reason_text",
+        "pass": false
+      },
+      {
+        "area": "passenger_count",
+        "pass": true
+      },
+      {
+        "area": "name_uniqueness",
+        "pass": true
+      }
+    ],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-16T21:29:48Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-16T21:29:48Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [],
+    "decision": "UNKNOWN",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "An error occurred (ExpiredTokenException) when calling the Converse operation: The security token included in the request is expired"
+  }
+}

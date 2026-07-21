@@ -1,0 +1,206 @@
+{
+  "auth": {
+    "contact_id": "726a4e1c-2be0-473f-a777-c29cf3f3d6c1",
+    "otp_fetched": false
+  },
+  "case": {
+    "expected_amount": {
+      "currency": "CAD",
+      "value": 400.0
+    },
+    "expected_status": "ELIGIBLE",
+    "expected_system_code": "FD-APPR-EL-400",
+    "flags": [],
+    "passenger": "QUENTIN GREENHALGH",
+    "pnr": "K7ACPV",
+    "pnr_id": "K7ACPV-2026-07-10",
+    "regime": "APPR",
+    "test_case": "FD_TC_193",
+    "third_party": true
+  },
+  "evidence": {
+    "chat_html": null,
+    "evidence_html": null
+  },
+  "harness": {
+    "error": null,
+    "error_bucket": null
+  },
+  "run": {
+    "date": "2026-07-17",
+    "duration_s": 168.2,
+    "env": "int",
+    "feed": "fd",
+    "product": "brove",
+    "run_id": "ae236f56f0bf",
+    "started": "2026-07-17T06:38:42Z"
+  },
+  "scenario_id": "brove.int.fd.FD_TC_193",
+  "schema_version": "1.0",
+  "seed": {
+    "checkpoints": [],
+    "dds": null,
+    "verified": false
+  },
+  "transcript": [
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "Hi there! I will be your virtual assistant today. I can assist you in English or French. Which language would you prefer to use today?\n\nBonjour! Je serai votre assistante virtuelle aujourd'hui. Je peux vous aider en fran\u00e7ais ou en anglais. Quelle langue pr\u00e9f\u00e9rez-vous utiliser aujourd'hui ?",
+      "ts": "2026-07-17T06:38:48Z"
+    },
+    {
+      "note": "greeting",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7English \u2022 Fran\u00e7ais",
+      "ts": "2026-07-17T06:38:48Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->English",
+      "role": "customer",
+      "text": "English",
+      "ts": "2026-07-17T06:39:54Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "How can I help you today?",
+      "ts": "2026-07-17T06:40:00Z"
+    },
+    {
+      "note": "Indicating I'm filing on behalf of another passenger (Quentin Greenhalgh)",
+      "role": "customer",
+      "text": "I need to file a claim for someone else",
+      "ts": "2026-07-17T06:40:06Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "To help us direct you correctly, could you tell me your relationship to the passenger?",
+      "ts": "2026-07-17T06:40:08Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7OPTIONS\u00a7Claims company \u2022 Travel Agency \u2022 A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T06:40:08Z"
+    },
+    {
+      "note": "widget:QUICK_REPLIES->A parent / guardian ",
+      "role": "customer",
+      "text": "A parent / guardian / caregiver / legal tutor / insurer or FI",
+      "ts": "2026-07-17T06:40:13Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Thanks \u2014 to forward your claim I'll need all of the following, so you can send them together:\n\n- The **ticket number**, **booking reference**, and **full passenger name(s)**\n- **Flight details** \u2014 origin, destination, flight number, and flight date\n- Any **additional passengers** on the claim\n- The passenger's **contact information** and **your email address** for correspondence\n- **Your country of residence**\n\nYou'll also need to upload a **Power of Attorney or Notice of Authorization** for the claim to be actioned.",
+      "ts": "2026-07-17T06:40:30Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T06:40:30Z"
+    },
+    {
+      "note": "Acknowledging the requirements and indicating readiness to proceed",
+      "role": "customer",
+      "text": "Okay, I have all the information ready",
+      "ts": "2026-07-17T06:40:36Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Please go ahead and share the details whenever you're ready \u2014 all at once or a few at a time, whichever works best for you.",
+      "ts": "2026-07-17T06:40:41Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T06:40:42Z"
+    },
+    {
+      "note": "Providing passenger name, booking reference, and ticket number",
+      "role": "customer",
+      "text": "The passenger name is Quentin Greenhalgh, booking reference ABC123, ticket number 014-1234567890",
+      "ts": "2026-07-17T06:40:48Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Got those details \u2014 thank you. I still need a few more things to complete the submission:\n\n**About you (the claimant):**\n- Your **full name**\n- Your **email address**\n- Your **country of residence**\n\n**Flight details:**\n- **Origin** and **destination**\n- **Flight number**\n- **Flight date**\n\nAnd don't forget to upload the **Power of Attorney** or **Notice of Authorization** using the upload box above, if you haven't already.",
+      "ts": "2026-07-17T06:40:55Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7Please ensure that each receipt must be uploaded as their own file. Maximum file size is 10MB/receipt. Supported file types are JPG, PNG, PDF, JPEG, HEIF, WEBP, JFIF and HEIC.",
+      "ts": "2026-07-17T06:40:56Z"
+    },
+    {
+      "note": "Providing claimant details and flight information",
+      "role": "customer",
+      "text": "My name is Sarah Thompson, email sarah.thompson@email.com, I live in Canada. The flight was AC100 from Toronto to London on March 15, 2024",
+      "ts": "2026-07-17T06:41:02Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Your claim has been submitted! You should hear from a team member within 30 days.\n\nYour reference is **CCD-1008134-UTTPHA**.",
+      "ts": "2026-07-17T06:41:14Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7BANNER\u00a7Please note that an ID verification process will be required if you are deemed eligible for payment.",
+      "ts": "2026-07-17T06:41:15Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "Is there anything else I can help you with?",
+      "ts": "2026-07-17T06:41:15Z"
+    },
+    {
+      "note": "Claim has been submitted with reference number CCD-1008134-UTTPHA. This is a final outcome - claim submitted successfully.",
+      "role": "customer",
+      "text": "No, that's all. Thank you!",
+      "ts": "2026-07-17T06:41:21Z"
+    },
+    {
+      "note": "",
+      "role": "assistant",
+      "text": "\u00a7W\u00a7INFO\u00a7FEEDBACK",
+      "ts": "2026-07-17T06:41:23Z"
+    }
+  ],
+  "verdict": {
+    "amount": null,
+    "checks": [
+      {
+        "actual": "NO_DETERMINATION",
+        "expected": "ELIGIBLE",
+        "name": "Decision status",
+        "pass": false
+      },
+      {
+        "actual": "none provided",
+        "expected": "FD-APPR-EL-400",
+        "name": "System code",
+        "pass": false
+      },
+      {
+        "actual": "none quoted",
+        "expected": "CAD 400.0",
+        "name": "Compensation amount",
+        "pass": false
+      }
+    ],
+    "decision": "NO_DETERMINATION",
+    "matches_expected": false,
+    "reached_determination": false,
+    "reasoning": "The expected outcome was an ELIGIBLE determination with system code FD-APPR-EL-400 and CAD 400 compensation. However, the chatbot only processed the claim submission and provided a reference number (CCD-1008134-UTTPHA), stating the claimant would hear back within 30 days. The bot never assessed eligibility, never quoted any compensation amount, and never provided a system code. This is a claim intake/submission flow rather than an immediate eligibility determination flow. Therefore, the bot did not reach the expected determination and does not match the expected outcome."
+  }
+}

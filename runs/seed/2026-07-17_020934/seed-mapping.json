@@ -1,0 +1,30 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD_TC_001",
+   "locator": "MHGQHS",
+   "pnr_id": "MHGQHS-2026-07-09",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD_TC_002",
+   "locator": "MPGPAW",
+   "pnr_id": "MPGPAW-2026-07-09",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD_TC_003",
+   "locator": "ZQVXUI",
+   "pnr_id": "ZQVXUI-2026-07-09",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD_TC_004",
+   "locator": "TEDDZN",
+   "pnr_id": "TEDDZN-2026-07-09",
+   "gate": "all-pass"
+  }
+ ],
+ "skipped": []
+}

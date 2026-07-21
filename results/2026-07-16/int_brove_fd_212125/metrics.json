@@ -1,0 +1,319 @@
+{
+ "agent": "brove",
+ "cases": [
+  {
+   "actual_amount": "CAD 400.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "UNKNOWN",
+   "duration_s": 395.1,
+   "expected_amount": "CAD 400",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "(none)",
+   "test_id": "ZZFDBA",
+   "trajectory_score": null
+  },
+  {
+   "actual_amount": "CAD 700.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "UNKNOWN",
+   "duration_s": 394.4,
+   "expected_amount": "CAD 700",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "(none)",
+   "test_id": "ZZFDBB",
+   "trajectory_score": null
+  },
+  {
+   "actual_amount": "CAD 1000.0",
+   "actual_status": "ELIGIBLE",
+   "anomalies": [],
+   "decision_class": "UNKNOWN",
+   "duration_s": 391.1,
+   "expected_amount": "CAD 1000",
+   "expected_status": "ELIGIBLE",
+   "family": "CORE",
+   "overall_pass": true,
+   "regime": "APPR",
+   "rescored_pass": true,
+   "run_error": false,
+   "system_code_prefix": "(none)",
+   "test_id": "ZZFDBC",
+   "trajectory_score": null
+  }
+ ],
+ "checks": {
+  "compensation_amount": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  },
+  "other": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  },
+  "passenger_name": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  },
+  "pnr_match": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  },
+  "regime": {
+   "cases": 3,
+   "pass": 3,
+   "rate": 1.0,
+   "total": 3
+  }
+ },
+ "confusion": {
+  "labels": [
+   "ELIGIBLE"
+  ],
+  "matrix": [
+   [
+    3
+   ]
+  ]
+ },
+ "env": "int",
+ "headline": {
+  "amount_accuracy": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "clean_run_rate": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "decision_accuracy": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "goal_success_rate": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "intent_recognition_rate": {
+   "den": 0,
+   "num": 0,
+   "rate": null
+  },
+  "judge_agreement": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "rescored_success_rate": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "terminal_decision_rate": {
+   "den": 3,
+   "num": 3,
+   "rate": 1.0
+  },
+  "trajectory_match_mean": null
+ },
+ "n_cases": 3,
+ "ops": {
+  "duration_s": {
+   "mean": 393.5,
+   "p50": 394.4,
+   "p90": 395.1
+  },
+  "error_buckets": {},
+  "turns": {
+   "mean": null,
+   "p50": null,
+   "p90": null
+  }
+ },
+ "schema_version": "1.1",
+ "slices": {
+  "decision_class": {
+   "UNKNOWN": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": null
+   }
+  },
+  "expected_status": {
+   "ELIGIBLE": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": null
+   }
+  },
+  "family": {
+   "CORE": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": null
+   }
+  },
+  "regime": {
+   "APPR": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": null
+   }
+  },
+  "system_code_prefix": {
+   "(none)": {
+    "clean_run": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "decision_accuracy": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "goal_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "n": 3,
+    "rescored_success": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "terminal_decision": {
+     "den": 3,
+     "num": 3,
+     "rate": 1.0
+    },
+    "trajectory_mean": null
+   }
+  }
+ },
+ "trajectory": {
+  "anomaly_rates": {},
+  "by_family": {},
+  "stage_coverage": {}
+ }
+}
