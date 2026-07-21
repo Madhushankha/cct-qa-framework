@@ -11,10 +11,13 @@ DDS pin) are emitted empty/false rather than guessed, so downstream metrics stay
 Usage:
     python tools/convert_legacy_reports.py <legacy_dir> <out_run_dir> --feed soc [--env int]
 
-Then run the normal pipeline over <out_run_dir>:
-    python -m core.cli evidence <out_run_dir>
+This writes `<CASE>.result.json` + a run `index.html` only — the per-case evidence is NOT
+copied from the legacy HTML, so that `cct evidence` renders it in the same format as a native
+run (identical sections/styling to FD). Run the normal pipeline over <out_run_dir>:
+    python -m core.cli evidence <out_run_dir>   # -> evidence/<CASE>.evidence.html
     python -m core.cli metrics  <out_run_dir>
     python -m core.cli analyze  <out_run_dir>
+    python -m core.cli quality  <out_run_dir>
 """
 from __future__ import annotations
 
@@ -283,11 +286,6 @@ def main() -> int:
         cid = rec["case"]["test_case"]
         with open(os.path.join(a.out_run_dir, f"{cid}.result.json"), "w", encoding="utf-8") as fh:
             json.dump(rec, fh, indent=2)
-        # the legacy HTML *is* the per-case evidence — carry it over under the framework's name
-        with open(src, encoding="utf-8", errors="replace") as fh:
-            body = fh.read()
-        with open(os.path.join(a.out_run_dir, f"{cid}.evidence.html"), "w", encoding="utf-8") as fh:
-            fh.write(body)
         ok += 1
 
     _write_index(a.out_run_dir, a.feed, run_id)
