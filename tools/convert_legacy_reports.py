@@ -22,6 +22,7 @@ run (identical sections/styling to FD). Run the normal pipeline over <out_run_di
 from __future__ import annotations
 
 import argparse
+import collections
 import html
 import json
 import os
@@ -274,18 +275,29 @@ def main() -> int:
                     help="version label used in the generated run id (default: alpha)")
     a = ap.parse_args()
 
-    # run ids follow the native shape <feed>_crt_<label>_<date> (e.g. fd_crt_v19_2026-07-22)
-    run_id = a.run_id or f"{a.feed}_crt_{a.label}_{datetime.now(UTC).strftime('%Y-%m-%d')}"
     os.makedirs(a.out_run_dir, exist_ok=True)
-
     reports = sorted(f for f in os.listdir(a.legacy_dir) if f.endswith("_report.html"))
-    ok = skipped = 0
+
+    # Parse first, then name: the run id's date must be the date the tests actually RAN
+    # (from each report's "Started"), not the day the conversion happened.
+    recs, skipped = [], 0
     for fn in reports:
-        src = os.path.join(a.legacy_dir, fn)
-        rec = convert_one(src, a.feed, a.env, a.product, run_id)
-        if not rec:
+        rec = convert_one(os.path.join(a.legacy_dir, fn), a.feed, a.env, a.product, "")
+        if rec:
+            recs.append(rec)
+        else:
             skipped += 1
-            continue
+
+    if a.run_id:
+        run_id = a.run_id
+    else:
+        dates = collections.Counter(r["run"]["date"] for r in recs if r["run"]["date"])
+        day = dates.most_common(1)[0][0] if dates else datetime.now(UTC).strftime("%Y-%m-%d")
+        run_id = f"{a.feed}_crt_{a.label}_{day}"
+
+    ok = 0
+    for rec in recs:
+        rec["run"]["run_id"] = run_id
         cid = rec["case"]["test_case"]
         with open(os.path.join(a.out_run_dir, f"{cid}.result.json"), "w", encoding="utf-8") as fh:
             json.dump(rec, fh, indent=2)
