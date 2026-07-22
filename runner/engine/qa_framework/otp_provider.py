@@ -118,15 +118,13 @@ class MailinatorOtpProvider:
 
     def _get(self, path: str) -> dict:
         import json as _json
-        import os as _os
-        import ssl as _ssl
         import urllib.request
+
+        from core.tls import context as _tls_context
+
         url = f"{self.BASE}/domains/{self.domain}/inboxes/{self.inbox}{path}"
         req = urllib.request.Request(url, headers={"Authorization": self.token})
-        ctx = _ssl.create_default_context()
-        if _os.getenv("QA_INSECURE_TLS", "").lower() in ("1", "true", "yes"):
-            ctx.check_hostname = False
-            ctx.verify_mode = _ssl.CERT_NONE
+        ctx = _tls_context()
         with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
             return _json.loads(r.read().decode("utf-8", "replace"))
 
@@ -183,7 +181,12 @@ class MailinatorOtpProvider:
                         continue
                     hit = regex.search(body)
                     if hit:
-                        code = hit.group(1) if hit.groups() else hit.group(0)
+                        # Take the first NON-EMPTY group: the default pattern is an alternation
+                        # ("verification: NNNNNN" | a bare 6-digit run), so group(1) is empty
+                        # whenever the second branch matched.
+                        code = next((g for g in hit.groups() if g), None) if hit.groups() else hit.group(0)
+                        if code is None:
+                            code = hit.group(0)
                         self._debug("otp_found", code_len=len(code), attempts=attempts)
                         return code
             except Exception as e:

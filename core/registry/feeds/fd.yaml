@@ -27,6 +27,10 @@ persona:
     If the bot asks for your country of residence or where you are travelling from/based,
     answer {country}.
 
+    Your itinerary, when the bot asks for any of it: flight {carrier}{flight} from {origin} to
+    {destination} on {flight_date}. Give these exact values — never invent a flight number, route or
+    date, and never say you do not have them to hand.
+
     If the assistant reaches a clear determination — eligible OR not eligible — and explains
     the reason, ACCEPT it politely and end the conversation. Do NOT argue, dispute, or ask for
     a manual/agent review. Your goal is to receive the determination, not to contest it.

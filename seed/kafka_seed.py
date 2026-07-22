@@ -64,14 +64,9 @@ def inject_contact(pnr: dict, email: str) -> int:
 
 
 def _ssl_context():
-    """TLS context for the MSK connection, trusting certifi's CA bundle when it is installed."""
-    import ssl
-
-    try:
-        import certifi
-        return ssl.create_default_context(cafile=certifi.where())
-    except ImportError:
-        return ssl.create_default_context()
+    """TLS context for the MSK connection — see core.tls."""
+    from core.tls import context
+    return context()
 
 
 def bump_feed_timestamps(pnr: dict, when: str | None = None) -> int:

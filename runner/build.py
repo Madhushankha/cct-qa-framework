@@ -66,9 +66,19 @@ def build_persona(ctx, uc) -> str:
 
     first, last = _split_name(uc.seed.passenger)
     extras = dict(uc.seed.extras or {})
+    # The booking's own itinerary facts. Without these the customer sim has nothing to answer with
+    # when the bot asks for origin/destination/flight/date, so it says "I don't have those details
+    # handy" and improvises a flight number — which is not what the seeded case is testing.
+    route = uc.seed.route or ""
+    origin, _, destination = route.partition("-")
+    amount = uc.seed.amount or {}
     slots = {"first": first, "last": last, "pnr": uc.seed.pnr,
              "country": _persona_country(uc),
-             "disruption": extras.get("disruption") or extras.get("Disruption") or ""}
+             "disruption": extras.get("disruption") or extras.get("Disruption") or "",
+             "route": route, "origin": origin, "destination": destination,
+             "carrier": extras.get("carrier") or "AC",
+             "flight": extras.get("flight") or "", "flight_date": extras.get("date") or "",
+             "amount": amount.get("value") or "", "currency": amount.get("currency") or ""}
     # make seed extras available as slots too (raw + normalized key), without overriding the core four
     for k, v in extras.items():
         slots.setdefault(k, v)
@@ -214,8 +224,17 @@ def _seed_from_sidecar(checkpoints_dir, uc):
         return None
     import json as _json
 
-    p = Path(checkpoints_dir) / f"{uc.id}.checkpoints.json"
-    if not p.exists():
+    # The seeder names the sidecar by LOCATOR (`SWC77A.checkpoints.json`, seed/cli._write_checkpoints)
+    # while the case is keyed by id (`FD-SIT-001`), so looking only by id silently found nothing and
+    # every seeded run reported 0/0 checkpoints in its evidence. Try both keys.
+    candidates = [f"{uc.id}.checkpoints.json"]
+    if uc.seed and uc.seed.pnr:
+        candidates.append(f"{uc.seed.pnr}.checkpoints.json")
+    for name in candidates:
+        p = Path(checkpoints_dir) / name
+        if p.exists():
+            break
+    else:
         return None
     try:
         vec = _json.loads(p.read_text(encoding="utf-8"))
@@ -355,7 +374,13 @@ def otp_provider_from_env(env):
         return MailinatorOtpProvider(
             token=token, domain=otp["domain"], inbox=otp["inbox"],
             subject_contains=otp.get("subject_contains", ""),
-            otp_regex=otp.get("otp_regex") or r"([0-9]{6})",
+            # A bare ([0-9]{6}) also matches the CSS brand colour "#005078" in the email template,
+            # which sits ABOVE the real code in the body — so the naive pattern submits a colour as
+            # the verification code every time. The hex guards exclude any 6-digit run adjacent to
+            # hex characters; the first branch prefers an explicit "verification: NNNNNN" label.
+            # Same pattern the shared OTP broker uses.
+            otp_regex=otp.get("otp_regex")
+            or r"verification:\s*([0-9]{6})|(?<![#0-9A-Fa-f])([0-9]{6})(?![0-9A-Fa-f])",
             timeout_seconds=int(otp.get("timeout_seconds", 300)),
             poll_interval_seconds=float(otp.get("poll_interval_seconds", 6)),
         )

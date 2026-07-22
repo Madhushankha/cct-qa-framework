@@ -47,3 +47,21 @@ def test_seed_from_sidecar(tmp_path):
     assert _seed_from_sidecar(str(tmp_path), _uc(system_code="MISSING")) is not None
     # no sidecar -> None (caller falls back)
     assert _seed_from_sidecar(str(tmp_path / "nope"), _uc()) is None
+
+
+def test_sidecar_is_found_when_named_by_locator(tmp_path):
+    """seed/cli writes `<locator>.checkpoints.json`; the runner keys cases by id. Looking only by
+    id found nothing, so seeded runs reported 0/0 checkpoints even though the vector existed."""
+    import json
+    from catalog.model import SeedSpec, UseCase
+    from runner.build import _seed_from_sidecar
+
+    (tmp_path / "SWC77A.checkpoints.json").write_text(json.dumps(
+        [{"area": "trip_active", "pass": True, "detail": "trip.status=ACTIVE"}]), encoding="utf-8")
+    uc = UseCase(id="FD-SIT-001", regime="APPR", verdict="Eligible", system_code="FD-APPR-EL-400",
+                 title="t", third_party=False, checkpoint_vector=[], customer_intent="",
+                 expected_transcript=[],
+                 seed=SeedSpec(pnr="SWC77A", pnr_id="SWC77A-2026-07-14", passenger="A B"),
+                 seed_pending=False, content_hash="h")
+    seed = _seed_from_sidecar(str(tmp_path), uc)
+    assert seed is not None and len(seed["checkpoints"]) == 1

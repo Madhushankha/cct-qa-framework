@@ -33,6 +33,19 @@ from .config import cfg, ChatbotConfig
 DebugCallback = Optional[Callable[[str, dict[str, Any]], None]]
 
 
+def _tls_context():
+    """SSL context for the client's outbound legs — see core.tls for why this is not the default."""
+    from core.tls import context
+    return context()
+
+
+def _ws_sslopt():
+    """websocket-client sslopt mirroring _tls_context()."""
+    from core.tls import ws_sslopt
+    return ws_sslopt()
+
+
+
 # QA_INSECURE_TLS=1 disables certificate verification on the three outbound legs
 # this client makes. Workaround for TLS-inspecting middleboxes only; default OFF.
 _INSECURE_TLS = os.getenv("QA_INSECURE_TLS", "").lower() in ("1", "true", "yes")
@@ -248,7 +261,7 @@ class AmazonConnectChatClient:
         max_attempts = 10
         base_delay = 5.0
         data = None
-        ssl_ctx = ssl._create_unverified_context() if _INSECURE_TLS else None
+        ssl_ctx = _tls_context()
         self._debug("start_chat_request", url=self.start_chat_url, insecure_tls=_INSECURE_TLS)
         for attempt in range(max_attempts):
             try:
@@ -321,11 +334,12 @@ class AmazonConnectChatClient:
     def _open_websocket(self) -> None:
         import websocket  # lazy
 
-        self.ws = websocket.WebSocket()
-        ws_kwargs: dict = {"timeout": self.http_timeout}
-        if _INSECURE_TLS:
-            ws_kwargs["sslopt"] = {"cert_reqs": ssl.CERT_NONE, "check_hostname": False}
-        self.ws.connect(self.websocket_url, **ws_kwargs)
+        # sslopt belongs on the CONSTRUCTOR: WebSocket.connect() builds its socket from
+        # self.sock_opt and reads only `timeout` out of its keyword options, so an sslopt passed
+        # there is silently discarded — which left this leg on a context trusting no CAs at all
+        # (and made QA_INSECURE_TLS equally ineffective here).
+        self.ws = websocket.WebSocket(sslopt=_ws_sslopt())
+        self.ws.connect(self.websocket_url, timeout=self.http_timeout)
         self.ws.settimeout(self.response_timeout)
         self._debug("ws_opened")
 

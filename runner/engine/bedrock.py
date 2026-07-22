@@ -14,9 +14,14 @@ from __future__ import annotations
 import os
 import threading
 
-# Default driver model + region (from cct-qa-1 config_crt.json). Configurable per call.
-DEFAULT_MODEL_ID = "global.anthropic.claude-sonnet-4-5-20250929-v1:0"
-DEFAULT_REGION = "ca-central-1"
+# Default driver/judge model + region. Override with CCTQA_BEDROCK_MODEL (or per call) when the
+# account has a different set of models enabled: model access is granted per model, so a hardcoded
+# id fails with AccessDeniedException in any account that has not subscribed to that exact one —
+# which is how the CRT account behaves for claude-sonnet-4-5 while newer profiles are available.
+# List what this account can actually invoke with:
+#   aws bedrock list-inference-profiles --region ca-central-1
+DEFAULT_MODEL_ID = os.environ.get("CCTQA_BEDROCK_MODEL", "global.anthropic.claude-sonnet-5")
+DEFAULT_REGION = os.environ.get("CCTQA_BEDROCK_REGION", "ca-central-1")
 
 # ── LLM customer driver tool schema (Bedrock Converse, tool-forced) ──────────
 CUSTOMER_TOOL = {
@@ -61,6 +66,17 @@ def bedrock_client(region: str = DEFAULT_REGION, profile: str | None = None):
     return boto3.client("bedrock-runtime", region_name=region, config=cfg)
 
 
+# Model ids that rejected `temperature`; populated at runtime by converse() on first use.
+_NO_TEMPERATURE: set[str] = set()
+
+
+def _inference_config(model_id: str) -> dict:
+    cfg = {"maxTokens": 1024}
+    if model_id not in _NO_TEMPERATURE:
+        cfg["temperature"] = 0.0        # deterministic driver/judge where the model still allows it
+    return cfg
+
+
 def converse(client, system, messages, tool, model_id: str = DEFAULT_MODEL_ID):
     """One tool-forced Converse call with explicit backoff on transient boto errors, honouring the
     shared concurrency semaphore if one is installed."""
@@ -82,11 +98,19 @@ def converse(client, system, messages, tool, model_id: str = DEFAULT_MODEL_ID):
                     system=[{"text": system}],
                     messages=messages,
                     toolConfig={"tools": [tool], "toolChoice": {"tool": {"name": tool["toolSpec"]["name"]}}},
-                    inferenceConfig={"maxTokens": 1024, "temperature": 0.0},
+                    inferenceConfig=_inference_config(model_id),
                 )
             except transient as e:
                 last = e
                 _t.sleep(min(2 ** attempt, 20))        # 1,2,4,8,16,20s
+            except client.exceptions.ValidationException as e:
+                # Newer models reject `temperature` outright ("`temperature` is deprecated for this
+                # model"). Remember that for this model id and retry without it, rather than pinning
+                # the framework to older models purely to keep a sampling knob we set to 0 anyway.
+                if "temperature" not in str(e):
+                    raise
+                _NO_TEMPERATURE.add(model_id)
+                last = e
         raise last
     finally:
         if sem is not None:
