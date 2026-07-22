@@ -1,0 +1,1462 @@
+[
+ {
+  "key": "FD-SIT-001",
+  "tc": "FD_TC_001",
+  "sit": "FD-SIT-001",
+  "src_scn": "JDJHWX-2026-06-15",
+  "src_dds": "JDJHWX-2026-06-15",
+  "loc": "OLXPNJ",
+  "pnr_id": "OLXPNJ-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000001",
+  "pax": "DAGNY BROOKLEFIELD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR 3-<6h CAD400 cash",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "DAGNY",
+    "BROOKLEFIELD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/be5f3a14-c258-493e-8293-ca1f44337d43/response.json"
+ },
+ {
+  "key": "FD-SIT-002",
+  "tc": "FD_TC_002",
+  "sit": "FD-SIT-002",
+  "src_scn": "YSLXGX-2026-06-15",
+  "src_dds": "YSLXGX-2026-06-15",
+  "loc": "YBIWHC",
+  "pnr_id": "YBIWHC-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000002",
+  "pax": "XIMENA RAINERWOOD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR 3-<6h AC Wallet +20% (480)",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "XIMENA",
+    "RAINERWOOD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/ee50d1cf-1a70-4d04-9bf7-cc920028c9c4/response.json"
+ },
+ {
+  "key": "FD-SIT-003",
+  "tc": "FD_TC_018",
+  "sit": "FD-SIT-003",
+  "src_scn": "TFCYSG-2026-06-15",
+  "src_dds": "TFCYSG-2026-06-15",
+  "loc": "AXERHK",
+  "pnr_id": "AXERHK-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000003",
+  "pax": "VESNA WESTERWICK",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "title": "APPR 6-<9h CAD700 cash",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "VESNA",
+    "WESTERWICK"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8975f403-8542-46e3-997c-37909372be85/response.json"
+ },
+ {
+  "key": "FD-SIT-004",
+  "tc": "FD_TC_019",
+  "sit": "FD-SIT-004",
+  "src_scn": "NLHKZG-2026-06-15",
+  "src_dds": "NLHKZG-2026-06-15",
+  "loc": "ZKRHHB",
+  "pnr_id": "ZKRHHB-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000004",
+  "pax": "ELIAS GALDOWGATE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "title": "APPR 6-<9h AC Wallet (840)",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ELIAS",
+    "GALDOWGATE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/e5fff083-b4cc-479b-aeda-a7e56f9f9abb/response.json"
+ },
+ {
+  "key": "FD-SIT-005",
+  "tc": "FD_TC_021",
+  "sit": "FD-SIT-005",
+  "src_scn": "MKXQCS-2026-06-15",
+  "src_dds": "MKXQCS-2026-06-15",
+  "loc": "HQLKBY",
+  "pnr_id": "HQLKBY-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000005",
+  "pax": "ANNIKA WESTINGWYN",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "title": "APPR 9h+ CAD1,000 cash",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ANNIKA",
+    "WESTINGWYN"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/48b9594d-de94-496f-985d-5ad4ddf06b71/response.json"
+ },
+ {
+  "key": "FD-SIT-006",
+  "tc": "FD_TC_022",
+  "sit": "FD-SIT-006",
+  "src_scn": "KLDTBK-2026-06-15",
+  "src_dds": "KLDTBK-2026-06-15",
+  "loc": "OUEZZV",
+  "pnr_id": "OUEZZV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000006",
+  "pax": "SVEN GARERSTEAD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "title": "APPR 9h+ AC Wallet (1,200)",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "SVEN",
+    "GARERSTEAD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/afa814a8-9392-4e1b-b822-a7063243884e/response.json"
+ },
+ {
+  "key": "FD-SIT-007",
+  "tc": "FD_TC_003",
+  "sit": "FD-SIT-007",
+  "src_scn": "ZQJNPP-2026-06-15",
+  "src_dds": "ZQJNPP-2026-06-15",
+  "loc": "UTAAGC",
+  "pnr_id": "UTAAGC-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000007",
+  "pax": "ZEPHYR BLYELWOOD",
+  "route": "YUL-YOW-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR VOL/INVOL promise calc",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ZEPHYR",
+    "BLYELWOOD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/9d03f345-1625-4ea5-b06a-be25fcc3aad1/response.json"
+ },
+ {
+  "key": "FD-SIT-008",
+  "tc": "FD_TC_066",
+  "sit": "FD-SIT-008",
+  "src_scn": "DBCZZF-2026-06-15",
+  "src_dds": "DBCZZF-2026-06-15",
+  "loc": "XROKBE",
+  "pnr_id": "XROKBE-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000008",
+  "pax": "DELPHINE FAIRENVALE",
+  "route": "LHR-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 260,
+  "currency": "GBP",
+  "title": "EU/UK 3-<4h GBP260",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "FAIRENVALE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/eafa7871-5cc9-4b2e-b1c4-5cb6ca873c9e/response.json"
+ },
+ {
+  "key": "FD-SIT-009",
+  "tc": "FD_TC_067",
+  "sit": "FD-SIT-009",
+  "src_scn": "STPJSZ-2026-06-15",
+  "src_dds": "STPJSZ-2026-06-15",
+  "loc": "SNIUBL",
+  "pnr_id": "SNIUBL-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000009",
+  "pax": "QUENTIN BEXENSHAW",
+  "route": "LHR-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-02",
+  "amount": 520,
+  "currency": "GBP",
+  "title": "EU/UK 4h+ GBP520",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "QUENTIN",
+    "BEXENSHAW"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/87bb8ee3-b3d3-479a-9196-a027ea8a89df/response.json"
+ },
+ {
+  "key": "FD-SIT-010",
+  "tc": "FD_TC_078",
+  "sit": "FD-SIT-010",
+  "src_scn": "KKXGCM-2026-06-15",
+  "src_dds": "KKXGCM-2026-06-15",
+  "loc": "EZQMCH",
+  "pnr_id": "EZQMCH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000010",
+  "pax": "UMBERTO ULLSELRIDGE",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-13",
+  "amount": 300,
+  "currency": "EUR",
+  "title": "EU rest 3-<4h EUR300",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "UMBERTO",
+    "ULLSELRIDGE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/dafefdc1-2044-44fe-ba76-320e8a7cb498/response.json"
+ },
+ {
+  "key": "FD-SIT-011",
+  "tc": "FD_TC_079",
+  "sit": "FD-SIT-011",
+  "src_scn": "TLZHSN-2026-06-15",
+  "src_dds": "TLZHSN-2026-06-15",
+  "loc": "AUGBIJ",
+  "pnr_id": "AUGBIJ-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000011",
+  "pax": "PRIYA EASTINGHOLT",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-14",
+  "amount": 600,
+  "currency": "EUR",
+  "title": "EU rest 4h+ EUR600",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "PRIYA",
+    "EASTINGHOLT"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/716330a7-4118-49bd-819d-eca2cb0378e9/response.json"
+ },
+ {
+  "key": "FD-SIT-012",
+  "tc": "FD_TC_078",
+  "sit": "FD-SIT-012",
+  "src_scn": "BNYGHN-2026-06-15",
+  "src_dds": "BNYGHN-2026-06-15",
+  "loc": "GCKDNV",
+  "pnr_id": "GCKDNV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000012",
+  "pax": "EAMON HOLLELFORD",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-13",
+  "amount": 300,
+  "currency": "EUR",
+  "title": "EU short/medium-haul band EUR250/400",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "EAMON",
+    "HOLLELFORD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/659d3439-dbaa-4b7c-892b-d76c2ba4ca12/response.json"
+ },
+ {
+  "key": "FD-SIT-013",
+  "tc": "FD_TC_074",
+  "sit": "FD-SIT-013",
+  "src_scn": "SJNCNT-2026-06-15",
+  "src_dds": "SJNCNT-2026-06-15",
+  "loc": "AUEOHV",
+  "pnr_id": "AUEOHV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000013",
+  "pax": "ADRIAN WOLDENWORTH",
+  "route": "PTP-YUL",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-09",
+  "amount": 400,
+  "currency": "EUR",
+  "title": "EU Guadeloupe EUR400 flat",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "WOLDENWORTH"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/aa917ef3-5a58-4120-b68f-a8f1062d1252/response.json"
+ },
+ {
+  "key": "FD-SIT-014",
+  "tc": "FD_TC_117",
+  "sit": "FD-SIT-014",
+  "src_scn": "WKCRFR-2026-06-15",
+  "src_dds": "WKCRFR-2026-06-15",
+  "loc": "SUYBGA",
+  "pnr_id": "SUYBGA-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000014",
+  "pax": "WINSLOW HAWLEPOOL",
+  "route": "YYZ-TLV",
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "title": "ASL 480min+ ILS3,580",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "WINSLOW",
+    "HAWLEPOOL"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/86782664-8d01-4214-8625-2ae74cc94f53/response.json"
+ },
+ {
+  "key": "FD-SIT-015",
+  "tc": "FD_TC_011",
+  "sit": "FD-SIT-015",
+  "src_scn": "DJWFKD-2026-06-15",
+  "src_dds": "DJWFKD-2026-06-15",
+  "loc": "UVWMNK",
+  "pnr_id": "UVWMNK-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000015",
+  "pax": "JOELLE CALDELSTEAD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR multi-pax aggregated",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "JOELLE",
+    "CALDELSTEAD"
+   ],
+   [
+    "ISOLDE",
+    "TUTLETHORPE"
+   ],
+   [
+    "PRIYA",
+    "VANECROFT"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8996c58d-bc7f-4646-90bc-eabd5f5ac540/response.json"
+ },
+ {
+  "key": "FD-SIT-016",
+  "tc": "FD_TC_012",
+  "sit": "FD-SIT-016",
+  "src_scn": "JNGSLD-2026-06-15",
+  "src_dds": "JNGSLD-2026-06-15",
+  "loc": "VPSFMB",
+  "pnr_id": "VPSFMB-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000016",
+  "pax": "VIOLETA WILDERDEN",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR group - individual claim",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": true,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "VIOLETA",
+    "WILDERDEN"
+   ],
+   [
+    "ULRICH",
+    "RIDGEINGCOTT"
+   ],
+   [
+    "JASPER",
+    "ROOKLECROFT"
+   ],
+   [
+    "ORSON",
+    "HALINGBY"
+   ],
+   [
+    "PRIYA",
+    "PENERFORD"
+   ],
+   [
+    "CALLUM",
+    "YARINGRIDGE"
+   ],
+   [
+    "ORSON",
+    "HAWLECOTT"
+   ],
+   [
+    "GIDEON",
+    "MARSHINGDALE"
+   ],
+   [
+    "WESLEY",
+    "PENLEMORE"
+   ],
+   [
+    "VIOLETA",
+    "WINDOWDEN"
+   ],
+   [
+    "DELPHINE",
+    "ASHANTON"
+   ],
+   [
+    "YARDLEY",
+    "GALDENBROOK"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/0c7ecad1-c0a4-4cee-8d3e-80411883b691/response.json"
+ },
+ {
+  "key": "FD-SIT-017",
+  "tc": "FD_TC_032",
+  "sit": "FD-SIT-017",
+  "src_scn": "MHFNND-2026-06-15",
+  "src_dds": "MHFNND-2026-06-15",
+  "loc": "PCFAAP",
+  "pnr_id": "PCFAAP-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000017",
+  "pax": "CEDRICK REDOWMORE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-13",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR no-travel controllable",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "CEDRICK",
+    "REDOWMORE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/98aa6144-346d-4adc-a08b-b242e31f8374/response.json"
+ },
+ {
+  "key": "FD-SIT-018",
+  "tc": "FD_TC_086",
+  "sit": "FD-SIT-018",
+  "src_scn": "WDBQVC-2026-06-15",
+  "src_dds": "WDBQVC-2026-06-15",
+  "loc": "ONASFH",
+  "pnr_id": "ONASFH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000018",
+  "pax": "PERCY BRENENHAM",
+  "route": "LHR-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-21",
+  "amount": 520,
+  "currency": "GBP",
+  "title": "EU/UK no-travel controllable",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "PERCY",
+    "BRENENHAM"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8697b08a-8ca7-4ba1-a98f-ead9324c2611/response.json"
+ },
+ {
+  "key": "FD-SIT-019",
+  "tc": "FD_TC_118",
+  "sit": "FD-SIT-019",
+  "src_scn": "QDCVRS-2026-06-15",
+  "src_dds": "QDCVRS-2026-06-15",
+  "loc": "MKAKWR",
+  "pnr_id": "MKAKWR-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000019",
+  "pax": "JOELLE BRENOWMARSH",
+  "route": "YYZ-TLV",
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-05",
+  "amount": 3670,
+  "currency": "ILS",
+  "title": "ASL no-travel controllable",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "JOELLE",
+    "BRENOWMARSH"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/33927c08-1647-4fef-9912-be437902b850/response.json"
+ },
+ {
+  "key": "FD-SIT-020",
+  "tc": "FD_TC_146",
+  "sit": "FD-SIT-020",
+  "src_scn": "LSVWSQ-2026-06-15",
+  "src_dds": "LSVWSQ-2026-06-15",
+  "loc": "HMOXXC",
+  "pnr_id": "HMOXXC-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000020",
+  "pax": "ROMILLY HAWINGBROOK",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-MIXED-EL-01",
+  "amount": 600,
+  "currency": "EUR",
+  "title": "APPR+EU most generous",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ROMILLY",
+    "HAWINGBROOK"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/5641d49e-e7c5-4e79-8897-592720a7ca73/response.json"
+ },
+ {
+  "key": "FD-SIT-021",
+  "tc": "FD_TC_147",
+  "sit": "FD-SIT-021",
+  "src_scn": "XHFFVJ-2026-06-15",
+  "src_dds": "XHFFVJ-2026-06-15",
+  "loc": "POHQAB",
+  "pnr_id": "POHQAB-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000021",
+  "pax": "OONA YARLEBECK",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-MIXED-EL-02",
+  "amount": 600,
+  "currency": "EUR",
+  "title": "Most generous via BoC FX",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "OONA",
+    "YARLEBECK"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/51b8adcf-2c75-4a6f-a920-3ace2b47c444/response.json"
+ },
+ {
+  "key": "FD-SIT-022",
+  "tc": "FD_TC_149",
+  "sit": "FD-SIT-022",
+  "src_scn": "MDCDFQ-2026-06-15",
+  "src_dds": "MDCDFQ-2026-06-15",
+  "loc": "FEKQKP",
+  "pnr_id": "FEKQKP-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000022",
+  "pax": "NIKOLAI BARNANCROFT",
+  "route": "YYZ-TLV",
+  "status": "ELIGIBLE",
+  "syscode": "FD-MIXED-EL-04",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "APPR+ASL most generous",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "NIKOLAI",
+    "BARNANCROFT"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/c3dea60b-337a-4931-9617-5cf79199deed/response.json"
+ },
+ {
+  "key": "FD-SIT-023",
+  "tc": "FD_TC_148",
+  "sit": "FD-SIT-023",
+  "src_scn": "WHJKRV-2026-06-15",
+  "src_dds": "WHJKRV-2026-06-15",
+  "loc": "HQINLS",
+  "pnr_id": "HQINLS-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000023",
+  "pax": "BRENNA SELANHURST",
+  "route": "CDG-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-MIXED-EL-03",
+  "amount": 600,
+  "currency": "EUR",
+  "title": "Most generous expired -> fallback",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "BRENNA",
+    "SELANHURST"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/49984ae7-97e7-4a2f-a6cf-ece79b3e7ebc/response.json"
+ },
+ {
+  "key": "FD-SIT-043",
+  "tc": "FD_TC_001",
+  "sit": "FD-SIT-043",
+  "src_scn": "TWDRYK-2026-06-15",
+  "src_dds": "TWDRYK-2026-06-15",
+  "loc": "HNJQRK",
+  "pnr_id": "HNJQRK-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000024",
+  "pax": "BRENNA MILLOWHOLT",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Welcome Back eligible",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "BRENNA",
+    "MILLOWHOLT"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/fc89da1d-4c96-493b-947b-5b18e770b341/response.json"
+ },
+ {
+  "key": "FD-SIT-045",
+  "tc": "FD_TC_006",
+  "sit": "FD-SIT-045",
+  "src_scn": "MQPKCJ-2026-06-15",
+  "src_dds": "MQPKCJ-2026-06-15",
+  "loc": "DDXQPW",
+  "pnr_id": "DDXQPW-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000025",
+  "pax": "NADEZHDA WHITINGWOOD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Ident name+e-ticket (exchanged)",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "NADEZHDA",
+    "WHITINGWOOD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/e915a525-3e00-4698-8a82-d792bb643345/response.json"
+ },
+ {
+  "key": "FD-SIT-046",
+  "tc": "FD_TC_002",
+  "sit": "FD-SIT-046",
+  "src_scn": "ZJVKXQ-2026-06-15",
+  "src_dds": "ZJVKXQ-2026-06-15",
+  "loc": "NNFYOH",
+  "pnr_id": "NNFYOH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000026",
+  "pax": "EAMON HALOWWOOD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Aeroplan bypasses OTP",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "EAMON",
+    "HALOWWOOD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8af092fc-a613-48d0-8228-65e997cabadf/response.json"
+ },
+ {
+  "key": "FD-SIT-047",
+  "tc": "FD_TC_019",
+  "sit": "FD-SIT-047",
+  "src_scn": "JFTTGB-2026-06-15",
+  "src_dds": "JFTTGB-2026-06-15",
+  "loc": "XWHHKT",
+  "pnr_id": "XWHHKT-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000027",
+  "pax": "WINSLOW TUTLEMORE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "title": "Aeroplan+e-ticket resolves PNR",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "WINSLOW",
+    "TUTLEMORE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/d23829a8-782e-40a8-912b-18b2b8dfac77/response.json"
+ },
+ {
+  "key": "FD-SIT-049",
+  "tc": "FD_TC_007",
+  "sit": "FD-SIT-049",
+  "src_scn": "GYKKHK-2026-06-15",
+  "src_dds": "GYKKHK-2026-06-15",
+  "loc": "GJCJHM",
+  "pnr_id": "GJCJHM-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000028",
+  "pax": "JASPER HOLLOWDEN",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "OTP fails 5x -> IDV",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "JASPER",
+    "HOLLOWDEN"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/acd3db7e-1972-47ff-a2a6-467172920b57/response.json"
+ },
+ {
+  "key": "FD-SIT-057",
+  "tc": "FD_TC_008",
+  "sit": "FD-SIT-057",
+  "src_scn": "DYXKPK-2026-06-15",
+  "src_dds": "DYXKPK-2026-06-15",
+  "loc": "BXRPYI",
+  "pnr_id": "BXRPYI-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000029",
+  "pax": "DAGNY ULLSLEWORTH",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Interac cash payout",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "DAGNY",
+    "ULLSLEWORTH"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/db0f6c72-7c23-4ce7-976b-3bc7314e147c/response.json"
+ },
+ {
+  "key": "FD-SIT-058",
+  "tc": "FD_TC_009",
+  "sit": "FD-SIT-058",
+  "src_scn": "JJCGGR-2026-06-15",
+  "src_dds": "JJCGGR-2026-06-15",
+  "loc": "JLZPDB",
+  "pnr_id": "JLZPDB-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000030",
+  "pax": "VIOLETA LANGLEBURY",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "IBM/BSM/HSBC payout",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "VIOLETA",
+    "LANGLEBURY"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/e13a3283-55b2-4462-8c06-e6201653b34b/response.json"
+ },
+ {
+  "key": "FD-SIT-059",
+  "tc": "FD_TC_010",
+  "sit": "FD-SIT-059",
+  "src_scn": "PSKCYG-2026-06-15",
+  "src_dds": "PSKCYG-2026-06-15",
+  "loc": "SQSDLH",
+  "pnr_id": "SQSDLH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000031",
+  "pax": "CALLUM TUTBY",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "EFT/WL Paycycle payout",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "CALLUM",
+    "TUTBY"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/b55a1781-449f-4c90-aef0-9c76fd4949db/response.json"
+ },
+ {
+  "key": "FD-SIT-060",
+  "tc": "FD_TC_013",
+  "sit": "FD-SIT-060",
+  "src_scn": "VLJMQN-2026-06-15",
+  "src_dds": "VLJMQN-2026-06-15",
+  "loc": "NZVRMH",
+  "pnr_id": "NZVRMH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000032",
+  "pax": "IVANO FENLEBURY",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Cheque payout",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "IVANO",
+    "FENLEBURY"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/4cdc0c1c-5dd5-4808-8890-1a20de9aa6ea/response.json"
+ },
+ {
+  "key": "FD-SIT-061",
+  "tc": "FD_TC_002",
+  "sit": "FD-SIT-061",
+  "src_scn": "RGBMBP-2026-06-15",
+  "src_dds": "RGBMBP-2026-06-15",
+  "loc": "VITDTA",
+  "pnr_id": "VITDTA-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000033",
+  "pax": "LORCAN HAWERFORD",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "AC Wallet batch -> cash fallback",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "LORCAN",
+    "HAWERFORD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/7084b221-954f-45c9-8ace-e529b044d756/response.json"
+ },
+ {
+  "key": "FD-SIT-063",
+  "tc": "FD_TC_014",
+  "sit": "FD-SIT-063",
+  "src_scn": "BRBPHL-2026-06-15",
+  "src_dds": "BRBPHL-2026-06-15",
+  "loc": "BQOIPK",
+  "pnr_id": "BQOIPK-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000034",
+  "pax": "ANNIKA BRIGHTELLOW",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Promo code compensation",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ANNIKA",
+    "BRIGHTELLOW"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/23921b10-4911-4494-8ef5-f0dbacdcc609/response.json"
+ },
+ {
+  "key": "FD-SIT-064",
+  "tc": "FD_TC_015",
+  "sit": "FD-SIT-064",
+  "src_scn": "XFHYTX-2026-06-15",
+  "src_dds": "XFHYTX-2026-06-15",
+  "loc": "GIRQZV",
+  "pnr_id": "GIRQZV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000035",
+  "pax": "QUENTIN BEXANTHORPE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Country->payment mapping",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "QUENTIN",
+    "BEXANTHORPE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/ccf3c4c3-e230-42fb-9424-b933ae489b73/response.json"
+ },
+ {
+  "key": "FD-SIT-065",
+  "tc": "FD_TC_022",
+  "sit": "FD-SIT-065",
+  "src_scn": "MXNCXM-2026-06-15",
+  "src_dds": "MXNCXM-2026-06-15",
+  "loc": "SPQIVW",
+  "pnr_id": "SPQIVW-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000036",
+  "pax": "OONA IRONERHAM",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "title": "AC Wallet -> cash fallback (frozen)",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "OONA",
+    "IRONERHAM"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/587f8930-74d9-4a52-aeaa-5977849a304c/response.json"
+ },
+ {
+  "key": "FD-SIT-066",
+  "tc": "FD_TC_016",
+  "sit": "FD-SIT-066",
+  "src_scn": "KNLMWM-2026-06-15",
+  "src_dds": "KNLMWM-2026-06-15",
+  "loc": "IMSMWV",
+  "pnr_id": "IMSMWV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000037",
+  "pax": "CALLUM MOSSERMORE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "IBM retry then success",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "CALLUM",
+    "MOSSERMORE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/0b941d70-be69-4fff-907d-0800f85dc773/response.json"
+ },
+ {
+  "key": "FD-SIT-069",
+  "tc": "FD_TC_017",
+  "sit": "FD-SIT-069",
+  "src_scn": "DVXKMH-2026-06-15",
+  "src_dds": "DVXKMH-2026-06-15",
+  "loc": "ORYUNH",
+  "pnr_id": "ORYUNH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000038",
+  "pax": "XIMENA RUSHSHAW",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Country residence missing->corrected",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "XIMENA",
+    "RUSHSHAW"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/0513b40e-0814-4cb7-8d63-23186c94df6f/response.json"
+ },
+ {
+  "key": "FD-SIT-072",
+  "tc": "FD_TC_012",
+  "sit": "FD-SIT-072",
+  "src_scn": "GNTGTX-2026-06-15",
+  "src_dds": "GNTGTX-2026-06-15",
+  "loc": "FAGQJR",
+  "pnr_id": "FAGQJR-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000039",
+  "pax": "IVANO HALSHAW",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Split-from-group keeps group",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": true,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "IVANO",
+    "HALSHAW"
+   ],
+   [
+    "GIDEON",
+    "NETHERMARSH"
+   ],
+   [
+    "ZORA",
+    "WOODMERE"
+   ],
+   [
+    "FIONA",
+    "WILDANFIELD"
+   ],
+   [
+    "PRIYA",
+    "COTENPOOL"
+   ],
+   [
+    "ADRIAN",
+    "VANEENMARSH"
+   ],
+   [
+    "OONA",
+    "WRENWOOD"
+   ],
+   [
+    "NADEZHDA",
+    "BROOKANWICK"
+   ],
+   [
+    "DELPHINE",
+    "WOLDOWVALE"
+   ],
+   [
+    "QUENTIN",
+    "VANEERBROOK"
+   ],
+   [
+    "SVEN",
+    "ORMERLELEY"
+   ],
+   [
+    "MATEO",
+    "LONGANSTEAD"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/70239f56-8cac-4eef-a131-411b961f08cd/response.json"
+ },
+ {
+  "key": "FD-SIT-081",
+  "tc": "FD_TC_026",
+  "sit": "FD-SIT-081",
+  "src_scn": "FFJVGM-2026-06-15",
+  "src_dds": "FFJVGM-2026-06-15",
+  "loc": "VNDFKN",
+  "pnr_id": "VNDFKN-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000040",
+  "pax": "FIONA WOLDLECOMBE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "No duplicate overlap",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "FIONA",
+    "WOLDLECOMBE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8dc5cd75-96e5-4f14-88cc-487b188fef0e/response.json"
+ },
+ {
+  "key": "FD-SIT-090",
+  "tc": "FD_TC_001",
+  "sit": "FD-SIT-090",
+  "src_scn": "HNHJBN-2026-06-15",
+  "src_dds": "HNHJBN-2026-06-15",
+  "loc": "LLRYNE",
+  "pnr_id": "LLRYNE-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000041",
+  "pax": "ULRICH YEOTON",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Finalize replay once",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ULRICH",
+    "YEOTON"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/ebdfe0dd-11b5-4992-9ce1-91ca9b7c4b8d/response.json"
+ },
+ {
+  "key": "FD-SIT-092",
+  "tc": "FD_TC_006",
+  "sit": "FD-SIT-092",
+  "src_scn": "MYRRRK-2026-06-15",
+  "src_dds": "MYRRRK-2026-06-15",
+  "loc": "URUJJI",
+  "pnr_id": "URUJJI-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000042",
+  "pax": "HEIDI GREENENCOMBE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Notification failure no dup pay",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "HEIDI",
+    "GREENENCOMBE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/8461ad93-2978-49fe-ae34-3ae32907ae28/response.json"
+ },
+ {
+  "key": "FD-SIT-093",
+  "tc": "FD_TC_007",
+  "sit": "FD-SIT-093",
+  "src_scn": "ZPYSTQ-2026-06-15",
+  "src_dds": "ZPYSTQ-2026-06-15",
+  "loc": "KGMXRA",
+  "pnr_id": "KGMXRA-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000043",
+  "pax": "ANNIKA OATENSTON",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Foreign-currency CAD logged",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "ANNIKA",
+    "OATENSTON"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/10b30e0c-f361-42c7-b6c8-f4cf5baf6465/response.json"
+ },
+ {
+  "key": "FD-SIT-106",
+  "tc": "FD_TC_008",
+  "sit": "FD-SIT-106",
+  "src_scn": "ZKWTTR-2026-06-15",
+  "src_dds": "ZKWTTR-2026-06-15",
+  "loc": "RLZBSU",
+  "pnr_id": "RLZBSU-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014378000044",
+  "pax": "SEBASTIAN SELELGATE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "title": "Banking error -> reprocessed",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "pin": true,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "SELELGATE"
+   ]
+  ],
+  "uniq_names": true,
+  "s3_key": "traces/DDS/2026-06-15/29569d01-94e1-4098-a25e-86249485d2ad/response.json"
+ }
+]

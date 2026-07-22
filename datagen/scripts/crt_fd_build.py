@@ -49,7 +49,8 @@ CRT = dict(
            "b-3.accctmskcrtcac1.05hf7o.c4.kafka.ca-central-1.amazonaws.com:9092"),
   topic="emh-dev.ALTEA-PNRDATA-UAT",
   tt_host="ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
-  tt_db="trip-tracer", tt_user="dbadmin", tt_pass=os.environ.get("CCT_TRIPTRACER_PASSWORD", ""),   # from CCT_Agent/.env (proven)
+  tt_db="trip-tracer",
+  tt_secret="/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials",
   re_host="ac-cct-rule-engine-crt-cac1-rds-cluster.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
   re_db="postgres",
   re_secret="/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials",
@@ -69,8 +70,19 @@ def secret(sid):
         _seccache[sid]=json.loads(_sess.client("secretsmanager").get_secret_value(SecretId=sid)["SecretString"])
     return _seccache[sid]
 def tt_conn():
-    return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],
-                            user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+    # Credentials from Secrets Manager, not inline. The secret carries BOTH username/password and
+    # adminuser/adminpassword and which one authenticates differs per database, so try each.
+    s=secret(CRT["tt_secret"])
+    err=None
+    for u,pw in ((s.get("username"),s.get("password")),(s.get("adminuser"),s.get("adminpassword"))):
+        if not u or not pw: continue
+        try:
+            return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],
+                                    user=u,password=pw,sslmode="require",connect_timeout=20)
+        except psycopg2.OperationalError as e:
+            if "password authentication failed" not in str(e): raise
+            err=e
+    raise err or RuntimeError("no usable credential pair for trip-tracer")
 def re_conn():
     s=secret(CRT["re_secret"])
     return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],
@@ -96,6 +108,18 @@ SETS={
 CRT_BUILT_INDEXES=[f"{FD}/_FD_ELIG91_crt_index.json", f"{FD}/_FD_SIT44_crt_index.json",
                    f"{FD}/_FD_ELIG91_crt_marizza_index.json", f"{FD}/_FD_ELIG91_crt_set3_index.json",
                    f"{FD}/_FD_ELIG91_crt_set4_index.json"]
+# Per-build overrides. HOWTO §6 requires a FREE ticket prefix for every build — reusing a consumed
+# one does not error, the insert is ON CONFLICT DO NOTHING, so the ticket is silently dropped and only
+# the `ticket` checkpoint catches it later. The prefix/seed/output baked into SETS above belong to the
+# build that first used them, so a rebuild must override rather than edit the table.
+#   CRT_TPREFIX  free 6-digit ticket prefix (scan first)
+#   CRT_SEED     locator RNG seed — a new value mints new locators
+#   CRT_OUT      index output path, so an earlier set's index is not clobbered
+for _k in SETS:
+    if os.environ.get("CRT_TPREFIX"): SETS[_k]["tprefix"] = os.environ["CRT_TPREFIX"]
+    if os.environ.get("CRT_SEED"):    SETS[_k]["seed"]    = int(os.environ["CRT_SEED"])
+    if os.environ.get("CRT_OUT"):     SETS[_k]["out"]     = os.environ["CRT_OUT"]
+
 GROUP_SRC_TC="FD_TC_012"            # -> eds_pnr_output.booking_context bookingSubtype=GROUP
 TC063_SHELL="BPKPMR-2026-06-15"     # FD_TC_001 (APPR EL-400) shell; TC063 forced ELIGIBLE
 TC063_PAX=("SYLVIE","COTE")
