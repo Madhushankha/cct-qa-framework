@@ -27,7 +27,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+from datetime import UTC, datetime
 
 # ── tiny HTML helpers (reports are machine-generated and uniform; no bs4 dependency) ──
 _TAG = re.compile(r"<[^>]+>")
@@ -199,7 +199,7 @@ def convert_one(path: str, feed: str, env: str, product: str, run_id: str) -> di
         reasoning = _text(rm.group(1))
 
     started = meta.get("Started", "") or ""
-    date = started[:10] if re.match(r"\d{4}-\d{2}-\d{2}", started) else datetime.utcnow().strftime("%Y-%m-%d")
+    date = started[:10] if re.match(r"\d{4}-\d{2}-\d{2}", started) else datetime.now(UTC).strftime("%Y-%m-%d")
     regime = ""
     if "/" in meta.get("Route / Regime", ""):
         regime = meta["Route / Regime"].split("/")[-1].strip()
@@ -269,10 +269,13 @@ def main() -> int:
     ap.add_argument("--feed", required=True)
     ap.add_argument("--env", default="int")
     ap.add_argument("--product", default="brove")
-    ap.add_argument("--run-id", default=None)
+    ap.add_argument("--run-id", default=None, help="explicit run id (overrides --label)")
+    ap.add_argument("--label", default="alpha",
+                    help="version label used in the generated run id (default: alpha)")
     a = ap.parse_args()
 
-    run_id = a.run_id or f"{a.feed}_legacy_{datetime.utcnow().strftime('%Y-%m-%d_%H%M%S')}"
+    # run ids follow the native shape <feed>_crt_<label>_<date> (e.g. fd_crt_v19_2026-07-22)
+    run_id = a.run_id or f"{a.feed}_crt_{a.label}_{datetime.now(UTC).strftime('%Y-%m-%d')}"
     os.makedirs(a.out_run_dir, exist_ok=True)
 
     reports = sorted(f for f in os.listdir(a.legacy_dir) if f.endswith("_report.html"))
