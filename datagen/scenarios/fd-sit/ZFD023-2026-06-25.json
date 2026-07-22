@@ -1,0 +1,111 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFD023-2026-06-25",
+  "title": "FD-SIT-023: Mixed regime expired fallback",
+  "description": "Most generous regime expired - eligible fallback regime displayed",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFD023",
+    "booking_date": "2026-06-25",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "LGWAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "GB",
+    "agent_city": "LGW"
+  },
+  "last_modification_comment": "SIM-FD-SIT-023-INT",
+  "creation_comment": "SIM-FD-SIT-023-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "ANTHONY",
+      "last_name": "SCOTT",
+      "gender": "MALE",
+      "date_of_birth": "1969-05-08",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165551024"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "123",
+      "operating_flight_number": "123",
+      "origin": "LGW",
+      "destination": "YUL",
+      "dep_local": "2026-06-25T10:00:00",
+      "arr_local": "2026-06-25T14:00:00",
+      "dep_utc": "2026-06-25T14:00:00Z",
+      "arr_utc": "2026-06-25T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "77W",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "GBP"
+    },
+    "ticket_numbers": [
+      "0142400000231"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFD023",
+        "pnr_id": "ZFD023-2026-06-25"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-023",
+    "eu-uk-261",
+    "int-env",
+    "mixed",
+    "expired"
+  ]
+}

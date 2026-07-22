@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "RYTNMU-2026-06-20",
+  "pnr": "RYTNMU"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "YOW",
+    "associatedSegments": [
+     {
+      "segmentId": "RYTNMU-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YOW",
+      "marketingFlightNumber": 121,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 121,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#121#2026-06-20#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "YOW",
+    "associatedSegments": [
+     {
+      "segmentId": "RYTNMU-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YOW",
+      "marketingFlightNumber": 121,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 121,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#121#2026-06-20#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "RYTNMU-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "121",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YOW",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 150,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "RYTNMU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-21",
+     "reason": "No travel Return - Delay below 3 hours",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "RYTNMU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "RYTNMU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "RYTNMU-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 121,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YOW",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 150,
+   "delayCategory": "NO_TRAVEL",
+   "passengerEligibility": [
+    {
+     "passengerId": "RYTNMU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-15",
+     "reason": "No travel Return - Delay below 3 hours",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

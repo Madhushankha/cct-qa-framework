@@ -1,0 +1,23 @@
+[
+ {
+  "pnr_id": "TYYYIJ-2026-06-15",
+  "syscode": "FD-APPR-PE-01",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca",
+  "group": false
+ },
+ {
+  "pnr_id": "VGJVXT-2026-06-15",
+  "syscode": "FD-EU-PE-01",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca",
+  "group": false
+ },
+ {
+  "pnr_id": "MQIKRA-2026-06-15",
+  "syscode": "FD-ASL-PE-01",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca",
+  "group": false
+ }
+]

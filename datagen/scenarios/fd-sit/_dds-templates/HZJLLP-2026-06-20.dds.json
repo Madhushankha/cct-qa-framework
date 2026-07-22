@@ -1,0 +1,197 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "HZJLLP-2026-06-20",
+  "pnr": "HZJLLP"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "HZJLLP-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 84,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 84,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#084#2026-06-20#TLV"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "HZJLLP-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 84,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 84,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#084#2026-06-20#TLV"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "HZJLLP-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "084",
+    "departureAirport": "TLV",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "HZJLLP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-ASL-EL-01",
+     "reason": "Delay at arrival 8 hours and plus + Non-extraordinary code",
+     "failureReasons": null,
+     "compensationDetails": {
+      "amount": 3670,
+      "currency": "ILS",
+      "delayBand": "DELAY_8_HOURS_OR_MORE",
+      "expiryDate": "2027-12-31"
+     }
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "HZJLLP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "HZJLLP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "HZJLLP-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 84,
+   "departureAirport": "TLV",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "delayMinutes": 0,
+   "delayCategory": "NO_TRAVEL",
+   "passengerEligibility": [
+    {
+     "passengerId": "HZJLLP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "SoC-ASL-EL-02",
+     "reason": "No travel Return - Delay 3 hours or more",
+     "expiryDate": "2027-12-31",
+     "expenseCategories": [
+      {
+       "type": "MEAL",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 30
+      },
+      {
+       "type": "ACCOMMODATION",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 500
+      },
+      {
+       "type": "TRANSPORTATION",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 200
+      },
+      {
+       "type": "COMMUNICATION",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 30
+      },
+      {
+       "type": "PARKING",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 50
+      },
+      {
+       "type": "ESSENTIALS",
+       "region": "ISRAEL",
+       "delayBand": "NO_TRAVEL",
+       "currency": "ILS",
+       "amount": 30
+      }
+     ],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

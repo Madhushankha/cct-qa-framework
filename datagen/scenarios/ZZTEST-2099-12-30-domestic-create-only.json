@@ -1,0 +1,158 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZTEST-2099-12-30-domestic-create-only",
+  "title": "Sentinel: AC-native domestic single-pax single-segment creation (pipeline smoke test)",
+  "description": "Minimal synthetic PNR used to verify the full EMH → MirrorMaker2 → CCT MSK → Flink → DERIVED-PNR → TRANSFORMED-PNR → EVENT-DETECTION → EDS → RESULT-EVENT-DETECTION → Aurora ingestion cascade end-to-end. The identity uses a sentinel PNR code (ZZTEST) and a far-future booking_date (2099-12-30) so the pnr_id ZZTEST-2099-12-30 cannot collide with any real or synthetic booking.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZTEST",
+    "booking_date": "2099-12-30",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZAC02XY",
+    "iata_number": "00000001",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "SC",
+    "duty_code": "RC",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-SCENARIO-ZZTEST-0001",
+  "creation_comment": "SIM-SCENARIO-ZZTEST-0001",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "SIMULATED",
+      "last_name": "SENTINEL",
+      "gender": "UNKNOWN",
+      "date_of_birth": "1990-01-01",
+      "email": "sim.sentinel@zztest.invalid",
+      "phone": "16045550001",
+      "passport": {
+        "number": "SIM00001",
+        "expiry": "2040-01-01",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "101",
+      "operating_flight_number": "101",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2100-01-15T10:00:00",
+      "arr_local": "2100-01-15T12:45:00",
+      "dep_utc": "2100-01-15T15:00:00Z",
+      "arr_utc": "2100-01-15T20:45:00Z",
+      "booking_datetime": "2099-12-30T14:30:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2099-12-30T14:30:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub: PNR exists with travelers and segments but no ticketingReferences yet. Matches the EMH pattern observed in B45OZB v0."
+    },
+    {
+      "version": 1,
+      "at": "2099-12-30T14:30:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached; this is the 'substantive' creation and the version that drives DERIVED-PNR PNR_CREATION."
+    }
+  ],
+
+  "expected_cascade": {
+    "derived_pnr_events": [
+      {"eventName": "PNR_CREATION", "triggered_by_version": 1,
+       "max_latency_ms_from_raw": 2000}
+    ],
+    "transformed_pnr_queries": [
+      {"targetTable": "trip", "command": "INSERT"},
+      {"targetTable": "trip_details", "command": "INSERT"},
+      {"targetTable": "passenger", "command": "INSERT"},
+      {"targetTable": "passenger_updates", "command": "INSERT"},
+      {"targetTable": "journey_updates", "command": "INSERT"}
+    ],
+    "event_detection_pnr_queries": [
+      {"targetTable": "trip", "command": "INSERT"},
+      {"targetTable": "trip_details", "command": "INSERT"},
+      {"targetTable": "flight_segment", "command": "INSERT"}
+    ],
+    "eds_result": {
+      "bounds_count": 1,
+      "regimes_possible": [],
+      "note": "Flight is in year 2100, not approaching — EDS should NOT emit APPR regime. bounds[] present but regimes[] empty."
+    },
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZTEST", "pnr_id": "ZZTEST-2099-12-30"},
+      "trip_details": {"rows": 1, "last_pnr_version": 1, "source": "AC", "office_id": "YYZAC02XY"},
+      "passenger": {"rows": 1},
+      "passenger_updates": {"rows": 2, "attribute_types": ["CONTACT", "DOCUMENT"]},
+      "flight_segment": {"rows": 1, "status": "HK",
+                         "departure_airport": "YYZ", "arrival_airport": "YVR"},
+      "eds_pnr_output": {"rows": "1+", "regimes": []},
+      "dds_pnr_output": {"rows": 0},
+      "ticket_updates": {"rows": 0},
+      "baggage_updates": {"rows": 0}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {
+    "primary_code": "S0",
+    "primary_name": "Creation-only",
+    "confidence": "high"
+  },
+
+  "tags": [
+    "synthetic", "sentinel", "smoke-test", "AC-native", "domestic",
+    "single-pax", "single-segment", "future-dated", "economy-cabin"
+  ],
+
+  "comparison_keys": {
+    "shape_signature": "S0|pax=1|seg=1|bounds=1|ver=2|ssr=0|bag=0|tkt=0|cs=0|disr=0",
+    "source_systems": ["AC"],
+    "carriers": ["AC"],
+    "airports": ["YYZ", "YVR"],
+    "cabins": ["Y"],
+    "segment_statuses": ["HK"],
+    "regimes": []
+  },
+
+  "dimensions": {
+    "passenger_count": 1,
+    "segment_count": 1,
+    "bound_count": 1,
+    "pnr_versions_emitted": 2,
+    "booking_to_departure_hours": 403,
+    "has_codeshare": false,
+    "has_disruption": false,
+    "is_cancelled": false,
+    "is_international": false
+  },
+
+  "provenance": {
+    "canvas_derived_from": "B45OZB-2026-04-22 v1 (real AC-native domestic creation, captured 2026-04-22 from emh-dev.ALTEA-PNRDATA-UAT)",
+    "rendered_by": "scripts/scenario_engine.py render"
+  }
+}

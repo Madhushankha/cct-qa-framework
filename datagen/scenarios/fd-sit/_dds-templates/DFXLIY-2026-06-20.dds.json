@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "DFXLIY-2026-06-20",
+  "pnr": "DFXLIY"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "YYC",
+    "associatedSegments": [
+     {
+      "segmentId": "DFXLIY-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YYC",
+      "marketingFlightNumber": 901,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 901,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#901#2026-06-20#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "YYC",
+    "associatedSegments": [
+     {
+      "segmentId": "DFXLIY-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YYC",
+      "marketingFlightNumber": 901,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 901,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#901#2026-06-20#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "DFXLIY-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "901",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YYC",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "77",
+   "customerFriendlyDisruptionReason": "The delay was caused by factors outside the airline's control and is not covered.",
+   "disruptionReason": "WEATHER",
+   "passengerEligibility": [
+    {
+     "passengerId": "DFXLIY-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-12",
+     "reason": "No travel Incomplete - Outside carrier control",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "DFXLIY-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "DFXLIY-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "DFXLIY-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 901,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YYC",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "77",
+   "disruptionReason": "WEATHER",
+   "customerFriendlyDisruptionReason": "The delay was caused by factors outside the airline's control and is not covered.",
+   "delayMinutes": 0,
+   "delayCategory": "NO_TRAVEL",
+   "passengerEligibility": [
+    {
+     "passengerId": "DFXLIY-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-12",
+     "reason": "No travel Incomplete - Outside carrier control",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

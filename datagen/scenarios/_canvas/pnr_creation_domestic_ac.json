@@ -1,0 +1,860 @@
+{
+  "canvas_id": "pnr_creation_domestic_ac",
+  "description": "Amadeus processedPnr for an AC-native domestic single-segment booking (3 ADT pax), captured 2026-04-22 from B45OZB v1. Used as a base Amadeus PNR structure \u2014 scenarios override identity, pax, segments, POS while keeping Amadeus metadata (automatedProcesses, queuingOffice, financialValues, etc.) intact.",
+  "source_pnr": "B45OZB",
+  "source_version": "1",
+  "captured_at": "2026-04-22T16:22:06Z",
+  "processedPnr": {
+    "type": "pnr",
+    "id": "B45OZB-2026-04-22",
+    "bookingIdentifier": "B45OZB",
+    "version": "1",
+    "owner": {
+      "office": {
+        "id": "YMQAC010C",
+        "iataNumber": "69990874",
+        "systemCode": "AC",
+        "agentType": "AIRLINE"
+      },
+      "login": {
+        "initials": "RG",
+        "dutyCode": "RC",
+        "countryCode": "CA",
+        "cityCode": "YMQ"
+      }
+    },
+    "creation": {
+      "dateTime": "2026-04-22T16:22:00Z",
+      "pointOfSale": {
+        "office": {
+          "id": "YMQAC010C",
+          "iataNumber": "69990874",
+          "systemCode": "AC",
+          "agentType": "AIRLINE"
+        },
+        "login": {
+          "numericSign": "8501",
+          "initials": "RG",
+          "countryCode": "CA",
+          "cityCode": "YMQ"
+        }
+      },
+      "comment": "ER-AC/HEXARES01"
+    },
+    "lastModification": {
+      "dateTime": "2026-04-22T16:22:00Z",
+      "pointOfSale": {
+        "office": {
+          "id": "YMQAC010C",
+          "iataNumber": "69990874",
+          "systemCode": "AC",
+          "agentType": "AIRLINE"
+        },
+        "login": {
+          "numericSign": "8501",
+          "initials": "RG",
+          "dutyCode": "RC",
+          "countryCode": "CA",
+          "cityCode": "YMQ"
+        }
+      },
+      "comment": "RG-AC/HEXARES01"
+    },
+    "queuingOffice": {
+      "id": "YMQAC010C"
+    },
+    "nip": 3,
+    "travelers": [
+      {
+        "type": "stakeholder",
+        "id": "B45OZB-2026-04-22-PT-1",
+        "sourceId": "5108962A00030C12",
+        "passengerTypeCode": "ADT",
+        "names": [
+          {
+            "firstName": "ABIGAIL",
+            "lastName": "CHAPMAN"
+          }
+        ],
+        "dateOfBirth": "1999-01-22",
+        "gender": "UNKNOWN",
+        "identityDocuments": [
+          {
+            "type": "service",
+            "id": "B45OZB-2026-04-22-OT-6",
+            "code": "DOCS",
+            "subType": "SPECIAL_SERVICE_REQUEST",
+            "serviceProvider": {
+              "code": "AC"
+            },
+            "status": "HK",
+            "nip": 1,
+            "creation": {
+              "dateTime": "2026-04-22T16:21:00Z",
+              "pointOfSale": {
+                "office": {
+                  "id": "YMQAC010C"
+                }
+              }
+            },
+            "document": {
+              "documentType": "PASSPORT",
+              "number": "YJ657831",
+              "expiryDate": "2036-01-23",
+              "issuanceCountry": "CAN",
+              "nationality": "CAN",
+              "gender": "MALE",
+              "name": {
+                "fullName": "ABIGAIL CHAPMAN",
+                "firstName": "ABIGAIL",
+                "lastName": "CHAPMAN"
+              },
+              "birthDate": "1999-01-22"
+            },
+            "text": "P/CAN/YJ657831/CAN/22JAN99/M/23JAN36/CHAPMAN/ABIGAIL/H"
+          }
+        ],
+        "contacts": {
+          "collection": [
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-9",
+              "ref": "processedPnr.contacts"
+            },
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-12",
+              "ref": "processedPnr.contacts"
+            }
+          ]
+        }
+      },
+      {
+        "type": "stakeholder",
+        "id": "B45OZB-2026-04-22-PT-2",
+        "sourceId": "5108962A00030BA3",
+        "passengerTypeCode": "ADT",
+        "names": [
+          {
+            "firstName": "KEDAR",
+            "lastName": "JADHAV"
+          }
+        ],
+        "dateOfBirth": "1999-01-22",
+        "gender": "UNKNOWN",
+        "identityDocuments": [
+          {
+            "type": "service",
+            "id": "B45OZB-2026-04-22-OT-7",
+            "code": "DOCS",
+            "subType": "SPECIAL_SERVICE_REQUEST",
+            "serviceProvider": {
+              "code": "AC"
+            },
+            "status": "HK",
+            "nip": 1,
+            "creation": {
+              "dateTime": "2026-04-22T16:21:00Z",
+              "pointOfSale": {
+                "office": {
+                  "id": "YMQAC010C"
+                }
+              }
+            },
+            "document": {
+              "documentType": "PASSPORT",
+              "number": "AH611289",
+              "expiryDate": "2036-01-23",
+              "issuanceCountry": "CAN",
+              "nationality": "CAN",
+              "gender": "MALE",
+              "name": {
+                "fullName": "KEDAR JADHAV",
+                "firstName": "KEDAR",
+                "lastName": "JADHAV"
+              },
+              "birthDate": "1999-01-22"
+            },
+            "text": "P/CAN/AH611289/CAN/22JAN99/M/23JAN36/JADHAV/KEDAR/H"
+          }
+        ],
+        "contacts": {
+          "collection": [
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-11",
+              "ref": "processedPnr.contacts"
+            },
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-12",
+              "ref": "processedPnr.contacts"
+            }
+          ]
+        }
+      },
+      {
+        "type": "stakeholder",
+        "id": "B45OZB-2026-04-22-PT-3",
+        "sourceId": "5108962A00030C13",
+        "passengerTypeCode": "ADT",
+        "names": [
+          {
+            "firstName": "BERT",
+            "lastName": "MORRISON"
+          }
+        ],
+        "dateOfBirth": "1999-01-22",
+        "gender": "UNKNOWN",
+        "identityDocuments": [
+          {
+            "type": "service",
+            "id": "B45OZB-2026-04-22-OT-8",
+            "code": "DOCS",
+            "subType": "SPECIAL_SERVICE_REQUEST",
+            "serviceProvider": {
+              "code": "AC"
+            },
+            "status": "HK",
+            "nip": 1,
+            "creation": {
+              "dateTime": "2026-04-22T16:21:00Z",
+              "pointOfSale": {
+                "office": {
+                  "id": "YMQAC010C"
+                }
+              }
+            },
+            "document": {
+              "documentType": "PASSPORT",
+              "number": "XE735752",
+              "expiryDate": "2036-01-23",
+              "issuanceCountry": "CAN",
+              "nationality": "CAN",
+              "gender": "MALE",
+              "name": {
+                "fullName": "BERT MORRISON",
+                "firstName": "BERT",
+                "lastName": "MORRISON"
+              },
+              "birthDate": "1999-01-22"
+            },
+            "text": "P/CAN/XE735752/CAN/22JAN99/M/23JAN36/MORRISON/BERT/H"
+          }
+        ],
+        "contacts": {
+          "collection": [
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-10",
+              "ref": "processedPnr.contacts"
+            },
+            {
+              "type": "contact",
+              "id": "B45OZB-2026-04-22-OT-12",
+              "ref": "processedPnr.contacts"
+            }
+          ]
+        }
+      }
+    ],
+    "products": [
+      {
+        "type": "product",
+        "subType": "AIR",
+        "id": "B45OZB-2026-04-22-ST-1",
+        "airSegment": {
+          "departure": {
+            "iataCode": "YUL",
+            "localDateTime": "2026-04-23T13:10:00"
+          },
+          "arrival": {
+            "iataCode": "YYZ",
+            "terminal": "1",
+            "localDateTime": "2026-04-23T14:38:00"
+          },
+          "carrierCode": "AC",
+          "number": "413",
+          "aircraft": {
+            "code": "320"
+          },
+          "class": "Y",
+          "cabin": "Y",
+          "operating": {
+            "carrierCode": "AC",
+            "number": "413",
+            "class": "Y"
+          },
+          "bookingDateTime": "2026-04-22T16:21:00Z",
+          "status": "HK",
+          "isOpenNumber": false,
+          "isInformational": false,
+          "yieldData": {
+            "subClass": {
+              "value": 0,
+              "pointOfSale": {
+                "office": {
+                  "systemCode": "AC"
+                },
+                "login": {
+                  "countryCode": "CA"
+                }
+              }
+            },
+            "bidPrice": 0,
+            "effectiveYield": 0,
+            "ondYield": {
+              "origin": "YUL",
+              "destination": "YYZ",
+              "yield": 0
+            }
+          }
+        },
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-1",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-2",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-3",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      }
+    ],
+    "flightItineraries": [
+      {
+        "type": "JOURNEY_SERVER_BOUND",
+        "originIataCode": "YUL",
+        "destinationIataCode": "YYZ",
+        "flights": [
+          {
+            "flightSegment": {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          }
+        ]
+      }
+    ],
+    "ticketingReferences": [
+      {
+        "type": "ticketing-reference",
+        "id": "B45OZB-2026-04-22-OT-31",
+        "referenceTypeCode": "FA",
+        "documents": [
+          {
+            "documentType": "ETICKET",
+            "primaryDocumentNumber": "0142122909855",
+            "status": "ISSUED",
+            "issuanceLocalDate": "2026-04-22",
+            "issuingOriginatorOffice": {
+              "id": "YMQAC010C",
+              "iataNumber": "69990874",
+              "systemCode": "AC"
+            },
+            "quotationTotalFare": {
+              "amount": "1480.25",
+              "currency": "CAD"
+            },
+            "coupons": [
+              {
+                "sequenceNumber": 1,
+                "product": {
+                  "type": "product",
+                  "id": "B45OZB-2026-04-22-ST-1",
+                  "ref": "processedPnr.products"
+                }
+              }
+            ]
+          }
+        ],
+        "isInfant": false,
+        "traveler": {
+          "type": "stakeholder",
+          "id": "B45OZB-2026-04-22-PT-1",
+          "ref": "processedPnr.travelers"
+        },
+        "products": {
+          "collection": [
+            {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ticketing-reference",
+        "id": "B45OZB-2026-04-22-OT-32",
+        "referenceTypeCode": "FA",
+        "documents": [
+          {
+            "documentType": "ETICKET",
+            "primaryDocumentNumber": "0142122909856",
+            "status": "ISSUED",
+            "issuanceLocalDate": "2026-04-22",
+            "issuingOriginatorOffice": {
+              "id": "YMQAC010C",
+              "iataNumber": "69990874",
+              "systemCode": "AC"
+            },
+            "quotationTotalFare": {
+              "amount": "1480.25",
+              "currency": "CAD"
+            },
+            "coupons": [
+              {
+                "sequenceNumber": 1,
+                "product": {
+                  "type": "product",
+                  "id": "B45OZB-2026-04-22-ST-1",
+                  "ref": "processedPnr.products"
+                }
+              }
+            ]
+          }
+        ],
+        "isInfant": false,
+        "traveler": {
+          "type": "stakeholder",
+          "id": "B45OZB-2026-04-22-PT-2",
+          "ref": "processedPnr.travelers"
+        },
+        "products": {
+          "collection": [
+            {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ticketing-reference",
+        "id": "B45OZB-2026-04-22-OT-33",
+        "referenceTypeCode": "FA",
+        "documents": [
+          {
+            "documentType": "ETICKET",
+            "primaryDocumentNumber": "0142122909857",
+            "status": "ISSUED",
+            "issuanceLocalDate": "2026-04-22",
+            "issuingOriginatorOffice": {
+              "id": "YMQAC010C",
+              "iataNumber": "69990874",
+              "systemCode": "AC"
+            },
+            "quotationTotalFare": {
+              "amount": "1480.25",
+              "currency": "CAD"
+            },
+            "coupons": [
+              {
+                "sequenceNumber": 1,
+                "product": {
+                  "type": "product",
+                  "id": "B45OZB-2026-04-22-ST-1",
+                  "ref": "processedPnr.products"
+                }
+              }
+            ]
+          }
+        ],
+        "isInfant": false,
+        "traveler": {
+          "type": "stakeholder",
+          "id": "B45OZB-2026-04-22-PT-3",
+          "ref": "processedPnr.travelers"
+        },
+        "products": {
+          "collection": [
+            {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          ]
+        }
+      }
+    ],
+    "contacts": [
+      {
+        "type": "contact",
+        "id": "B45OZB-2026-04-22-OT-9",
+        "email": {
+          "address": "ABIGAIL.CHAPMAN@AC-QA.TESTINATOR.COM"
+        },
+        "language": "EN",
+        "purpose": [
+          "NOTIFICATION"
+        ],
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-1",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      },
+      {
+        "type": "contact",
+        "id": "B45OZB-2026-04-22-OT-10",
+        "email": {
+          "address": "KEDAR.JADHAV@AC-QA.TESTINATOR.COM"
+        },
+        "language": "EN",
+        "purpose": [
+          "NOTIFICATION"
+        ],
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-3",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      },
+      {
+        "type": "contact",
+        "id": "B45OZB-2026-04-22-OT-11",
+        "email": {
+          "address": "BERT.MORRISON@AC-QA.TESTINATOR.COM"
+        },
+        "language": "EN",
+        "purpose": [
+          "NOTIFICATION"
+        ],
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-2",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      },
+      {
+        "type": "contact",
+        "id": "B45OZB-2026-04-22-OT-12",
+        "phone": {
+          "category": "PERSONAL",
+          "deviceType": "MOBILE",
+          "number": "15147080308"
+        },
+        "language": "EN",
+        "purpose": [
+          "NOTIFICATION"
+        ],
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-1",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-2",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-3",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      }
+    ],
+    "automatedProcesses": [
+      {
+        "type": "automated-process",
+        "id": "B45OZB-2026-04-22-OT-30",
+        "code": "OK",
+        "dateTime": "2026-04-22T00:00:00",
+        "office": {
+          "id": "YMQAC010C"
+        },
+        "applicableCarrierCode": "AC",
+        "isApplicableToInfants": false,
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-1",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-2",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-3",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        },
+        "products": {
+          "collection": [
+            {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          ]
+        }
+      }
+    ],
+    "paymentMethods": [
+      {
+        "type": "payment-method",
+        "id": "B45OZB-2026-04-22-OT-13",
+        "formsOfPayment": [
+          {
+            "code": "STD",
+            "fopIndicator": "NEW",
+            "freeText": "CASH"
+          }
+        ],
+        "isInfant": false
+      }
+    ],
+    "fareElements": [
+      {
+        "type": "fare-element",
+        "id": "B45OZB-2026-04-22-OT-22",
+        "code": "FE",
+        "text": "PAX AC ONLY/FREE CHG/FREE REF -BG:AC"
+      },
+      {
+        "type": "fare-element",
+        "id": "B45OZB-2026-04-22-OT-23",
+        "text": "PAX AC"
+      }
+    ],
+    "quotations": [
+      {
+        "type": "quotation-record",
+        "id": "B45OZB-2026-04-22-QT-2",
+        "recordType": "TST",
+        "isManual": false,
+        "documentType": "ETICKET",
+        "issuanceState": "FIRST_ISSUE",
+        "creation": {
+          "date": "2026-04-22",
+          "pointOfSale": {
+            "office": {
+              "id": "YMQAC010C"
+            }
+          }
+        },
+        "modification": {
+          "date": "2026-04-22",
+          "pointOfSale": {
+            "office": {
+              "id": "YMQAC010C"
+            }
+          }
+        },
+        "lastTicketingDate": "2026-04-23",
+        "originCityCode": "YMQ",
+        "destinationCityCode": "YTO",
+        "recordFlags": [
+          "DOMESTIC"
+        ],
+        "fareCalculation": {
+          "pricingIndicator": "0",
+          "text": "YMQ AC YTO Q3.00Q28.00 1207.00YZ0NZALT CAD1238.00END",
+          "isManual": false
+        },
+        "pricing": {
+          "elementaryPrices": [
+            {
+              "amount": "1480.25",
+              "currency": "CAD",
+              "elementaryPriceType": "TOTAL"
+            },
+            {
+              "amount": "1238.00",
+              "currency": "CAD",
+              "elementaryPriceType": "BASE_FARE"
+            },
+            {
+              "amount": "1480.25",
+              "currency": "CAD",
+              "elementaryPriceType": "GRAND_TOTAL"
+            }
+          ],
+          "taxes": [
+            {
+              "taxAmount": {
+                "amount": "9.46",
+                "currency": "CAD"
+              },
+              "code": "CA",
+              "nature": "AE",
+              "category": "NEW"
+            },
+            {
+              "taxAmount": {
+                "amount": "62.37",
+                "currency": "CAD"
+              },
+              "code": "XG",
+              "nature": "DP",
+              "category": "NEW"
+            },
+            {
+              "taxAmount": {
+                "amount": "124.43",
+                "currency": "CAD"
+              },
+              "code": "XQ",
+              "nature": "GO",
+              "category": "NEW"
+            },
+            {
+              "taxAmount": {
+                "amount": "45.99",
+                "currency": "CAD"
+              },
+              "code": "W1",
+              "nature": "AE",
+              "category": "NEW"
+            }
+          ]
+        },
+        "couponPricings": [
+          {
+            "fareBasis": {
+              "primaryCode": "YZ0",
+              "fareBasisCode": "NZALT"
+            },
+            "baggageAllowance": {
+              "quantity": 2
+            },
+            "product": {
+              "type": "product",
+              "id": "B45OZB-2026-04-22-ST-1",
+              "ref": "processedPnr.products"
+            }
+          }
+        ],
+        "fareElements": {
+          "collection": [
+            {
+              "type": "fare-element",
+              "id": "B45OZB-2026-04-22-OT-22",
+              "ref": "processedPnr.fareElements"
+            },
+            {
+              "type": "fare-element",
+              "id": "B45OZB-2026-04-22-OT-23",
+              "ref": "processedPnr.fareElements"
+            }
+          ]
+        },
+        "travelers": {
+          "collection": [
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-1",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-2",
+              "ref": "processedPnr.travelers"
+            },
+            {
+              "type": "stakeholder",
+              "id": "B45OZB-2026-04-22-PT-3",
+              "ref": "processedPnr.travelers"
+            }
+          ]
+        }
+      }
+    ],
+    "deliveryData": {
+      "segmentDeliveries": [
+        {
+          "type": "segment-delivery",
+          "id": "B45OZB-2026-04-22-OT-1",
+          "isInfant": false,
+          "traveler": {
+            "type": "stakeholder",
+            "id": "B45OZB-2026-04-22-PT-1",
+            "ref": "processedPnr.travelers"
+          },
+          "product": {
+            "type": "product",
+            "id": "B45OZB-2026-04-22-ST-1",
+            "ref": "processedPnr.products"
+          }
+        },
+        {
+          "type": "segment-delivery",
+          "id": "B45OZB-2026-04-22-OT-2",
+          "isInfant": false,
+          "traveler": {
+            "type": "stakeholder",
+            "id": "B45OZB-2026-04-22-PT-2",
+            "ref": "processedPnr.travelers"
+          },
+          "product": {
+            "type": "product",
+            "id": "B45OZB-2026-04-22-ST-1",
+            "ref": "processedPnr.products"
+          }
+        },
+        {
+          "type": "segment-delivery",
+          "id": "B45OZB-2026-04-22-OT-3",
+          "isInfant": false,
+          "traveler": {
+            "type": "stakeholder",
+            "id": "B45OZB-2026-04-22-PT-3",
+            "ref": "processedPnr.travelers"
+          },
+          "product": {
+            "type": "product",
+            "id": "B45OZB-2026-04-22-ST-1",
+            "ref": "processedPnr.products"
+          }
+        }
+      ]
+    },
+    "financialValues": [
+      {
+        "id": "B45OZB-2026-04-22-OT-4",
+        "companyId": "AC",
+        "documentEnvelope": {
+          "payload": "PNR,1,AC,CAD,,20260422,0000000000ftRAZ1KcQmLa7kr0BXcWi4=YUL,,=1,0,0,0,0=1=1=1,AC,0413,20260423,1310,YULYYZ,Y,Y,HK,3,0,0,AC,AC,0413,Y,164,0.00,1,0=1=1,20260422,000100,YUL,O,CA,YUL,6999087,1A,YMQAC010C,Y,,0.00,0.00,0.00,0.00=2=",
+          "metaData": {
+            "documentType": "PROS_RTDP"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "key": "FD_TC_019",
+  "tc": "FD_TC_019",
+  "sit": null,
+  "src_scn": "QPZWRQ-2026-06-15",
+  "src_dds": "QPZWRQ-2026-06-15",
+  "loc": "ZIOCQB",
+  "pnr_id": "ZIOCQB-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014297000001",
+  "pax": "PIERRE LAVIGNE",
+  "route": "YUL-YYZ",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "title": "Delay 6-<9h AC Wallet ($840)",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "oal": false,
+  "pin": true
+ }
+]

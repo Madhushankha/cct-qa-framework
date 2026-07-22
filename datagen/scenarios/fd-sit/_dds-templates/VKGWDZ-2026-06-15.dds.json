@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "VKGWDZ-2026-06-15",
+  "pnr": "VKGWDZ"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "VKGWDZ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "CDG",
+      "marketingFlightNumber": 870,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 870,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#870#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "VKGWDZ-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "VKGWDZ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "CDG",
+      "marketingFlightNumber": 870,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 870,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#870#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "VKGWDZ-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "VKGWDZ-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "871",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "WEAT",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "VKGWDZ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-09",
+     "reason": "Extraordinary - No travel Return",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "VKGWDZ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "VKGWDZ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "VKGWDZ-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 871,
+   "departureAirport": "CDG",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "VKGWDZ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

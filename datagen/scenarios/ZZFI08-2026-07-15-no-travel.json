@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZFI08-2026-07-15-no-travel",
+  "title": "FD-SIT-017: APPR no-travel controllable (INT)",
+  "description": "APPR no-travel scenario. Flight cancelled at origin, customer did not travel. Controllable disruption.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZFI08",
+    "booking_date": "2026-06-20",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-017",
+  "creation_comment": "SIM-FD-SIT-INT-017",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "PATRICIA",
+      "last_name": "MARTIN",
+      "gender": "FEMALE",
+      "date_of_birth": "1988-12-05",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+15145550109",
+      "passport": {
+        "number": "SIMFD108",
+        "expiry": "2034-12-05",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "708234568"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "455",
+      "operating_flight_number": "455",
+      "origin": "YUL",
+      "destination": "YYC",
+      "dep_local": "2026-07-15T10:00:00",
+      "arr_local": "2026-07-15T12:30:00",
+      "dep_utc": "2026-07-15T14:00:00Z",
+      "arr_utc": "2026-07-15T18:30:00Z",
+      "booking_datetime": "2026-06-20T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "UN",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-06-20",
+    "fare": {"amount": "475.00", "currency": "CAD"},
+    "ticket_numbers": ["0142400001010"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-20T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-20T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZFI08", "pnr_id": "ZZFI08-2026-06-20"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-017", "appr", "no-travel", "cancelled", "int-env"]
+}

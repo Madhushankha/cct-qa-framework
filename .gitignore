@@ -12,3 +12,6 @@ secrets.local.*
 # local Claude Code config (may hold env secrets) + scratch
 .claude/
 scratch_titles.txt
+
+# vendored datagen: compiled artifacts and scratch work dirs
+datagen/**/__pycache__/

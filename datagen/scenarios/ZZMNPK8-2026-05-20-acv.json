@@ -1,0 +1,118 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZMNPK8-2026-05-20-acv",
+  "title": "NonMVP-SIT: ACV-booked PNR (Air Canada Vacations)",
+  "description": "ACV-booked PNR for Non-MVP SIT TC-63. This booking was made through Air Canada Vacations and should route to ACV Contact-Us.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZMNPK",
+    "booking_date": "2026-05-20",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZACV001",
+    "iata_number": "00000003",
+    "system_code": "ACV",
+    "agent_type": "TRAVEL_AGENCY",
+    "agent_numeric_sign": "0003",
+    "agent_initials": "AV",
+    "duty_code": "RC",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-NONMVP-SIT-ACV",
+  "creation_comment": "SIM-NONMVP-SIT-ACV",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "ROBERT",
+      "last_name": "WILSON",
+      "gender": "MALE",
+      "date_of_birth": "1978-03-22",
+      "email": "rwilson@email.com",
+      "phone": "14165559876",
+      "passport": {
+        "number": "SIMMNPK8",
+        "expiry": "2032-03-22",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "995",
+      "operating_flight_number": "995",
+      "origin": "YYZ",
+      "destination": "CUN",
+      "dep_local": "2026-05-20T09:00:00",
+      "arr_local": "2026-05-20T14:30:00",
+      "dep_utc": "2026-05-20T13:00:00Z",
+      "arr_utc": "2026-05-20T19:30:00Z",
+      "booking_datetime": "2026-03-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "3"
+    },
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "996",
+      "operating_flight_number": "996",
+      "origin": "CUN",
+      "destination": "YYZ",
+      "dep_local": "2026-05-27T15:00:00",
+      "arr_local": "2026-05-27T20:30:00",
+      "dep_utc": "2026-05-27T20:00:00Z",
+      "arr_utc": "2026-05-28T00:30:00Z",
+      "booking_datetime": "2026-03-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-03-01",
+    "fare": {"amount": "1899.00", "currency": "CAD"},
+    "ticket_numbers": ["0142345678904"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-03-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-03-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached - ACV package"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZMNPK", "pnr_id": "ZZMNPK-2026-05-20"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 2}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NONMVP-SIT", "primary_name": "Non-MVP SIT ACV PNR", "confidence": "high"},
+  "tags": ["synthetic", "nonmvp-sit", "acv", "vacation-package", "international"]
+}

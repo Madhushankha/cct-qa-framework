@@ -1,0 +1,12 @@
+[
+ {
+  "pnr_id": "UXWART-2026-06-15",
+  "tc": "ONE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "group": false
+ }
+]

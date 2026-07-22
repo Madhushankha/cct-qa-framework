@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-07-10T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "KGOOGO-2026-07-10",
+  "pnr": "KGOOGO"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "KGOOGO-2026-07-10-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-07-10T14:00:00+00:00",
+      "arrivalDatetime": "2026-07-10T18:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 85,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 85,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#085#2026-07-10#TLV"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "KGOOGO-2026-07-10-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-07-10T20:00:00+00:00",
+      "arrivalDatetime": "2026-07-11T00:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 85,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 85,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#085#2026-07-10#TLV"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "KGOOGO-2026-07-10-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "085",
+    "departureAirport": "TLV",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 360,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "KGOOGO-2026-07-10-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "PENDING",
+     "systemCode": "FD-ASL-PE-01",
+     "reason": "72 hours",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "KGOOGO-2026-07-10-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "KGOOGO-2026-07-10-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "KGOOGO-2026-07-10-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 85,
+   "departureAirport": "TLV",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 360,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "KGOOGO-2026-07-10-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "PENDING",
+     "systemCode": "SoC-ASL-PE-01",
+     "reason": "72 hours",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "key": "FD_TC_119",
+  "tc": "FD_TC_119",
+  "sit": null,
+  "src_scn": "ZHLKCG-2026-06-15",
+  "src_dds": "ZHLKCG-2026-06-15",
+  "loc": "VHTUFD",
+  "pnr_id": "VHTUFD-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "014299000001",
+  "pax": "NOA SHAPIRO",
+  "route": "YYZ-TLV",
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-07",
+  "amount": 3670,
+  "currency": "ILS",
+  "title": "ASL No Travel Return",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "group": false,
+  "forced": false,
+  "oal": false,
+  "pin": true
+ }
+]

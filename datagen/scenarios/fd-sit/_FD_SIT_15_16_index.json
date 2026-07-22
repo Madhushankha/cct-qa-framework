@@ -1,0 +1,38 @@
+[
+  {
+    "sit": "FD-SIT-015",
+    "src": "FD_TC_011",
+    "loc": "GKZHJZ",
+    "pnr_id": "GKZHJZ-2026-06-15",
+    "ticket": "014294000001",
+    "pax": "CATHERINE BOUCHARD",
+    "npax": 3,
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "charani.rathnasekara@aircanada.ca",
+    "phone": "+94718928686",
+    "pin": true
+  },
+  {
+    "sit": "FD-SIT-016",
+    "src": "FD_TC_012",
+    "loc": "LPZVBX",
+    "pnr_id": "LPZVBX-2026-06-15",
+    "ticket": "014294000002",
+    "pax": "JEAN-PIERRE MARTIN",
+    "npax": 12,
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "email": "charani.rathnasekara@aircanada.ca",
+    "phone": "+94718928686",
+    "pin": true
+  }
+]

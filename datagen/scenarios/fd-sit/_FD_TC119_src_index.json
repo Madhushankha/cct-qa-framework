@@ -1,0 +1,13 @@
+[
+ {
+  "tc": "FD_TC_119",
+  "pnr_id": "ZHLKCG-2026-06-15",
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-07",
+  "amount": 3670,
+  "currency": "ILS",
+  "pax": "NOA SHAPIRO",
+  "route": "YYZ-TLV",
+  "title": "ASL No Travel Return"
+ }
+]

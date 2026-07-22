@@ -1,0 +1,18 @@
+[
+  {
+    "tc": "FD_TC_019",
+    "loc": "PCQSLY",
+    "pnr_id": "PCQSLY-2026-06-15",
+    "ticket": "014288001901",
+    "pax": "PIERRE LAVIGNE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "aero": true,
+    "email": "charani.rathnasekara@aircanada.ca",
+    "phone": "+94718928686",
+    "pin": true
+  }
+]

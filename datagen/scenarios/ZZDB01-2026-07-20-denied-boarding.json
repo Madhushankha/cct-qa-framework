@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZDB01-2026-07-20-denied-boarding",
+  "title": "NonMVP-SIT: Jane Smith denied boarding AC871 YUL→LHR (post-travel)",
+  "description": "Primary test PNR for Non-MVP SIT denied boarding scenarios. Jane Smith on AC871 YUL→LHR. Used by TC-01, TC-05, TC-11, TC-14-16, TC-26-27.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZDB01",
+    "booking_date": "2026-07-20",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC010V",
+    "iata_number": "01424012",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "AA",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+
+  "last_modification_comment": "SIM-NONMVP-SIT-DB01",
+  "creation_comment": "SIM-NONMVP-SIT-DB01",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "JANE",
+      "last_name": "SMITH",
+      "gender": "FEMALE",
+      "date_of_birth": "1985-07-15",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+15145554321",
+      "passport": {
+        "number": "SIMDB001",
+        "expiry": "2036-07-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "501234567"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "871",
+      "operating_flight_number": "871",
+      "origin": "YUL",
+      "destination": "LHR",
+      "dep_local": "2026-07-20T18:00:00",
+      "arr_local": "2026-07-21T06:30:00",
+      "dep_utc": "2026-07-20T22:00:00Z",
+      "arr_utc": "2026-07-21T05:30:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "2"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {"amount": "1250.00", "currency": "CAD"},
+    "ticket_numbers": ["0142390000301"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZDB01", "pnr_id": "ZZDB01-2026-07-20"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NONMVP-SIT", "primary_name": "Non-MVP SIT Denied Boarding", "confidence": "high"},
+  "tags": ["synthetic", "nonmvp-sit", "denied-boarding", "international", "single-pax"]
+}

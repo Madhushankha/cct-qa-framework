@@ -1,0 +1,146 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "ZTWSBS-2026-06-15",
+  "pnr": "ZTWSBS"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "LHR",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "ZTWSBS-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 849,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 849,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#849#2026-06-15#LHR"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "LHR",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "ZTWSBS-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 849,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 849,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#849#2026-06-15#LHR"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "ZTWSBS-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "849",
+    "departureAirport": "LHR",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "WEAT",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "ZTWSBS-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-07",
+     "reason": "Extraordinary - No travel Origin",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "ZTWSBS-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "ZTWSBS-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "ZTWSBS-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 849,
+   "departureAirport": "LHR",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "ZTWSBS-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

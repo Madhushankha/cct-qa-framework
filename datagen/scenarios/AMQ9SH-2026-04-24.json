@@ -1,0 +1,410 @@
+{
+  "scenario_schema_version": 1,
+  "scenario_id": "AMQ9SH-2026-04-24",
+  "title": "Single-pax single-segment domestic AC400 YYZ→YUL — INT, with CM-feed CUSTOMER_PROFILE attach AND missing FDM flight_leg parent",
+  "captured_at": "2026-04-25T05:30:00Z",
+  "captured_from": "trip-tracer Aurora PG (INT) materialised end-state via SSM bastion ac-cct-kafka-client-int-cac1",
+  "environment": "INT",
+  "contains_pii": true,
+
+  "classification": {
+    "primary_code": "S0+S12-gap",
+    "primary_name": "Creation-only with FDM-parent gap",
+    "description": "Single-pax single-segment same-day-departure PNR_CREATION at AC Montreal desk; CM-feed publishes a SEGMENT/INITIAL with regulatory-checks payload referencing the PNR segment; passenger gets a CUSTOMER_PROFILE id from Entity Resolution within 35s of creation; EDS emits a single bound APPR for YYZ→YUL with 4 trailing null-bound re-evaluations. NB the upstream FDM feed has NOT created a flight_leg row for the referenced flight (AC#400#YYZ#2026-04-25) — INT trip-tracer flight_leg only contains March-2026 AC400 dates. Any FDM event for this flight that arrives later will land on the cct-ingestion-fdm-fk-queue-int (per LEARNINGS §10 trap #16/17 and §12.6), waiting for the parent flight_leg to materialize.",
+    "confidence": "high"
+  },
+
+  "tags": [
+    "INT",
+    "domestic",
+    "single-segment",
+    "single-pax",
+    "AC-native",
+    "same-day-departure",
+    "cm-segment-published",
+    "cm-regulatory-checks",
+    "customer-profile-attach",
+    "fdm-parent-missing",
+    "fdm-fk-queue-trigger-likely",
+    "test-data-suspected"
+  ],
+
+  "comparison_keys": {
+    "shape_signature": "S0+S12-gap|pax=1|seg=1|bounds=1|ver=2|cm-seg=1|cp-attach=1|fdm-leg=0",
+    "event_fingerprint": [
+      "journey:PNR/LAST_MODIFICATION/UPDATED",
+      "journey:CM/SEGMENT/INITIAL",
+      "journey:CM/LAST_MODIFICATION/UPDATED",
+      "journey:CM/REGULATORY_CHECKS/ADDED",
+      "passenger:CUSTOMER_PROFILE/ADDED",
+      "passenger:CONTACT/ADDED",
+      "passenger:DOCUMENT/ADDED",
+      "eds:APPR (1 with bounds + 4 trailing null-bound)",
+      "fdm:NO flight_leg row exists for AC#400#YYZ#2026-04-25"
+    ],
+    "source_systems": ["AC", "1A"],
+    "pos_offices": ["YMQAC010C", "LON1A0955"],
+    "carriers": ["AC"],
+    "airports": ["YYZ", "YUL"],
+    "cabins": ["Y"],
+    "segment_statuses": ["HK"],
+    "regimes": ["APPR"],
+    "journey_event_types": [
+      "LAST_MODIFICATION/UPDATED",
+      "SEGMENT/INITIAL",
+      "REGULATORY_CHECKS/ADDED"
+    ],
+    "passenger_attribute_types": [
+      "CUSTOMER_PROFILE",
+      "CONTACT",
+      "DOCUMENT"
+    ]
+  },
+
+  "dimensions": {
+    "passenger_count": 1,
+    "segment_count": 1,
+    "bound_count": 1,
+    "pnr_versions_observed": 2,
+    "journey_update_count": 4,
+    "passenger_update_count": 3,
+    "ssr_count": 0,
+    "baggage_event_count": 0,
+    "ticket_count": 0,
+    "flight_leg_update_count": 0,
+    "flight_leg_parent_present": false,
+    "eds_output_count": 5,
+    "eds_with_bounds_count": 1,
+    "eds_null_bound_count": 4,
+    "dds_output_count": 0,
+    "booking_to_departure_hours": 13.0,
+    "days_to_departure_at_capture": 0,
+    "first_eds_latency_ms": 44394,
+    "trip_status": "ACTIVE",
+    "is_archived": false,
+    "is_cancelled": false,
+    "is_group_pnr": false,
+    "is_split_pnr": false,
+    "is_international": false,
+    "has_codeshare": false,
+    "has_disruption": false,
+    "has_customer_profile_attach": true,
+    "has_test_data_signature": true
+  },
+
+  "source": {
+    "pnr": "AMQ9SH",
+    "pnr_id": "AMQ9SH-2026-04-24",
+    "source_system": "AC",
+    "travel_type": "REGULAR",
+    "pnr_version": 2,
+    "event_log_id": "43753b13bee1796ec8e0c06d8777d476-bd3dc6f18a5d3221",
+    "point_of_sale": {
+      "office_id": "YMQAC010C",
+      "iata_number": "69990874",
+      "agent_initials": "UR",
+      "agent_numeric_sign": "0315",
+      "city_code": "YMQ",
+      "country_code": "CA",
+      "agent_comment": "UR-AC/TP004814"
+    }
+  },
+
+  "itinerary": {
+    "bounds": [
+      {
+        "bound_rph": 1,
+        "origin": "YYZ",
+        "destination": "YUL",
+        "segments": [
+          {
+            "segment_id": "AMQ9SH-2026-04-24-ST-1",
+            "marketing_carrier_code": "AC",
+            "marketing_flight_number": 400,
+            "operating_carrier_code": "AC",
+            "operating_flight_number": 400,
+            "flight_id": "AC#400#YYZ#2026-04-25",
+            "departure_airport": "YYZ",
+            "arrival_airport": "YUL",
+            "departure_datetime_utc": "2026-04-25T11:00:00Z",
+            "arrival_datetime_utc": "2026-04-25T12:21:00Z",
+            "cabin_code": "Y",
+            "cabin_class": "Y",
+            "aircraft_code": "7M8",
+            "segment_status": "HK"
+          }
+        ]
+      }
+    ]
+  },
+
+  "passengers": [
+    {
+      "passenger_id": "AMQ9SH-2026-04-24-PT-2",
+      "first_name": "ROSS",
+      "last_name": "GELLER",
+      "type": "ADT",
+      "gender": "U",
+      "date_of_birth": "1988-01-20",
+      "country_of_residence": "  ",
+      "customer_profile_id": "88a04ca5cc23327881e5b79b76f8e08c",
+      "dcs_passenger_id": "610F762C00015FE1",
+      "contacts": [
+        {"type": "email", "purpose": "STANDARD", "value": "UDUMBARA.RANASINGHE@AIRCANADA.CA"},
+        {"type": "email", "purpose": "NOTIFICATION", "value": "UDUMBARA.RANASINGHE@AIRCANADA.CA"},
+        {"type": "address", "purpose": "BILLING", "city": "GDH", "country": "GB", "postal_code": "HKI8", "lines": ["HJUY8"]}
+      ],
+      "documents": [
+        {
+          "code": "DOCS",
+          "status": "HK",
+          "name": {"first_name": "ROSS", "last_name": "GELLER"},
+          "birth_date": "1988-01-20",
+          "gender": "MALE"
+        }
+      ]
+    }
+  ],
+
+  "events": {
+    "journey_updates": [
+      {
+        "at": "2026-04-24T22:00:00Z",
+        "entity": "PNR",
+        "event_type": "LAST_MODIFICATION",
+        "event_action": "UPDATED",
+        "entity_version": "2",
+        "entity_id": "43753b13bee1796ec8e0c06d8777d476-bd3dc6f18a5d3221"
+      },
+      {
+        "at": "2026-04-24T22:00:29.551Z",
+        "entity": "CM",
+        "event_type": "SEGMENT",
+        "event_action": "INITIAL",
+        "entity_version": "1777068029582",
+        "entity_id": "e327e278cb84d0f2f5ee5ee4bc9631da-05d62be2bf625f97",
+        "data_summary": {
+          "dcs_segment_id": "600FC62C00062C13",
+          "pnr_segment_id": "AMQ9SH-2026-04-24-ST-1",
+          "carrier": "AC",
+          "flight_number": "400",
+          "departure_airport": "YYZ",
+          "arrival_airport": "YUL",
+          "departure_datetime": "2026-04-25T11:00:00Z",
+          "arrival_datetime": "2026-04-25T12:21:00Z",
+          "cabin": "Y",
+          "passenger_first_name": "ROSS",
+          "passenger_last_name": "GELLER",
+          "dcs_passenger_id": "610F762C00015FE1"
+        }
+      },
+      {
+        "at": "2026-04-24T22:00:29.551Z",
+        "entity": "CM",
+        "event_type": "LAST_MODIFICATION",
+        "event_action": "UPDATED",
+        "entity_version": "1777068029582",
+        "entity_id": "e327e278cb84d0f2f5ee5ee4bc9631da-05d62be2bf625f97",
+        "data_summary": {
+          "trigger_event_name": "1AINTERNAL",
+          "user_office_id": "LON1A0955"
+        }
+      },
+      {
+        "at": "2026-04-24T22:00:29.551Z",
+        "entity": "CM",
+        "event_type": "REGULATORY_CHECKS",
+        "event_action": "ADDED",
+        "entity_version": "1777068029582",
+        "entity_id": "e327e278cb84d0f2f5ee5ee4bc9631da-05d62be2bf625f97",
+        "data_summary": {
+          "operating_carrier": "AC",
+          "operating_flight_number": "400",
+          "status_code": "HK",
+          "regulatory_programs": [
+            {"name": "ADC", "status": "X"},
+            {"name": "AQQ", "country": "USA", "status": "X"},
+            {"name": "iAPP", "country": "KOR", "status": "X"},
+            {"name": "CANADIAN_PPP", "status": "NP"},
+            {"name": "PRIVATE_LIST", "status": "O"}
+          ]
+        }
+      }
+    ],
+    "passenger_updates": [
+      {
+        "at": "2026-04-24T22:00:35.409Z",
+        "passenger_id": "AMQ9SH-2026-04-24-PT-2",
+        "attribute_type": "CUSTOMER_PROFILE",
+        "attribute_action": "ADDED",
+        "data_summary": {"cpid": "88a04ca5cc23327881e5b79b76f8e08c"}
+      },
+      {
+        "at": "2026-04-24T22:00:00Z",
+        "passenger_id": "AMQ9SH-2026-04-24-PT-2",
+        "attribute_type": "CONTACT",
+        "attribute_action": "ADDED",
+        "data_summary": {"items_count": 3}
+      },
+      {
+        "at": "2026-04-24T22:00:00Z",
+        "passenger_id": "AMQ9SH-2026-04-24-PT-2",
+        "attribute_type": "DOCUMENT",
+        "attribute_action": "ADDED",
+        "data_summary": {"items_count": 1, "code": "DOCS"}
+      }
+    ],
+    "special_service_requests": [],
+    "baggage_updates": [],
+    "ticket_updates": [],
+    "flight_leg_updates": [],
+    "eds_outputs": [
+      {
+        "at": "2026-04-25T22:00:44.394Z",
+        "source_topic": "RESULT-EVENT-DETECTION-INT",
+        "db_table": "eds_pnr_output",
+        "booking_context": {"booking_source": "CONTACT_CENTRE", "booking_type": "REVENUE", "gds_locator": "OTHER"},
+        "bounds": [
+          {
+            "bound_rph": 1,
+            "origin": "YYZ",
+            "destination": "YUL",
+            "regimes": ["APPR"],
+            "promised_segments": ["AMQ9SH-2026-04-24-ST-1"],
+            "actual_segments": ["AMQ9SH-2026-04-24-ST-1"],
+            "original_segments": ["AMQ9SH-2026-04-24-ST-1"]
+          }
+        ]
+      },
+      {"at": "2026-04-24T22:00:51.399Z", "bounds": null, "note": "no-op re-eval (trailing) — LEARNINGS X4"},
+      {
+        "at": "2026-04-24T22:00:53.402Z",
+        "booking_context": {"booking_source": "OTHER", "booking_type": "REVENUE", "gds_locator": "OTHER"},
+        "bounds": [
+          {
+            "bound_rph": 1,
+            "origin": "YYZ",
+            "destination": "YUL",
+            "regimes": ["APPR"],
+            "promised_segments": ["AMQ9SH-2026-04-24-ST-1"],
+            "actual_segments": ["AMQ9SH-2026-04-24-ST-1"]
+          }
+        ]
+      },
+      {"at": "2026-04-24T22:05:42.849Z", "bounds": null, "note": "no-op re-eval"},
+      {"at": "2026-04-24T22:05:57.796Z", "bounds": null, "note": "no-op re-eval"}
+    ],
+    "dds_outputs": [],
+    "fdm_observations": {
+      "expected_flight_leg_id": "AC#400#YYZ#2026-04-25",
+      "flight_leg_row_present_INT": false,
+      "flight_leg_row_present_CRT": false,
+      "fdm_topology_note": "FDM has only TWO environments: TEST and PROD. Both CRT and INT trip-tracer DBs subscribe to the SAME FDM TEST stream — validated by near-identical received_at timestamps (CRT 03:29:14.096, INT 03:29:14.159 on 2026-04-25, 63 ms apart) and identical per-day flight_leg counts.",
+      "fdm_test_coverage": {
+        "total_flight_legs_in_CRT": 1138,
+        "earliest_scheduled": "2024-01-10",
+        "furthest_scheduled": "2026-05-12",
+        "ac400_legs_in_CRT": 0,
+        "ac400_legs_in_INT": 17,
+        "note_on_INT_extra_AC400": "INT shows 17 March-2026 AC400 rows that CRT does not. Either INT received an additional historical replay/seed for those dates, or there is a small drift between the two consumer subscriptions of the TEST stream. The AC#400#YYZ#2026-04-25 leg is absent from BOTH envs.",
+        "active_flights_in_test_stream_last_24h": ["AC2447", "AC2353", "AC2334", "AC7181", "AC1922", "AC132", "AC7171", "AC2359", "AC2074", "AC2358"]
+      },
+      "implication": "Any FDM event for AC#400#YYZ#2026-04-25 that arrives later will fail the fk_flight_updates_flight constraint and route to cct-ingestion-fdm-fk-queue-{env} per LEARNINGS §10 traps #16-17. But the parent will likely never arrive in TEST — AC400 is not in the curated TEST flight set. To exercise FDM for AMQ9SH-related testing, either (a) seed AC#400#YYZ#2026-04-25 manually into the TEST flight_leg upstream, or (b) use one of the flights that IS in the TEST set (AC2447, AC2353, etc.) when constructing test PNRs.",
+      "recommended_followup": "Confirm with the FDM owners which flights are intentionally in TEST. If AMQ9SH-style test PNRs need full FDM coverage, change PNR scenarios to book one of the carrier+flight numbers known to be in TEST."
+    }
+  },
+
+  "timing": {
+    "trip_created_at": "2026-04-24T22:00:00Z",
+    "trip_details_received_at": "2026-04-24T22:00:42.733Z",
+    "first_cm_received_at": "2026-04-24T22:00:47.563Z",
+    "first_eds_output_at": "2026-04-24T22:00:44.394Z",
+    "last_eds_output_at": "2026-04-24T22:05:57.796Z",
+    "trip_to_eds_latency_ms": 44394,
+    "fan_out_within_budget": true,
+    "scheduled_departure_at": "2026-04-25T11:00:00Z",
+    "captured_before_departure_h": 13,
+    "budget_notes": "44.4s trip→EDS is somewhat above the ~14s p99 transformer hop in CRT, but consistent for INT (lower throughput, smaller worker pool). Apr-2026 INT FDM gap means the regime APPR was emitted without a parent flight_leg ever existing in DB."
+  },
+
+  "expected_downstream_state": {
+    "trip":                    {"rows": 1, "status": "ACTIVE", "archive_date": null},
+    "trip_details":            {"rows": 1, "last_pnr_version": 2, "source": "AC"},
+    "passenger":               {"rows": 1},
+    "passenger_updates":       {"rows": 3, "attribute_types": ["CUSTOMER_PROFILE", "CONTACT", "DOCUMENT"]},
+    "flight_segment":          {"rows": 1, "status": "HK"},
+    "journey_updates":         {"rows": 4, "event_types": ["LAST_MODIFICATION/UPDATED", "SEGMENT/INITIAL", "REGULATORY_CHECKS/ADDED"]},
+    "eds_pnr_output":          {"rows": 5, "with_bounds_rows": 1, "regimes": ["APPR"]},
+    "dds_pnr_output":          {"rows": 0},
+    "special_service_request": {"rows": 0},
+    "baggage_updates":         {"rows": 0},
+    "ticket_updates":          {"rows": 0},
+    "flight_leg":              {"rows": 0, "note": "FDM upstream gap — no parent for the referenced flight"},
+    "flight_leg_updates":      {"rows": 0}
+  },
+
+  "should_not_trigger": [
+    "customer-facing flight-change notification (no segment change)",
+    "disruption detection workflow (no irregular operation; APPR regime is normal pre-departure)",
+    "baggage workflows (no bag check yet)",
+    "rebooking flows (no SEGMENT_REMOVED/ADDED)"
+  ],
+
+  "should_trigger_if_fdm_arrives_later": [
+    "ingestion-service-fdm: 23503 FK violation on insert into flight_leg_updates → routed to cct-ingestion-fdm-fk-queue-int",
+    "Eventually flight_leg_updates rows for the leg AC#400#YYZ#2026-04-25 once a flight_leg parent is created (e.g. by OAG glue or backfill)"
+  ],
+
+  "operational_findings": [
+    {
+      "finding": "FDM has only TEST and PROD environments — no per-env (INT/CRT/BAT) FDM streams",
+      "evidence": "CRT and INT trip-tracer DBs receive flight_leg writes within 63 ms of each other (CRT 2026-04-25 03:29:14.096, INT 03:29:14.159). Per-day counts virtually identical. CRT total flight_legs spans 2024-01-10 to 2026-05-12 (1,138 rows total — clearly a curated TEST sample, not a production firehose).",
+      "impact": "Any team treating the per-env FDM feed as isolated from CRT is mistaken — they share the upstream. A bad TEST flight_leg reaches both. A missing one is missing in both.",
+      "stated_by": "Suresh (user) — '\"FDM only has 2 environments, TEST and PROD\"'",
+      "validated": true
+    },
+    {
+      "finding": "AC#400#YYZ#2026-04-25 is absent from FDM TEST entirely (not just INT)",
+      "evidence": "CRT flight_leg has zero AC400 rows for any date. INT has 17 AC400 rows but only 2026-03-12..2026-03-31. Neither env has 2026-04-25.",
+      "impact": "Any PNR in either INT or CRT that books AC400 for April 2026 will have FDM updates fail FK and accumulate in the fk-queue indefinitely.",
+      "likely_cause": "AC400 is simply not part of the curated TEST flight set. Active TEST flights last 24h: AC2447, AC2353, AC2334, AC7181, AC1922, AC132, AC7171, AC2359, AC2074, AC2358 — AC400 not among them.",
+      "recommended_action": "Either seed AC#400#YYZ#2026-04-25 into TEST upstream, or have AMQ9SH-style synthetic PNRs book a flight that IS in TEST."
+    },
+    {
+      "finding": "INT has 17 AC400 March-2026 flight_legs that CRT lacks",
+      "evidence": "Same FDM stream feeds both, yet INT shows 17 March-AC400 rows, CRT shows 0",
+      "impact": "Either INT received an additional historical replay/seed not applied to CRT, or there is small drift between consumer subscriptions of the same TEST stream.",
+      "recommended_action": "Worth a short investigation by the FDM team — confirm whether replay/seed jobs run against INT-only paths."
+    },
+    {
+      "finding": "EDS emitted bound APPR regime even with no parent flight_leg",
+      "evidence": "eds_pnr_output rows show regime APPR with promisedSegments referencing a segment whose flight_id has no flight_leg row",
+      "impact": "Regime classifier appears to operate on PNR-side data (flight_segment) without joining on flight_leg, which is correct for the imminent-departure rule but means it can't catch FDM-feed gaps as part of its own validation.",
+      "recommended_action": "Treat as informational. If FDM-presence is required for downstream actions (e.g. disruption detection), add a separate consistency check."
+    }
+  ],
+
+  "provenance": {
+    "method": "psql via SSM bastion ac-cct-kafka-client-int-cac1 (i-0ebd041df525a972e) → ac-cct-trip-tracer-rds-proxy-int-cac1.proxy-czy2ye8u22qy.ca-central-1.rds.amazonaws.com:5432, user dbdevuser, db trip-tracer, table-by-table for pnr_id='AMQ9SH-2026-04-24'",
+    "credentials_secret": "/int-cac1/ac-cct-trip-tracer-rds-cluster-int-cac1/db-credentials",
+    "kafka_topics_inferred_from_db": [
+      "DERIVED-PNR-EVENTS-INT (raw PNR_CREATION + version 2 LAST_MODIFICATION)",
+      "DERIVED-CM-EVENTS-INT (CM SEGMENT/INITIAL + LAST_MODIFICATION + REGULATORY_CHECKS — published by 1A internal trigger from LON1A0955)",
+      "TRANSFORMED-PNR-EVENTS-INT → journey_updates rows 1, (entity=PNR)",
+      "TRANSFORMED-CM-EVENTS-INT → journey_updates rows 2-4 (entity=CM)",
+      "TRANSFORMED-CUSTOMER-PROFILE-CPID-EVENTS-INT → passenger_updates row 1 (CUSTOMER_PROFILE/ADDED)",
+      "EVENT-DETECTION-PNR-INT → trip + trip_details + passenger + flight_segment + passenger_updates rows 2-3",
+      "RESULT-EVENT-DETECTION-INT (EDS rule-engine output) → eds_pnr_output (5 rows, 1 with bounds + 4 trailing null-bound re-evals)"
+    ],
+    "raw_kafka_payloads": "not captured — only DB end-state. To reconstruct: pull DERIVED-PNR-EVENTS-INT filtered by event_log_id 43753b13bee1796ec8e0c06d8777d476-bd3dc6f18a5d3221, and DERIVED-CM-EVENTS-INT filtered by event_log_id e327e278cb84d0f2f5ee5ee4bc9631da-05d62be2bf625f97, both within ±2 min of 2026-04-24T22:00:00Z."
+  },
+
+  "notes": [
+    "Test-data signature: passenger name 'ROSS GELLER' is the Friends sitcom character. Likely a QA seed.",
+    "CM (Case Management / Customer Management) feed published a SEGMENT/INITIAL with full DCS passenger linkage (dcsPassengerId 610F762C00015FE1) and regulatory-checks payload covering 5 regulatory programs (ADC, AQQ-USA, iAPP-KOR, CANADIAN_PPP, PRIVATE_LIST). This is richer than the typical PNR-only flow seen in CRT scenarios — INT exercises the CM-driven enrichment path.",
+    "The 1A INTERNAL trigger from LON1A0955 (Amadeus office) suggests the test was kicked off via Amadeus tooling, not the AC native desk — even though the PNR was created at YMQAC010C. This is consistent with the CM feed being driven by 1A as the upstream controller.",
+    "passenger_updates row 1 (CUSTOMER_PROFILE attach) arrived ~35s after trip creation, faster than the EDS first-bound-emit (44s). Confirms the Customer-Profile flow in LEARNINGS §6.7 (Service Proxy customer-profile/search) is reachable for AMQ9SH.",
+    "The flight_segment.flight_id = 'AC#400#YYZ#2026-04-25' uses the standard FDM key pattern, so the join wired correctly — only the parent row is missing.",
+    "0 ticket_updates: this PNR appears to be an unticketed hold or the TKT feed in INT is empty (LEARNINGS §12.1 flagged ALTEA-TKT-UAT as upstream-empty). Mirrors the AMQ9SH state observed in the previous AMQ9SH lookup."
+  ]
+}

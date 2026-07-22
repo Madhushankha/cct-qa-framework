@@ -1,0 +1,32 @@
+[
+  {
+    "tc": "FD_TC_146",
+    "loc": "QPZTXN",
+    "pnr_id": "QPZTXN-2026-06-15",
+    "ticket": "014285014601",
+    "pax": "MARIE LEFEVRE",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-01",
+    "amount": 600,
+    "currency": "EUR",
+    "email": "lahiru.premathilake@aircanada.ca",
+    "phone": "+94712534323",
+    "pin": true
+  },
+  {
+    "tc": "FD_TC_147",
+    "loc": "PVMJRM",
+    "pnr_id": "PVMJRM-2026-06-15",
+    "ticket": "014285014701",
+    "pax": "JEAN-MARC ROUSSEAU",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-02",
+    "amount": 600,
+    "currency": "EUR",
+    "email": "lahiru.premathilake@aircanada.ca",
+    "phone": "+94712534323",
+    "pin": true
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "scenario_schema_version": 1,
+  "scenario_id": "B45OZB-2026-04-22",
+  "title": "Creation-only: 3-pax, 1-segment domestic YUL→YYZ booked day-before-departure from AC Montreal desk",
+  "captured_at": "2026-04-22T17:00:00Z",
+  "captured_from": "trip-tracer Aurora PG (CRT) materialised end-state",
+  "contains_pii": true,
+
+  "classification": {
+    "primary_code": "S0",
+    "primary_name": "Creation-only",
+    "description": "New PNR with passenger and segment metadata; no post-creation lifecycle activity (no rebooking, cancellation, SSR, baggage, or ticket events). Dominant real-world pattern (~36%, LEARNINGS §8).",
+    "confidence": "high"
+  },
+
+  "tags": [
+    "domestic",
+    "single-segment",
+    "AC-native",
+    "same-day-booking",
+    "sub-24h-departure",
+    "no-ssr",
+    "no-baggage",
+    "no-ticket",
+    "no-codeshare",
+    "no-disruption",
+    "test-data-suspected"
+  ],
+
+  "comparison_keys": {
+    "shape_signature": "S0|pax=3|seg=1|bounds=1|ver=1|ssr=0|bag=0|tkt=0|cs=0|disr=0",
+    "event_fingerprint": [
+      "journey:PNR/LAST_MODIFICATION/UPDATED",
+      "passenger:CONTACT/ADDED x3",
+      "passenger:DOCUMENT/ADDED x3",
+      "eds:APPR"
+    ],
+    "source_systems": ["AC"],
+    "pos_offices": ["YMQAC010C"],
+    "carriers": ["AC"],
+    "airports": ["YUL", "YYZ"],
+    "cabins": ["Y"],
+    "segment_statuses": ["HK"],
+    "regimes": ["APPR"],
+    "journey_event_types": ["LAST_MODIFICATION/UPDATED"],
+    "passenger_attribute_types": ["CONTACT", "DOCUMENT"]
+  },
+
+  "dimensions": {
+    "passenger_count": 3,
+    "segment_count": 1,
+    "bound_count": 1,
+    "pnr_versions_observed": 1,
+    "journey_update_count": 1,
+    "passenger_update_count": 6,
+    "ssr_count": 0,
+    "baggage_event_count": 0,
+    "ticket_count": 0,
+    "flight_leg_update_count": 0,
+    "eds_output_count": 1,
+    "dds_output_count": 0,
+    "booking_to_departure_hours": 24.8,
+    "days_to_departure_at_capture": 1,
+    "first_eds_latency_ms": 21268,
+    "has_codeshare": false,
+    "has_disruption": false,
+    "has_test_data_signature": true,
+    "is_cancelled": false,
+    "is_archived": false,
+    "is_group_pnr": false,
+    "is_split_pnr": false,
+    "is_international": false,
+    "trip_status": "ACTIVE"
+  },
+
+  "source": {
+    "pnr": "B45OZB",
+    "pnr_id": "B45OZB-2026-04-22",
+    "source_system": "AC",
+    "travel_type": "REGULAR",
+    "pnr_version": 1,
+    "event_log_id": "d863684ea36b1735f75a480244ae8da3-0727a6a3129f323c",
+    "point_of_sale": {
+      "office_id": "YMQAC010C",
+      "iata_number": "69990874",
+      "agent_initials": "RG",
+      "agent_numeric_sign": "8501",
+      "city_code": "YMQ",
+      "country_code": "CA"
+    }
+  },
+
+  "itinerary": {
+    "bounds": [
+      {
+        "bound_rph": 1,
+        "origin": "YUL",
+        "destination": "YYZ",
+        "segments": [
+          {
+            "segment_id": "B45OZB-2026-04-22-ST-1",
+            "marketing_carrier_code": "AC",
+            "marketing_flight_number": 413,
+            "departure_airport": "YUL",
+            "arrival_airport": "YYZ",
+            "departure_datetime_utc": "2026-04-23T17:10:00Z",
+            "arrival_datetime_utc": "2026-04-23T18:38:00Z",
+            "cabin_code": "Y",
+            "segment_status": "HK"
+          }
+        ]
+      }
+    ]
+  },
+
+  "passengers": [
+    {"passenger_id": "B45OZB-2026-04-22-PT-1", "first_name": "ABIGAIL", "last_name": "CHAPMAN", "type": "ADT", "date_of_birth": "1999-01-22"},
+    {"passenger_id": "B45OZB-2026-04-22-PT-2", "first_name": "KEDAR",   "last_name": "JADHAV",  "type": "ADT", "date_of_birth": "1999-01-22"},
+    {"passenger_id": "B45OZB-2026-04-22-PT-3", "first_name": "BERT",    "last_name": "MORRISON","type": "ADT", "date_of_birth": "1999-01-22"}
+  ],
+
+  "events": {
+    "journey_updates": [
+      {
+        "at": "2026-04-22T16:22:00Z",
+        "entity": "PNR",
+        "event_type": "LAST_MODIFICATION",
+        "event_action": "UPDATED",
+        "entity_version": 1
+      }
+    ],
+    "passenger_updates": [
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-1", "attribute_type": "CONTACT",  "attribute_action": "ADDED"},
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-1", "attribute_type": "DOCUMENT", "attribute_action": "ADDED"},
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-2", "attribute_type": "CONTACT",  "attribute_action": "ADDED"},
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-2", "attribute_type": "DOCUMENT", "attribute_action": "ADDED"},
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-3", "attribute_type": "CONTACT",  "attribute_action": "ADDED"},
+      {"at": "2026-04-22T16:22:00Z", "passenger_id": "B45OZB-2026-04-22-PT-3", "attribute_type": "DOCUMENT", "attribute_action": "ADDED"}
+    ],
+    "special_service_requests": [],
+    "baggage_updates": [],
+    "ticket_updates": [],
+    "flight_leg_updates": [],
+    "eds_outputs": [
+      {
+        "at": "2026-04-22T16:22:21.268Z",
+        "source_topic": "RESULT-EVENT-DETECTION-CRT",
+        "db_table": "eds_pnr_output",
+        "bounds": [
+          {
+            "bound_rph": 1,
+            "origin": "YUL",
+            "destination": "YYZ",
+            "bound_origin_location": "OTHER",
+            "bound_origin_country": "OTHER",
+            "regimes": ["APPR"],
+            "promised_segments": ["B45OZB-2026-04-22-ST-1"],
+            "actual_segments":   ["B45OZB-2026-04-22-ST-1"],
+            "original_segments": ["B45OZB-2026-04-22-ST-1"]
+          }
+        ]
+      }
+    ],
+    "dds_outputs": []
+  },
+
+  "timing": {
+    "trip_created_at": "2026-04-22T16:22:00Z",
+    "trip_details_received_at": "2026-04-22T16:22:20.854Z",
+    "first_eds_output_at": "2026-04-22T16:22:21.268Z",
+    "trip_to_eds_latency_ms": 21268,
+    "fan_out_within_budget": true,
+    "budget_notes": "LEARNINGS X1 says fan-out completes within ~500 ms after the first hop; 21s from trip_created_at to EDS is dominated by the ~14s upstream→TRANSFORMED hop (§5.2)."
+  },
+
+  "expected_downstream_state": {
+    "trip":                  {"rows": 1, "status": "ACTIVE", "archive_date": null},
+    "trip_details":          {"rows": 1, "last_pnr_version": 1, "source": "AC"},
+    "passenger":             {"rows": 3},
+    "passenger_updates":     {"rows": 6, "attribute_types": ["CONTACT", "DOCUMENT"]},
+    "flight_segment":        {"rows": 1, "status": "HK"},
+    "journey_updates":       {"rows": 1, "event_types": ["LAST_MODIFICATION/UPDATED"]},
+    "eds_pnr_output":        {"rows": 1, "regimes": ["APPR"]},
+    "dds_pnr_output":        {"rows": 0},
+    "special_service_request": {"rows": 0},
+    "baggage_updates":       {"rows": 0},
+    "ticket_updates":        {"rows": 0}
+  },
+
+  "should_not_trigger": [
+    "customer-facing flight-change notification (no segment change)",
+    "disruption detection workflow (no irregular operation)",
+    "baggage workflows (no bag events)",
+    "rebooking flows (no SEGMENT_REMOVED/ADDED)"
+  ],
+
+  "provenance": {
+    "method": "psql queries against ac-cct-trip-tracer-rds-cluster-crt-cac1, table-by-table for pnr_id='B45OZB-2026-04-22'",
+    "kafka_topics_inferred_from_db": [
+      "DERIVED-PNR-EVENTS-CRT (raw PNR_CREATION)",
+      "TRANSFORMED-PNR-EVENTS-CRT → journey_updates",
+      "EVENT-DETECTION-PNR-CRT → trip, trip_details, passenger, flight_segment",
+      "RESULT-EVENT-DETECTION-CRT (EDS rule-engine output) → eds_pnr_output"
+    ],
+    "notes": "Raw Kafka payloads were not captured for this scenario — only the materialised DB end-state. To reconstruct the full event stream, pull DERIVED-PNR-EVENTS-CRT filtered by event_log_id d863684ea36b1735f75a480244ae8da3-0727a6a3129f323c within ±1 min of 2026-04-22T16:22:00Z."
+  },
+
+  "notes": [
+    "Test-data signature: all 3 passengers share DOB 1999-01-22. Consistent with LEARNINGS §6.6 'test data in production' pattern from YUL AC-native offices.",
+    "Only 1 row in journey_updates (LAST_MODIFICATION) despite 3 pax + 1 segment — confirms LEARNINGS §6.4 behaviour: PNR_CREATION itself doesn't emit SEGMENT/INITIAL or SERVICE/INITIAL; passenger and segment data materialise through direct inserts into passenger/flight_segment, not through journey_updates.",
+    "EDS emitted regime APPR ~21s after booking because departure is <24 h away — the 'approaching' rule fires at creation time for last-minute bookings. Useful probe case for EDS timing rules.",
+    "No ticket_updates row: either an unticketed hold, or the TKT feed hasn't flowed yet. LEARNINGS §12.1 flags ALTEA-TKT-UAT as upstream-empty, so absence of a ticket here is not necessarily a bug."
+  ]
+}

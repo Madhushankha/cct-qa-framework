@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZFI09-2026-06-10-mixed-regime",
+  "title": "FD-SIT-020: Mixed APPR+EU most generous (INT)",
+  "description": "Mixed regime. LHR->YYZ applies both EU/UK 261 and APPR. Most generous offer displayed.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZFI09",
+    "booking_date": "2026-06-10",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "LHRAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "GB",
+    "agent_city": "LHR"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-020",
+  "creation_comment": "SIM-FD-SIT-INT-020",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "WILLIAM",
+      "last_name": "BROWN",
+      "gender": "MALE",
+      "date_of_birth": "1970-04-18",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+447912345678",
+      "passport": {
+        "number": "SIMFD109",
+        "expiry": "2030-04-18",
+        "nationality": "GBR",
+        "issuance_country": "GBR",
+        "gender": "MALE"
+      },
+      "aeroplan": "709234568"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "857",
+      "operating_flight_number": "857",
+      "origin": "LHR",
+      "destination": "YUL",
+      "dep_local": "2026-06-10T14:00:00",
+      "arr_local": "2026-06-10T16:30:00",
+      "dep_utc": "2026-06-10T13:00:00Z",
+      "arr_utc": "2026-06-10T20:30:00Z",
+      "booking_datetime": "2026-05-12T10:00:00Z",
+      "aircraft": "77W",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-12",
+    "fare": {"amount": "920.00", "currency": "GBP"},
+    "ticket_numbers": ["0142400001011"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-12T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-12T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZFI09", "pnr_id": "ZZFI09-2026-06-10"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-020", "mixed-regime", "appr", "eu261", "international", "int-env"]
+}

@@ -1,0 +1,236 @@
+[
+ {
+  "pnr_id": "BGIWI1-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC001",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGTTRD-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC002",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGA6G2-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC003",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGLK0J-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC004",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGKSUJ-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC005",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGDFKY-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC006",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG1POU-2026-06-21",
+  "npax": 1,
+  "tc": "UAT_TC007",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGWWHJ-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC008",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGXZ93-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC009",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG049J-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC010",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGT84W-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC011",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGNQTI-2026-05-17",
+  "npax": 1,
+  "tc": "UAT_TC012",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGWYER-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC013",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGCYGG-2026-06-14",
+  "npax": 2,
+  "tc": "UAT_TC014",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGOSDF-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC015",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG4CUC-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC016",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG6XYG-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC017",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGSKOE-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC018",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGW0GA-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC019",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGB8GL-2026-07-14",
+  "npax": 1,
+  "tc": "UAT_TC020",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG2SZK-2026-07-14",
+  "npax": 1,
+  "tc": "UAT_TC021",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGNONX-2026-07-14",
+  "npax": 1,
+  "tc": "UAT_TC022",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG9A6Y-2026-06-12",
+  "npax": 1,
+  "tc": "UAT_TC023",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG8ERX-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC024",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGESMF-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC025",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGN7Z6-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC026",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGT2KZ-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC027",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG53T4-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC028",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGA4CL-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC029",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGYEW5-2026-07-14",
+  "npax": 1,
+  "tc": "UAT_TC030",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGNLK3-2026-07-09",
+  "npax": 1,
+  "tc": "UAT_TC031",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGLOPN-2026-07-09",
+  "npax": 1,
+  "tc": "UAT_TC032",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGXEO6-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC033",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGNBIS-2026-07-02",
+  "npax": 3,
+  "tc": "UAT_TC034",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG9YIT-2026-07-02",
+  "npax": 2,
+  "tc": "UAT_TC035",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGFCTI-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC036",
+  "pin": false
+ },
+ {
+  "pnr_id": "BGLFLO-2026-06-14",
+  "npax": 1,
+  "tc": "UAT_TC037",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG7RA2-2026-05-17",
+  "npax": 1,
+  "tc": "UAT_TC038",
+  "pin": false
+ },
+ {
+  "pnr_id": "BG2HBB-2026-07-02",
+  "npax": 1,
+  "tc": "UAT_TC039",
+  "pin": false
+ }
+]

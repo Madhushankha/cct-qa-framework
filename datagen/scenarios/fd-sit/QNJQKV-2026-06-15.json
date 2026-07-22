@@ -1,0 +1,221 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "QNJQKV-2026-06-15",
+  "title": "FD_ED_TC_15: [QNJQKV]",
+  "description": "FD_TC_012 | APPR ELIGIBLE | Group Booking (claim self only) | delay 240m code 19 | CAD 400",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "QNJQKV",
+    "booking_date": "2026-06-15",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YULAC010V",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+  "last_modification_comment": "SIM-FD_ED_TC_15-lahiru5-INT",
+  "creation_comment": "SIM-FD_ED_TC_15-lahiru5-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "GIDEON",
+      "last_name": "LARKOWGATE",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "CALLUM",
+      "last_name": "CARLINGBECK",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "KENJI",
+      "last_name": "OAKOWDALE",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "OONA",
+      "last_name": "STANOWRIDGE",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "CALLUM",
+      "last_name": "WINDCOMBE",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "CEDRICK",
+      "last_name": "YARINGRIDGE",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "KIRA",
+      "last_name": "KIRKOWFORD",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "BRENNA",
+      "last_name": "CRESTELWICK",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "ADRIAN",
+      "last_name": "BARNENHAM",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "LORCAN",
+      "last_name": "LANGBROOK",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "GIDEON",
+      "last_name": "THORNERDEN",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    },
+    {
+      "type": "ADT",
+      "first_name": "PRIYA",
+      "last_name": "RAINLETON",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+      "phone": "+94712534323"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "301",
+      "operating_flight_number": "301",
+      "origin": "YUL",
+      "destination": "YYZ",
+      "dep_local": "2026-06-15T10:00:00",
+      "arr_local": "2026-06-15T12:00:00",
+      "dep_utc": "2026-06-15T14:00:00Z",
+      "arr_utc": "2026-06-15T16:00:00Z",
+      "booking_datetime": null,
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "350.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "014601001501",
+      "014601001502",
+      "014601001503",
+      "014601001504",
+      "014601001505",
+      "014601001506",
+      "014601001507",
+      "014601001508",
+      "014601001509",
+      "014601001510",
+      "014601001511",
+      "014601001512"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "QNJQKV",
+        "pnr_id": "QNJQKV-2026-06-15"
+      },
+      "passenger": {
+        "rows": 12
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-TC-012",
+    "primary_name": "Flight Disruption FD_TC_012 INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-tc-012",
+    "appr",
+    "eligible",
+    "code-19",
+    "cad-400",
+    "group"
+  ]
+}

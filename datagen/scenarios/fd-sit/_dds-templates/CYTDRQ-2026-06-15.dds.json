@@ -1,0 +1,174 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "CYTDRQ-2026-06-15",
+  "pnr": "CYTDRQ"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "CDG",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "CYTDRQ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "CDG",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "CYTDRQ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "CYTDRQ-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "871",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 600,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "CYTDRQ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-MIXED-EL-02",
+     "reason": "Mixed APPR+EU (EU first, no flip EUR600)",
+     "compensationDetails": {
+      "amount": 600,
+      "currency": "EUR",
+      "delayBand": "DELAY_GTE_4_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "CYTDRQ-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "871",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 600,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "CYTDRQ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "Mixed APPR+EU (EU first, no flip EUR600)",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "CYTDRQ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "CYTDRQ-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 871,
+   "departureAirport": "CDG",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "CYTDRQ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZFI02-2026-06-10-appr-tier2",
+  "title": "FD-SIT-003: APPR 6-9hr delay, CAD 700 cash (INT)",
+  "description": "APPR Tier 2 eligible. YYZ->YVR domestic, 7-hour delay controllable. Travel completed.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZFI02",
+    "booking_date": "2026-06-10",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-003",
+  "creation_comment": "SIM-FD-SIT-INT-003",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "MICHAEL",
+      "last_name": "CHEN",
+      "gender": "MALE",
+      "date_of_birth": "1978-07-22",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165550102",
+      "passport": {
+        "number": "SIMFD102",
+        "expiry": "2033-07-22",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      },
+      "aeroplan": "702234568"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "115",
+      "operating_flight_number": "115",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-10T09:00:00",
+      "arr_local": "2026-06-10T11:30:00",
+      "dep_utc": "2026-06-10T13:00:00Z",
+      "arr_utc": "2026-06-10T18:30:00Z",
+      "booking_datetime": "2026-05-15T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "M"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-15",
+    "fare": {"amount": "550.00", "currency": "CAD"},
+    "ticket_numbers": ["0142400001002"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-15T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-15T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZFI02", "pnr_id": "ZZFI02-2026-06-10"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-003", "appr", "tier2", "domestic", "int-env"]
+}

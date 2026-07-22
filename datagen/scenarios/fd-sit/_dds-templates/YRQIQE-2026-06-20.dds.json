@@ -1,0 +1,169 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "YRQIQE-2026-06-20",
+  "pnr": "YRQIQE"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "YHZ",
+    "associatedSegments": [
+     {
+      "segmentId": "YRQIQE-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YHZ",
+      "marketingFlightNumber": 401,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 401,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#401#2026-06-20#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "YHZ",
+    "associatedSegments": [
+     {
+      "segmentId": "YRQIQE-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T18:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T22:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YHZ",
+      "marketingFlightNumber": 401,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 401,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#401#2026-06-20#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "YRQIQE-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "401",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YHZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "SAFETY",
+   "delayCode": "41",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "YRQIQE-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "Transit delay 2 hours or more - Within carrier's control but required for safety",
+     "failureReasons": null,
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-12-31"
+     }
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YRQIQE-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YRQIQE-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "YRQIQE-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 401,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YHZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "SAFETY",
+   "delayCode": "41",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "delayMinutes": 240,
+   "delayCategory": "DELAY_2_TO_LT_6_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "YRQIQE-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "SoC-APPR-EL-09",
+     "reason": "Transit delay 2 hours or more - Within carrier's control but required for safety",
+     "expiryDate": "2027-12-31",
+     "expenseCategories": [
+      {
+       "type": "MEAL",
+       "region": "CANADA",
+       "delayBand": "DELAY_2_TO_LT_6_HOURS",
+       "currency": "CAD",
+       "amount": 30
+      },
+      {
+       "type": "COMMUNICATION",
+       "region": "CANADA",
+       "delayBand": "DELAY_2_TO_LT_6_HOURS",
+       "currency": "CAD",
+       "amount": 30
+      }
+     ],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

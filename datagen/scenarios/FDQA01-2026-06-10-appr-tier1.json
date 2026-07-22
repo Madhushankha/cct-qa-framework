@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "FDQA01-2026-06-10-appr-tier1",
+  "title": "FD-SIT-001: APPR 3-6hr delay, CAD 400 cash (INT)",
+  "description": "APPR Tier 1 eligible. YUL->YYZ domestic, 4-hour delay controllable. Travel completed.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "FDQA01",
+    "booking_date": "2026-06-10",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-001",
+  "creation_comment": "SIM-FD-SIT-INT-001",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "EMILY",
+      "last_name": "THOMPSON",
+      "gender": "FEMALE",
+      "date_of_birth": "1985-03-15",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+15145550101",
+      "passport": {
+        "number": "SIMFD101",
+        "expiry": "2032-03-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "701234568"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "401",
+      "operating_flight_number": "401",
+      "origin": "YUL",
+      "destination": "YYZ",
+      "dep_local": "2026-06-10T08:00:00",
+      "arr_local": "2026-06-10T09:30:00",
+      "dep_utc": "2026-06-10T12:00:00Z",
+      "arr_utc": "2026-06-10T13:30:00Z",
+      "booking_datetime": "2026-05-20T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-20",
+    "fare": {"amount": "425.00", "currency": "CAD"},
+    "ticket_numbers": ["0142400001001"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-20T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-20T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "FDQA01", "pnr_id": "FDQA01-2026-06-10"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-001", "appr", "tier1", "domestic", "int-env"]
+}

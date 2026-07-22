@@ -1,0 +1,116 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFE061-2026-06-26",
+  "title": "FD-SIT-061: AC Wallet batch fallback",
+  "description": "AC Wallet batch queued; unavailable falls back to cash",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFE061",
+    "booking_date": "2026-06-26",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+  "last_modification_comment": "SIM-FD-SIT-061-INT",
+  "creation_comment": "SIM-FD-SIT-061-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "GARY",
+      "last_name": "GRAY",
+      "gender": "MALE",
+      "date_of_birth": "1966-01-19",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551060",
+      "aeroplan": "700000060"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "161",
+      "operating_flight_number": "161",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-26T10:00:00",
+      "arr_local": "2026-06-26T14:00:00",
+      "dep_utc": "2026-06-26T14:00:00Z",
+      "arr_utc": "2026-06-26T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142410000611"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFE061",
+        "pnr_id": "ZFE061-2026-06-26"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-061",
+    "appr",
+    "int-env",
+    "payment",
+    "wallet",
+    "fallback"
+  ],
+  "special_flags": [
+    "aeroplan"
+  ]
+}

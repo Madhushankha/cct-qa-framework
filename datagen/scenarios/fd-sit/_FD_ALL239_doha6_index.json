@@ -1,0 +1,7410 @@
+[
+  {
+    "case": "FD_TC_001",
+    "tc": "FD_TC_001",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "QMVCZJ",
+    "pnr_id": "QMVCZJ-2026-06-15",
+    "ticket": "014610000101",
+    "tickets": [
+      "014610000101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "SEDGEELDALE"
+      ]
+    ],
+    "pax": "ZORA SEDGEELDALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_002",
+    "tc": "FD_TC_002",
+    "src": "FD_TC_002",
+    "donor": "LDYBHR-2026-06-15",
+    "loc": "BBGGRP",
+    "pnr_id": "BBGGRP-2026-06-15",
+    "ticket": "014610000201",
+    "tickets": [
+      "014610000201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "HOLLLESHAW"
+      ]
+    ],
+    "pax": "TAMSIN HOLLLESHAW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_003",
+    "tc": "FD_TC_003",
+    "src": "FD_TC_003",
+    "donor": "GZCLMB-2026-06-15",
+    "loc": "TFJCGH",
+    "pnr_id": "TFJCGH-2026-06-15",
+    "ticket": "014610000301",
+    "tickets": [
+      "014610000301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "UNDERINGPOOL"
+      ]
+    ],
+    "pax": "HALLIE UNDERINGPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_004",
+    "tc": "FD_TC_004",
+    "src": "FD_TC_004",
+    "donor": "LFGKDQ-2026-06-15",
+    "loc": "TLGBXG",
+    "pnr_id": "TLGBXG-2026-06-15",
+    "ticket": "014610000401",
+    "tickets": [
+      "014610000401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "BROOKELFORD"
+      ]
+    ],
+    "pax": "DELPHINE BROOKELFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_005",
+    "tc": "FD_TC_005",
+    "src": "FD_TC_005",
+    "donor": "LQMNGM-2026-06-15",
+    "loc": "HZTTBQ",
+    "pnr_id": "HZTTBQ-2026-06-15",
+    "ticket": "014610000501",
+    "tickets": [
+      "014610000501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "TATSTEAD"
+      ]
+    ],
+    "pax": "PERCY TATSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_006",
+    "tc": "FD_TC_006",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "TNXHTS",
+    "pnr_id": "TNXHTS-2026-06-15",
+    "ticket": "014610000601",
+    "tickets": [
+      "014610000601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "MEREOWRIDGE"
+      ]
+    ],
+    "pax": "NADEZHDA MEREOWRIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_007",
+    "tc": "FD_TC_007",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "WHJRYP",
+    "pnr_id": "WHJRYP-2026-06-15",
+    "ticket": "014610000701",
+    "tickets": [
+      "014610000701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "VANEELCOMBE"
+      ]
+    ],
+    "pax": "ADRIAN VANEELCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_008",
+    "tc": "FD_TC_008",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "FNHKLG",
+    "pnr_id": "FNHKLG-2026-06-15",
+    "ticket": "014610000801",
+    "tickets": [
+      "014610000801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "FENANWORTH"
+      ]
+    ],
+    "pax": "ADRIAN FENANWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_009",
+    "tc": "FD_TC_009",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "PPDKCN",
+    "pnr_id": "PPDKCN-2026-06-15",
+    "ticket": "014610000901",
+    "tickets": [
+      "014610000901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "QUENERHURST"
+      ]
+    ],
+    "pax": "IVANO QUENERHURST",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_010",
+    "tc": "FD_TC_010",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "TLJQZK",
+    "pnr_id": "TLJQZK-2026-06-15",
+    "ticket": "014610001001",
+    "tickets": [
+      "014610001001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "STONEANFIELD"
+      ]
+    ],
+    "pax": "JOELLE STONEANFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_011",
+    "tc": "FD_TC_011",
+    "src": "FD_TC_011",
+    "donor": "GKVYMV-2026-06-15",
+    "loc": "XGYLSQ",
+    "pnr_id": "XGYLSQ-2026-06-15",
+    "ticket": "014610001101",
+    "tickets": [
+      "014610001101",
+      "014610001102",
+      "014610001103"
+    ],
+    "npax": 3,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "RUSHELMORE"
+      ],
+      [
+        "WESLEY",
+        "WINDANTON"
+      ],
+      [
+        "VESNA",
+        "STANOWVALE"
+      ]
+    ],
+    "pax": "ANNIKA RUSHELMORE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_012",
+    "tc": "FD_TC_012",
+    "src": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "loc": "YDMFPC",
+    "pnr_id": "YDMFPC-2026-06-15",
+    "ticket": "014610001201",
+    "tickets": [
+      "014610001201",
+      "014610001202",
+      "014610001203",
+      "014610001204",
+      "014610001205",
+      "014610001206",
+      "014610001207",
+      "014610001208",
+      "014610001209",
+      "014610001210",
+      "014610001211",
+      "014610001212"
+    ],
+    "npax": 12,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "FENENWICK"
+      ],
+      [
+        "HEIDI",
+        "MOSSELSHAW"
+      ],
+      [
+        "MATEO",
+        "FROSTERBURY"
+      ],
+      [
+        "CALLUM",
+        "GALDELMERE"
+      ],
+      [
+        "IVANO",
+        "GALDLESTEAD"
+      ],
+      [
+        "KENJI",
+        "BROOKANWOOD"
+      ],
+      [
+        "ELIAS",
+        "WOLFENBURY"
+      ],
+      [
+        "ROSALIND",
+        "HAWLESTON"
+      ],
+      [
+        "JOELLE",
+        "SELOWWICK"
+      ],
+      [
+        "YARDLEY",
+        "KIRKERMARSH"
+      ],
+      [
+        "ADRIAN",
+        "NORTHELSHAW"
+      ],
+      [
+        "KIRA",
+        "WRENERWYN"
+      ]
+    ],
+    "pax": "ELIAS FENENWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_013",
+    "tc": "FD_TC_013",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "XXPNWN",
+    "pnr_id": "XXPNWN-2026-06-15",
+    "ticket": "014610001301",
+    "tickets": [
+      "014610001301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "ORMERERBY"
+      ]
+    ],
+    "pax": "IVANO ORMERERBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_014",
+    "tc": "FD_TC_014",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "SLCRMX",
+    "pnr_id": "SLCRMX-2026-06-15",
+    "ticket": "014610001401",
+    "tickets": [
+      "014610001401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "BROOKERVALE"
+      ]
+    ],
+    "pax": "LARISSA BROOKERVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_015",
+    "tc": "FD_TC_015",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "HWYQFX",
+    "pnr_id": "HWYQFX-2026-06-15",
+    "ticket": "014610001501",
+    "tickets": [
+      "014610001501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "SELENMARSH"
+      ]
+    ],
+    "pax": "PERCY SELENMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_016",
+    "tc": "FD_TC_016",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "GMGQGQ",
+    "pnr_id": "GMGQGQ-2026-06-15",
+    "ticket": "014610001601",
+    "tickets": [
+      "014610001601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "BRENELWICK"
+      ]
+    ],
+    "pax": "ROMILLY BRENELWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_017",
+    "tc": "FD_TC_017",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "DBWKYF",
+    "pnr_id": "DBWKYF-2026-06-15",
+    "ticket": "014610001701",
+    "tickets": [
+      "014610001701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "CALDENGATE"
+      ]
+    ],
+    "pax": "ELIAS CALDENGATE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_018",
+    "tc": "FD_TC_018",
+    "src": "FD_TC_018",
+    "donor": "PDBSJV-2026-06-15",
+    "loc": "HXNZNV",
+    "pnr_id": "HXNZNV-2026-06-15",
+    "ticket": "014610001801",
+    "tickets": [
+      "014610001801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "EASTANSTON"
+      ]
+    ],
+    "pax": "ZEPHYR EASTANSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_019",
+    "tc": "FD_TC_019",
+    "src": "FD_TC_019",
+    "donor": "YHBPTL-2026-06-15",
+    "loc": "QTDFVC",
+    "pnr_id": "QTDFVC-2026-06-15",
+    "ticket": "014610001901",
+    "tickets": [
+      "014610001901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "STONEELSTEAD"
+      ]
+    ],
+    "pax": "ELIAS STONEELSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_020",
+    "tc": "FD_TC_020",
+    "src": "FD_TC_020",
+    "donor": "SBNNDX-2026-06-15",
+    "loc": "SQZGHZ",
+    "pnr_id": "SQZGHZ-2026-06-15",
+    "ticket": "014610002001",
+    "tickets": [
+      "014610002001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "HAWINGWICK"
+      ]
+    ],
+    "pax": "YARDLEY HAWINGWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_021",
+    "tc": "FD_TC_021",
+    "src": "FD_TC_021",
+    "donor": "BCQQPV-2026-06-15",
+    "loc": "WSXWZZ",
+    "pnr_id": "WSXWZZ-2026-06-15",
+    "ticket": "014610002101",
+    "tickets": [
+      "014610002101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "GAROWDEN"
+      ]
+    ],
+    "pax": "ADRIAN GAROWDEN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_022",
+    "tc": "FD_TC_022",
+    "src": "FD_TC_022",
+    "donor": "YCYXPN-2026-06-15",
+    "loc": "YBRMNL",
+    "pnr_id": "YBRMNL-2026-06-15",
+    "ticket": "014610002201",
+    "tickets": [
+      "014610002201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "SILVERLEBY"
+      ]
+    ],
+    "pax": "YANNICK SILVERLEBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_023",
+    "tc": "FD_TC_023",
+    "src": "FD_TC_023",
+    "donor": "PGGRXN-2026-06-15",
+    "loc": "JVMZKS",
+    "pnr_id": "JVMZKS-2026-06-15",
+    "ticket": "014610002301",
+    "tickets": [
+      "014610002301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "ALDENSTEAD"
+      ]
+    ],
+    "pax": "SEBASTIAN ALDENSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_024",
+    "tc": "FD_TC_024",
+    "src": "FD_TC_024",
+    "donor": "LYLHDZ-2026-06-15",
+    "loc": "KFYZXZ",
+    "pnr_id": "KFYZXZ-2026-06-15",
+    "ticket": "014610002401",
+    "tickets": [
+      "014610002401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "DUNENDEN"
+      ]
+    ],
+    "pax": "ELIAS DUNENDEN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_025",
+    "tc": "FD_TC_025",
+    "src": "FD_TC_025",
+    "donor": "RGVLNR-2026-06-15",
+    "loc": "NDXHYS",
+    "pnr_id": "NDXHYS-2026-06-15",
+    "ticket": "014610002501",
+    "tickets": [
+      "014610002501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "WINDOWLEY"
+      ]
+    ],
+    "pax": "VIOLETA WINDOWLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_026",
+    "tc": "FD_TC_026",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "DLNYHV",
+    "pnr_id": "DLNYHV-2026-06-15",
+    "ticket": "014610002601",
+    "tickets": [
+      "014610002601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "WOLDENVALE"
+      ]
+    ],
+    "pax": "LORCAN WOLDENVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_027",
+    "tc": "FD_TC_027",
+    "src": "FD_TC_027",
+    "donor": "SHMLFP-2026-06-15",
+    "loc": "MJKXTF",
+    "pnr_id": "MJKXTF-2026-06-15",
+    "ticket": "014610002701",
+    "tickets": [
+      "014610002701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "MARSHANLOW"
+      ]
+    ],
+    "pax": "LARISSA MARSHANLOW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_028",
+    "tc": "FD_TC_028",
+    "src": "FD_TC_028",
+    "donor": "XKZJVJ-2026-06-15",
+    "loc": "TSDJZG",
+    "pnr_id": "TSDJZG-2026-06-15",
+    "ticket": "014610002801",
+    "tickets": [
+      "014610002801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "HODLETON"
+      ]
+    ],
+    "pax": "ELIAS HODLETON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_029",
+    "tc": "FD_TC_029",
+    "src": "FD_TC_029",
+    "donor": "XVNQDY-2026-06-15",
+    "loc": "QBSPQD",
+    "pnr_id": "QBSPQD-2026-06-15",
+    "ticket": "014610002901",
+    "tickets": [
+      "014610002901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "EVERBURY"
+      ]
+    ],
+    "pax": "DAGNY EVERBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_030",
+    "tc": "FD_TC_030",
+    "src": "FD_TC_030",
+    "donor": "FZLTTQ-2026-06-15",
+    "loc": "GTCVDQ",
+    "pnr_id": "GTCVDQ-2026-06-15",
+    "ticket": "014610003001",
+    "tickets": [
+      "014610003001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "RUSHERCOTT"
+      ]
+    ],
+    "pax": "UMBERTO RUSHERCOTT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_031",
+    "tc": "FD_TC_031",
+    "src": "FD_TC_031",
+    "donor": "FYHFKM-2026-06-15",
+    "loc": "RYWJZM",
+    "pnr_id": "RYWJZM-2026-06-15",
+    "ticket": "014610003101",
+    "tickets": [
+      "014610003101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-12",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "SEDGEINGLEY"
+      ]
+    ],
+    "pax": "JASPER SEDGEINGLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_032",
+    "tc": "FD_TC_032",
+    "src": "FD_TC_032",
+    "donor": "JGNKQL-2026-06-15",
+    "loc": "HDYBRL",
+    "pnr_id": "HDYBRL-2026-06-15",
+    "ticket": "014610003201",
+    "tickets": [
+      "014610003201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-13",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "COTLEBURY"
+      ]
+    ],
+    "pax": "KENJI COTLEBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_033",
+    "tc": "FD_TC_033",
+    "src": "FD_TC_033",
+    "donor": "JJKQXL-2026-06-15",
+    "loc": "FLVYJM",
+    "pnr_id": "FLVYJM-2026-06-15",
+    "ticket": "014610003301",
+    "tickets": [
+      "014610003301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-15",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "GARMERE"
+      ]
+    ],
+    "pax": "MATEO GARMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_034",
+    "tc": "FD_TC_034",
+    "src": "FD_TC_034",
+    "donor": "BPSRZV-2026-06-15",
+    "loc": "DJBTDM",
+    "pnr_id": "DJBTDM-2026-06-15",
+    "ticket": "014610003401",
+    "tickets": [
+      "014610003401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-17",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "BROOKWORTH"
+      ]
+    ],
+    "pax": "ANNIKA BROOKWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_035",
+    "tc": "FD_TC_035",
+    "src": "FD_TC_035",
+    "donor": "HSLSKT-2026-06-15",
+    "loc": "JZBLYP",
+    "pnr_id": "JZBLYP-2026-06-15",
+    "ticket": "014610003501",
+    "tickets": [
+      "014610003501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "PRESLEBY"
+      ]
+    ],
+    "pax": "NIKOLAI PRESLEBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_036",
+    "tc": "FD_TC_036",
+    "src": "FD_TC_036",
+    "donor": "VDWGJS-2026-06-15",
+    "loc": "CSPXJZ",
+    "pnr_id": "CSPXJZ-2026-06-15",
+    "ticket": "014610003601",
+    "tickets": [
+      "014610003601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "CLIFFENBY"
+      ]
+    ],
+    "pax": "WESLEY CLIFFENBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_037",
+    "tc": "FD_TC_037",
+    "src": "FD_TC_037",
+    "donor": "GBYRMX-2026-06-15",
+    "loc": "NRKHNP",
+    "pnr_id": "NRKHNP-2026-06-15",
+    "ticket": "014610003701",
+    "tickets": [
+      "014610003701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "RAVENLEMARSH"
+      ]
+    ],
+    "pax": "HEIDI RAVENLEMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_038",
+    "tc": "FD_TC_038",
+    "src": "FD_TC_038",
+    "donor": "QTWCWL-2026-06-15",
+    "loc": "MCWTLX",
+    "pnr_id": "MCWTLX-2026-06-15",
+    "ticket": "014610003801",
+    "tickets": [
+      "014610003801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "RIDGECOTT"
+      ]
+    ],
+    "pax": "ROMILLY RIDGECOTT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_039",
+    "tc": "FD_TC_039",
+    "src": "FD_TC_039",
+    "donor": "YJBXWY-2026-06-15",
+    "loc": "CBQGPD",
+    "pnr_id": "CBQGPD-2026-06-15",
+    "ticket": "014610003901",
+    "tickets": [
+      "014610003901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-07",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VESNA",
+        "CLIFFANBY"
+      ]
+    ],
+    "pax": "VESNA CLIFFANBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_040",
+    "tc": "FD_TC_040",
+    "src": "FD_TC_040",
+    "donor": "VQTRBM-2026-06-15",
+    "loc": "YSLYFQ",
+    "pnr_id": "YSLYFQ-2026-06-15",
+    "ticket": "014610004001",
+    "tickets": [
+      "014610004001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-08",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "HAWENSTEAD"
+      ]
+    ],
+    "pax": "ULRICH HAWENSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_041",
+    "tc": "FD_TC_041",
+    "src": "FD_TC_041",
+    "donor": "LNJKTW-2026-06-15",
+    "loc": "GFSBHC",
+    "pnr_id": "GFSBHC-2026-06-15",
+    "ticket": "014610004101",
+    "tickets": [
+      "014610004101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-10",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "WEXLEFORD"
+      ]
+    ],
+    "pax": "LARISSA WEXLEFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_042",
+    "tc": "FD_TC_042",
+    "src": "FD_TC_042",
+    "donor": "HNWLDT-2026-06-15",
+    "loc": "LMDKJB",
+    "pnr_id": "LMDKJB-2026-06-15",
+    "ticket": "014610004201",
+    "tickets": [
+      "014610004201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-12",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "KIRKINGGROVE"
+      ]
+    ],
+    "pax": "PRIYA KIRKINGGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_043",
+    "tc": "FD_TC_043",
+    "src": "FD_TC_043",
+    "donor": "RWPYBN-2026-06-15",
+    "loc": "NGPBRS",
+    "pnr_id": "NGPBRS-2026-06-15",
+    "ticket": "014610004301",
+    "tickets": [
+      "014610004301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "STANELBY"
+      ]
+    ],
+    "pax": "ROSALIND STANELBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_044",
+    "tc": "FD_TC_044",
+    "src": "FD_TC_044",
+    "donor": "VPMSHC-2026-06-15",
+    "loc": "PLGMTP",
+    "pnr_id": "PLGMTP-2026-06-15",
+    "ticket": "014610004401",
+    "tickets": [
+      "014610004401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "HARTELVALE"
+      ]
+    ],
+    "pax": "JOELLE HARTELVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_045",
+    "tc": "FD_TC_045",
+    "src": "FD_TC_045",
+    "donor": "FDWHSW-2026-06-15",
+    "loc": "FDJSML",
+    "pnr_id": "FDJSML-2026-06-15",
+    "ticket": "014610004501",
+    "tickets": [
+      "014610004501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "STONEERWORTH"
+      ]
+    ],
+    "pax": "XIMENA STONEERWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_046",
+    "tc": "FD_TC_046",
+    "src": "FD_TC_046",
+    "donor": "KBDTTZ-2026-06-15",
+    "loc": "DZGQBQ",
+    "pnr_id": "DZGQBQ-2026-06-15",
+    "ticket": "014610004601",
+    "tickets": [
+      "014610004601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "SILVERENBY"
+      ]
+    ],
+    "pax": "XIMENA SILVERENBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_047",
+    "tc": "FD_TC_047",
+    "src": "FD_TC_047",
+    "donor": "LRYQTK-2026-06-15",
+    "loc": "WSRQLD",
+    "pnr_id": "WSRQLD-2026-06-15",
+    "ticket": "014610004701",
+    "tickets": [
+      "014610004701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "BARNERLEY"
+      ]
+    ],
+    "pax": "EAMON BARNERLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_048",
+    "tc": "FD_TC_048",
+    "src": "FD_TC_048",
+    "donor": "VYBZVV-2026-06-15",
+    "loc": "NSTMZG",
+    "pnr_id": "NSTMZG-2026-06-15",
+    "ticket": "014610004801",
+    "tickets": [
+      "014610004801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "WOLDOWDALE"
+      ]
+    ],
+    "pax": "PRIYA WOLDOWDALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_049",
+    "tc": "FD_TC_049",
+    "src": "FD_TC_049",
+    "donor": "YHRCMT-2026-06-15",
+    "loc": "SPXPTD",
+    "pnr_id": "SPXPTD-2026-06-15",
+    "ticket": "014610004901",
+    "tickets": [
+      "014610004901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VESNA",
+        "REDHAM"
+      ]
+    ],
+    "pax": "VESNA REDHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_050",
+    "tc": "FD_TC_050",
+    "src": "FD_TC_050",
+    "donor": "NXFRMX-2026-06-15",
+    "loc": "KCCHVQ",
+    "pnr_id": "KCCHVQ-2026-06-15",
+    "ticket": "014610005001",
+    "tickets": [
+      "014610005001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-26",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "BRENOWFORD"
+      ]
+    ],
+    "pax": "CALLUM BRENOWFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_051",
+    "tc": "FD_TC_051",
+    "src": "FD_TC_051",
+    "donor": "YNKNST-2026-06-15",
+    "loc": "NXRWTP",
+    "pnr_id": "NXRWTP-2026-06-15",
+    "ticket": "014610005101",
+    "tickets": [
+      "014610005101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "BRIGHTWICK"
+      ]
+    ],
+    "pax": "ULRICH BRIGHTWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_052",
+    "tc": "FD_TC_052",
+    "src": "FD_TC_052",
+    "donor": "QPGVVM-2026-06-15",
+    "loc": "JNVWJJ",
+    "pnr_id": "JNVWJJ-2026-06-15",
+    "ticket": "014610005201",
+    "tickets": [
+      "014610005201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-28",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "BLYLEBURY"
+      ]
+    ],
+    "pax": "FREYA BLYLEBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_053",
+    "tc": "FD_TC_053",
+    "src": "FD_TC_053",
+    "donor": "XWRLGP-2026-06-15",
+    "loc": "RNFYFG",
+    "pnr_id": "RNFYFG-2026-06-15",
+    "ticket": "014610005301",
+    "tickets": [
+      "014610005301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-29",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "RIDGEOWHAM"
+      ]
+    ],
+    "pax": "QUENTIN RIDGEOWHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_054",
+    "tc": "FD_TC_054",
+    "src": "FD_TC_054",
+    "donor": "WYJMNW-2026-06-15",
+    "loc": "KCLQYC",
+    "pnr_id": "KCLQYC-2026-06-15",
+    "ticket": "014610005401",
+    "tickets": [
+      "014610005401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "OATOWTON"
+      ]
+    ],
+    "pax": "MATEO OATOWTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_055",
+    "tc": "FD_TC_055",
+    "src": "FD_TC_055",
+    "donor": "YKKXVH-2026-06-15",
+    "loc": "DPTZMZ",
+    "pnr_id": "DPTZMZ-2026-06-15",
+    "ticket": "014610005501",
+    "tickets": [
+      "014610005501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "OATANLEY"
+      ]
+    ],
+    "pax": "YANNICK OATANLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_056",
+    "tc": "FD_TC_056",
+    "src": "FD_TC_056",
+    "donor": "KCKDJC-2026-06-15",
+    "loc": "FRDKLS",
+    "pnr_id": "FRDKLS-2026-06-15",
+    "ticket": "014610005601",
+    "tickets": [
+      "014610005601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "WESTLESTON"
+      ]
+    ],
+    "pax": "OONA WESTLESTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_057",
+    "tc": "FD_TC_057",
+    "src": "FD_TC_057",
+    "donor": "BDPKLV-2026-06-15",
+    "loc": "RWZJBD",
+    "pnr_id": "RWZJBD-2026-06-15",
+    "ticket": "014610005701",
+    "tickets": [
+      "014610005701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-04",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "PENLEHURST"
+      ]
+    ],
+    "pax": "ORSON PENLEHURST",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_058",
+    "tc": "FD_TC_058",
+    "src": "FD_TC_058",
+    "donor": "SSSGML-2026-06-15",
+    "loc": "SCSQFC",
+    "pnr_id": "SCSQFC-2026-06-15",
+    "ticket": "014610005801",
+    "tickets": [
+      "014610005801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "RAINELPOOL"
+      ]
+    ],
+    "pax": "KIRA RAINELPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_059",
+    "tc": "FD_TC_059",
+    "src": "FD_TC_059",
+    "donor": "CJLXVP-2026-06-15",
+    "loc": "JTJLDN",
+    "pnr_id": "JTJLDN-2026-06-15",
+    "ticket": "014610005901",
+    "tickets": [
+      "014610005901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "WILDELTHORPE"
+      ]
+    ],
+    "pax": "IVANO WILDELTHORPE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_060",
+    "tc": "FD_TC_060",
+    "src": "FD_TC_060",
+    "donor": "XSGTDD-2026-06-15",
+    "loc": "CPXSWX",
+    "pnr_id": "CPXSWX-2026-06-15",
+    "ticket": "014610006001",
+    "tickets": [
+      "014610006001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-APPR-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "YEOENHAM"
+      ]
+    ],
+    "pax": "MIRABEL YEOENHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_061",
+    "tc": "FD_TC_061",
+    "src": "FD_TC_061",
+    "donor": "FCDKWN-2026-06-15",
+    "loc": "MCQWXR",
+    "pnr_id": "MCQWXR-2026-06-15",
+    "ticket": "014610006101",
+    "tickets": [
+      "014610006101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "STONEGROVE"
+      ]
+    ],
+    "pax": "ROSALIND STONEGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_062",
+    "tc": "FD_TC_062",
+    "src": "FD_TC_062",
+    "donor": "SHBNPV-2026-06-15",
+    "loc": "NVMCPK",
+    "pnr_id": "NVMCPK-2026-06-15",
+    "ticket": "014610006201",
+    "tickets": [
+      "014610006201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "WHITOWMARSH"
+      ]
+    ],
+    "pax": "DAGNY WHITOWMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_063",
+    "tc": "FD_TC_063",
+    "src": "FD_TC_063",
+    "donor": "NWVJZW-2026-08-15",
+    "loc": "DMFYFQ",
+    "pnr_id": "DMFYFQ-2026-08-15",
+    "ticket": "014610006301",
+    "tickets": [
+      "014610006301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": false,
+    "status": "",
+    "syscode": "",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-08-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "WHITOWGATE"
+      ]
+    ],
+    "pax": "YANNICK WHITOWGATE",
+    "uniq_names": true,
+    "flight_expect": "future"
+  },
+  {
+    "case": "FD_TC_064",
+    "tc": "FD_TC_064",
+    "src": "FD_TC_064",
+    "donor": "TPZBPF-2026-06-15",
+    "loc": "JSKQYQ",
+    "pnr_id": "JSKQYQ-2026-06-15",
+    "ticket": "014610006401",
+    "tickets": [
+      "014610006401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-28",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "YEOENSTEAD"
+      ]
+    ],
+    "pax": "MIRABEL YEOENSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_065",
+    "tc": "FD_TC_065",
+    "src": "FD_TC_065",
+    "donor": "FRYNDS-2026-06-15",
+    "loc": "QSHNRL",
+    "pnr_id": "QSHNRL-2026-06-15",
+    "ticket": "014610006501",
+    "tickets": [
+      "014610006501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-09",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "FENINGSTON"
+      ]
+    ],
+    "pax": "FIONA FENINGSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_066",
+    "tc": "FD_TC_066",
+    "src": "FD_TC_066",
+    "donor": "XPJRPB-2026-06-15",
+    "loc": "ZWFCQR",
+    "pnr_id": "ZWFCQR-2026-06-15",
+    "ticket": "014610006601",
+    "tickets": [
+      "014610006601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-01",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "MEREINGLEY"
+      ]
+    ],
+    "pax": "TAMSIN MEREINGLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_067",
+    "tc": "FD_TC_067",
+    "src": "FD_TC_067",
+    "donor": "QRPCGX-2026-06-15",
+    "loc": "JPXJTY",
+    "pnr_id": "JPXJTY-2026-06-15",
+    "ticket": "014610006701",
+    "tickets": [
+      "014610006701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-02",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "NETHERANWICK"
+      ]
+    ],
+    "pax": "HEIDI NETHERANWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_068",
+    "tc": "FD_TC_068",
+    "src": "FD_TC_068",
+    "donor": "XFJHHJ-2026-06-15",
+    "loc": "WWJNLR",
+    "pnr_id": "WWJNLR-2026-06-15",
+    "ticket": "014610006801",
+    "tickets": [
+      "014610006801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-03",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "ULLSELCROFT"
+      ]
+    ],
+    "pax": "WESLEY ULLSELCROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_069",
+    "tc": "FD_TC_069",
+    "src": "FD_TC_069",
+    "donor": "FVSRJV-2026-06-15",
+    "loc": "NMGSCN",
+    "pnr_id": "NMGSCN-2026-06-15",
+    "ticket": "014610006901",
+    "tickets": [
+      "014610006901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-04",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "SELELCOMBE"
+      ]
+    ],
+    "pax": "SEBASTIAN SELELCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_070",
+    "tc": "FD_TC_070",
+    "src": "FD_TC_070",
+    "donor": "MKMYRZ-2026-06-15",
+    "loc": "BDKQYN",
+    "pnr_id": "BDKQYN-2026-06-15",
+    "ticket": "014610007001",
+    "tickets": [
+      "014610007001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-05",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "LARKFIELD"
+      ]
+    ],
+    "pax": "CALLUM LARKFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_071",
+    "tc": "FD_TC_071",
+    "src": "FD_TC_071",
+    "donor": "FWSXHR-2026-06-15",
+    "loc": "MDJMPC",
+    "pnr_id": "MDJMPC-2026-06-15",
+    "ticket": "014610007101",
+    "tickets": [
+      "014610007101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-06",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "FROSTENSTEAD"
+      ]
+    ],
+    "pax": "ROMILLY FROSTENSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_072",
+    "tc": "FD_TC_072",
+    "src": "FD_TC_072",
+    "donor": "LSXNSR-2026-06-15",
+    "loc": "HZGRTD",
+    "pnr_id": "HZGRTD-2026-06-15",
+    "ticket": "014610007201",
+    "tickets": [
+      "014610007201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-07",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "YARANPOOL"
+      ]
+    ],
+    "pax": "KIRA YARANPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_073",
+    "tc": "FD_TC_073",
+    "src": "FD_TC_073",
+    "donor": "TZGJCH-2026-06-15",
+    "loc": "QQQFLC",
+    "pnr_id": "QQQFLC-2026-06-15",
+    "ticket": "014610007301",
+    "tickets": [
+      "014610007301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-08",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "BLACKANHAM"
+      ]
+    ],
+    "pax": "KIRA BLACKANHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_074",
+    "tc": "FD_TC_074",
+    "src": "FD_TC_074",
+    "donor": "QLYZCR-2026-06-15",
+    "loc": "ZKHCPX",
+    "pnr_id": "ZKHCPX-2026-06-15",
+    "ticket": "014610007401",
+    "tickets": [
+      "014610007401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-09",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "LININGGROVE"
+      ]
+    ],
+    "pax": "XIMENA LININGGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_075",
+    "tc": "FD_TC_075",
+    "src": "FD_TC_075",
+    "donor": "JDVWCC-2026-06-15",
+    "loc": "NPVYGL",
+    "pnr_id": "NPVYGL-2026-06-15",
+    "ticket": "014610007501",
+    "tickets": [
+      "014610007501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-10",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "GREENANMORE"
+      ]
+    ],
+    "pax": "ULRICH GREENANMORE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_076",
+    "tc": "FD_TC_076",
+    "src": "FD_TC_076",
+    "donor": "PZTLBX-2026-06-15",
+    "loc": "VMMVJC",
+    "pnr_id": "VMMVJC-2026-06-15",
+    "ticket": "014610007601",
+    "tickets": [
+      "014610007601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-11",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "GALDENTON"
+      ]
+    ],
+    "pax": "ISOLDE GALDENTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_077",
+    "tc": "FD_TC_077",
+    "src": "FD_TC_077",
+    "donor": "HQPPWS-2026-06-15",
+    "loc": "VKGZSK",
+    "pnr_id": "VKGZSK-2026-06-15",
+    "ticket": "014610007701",
+    "tickets": [
+      "014610007701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-12",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "TUTENBURY"
+      ]
+    ],
+    "pax": "VIOLETA TUTENBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_078",
+    "tc": "FD_TC_078",
+    "src": "FD_TC_078",
+    "donor": "RGZFFN-2026-06-15",
+    "loc": "KQKVPK",
+    "pnr_id": "KQKVPK-2026-06-15",
+    "ticket": "014610007801",
+    "tickets": [
+      "014610007801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-13",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "HARTELPOOL"
+      ]
+    ],
+    "pax": "DAGNY HARTELPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_079",
+    "tc": "FD_TC_079",
+    "src": "FD_TC_079",
+    "donor": "VYDFMC-2026-06-15",
+    "loc": "FLDZLY",
+    "pnr_id": "FLDZLY-2026-06-15",
+    "ticket": "014610007901",
+    "tickets": [
+      "014610007901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-14",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "LONGENSTON"
+      ]
+    ],
+    "pax": "ZEPHYR LONGENSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_080",
+    "tc": "FD_TC_080",
+    "src": "FD_TC_080",
+    "donor": "VKLDDQ-2026-06-15",
+    "loc": "LWNDZR",
+    "pnr_id": "LWNDZR-2026-06-15",
+    "ticket": "014610008001",
+    "tickets": [
+      "014610008001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-15",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "HALERLEY"
+      ]
+    ],
+    "pax": "ROSALIND HALERLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_081",
+    "tc": "FD_TC_081",
+    "src": "FD_TC_081",
+    "donor": "ZPYSGD-2026-06-15",
+    "loc": "QPKPXJ",
+    "pnr_id": "QPKPXJ-2026-06-15",
+    "ticket": "014610008101",
+    "tickets": [
+      "014610008101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-16",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "RUSHANSTON"
+      ]
+    ],
+    "pax": "CALLUM RUSHANSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_082",
+    "tc": "FD_TC_082",
+    "src": "FD_TC_082",
+    "donor": "VYHFMR-2026-06-15",
+    "loc": "GNCSVS",
+    "pnr_id": "GNCSVS-2026-06-15",
+    "ticket": "014610008201",
+    "tickets": [
+      "014610008201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-17",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "THEODORA",
+        "OATERCOMBE"
+      ]
+    ],
+    "pax": "THEODORA OATERCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_083",
+    "tc": "FD_TC_083",
+    "src": "FD_TC_083",
+    "donor": "ZRJCSQ-2026-06-15",
+    "loc": "LLYPPX",
+    "pnr_id": "LLYPPX-2026-06-15",
+    "ticket": "014610008301",
+    "tickets": [
+      "014610008301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-18",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "CHADINGWORTH"
+      ]
+    ],
+    "pax": "ANNIKA CHADINGWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_084",
+    "tc": "FD_TC_084",
+    "src": "FD_TC_084",
+    "donor": "BKRTZL-2026-06-15",
+    "loc": "LNGKQJ",
+    "pnr_id": "LNGKQJ-2026-06-15",
+    "ticket": "014610008401",
+    "tickets": [
+      "014610008401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-19",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "REDINGMERE"
+      ]
+    ],
+    "pax": "SVEN REDINGMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_085",
+    "tc": "FD_TC_085",
+    "src": "FD_TC_085",
+    "donor": "RXNWDW-2026-06-15",
+    "loc": "BZLFSZ",
+    "pnr_id": "BZLFSZ-2026-06-15",
+    "ticket": "014610008501",
+    "tickets": [
+      "014610008501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-20",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "OATERWYN"
+      ]
+    ],
+    "pax": "KIRA OATERWYN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_086",
+    "tc": "FD_TC_086",
+    "src": "FD_TC_086",
+    "donor": "HDZDMH-2026-06-15",
+    "loc": "FNFJKV",
+    "pnr_id": "FNFJKV-2026-06-15",
+    "ticket": "014610008601",
+    "tickets": [
+      "014610008601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-21",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "BEXINGMARSH"
+      ]
+    ],
+    "pax": "LARISSA BEXINGMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_087",
+    "tc": "FD_TC_087",
+    "src": "FD_TC_087",
+    "donor": "ZSFMSJ-2026-06-15",
+    "loc": "DJZHVS",
+    "pnr_id": "DJZHVS-2026-06-15",
+    "ticket": "014610008701",
+    "tickets": [
+      "014610008701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-25",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "FROSTANLEY"
+      ]
+    ],
+    "pax": "ISOLDE FROSTANLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_088",
+    "tc": "FD_TC_088",
+    "src": "FD_TC_088",
+    "donor": "YJHHHD-2026-06-15",
+    "loc": "GBNXPW",
+    "pnr_id": "GBNXPW-2026-06-15",
+    "ticket": "014610008801",
+    "tickets": [
+      "014610008801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-35",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "OAKOWGROVE"
+      ]
+    ],
+    "pax": "NIKOLAI OAKOWGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_089",
+    "tc": "FD_TC_089",
+    "src": "FD_TC_089",
+    "donor": "FKNJQR-2026-06-15",
+    "loc": "VDYPKG",
+    "pnr_id": "VDYPKG-2026-06-15",
+    "ticket": "014610008901",
+    "tickets": [
+      "014610008901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-27",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "LANGANMERE"
+      ]
+    ],
+    "pax": "YANNICK LANGANMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_090",
+    "tc": "FD_TC_090",
+    "src": "FD_TC_090",
+    "donor": "JDRQDX-2026-06-15",
+    "loc": "YMLCCN",
+    "pnr_id": "YMLCCN-2026-06-15",
+    "ticket": "014610009001",
+    "tickets": [
+      "014610009001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-29",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "BROOKWYN"
+      ]
+    ],
+    "pax": "GARETH BROOKWYN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_091",
+    "tc": "FD_TC_091",
+    "src": "FD_TC_091",
+    "donor": "MDLXJS-2026-06-15",
+    "loc": "VPLZCZ",
+    "pnr_id": "VPLZCZ-2026-06-15",
+    "ticket": "014610009101",
+    "tickets": [
+      "014610009101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-31",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "OAKINGPOOL"
+      ]
+    ],
+    "pax": "LORCAN OAKINGPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_092",
+    "tc": "FD_TC_092",
+    "src": "FD_TC_092",
+    "donor": "XSZLZJ-2026-06-15",
+    "loc": "DNLSGW",
+    "pnr_id": "DNLSGW-2026-06-15",
+    "ticket": "014610009201",
+    "tickets": [
+      "014610009201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-33",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "GARINGBY"
+      ]
+    ],
+    "pax": "IVANO GARINGBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_093",
+    "tc": "FD_TC_093",
+    "src": "FD_TC_093",
+    "donor": "QRFXBW-2026-06-15",
+    "loc": "VDFPMS",
+    "pnr_id": "VDFPMS-2026-06-15",
+    "ticket": "014610009301",
+    "tickets": [
+      "014610009301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-35",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "WINDINGFIELD"
+      ]
+    ],
+    "pax": "TAMSIN WINDINGFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_094",
+    "tc": "FD_TC_094",
+    "src": "FD_TC_094",
+    "donor": "HPWLGJ-2026-06-15",
+    "loc": "QXNPXM",
+    "pnr_id": "QXNPXM-2026-06-15",
+    "ticket": "014610009401",
+    "tickets": [
+      "014610009401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-37",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "ALDELMERE"
+      ]
+    ],
+    "pax": "YARDLEY ALDELMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_095",
+    "tc": "FD_TC_095",
+    "src": "FD_TC_095",
+    "donor": "QCTYVG-2026-06-15",
+    "loc": "SDMZGT",
+    "pnr_id": "SDMZGT-2026-06-15",
+    "ticket": "014610009501",
+    "tickets": [
+      "014610009501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "HARTOWTON"
+      ]
+    ],
+    "pax": "JOELLE HARTOWTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_096",
+    "tc": "FD_TC_096",
+    "src": "FD_TC_096",
+    "donor": "FNCTJB-2026-06-15",
+    "loc": "WJPWKQ",
+    "pnr_id": "WJPWKQ-2026-06-15",
+    "ticket": "014610009601",
+    "tickets": [
+      "014610009601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "WOODANCOMBE"
+      ]
+    ],
+    "pax": "ZORA WOODANCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_097",
+    "tc": "FD_TC_097",
+    "src": "FD_TC_097",
+    "donor": "JPFYQX-2026-06-15",
+    "loc": "MXKBVW",
+    "pnr_id": "MXKBVW-2026-06-15",
+    "ticket": "014610009701",
+    "tickets": [
+      "014610009701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "RAINELBY"
+      ]
+    ],
+    "pax": "WINSLOW RAINELBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_098",
+    "tc": "FD_TC_098",
+    "src": "FD_TC_098",
+    "donor": "ZHWZQN-2026-06-15",
+    "loc": "NLZCWS",
+    "pnr_id": "NLZCWS-2026-06-15",
+    "ticket": "014610009801",
+    "tickets": [
+      "014610009801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "RAINELTON"
+      ]
+    ],
+    "pax": "ZEPHYR RAINELTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_099",
+    "tc": "FD_TC_099",
+    "src": "FD_TC_099",
+    "donor": "CPGNNH-2026-06-15",
+    "loc": "NJLHNM",
+    "pnr_id": "NJLHNM-2026-06-15",
+    "ticket": "014610009901",
+    "tickets": [
+      "014610009901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-07",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "HOLLELSTON"
+      ]
+    ],
+    "pax": "JOELLE HOLLELSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_100",
+    "tc": "FD_TC_100",
+    "src": "FD_TC_100",
+    "donor": "MWBZMQ-2026-06-15",
+    "loc": "PKHVTM",
+    "pnr_id": "PKHVTM-2026-06-15",
+    "ticket": "014610010001",
+    "tickets": [
+      "014610010001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-09",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "GARLEBY"
+      ]
+    ],
+    "pax": "YANNICK GARLEBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_101",
+    "tc": "FD_TC_101",
+    "src": "FD_TC_101",
+    "donor": "DXQTCY-2026-06-15",
+    "loc": "YBTPHX",
+    "pnr_id": "YBTPHX-2026-06-15",
+    "ticket": "014610010101",
+    "tickets": [
+      "014610010101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-11",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "FAIRWORTH"
+      ]
+    ],
+    "pax": "EAMON FAIRWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_102",
+    "tc": "FD_TC_102",
+    "src": "FD_TC_102",
+    "donor": "YFQLWL-2026-06-15",
+    "loc": "MCNCWB",
+    "pnr_id": "MCNCWB-2026-06-15",
+    "ticket": "014610010201",
+    "tickets": [
+      "014610010201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-13",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "PRESERBROOK"
+      ]
+    ],
+    "pax": "BRENNA PRESERBROOK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_103",
+    "tc": "FD_TC_103",
+    "src": "FD_TC_103",
+    "donor": "TSKHMN-2026-06-15",
+    "loc": "XZHHWK",
+    "pnr_id": "XZHHWK-2026-06-15",
+    "ticket": "014610010301",
+    "tickets": [
+      "014610010301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "HOLLENWYN"
+      ]
+    ],
+    "pax": "ISOLDE HOLLENWYN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_104",
+    "tc": "FD_TC_104",
+    "src": "FD_TC_104",
+    "donor": "VVKVTK-2026-06-15",
+    "loc": "BTMFWY",
+    "pnr_id": "BTMFWY-2026-06-15",
+    "ticket": "014610010401",
+    "tickets": [
+      "014610010401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-15",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "VANEENMORE"
+      ]
+    ],
+    "pax": "ORSON VANEENMORE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_105",
+    "tc": "FD_TC_105",
+    "src": "FD_TC_105",
+    "donor": "KBJPTC-2026-06-15",
+    "loc": "DKSRGC",
+    "pnr_id": "DKSRGC-2026-06-15",
+    "ticket": "014610010501",
+    "tickets": [
+      "014610010501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "BRAMINGBECK"
+      ]
+    ],
+    "pax": "NIKOLAI BRAMINGBECK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_106",
+    "tc": "FD_TC_106",
+    "src": "FD_TC_106",
+    "donor": "SYBHTD-2026-06-15",
+    "loc": "NHKPND",
+    "pnr_id": "NHKPND-2026-06-15",
+    "ticket": "014610010601",
+    "tickets": [
+      "014610010601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-17",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "MARSHANBROOK"
+      ]
+    ],
+    "pax": "GARETH MARSHANBROOK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_107",
+    "tc": "FD_TC_107",
+    "src": "FD_TC_107",
+    "donor": "HBNHTT-2026-06-15",
+    "loc": "LLJFWB",
+    "pnr_id": "LLJFWB-2026-06-15",
+    "ticket": "014610010701",
+    "tickets": [
+      "014610010701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "MEREPOOL"
+      ]
+    ],
+    "pax": "LARISSA MEREPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_108",
+    "tc": "FD_TC_108",
+    "src": "FD_TC_108",
+    "donor": "VQHMCW-2026-06-15",
+    "loc": "YMJYSC",
+    "pnr_id": "YMJYSC-2026-06-15",
+    "ticket": "014610010801",
+    "tickets": [
+      "014610010801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-19",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "WILDLECROFT"
+      ]
+    ],
+    "pax": "LORCAN WILDLECROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_109",
+    "tc": "FD_TC_109",
+    "src": "FD_TC_109",
+    "donor": "GMBCJM-2026-06-15",
+    "loc": "DWRWRN",
+    "pnr_id": "DWRWRN-2026-06-15",
+    "ticket": "014610010901",
+    "tickets": [
+      "014610010901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "BLYINGHOLT"
+      ]
+    ],
+    "pax": "ULRICH BLYINGHOLT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_110",
+    "tc": "FD_TC_110",
+    "src": "FD_TC_110",
+    "donor": "BXWCBT-2026-06-15",
+    "loc": "BVTXTZ",
+    "pnr_id": "BVTXTZ-2026-06-15",
+    "ticket": "014610011001",
+    "tickets": [
+      "014610011001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "FENELFIELD"
+      ]
+    ],
+    "pax": "PERCY FENELFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_111",
+    "tc": "FD_TC_111",
+    "src": "FD_TC_111",
+    "donor": "JMYBSJ-2026-06-15",
+    "loc": "XTVNFW",
+    "pnr_id": "XTVNFW-2026-06-15",
+    "ticket": "014610011101",
+    "tickets": [
+      "014610011101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "FAIROWRIDGE"
+      ]
+    ],
+    "pax": "ULRICH FAIROWRIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_112",
+    "tc": "FD_TC_112",
+    "src": "FD_TC_112",
+    "donor": "NVYBGX-2026-06-15",
+    "loc": "QFLLGB",
+    "pnr_id": "QFLLGB-2026-06-15",
+    "ticket": "014610011201",
+    "tickets": [
+      "014610011201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "DUNOWPOOL"
+      ]
+    ],
+    "pax": "HALLIE DUNOWPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_113",
+    "tc": "FD_TC_113",
+    "src": "FD_TC_113",
+    "donor": "RWYLWK-2026-06-15",
+    "loc": "YFYNCK",
+    "pnr_id": "YFYNCK-2026-06-15",
+    "ticket": "014610011301",
+    "tickets": [
+      "014610011301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "WOLFINGHOLT"
+      ]
+    ],
+    "pax": "ZORA WOLFINGHOLT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_114",
+    "tc": "FD_TC_114",
+    "src": "FD_TC_114",
+    "donor": "MXDMNC-2026-06-15",
+    "loc": "XGSMLH",
+    "pnr_id": "XGSMLH-2026-06-15",
+    "ticket": "014610011401",
+    "tickets": [
+      "014610011401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "SEDGEANBURY"
+      ]
+    ],
+    "pax": "WINSLOW SEDGEANBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_115",
+    "tc": "FD_TC_115",
+    "src": "FD_TC_115",
+    "donor": "HXGHXM-2026-06-15",
+    "loc": "NYFYWX",
+    "pnr_id": "NYFYWX-2026-06-15",
+    "ticket": "014610011501",
+    "tickets": [
+      "014610011501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "IRONANWOOD"
+      ]
+    ],
+    "pax": "ELIAS IRONANWOOD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_116",
+    "tc": "FD_TC_116",
+    "src": "FD_TC_116",
+    "donor": "TZMCGZ-2026-06-15",
+    "loc": "DBXRNP",
+    "pnr_id": "DBXRNP-2026-06-15",
+    "ticket": "014610011601",
+    "tickets": [
+      "014610011601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-EU-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "FIONA",
+        "CALDLECOMBE"
+      ]
+    ],
+    "pax": "FIONA CALDLECOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_117",
+    "tc": "FD_TC_117",
+    "src": "FD_TC_117",
+    "donor": "XZGMJH-2026-06-15",
+    "loc": "DNDGFW",
+    "pnr_id": "DNDGFW-2026-06-15",
+    "ticket": "014610011701",
+    "tickets": [
+      "014610011701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-01",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "HODENWICK"
+      ]
+    ],
+    "pax": "GARETH HODENWICK",
+    "uniq_names": true,
+    "route": "YUL-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_118",
+    "tc": "FD_TC_118",
+    "src": "FD_TC_118",
+    "donor": "NVGTVZ-2026-06-15",
+    "loc": "QGRDSR",
+    "pnr_id": "QGRDSR-2026-06-15",
+    "ticket": "014610011801",
+    "tickets": [
+      "014610011801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-05",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "MILLENMARSH"
+      ]
+    ],
+    "pax": "GIDEON MILLENMARSH",
+    "uniq_names": true,
+    "route": "YVR-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_119",
+    "tc": "FD_TC_119",
+    "src": "FD_TC_119",
+    "donor": "JGKXHP-2026-06-15",
+    "loc": "HHVZYX",
+    "pnr_id": "HHVZYX-2026-06-15",
+    "ticket": "014610011901",
+    "tickets": [
+      "014610011901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-07",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "GALDANBECK"
+      ]
+    ],
+    "pax": "DELPHINE GALDANBECK",
+    "uniq_names": true,
+    "route": "YOW-YYC-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_120",
+    "tc": "FD_TC_120",
+    "src": "FD_TC_120",
+    "donor": "VDPYCL-2026-06-15",
+    "loc": "HJWQRW",
+    "pnr_id": "HJWQRW-2026-06-15",
+    "ticket": "014610012001",
+    "tickets": [
+      "014610012001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-09",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "KESANDEN"
+      ]
+    ],
+    "pax": "DAGNY KESANDEN",
+    "uniq_names": true,
+    "route": "YEG-YHZ-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_121",
+    "tc": "FD_TC_121",
+    "src": "FD_TC_121",
+    "donor": "QQYDGR-2026-06-15",
+    "loc": "LCKNTQ",
+    "pnr_id": "LCKNTQ-2026-06-15",
+    "ticket": "014610012101",
+    "tickets": [
+      "014610012101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "MARSHOWWOOD"
+      ]
+    ],
+    "pax": "SEBASTIAN MARSHOWWOOD",
+    "uniq_names": true,
+    "route": "YWG-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_122",
+    "tc": "FD_TC_122",
+    "src": "FD_TC_122",
+    "donor": "QZHVJS-2026-06-15",
+    "loc": "FTYWNC",
+    "pnr_id": "FTYWNC-2026-06-15",
+    "ticket": "014610012201",
+    "tickets": [
+      "014610012201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "MOSSERMARSH"
+      ]
+    ],
+    "pax": "ZORA MOSSERMARSH",
+    "uniq_names": true,
+    "route": "YQB-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_123",
+    "tc": "FD_TC_123",
+    "src": "FD_TC_123",
+    "donor": "MTDFDW-2026-06-15",
+    "loc": "GBRKQM",
+    "pnr_id": "GBRKQM-2026-06-15",
+    "ticket": "014610012301",
+    "tickets": [
+      "014610012301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "HAWINGCOTT"
+      ]
+    ],
+    "pax": "YARDLEY HAWINGCOTT",
+    "uniq_names": true,
+    "route": "TLV-YXE",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_124",
+    "tc": "FD_TC_124",
+    "src": "FD_TC_124",
+    "donor": "SHVSJM-2026-06-15",
+    "loc": "MRGNRH",
+    "pnr_id": "MRGNRH-2026-06-15",
+    "ticket": "014610012401",
+    "tickets": [
+      "014610012401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "COTANWORTH"
+      ]
+    ],
+    "pax": "YARDLEY COTANWORTH",
+    "uniq_names": true,
+    "route": "YLW-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_125",
+    "tc": "FD_TC_125",
+    "src": "FD_TC_125",
+    "donor": "NRMDDD-2026-06-15",
+    "loc": "RWZYYX",
+    "pnr_id": "RWZYYX-2026-06-15",
+    "ticket": "014610012501",
+    "tickets": [
+      "014610012501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-08",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "LANGANWORTH"
+      ]
+    ],
+    "pax": "PERCY LANGANWORTH",
+    "uniq_names": true,
+    "route": "TLV-LHR",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_126",
+    "tc": "FD_TC_126",
+    "src": "FD_TC_126",
+    "donor": "WQWWFB-2026-06-15",
+    "loc": "VRXPVK",
+    "pnr_id": "VRXPVK-2026-06-15",
+    "ticket": "014610012601",
+    "tickets": [
+      "014610012601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-10",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "HAWENBECK"
+      ]
+    ],
+    "pax": "JOELLE HAWENBECK",
+    "uniq_names": true,
+    "route": "CDG-MUC-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_127",
+    "tc": "FD_TC_127",
+    "src": "FD_TC_127",
+    "donor": "RHHTXC-2026-06-15",
+    "loc": "DRLKKB",
+    "pnr_id": "DRLKKB-2026-06-15",
+    "ticket": "014610012701",
+    "tickets": [
+      "014610012701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-12",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "BLACKLECOTT"
+      ]
+    ],
+    "pax": "LARISSA BLACKLECOTT",
+    "uniq_names": true,
+    "route": "AMS-ZRH-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_128",
+    "tc": "FD_TC_128",
+    "src": "FD_TC_128",
+    "donor": "JJXFLD-2026-06-15",
+    "loc": "STRSRH",
+    "pnr_id": "STRSRH-2026-06-15",
+    "ticket": "014610012801",
+    "tickets": [
+      "014610012801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "WOLFOWTON"
+      ]
+    ],
+    "pax": "PERCY WOLFOWTON",
+    "uniq_names": true,
+    "route": "VIE-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_129",
+    "tc": "FD_TC_129",
+    "src": "FD_TC_129",
+    "donor": "GFZTFN-2026-06-15",
+    "loc": "ZHXGXC",
+    "pnr_id": "ZHXGXC-2026-06-15",
+    "ticket": "014610012901",
+    "tickets": [
+      "014610012901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-15",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "STONEELTON"
+      ]
+    ],
+    "pax": "JASPER STONEELTON",
+    "uniq_names": true,
+    "route": "MAD-BCN-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_130",
+    "tc": "FD_TC_130",
+    "src": "FD_TC_130",
+    "donor": "GDVNXN-2026-06-15",
+    "loc": "BDKPLK",
+    "pnr_id": "BDKPLK-2026-06-15",
+    "ticket": "014610013001",
+    "tickets": [
+      "014610013001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "HALFIELD"
+      ]
+    ],
+    "pax": "CEDRICK HALFIELD",
+    "uniq_names": true,
+    "route": "FCO-LIS-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_131",
+    "tc": "FD_TC_131",
+    "src": "FD_TC_131",
+    "donor": "QKNFCT-2026-06-15",
+    "loc": "RBHXSX",
+    "pnr_id": "RBHXSX-2026-06-15",
+    "ticket": "014610013101",
+    "tickets": [
+      "014610013101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-17",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "CARLANCOMBE"
+      ]
+    ],
+    "pax": "YARDLEY CARLANCOMBE",
+    "uniq_names": true,
+    "route": "BRU-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_132",
+    "tc": "FD_TC_132",
+    "src": "FD_TC_132",
+    "donor": "NPFQSJ-2026-06-15",
+    "loc": "VZQTFR",
+    "pnr_id": "VZQTFR-2026-06-15",
+    "ticket": "014610013201",
+    "tickets": [
+      "014610013201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "FENERBY"
+      ]
+    ],
+    "pax": "KIRA FENERBY",
+    "uniq_names": true,
+    "route": "CPH-ARN-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_133",
+    "tc": "FD_TC_133",
+    "src": "FD_TC_133",
+    "donor": "DZBSVZ-2026-06-15",
+    "loc": "PBHLHX",
+    "pnr_id": "PBHLHX-2026-06-15",
+    "ticket": "014610013301",
+    "tickets": [
+      "014610013301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-19",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "CLIFFENSTON"
+      ]
+    ],
+    "pax": "ROMILLY CLIFFENSTON",
+    "uniq_names": true,
+    "route": "JFK-EWR-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_134",
+    "tc": "FD_TC_134",
+    "src": "FD_TC_134",
+    "donor": "YNDRYG-2026-06-15",
+    "loc": "LFPDNF",
+    "pnr_id": "LFPDNF-2026-06-15",
+    "ticket": "014610013401",
+    "tickets": [
+      "014610013401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "GREENLECOMBE"
+      ]
+    ],
+    "pax": "ISOLDE GREENLECOMBE",
+    "uniq_names": true,
+    "route": "BOS-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_135",
+    "tc": "FD_TC_135",
+    "src": "FD_TC_135",
+    "donor": "XBBCQG-2026-06-15",
+    "loc": "JBLLNJ",
+    "pnr_id": "JBLLNJ-2026-06-15",
+    "ticket": "014610013501",
+    "tickets": [
+      "014610013501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "WESTENSTON"
+      ]
+    ],
+    "pax": "PERCY WESTENSTON",
+    "uniq_names": true,
+    "route": "TLV-ORD",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_136",
+    "tc": "FD_TC_136",
+    "src": "FD_TC_136",
+    "donor": "CYXPXS-2026-06-15",
+    "loc": "YPPZVH",
+    "pnr_id": "YPPZVH-2026-06-15",
+    "ticket": "014610013601",
+    "tickets": [
+      "014610013601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "NETHERVALE"
+      ]
+    ],
+    "pax": "PERCY NETHERVALE",
+    "uniq_names": true,
+    "route": "LAX-SFO-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_137",
+    "tc": "FD_TC_137",
+    "src": "FD_TC_137",
+    "donor": "PGFDCZ-2026-06-15",
+    "loc": "HMDVHC",
+    "pnr_id": "HMDVHC-2026-06-15",
+    "ticket": "014610013701",
+    "tickets": [
+      "014610013701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "WEXLETHORPE"
+      ]
+    ],
+    "pax": "NIKOLAI WEXLETHORPE",
+    "uniq_names": true,
+    "route": "MIA-IAD-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_138",
+    "tc": "FD_TC_138",
+    "src": "FD_TC_138",
+    "donor": "PRRJDF-2026-06-15",
+    "loc": "PKHWXW",
+    "pnr_id": "PKHWXW-2026-06-15",
+    "ticket": "014610013801",
+    "tickets": [
+      "014610013801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-24",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "HOLLELLEY"
+      ]
+    ],
+    "pax": "ADRIAN HOLLELLEY",
+    "uniq_names": true,
+    "route": "SEA-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_139",
+    "tc": "FD_TC_139",
+    "src": "FD_TC_139",
+    "donor": "PQMZMP-2026-06-15",
+    "loc": "PTYXBV",
+    "pnr_id": "PTYXBV-2026-06-15",
+    "ticket": "014610013901",
+    "tickets": [
+      "014610013901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "YEOELMERE"
+      ]
+    ],
+    "pax": "BODHI YEOELMERE",
+    "uniq_names": true,
+    "route": "TLV-YUL-YOW",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_140",
+    "tc": "FD_TC_140",
+    "src": "FD_TC_140",
+    "donor": "SCMJFH-2026-06-15",
+    "loc": "ZVLFNQ",
+    "pnr_id": "ZVLFNQ-2026-06-15",
+    "ticket": "014610014001",
+    "tickets": [
+      "014610014001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "GAROWHURST"
+      ]
+    ],
+    "pax": "TAMSIN GAROWHURST",
+    "uniq_names": true,
+    "route": "TLV-YYC-YEG",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_141",
+    "tc": "FD_TC_141",
+    "src": "FD_TC_141",
+    "donor": "WDBHBP-2026-06-15",
+    "loc": "KMJRSQ",
+    "pnr_id": "KMJRSQ-2026-06-15",
+    "ticket": "014610014101",
+    "tickets": [
+      "014610014101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "WOODENCOTT"
+      ]
+    ],
+    "pax": "YARDLEY WOODENCOTT",
+    "uniq_names": true,
+    "route": "TLV-YHZ",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_142",
+    "tc": "FD_TC_142",
+    "src": "FD_TC_142",
+    "donor": "TTNFKJ-2026-06-15",
+    "loc": "VMCTKG",
+    "pnr_id": "VMCTKG-2026-06-15",
+    "ticket": "014610014201",
+    "tickets": [
+      "014610014201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-04",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "SHARPOWTON"
+      ]
+    ],
+    "pax": "ULRICH SHARPOWTON",
+    "uniq_names": true,
+    "route": "YWG-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_143",
+    "tc": "FD_TC_143",
+    "src": "FD_TC_143",
+    "donor": "RYTCSD-2026-06-15",
+    "loc": "SPYWRR",
+    "pnr_id": "SPYWRR-2026-06-15",
+    "ticket": "014610014301",
+    "tickets": [
+      "014610014301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "LINENSTON"
+      ]
+    ],
+    "pax": "ROSALIND LINENSTON",
+    "uniq_names": true,
+    "route": "YQB-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_144",
+    "tc": "FD_TC_144",
+    "src": "FD_TC_144",
+    "donor": "SCYMGV-2026-06-15",
+    "loc": "QFBWVM",
+    "pnr_id": "QFBWVM-2026-06-15",
+    "ticket": "014610014401",
+    "tickets": [
+      "014610014401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "LANGELDEN"
+      ]
+    ],
+    "pax": "MATEO LANGELDEN",
+    "uniq_names": true,
+    "route": "YXE-YLW-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_145",
+    "tc": "FD_TC_145",
+    "src": "FD_TC_145",
+    "donor": "PDSFGN-2026-06-15",
+    "loc": "RGCDBV",
+    "pnr_id": "RGCDBV-2026-06-15",
+    "ticket": "014610014501",
+    "tickets": [
+      "014610014501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-ASL-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "SELINGSTON"
+      ]
+    ],
+    "pax": "SEBASTIAN SELINGSTON",
+    "uniq_names": true,
+    "route": "LHR-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_146",
+    "tc": "FD_TC_146",
+    "src": "FD_TC_146",
+    "donor": "XYPPWP-2026-06-15",
+    "loc": "SJZHSX",
+    "pnr_id": "SJZHSX-2026-06-15",
+    "ticket": "014610014601",
+    "tickets": [
+      "014610014601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-01",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "COTELDALE"
+      ]
+    ],
+    "pax": "ZEPHYR COTELDALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_147",
+    "tc": "FD_TC_147",
+    "src": "FD_TC_147",
+    "donor": "FXJFLJ-2026-06-15",
+    "loc": "CYTDRQ",
+    "pnr_id": "CYTDRQ-2026-06-15",
+    "ticket": "014610014701",
+    "tickets": [
+      "014610014701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-02",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "EASTANFIELD"
+      ]
+    ],
+    "pax": "YARDLEY EASTANFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_148",
+    "tc": "FD_TC_148",
+    "src": "FD_TC_148",
+    "donor": "VJDVBN-2026-06-15",
+    "loc": "WCCYLJ",
+    "pnr_id": "WCCYLJ-2026-06-15",
+    "ticket": "014610014801",
+    "tickets": [
+      "014610014801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-03",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "LINERMERE"
+      ]
+    ],
+    "pax": "GIDEON LINERMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_149",
+    "tc": "FD_TC_149",
+    "src": "FD_TC_149",
+    "donor": "NBHXSQ-2026-06-15",
+    "loc": "ZKJBDQ",
+    "pnr_id": "ZKJBDQ-2026-06-15",
+    "ticket": "014610014901",
+    "tickets": [
+      "014610014901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-04",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "BROOKANMORE"
+      ]
+    ],
+    "pax": "SVEN BROOKANMORE",
+    "uniq_names": true,
+    "route": "CDG-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_150",
+    "tc": "FD_TC_150",
+    "src": "FD_TC_150",
+    "donor": "NTJQBT-2026-06-15",
+    "loc": "ZMXGYH",
+    "pnr_id": "ZMXGYH-2026-06-15",
+    "ticket": "014610015001",
+    "tickets": [
+      "014610015001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-NE-01",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "WOODELBECK"
+      ]
+    ],
+    "pax": "OONA WOODELBECK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_151",
+    "tc": "FD_TC_151",
+    "src": "FD_TC_151",
+    "donor": "HKZQSC-2026-06-15",
+    "loc": "FFJTLW",
+    "pnr_id": "FFJTLW-2026-06-15",
+    "ticket": "014610015101",
+    "tickets": [
+      "014610015101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-MIXED-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "LONGINGBY"
+      ]
+    ],
+    "pax": "PRIYA LONGINGBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_152",
+    "tc": "FD_TC_152",
+    "src": "FD_TC_152",
+    "donor": "SDHNDV-2026-06-15",
+    "loc": "TVBGGQ",
+    "pnr_id": "TVBGGQ-2026-06-15",
+    "ticket": "014610015201",
+    "tickets": [
+      "014610015201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-ND-01",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "OAKINGGATE"
+      ]
+    ],
+    "pax": "CEDRICK OAKINGGATE",
+    "uniq_names": true,
+    "route": "FRA-MUC-TLV",
+    "diversified": true
+  },
+  {
+    "case": "FD_TC_153",
+    "tc": "FD_TC_153",
+    "src": "FD_TC_153",
+    "donor": "FBWKZL-2026-06-15",
+    "loc": "YQNJFZ",
+    "pnr_id": "YQNJFZ-2026-06-15",
+    "ticket": "014610015301",
+    "tickets": [
+      "014610015301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-DUP-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "BLYLEPOOL"
+      ]
+    ],
+    "pax": "PRIYA BLYLEPOOL",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_154",
+    "tc": "FD_TC_154",
+    "src": "FD_TC_154",
+    "donor": "MHYLXV-2026-06-15",
+    "loc": "WKPYCM",
+    "pnr_id": "WKPYCM-2026-06-15",
+    "ticket": "014610015401",
+    "tickets": [
+      "014610015401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-DUP-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "BRAMWORTH"
+      ]
+    ],
+    "pax": "HEIDI BRAMWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_155",
+    "tc": "FD_TC_155",
+    "src": "FD_TC_155",
+    "donor": "GYFHGR-2026-06-15",
+    "loc": "XGLSVC",
+    "pnr_id": "XGLSVC-2026-06-15",
+    "ticket": "014610015501",
+    "tickets": [
+      "014610015501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "PRESELSTON"
+      ]
+    ],
+    "pax": "ROMILLY PRESELSTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_156",
+    "tc": "FD_TC_156",
+    "src": "FD_TC_156",
+    "donor": "VTDZYJ-2026-06-15",
+    "loc": "ZWPSMW",
+    "pnr_id": "ZWPSMW-2026-06-15",
+    "ticket": "014610015601",
+    "tickets": [
+      "014610015601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "KIRKENBURY"
+      ]
+    ],
+    "pax": "NIKOLAI KIRKENBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_157",
+    "tc": "FD_TC_157",
+    "src": "FD_TC_157",
+    "donor": "CGJMXW-2026-06-15",
+    "loc": "MVMRFC",
+    "pnr_id": "MVMRFC-2026-06-15",
+    "ticket": "014610015701",
+    "tickets": [
+      "014610015701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "BARNGROVE"
+      ]
+    ],
+    "pax": "PERCY BARNGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_158",
+    "tc": "FD_TC_158",
+    "src": "FD_TC_158",
+    "donor": "LKWNWJ-2026-06-15",
+    "loc": "NTXTZL",
+    "pnr_id": "NTXTZL-2026-06-15",
+    "ticket": "014610015801",
+    "tickets": [
+      "014610015801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "IRONINGLOW"
+      ]
+    ],
+    "pax": "LORCAN IRONINGLOW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_159",
+    "tc": "FD_TC_159",
+    "src": "FD_TC_159",
+    "donor": "VLSTXL-2026-06-15",
+    "loc": "VCXJGY",
+    "pnr_id": "VCXJGY-2026-06-15",
+    "ticket": "014610015901",
+    "tickets": [
+      "014610015901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "CALDELSHAW"
+      ]
+    ],
+    "pax": "PERCY CALDELSHAW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_160",
+    "tc": "FD_TC_160",
+    "src": "FD_TC_160",
+    "donor": "ZMFLSM-2026-06-15",
+    "loc": "CCJKRK",
+    "pnr_id": "CCJKRK-2026-06-15",
+    "ticket": "014610016001",
+    "tickets": [
+      "014610016001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "WILDINGHURST"
+      ]
+    ],
+    "pax": "WINSLOW WILDINGHURST",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_161",
+    "tc": "FD_TC_161",
+    "src": "FD_TC_161",
+    "donor": "JNMTFG-2026-06-15",
+    "loc": "QVHTLR",
+    "pnr_id": "QVHTLR-2026-06-15",
+    "ticket": "014610016101",
+    "tickets": [
+      "014610016101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "MILLLESHAW"
+      ]
+    ],
+    "pax": "VIOLETA MILLLESHAW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_162",
+    "tc": "FD_TC_162",
+    "src": "FD_TC_162",
+    "donor": "GVXNDX-2026-06-15",
+    "loc": "QQLXQW",
+    "pnr_id": "QQLXQW-2026-06-15",
+    "ticket": "014610016201",
+    "tickets": [
+      "014610016201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "HALENFIELD"
+      ]
+    ],
+    "pax": "EAMON HALENFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_163",
+    "tc": "FD_TC_163",
+    "src": "FD_TC_163",
+    "donor": "NMDYKM-2026-06-15",
+    "loc": "CGTFKQ",
+    "pnr_id": "CGTFKQ-2026-06-15",
+    "ticket": "014610016301",
+    "tickets": [
+      "014610016301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "ASHOWCROFT"
+      ]
+    ],
+    "pax": "ROMILLY ASHOWCROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_164",
+    "tc": "FD_TC_164",
+    "src": "FD_TC_164",
+    "donor": "KPNDZZ-2026-06-15",
+    "loc": "RNTDLQ",
+    "pnr_id": "RNTDLQ-2026-06-15",
+    "ticket": "014610016401",
+    "tickets": [
+      "014610016401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "MARSHELCOMBE"
+      ]
+    ],
+    "pax": "KIRA MARSHELCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_165",
+    "tc": "FD_TC_165",
+    "src": "FD_TC_165",
+    "donor": "BVQCSN-2026-06-15",
+    "loc": "QCYKVS",
+    "pnr_id": "QCYKVS-2026-06-15",
+    "ticket": "014610016501",
+    "tickets": [
+      "014610016501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "WINDERMARSH"
+      ]
+    ],
+    "pax": "LARISSA WINDERMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_166",
+    "tc": "FD_TC_166",
+    "src": "FD_TC_166",
+    "donor": "HJWLSH-2026-06-15",
+    "loc": "ZPFZPR",
+    "pnr_id": "ZPFZPR-2026-06-15",
+    "ticket": "014610016601",
+    "tickets": [
+      "014610016601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "CALDHURST"
+      ]
+    ],
+    "pax": "MIRABEL CALDHURST",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_167",
+    "tc": "FD_TC_167",
+    "src": "FD_TC_167",
+    "donor": "NMPNYQ-2026-06-15",
+    "loc": "MHKDTC",
+    "pnr_id": "MHKDTC-2026-06-15",
+    "ticket": "014610016701",
+    "tickets": [
+      "014610016701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "BRIGHTLELEY"
+      ]
+    ],
+    "pax": "CEDRICK BRIGHTLELEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_168",
+    "tc": "FD_TC_168",
+    "src": "FD_TC_168",
+    "donor": "CFGQFK-2026-06-15",
+    "loc": "BRZTDC",
+    "pnr_id": "BRZTDC-2026-06-15",
+    "ticket": "014610016801",
+    "tickets": [
+      "014610016801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "VANEHOLT"
+      ]
+    ],
+    "pax": "FIONA VANEHOLT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_169",
+    "tc": "FD_TC_169",
+    "src": "FD_TC_169",
+    "donor": "DQTDPN-2026-06-15",
+    "loc": "TNRTNQ",
+    "pnr_id": "TNRTNQ-2026-06-15",
+    "ticket": "014610016901",
+    "tickets": [
+      "014610016901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "TATENTON"
+      ]
+    ],
+    "pax": "ZEPHYR TATENTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_170",
+    "tc": "FD_TC_170",
+    "src": "FD_TC_170",
+    "donor": "XFXZCL-2026-06-15",
+    "loc": "FKFVGK",
+    "pnr_id": "FKFVGK-2026-06-15",
+    "ticket": "014610017001",
+    "tickets": [
+      "014610017001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "BLYENFORD"
+      ]
+    ],
+    "pax": "ROSALIND BLYENFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_171",
+    "tc": "FD_TC_171",
+    "src": "FD_TC_171",
+    "donor": "PNJDTQ-2026-06-15",
+    "loc": "YZSWLR",
+    "pnr_id": "YZSWLR-2026-06-15",
+    "ticket": "014610017101",
+    "tickets": [
+      "014610017101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "SHARPLEFORD"
+      ]
+    ],
+    "pax": "ULRICH SHARPLEFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_172",
+    "tc": "FD_TC_172",
+    "src": "FD_TC_172",
+    "donor": "BXKMJP-2026-06-15",
+    "loc": "ZYMPDJ",
+    "pnr_id": "ZYMPDJ-2026-06-15",
+    "ticket": "014610017201",
+    "tickets": [
+      "014610017201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "CLIFFVALE"
+      ]
+    ],
+    "pax": "NIKOLAI CLIFFVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_173",
+    "tc": "FD_TC_173",
+    "src": "FD_TC_173",
+    "donor": "CTTCTN-2026-06-15",
+    "loc": "GSRLCR",
+    "pnr_id": "GSRLCR-2026-06-15",
+    "ticket": "014610017301",
+    "tickets": [
+      "014610017301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "GALDANMARSH"
+      ]
+    ],
+    "pax": "LARISSA GALDANMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_174",
+    "tc": "FD_TC_174",
+    "src": "FD_TC_174",
+    "donor": "NZGYMB-2026-06-15",
+    "loc": "SZWSSR",
+    "pnr_id": "SZWSSR-2026-06-15",
+    "ticket": "014610017401",
+    "tickets": [
+      "014610017401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "KIRKENWOOD"
+      ]
+    ],
+    "pax": "HALLIE KIRKENWOOD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_175",
+    "tc": "FD_TC_175",
+    "src": "FD_TC_175",
+    "donor": "WZRPYS-2026-06-15",
+    "loc": "MBDRKN",
+    "pnr_id": "MBDRKN-2026-06-15",
+    "ticket": "014610017501",
+    "tickets": [
+      "014610017501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "ALDANBY"
+      ]
+    ],
+    "pax": "SVEN ALDANBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_176",
+    "tc": "FD_TC_176",
+    "src": "FD_TC_176",
+    "donor": "RJKYRF-2026-06-15",
+    "loc": "SBRGQG",
+    "pnr_id": "SBRGQG-2026-06-15",
+    "ticket": "014610017601",
+    "tickets": [
+      "014610017601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "CLIFFANLEY"
+      ]
+    ],
+    "pax": "MATEO CLIFFANLEY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_177",
+    "tc": "FD_TC_177",
+    "src": "FD_TC_177",
+    "donor": "QSGGHR-2026-06-15",
+    "loc": "LQHTXW",
+    "pnr_id": "LQHTXW-2026-06-15",
+    "ticket": "014610017701",
+    "tickets": [
+      "014610017701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "BRENLEMERE"
+      ]
+    ],
+    "pax": "ORSON BRENLEMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_178",
+    "tc": "FD_TC_178",
+    "src": "FD_TC_178",
+    "donor": "TTWTGM-2026-06-15",
+    "loc": "SBZZXW",
+    "pnr_id": "SBZZXW-2026-06-15",
+    "ticket": "014610017801",
+    "tickets": [
+      "014610017801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "STONEINGWOOD"
+      ]
+    ],
+    "pax": "LORCAN STONEINGWOOD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_179",
+    "tc": "FD_TC_179",
+    "src": "FD_TC_179",
+    "donor": "KJWPSZ-2026-06-15",
+    "loc": "RMWVTL",
+    "pnr_id": "RMWVTL-2026-06-15",
+    "ticket": "014610017901",
+    "tickets": [
+      "014610017901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "LANGCOMBE"
+      ]
+    ],
+    "pax": "YARDLEY LANGCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_180",
+    "tc": "FD_TC_180",
+    "src": "FD_TC_180",
+    "donor": "MQSQQB-2026-06-15",
+    "loc": "WXYPZQ",
+    "pnr_id": "WXYPZQ-2026-06-15",
+    "ticket": "014610018001",
+    "tickets": [
+      "014610018001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-30",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "NETHERELLOW"
+      ]
+    ],
+    "pax": "FREYA NETHERELLOW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_181",
+    "tc": "FD_TC_181",
+    "src": "FD_TC_181",
+    "donor": "QGSTGW-2026-06-15",
+    "loc": "NWLLYG",
+    "pnr_id": "NWLLYG-2026-06-15",
+    "ticket": "014610018101",
+    "tickets": [
+      "014610018101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-31",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "PENOWBECK"
+      ]
+    ],
+    "pax": "GARETH PENOWBECK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_182",
+    "tc": "FD_TC_182",
+    "src": "FD_TC_182",
+    "donor": "XDGDHK-2026-06-15",
+    "loc": "WKBTSW",
+    "pnr_id": "WKBTSW-2026-06-15",
+    "ticket": "014610018201",
+    "tickets": [
+      "014610018201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "GALDANHAM"
+      ]
+    ],
+    "pax": "ELIAS GALDANHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_183",
+    "tc": "FD_TC_183",
+    "src": "FD_TC_183",
+    "donor": "RPZLSN-2026-06-15",
+    "loc": "NFLWYW",
+    "pnr_id": "NFLWYW-2026-06-15",
+    "ticket": "014610018301",
+    "tickets": [
+      "014610018301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "ULLSLERIDGE"
+      ]
+    ],
+    "pax": "CEDRICK ULLSLERIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_184",
+    "tc": "FD_TC_184",
+    "src": "FD_TC_184",
+    "donor": "JXDYLL-2026-06-15",
+    "loc": "WGWJGV",
+    "pnr_id": "WGWJGV-2026-06-15",
+    "ticket": "014610018401",
+    "tickets": [
+      "014610018401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-DB-01",
+    "amount": 900,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "SILVERANBURY"
+      ]
+    ],
+    "pax": "EAMON SILVERANBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_185",
+    "tc": "FD_TC_185",
+    "src": "FD_TC_185",
+    "donor": "TPVCPC-2026-06-15",
+    "loc": "BHKNBY",
+    "pnr_id": "BHKNBY-2026-06-15",
+    "ticket": "014610018501",
+    "tickets": [
+      "014610018501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "NORTHINGVALE"
+      ]
+    ],
+    "pax": "YARDLEY NORTHINGVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_186",
+    "tc": "FD_TC_186",
+    "src": "FD_TC_186",
+    "donor": "CRFRHZ-2026-06-15",
+    "loc": "SNHMBJ",
+    "pnr_id": "SNHMBJ-2026-06-15",
+    "ticket": "014610018601",
+    "tickets": [
+      "014610018601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "RIDGEANTON"
+      ]
+    ],
+    "pax": "NADEZHDA RIDGEANTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_187",
+    "tc": "FD_TC_187",
+    "src": "FD_TC_187",
+    "donor": "ZPGDZZ-2026-06-15",
+    "loc": "PMGLBV",
+    "pnr_id": "PMGLBV-2026-06-15",
+    "ticket": "014610018701",
+    "tickets": [
+      "014610018701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "BROOKENWYN"
+      ]
+    ],
+    "pax": "OONA BROOKENWYN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_188",
+    "tc": "FD_TC_188",
+    "src": "FD_TC_188",
+    "donor": "QHHSRH-2026-06-15",
+    "loc": "LRNVBJ",
+    "pnr_id": "LRNVBJ-2026-06-15",
+    "ticket": "014610018801",
+    "tickets": [
+      "014610018801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "BLACKELCROFT"
+      ]
+    ],
+    "pax": "JOELLE BLACKELCROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_189",
+    "tc": "FD_TC_189",
+    "src": "FD_TC_189",
+    "donor": "BVKBTR-2026-06-15",
+    "loc": "FQBWSC",
+    "pnr_id": "FQBWSC-2026-06-15",
+    "ticket": "014610018901",
+    "tickets": [
+      "014610018901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "RIDGEWICK"
+      ]
+    ],
+    "pax": "YANNICK RIDGEWICK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_190",
+    "tc": "FD_TC_190",
+    "src": "FD_TC_190",
+    "donor": "YTRHVV-2026-06-15",
+    "loc": "SBBJBV",
+    "pnr_id": "SBBJBV-2026-06-15",
+    "ticket": "014610019001",
+    "tickets": [
+      "014610019001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "WINDINGWOOD"
+      ]
+    ],
+    "pax": "ADRIAN WINDINGWOOD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_191",
+    "tc": "FD_TC_191",
+    "src": "FD_TC_191",
+    "donor": "VTGZPK-2026-06-15",
+    "loc": "YHRSXL",
+    "pnr_id": "YHRSXL-2026-06-15",
+    "ticket": "014610019101",
+    "tickets": [
+      "014610019101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "PRESINGBECK"
+      ]
+    ],
+    "pax": "DAGNY PRESINGBECK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_192",
+    "tc": "FD_TC_192",
+    "src": "FD_TC_192",
+    "donor": "YXLPJV-2026-06-15",
+    "loc": "YSGLTB",
+    "pnr_id": "YSGLTB-2026-06-15",
+    "ticket": "014610019201",
+    "tickets": [
+      "014610019201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "HODLECOMBE"
+      ]
+    ],
+    "pax": "XIMENA HODLECOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_193",
+    "tc": "FD_TC_193",
+    "src": "FD_TC_193",
+    "donor": "NJQPGY-2026-06-15",
+    "loc": "CSRHQR",
+    "pnr_id": "CSRHQR-2026-06-15",
+    "ticket": "014610019301",
+    "tickets": [
+      "014610019301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "LANGINGCOMBE"
+      ]
+    ],
+    "pax": "ZORA LANGINGCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_194",
+    "tc": "FD_TC_194",
+    "src": "FD_TC_194",
+    "donor": "GSVCLW-2026-06-15",
+    "loc": "HRVQPQ",
+    "pnr_id": "HRVQPQ-2026-06-15",
+    "ticket": "014610019401",
+    "tickets": [
+      "014610019401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "COTELLOW"
+      ]
+    ],
+    "pax": "FIONA COTELLOW",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_195",
+    "tc": "FD_TC_195",
+    "src": "FD_TC_195",
+    "donor": "PFJYXM-2026-06-15",
+    "loc": "GKKLPX",
+    "pnr_id": "GKKLPX-2026-06-15",
+    "ticket": "014610019501",
+    "tickets": [
+      "014610019501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "WHITERGATE"
+      ]
+    ],
+    "pax": "JOELLE WHITERGATE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_196",
+    "tc": "FD_TC_196",
+    "src": "FD_TC_196",
+    "donor": "DJWRGQ-2026-06-15",
+    "loc": "KJNFWR",
+    "pnr_id": "KJNFWR-2026-06-15",
+    "ticket": "014610019601",
+    "tickets": [
+      "014610019601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "GARANMARSH"
+      ]
+    ],
+    "pax": "ELIAS GARANMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_197",
+    "tc": "FD_TC_197",
+    "src": "FD_TC_197",
+    "donor": "PFYMSP-2026-06-15",
+    "loc": "RGCTBG",
+    "pnr_id": "RGCTBG-2026-06-15",
+    "ticket": "014610019701",
+    "tickets": [
+      "014610019701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "MERELERIDGE"
+      ]
+    ],
+    "pax": "CALLUM MERELERIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_198",
+    "tc": "FD_TC_198",
+    "src": "FD_TC_198",
+    "donor": "CJZBQT-2026-06-15",
+    "loc": "XWNBPC",
+    "pnr_id": "XWNBPC-2026-06-15",
+    "ticket": "014610019801",
+    "tickets": [
+      "014610019801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "WOLDANRIDGE"
+      ]
+    ],
+    "pax": "SEBASTIAN WOLDANRIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_199",
+    "tc": "FD_TC_199",
+    "src": "FD_TC_199",
+    "donor": "NDCVRV-2026-06-15",
+    "loc": "BRKJNK",
+    "pnr_id": "BRKJNK-2026-06-15",
+    "ticket": "014610019901",
+    "tickets": [
+      "014610019901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "RIDGEELCOMBE"
+      ]
+    ],
+    "pax": "GIDEON RIDGEELCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_TC_200",
+    "tc": "FD_TC_200",
+    "src": "FD_TC_200",
+    "donor": "CPFGSQ-2026-06-15",
+    "loc": "JYZRVG",
+    "pnr_id": "JYZRVG-2026-06-15",
+    "ticket": "014610020001",
+    "tickets": [
+      "014610020001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "ROOKINGCROFT"
+      ]
+    ],
+    "pax": "FIONA ROOKINGCROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_01",
+    "tc": "FD_ED_TC_01",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "QVQVBP",
+    "pnr_id": "QVQVBP-2026-06-15",
+    "ticket": "014650000101",
+    "tickets": [
+      "014650000101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "CHADMERE"
+      ]
+    ],
+    "pax": "ZORA CHADMERE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_02",
+    "tc": "FD_ED_TC_02",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "VJLMJP",
+    "pnr_id": "VJLMJP-2026-06-15",
+    "ticket": "014650000201",
+    "tickets": [
+      "014650000201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "CALDLEMARSH"
+      ]
+    ],
+    "pax": "ANNIKA CALDLEMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_03",
+    "tc": "FD_ED_TC_03",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "ZMRGVY",
+    "pnr_id": "ZMRGVY-2026-06-15",
+    "ticket": "014650000301",
+    "tickets": [
+      "014650000301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "WOLFELWORTH"
+      ]
+    ],
+    "pax": "NIKOLAI WOLFELWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_04",
+    "tc": "FD_ED_TC_04",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "NGTMTH",
+    "pnr_id": "NGTMTH-2026-06-15",
+    "ticket": "014650000401",
+    "tickets": [
+      "014650000401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "RUSHOWBURY"
+      ]
+    ],
+    "pax": "JASPER RUSHOWBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_05",
+    "tc": "FD_ED_TC_05",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "LTNTLD",
+    "pnr_id": "LTNTLD-2026-06-15",
+    "ticket": "014650000501",
+    "tickets": [
+      "014650000501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "RAVENANWOOD"
+      ]
+    ],
+    "pax": "NADEZHDA RAVENANWOOD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_06",
+    "tc": "FD_ED_TC_06",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "LJJHRC",
+    "pnr_id": "LJJHRC-2026-06-15",
+    "ticket": "014650000601",
+    "tickets": [
+      "014650000601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "SHARPCOMBE"
+      ]
+    ],
+    "pax": "UMBERTO SHARPCOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_07",
+    "tc": "FD_ED_TC_07",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "DQPCBK",
+    "pnr_id": "DQPCBK-2026-06-15",
+    "ticket": "014650000701",
+    "tickets": [
+      "014650000701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "LANGOWTON"
+      ]
+    ],
+    "pax": "OONA LANGOWTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_08",
+    "tc": "FD_ED_TC_08",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "XXMPVC",
+    "pnr_id": "XXMPVC-2026-06-15",
+    "ticket": "014650000801",
+    "tickets": [
+      "014650000801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "THEODORA",
+        "BRAMINGBY"
+      ]
+    ],
+    "pax": "THEODORA BRAMINGBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_09",
+    "tc": "FD_ED_TC_09",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "RXVCYG",
+    "pnr_id": "RXVCYG-2026-06-15",
+    "ticket": "014650000901",
+    "tickets": [
+      "014650000901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "BRAMANRIDGE"
+      ]
+    ],
+    "pax": "SVEN BRAMANRIDGE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_10",
+    "tc": "FD_ED_TC_10",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "VSDDWN",
+    "pnr_id": "VSDDWN-2026-06-15",
+    "ticket": "014650001001",
+    "tickets": [
+      "014650001001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "UNDERERMARSH"
+      ]
+    ],
+    "pax": "LARISSA UNDERERMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_11",
+    "tc": "FD_ED_TC_11",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "GSSQLP",
+    "pnr_id": "GSSQLP-2026-06-15",
+    "ticket": "014650001101",
+    "tickets": [
+      "014650001101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "WRENINGBY"
+      ]
+    ],
+    "pax": "FIONA WRENINGBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_12",
+    "tc": "FD_ED_TC_12",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "HGZCQJ",
+    "pnr_id": "HGZCQJ-2026-06-15",
+    "ticket": "014650001201",
+    "tickets": [
+      "014650001201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "KESINGFORD"
+      ]
+    ],
+    "pax": "MIRABEL KESINGFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_13",
+    "tc": "FD_ED_TC_13",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "HLHMMZ",
+    "pnr_id": "HLHMMZ-2026-06-15",
+    "ticket": "014650001301",
+    "tickets": [
+      "014650001301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "STANANFIELD"
+      ]
+    ],
+    "pax": "BRENNA STANANFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_14",
+    "tc": "FD_ED_TC_14",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "DXJVHS",
+    "pnr_id": "DXJVHS-2026-06-15",
+    "ticket": "014650001401",
+    "tickets": [
+      "014650001401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "LININGSTEAD"
+      ]
+    ],
+    "pax": "BODHI LININGSTEAD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_15",
+    "tc": "FD_ED_TC_15",
+    "src": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "loc": "RPDPYH",
+    "pnr_id": "RPDPYH-2026-06-15",
+    "ticket": "014650001501",
+    "tickets": [
+      "014650001501",
+      "014650001502",
+      "014650001503",
+      "014650001504",
+      "014650001505",
+      "014650001506",
+      "014650001507",
+      "014650001508",
+      "014650001509",
+      "014650001510",
+      "014650001511",
+      "014650001512"
+    ],
+    "npax": 12,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "HARTLESTON"
+      ],
+      [
+        "YARDLEY",
+        "RAINHAM"
+      ],
+      [
+        "GARETH",
+        "SELELSTON"
+      ],
+      [
+        "ROSALIND",
+        "DENERLEY"
+      ],
+      [
+        "GIDEON",
+        "GALDOWMERE"
+      ],
+      [
+        "NIKOLAI",
+        "WINDENCROFT"
+      ],
+      [
+        "MATEO",
+        "DALEINGBURY"
+      ],
+      [
+        "SVEN",
+        "TUTENTON"
+      ],
+      [
+        "EAMON",
+        "ULLSELTHORPE"
+      ],
+      [
+        "NADEZHDA",
+        "WOODLEWOOD"
+      ],
+      [
+        "ADRIAN",
+        "LINHAM"
+      ],
+      [
+        "ELIAS",
+        "GALDENWOOD"
+      ]
+    ],
+    "pax": "ROSALIND HARTLESTON",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_16",
+    "tc": "FD_ED_TC_16",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "WVPWCF",
+    "pnr_id": "WVPWCF-2026-06-15",
+    "ticket": "014650001601",
+    "tickets": [
+      "014650001601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "KESENMORE"
+      ]
+    ],
+    "pax": "EAMON KESENMORE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_17",
+    "tc": "FD_ED_TC_17",
+    "src": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "loc": "TMRHJS",
+    "pnr_id": "TMRHJS-2026-06-15",
+    "ticket": "014650001701",
+    "tickets": [
+      "014650001701",
+      "014650001702",
+      "014650001703",
+      "014650001704",
+      "014650001705",
+      "014650001706",
+      "014650001707",
+      "014650001708",
+      "014650001709",
+      "014650001710",
+      "014650001711",
+      "014650001712"
+    ],
+    "npax": 12,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "ULLSANCROFT"
+      ],
+      [
+        "NADEZHDA",
+        "QUENELWORTH"
+      ],
+      [
+        "OONA",
+        "WESTMORE"
+      ],
+      [
+        "BRENNA",
+        "BEXENSHAW"
+      ],
+      [
+        "QUENTIN",
+        "MERELEHOLT"
+      ],
+      [
+        "VESNA",
+        "PENLERIDGE"
+      ],
+      [
+        "MIRABEL",
+        "PRESSTEAD"
+      ],
+      [
+        "ROMILLY",
+        "LONGERMARSH"
+      ],
+      [
+        "WESLEY",
+        "BLACKANWYN"
+      ],
+      [
+        "DELPHINE",
+        "HARTANRIDGE"
+      ],
+      [
+        "DAGNY",
+        "STANMARSH"
+      ],
+      [
+        "WESLEY",
+        "HAWERLOW"
+      ]
+    ],
+    "pax": "TAMSIN ULLSANCROFT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_18",
+    "tc": "FD_ED_TC_18",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "WZTQHR",
+    "pnr_id": "WZTQHR-2026-06-15",
+    "ticket": "014650001801",
+    "tickets": [
+      "014650001801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "MARSHOWFIELD"
+      ]
+    ],
+    "pax": "LORCAN MARSHOWFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_19",
+    "tc": "FD_ED_TC_19",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "MFGMSL",
+    "pnr_id": "MFGMSL-2026-06-15",
+    "ticket": "014650001901",
+    "tickets": [
+      "014650001901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "HARTOWCOTT"
+      ]
+    ],
+    "pax": "MATEO HARTOWCOTT",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_20",
+    "tc": "FD_ED_TC_20",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "JHLZJX",
+    "pnr_id": "JHLZJX-2026-06-15",
+    "ticket": "014650002001",
+    "tickets": [
+      "014650002001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "MILLERMARSH"
+      ]
+    ],
+    "pax": "UMBERTO MILLERMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_21",
+    "tc": "FD_ED_TC_21",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "WHPDJJ",
+    "pnr_id": "WHPDJJ-2026-06-15",
+    "ticket": "014650002101",
+    "tickets": [
+      "014650002101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "WILDINGBURY"
+      ]
+    ],
+    "pax": "UMBERTO WILDINGBURY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_22",
+    "tc": "FD_ED_TC_22",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "QCRLFC",
+    "pnr_id": "QCRLFC-2026-06-15",
+    "ticket": "014650002201",
+    "tickets": [
+      "014650002201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "BLACKFIELD"
+      ]
+    ],
+    "pax": "OONA BLACKFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_23",
+    "tc": "FD_ED_TC_23",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "PQTJKY",
+    "pnr_id": "PQTJKY-2026-06-15",
+    "ticket": "014650002301",
+    "tickets": [
+      "014650002301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "WHITLEBROOK"
+      ]
+    ],
+    "pax": "ULRICH WHITLEBROOK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_24",
+    "tc": "FD_ED_TC_24",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "PHGTKT",
+    "pnr_id": "PHGTKT-2026-06-15",
+    "ticket": "014650002401",
+    "tickets": [
+      "014650002401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "WOLDLEWORTH"
+      ]
+    ],
+    "pax": "BODHI WOLDLEWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_25",
+    "tc": "FD_ED_TC_25",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "FNWXTB",
+    "pnr_id": "FNWXTB-2026-06-15",
+    "ticket": "014650002501",
+    "tickets": [
+      "014650002501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "WILDINGFIELD"
+      ]
+    ],
+    "pax": "ORSON WILDINGFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_26",
+    "tc": "FD_ED_TC_26",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "WJWRCK",
+    "pnr_id": "WJWRCK-2026-06-15",
+    "ticket": "014650002601",
+    "tickets": [
+      "014650002601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "ALDANWORTH"
+      ]
+    ],
+    "pax": "ROMILLY ALDANWORTH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_27",
+    "tc": "FD_ED_TC_27",
+    "src": "FD_TC_078",
+    "donor": "RGZFFN-2026-06-15",
+    "loc": "LKGWCY",
+    "pnr_id": "LKGWCY-2026-06-15",
+    "ticket": "014650002701",
+    "tickets": [
+      "014650002701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-13",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "LARISSA",
+        "BLACKLECOMBE"
+      ]
+    ],
+    "pax": "LARISSA BLACKLECOMBE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_001",
+    "tc": "FD_PAY_TC_001",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "PRJTRX",
+    "pnr_id": "PRJTRX-2026-06-15",
+    "ticket": "014650002801",
+    "tickets": [
+      "014650002801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "WEXENGATE"
+      ]
+    ],
+    "pax": "ULRICH WEXENGATE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_002",
+    "tc": "FD_PAY_TC_002",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "MLXDHD",
+    "pnr_id": "MLXDHD-2026-06-15",
+    "ticket": "014650002901",
+    "tickets": [
+      "014650002901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "RIDGELEBY"
+      ]
+    ],
+    "pax": "XIMENA RIDGELEBY",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_003",
+    "tc": "FD_PAY_TC_003",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "TTFWGQ",
+    "pnr_id": "TTFWGQ-2026-06-15",
+    "ticket": "014650003001",
+    "tickets": [
+      "014650003001"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "IRONANMARSH"
+      ]
+    ],
+    "pax": "TAMSIN IRONANMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_004",
+    "tc": "FD_PAY_TC_004",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "XGNGRJ",
+    "pnr_id": "XGNGRJ-2026-06-15",
+    "ticket": "014650003101",
+    "tickets": [
+      "014650003101"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "BRAMVALE"
+      ]
+    ],
+    "pax": "DELPHINE BRAMVALE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_005",
+    "tc": "FD_PAY_TC_005",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "XBQPBT",
+    "pnr_id": "XBQPBT-2026-06-15",
+    "ticket": "014650003201",
+    "tickets": [
+      "014650003201"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "KIRKINGMARSH"
+      ]
+    ],
+    "pax": "JASPER KIRKINGMARSH",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_006",
+    "tc": "FD_PAY_TC_006",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "GSKPQG",
+    "pnr_id": "GSKPQG-2026-06-15",
+    "ticket": "014650003301",
+    "tickets": [
+      "014650003301"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "YAROWBECK"
+      ]
+    ],
+    "pax": "ELIAS YAROWBECK",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_007",
+    "tc": "FD_PAY_TC_007",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "HFYLGT",
+    "pnr_id": "HFYLGT-2026-06-15",
+    "ticket": "014650003401",
+    "tickets": [
+      "014650003401"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "WESTERFIELD"
+      ]
+    ],
+    "pax": "WINSLOW WESTERFIELD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_008",
+    "tc": "FD_PAY_TC_008",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "CBPJHD",
+    "pnr_id": "CBPJHD-2026-06-15",
+    "ticket": "014650003501",
+    "tickets": [
+      "014650003501"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "WOODOWHAM"
+      ]
+    ],
+    "pax": "UMBERTO WOODOWHAM",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_009",
+    "tc": "FD_PAY_TC_009",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "JYRRNB",
+    "pnr_id": "JYRRNB-2026-06-15",
+    "ticket": "014650003601",
+    "tickets": [
+      "014650003601"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "YEOANFORD"
+      ]
+    ],
+    "pax": "ROSALIND YEOANFORD",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_010",
+    "tc": "FD_PAY_TC_010",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "DMDKVD",
+    "pnr_id": "DMDKVD-2026-06-15",
+    "ticket": "014650003701",
+    "tickets": [
+      "014650003701"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "TATELGROVE"
+      ]
+    ],
+    "pax": "KIRA TATELGROVE",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_011",
+    "tc": "FD_PAY_TC_011",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "CKFLNS",
+    "pnr_id": "CKFLNS-2026-06-15",
+    "ticket": "014650003801",
+    "tickets": [
+      "014650003801"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "WRENINGDEN"
+      ]
+    ],
+    "pax": "DELPHINE WRENINGDEN",
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_012",
+    "tc": "FD_PAY_TC_012",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "SCWQLF",
+    "pnr_id": "SCWQLF-2026-06-15",
+    "ticket": "014650003901",
+    "tickets": [
+      "014650003901"
+    ],
+    "npax": 1,
+    "email": "doha.al-dujaili@aircanada.ca",
+    "phone": "+14163520336",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "SEDGEENBURY"
+      ]
+    ],
+    "pax": "ADRIAN SEDGEENBURY",
+    "uniq_names": true
+  }
+]

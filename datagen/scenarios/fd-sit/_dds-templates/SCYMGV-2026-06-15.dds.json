@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "SCYMGV-2026-06-15",
+  "pnr": "SCYMGV"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "SCYMGV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 873,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 873,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#873#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "SCYMGV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 694,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 694,
+      "operatingCarrierCode": "LH",
+      "flightId": "LH#694#2026-06-15#FRA"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "SCYMGV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 873,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 873,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#873#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "SCYMGV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 694,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 694,
+      "operatingCarrierCode": "LH",
+      "flightId": "LH#694#2026-06-15#FRA"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "SCYMGV-2026-06-15-ST-2",
+    "carrierCode": "LH",
+    "flightNumber": "694",
+    "departureAirport": "FRA",
+    "arrivalAirport": "TLV",
+    "isStarSegment": true,
+    "isOalSegment": true
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "UNKNOWN",
+   "delayCode": "NULL",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "SCYMGV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "FD-ASL-ND-06",
+     "reason": "OAL data not available - 14 days",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SCYMGV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SCYMGV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "SCYMGV-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 694,
+   "departureAirport": "FRA",
+   "arrivalAirport": "TLV",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "SCYMGV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

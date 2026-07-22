@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "GNYQTV-2026-06-15",
+  "pnr": "GNYQTV"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YUL",
+    "destination": "YVR",
+    "associatedSegments": [
+     {
+      "segmentId": "GNYQTV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 470,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 470,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#470#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "GNYQTV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YVR",
+      "marketingFlightNumber": 471,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 471,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#471#2026-06-15#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YUL",
+    "destination": "YVR",
+    "associatedSegments": [
+     {
+      "segmentId": "GNYQTV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 470,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 470,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#470#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "GNYQTV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YVR",
+      "marketingFlightNumber": 471,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 471,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#471#2026-06-15#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "GNYQTV-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "471",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YVR",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 90,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "TECH",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "GNYQTV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-22",
+     "reason": "No travel Incomplete - Delay below 3 hours",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "GNYQTV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "GNYQTV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "GNYQTV-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 471,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YVR",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "GNYQTV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

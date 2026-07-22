@@ -1,0 +1,582 @@
+[
+  {
+    "tc": "FD_TC_139",
+    "src": "FD_TC_139",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "FNQZGV",
+    "pnr_id": "FNQZGV-2026-06-15",
+    "ticket": "014708000101",
+    "tickets": [
+      "014708000101"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "ELDEROWSTON"
+      ]
+    ],
+    "pax": "ISOLDE ELDEROWSTON",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_048",
+    "src": "FD_TC_048",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "GRSJHV",
+    "pnr_id": "GRSJHV-2026-06-15",
+    "ticket": "014708000201",
+    "tickets": [
+      "014708000201"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "WILDELDEN"
+      ]
+    ],
+    "pax": "MIRABEL WILDELDEN",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_175",
+    "src": "FD_TC_175",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "LBMCDD",
+    "pnr_id": "LBMCDD-2026-06-15",
+    "ticket": "014708000301",
+    "tickets": [
+      "014708000301"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "CALDELBY"
+      ]
+    ],
+    "pax": "DAGNY CALDELBY",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_014",
+    "src": "FD_TC_014",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "BJCJRL",
+    "pnr_id": "BJCJRL-2026-06-15",
+    "ticket": "014708000401",
+    "tickets": [
+      "014708000401"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "OATOWSTEAD"
+      ]
+    ],
+    "pax": "NADEZHDA OATOWSTEAD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_094",
+    "src": "FD_TC_094",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "YKZJWX",
+    "pnr_id": "YKZJWX-2026-06-15",
+    "ticket": "014708000501",
+    "tickets": [
+      "014708000501"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-37",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "SILVERVALE"
+      ]
+    ],
+    "pax": "HALLIE SILVERVALE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_086",
+    "src": "FD_TC_086",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "YNMWLH",
+    "pnr_id": "YNMWLH-2026-06-15",
+    "ticket": "014708000601",
+    "tickets": [
+      "014708000601"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-21",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "MARSHERFIELD"
+      ]
+    ],
+    "pax": "ROMILLY MARSHERFIELD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_064",
+    "src": "FD_TC_064",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "CMKPYW",
+    "pnr_id": "CMKPYW-2026-06-15",
+    "ticket": "014708000701",
+    "tickets": [
+      "014708000701"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-28",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "HAWOWWYN"
+      ]
+    ],
+    "pax": "ADRIAN HAWOWWYN",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_141",
+    "src": "FD_TC_141",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "HDNDQY",
+    "pnr_id": "HDNDQY-2026-06-15",
+    "ticket": "014708000801",
+    "tickets": [
+      "014708000801"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "OATELDALE"
+      ]
+    ],
+    "pax": "WESLEY OATELDALE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_024",
+    "src": "FD_TC_024",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "QXSZDM",
+    "pnr_id": "QXSZDM-2026-06-15",
+    "ticket": "014708000901",
+    "tickets": [
+      "014708000901"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "HARTELBROOK"
+      ]
+    ],
+    "pax": "JASPER HARTELBROOK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_149",
+    "src": "FD_TC_149",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "NLBBQS",
+    "pnr_id": "NLBBQS-2026-06-15",
+    "ticket": "014708001001",
+    "tickets": [
+      "014708001001"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-04",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "VANEELCOTT"
+      ]
+    ],
+    "pax": "DELPHINE VANEELCOTT",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_004",
+    "src": "FD_TC_004",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "BXCXHS",
+    "pnr_id": "BXCXHS-2026-06-15",
+    "ticket": "014708001101",
+    "tickets": [
+      "014708001101"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "FENANLEY"
+      ]
+    ],
+    "pax": "BODHI FENANLEY",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_060",
+    "src": "FD_TC_060",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "XBSJGZ",
+    "pnr_id": "XBSJGZ-2026-06-15",
+    "ticket": "014708001201",
+    "tickets": [
+      "014708001201"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-APPR-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "SVEN",
+        "COTELWOOD"
+      ]
+    ],
+    "pax": "SVEN COTELWOOD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_142",
+    "src": "FD_TC_142",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "LFGKLB",
+    "pnr_id": "LFGKLB-2026-06-15",
+    "ticket": "014708001301",
+    "tickets": [
+      "014708001301"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-04",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "ELDERERWICK"
+      ]
+    ],
+    "pax": "IVANO ELDERERWICK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_145",
+    "src": "FD_TC_145",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "TNFKXL",
+    "pnr_id": "TNFKXL-2026-06-15",
+    "ticket": "014708001401",
+    "tickets": [
+      "014708001401"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-ASL-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "LARISSA",
+        "WHITELBROOK"
+      ]
+    ],
+    "pax": "LARISSA WHITELBROOK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_110",
+    "src": "FD_TC_110",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "DFBCDX",
+    "pnr_id": "DFBCDX-2026-06-15",
+    "ticket": "014708001501",
+    "tickets": [
+      "014708001501"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "RUSHINGWORTH"
+      ]
+    ],
+    "pax": "MATEO RUSHINGWORTH",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_046",
+    "src": "FD_TC_046",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "ZNXLZY",
+    "pnr_id": "ZNXLZY-2026-06-15",
+    "ticket": "014708001601",
+    "tickets": [
+      "014708001601"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "TATENMERE"
+      ]
+    ],
+    "pax": "JOELLE TATENMERE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_182",
+    "src": "FD_TC_182",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "GHCPVT",
+    "pnr_id": "GHCPVT-2026-06-15",
+    "ticket": "014708001701",
+    "tickets": [
+      "014708001701"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "ORMERERGROVE"
+      ]
+    ],
+    "pax": "TAMSIN ORMERERGROVE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_047",
+    "src": "FD_TC_047",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "LLGNBQ",
+    "pnr_id": "LLGNBQ-2026-06-15",
+    "ticket": "014708001801",
+    "tickets": [
+      "014708001801"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "SELELBROOK"
+      ]
+    ],
+    "pax": "MIRABEL SELELBROOK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_003",
+    "src": "FD_TC_003",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "BQYWGZ",
+    "pnr_id": "BQYWGZ-2026-06-15",
+    "ticket": "014708001901",
+    "tickets": [
+      "014708001901"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "DENINGLOW"
+      ]
+    ],
+    "pax": "CALLUM DENINGLOW",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_199",
+    "src": "FD_TC_199",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "GBKKDT",
+    "pnr_id": "GBKKDT-2026-06-15",
+    "ticket": "014708002001",
+    "tickets": [
+      "014708002001"
+    ],
+    "npax": 1,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "TUTERTON"
+      ]
+    ],
+    "pax": "ISOLDE TUTERTON",
+    "uniq_names": true
+  }
+]

@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "PEYXST-2026-06-20",
+  "pnr": "PEYXST"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": true,
+   "promisedItinerary": {
+    "origin": "LHR",
+    "destination": "JFK",
+    "associatedSegments": [
+     {
+      "segmentId": "PEYXST-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "JFK",
+      "marketingFlightNumber": 178,
+      "marketingCarrierCode": "BA",
+      "operatingFlightNumber": 178,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#178#2026-06-20#LHR"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "LHR",
+    "destination": "JFK",
+    "associatedSegments": [
+     {
+      "segmentId": "PEYXST-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T19:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T23:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "JFK",
+      "marketingFlightNumber": 178,
+      "marketingCarrierCode": "BA",
+      "operatingFlightNumber": 178,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#178#2026-06-20#LHR"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "PEYXST-2026-06-20-ST-1",
+    "carrierCode": "BA",
+    "flightNumber": "178",
+    "departureAirport": "LHR",
+    "arrivalAirport": "JFK",
+    "isStarSegment": false,
+    "isOalSegment": true
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 300,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "PEYXST-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-04",
+     "reason": "OAL Itinerary",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "PEYXST-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "PEYXST-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "PEYXST-2026-06-20-ST-1",
+   "carrierCode": "BA",
+   "flightNumber": 178,
+   "departureAirport": "LHR",
+   "arrivalAirport": "JFK",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 300,
+   "delayCategory": "DELAY_2_TO_LT_6_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "PEYXST-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-EU-NE-05",
+     "reason": "OAL Itinerary",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

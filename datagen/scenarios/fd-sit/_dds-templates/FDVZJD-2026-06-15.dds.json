@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "FDVZJD-2026-06-15",
+  "pnr": "FDVZJD"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "MUC",
+    "associatedSegments": [
+     {
+      "segmentId": "FDVZJD-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 9042,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 9042,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#9042#2026-06-15#TLV"
+     },
+     {
+      "segmentId": "FDVZJD-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "MUC",
+      "marketingFlightNumber": 500,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 500,
+      "operatingCarrierCode": "LH",
+      "flightId": "LH#500#2026-06-15#FRA"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "MUC",
+    "associatedSegments": [
+     {
+      "segmentId": "FDVZJD-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 9042,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 9042,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#9042#2026-06-15#TLV"
+     },
+     {
+      "segmentId": "FDVZJD-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "MUC",
+      "marketingFlightNumber": 500,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 500,
+      "operatingCarrierCode": "LH",
+      "flightId": "LH#500#2026-06-15#FRA"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "FDVZJD-2026-06-15-ST-2",
+    "carrierCode": "LH",
+    "flightNumber": "500",
+    "departureAirport": "FRA",
+    "arrivalAirport": "MUC",
+    "isStarSegment": true,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "OTHER",
+   "delayCode": "OAL",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "FDVZJD-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "FD-ASL-ND-02",
+     "reason": "Disruption on STAR",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "FDVZJD-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "FDVZJD-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "FDVZJD-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 500,
+   "departureAirport": "FRA",
+   "arrivalAirport": "MUC",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "FDVZJD-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

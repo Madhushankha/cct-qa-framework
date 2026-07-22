@@ -1,0 +1,146 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "RBHXSX-2026-06-15",
+  "pnr": "RBHXSX"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "BRU",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "RBHXSX-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "BRU",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 85,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 85,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#085#2026-06-15#BRU"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "BRU",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "RBHXSX-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "BRU",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 85,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 85,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#085#2026-06-15#BRU"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "RBHXSX-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "085",
+    "departureAirport": "BRU",
+    "arrivalAirport": "TLV",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "OTHER",
+   "delayCode": "NONE",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "RBHXSX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NE-17",
+     "reason": "No travel Origin - No cancellation",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "RBHXSX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "RBHXSX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "RBHXSX-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 85,
+   "departureAirport": "BRU",
+   "arrivalAirport": "TLV",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "RBHXSX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

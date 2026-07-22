@@ -1,0 +1,109 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFDINT-2026-06-17",
+  "title": "FD-INT-001: APPR 4hr delay CAD 400",
+  "description": "APPR eligible - 4 hour delay - CAD 400 cash - INT environment",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFDINT",
+    "booking_date": "2026-06-17",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+  "last_modification_comment": "SIM-FD-INT-001",
+  "creation_comment": "SIM-FD-INT-001",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "CHATHURANGA",
+      "last_name": "TENNAKOON",
+      "gender": "MALE",
+      "date_of_birth": "1990-06-15",
+      "email": "Chathuranga.VirajThennakoon@aircanada.ca",
+      "phone": "+14165551000"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "401",
+      "operating_flight_number": "401",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-17T10:00:00",
+      "arr_local": "2026-06-17T14:00:00",
+      "dep_utc": "2026-06-17T14:00:00Z",
+      "arr_utc": "2026-06-17T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142401000001"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFDINT",
+        "pnr_id": "ZFDINT-2026-06-17"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-INT",
+    "primary_name": "Flight Disruption INT Test",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-int",
+    "appr",
+    "tier1",
+    "4hr-delay"
+  ]
+}

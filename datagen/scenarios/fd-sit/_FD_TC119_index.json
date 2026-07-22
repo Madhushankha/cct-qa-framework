@@ -1,0 +1,17 @@
+[
+  {
+    "tc": "FD_TC_119",
+    "loc": "SLSNPS",
+    "pnr_id": "SLSNPS-2026-06-15",
+    "ticket": "014289011901",
+    "pax": "NOA SHAPIRO",
+    "route": "YYZ-YUL-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-07",
+    "amount": 3670,
+    "currency": "ILS",
+    "email": "charani.rathnasekara@aircanada.ca",
+    "phone": "+94718928686",
+    "pin": true
+  }
+]

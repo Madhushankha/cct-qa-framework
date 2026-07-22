@@ -1,0 +1,114 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFE017-2026-06-26",
+  "title": "FD-SIT-017: APPR no-travel controllable",
+  "description": "APPR no-travel controllable - compensation",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFE017",
+    "booking_date": "2026-06-26",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YEGAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YEG"
+  },
+  "last_modification_comment": "SIM-FD-SIT-017-INT",
+  "creation_comment": "SIM-FD-SIT-017-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "CHRISTOPHER",
+      "last_name": "WALKER",
+      "gender": "MALE",
+      "date_of_birth": "1981-01-17",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551018"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "117",
+      "operating_flight_number": "117",
+      "origin": "YEG",
+      "destination": "YHZ",
+      "dep_local": "2026-06-26T10:00:00",
+      "arr_local": "2026-06-26T14:00:00",
+      "dep_utc": "2026-06-26T14:00:00Z",
+      "arr_utc": "2026-06-26T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "UN",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142410000171"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFE017",
+        "pnr_id": "ZFE017-2026-06-26"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-017",
+    "appr",
+    "int-env",
+    "appr",
+    "no-travel"
+  ],
+  "special_flags": [
+    "cancelled"
+  ]
+}

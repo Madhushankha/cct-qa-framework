@@ -1,0 +1,101 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZCLSN1-2026-05-12-collision",
+  "title": "NonMVP-SIT: Second Jane Smith for name collision (TC-16)",
+  "description": "Second Jane Smith PNR to create a name collision scenario for TC-16 (ticket-number disambiguation). Different ticket number from ZZQXRP.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZCLSN",
+    "booking_date": "2026-05-12",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "00000004",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0004",
+    "agent_initials": "NM",
+    "duty_code": "RC",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-NONMVP-SIT-COLLISION",
+  "creation_comment": "SIM-NONMVP-SIT-COLLISION",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "JANE",
+      "last_name": "SMITH",
+      "gender": "FEMALE",
+      "date_of_birth": "1990-11-20",
+      "email": "jane.smith2@email.com",
+      "phone": "16475551234",
+      "passport": {
+        "number": "SIMCLSN1",
+        "expiry": "2031-11-20",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "123",
+      "operating_flight_number": "123",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-05-12T14:00:00",
+      "arr_local": "2026-05-12T16:30:00",
+      "dep_utc": "2026-05-12T18:00:00Z",
+      "arr_utc": "2026-05-12T23:30:00Z",
+      "booking_datetime": "2026-04-10T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "M"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-04-10",
+    "fare": {"amount": "450.00", "currency": "CAD"},
+    "ticket_numbers": ["0149876543210"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-04-10T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-04-10T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZCLSN", "pnr_id": "ZZCLSN-2026-05-12"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NONMVP-SIT", "primary_name": "Non-MVP SIT Name Collision PNR", "confidence": "high"},
+  "tags": ["synthetic", "nonmvp-sit", "name-collision", "domestic", "single-pax"]
+}

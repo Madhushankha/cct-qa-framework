@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZNC01-2026-07-25-name-correction",
+  "title": "NC-SIT: Name Correction flow test - Sarah Johnson YYZ→CDG",
+  "description": "PNR for Name Correction SIT test NC-CONV-01. Sarah Johnson flying to Paris (CDG). Name can be corrected to Sara or other variants.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZNC01",
+    "booking_date": "2026-07-25",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC010V",
+    "iata_number": "01424012",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "AA",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-NC-SIT-01",
+  "creation_comment": "SIM-NC-SIT-01",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "SARAH",
+      "last_name": "JOHNSON",
+      "gender": "FEMALE",
+      "date_of_birth": "1988-03-15",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165559876",
+      "passport": {
+        "number": "SIMNC001",
+        "expiry": "2032-03-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "601234567"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "870",
+      "operating_flight_number": "870",
+      "origin": "YYZ",
+      "destination": "CDG",
+      "dep_local": "2026-07-25T19:30:00",
+      "arr_local": "2026-07-26T08:45:00",
+      "dep_utc": "2026-07-25T23:30:00Z",
+      "arr_utc": "2026-07-26T06:45:00Z",
+      "booking_datetime": "2026-06-19T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "2A"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-06-19",
+    "fare": {"amount": "1450.00", "currency": "CAD"},
+    "ticket_numbers": ["0142390000401"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-19T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-19T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZNC01", "pnr_id": "ZZNC01-2026-07-25"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NC-SIT", "primary_name": "Name Correction SIT", "confidence": "high"},
+  "tags": ["synthetic", "nc-sit", "name-correction", "international", "single-pax", "paris"]
+}

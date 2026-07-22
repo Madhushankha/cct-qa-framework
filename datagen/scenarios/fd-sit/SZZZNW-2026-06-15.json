@@ -1,0 +1,125 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "SZZZNW-2026-06-15",
+  "title": "FD_TC_115: [SZZZNW]",
+  "description": "FD_TC_115 | EU NO_DETERMINATION | No Determination \u2014 OAL Data Not Available (14d) | FD-EU-ND-06",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "SZZZNW",
+    "booking_date": "2026-06-15",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YULAC010V",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+  "last_modification_comment": "SIM-FD_TC_115-sith-INT",
+  "creation_comment": "SIM-FD_TC_115-sith-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "BODHI",
+      "last_name": "CLIFFENLOW",
+      "gender": "U",
+      "date_of_birth": "1986-04-23",
+      "email": "sithmina.hettiarachchi@aircanada.ca",
+      "phone": "+94766160365"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "860",
+      "operating_flight_number": "860",
+      "origin": "LHR",
+      "destination": "FRA",
+      "dep_local": "2026-06-15T10:00:00",
+      "arr_local": "2026-06-15T12:00:00",
+      "dep_utc": "2026-06-15T14:00:00Z",
+      "arr_utc": "2026-06-15T16:00:00Z",
+      "booking_datetime": null,
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    },
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "500",
+      "operating_flight_number": "500",
+      "origin": "FRA",
+      "destination": "MUC",
+      "dep_local": "2026-06-15T15:00:00",
+      "arr_local": "2026-06-15T17:00:00",
+      "dep_utc": "2026-06-15T19:00:00Z",
+      "arr_utc": "2026-06-15T21:00:00Z",
+      "booking_datetime": null,
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "350.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "014813011501"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "SZZZNW",
+        "pnr_id": "SZZZNW-2026-06-15"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 2
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-TC-115",
+    "primary_name": "Flight Disruption FD_TC_115 INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-tc-115",
+    "eu",
+    "no_determination"
+  ]
+}

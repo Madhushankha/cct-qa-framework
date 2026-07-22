@@ -1,0 +1,134 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZFI07-2026-06-10-multipax",
+  "title": "FD-SIT-015: APPR multi-pax aggregated payout (INT)",
+  "description": "APPR multi-passenger eligible. 3 passengers on same PNR, aggregated compensation.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZFI07",
+    "booking_date": "2026-06-10",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-015",
+  "creation_comment": "SIM-FD-SIT-INT-015",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "ROBERT",
+      "last_name": "JOHNSON",
+      "gender": "MALE",
+      "date_of_birth": "1975-06-10",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165550107",
+      "passport": {
+        "number": "SIMFD107A",
+        "expiry": "2032-06-10",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      },
+      "aeroplan": "707234568"
+    },
+    {
+      "type": "ADT",
+      "first_name": "LINDA",
+      "last_name": "JOHNSON",
+      "gender": "FEMALE",
+      "date_of_birth": "1978-08-15",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165550108",
+      "passport": {
+        "number": "SIMFD107B",
+        "expiry": "2033-08-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      }
+    },
+    {
+      "type": "CHD",
+      "first_name": "TOMMY",
+      "last_name": "JOHNSON",
+      "gender": "MALE",
+      "date_of_birth": "2015-03-20",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165550107",
+      "passport": {
+        "number": "SIMFD107C",
+        "expiry": "2031-03-20",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "123",
+      "operating_flight_number": "123",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-10T08:00:00",
+      "arr_local": "2026-06-10T10:30:00",
+      "dep_utc": "2026-06-10T12:00:00Z",
+      "arr_utc": "2026-06-10T17:30:00Z",
+      "booking_datetime": "2026-05-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "M"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-01",
+    "fare": {"amount": "1650.00", "currency": "CAD"},
+    "ticket_numbers": ["0142400001007", "0142400001008", "0142400001009"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZFI07", "pnr_id": "ZZFI07-2026-06-10"},
+      "passenger": {"rows": 3},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-015", "appr", "multi-pax", "domestic", "int-env"]
+}

@@ -1,0 +1,203 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "SYIMCW-2026-06-15",
+  "pnr": "SYIMCW"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "FRA",
+    "associatedSegments": [
+     {
+      "segmentId": "SYIMCW-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T15:30:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 123,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 123,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#123#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "SYIMCW-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T19:00:00+00:00",
+      "arrivalDatetime": "2026-06-16T02:30:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 456,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 456,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#456#2026-06-15#YUL"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "FRA",
+    "associatedSegments": [
+     {
+      "segmentId": "SYIMCW-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:30:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 123,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 123,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#123#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "SYIMCW-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T23:00:00+00:00",
+      "arrivalDatetime": "2026-06-16T06:30:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 456,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 456,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#456#2026-06-15#YUL"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "SYIMCW-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "456",
+    "departureAirport": "YUL",
+    "arrivalAirport": "FRA",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "WEAT",
+   "disruptionReason": "WEATHER",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted by weather.",
+   "passengerEligibility": [
+    {
+     "passengerId": "SYIMCW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-08",
+     "reason": "No travel Origin - Outside carrier control",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SYIMCW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SYIMCW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "SYIMCW-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 123,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YUL",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "41",
+   "disruptionReason": "OTHER",
+   "customerFriendlyDisruptionReason": "Your flight was delayed by less than 2 hours.",
+   "delayMinutes": 90,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "SYIMCW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-04",
+     "reason": "Transit delay below 2 hours",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "SYIMCW-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 456,
+   "departureAirport": "YUL",
+   "arrivalAirport": "FRA",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "77",
+   "disruptionReason": "WEATHER",
+   "customerFriendlyDisruptionReason": "There were multiple factors that contributed to the delay, including weather and staffing issues. However, we can confirm that the primary reason was due to severe weather conditions.",
+   "delayMinutes": 240,
+   "delayCategory": "DELAY_2_TO_LT_6_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "SYIMCW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-07",
+     "reason": "Transit delay 2 hours or more - Outside carrier control",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

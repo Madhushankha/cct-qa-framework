@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "YPPZVH-2026-06-15",
+  "pnr": "YPPZVH"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "LAX",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "YPPZVH-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "LAX",
+      "arrivalAirport": "SFO",
+      "marketingFlightNumber": 873,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 873,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#873#2026-06-15#LAX"
+     },
+     {
+      "segmentId": "YPPZVH-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "SFO",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 9042,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 9042,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#9042#2026-06-15#SFO"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "LAX",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "YPPZVH-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "LAX",
+      "arrivalAirport": "SFO",
+      "marketingFlightNumber": 873,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 873,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#873#2026-06-15#LAX"
+     },
+     {
+      "segmentId": "YPPZVH-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "SFO",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 9042,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 9042,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#9042#2026-06-15#SFO"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "YPPZVH-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "873",
+    "departureAirport": "LAX",
+    "arrivalAirport": "SFO",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 210,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "YPPZVH-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NE-22",
+     "reason": "No delay on arrival but there was delay on flights",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YPPZVH-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YPPZVH-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "YPPZVH-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 873,
+   "departureAirport": "LAX",
+   "arrivalAirport": "SFO",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "YPPZVH-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

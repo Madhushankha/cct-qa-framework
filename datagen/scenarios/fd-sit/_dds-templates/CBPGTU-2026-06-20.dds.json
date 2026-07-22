@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "CBPGTU-2026-06-20",
+  "pnr": "CBPGTU"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "CBPGTU-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 849,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 849,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#849#2026-06-20#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "CBPGTU-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T20:00:00+00:00",
+      "arrivalDatetime": "2026-06-21T00:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 849,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 849,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#849#2026-06-20#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "CBPGTU-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "849",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "LHR",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 360,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "CBPGTU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-20",
+     "reason": "Itinerary did not start in the UK",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "CBPGTU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "CBPGTU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "CBPGTU-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 849,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "LHR",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 360,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "CBPGTU-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-EU-NE-07",
+     "reason": "Itinerary did not start in UK",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

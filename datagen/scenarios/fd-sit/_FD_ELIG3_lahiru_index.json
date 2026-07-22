@@ -1,0 +1,74 @@
+[
+ {
+  "tc": "FD_TC_001",
+  "loc": "PWKXFF",
+  "pnr_id": "PWKXFF-2026-06-15",
+  "ticket": "014462000101",
+  "npax": 1,
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true,
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "flight_date": "2026-06-15",
+  "pax_names": [
+   [
+    "WESLEY",
+    "CARLERGROVE"
+   ]
+  ],
+  "pax": "WESLEY CARLERGROVE",
+  "uniq_names": true
+ },
+ {
+  "tc": "FD_TC_018",
+  "loc": "SXTBHS",
+  "pnr_id": "SXTBHS-2026-06-15",
+  "ticket": "014462000201",
+  "npax": 1,
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true,
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "flight_date": "2026-06-15",
+  "pax_names": [
+   [
+    "ISOLDE",
+    "BARNINGPOOL"
+   ]
+  ],
+  "pax": "ISOLDE BARNINGPOOL",
+  "uniq_names": true
+ },
+ {
+  "tc": "FD_TC_021",
+  "loc": "BTHMTV",
+  "pnr_id": "BTHMTV-2026-06-15",
+  "ticket": "014462000301",
+  "npax": 1,
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true,
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "flight_date": "2026-06-15",
+  "pax_names": [
+   [
+    "ORSON",
+    "CARLENPOOL"
+   ]
+  ],
+  "pax": "ORSON CARLENPOOL",
+  "uniq_names": true
+ }
+]

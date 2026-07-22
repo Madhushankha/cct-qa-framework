@@ -1,0 +1,100 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZHYPHN-2026-05-18-hyphen",
+  "title": "NonMVP-SIT: Hyphenated name Mary-Ann O'Neil (TC-18)",
+  "description": "PNR with hyphenated name for TC-18 name normalisation test. Backend should normalise Mary-Ann to MaryAnn.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZHYPN",
+    "booking_date": "2026-05-18",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "00000005",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0005",
+    "agent_initials": "NM",
+    "duty_code": "RC",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+
+  "last_modification_comment": "SIM-NONMVP-SIT-HYPHEN",
+  "creation_comment": "SIM-NONMVP-SIT-HYPHEN",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "MARYANN",
+      "last_name": "ONEIL",
+      "gender": "FEMALE",
+      "date_of_birth": "1982-09-05",
+      "email": "maryann.oneil@email.com",
+      "phone": "14165557890",
+      "passport": {
+        "number": "SIMHYPHN",
+        "expiry": "2032-09-05",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "456",
+      "operating_flight_number": "456",
+      "origin": "YYZ",
+      "destination": "YOW",
+      "dep_local": "2026-05-18T10:00:00",
+      "arr_local": "2026-05-18T11:00:00",
+      "dep_utc": "2026-05-18T14:00:00Z",
+      "arr_utc": "2026-05-18T15:00:00Z",
+      "booking_datetime": "2026-04-20T10:00:00Z",
+      "aircraft": "E75",
+      "cabin": "Y",
+      "status": "HK"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-04-20",
+    "fare": {"amount": "250.00", "currency": "CAD"},
+    "ticket_numbers": ["0141112223334"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-04-20T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-04-20T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZHYPN", "pnr_id": "ZZHYPN-2026-05-18"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NONMVP-SIT", "primary_name": "Non-MVP SIT Hyphenated Name", "confidence": "high"},
+  "tags": ["synthetic", "nonmvp-sit", "hyphenated-name", "domestic", "single-pax"]
+}

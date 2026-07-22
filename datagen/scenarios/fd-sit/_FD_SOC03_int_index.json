@@ -1,0 +1,776 @@
+[
+ {
+  "tc": "SOC03-01",
+  "chart": "SoC-03b",
+  "title": "2seg AC: EL + NE(<2h)",
+  "loc": "VVYBWN",
+  "pnr_id": "VVYBWN-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000011",
+  "pax": "GABRIELLE ROY",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-02",
+  "chart": "SoC-03b",
+  "title": "2seg AC: EL + NE(weather, code MATCH)",
+  "loc": "IPNSWM",
+  "pnr_id": "IPNSWM-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000021",
+  "pax": "ETIENNE MERCIER",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NEWX"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-03",
+  "chart": "SoC-03b",
+  "title": "2seg AC: EL + NE(weather, PARTIAL/NO MATCH)",
+  "loc": "OWNHCU",
+  "pnr_id": "OWNHCU-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000031",
+  "pax": "CLARA FONTAINE",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NEWP"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-04",
+  "chart": "SoC-03b",
+  "title": "2seg AC: NE(<2h) + NE(weather PARTIAL)",
+  "loc": "SYIMCW",
+  "pnr_id": "SYIMCW-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000041",
+  "pax": "MATHIS BEAULIEU",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NEWP"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-08",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-05",
+  "chart": "SoC-03b+",
+  "title": "3seg AC: EL + EL + EL",
+  "loc": "GYWHEK",
+  "pnr_id": "GYWHEK-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000051",
+  "pax": "JULIETTE LAVOIE",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 3,
+    "carrier": "AC",
+    "flight": "AC789",
+    "sector": "FRA-LHR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-06",
+  "chart": "SoC-03b+",
+  "title": "3seg AC: EL + EL + NE(<2h)",
+  "loc": "FETDWX",
+  "pnr_id": "FETDWX-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000061",
+  "pax": "FELIX GAGNON",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 3,
+    "carrier": "AC",
+    "flight": "AC789",
+    "sector": "FRA-LHR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-07",
+  "chart": "SoC-03b+",
+  "title": "3seg AC: EL + NE(<2h) + NE(weather MATCH)",
+  "loc": "UVGAHM",
+  "pnr_id": "UVGAHM-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000071",
+  "pax": "ROSALIE COTE",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 3,
+    "carrier": "AC",
+    "flight": "AC789",
+    "sector": "FRA-LHR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NEWX"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-08",
+  "chart": "SoC-03b+",
+  "title": "3seg AC: EL + NE(<2h) + NE(weather PARTIAL)",
+  "loc": "LKIALT",
+  "pnr_id": "LKIALT-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000081",
+  "pax": "THOMAS BERGERON",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 3,
+    "carrier": "AC",
+    "flight": "AC789",
+    "sector": "FRA-LHR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NEWP"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-09",
+  "chart": "SoC-03c",
+  "title": "2seg: AC EL + Star(LH)",
+  "loc": "GVFFFY",
+  "pnr_id": "GVFFFY-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000091",
+  "pax": "AMELIE GIRARD",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-10",
+  "chart": "SoC-03c",
+  "title": "2seg: AC NE(<2h) + Star(LH)",
+  "loc": "MTWADP",
+  "pnr_id": "MTWADP-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000101",
+  "pax": "OLIVIER MORIN",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-26",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-11",
+  "chart": "SoC-03d",
+  "title": "2seg: AC EL + OAL(WS)",
+  "loc": "ZFFSVV",
+  "pnr_id": "ZFFSVV-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000111",
+  "pax": "CHLOE LEBLANC",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "WS",
+    "flight": "WS456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "OALM"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-12",
+  "chart": "SoC-03d",
+  "title": "2seg: AC NE(<2h) + OAL(WS)",
+  "loc": "VCHEYW",
+  "pnr_id": "VCHEYW-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000121",
+  "pax": "SAMUEL FORTIN",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 2,
+    "carrier": "WS",
+    "flight": "WS456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "OALM"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-26",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-13",
+  "chart": "SoC-03e",
+  "title": "2seg: Star + Star (both LH)",
+  "loc": "PPJTFX",
+  "pnr_id": "PPJTFX-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000131",
+  "pax": "EMMA TREMBLAY",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-02",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-14",
+  "chart": "SoC-03g",
+  "title": "2seg: OAL + OAL (both WS)",
+  "loc": "BADVGH",
+  "pnr_id": "BADVGH-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000141",
+  "pax": "WILLIAM BOUCHARD",
+  "route": "YYZ-YUL-FRA",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "WS",
+    "flight": "WS123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-05",
+    "role": "OALO"
+   },
+   {
+    "n": 2,
+    "carrier": "WS",
+    "flight": "WS456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-05",
+    "role": "OALO"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-05",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-15",
+  "chart": "SoC-03h",
+  "title": "3seg: AC EL + Star + OAL",
+  "loc": "HABYBL",
+  "pnr_id": "HABYBL-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000151",
+  "pax": "LEA PELLETIER",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   },
+   {
+    "n": 3,
+    "carrier": "WS",
+    "flight": "WS789",
+    "sector": "FRA-LHR",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "OALM"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-16",
+  "chart": "SoC-03h",
+  "title": "3seg: AC NE(<2h) + Star + OAL",
+  "loc": "GYUKCQ",
+  "pnr_id": "GYUKCQ-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000161",
+  "pax": "NICOLAS GAUTHIER",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   },
+   {
+    "n": 3,
+    "carrier": "WS",
+    "flight": "WS789",
+    "sector": "FRA-LHR",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "OALM"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-26",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-17",
+  "chart": "SoC-03h",
+  "title": "3seg: AC EL + AC NE(<2h) + Star",
+  "loc": "UMJJUR",
+  "pnr_id": "UMJJUR-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000171",
+  "pax": "SOPHIA BELANGER",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC123",
+    "sector": "YYZ-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC456",
+    "sector": "YUL-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE2H"
+   },
+   {
+    "n": 3,
+    "carrier": "LH",
+    "flight": "LH789",
+    "sector": "FRA-LHR",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC03-18",
+  "chart": "SoC-03h",
+  "title": "3seg: Star + Star + OAL",
+  "loc": "SCOUOC",
+  "pnr_id": "SCOUOC-2026-06-15",
+  "date": "2026-06-15",
+  "ticket": "0143110000181",
+  "pax": "ANTOINE CARON",
+  "route": "YYZ-YUL-FRA-LHR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH123",
+    "sector": "YYZ-YUL",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   },
+   {
+    "n": 2,
+    "carrier": "LH",
+    "flight": "LH456",
+    "sector": "YUL-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "STAR"
+   },
+   {
+    "n": 3,
+    "carrier": "WS",
+    "flight": "WS789",
+    "sector": "FRA-LHR",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "OALM"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-02",
+  "amount": 0,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ }
+]

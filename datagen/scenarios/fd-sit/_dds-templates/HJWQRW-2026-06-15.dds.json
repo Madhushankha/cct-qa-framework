@@ -1,0 +1,200 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "HJWQRW-2026-06-15",
+  "pnr": "HJWQRW"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YEG",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "HJWQRW-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YEG",
+      "arrivalAirport": "YHZ",
+      "marketingFlightNumber": 410,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 410,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#410#2026-06-15#YEG"
+     },
+     {
+      "segmentId": "HJWQRW-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YHZ",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 84,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 84,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#84#2026-06-15#YHZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YEG",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "HJWQRW-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YEG",
+      "arrivalAirport": "YHZ",
+      "marketingFlightNumber": 410,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 410,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#410#2026-06-15#YEG"
+     },
+     {
+      "segmentId": "HJWQRW-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YHZ",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 84,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 84,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#84#2026-06-15#YHZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "HJWQRW-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "84",
+    "departureAirport": "YHZ",
+    "arrivalAirport": "TLV",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "CREW",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "HJWQRW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-ASL-EL-09",
+     "reason": "ASL No Travel Incomplete",
+     "compensationDetails": {
+      "amount": 3670,
+      "currency": "ILS",
+      "delayBand": "NOT_APPLICABLE",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "HJWQRW-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "084",
+    "departureAirport": "YEG",
+    "arrivalAirport": "TLV",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "CREW",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "HJWQRW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "ASL No Travel Incomplete",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "HJWQRW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "HJWQRW-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 84,
+   "departureAirport": "YHZ",
+   "arrivalAirport": "TLV",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "HJWQRW-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

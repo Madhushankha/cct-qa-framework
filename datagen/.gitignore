@@ -1,0 +1,31 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Bulk Kafka pulls + sample data (contains real PNR PII, don't leak)
+data/
+*.ndjson
+*.ndjson.err
+*.bg.log
+pnr-*.csv
+pnr-*.jsonl
+# …but scenario-attached ndjson captures are pseudo/generated and commit-safe:
+!scenarios/**/*.ndjson
+
+# Scenarios (pseudo/generated test data — safe to commit, per project convention).
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+.venv/
+.tox/
+
+# Misc
+*.log
+/tmp/

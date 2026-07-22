@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZQXR7P2-2026-05-09-denied-boarding",
+  "title": "NonMVP-SIT: Jane Smith denied boarding AC871 YUL→LHR (post-travel)",
+  "description": "Primary test PNR for Non-MVP SIT scenarios. Jane Smith denied boarding on AC871 YUL→LHR, departed 09-May-2026 (post-travel). Used by TC-01, TC-05, TC-11, TC-14-16, TC-26-27, TC-38-40, TC-42-49, TC-78, TC-86. Includes Aeroplan 501234567, phone ending 4321, email janesmith@gmail.com, ticket 0142345678901.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZQXRP",
+    "booking_date": "2026-05-09",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC08AA",
+    "iata_number": "00000001",
+    "system_code": "AC",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "NM",
+    "duty_code": "RC",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+
+  "last_modification_comment": "SIM-NONMVP-SIT-QXR7P2",
+  "creation_comment": "SIM-NONMVP-SIT-QXR7P2",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "JANE",
+      "last_name": "SMITH",
+      "gender": "FEMALE",
+      "date_of_birth": "1985-07-15",
+      "email": "janesmith@gmail.com",
+      "phone": "15145554321",
+      "passport": {
+        "number": "SIMQXR7P2",
+        "expiry": "2031-07-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "501234567"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "871",
+      "operating_flight_number": "871",
+      "origin": "YUL",
+      "destination": "LHR",
+      "dep_local": "2026-05-09T18:00:00",
+      "arr_local": "2026-05-10T06:30:00",
+      "dep_utc": "2026-05-09T22:00:00Z",
+      "arr_utc": "2026-05-10T05:30:00Z",
+      "booking_datetime": "2026-04-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "2"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-04-01",
+    "fare": {"amount": "1250.00", "currency": "CAD"},
+    "ticket_numbers": ["0142345678901"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-04-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-04-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZQXRP", "pnr_id": "ZZQXRP-2026-05-09"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NONMVP-SIT", "primary_name": "Non-MVP SIT Primary PNR", "confidence": "high"},
+  "tags": ["synthetic", "nonmvp-sit", "denied-boarding", "post-travel", "single-pax", "international"]
+}

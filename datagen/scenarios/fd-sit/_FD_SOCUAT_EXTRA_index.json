@@ -1,0 +1,109 @@
+[
+ {
+  "tc": "SOC-UAT-027-X",
+  "req": "SoC-APPR-EL-03",
+  "title": "APPR Eligible No Travel Return (safety 44) MULTI-PAX",
+  "loc": "PIMJRZ",
+  "pnr_id": "PIMJRZ-2026-06-20",
+  "date": "2026-06-20",
+  "tickets": [
+   "0143560000101",
+   "0143560000102",
+   "0143560000103"
+  ],
+  "ticket": "0143560000101",
+  "pax": "MARC TREMBLAY, ISABELLE TREMBLAY, NOAH TREMBLAY",
+  "npax": 3,
+  "pax_detail": [
+   {
+    "first": "MARC",
+    "last": "TREMBLAY",
+    "type": "ADT",
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "ISABELLE",
+    "last": "TREMBLAY",
+    "type": "ADT",
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "NOAH",
+    "last": "TREMBLAY",
+    "type": "CHD",
+    "dob": "2016-04-23"
+   }
+  ],
+  "route": "YYZ-YEG",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC601",
+    "sector": "YYZ-YEG",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-03",
+    "role": "X"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ },
+ {
+  "tc": "SOC-UAT-030-X",
+  "req": "SoC-APPR-EL-06",
+  "title": "APPR Eligible No Travel Incomplete (TECH fallback) MULTI-SEGMENT",
+  "loc": "DBTGNR",
+  "pnr_id": "DBTGNR-2026-06-20",
+  "date": "2026-06-20",
+  "tickets": [
+   "0143560000201"
+  ],
+  "ticket": "0143560000201",
+  "pax": "LOUIS FERLAND",
+  "npax": 1,
+  "pax_detail": [
+   {
+    "first": "LOUIS",
+    "last": "FERLAND",
+    "type": "ADT",
+    "dob": "1986-04-23"
+   }
+  ],
+  "route": "YYZ-YYC-YVR",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC701",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "X"
+   },
+   {
+    "n": 2,
+    "carrier": "AC",
+    "flight": "AC702",
+    "sector": "YYC-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-06",
+    "role": "X"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-1000",
+  "amount": 1000,
+  "currency": "CAD",
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false
+ }
+]

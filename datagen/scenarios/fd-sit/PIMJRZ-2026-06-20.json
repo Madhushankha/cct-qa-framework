@@ -1,0 +1,126 @@
+{
+ "$schema_version": 2,
+ "scenario_id": "PIMJRZ-2026-06-20",
+ "title": "SOC-UAT-027 SoC-APPR-EL-03: APPR Eligible No Travel Return (safety 44) MULTI-PAX [PIMJRZ]",
+ "description": "SOC-UAT-027 | SoC-APPR-EL-03 | APPR Eligible No Travel Return (safety 44) MULTI-PAX",
+ "canvas": "_canvas/pnr_creation_domestic_ac.json",
+ "contains_pii": false,
+ "identity": {
+  "pnr": "PIMJRZ",
+  "booking_date": "2026-06-20",
+  "type": "PNR"
+ },
+ "point_of_sale": {
+  "office_id": "YULAC010V",
+  "iata_number": "01424012",
+  "system_code": "1A",
+  "agent_type": "AIRLINE",
+  "agent_numeric_sign": "0001",
+  "agent_initials": "FD",
+  "duty_code": "SU",
+  "agent_country": "CA",
+  "agent_city": "YUL"
+ },
+ "last_modification_comment": "SIM-SOC-UAT-027-X-INT",
+ "creation_comment": "SIM-SOC-UAT-027-X-INT",
+ "passengers": [
+  {
+   "type": "ADT",
+   "first_name": "MARC",
+   "last_name": "TREMBLAY",
+   "gender": "U",
+   "date_of_birth": "1986-04-23",
+   "email": "lahiru.premathilake@aircanada.ca",
+   "phone": "+94712534323"
+  },
+  {
+   "type": "ADT",
+   "first_name": "ISABELLE",
+   "last_name": "TREMBLAY",
+   "gender": "U",
+   "date_of_birth": "1986-04-23",
+   "email": "lahiru.premathilake@aircanada.ca",
+   "phone": "+94712534323"
+  },
+  {
+   "type": "CHD",
+   "first_name": "NOAH",
+   "last_name": "TREMBLAY",
+   "gender": "U",
+   "date_of_birth": "2016-04-23",
+   "email": "lahiru.premathilake@aircanada.ca",
+   "phone": "+94712534323"
+  }
+ ],
+ "segments": [
+  {
+   "carrier": "AC",
+   "operating_carrier": "AC",
+   "flight_number": "601",
+   "operating_flight_number": "601",
+   "origin": "YYZ",
+   "destination": "YEG",
+   "dep_local": "2026-06-20T08:00:00",
+   "arr_local": "2026-06-20T10:00:00",
+   "dep_utc": "2026-06-20T12:00:00Z",
+   "arr_utc": "2026-06-20T16:00:00Z",
+   "booking_datetime": null,
+   "aircraft": "789",
+   "cabin": "Y",
+   "status": "HK",
+   "arrival_terminal": "1"
+  }
+ ],
+ "ticketing": {
+  "issuance_local_date": "2026-06-01",
+  "fare": {
+   "amount": "350.00",
+   "currency": "CAD"
+  },
+  "ticket_numbers": [
+   "0143560000101",
+   "0143560000102",
+   "0143560000103"
+  ]
+ },
+ "timeline": [
+  {
+   "version": 0,
+   "at": "2026-06-01T10:00:00Z",
+   "action": "bootstrap",
+   "description": "Pre-ticketing stub"
+  },
+  {
+   "version": 1,
+   "at": "2026-06-01T10:00:01Z",
+   "action": "ticketing_added",
+   "description": "Ticketing reference attached"
+  }
+ ],
+ "expected_cascade": {
+  "db_end_state": {
+   "trip": {
+    "rows": 1,
+    "status": "ACTIVE",
+    "pnr": "PIMJRZ",
+    "pnr_id": "PIMJRZ-2026-06-20"
+   },
+   "passenger": {
+    "rows": 3
+   },
+   "flight_segment": {
+    "rows": 1
+   }
+  },
+  "total_cascade_budget_ms": 30000
+ },
+ "classification": {
+  "primary_code": "SOC-UAT-027",
+  "primary_name": "SOC UAT extra SoC-APPR-EL-03",
+  "confidence": "high"
+ },
+ "tags": [
+  "synthetic",
+  "soc-uat-extra"
+ ]
+}

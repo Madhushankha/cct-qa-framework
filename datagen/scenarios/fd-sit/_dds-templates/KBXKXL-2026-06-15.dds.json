@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "KBXKXL-2026-06-15",
+  "pnr": "KBXKXL"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "CDG",
+    "destination": "YVR",
+    "associatedSegments": [
+     {
+      "segmentId": "KBXKXL-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     },
+     {
+      "segmentId": "KBXKXL-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YVR",
+      "marketingFlightNumber": 121,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 121,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#121#2026-06-15#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "CDG",
+    "destination": "YVR",
+    "associatedSegments": [
+     {
+      "segmentId": "KBXKXL-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-15#CDG"
+     },
+     {
+      "segmentId": "KBXKXL-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YVR",
+      "marketingFlightNumber": 121,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 121,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#121#2026-06-15#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "KBXKXL-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "871",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 210,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "KBXKXL-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-21",
+     "reason": "No delay on arrival but there was delay on flights",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "KBXKXL-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "KBXKXL-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "KBXKXL-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 871,
+   "departureAirport": "CDG",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "KBXKXL-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

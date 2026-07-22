@@ -1,0 +1,6117 @@
+[
+  {
+    "tc": "FD_TC_001",
+    "loc": "CCTGDZ",
+    "pnr_id": "CCTGDZ-2026-06-15",
+    "ticket": "014440000101",
+    "pax": "XIMENA BLACKENRIDGE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "BLACKENRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_002",
+    "loc": "SSBBFJ",
+    "pnr_id": "SSBBFJ-2026-06-15",
+    "ticket": "014440000201",
+    "pax": "IVANO CALDINGLEY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_002",
+    "donor": "LDYBHR-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "CALDINGLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_003",
+    "loc": "KHFWKG",
+    "pnr_id": "KHFWKG-2026-06-15",
+    "ticket": "014440000301",
+    "pax": "FIONA IVESERMORE",
+    "route": "YUL-YOW-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_003",
+    "donor": "GZCLMB-2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "IVESERMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_004",
+    "loc": "YPWBJK",
+    "pnr_id": "YPWBJK-2026-06-15",
+    "ticket": "014440000401",
+    "pax": "ISOLDE ORMEROWMORE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_004",
+    "donor": "LFGKDQ-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "ORMEROWMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_005",
+    "loc": "XXNYNS",
+    "pnr_id": "XXNYNS-2026-06-15",
+    "ticket": "014440000501",
+    "pax": "ZEPHYR COTENBURY",
+    "route": "YUL-YKF-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_005",
+    "donor": "LQMNGM-2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "COTENBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_006",
+    "loc": "MMSCYW",
+    "pnr_id": "MMSCYW-2026-06-15",
+    "ticket": "014440000601",
+    "pax": "XIMENA PENBECK",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "PENBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_007",
+    "loc": "LDFKPK",
+    "pnr_id": "LDFKPK-2026-06-15",
+    "ticket": "014440000701",
+    "pax": "KENJI ASHENWYN",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "ASHENWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_008",
+    "loc": "CCYXRV",
+    "pnr_id": "CCYXRV-2026-06-15",
+    "ticket": "014440000801",
+    "pax": "MATEO ALDERFIELD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "ALDERFIELD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_009",
+    "loc": "PLFPZX",
+    "pnr_id": "PLFPZX-2026-06-15",
+    "ticket": "014440000901",
+    "pax": "CEDRICK NETHERENWOOD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "NETHERENWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_010",
+    "loc": "RBGLND",
+    "pnr_id": "RBGLND-2026-06-15",
+    "ticket": "014440001001",
+    "pax": "ULRICH WRENCOMBE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "WRENCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_011",
+    "loc": "GXCCKN",
+    "pnr_id": "GXCCKN-2026-06-15",
+    "ticket": "014440001101",
+    "pax": "BODHI DUNLELOW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_011",
+    "donor": "GKVYMV-2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "DUNLELOW"
+      ],
+      [
+        "ZEPHYR",
+        "OAKENMERE"
+      ],
+      [
+        "LARISSA",
+        "KIRKERRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_012",
+    "loc": "LCTQQX",
+    "pnr_id": "LCTQQX-2026-06-15",
+    "ticket": "014440001201",
+    "pax": "IVANO MILLELBURY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "MILLELBURY"
+      ],
+      [
+        "ORSON",
+        "LANGELMERE"
+      ],
+      [
+        "YARDLEY",
+        "FROSTELCOMBE"
+      ],
+      [
+        "LORCAN",
+        "GREENSHAW"
+      ],
+      [
+        "XIMENA",
+        "BRENLEWOOD"
+      ],
+      [
+        "KENJI",
+        "KIRKANHAM"
+      ],
+      [
+        "MATEO",
+        "CHADERPOOL"
+      ],
+      [
+        "PERCY",
+        "MILLANSHAW"
+      ],
+      [
+        "SEBASTIAN",
+        "LANGENWOOD"
+      ],
+      [
+        "HALLIE",
+        "VANEERLOW"
+      ],
+      [
+        "JOELLE",
+        "HALERBURY"
+      ],
+      [
+        "KENJI",
+        "BRIGHTOWCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_013",
+    "loc": "DFYWMJ",
+    "pnr_id": "DFYWMJ-2026-06-15",
+    "ticket": "014440001301",
+    "pax": "WINSLOW GALDENMERE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "GALDENMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_014",
+    "loc": "DWSLFL",
+    "pnr_id": "DWSLFL-2026-06-15",
+    "ticket": "014440001401",
+    "pax": "ADRIAN ULLSHAM",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "ULLSHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_015",
+    "loc": "QPWJBR",
+    "pnr_id": "QPWJBR-2026-06-15",
+    "ticket": "014440001501",
+    "pax": "UMBERTO YEOERSTON",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "YEOERSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_016",
+    "loc": "BRVPTJ",
+    "pnr_id": "BRVPTJ-2026-06-15",
+    "ticket": "014440001601",
+    "pax": "ORSON LANGOWWOOD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "LANGOWWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_017",
+    "loc": "KMQTGV",
+    "pnr_id": "KMQTGV-2026-06-15",
+    "ticket": "014440001701",
+    "pax": "HALLIE SELOWMERE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "SELOWMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_018",
+    "loc": "DDQBPG",
+    "pnr_id": "DDQBPG-2026-06-15",
+    "ticket": "014440001801",
+    "pax": "NIKOLAI CALDELVALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_018",
+    "donor": "PDBSJV-2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "CALDELVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_019",
+    "loc": "FMJXRM",
+    "pnr_id": "FMJXRM-2026-06-15",
+    "ticket": "014440001901",
+    "pax": "EAMON IRONERWICK",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_019",
+    "donor": "YHBPTL-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "IRONERWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_020",
+    "loc": "NDVHYG",
+    "pnr_id": "NDVHYG-2026-06-15",
+    "ticket": "014440002001",
+    "pax": "CALLUM THORNENLEY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_020",
+    "donor": "SBNNDX-2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "THORNENLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_021",
+    "loc": "BRQTYC",
+    "pnr_id": "BRQTYC-2026-06-15",
+    "ticket": "014440002101",
+    "pax": "QUENTIN WESTWOOD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_021",
+    "donor": "BCQQPV-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "WESTWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_022",
+    "loc": "MSFKLR",
+    "pnr_id": "MSFKLR-2026-06-15",
+    "ticket": "014440002201",
+    "pax": "ROMILLY LONGERSHAW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_022",
+    "donor": "YCYXPN-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "LONGERSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_023",
+    "loc": "MKZHPD",
+    "pnr_id": "MKZHPD-2026-06-15",
+    "ticket": "014440002301",
+    "pax": "XIMENA HOLLOWWYN",
+    "route": "YUL-YHM",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_023",
+    "donor": "PGGRXN-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "HOLLOWWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_024",
+    "loc": "SPJLTV",
+    "pnr_id": "SPJLTV-2026-06-15",
+    "ticket": "014440002401",
+    "pax": "THEODORA NORTHANCROFT",
+    "route": "YUL-YHM",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_024",
+    "donor": "LYLHDZ-2026-06-15",
+    "pax_names": [
+      [
+        "THEODORA",
+        "NORTHANCROFT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_025",
+    "loc": "NTHQMB",
+    "pnr_id": "NTHQMB-2026-06-15",
+    "ticket": "014440002501",
+    "pax": "GARETH ELDERELSTEAD",
+    "route": "YUL-YHM",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_025",
+    "donor": "RGVLNR-2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "ELDERELSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_026",
+    "loc": "GFMQDG",
+    "pnr_id": "GFMQDG-2026-06-15",
+    "ticket": "014440002601",
+    "pax": "HEIDI OAKANBY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "OAKANBY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_027",
+    "loc": "MZMRFY",
+    "pnr_id": "MZMRFY-2026-06-15",
+    "ticket": "014440002701",
+    "pax": "CALLUM RUSHENDALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_027",
+    "donor": "SHMLFP-2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "RUSHENDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_028",
+    "loc": "DMVNRY",
+    "pnr_id": "DMVNRY-2026-06-15",
+    "ticket": "014440002801",
+    "pax": "DAGNY BRAMERMERE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_028",
+    "donor": "XKZJVJ-2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "BRAMERMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_029",
+    "loc": "LCMPPY",
+    "pnr_id": "LCMPPY-2026-06-15",
+    "ticket": "014440002901",
+    "pax": "ROMILLY WESTLEHURST",
+    "route": "YUL-YHM",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_029",
+    "donor": "XVNQDY-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "WESTLEHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_030",
+    "loc": "MKMSRS",
+    "pnr_id": "MKMSRS-2026-06-15",
+    "ticket": "014440003001",
+    "pax": "SVEN ORMEROWRIDGE",
+    "route": "YUL-YHM",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_030",
+    "donor": "FZLTTQ-2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "ORMEROWRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_031",
+    "loc": "JBHQMJ",
+    "pnr_id": "JBHQMJ-2026-06-15",
+    "ticket": "014440003101",
+    "pax": "DAGNY YEOELPOOL",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-12",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_031",
+    "donor": "FYHFKM-2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "YEOELPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_032",
+    "loc": "JSTJBF",
+    "pnr_id": "JSTJBF-2026-06-15",
+    "ticket": "014440003201",
+    "pax": "ROSALIND FROSTERCOTT",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-13",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_032",
+    "donor": "JGNKQL-2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "FROSTERCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_033",
+    "loc": "QVSWSN",
+    "pnr_id": "QVSWSN-2026-06-15",
+    "ticket": "014440003301",
+    "pax": "QUENTIN CALDELBROOK",
+    "route": "YUL-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-15",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_033",
+    "donor": "JJKQXL-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "CALDELBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_034",
+    "loc": "GHLHKZ",
+    "pnr_id": "GHLHKZ-2026-06-15",
+    "ticket": "014440003401",
+    "pax": "BRENNA CHADINGWYN",
+    "route": "YUL-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-17",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_034",
+    "donor": "BPSRZV-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "CHADINGWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_035",
+    "loc": "JKVGWT",
+    "pnr_id": "JKVGWT-2026-06-15",
+    "ticket": "014440003501",
+    "pax": "EAMON BRENLEPOOL",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_035",
+    "donor": "HSLSKT-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "BRENLEPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_036",
+    "loc": "QVWTBP",
+    "pnr_id": "QVWTBP-2026-06-15",
+    "ticket": "014440003601",
+    "pax": "KIRA DENERGATE",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_036",
+    "donor": "VDWGJS-2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "DENERGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_037",
+    "loc": "HZXFBB",
+    "pnr_id": "HZXFBB-2026-06-15",
+    "ticket": "014440003701",
+    "pax": "DAGNY TATANLEY",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_037",
+    "donor": "GBYRMX-2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "TATANLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_038",
+    "loc": "PNDZZG",
+    "pnr_id": "PNDZZG-2026-06-15",
+    "ticket": "014440003801",
+    "pax": "EAMON HODENTHORPE",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_038",
+    "donor": "QTWCWL-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "HODENTHORPE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_039",
+    "loc": "TGCVLP",
+    "pnr_id": "TGCVLP-2026-06-15",
+    "ticket": "014440003901",
+    "pax": "FREYA WILDENWICK",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-07",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_039",
+    "donor": "YJBXWY-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "WILDENWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_040",
+    "loc": "BFJVRL",
+    "pnr_id": "BFJVRL-2026-06-15",
+    "ticket": "014440004001",
+    "pax": "ULRICH GALDERMERE",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-08",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_040",
+    "donor": "VQTRBM-2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "GALDERMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_041",
+    "loc": "DPXZTN",
+    "pnr_id": "DPXZTN-2026-06-15",
+    "ticket": "014440004101",
+    "pax": "SVEN OATANHOLT",
+    "route": "YUL-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-10",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_041",
+    "donor": "LNJKTW-2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "OATANHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_042",
+    "loc": "KTBJLF",
+    "pnr_id": "KTBJLF-2026-06-15",
+    "ticket": "014440004201",
+    "pax": "ADRIAN HOLLLETON",
+    "route": "YUL-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-12",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_042",
+    "donor": "HNWLDT-2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "HOLLLETON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_043",
+    "loc": "BKZFVR",
+    "pnr_id": "BKZFVR-2026-06-15",
+    "ticket": "014440004301",
+    "pax": "UMBERTO RUSHELHOLT",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_043",
+    "donor": "RWPYBN-2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "RUSHELHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_044",
+    "loc": "PFYCHL",
+    "pnr_id": "PFYCHL-2026-06-15",
+    "ticket": "014440004401",
+    "pax": "VIOLETA THORNENGATE",
+    "route": "YUL-YYZ-YUL",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_044",
+    "donor": "VPMSHC-2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "THORNENGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_045",
+    "loc": "WLQWTG",
+    "pnr_id": "WLQWTG-2026-06-15",
+    "ticket": "014440004501",
+    "pax": "UMBERTO STANELDALE",
+    "route": "YUL-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_045",
+    "donor": "FDWHSW-2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "STANELDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_046",
+    "loc": "XWYRHS",
+    "pnr_id": "XWYRHS-2026-06-15",
+    "ticket": "014440004601",
+    "pax": "XIMENA WRENWYN",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_046",
+    "donor": "KBDTTZ-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "WRENWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_047",
+    "loc": "GLXWKW",
+    "pnr_id": "GLXWKW-2026-06-15",
+    "ticket": "014440004701",
+    "pax": "FREYA TUTLEDEN",
+    "route": "YUL-YYZ-YUL",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_047",
+    "donor": "LRYQTK-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "TUTLEDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_048",
+    "loc": "KXSSDT",
+    "pnr_id": "KXSSDT-2026-06-15",
+    "ticket": "014440004801",
+    "pax": "PRIYA LONGWYN",
+    "route": "YUL-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_048",
+    "donor": "VYBZVV-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "LONGWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_049",
+    "loc": "MHSLQW",
+    "pnr_id": "MHSLQW-2026-06-15",
+    "ticket": "014440004901",
+    "pax": "FIONA BRENANDEN",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_049",
+    "donor": "YHRCMT-2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "BRENANDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_050",
+    "loc": "LGTHQF",
+    "pnr_id": "LGTHQF-2026-06-15",
+    "ticket": "014440005001",
+    "pax": "LORCAN BLYELMORE",
+    "route": "YUL-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-26",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_050",
+    "donor": "NXFRMX-2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "BLYELMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_051",
+    "loc": "FPZLYJ",
+    "pnr_id": "FPZLYJ-2026-06-15",
+    "ticket": "014440005101",
+    "pax": "HEIDI REDANSHAW",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_051",
+    "donor": "YNKNST-2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "REDANSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_052",
+    "loc": "TSJVWD",
+    "pnr_id": "TSJVWD-2026-06-15",
+    "ticket": "014440005201",
+    "pax": "JOELLE WESTELMORE",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-28",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_052",
+    "donor": "QPGVVM-2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "WESTELMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_053",
+    "loc": "PHMTYQ",
+    "pnr_id": "PHMTYQ-2026-06-15",
+    "ticket": "014440005301",
+    "pax": "HEIDI SILVERERFORD",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-29",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_053",
+    "donor": "XWRLGP-2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "SILVERERFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_054",
+    "loc": "WWVBTP",
+    "pnr_id": "WWVBTP-2026-06-15",
+    "ticket": "014440005401",
+    "pax": "VIOLETA SEDGELEBROOK",
+    "route": "YUL-YYZ-YVR",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_054",
+    "donor": "WYJMNW-2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "SEDGELEBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_055",
+    "loc": "LTFVCL",
+    "pnr_id": "LTFVCL-2026-06-15",
+    "ticket": "014440005501",
+    "pax": "HEIDI BRENINGBURY",
+    "route": "YUL-FRA-MUC",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_055",
+    "donor": "YKKXVH-2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "BRENINGBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_056",
+    "loc": "BXMHXZ",
+    "pnr_id": "BXMHXZ-2026-06-15",
+    "ticket": "014440005601",
+    "pax": "HALLIE CARLANGATE",
+    "route": "YUL-YYZ-YEG",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_056",
+    "donor": "KCKDJC-2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "CARLANGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_057",
+    "loc": "KFRYLD",
+    "pnr_id": "KFRYLD-2026-06-15",
+    "ticket": "014440005701",
+    "pax": "LORCAN SEDGEINGMERE",
+    "route": "YUL-YYZ",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-04",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_057",
+    "donor": "BDPKLV-2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "SEDGEINGMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_058",
+    "loc": "GDCZCW",
+    "pnr_id": "GDCZCW-2026-06-15",
+    "ticket": "014440005801",
+    "pax": "ULRICH QUENINGMARSH",
+    "route": "YUL-YYZ",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_058",
+    "donor": "SSSGML-2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "QUENINGMARSH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_059",
+    "loc": "FJTVDB",
+    "pnr_id": "FJTVDB-2026-06-15",
+    "ticket": "014440005901",
+    "pax": "ANNIKA RAINANGATE",
+    "route": "YUL-LHR-EDI",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_059",
+    "donor": "CJLXVP-2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "RAINANGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_060",
+    "loc": "VCZVDL",
+    "pnr_id": "VCZVDL-2026-06-15",
+    "ticket": "014440006001",
+    "pax": "ROSALIND RIDGEELPOOL",
+    "route": "YUL-YYZ",
+    "status": "PENDING",
+    "syscode": "FD-APPR-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_060",
+    "donor": "XSGTDD-2026-06-15",
+    "pax_names": [
+      [
+        "ROSALIND",
+        "RIDGEELPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_061",
+    "loc": "VWSZSS",
+    "pnr_id": "VWSZSS-2026-06-15",
+    "ticket": "014440006101",
+    "pax": "PERCY QUENLEVALE",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_061",
+    "donor": "FCDKWN-2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "QUENLEVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_062",
+    "loc": "GCFTBX",
+    "pnr_id": "GCFTBX-2026-06-15",
+    "ticket": "014440006201",
+    "pax": "HALLIE BARNINGSHAW",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_062",
+    "donor": "SHBNPV-2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "BARNINGSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_063",
+    "loc": "GTQRJL",
+    "pnr_id": "GTQRJL-2026-08-15",
+    "ticket": "014440006301",
+    "pax": "DAGNY LINERBURY",
+    "route": "",
+    "status": "",
+    "syscode": "",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": false,
+    "case": "FD_TC_063",
+    "donor": "NWVJZW-2026-08-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "LINERBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_064",
+    "loc": "XFQWTH",
+    "pnr_id": "XFQWTH-2026-06-15",
+    "ticket": "014440006401",
+    "pax": "ANNIKA CARLENLOW",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-28",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_064",
+    "donor": "TPZBPF-2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "CARLENLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_065",
+    "loc": "QKLGMK",
+    "pnr_id": "QKLGMK-2026-06-15",
+    "ticket": "014440006501",
+    "pax": "FIONA CHADOWFORD",
+    "route": "YUL-YYZ",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-09",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_065",
+    "donor": "FRYNDS-2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "CHADOWFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_066",
+    "loc": "HSSHZB",
+    "pnr_id": "HSSHZB-2026-06-15",
+    "ticket": "014440006601",
+    "pax": "THEODORA HOLLENVALE",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-01",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_066",
+    "donor": "XPJRPB-2026-06-15",
+    "pax_names": [
+      [
+        "THEODORA",
+        "HOLLENVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_067",
+    "loc": "QRNZJD",
+    "pnr_id": "QRNZJD-2026-06-15",
+    "ticket": "014440006701",
+    "pax": "JOELLE OAKINGHURST",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-02",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_067",
+    "donor": "QRPCGX-2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "OAKINGHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_068",
+    "loc": "CNLJCF",
+    "pnr_id": "CNLJCF-2026-06-15",
+    "ticket": "014440006801",
+    "pax": "NIKOLAI EVERELWOOD",
+    "route": "LHR-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-03",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_068",
+    "donor": "XFJHHJ-2026-06-15",
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "EVERELWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_069",
+    "loc": "PBRHSP",
+    "pnr_id": "PBRHSP-2026-06-15",
+    "ticket": "014440006901",
+    "pax": "YARDLEY LONGENWORTH",
+    "route": "CDG-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-04",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_069",
+    "donor": "FVSRJV-2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "LONGENWORTH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_070",
+    "loc": "SRXRDR",
+    "pnr_id": "SRXRDR-2026-06-15",
+    "ticket": "014440007001",
+    "pax": "VIOLETA LONGANBECK",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-05",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_070",
+    "donor": "MKMYRZ-2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "LONGANBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_071",
+    "loc": "GFBGGY",
+    "pnr_id": "GFBGGY-2026-06-15",
+    "ticket": "014440007101",
+    "pax": "ADRIAN SELLOW",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-06",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_071",
+    "donor": "FWSXHR-2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "SELLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_072",
+    "loc": "MXXBPS",
+    "pnr_id": "MXXBPS-2026-06-15",
+    "ticket": "014440007201",
+    "pax": "ZEPHYR LONGOWBECK",
+    "route": "LHR-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-07",
+    "amount": 260,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_072",
+    "donor": "LSXNSR-2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "LONGOWBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_073",
+    "loc": "VDRXMK",
+    "pnr_id": "VDRXMK-2026-06-15",
+    "ticket": "014440007301",
+    "pax": "ADRIAN CRESTELBROOK",
+    "route": "LHR-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-08",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_073",
+    "donor": "TZGJCH-2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "CRESTELBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_074",
+    "loc": "CVXXYX",
+    "pnr_id": "CVXXYX-2026-06-15",
+    "ticket": "014440007401",
+    "pax": "SVEN CALDSTON",
+    "route": "PTP-YUL",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-09",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_074",
+    "donor": "QLYZCR-2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "CALDSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_075",
+    "loc": "VXBYSR",
+    "pnr_id": "VXBYSR-2026-06-15",
+    "ticket": "014440007501",
+    "pax": "FREYA NORTHINGWICK",
+    "route": "PTP-YOW",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-10",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_075",
+    "donor": "JDVWCC-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "NORTHINGWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_076",
+    "loc": "LVPDTZ",
+    "pnr_id": "LVPDTZ-2026-06-15",
+    "ticket": "014440007601",
+    "pax": "ROMILLY ALDLEHURST",
+    "route": "PTP-YUL",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-11",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_076",
+    "donor": "PZTLBX-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "ALDLEHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_077",
+    "loc": "MSJKFH",
+    "pnr_id": "MSJKFH-2026-06-15",
+    "ticket": "014440007701",
+    "pax": "WINSLOW SHARPENMARSH",
+    "route": "PTP-YOW",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-12",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_077",
+    "donor": "HQPPWS-2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "SHARPENMARSH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_078",
+    "loc": "XKHCTT",
+    "pnr_id": "XKHCTT-2026-06-15",
+    "ticket": "014440007801",
+    "pax": "CALLUM WOODHAM",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-13",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_078",
+    "donor": "RGZFFN-2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "WOODHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_079",
+    "loc": "DHJZMC",
+    "pnr_id": "DHJZMC-2026-06-15",
+    "ticket": "014440007901",
+    "pax": "TAMSIN BRIGHTLEWOOD",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-14",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_079",
+    "donor": "VYDFMC-2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "BRIGHTLEWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_080",
+    "loc": "RZCTFL",
+    "pnr_id": "RZCTFL-2026-06-15",
+    "ticket": "014440008001",
+    "pax": "ADRIAN WINDLEMERE",
+    "route": "CDG-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-15",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_080",
+    "donor": "VKLDDQ-2026-06-15",
+    "pax_names": [
+      [
+        "ADRIAN",
+        "WINDLEMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_081",
+    "loc": "SPMCYP",
+    "pnr_id": "SPMCYP-2026-06-15",
+    "ticket": "014440008101",
+    "pax": "PRIYA DUNLEY",
+    "route": "CDG-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-16",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_081",
+    "donor": "ZPYSGD-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "DUNLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_082",
+    "loc": "ZTJJYR",
+    "pnr_id": "ZTJJYR-2026-06-15",
+    "ticket": "014440008201",
+    "pax": "QUENTIN CRESTOWSTEAD",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-17",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_082",
+    "donor": "VYHFMR-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "CRESTOWSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_083",
+    "loc": "HTZMGB",
+    "pnr_id": "HTZMGB-2026-06-15",
+    "ticket": "014440008301",
+    "pax": "FREYA YEOELHOLT",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-18",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_083",
+    "donor": "ZRJCSQ-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "YEOELHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_084",
+    "loc": "CTZDRY",
+    "pnr_id": "CTZDRY-2026-06-15",
+    "ticket": "014440008401",
+    "pax": "NADEZHDA BLACKWYN",
+    "route": "CDG-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-19",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_084",
+    "donor": "BKRTZL-2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "BLACKWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_085",
+    "loc": "NFTPYX",
+    "pnr_id": "NFTPYX-2026-06-15",
+    "ticket": "014440008501",
+    "pax": "NADEZHDA RAINELLEY",
+    "route": "CDG-YTZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-20",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_085",
+    "donor": "RXNWDW-2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "RAINELLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_086",
+    "loc": "RRNRJQ",
+    "pnr_id": "RRNRJQ-2026-06-15",
+    "ticket": "014440008601",
+    "pax": "PRIYA WOLDMARSH",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-21",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_086",
+    "donor": "HDZDMH-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "WOLDMARSH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_087",
+    "loc": "QNDBWQ",
+    "pnr_id": "QNDBWQ-2026-06-15",
+    "ticket": "014440008701",
+    "pax": "EAMON WILDERSTON",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-25",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_087",
+    "donor": "ZSFMSJ-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "WILDERSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_088",
+    "loc": "RKJZXC",
+    "pnr_id": "RKJZXC-2026-06-15",
+    "ticket": "014440008801",
+    "pax": "TAMSIN SELERCOMBE",
+    "route": "PTP-YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-35",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_088",
+    "donor": "YJHHHD-2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "SELERCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_089",
+    "loc": "QWDZRB",
+    "pnr_id": "QWDZRB-2026-06-15",
+    "ticket": "014440008901",
+    "pax": "FREYA BLYENDALE",
+    "route": "LHR-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-27",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_089",
+    "donor": "FKNJQR-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "BLYENDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_090",
+    "loc": "YLLGBL",
+    "pnr_id": "YLLGBL-2026-06-15",
+    "ticket": "014440009001",
+    "pax": "FREYA FROSTERMERE",
+    "route": "PTP-YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-29",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_090",
+    "donor": "JDRQDX-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "FROSTERMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_091",
+    "loc": "PMBBXH",
+    "pnr_id": "PMBBXH-2026-06-15",
+    "ticket": "014440009101",
+    "pax": "UMBERTO GARANLEY",
+    "route": "CDG-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-31",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_091",
+    "donor": "MDLXJS-2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "GARANLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_092",
+    "loc": "HKDBCX",
+    "pnr_id": "HKDBCX-2026-06-15",
+    "ticket": "014440009201",
+    "pax": "UMBERTO FAIRELTHORPE",
+    "route": "LHR-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-33",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_092",
+    "donor": "XSZLZJ-2026-06-15",
+    "pax_names": [
+      [
+        "UMBERTO",
+        "FAIRELTHORPE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_093",
+    "loc": "SYTGRT",
+    "pnr_id": "SYTGRT-2026-06-15",
+    "ticket": "014440009301",
+    "pax": "OONA CHADENBURY",
+    "route": "PTP-YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-35",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_093",
+    "donor": "QRFXBW-2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "CHADENBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_094",
+    "loc": "FSMNHY",
+    "pnr_id": "FSMNHY-2026-06-15",
+    "ticket": "014440009401",
+    "pax": "PERCY IVESENTON",
+    "route": "CDG-YYZ-YVR",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-37",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_094",
+    "donor": "HPWLGJ-2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "IVESENTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_095",
+    "loc": "BVSYBL",
+    "pnr_id": "BVSYBL-2026-06-15",
+    "ticket": "014440009501",
+    "pax": "HALLIE OATENTON",
+    "route": "LHR-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_095",
+    "donor": "QCTYVG-2026-06-15",
+    "pax_names": [
+      [
+        "HALLIE",
+        "OATENTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_096",
+    "loc": "DRGPJZ",
+    "pnr_id": "DRGPJZ-2026-06-15",
+    "ticket": "014440009601",
+    "pax": "DAGNY HARTLECROFT",
+    "route": "LHR-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_096",
+    "donor": "FNCTJB-2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "HARTLECROFT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_097",
+    "loc": "PNBMDV",
+    "pnr_id": "PNBMDV-2026-06-15",
+    "ticket": "014440009701",
+    "pax": "LORCAN RIDGEOWSTON",
+    "route": "YYZ-LHR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_097",
+    "donor": "JPFYQX-2026-06-15",
+    "pax_names": [
+      [
+        "LORCAN",
+        "RIDGEOWSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_098",
+    "loc": "DCPYMX",
+    "pnr_id": "DCPYMX-2026-06-15",
+    "ticket": "014440009801",
+    "pax": "KENJI WHITCOTT",
+    "route": "LHR-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_098",
+    "donor": "ZHWZQN-2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "WHITCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_099",
+    "loc": "WYWLPJ",
+    "pnr_id": "WYWLPJ-2026-06-15",
+    "ticket": "014440009901",
+    "pax": "KIRA GALDOWBECK",
+    "route": "LHR-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-07",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_099",
+    "donor": "CPGNNH-2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "GALDOWBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_100",
+    "loc": "GDRZHS",
+    "pnr_id": "GDRZHS-2026-06-15",
+    "ticket": "014440010001",
+    "pax": "YARDLEY LARKBY",
+    "route": "YYZ-CDG-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-09",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_100",
+    "donor": "MWBZMQ-2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "LARKBY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_101",
+    "loc": "PBCYDF",
+    "pnr_id": "PBCYDF-2026-06-15",
+    "ticket": "014440010101",
+    "pax": "ISOLDE RUSHANTON",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-11",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_101",
+    "donor": "DXQTCY-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "RUSHANTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_102",
+    "loc": "HBDXBR",
+    "pnr_id": "HBDXBR-2026-06-15",
+    "ticket": "014440010201",
+    "pax": "VIOLETA SHARPOWGATE",
+    "route": "CDG-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-13",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_102",
+    "donor": "YFQLWL-2026-06-15",
+    "pax_names": [
+      [
+        "VIOLETA",
+        "SHARPOWGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_103",
+    "loc": "WWXFFX",
+    "pnr_id": "WWXFFX-2026-06-15",
+    "ticket": "014440010301",
+    "pax": "WESLEY FENERSTEAD",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_103",
+    "donor": "TSKHMN-2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "FENERSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_104",
+    "loc": "NBPYXS",
+    "pnr_id": "NBPYXS-2026-06-15",
+    "ticket": "014440010401",
+    "pax": "PRIYA COTOWHOLT",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-15",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_104",
+    "donor": "VVKVTK-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "COTOWHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_105",
+    "loc": "FYTTRK",
+    "pnr_id": "FYTTRK-2026-06-15",
+    "ticket": "014440010501",
+    "pax": "SVEN VANEERHAM",
+    "route": "CDG-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_105",
+    "donor": "KBJPTC-2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "VANEERHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_106",
+    "loc": "MVYYJB",
+    "pnr_id": "MVYYJB-2026-06-15",
+    "ticket": "014440010601",
+    "pax": "KENJI CARLERWICK",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-17",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_106",
+    "donor": "SYBHTD-2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "CARLERWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_107",
+    "loc": "XXGTJG",
+    "pnr_id": "XXGTJG-2026-06-15",
+    "ticket": "014440010701",
+    "pax": "ISOLDE ROOKANCOMBE",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_107",
+    "donor": "HBNHTT-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "ROOKANCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_108",
+    "loc": "YPCKSB",
+    "pnr_id": "YPCKSB-2026-06-15",
+    "ticket": "014440010801",
+    "pax": "ANNIKA VANEELWICK",
+    "route": "YYZ-CDG",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-19",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_108",
+    "donor": "VQHMCW-2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "VANEELWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_109",
+    "loc": "GXXCHM",
+    "pnr_id": "GXXCHM-2026-06-15",
+    "ticket": "014440010901",
+    "pax": "NADEZHDA STANELBROOK",
+    "route": "YYZ-LHR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_109",
+    "donor": "GMBCJM-2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "STANELBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_110",
+    "loc": "VCRRWR",
+    "pnr_id": "VCRRWR-2026-06-15",
+    "ticket": "014440011001",
+    "pax": "JASPER LONGCOMBE",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_110",
+    "donor": "BXWCBT-2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "LONGCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_111",
+    "loc": "XQHDXH",
+    "pnr_id": "XQHDXH-2026-06-15",
+    "ticket": "014440011101",
+    "pax": "FREYA STANINGWICK",
+    "route": "CDG-YYZ-YVR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_111",
+    "donor": "JMYBSJ-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "STANINGWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_112",
+    "loc": "KVYCDZ",
+    "pnr_id": "KVYCDZ-2026-06-15",
+    "ticket": "014440011201",
+    "pax": "KIRA ORMERLEDEN",
+    "route": "CDG-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_112",
+    "donor": "NVYBGX-2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "ORMERLEDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_113",
+    "loc": "WGMKQT",
+    "pnr_id": "WGMKQT-2026-06-15",
+    "ticket": "014440011301",
+    "pax": "XIMENA KESLERIDGE",
+    "route": "LHR-YYZ-YEG",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_113",
+    "donor": "RWYLWK-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "KESLERIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_114",
+    "loc": "XGPTJS",
+    "pnr_id": "XGPTJS-2026-06-15",
+    "ticket": "014440011401",
+    "pax": "MATEO MEREINGMERE",
+    "route": "CDG-YYZ",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_114",
+    "donor": "MXDMNC-2026-06-15",
+    "pax_names": [
+      [
+        "MATEO",
+        "MEREINGMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_115",
+    "loc": "WQLSBD",
+    "pnr_id": "WQLSBD-2026-06-15",
+    "ticket": "014440011501",
+    "pax": "ROMILLY RAVENELHAM",
+    "route": "LHR-FRA-MUC",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-EU-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_115",
+    "donor": "HXGHXM-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "RAVENELHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_116",
+    "loc": "YHLQPN",
+    "pnr_id": "YHLQPN-2026-06-15",
+    "ticket": "014440011601",
+    "pax": "NADEZHDA HARTOWRIDGE",
+    "route": "LHR-YYZ",
+    "status": "PENDING",
+    "syscode": "FD-EU-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_116",
+    "donor": "TZMCGZ-2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "HARTOWRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_117",
+    "loc": "YMPGMX",
+    "pnr_id": "YMPGMX-2026-06-15",
+    "ticket": "014440011701",
+    "pax": "IVANO ORMERANWYN",
+    "route": "YYZ-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-01",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_117",
+    "donor": "XZGMJH-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "ORMERANWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_118",
+    "loc": "YSNNNP",
+    "pnr_id": "YSNNNP-2026-06-15",
+    "ticket": "014440011801",
+    "pax": "BRENNA NETHERCOMBE",
+    "route": "YYZ-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-05",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_118",
+    "donor": "NVGTVZ-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "NETHERCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_119",
+    "loc": "HVTJFF",
+    "pnr_id": "HVTJFF-2026-06-15",
+    "ticket": "014440011901",
+    "pax": "JOELLE BRAMELCOMBE",
+    "route": "YYZ-YUL-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-07",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_119",
+    "donor": "JGKXHP-2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "BRAMELCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_120",
+    "loc": "DGPCGX",
+    "pnr_id": "DGPCGX-2026-06-15",
+    "ticket": "014440012001",
+    "pax": "CEDRICK IRONERWYN",
+    "route": "YYZ-YUL-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-09",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_120",
+    "donor": "VDPYCL-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "IRONERWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_121",
+    "loc": "RVZBSY",
+    "pnr_id": "RVZBSY-2026-06-15",
+    "ticket": "014440012101",
+    "pax": "JASPER CLIFFERWICK",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_121",
+    "donor": "QQYDGR-2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "CLIFFERWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_122",
+    "loc": "LTFLPP",
+    "pnr_id": "LTFLPP-2026-06-15",
+    "ticket": "014440012201",
+    "pax": "WINSLOW WESTLETON",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_122",
+    "donor": "QZHVJS-2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "WESTLETON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_123",
+    "loc": "BKQVSH",
+    "pnr_id": "BKQVSH-2026-06-15",
+    "ticket": "014440012301",
+    "pax": "DELPHINE DENELBURY",
+    "route": "TLV-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_123",
+    "donor": "MTDFDW-2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "DENELBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_124",
+    "loc": "LHQSTK",
+    "pnr_id": "LHQSTK-2026-06-15",
+    "ticket": "014440012401",
+    "pax": "ORSON TATELSHAW",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_124",
+    "donor": "SHVSJM-2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "TATELSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_125",
+    "loc": "KJCRRN",
+    "pnr_id": "KJCRRN-2026-06-15",
+    "ticket": "014440012501",
+    "pax": "BRENNA COTINGWOOD",
+    "route": "TLV-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-08",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_125",
+    "donor": "NRMDDD-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "COTINGWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_126",
+    "loc": "FWGLFZ",
+    "pnr_id": "FWGLFZ-2026-06-15",
+    "ticket": "014440012601",
+    "pax": "KIRA HAWOWFIELD",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-10",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_126",
+    "donor": "WQWWFB-2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "HAWOWFIELD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_127",
+    "loc": "GTJPRY",
+    "pnr_id": "GTJPRY-2026-06-15",
+    "ticket": "014440012701",
+    "pax": "TAMSIN SILVERANMORE",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-12",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_127",
+    "donor": "RHHTXC-2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "SILVERANMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_128",
+    "loc": "TSGHWJ",
+    "pnr_id": "TSGHWJ-2026-06-15",
+    "ticket": "014440012801",
+    "pax": "MIRABEL WILDENBURY",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-14",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_128",
+    "donor": "JJXFLD-2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "WILDENBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_129",
+    "loc": "SMXTBG",
+    "pnr_id": "SMXTBG-2026-06-15",
+    "ticket": "014440012901",
+    "pax": "ISOLDE EASTHURST",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-15",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_129",
+    "donor": "GFZTFN-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "EASTHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_130",
+    "loc": "CDHJWF",
+    "pnr_id": "CDHJWF-2026-06-15",
+    "ticket": "014440013001",
+    "pax": "GARETH MEREDALE",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-16",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_130",
+    "donor": "GDVNXN-2026-06-15",
+    "pax_names": [
+      [
+        "GARETH",
+        "MEREDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_131",
+    "loc": "VMWPSP",
+    "pnr_id": "VMWPSP-2026-06-15",
+    "ticket": "014440013101",
+    "pax": "FIONA FENOWTHORPE",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-17",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_131",
+    "donor": "QKNFCT-2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "FENOWTHORPE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_132",
+    "loc": "PLRXGB",
+    "pnr_id": "PLRXGB-2026-06-15",
+    "ticket": "014440013201",
+    "pax": "ELIAS TUTFIELD",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-18",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_132",
+    "donor": "NPFQSJ-2026-06-15",
+    "pax_names": [
+      [
+        "ELIAS",
+        "TUTFIELD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_133",
+    "loc": "DCTSRN",
+    "pnr_id": "DCTSRN-2026-06-15",
+    "ticket": "014440013301",
+    "pax": "ORSON WEXERHURST",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-19",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_133",
+    "donor": "DZBSVZ-2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "WEXERHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_134",
+    "loc": "MLMQBD",
+    "pnr_id": "MLMQBD-2026-06-15",
+    "ticket": "014440013401",
+    "pax": "JASPER WRENOWCOMBE",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_134",
+    "donor": "YNDRYG-2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "WRENOWCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_135",
+    "loc": "JZXDZP",
+    "pnr_id": "JZXDZP-2026-06-15",
+    "ticket": "014440013501",
+    "pax": "FIONA WRENLESTON",
+    "route": "TLV-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_135",
+    "donor": "XBBCQG-2026-06-15",
+    "pax_names": [
+      [
+        "FIONA",
+        "WRENLESTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_136",
+    "loc": "NVTSRF",
+    "pnr_id": "NVTSRF-2026-06-15",
+    "ticket": "014440013601",
+    "pax": "SVEN MEREERSTEAD",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-22",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_136",
+    "donor": "CYXPXS-2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "MEREERSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_137",
+    "loc": "VWKZQF",
+    "pnr_id": "VWKZQF-2026-06-15",
+    "ticket": "014440013701",
+    "pax": "ZEPHYR WOLFOWWYN",
+    "route": "YYZ-FRA-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-23",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_137",
+    "donor": "PGFDCZ-2026-06-15",
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "WOLFOWWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_138",
+    "loc": "WBJMHF",
+    "pnr_id": "WBJMHF-2026-06-15",
+    "ticket": "014440013801",
+    "pax": "PRIYA STANANGROVE",
+    "route": "YYZ-TLV",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-24",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_138",
+    "donor": "PRRJDF-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "STANANGROVE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_139",
+    "loc": "TJJRVJ",
+    "pnr_id": "TJJRVJ-2026-06-15",
+    "ticket": "014440013901",
+    "pax": "CEDRICK COTANCOTT",
+    "route": "TLV-YYZ-YVR",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_139",
+    "donor": "PQMZMP-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "COTANCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_140",
+    "loc": "ZLPXZJ",
+    "pnr_id": "ZLPXZJ-2026-06-15",
+    "ticket": "014440014001",
+    "pax": "EAMON BRIGHTANPOOL",
+    "route": "TLV-FRA-MUC",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_140",
+    "donor": "SCMJFH-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "BRIGHTANPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_141",
+    "loc": "BQYNRC",
+    "pnr_id": "BQYNRC-2026-06-15",
+    "ticket": "014440014101",
+    "pax": "ROMILLY BROOKELRIDGE",
+    "route": "TLV-YOW",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-03",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_141",
+    "donor": "WDBHBP-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "BROOKELRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_142",
+    "loc": "FXDTZN",
+    "pnr_id": "FXDTZN-2026-06-15",
+    "ticket": "014440014201",
+    "pax": "PERCY OAKERHURST",
+    "route": "YYZ-TLV",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-04",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_142",
+    "donor": "TTNFKJ-2026-06-15",
+    "pax_names": [
+      [
+        "PERCY",
+        "OAKERHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_143",
+    "loc": "YJVQMH",
+    "pnr_id": "YJVQMH-2026-06-15",
+    "ticket": "014440014301",
+    "pax": "GIDEON FROSTERWYN",
+    "route": "YYZ-TLV",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_143",
+    "donor": "RYTCSD-2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "FROSTERWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_144",
+    "loc": "SZDCTL",
+    "pnr_id": "SZDCTL-2026-06-15",
+    "ticket": "014440014401",
+    "pax": "KENJI BRAMANCROFT",
+    "route": "YYZ-FRA-TLV",
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_144",
+    "donor": "SCYMGV-2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "BRAMANCROFT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_145",
+    "loc": "DWDHLH",
+    "pnr_id": "DWDHLH-2026-06-15",
+    "ticket": "014440014501",
+    "pax": "TAMSIN OAKLEGROVE",
+    "route": "YYZ-TLV",
+    "status": "PENDING",
+    "syscode": "FD-ASL-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_145",
+    "donor": "PDSFGN-2026-06-15",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "OAKLEGROVE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_146",
+    "loc": "DQWWZC",
+    "pnr_id": "DQWWZC-2026-06-15",
+    "ticket": "014440014601",
+    "pax": "IVANO HAWERSTEAD",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-01",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_146",
+    "donor": "XYPPWP-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "HAWERSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_147",
+    "loc": "WCPBNZ",
+    "pnr_id": "WCPBNZ-2026-06-15",
+    "ticket": "014440014701",
+    "pax": "ISOLDE ULLSANDEN",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-02",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_147",
+    "donor": "FXJFLJ-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "ULLSANDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_148",
+    "loc": "MBDQPR",
+    "pnr_id": "MBDQPR-2026-06-15",
+    "ticket": "014440014801",
+    "pax": "ROMILLY RAVENANMORE",
+    "route": "CDG-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-03",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_148",
+    "donor": "VJDVBN-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "RAVENANMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_149",
+    "loc": "YMWXLX",
+    "pnr_id": "YMWXLX-2026-06-15",
+    "ticket": "014440014901",
+    "pax": "ORSON SELANWYN",
+    "route": "YYZ-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-04",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_149",
+    "donor": "NBHXSQ-2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "SELANWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_150",
+    "loc": "KXYLBR",
+    "pnr_id": "KXYLBR-2026-06-15",
+    "ticket": "014440015001",
+    "pax": "KIRA WRENMERE",
+    "route": "LHR-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-NE-01",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_150",
+    "donor": "NTJQBT-2026-06-15",
+    "pax_names": [
+      [
+        "KIRA",
+        "WRENMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_151",
+    "loc": "BQVSTK",
+    "pnr_id": "BQVSTK-2026-06-15",
+    "ticket": "014440015101",
+    "pax": "DAGNY STANOWWOOD",
+    "route": "LHR-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-MIXED-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_151",
+    "donor": "HKZQSC-2026-06-15",
+    "pax_names": [
+      [
+        "DAGNY",
+        "STANOWWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_152",
+    "loc": "TTVDSX",
+    "pnr_id": "TTVDSX-2026-06-15",
+    "ticket": "014440015201",
+    "pax": "ULRICH COTERMERE",
+    "route": "CDG-YYZ-TLV",
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-ND-01",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_152",
+    "donor": "SDHNDV-2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "COTERMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_153",
+    "loc": "JKDHWY",
+    "pnr_id": "JKDHWY-2026-06-15",
+    "ticket": "014440015301",
+    "pax": "MIRABEL CRESTOWSHAW",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-DUP-NE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_153",
+    "donor": "FBWKZL-2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "CRESTOWSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_154",
+    "loc": "KNVKKZ",
+    "pnr_id": "KNVKKZ-2026-06-15",
+    "ticket": "014440015401",
+    "pax": "ANNIKA CARLINGHAM",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-DUP-NE-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_154",
+    "donor": "MHYLXV-2026-06-15",
+    "pax_names": [
+      [
+        "ANNIKA",
+        "CARLINGHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_155",
+    "loc": "BLMLFC",
+    "pnr_id": "BLMLFC-2026-06-15",
+    "ticket": "014440015501",
+    "pax": "CEDRICK NORTHENHOLT",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_155",
+    "donor": "GYFHGR-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "NORTHENHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_156",
+    "loc": "YDVXFW",
+    "pnr_id": "YDVXFW-2026-06-15",
+    "ticket": "014440015601",
+    "pax": "CALLUM FAIRENHOLT",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_156",
+    "donor": "VTDZYJ-2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "FAIRENHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_157",
+    "loc": "PNPCVG",
+    "pnr_id": "PNPCVG-2026-06-15",
+    "ticket": "014440015701",
+    "pax": "SEBASTIAN WOODINGWORTH",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_157",
+    "donor": "CGJMXW-2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "WOODINGWORTH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_158",
+    "loc": "PLCPMT",
+    "pnr_id": "PLCPMT-2026-06-15",
+    "ticket": "014440015801",
+    "pax": "WESLEY DUNLETON",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_158",
+    "donor": "LKWNWJ-2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "DUNLETON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_159",
+    "loc": "FLYCXD",
+    "pnr_id": "FLYCXD-2026-06-15",
+    "ticket": "014440015901",
+    "pax": "CEDRICK KESOWFORD",
+    "route": "YUL-YYZ",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_159",
+    "donor": "VLSTXL-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "KESOWFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_160",
+    "loc": "QHCKCF",
+    "pnr_id": "QHCKCF-2026-06-15",
+    "ticket": "014440016001",
+    "pax": "ORSON DALEERMERE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_160",
+    "donor": "ZMFLSM-2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "DALEERMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_161",
+    "loc": "WNYDBP",
+    "pnr_id": "WNYDBP-2026-06-15",
+    "ticket": "014440016101",
+    "pax": "BRENNA PRESANDALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_161",
+    "donor": "JNMTFG-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "PRESANDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_162",
+    "loc": "BTYDJX",
+    "pnr_id": "BTYDJX-2026-06-15",
+    "ticket": "014440016201",
+    "pax": "XIMENA PRESLEVALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_162",
+    "donor": "GVXNDX-2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "PRESLEVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_163",
+    "loc": "JZCWTL",
+    "pnr_id": "JZCWTL-2026-06-15",
+    "ticket": "014440016301",
+    "pax": "WESLEY BLYENBECK",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-1000",
+    "amount": 1000,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_163",
+    "donor": "NMDYKM-2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "BLYENBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_164",
+    "loc": "MGYRVM",
+    "pnr_id": "MGYRVM-2026-06-15",
+    "ticket": "014440016401",
+    "pax": "ISOLDE EVEROWCROFT",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-700",
+    "amount": 700,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_164",
+    "donor": "KPNDZZ-2026-06-15",
+    "pax_names": [
+      [
+        "ISOLDE",
+        "EVEROWCROFT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_165",
+    "loc": "PGRBTL",
+    "pnr_id": "PGRBTL-2026-06-15",
+    "ticket": "014440016501",
+    "pax": "ROMILLY RIDGEERHAM",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_165",
+    "donor": "BVQCSN-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "RIDGEERHAM"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_166",
+    "loc": "CGNFML",
+    "pnr_id": "CGNFML-2026-06-15",
+    "ticket": "014440016601",
+    "pax": "NADEZHDA FAIRANLEY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_166",
+    "donor": "HJWLSH-2026-06-15",
+    "pax_names": [
+      [
+        "NADEZHDA",
+        "FAIRANLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_167",
+    "loc": "NNBSPJ",
+    "pnr_id": "NNBSPJ-2026-06-15",
+    "ticket": "014440016701",
+    "pax": "IVANO EVERENWOOD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_167",
+    "donor": "NMPNYQ-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "EVERENWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_168",
+    "loc": "CYBZRR",
+    "pnr_id": "CYBZRR-2026-06-15",
+    "ticket": "014440016801",
+    "pax": "JOELLE NETHERENVALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_168",
+    "donor": "CFGQFK-2026-06-15",
+    "pax_names": [
+      [
+        "JOELLE",
+        "NETHERENVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_169",
+    "loc": "STNDPZ",
+    "pnr_id": "STNDPZ-2026-06-15",
+    "ticket": "014440016901",
+    "pax": "BRENNA HAWANBY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_169",
+    "donor": "DQTDPN-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "HAWANBY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_170",
+    "loc": "DSKHFZ",
+    "pnr_id": "DSKHFZ-2026-06-15",
+    "ticket": "014440017001",
+    "pax": "GIDEON BARNOWLOW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_170",
+    "donor": "XFXZCL-2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "BARNOWLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_171",
+    "loc": "LDXFFF",
+    "pnr_id": "LDXFFF-2026-06-15",
+    "ticket": "014440017101",
+    "pax": "DELPHINE BARNANPOOL",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_171",
+    "donor": "PNJDTQ-2026-06-15",
+    "pax_names": [
+      [
+        "DELPHINE",
+        "BARNANPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_172",
+    "loc": "FYTBVD",
+    "pnr_id": "FYTBVD-2026-06-15",
+    "ticket": "014440017201",
+    "pax": "CALLUM STONEINGFORD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_172",
+    "donor": "BXKMJP-2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "STONEINGFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_173",
+    "loc": "KVHMVP",
+    "pnr_id": "KVHMVP-2026-06-15",
+    "ticket": "014440017301",
+    "pax": "ROMILLY SELRIDGE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_173",
+    "donor": "CTTCTN-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "SELRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_174",
+    "loc": "RYLJTW",
+    "pnr_id": "RYLJTW-2026-06-15",
+    "ticket": "014440017401",
+    "pax": "KENJI RIDGEOWSTEAD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_174",
+    "donor": "NZGYMB-2026-06-15",
+    "pax_names": [
+      [
+        "KENJI",
+        "RIDGEOWSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_175",
+    "loc": "VQBCYG",
+    "pnr_id": "VQBCYG-2026-06-15",
+    "ticket": "014440017501",
+    "pax": "YARDLEY LININGVALE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_175",
+    "donor": "WZRPYS-2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "LININGVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_176",
+    "loc": "FCLFGL",
+    "pnr_id": "FCLFGL-2026-06-15",
+    "ticket": "014440017601",
+    "pax": "BRENNA THORNOWMORE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_176",
+    "donor": "RJKYRF-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "THORNOWMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_177",
+    "loc": "HSPGLS",
+    "pnr_id": "HSPGLS-2026-06-15",
+    "ticket": "014440017701",
+    "pax": "QUENTIN MARSHLESHAW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_177",
+    "donor": "QSGGHR-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "MARSHLESHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_178",
+    "loc": "HFDDXY",
+    "pnr_id": "HFDDXY-2026-06-15",
+    "ticket": "014440017801",
+    "pax": "FREYA TUTSHAW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_178",
+    "donor": "TTWTGM-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "TUTSHAW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_179",
+    "loc": "QYDKVN",
+    "pnr_id": "QYDKVN-2026-06-15",
+    "ticket": "014440017901",
+    "pax": "BODHI CRESTELGROVE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_179",
+    "donor": "KJWPSZ-2026-06-15",
+    "pax_names": [
+      [
+        "BODHI",
+        "CRESTELGROVE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_180",
+    "loc": "HVRMRP",
+    "pnr_id": "HVRMRP-2026-06-15",
+    "ticket": "014440018001",
+    "pax": "GIDEON REDOWSTON",
+    "route": "YOW-YUL-LHR",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-30",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_180",
+    "donor": "MQSQQB-2026-06-15",
+    "pax_names": [
+      [
+        "GIDEON",
+        "REDOWSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_181",
+    "loc": "SMDBVB",
+    "pnr_id": "SMDBVB-2026-06-15",
+    "ticket": "014440018101",
+    "pax": "ROMILLY DUNELBROOK",
+    "route": "YOW-YUL-CDG",
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-31",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_181",
+    "donor": "QGSTGW-2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "DUNELBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_182",
+    "loc": "XSFDDP",
+    "pnr_id": "XSFDDP-2026-06-15",
+    "ticket": "014440018201",
+    "pax": "IVANO KIRKLEBURY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_182",
+    "donor": "XDGDHK-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "KIRKLEBURY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_183",
+    "loc": "DQHZFM",
+    "pnr_id": "DQHZFM-2026-06-15",
+    "ticket": "014440018301",
+    "pax": "EAMON EVERBECK",
+    "route": "YUL-MNL-CEB",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_183",
+    "donor": "RPZLSN-2026-06-15",
+    "pax_names": [
+      [
+        "EAMON",
+        "EVERBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_184",
+    "loc": "RGMZQK",
+    "pnr_id": "RGMZQK-2026-06-15",
+    "ticket": "014440018401",
+    "pax": "QUENTIN WILDTON",
+    "route": "YUL-MNL-CEB",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-DB-01",
+    "amount": 900,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_184",
+    "donor": "JXDYLL-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "WILDTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_185",
+    "loc": "DTSNCY",
+    "pnr_id": "DTSNCY-2026-06-15",
+    "ticket": "014440018501",
+    "pax": "FREYA ALDBECK",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_185",
+    "donor": "TPVCPC-2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "ALDBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_186",
+    "loc": "VRWNYX",
+    "pnr_id": "VRWNYX-2026-06-15",
+    "ticket": "014440018601",
+    "pax": "ULRICH WEXOWWOOD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_186",
+    "donor": "CRFRHZ-2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "WEXOWWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_187",
+    "loc": "GCZFVZ",
+    "pnr_id": "GCZFVZ-2026-06-15",
+    "ticket": "014440018701",
+    "pax": "WESLEY WOODOWLEY",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_187",
+    "donor": "ZPGDZZ-2026-06-15",
+    "pax_names": [
+      [
+        "WESLEY",
+        "WOODOWLEY"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_188",
+    "loc": "JFZJZW",
+    "pnr_id": "JFZJZW-2026-06-15",
+    "ticket": "014440018801",
+    "pax": "CEDRICK STONEDEN",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_188",
+    "donor": "QHHSRH-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "STONEDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_189",
+    "loc": "LJXVQQ",
+    "pnr_id": "LJXVQQ-2026-06-15",
+    "ticket": "014440018901",
+    "pax": "CEDRICK ULLSANCOMBE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_189",
+    "donor": "BVKBTR-2026-06-15",
+    "pax_names": [
+      [
+        "CEDRICK",
+        "ULLSANCOMBE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_190",
+    "loc": "BLWJNZ",
+    "pnr_id": "BLWJNZ-2026-06-15",
+    "ticket": "014440019001",
+    "pax": "IVANO MOSSELWICK",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_190",
+    "donor": "YTRHVV-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "MOSSELWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_191",
+    "loc": "KXFWCF",
+    "pnr_id": "KXFWCF-2026-06-15",
+    "ticket": "014440019101",
+    "pax": "MIRABEL STANENRIDGE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_191",
+    "donor": "VTGZPK-2026-06-15",
+    "pax_names": [
+      [
+        "MIRABEL",
+        "STANENRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_192",
+    "loc": "QPLSRG",
+    "pnr_id": "QPLSRG-2026-06-15",
+    "ticket": "014440019201",
+    "pax": "VESNA LANGINGSTEAD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_192",
+    "donor": "YXLPJV-2026-06-15",
+    "pax_names": [
+      [
+        "VESNA",
+        "LANGINGSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_193",
+    "loc": "NYBBFS",
+    "pnr_id": "NYBBFS-2026-06-15",
+    "ticket": "014440019301",
+    "pax": "PRIYA FAIROWSTON",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_193",
+    "donor": "NJQPGY-2026-06-15",
+    "pax_names": [
+      [
+        "PRIYA",
+        "FAIROWSTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_194",
+    "loc": "FBVNZN",
+    "pnr_id": "FBVNZN-2026-06-15",
+    "ticket": "014440019401",
+    "pax": "WINSLOW PRESANFORD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_194",
+    "donor": "GSVCLW-2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "PRESANFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_195",
+    "loc": "NPMYKH",
+    "pnr_id": "NPMYKH-2026-06-15",
+    "ticket": "014440019501",
+    "pax": "BRENNA OAKANCOTT",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_195",
+    "donor": "PFJYXM-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "OAKANCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_196",
+    "loc": "GNRCPJ",
+    "pnr_id": "GNRCPJ-2026-06-15",
+    "ticket": "014440019601",
+    "pax": "QUENTIN BLYANWORTH",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_196",
+    "donor": "DJWRGQ-2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "BLYANWORTH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_197",
+    "loc": "KDRYXD",
+    "pnr_id": "KDRYXD-2026-06-15",
+    "ticket": "014440019701",
+    "pax": "IVANO YEOERLOW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_197",
+    "donor": "PFYMSP-2026-06-15",
+    "pax_names": [
+      [
+        "IVANO",
+        "YEOERLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_198",
+    "loc": "GVXKJG",
+    "pnr_id": "GVXKJG-2026-06-15",
+    "ticket": "014440019801",
+    "pax": "OONA GREENINGLOW",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_198",
+    "donor": "CJZBQT-2026-06-15",
+    "pax_names": [
+      [
+        "OONA",
+        "GREENINGLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_199",
+    "loc": "SXYBVM",
+    "pnr_id": "SXYBVM-2026-06-15",
+    "ticket": "014440019901",
+    "pax": "BRENNA HODERFORD",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_199",
+    "donor": "NDCVRV-2026-06-15",
+    "pax_names": [
+      [
+        "BRENNA",
+        "HODERFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_200",
+    "loc": "QLZHBN",
+    "pnr_id": "QLZHBN-2026-06-15",
+    "ticket": "014440020001",
+    "pax": "SEBASTIAN KESENMERE",
+    "route": "YUL-YYZ",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "case": "FD_TC_200",
+    "donor": "CPFGSQ-2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "KESENMERE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_01",
+    "tc": "FD_ED_TC_01",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "PLLCXT",
+    "pnr_id": "PLLCXT-2026-06-15",
+    "ticket": "014441000101",
+    "pax": "TAMSIN DENENMORE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "TAMSIN",
+        "DENENMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_02",
+    "tc": "FD_ED_TC_02",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "MYXXZW",
+    "pnr_id": "MYXXZW-2026-06-15",
+    "ticket": "014441000201",
+    "pax": "JOELLE BARNOWVALE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "JOELLE",
+        "BARNOWVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_03",
+    "tc": "FD_ED_TC_03",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "CZBRQS",
+    "pnr_id": "CZBRQS-2026-06-15",
+    "ticket": "014441000301",
+    "pax": "QUENTIN IRONLOW",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "QUENTIN",
+        "IRONLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_04",
+    "tc": "FD_ED_TC_04",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "PNWTKR",
+    "pnr_id": "PNWTKR-2026-06-15",
+    "ticket": "014441000401",
+    "pax": "GIDEON IRONANDALE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "GIDEON",
+        "IRONANDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_05",
+    "tc": "FD_ED_TC_05",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "XWSMXD",
+    "pnr_id": "XWSMXD-2026-06-15",
+    "ticket": "014441000501",
+    "pax": "SEBASTIAN YARENBROOK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "YARENBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_06",
+    "tc": "FD_ED_TC_06",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "NHVYLT",
+    "pnr_id": "NHVYLT-2026-06-15",
+    "ticket": "014441000601",
+    "pax": "HALLIE REDLEFORD",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "HALLIE",
+        "REDLEFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_07",
+    "tc": "FD_ED_TC_07",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "TQCTXH",
+    "pnr_id": "TQCTXH-2026-06-15",
+    "ticket": "014441000701",
+    "pax": "ROSALIND BRENLEWICK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ROSALIND",
+        "BRENLEWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_08",
+    "tc": "FD_ED_TC_08",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "LWZYHQ",
+    "pnr_id": "LWZYHQ-2026-06-15",
+    "ticket": "014441000801",
+    "pax": "VESNA ASHLEBECK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "VESNA",
+        "ASHLEBECK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_09",
+    "tc": "FD_ED_TC_09",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "PQKDBV",
+    "pnr_id": "PQKDBV-2026-06-15",
+    "ticket": "014441000901",
+    "pax": "FREYA ROOKINGWYN",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "FREYA",
+        "ROOKINGWYN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_10",
+    "tc": "FD_ED_TC_10",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "SLLTCY",
+    "pnr_id": "SLLTCY-2026-06-15",
+    "ticket": "014441001001",
+    "pax": "OONA UNDERINGLOW",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "OONA",
+        "UNDERINGLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_11",
+    "tc": "FD_ED_TC_11",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "NBWVPF",
+    "pnr_id": "NBWVPF-2026-06-15",
+    "ticket": "014441001101",
+    "pax": "OONA FAIRANCROFT",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "OONA",
+        "FAIRANCROFT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_12",
+    "tc": "FD_ED_TC_12",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "TGKHFV",
+    "pnr_id": "TGKHFV-2026-06-15",
+    "ticket": "014441001201",
+    "pax": "SEBASTIAN MARSHANSTEAD",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "MARSHANSTEAD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_13",
+    "tc": "FD_ED_TC_13",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "SCCHTL",
+    "pnr_id": "SCCHTL-2026-06-15",
+    "ticket": "014441001301",
+    "pax": "ISOLDE DENINGWICK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ISOLDE",
+        "DENINGWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_14",
+    "tc": "FD_ED_TC_14",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "RJVFBT",
+    "pnr_id": "RJVFBT-2026-06-15",
+    "ticket": "014441001401",
+    "pax": "ADRIAN OAKELPOOL",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ADRIAN",
+        "OAKELPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_15",
+    "tc": "FD_ED_TC_15",
+    "src": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "loc": "LNLHHP",
+    "pnr_id": "LNLHHP-2026-06-15",
+    "ticket": "014441001501",
+    "pax": "OONA OATERTON",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "OONA",
+        "OATERTON"
+      ],
+      [
+        "DELPHINE",
+        "FAIRLEMORE"
+      ],
+      [
+        "HALLIE",
+        "HAWENTHORPE"
+      ],
+      [
+        "ISOLDE",
+        "ALDERBURY"
+      ],
+      [
+        "UMBERTO",
+        "GREENENFIELD"
+      ],
+      [
+        "JASPER",
+        "HODINGBECK"
+      ],
+      [
+        "KENJI",
+        "LONGINGHAM"
+      ],
+      [
+        "TAMSIN",
+        "SELINGPOOL"
+      ],
+      [
+        "DELPHINE",
+        "SEDGEFORD"
+      ],
+      [
+        "YANNICK",
+        "GARVALE"
+      ],
+      [
+        "ZORA",
+        "BLYINGBECK"
+      ],
+      [
+        "ISOLDE",
+        "HOLLOWBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_16",
+    "tc": "FD_ED_TC_16",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "HJZYHG",
+    "pnr_id": "HJZYHG-2026-06-15",
+    "ticket": "014441001601",
+    "pax": "MIRABEL GREENLEGROVE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "MIRABEL",
+        "GREENLEGROVE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_17",
+    "tc": "FD_ED_TC_17",
+    "src": "FD_TC_012",
+    "donor": "HLJZJS-2026-06-15",
+    "loc": "HWBVNN",
+    "pnr_id": "HWBVNN-2026-06-15",
+    "ticket": "014441001701",
+    "pax": "FIONA WINDENMORE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": true,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "FIONA",
+        "WINDENMORE"
+      ],
+      [
+        "CALLUM",
+        "WOLDLEMORE"
+      ],
+      [
+        "HEIDI",
+        "YEOERSTEAD"
+      ],
+      [
+        "UMBERTO",
+        "COTLOW"
+      ],
+      [
+        "YANNICK",
+        "GALDLEHOLT"
+      ],
+      [
+        "GARETH",
+        "HALBURY"
+      ],
+      [
+        "HALLIE",
+        "DALEELLOW"
+      ],
+      [
+        "ORSON",
+        "COTANHOLT"
+      ],
+      [
+        "GARETH",
+        "TATANWYN"
+      ],
+      [
+        "BRENNA",
+        "EVEROWFIELD"
+      ],
+      [
+        "ISOLDE",
+        "PRESINGRIDGE"
+      ],
+      [
+        "DELPHINE",
+        "FROSTERFORD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_18",
+    "tc": "FD_ED_TC_18",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "NYQRNM",
+    "pnr_id": "NYQRNM-2026-06-15",
+    "ticket": "014441001801",
+    "pax": "WESLEY OAKINGDALE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "WESLEY",
+        "OAKINGDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_19",
+    "tc": "FD_ED_TC_19",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "DRCGVJ",
+    "pnr_id": "DRCGVJ-2026-06-15",
+    "ticket": "014441001901",
+    "pax": "YARDLEY HALELTON",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "YARDLEY",
+        "HALELTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_20",
+    "tc": "FD_ED_TC_20",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "NNWFMD",
+    "pnr_id": "NNWFMD-2026-06-15",
+    "ticket": "014441002001",
+    "pax": "UMBERTO BROOKENWORTH",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "UMBERTO",
+        "BROOKENWORTH"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_21",
+    "tc": "FD_ED_TC_21",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "HSYPBZ",
+    "pnr_id": "HSYPBZ-2026-06-15",
+    "ticket": "014441002101",
+    "pax": "ULRICH ROOKANTON",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ULRICH",
+        "ROOKANTON"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_22",
+    "tc": "FD_ED_TC_22",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "THPQZP",
+    "pnr_id": "THPQZP-2026-06-15",
+    "ticket": "014441002201",
+    "pax": "BODHI WESTRIDGE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "BODHI",
+        "WESTRIDGE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_23",
+    "tc": "FD_ED_TC_23",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "FGQCPC",
+    "pnr_id": "FGQCPC-2026-06-15",
+    "ticket": "014441002301",
+    "pax": "WINSLOW STONELEDEN",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "WINSLOW",
+        "STONELEDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_24",
+    "tc": "FD_ED_TC_24",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "BWMHCL",
+    "pnr_id": "BWMHCL-2026-06-15",
+    "ticket": "014441002401",
+    "pax": "ADRIAN STANERBROOK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ADRIAN",
+        "STANERBROOK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_25",
+    "tc": "FD_ED_TC_25",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "NPRCTL",
+    "pnr_id": "NPRCTL-2026-06-15",
+    "ticket": "014441002501",
+    "pax": "VIOLETA RAINENPOOL",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "VIOLETA",
+        "RAINENPOOL"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_26",
+    "tc": "FD_ED_TC_26",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "DYHCVV",
+    "pnr_id": "DYHCVV-2026-06-15",
+    "ticket": "014441002601",
+    "pax": "JOELLE COTENCOTT",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "JOELLE",
+        "COTENCOTT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_ED_TC_27",
+    "tc": "FD_ED_TC_27",
+    "src": "FD_TC_078",
+    "donor": "RGZFFN-2026-06-15",
+    "loc": "TFWCBJ",
+    "pnr_id": "TFWCBJ-2026-06-15",
+    "ticket": "014441002701",
+    "pax": "ROSALIND PENANDALE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-13",
+    "amount": 300,
+    "currency": "EUR",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ROSALIND",
+        "PENANDALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_001",
+    "tc": "FD_PAY_TC_001",
+    "src": "FD_TC_001",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "VHHQJN",
+    "pnr_id": "VHHQJN-2026-06-15",
+    "ticket": "014441002801",
+    "pax": "HEIDI IRONLEWICK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "HEIDI",
+        "IRONLEWICK"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_002",
+    "tc": "FD_PAY_TC_002",
+    "src": "FD_TC_006",
+    "donor": "QBMXTJ-2026-06-15",
+    "loc": "RPWZNJ",
+    "pnr_id": "RPWZNJ-2026-06-15",
+    "ticket": "014441002901",
+    "pax": "ZEPHYR ORMERHOLT",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ZEPHYR",
+        "ORMERHOLT"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_003",
+    "tc": "FD_PAY_TC_003",
+    "src": "FD_TC_007",
+    "donor": "GPBSGH-2026-06-15",
+    "loc": "MJFYRN",
+    "pnr_id": "MJFYRN-2026-06-15",
+    "ticket": "014441003001",
+    "pax": "UMBERTO ULLSANWOOD",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "UMBERTO",
+        "ULLSANWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_004",
+    "tc": "FD_PAY_TC_004",
+    "src": "FD_TC_008",
+    "donor": "STCFDT-2026-06-15",
+    "loc": "SBRCRW",
+    "pnr_id": "SBRCRW-2026-06-15",
+    "ticket": "014441003101",
+    "pax": "NIKOLAI CHADELHURST",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "NIKOLAI",
+        "CHADELHURST"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_005",
+    "tc": "FD_PAY_TC_005",
+    "src": "FD_TC_009",
+    "donor": "PSKZMR-2026-06-15",
+    "loc": "PBTVHY",
+    "pnr_id": "PBTVHY-2026-06-15",
+    "ticket": "014441003201",
+    "pax": "MIRABEL LARKANDEN",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "MIRABEL",
+        "LARKANDEN"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_006",
+    "tc": "FD_PAY_TC_006",
+    "src": "FD_TC_010",
+    "donor": "QDGQMX-2026-06-15",
+    "loc": "TDHCJM",
+    "pnr_id": "TDHCJM-2026-06-15",
+    "ticket": "014441003301",
+    "pax": "UMBERTO BLYLEWOOD",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "UMBERTO",
+        "BLYLEWOOD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_007",
+    "tc": "FD_PAY_TC_007",
+    "src": "FD_TC_013",
+    "donor": "QFMQSH-2026-06-15",
+    "loc": "CZXDXC",
+    "pnr_id": "CZXDXC-2026-06-15",
+    "ticket": "014441003401",
+    "pax": "QUENTIN ORMERENVALE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "QUENTIN",
+        "ORMERENVALE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_008",
+    "tc": "FD_PAY_TC_008",
+    "src": "FD_TC_014",
+    "donor": "JWKSTF-2026-06-15",
+    "loc": "XSQLNJ",
+    "pnr_id": "XSQLNJ-2026-06-15",
+    "ticket": "014441003501",
+    "pax": "PRIYA REDOWGATE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "PRIYA",
+        "REDOWGATE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_009",
+    "tc": "FD_PAY_TC_009",
+    "src": "FD_TC_015",
+    "donor": "TDFTDR-2026-06-15",
+    "loc": "SCQYNB",
+    "pnr_id": "SCQYNB-2026-06-15",
+    "ticket": "014441003601",
+    "pax": "ULRICH PRESOWFIELD",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "ULRICH",
+        "PRESOWFIELD"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_010",
+    "tc": "FD_PAY_TC_010",
+    "src": "FD_TC_016",
+    "donor": "XXBCLH-2026-06-15",
+    "loc": "VNYYWG",
+    "pnr_id": "VNYYWG-2026-06-15",
+    "ticket": "014441003701",
+    "pax": "VESNA PENERMORE",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "VESNA",
+        "PENERMORE"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_011",
+    "tc": "FD_PAY_TC_011",
+    "src": "FD_TC_017",
+    "donor": "YWJHNS-2026-06-15",
+    "loc": "BVTJTH",
+    "pnr_id": "BVTJTH-2026-06-15",
+    "ticket": "014441003801",
+    "pax": "BODHI IRONERLOW",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "BODHI",
+        "IRONERLOW"
+      ]
+    ],
+    "uniq_names": true
+  },
+  {
+    "case": "FD_PAY_TC_012",
+    "tc": "FD_PAY_TC_012",
+    "src": "FD_TC_026",
+    "donor": "XTWDBY-2026-06-15",
+    "loc": "KQXDKC",
+    "pnr_id": "KQXDKC-2026-06-15",
+    "ticket": "014441003901",
+    "pax": "KIRA CALDLEBROOK",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+    "phone": "+94712534323",
+    "pin": true,
+    "pax_names": [
+      [
+        "KIRA",
+        "CALDLEBROOK"
+      ]
+    ],
+    "uniq_names": true
+  }
+]

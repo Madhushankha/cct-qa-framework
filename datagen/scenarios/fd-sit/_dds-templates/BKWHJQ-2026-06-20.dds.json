@@ -1,0 +1,197 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "BKWHJQ-2026-06-20",
+  "pnr": "BKWHJQ"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "CDG",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "BKWHJQ-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 856,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 856,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#856#2026-06-20#CDG"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "CDG",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "BKWHJQ-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 856,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 856,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#856#2026-06-20#CDG"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "BKWHJQ-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "856",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YUL",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "BKWHJQ-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-EU-EL-01",
+     "reason": "UK Disruption - Delay at arrival 3 to less than 4 hours + controllable code",
+     "failureReasons": null,
+     "compensationDetails": {
+      "amount": 600,
+      "currency": "EUR",
+      "delayBand": "DELAY_4_HOURS_OR_MORE",
+      "expiryDate": "2027-12-31"
+     }
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "BKWHJQ-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "BKWHJQ-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "BKWHJQ-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 856,
+   "departureAirport": "CDG",
+   "arrivalAirport": "YUL",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "delayMinutes": 0,
+   "delayCategory": "NO_TRAVEL",
+   "passengerEligibility": [
+    {
+     "passengerId": "BKWHJQ-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "SoC-EU-EL-05",
+     "reason": "No travel Return - Flight cancelled",
+     "expiryDate": "2027-12-31",
+     "expenseCategories": [
+      {
+       "type": "MEAL",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 30
+      },
+      {
+       "type": "ACCOMMODATION",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 500
+      },
+      {
+       "type": "TRANSPORTATION",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 200
+      },
+      {
+       "type": "COMMUNICATION",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 30
+      },
+      {
+       "type": "PARKING",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 50
+      },
+      {
+       "type": "ESSENTIALS",
+       "region": "EU",
+       "delayBand": "NO_TRAVEL",
+       "currency": "EUR",
+       "amount": 30
+      }
+     ],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

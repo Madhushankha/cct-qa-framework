@@ -1,0 +1,23 @@
+[
+ {
+  "pnr_id": "WBSMWF-2026-06-15",
+  "syscode": "FD-APPR-PE-01",
+  "status": "PENDING",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca"
+ },
+ {
+  "pnr_id": "VZFLKH-2026-06-15",
+  "syscode": "FD-EU-PE-01",
+  "status": "PENDING",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca"
+ },
+ {
+  "pnr_id": "HXHSFG-2026-06-15",
+  "syscode": "FD-ASL-PE-01",
+  "status": "PENDING",
+  "pin": true,
+  "email": "doha.al-dujaili@aircanada.ca"
+ }
+]

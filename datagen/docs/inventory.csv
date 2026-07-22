@@ -1,0 +1,1034 @@
+Service,ResourceType,ResourceId,Name,Application,Environment,Notes
+EC2,VPC,vpc-074002f57df8a6967,AC-CCT-CRT-vpc,CCT,CRT,cidr=10.111.196.0/22 default=False
+EC2,Subnet,subnet-09a958f7cf65b24b9,AC-CCT-CRT-vpc-db-ca-central-1b,CCT,CRT,cidr=10.111.199.32/27 az=ca-central-1b pubip=False
+EC2,Subnet,subnet-035949079d4d2e77b,AC-CCT-CRT-vpc-private-ca-central-1d,CCT,CRT,cidr=10.111.198.0/24 az=ca-central-1d pubip=False
+EC2,Subnet,subnet-0a0c5150645eb23ac,AC-CCT-CRT-vpc-private-ca-central-1a,CCT,CRT,cidr=10.111.196.0/24 az=ca-central-1a pubip=False
+EC2,Subnet,subnet-017249b71fabb01ad,AC-CCT-CRT-vpc-db-ca-central-1d,CCT,CRT,cidr=10.111.199.64/27 az=ca-central-1d pubip=False
+EC2,Subnet,subnet-00243590eac89c415,AC-CCT-CRT-vpc-private-ca-central-1b,CCT,CRT,cidr=10.111.197.0/24 az=ca-central-1b pubip=False
+EC2,Subnet,subnet-027d08767ae12aec9,AC-CCT-CRT-vpc-db-ca-central-1a,CCT,CRT,cidr=10.111.199.0/27 az=ca-central-1a pubip=False
+EC2,RouteTable,rtb-0e49812bab42b451b,AC-CCT-CRT-vpc-private-ca-central-1b,CCT,CRT,10.111.196.0/22->local;0.0.0.0/0->tgw-040d00704a8a525c2;pl-7da54014->vpce-0788ca05796c74578
+EC2,RouteTable,rtb-0088c2918c2813bbb,AC-CCT-CRT-vpc-private-ca-central-1d,CCT,CRT,10.111.196.0/22->local;0.0.0.0/0->tgw-040d00704a8a525c2;pl-7da54014->vpce-0788ca05796c74578
+EC2,RouteTable,rtb-03a3a0d0b4a4ed226,AC-CCT-CRT-vpc-private-ca-central-1a,CCT,CRT,10.111.196.0/22->local;0.0.0.0/0->tgw-040d00704a8a525c2;pl-7da54014->vpce-0788ca05796c74578
+EC2,RouteTable,rtb-0c5dba032c1892930,AC-CCT-CRT-vpc-default,CCT,CRT,10.111.196.0/22->local
+EC2,TransitGatewayAttachment,tgw-attach-04cf5daa322554028,AC-CCT-CRT-sharedservices-cac,CCT,CRT,tgw=tgw-040d00704a8a525c2 owner=378463553233 vpc=vpc-074002f57df8a6967
+EC2,VPCEndpoint,vpce-03fa192d31333156e,ssmmessages-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ssmmessages
+EC2,VPCEndpoint,vpce-0e9c6d5de94d7a9cd,ec2messages-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ec2messages
+EC2,VPCEndpoint,vpce-09ef27d7c8c0fd8bc,pipes-data-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.pipes-data
+EC2,VPCEndpoint,vpce-03821bfb46b9a149c,kms-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.kms
+EC2,VPCEndpoint,vpce-076d2a01d1308c048,s3-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.s3
+EC2,VPCEndpoint,vpce-0c3ecb948a848c65a,ssm-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ssm
+EC2,VPCEndpoint,vpce-0a9cd5265db085857,ecr.api-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ecr.api
+EC2,VPCEndpoint,vpce-039c7c4449ef5934c,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-0a268b84d32edc322
+EC2,VPCEndpoint,vpce-0df1af3f8e8e66c5e,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-02514fc06cfc4643a
+EC2,VPCEndpoint,vpce-07235cc34fac22811,ac-cct-crt-execute-api-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.execute-api
+EC2,VPCEndpoint,vpce-028451147c07df9ea,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-0a268b84d32edc322
+EC2,VPCEndpoint,vpce-0cd3c2f765d8bfad3,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-02514fc06cfc4643a
+EC2,VPCEndpoint,vpce-0ece50561048eb91d,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-0a268b84d32edc322
+EC2,VPCEndpoint,vpce-0d736085c2d527e8c,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-02514fc06cfc4643a
+EC2,VPCEndpoint,vpce-0788ca05796c74578,ac-cct-crt-01-s3-gateway-vpc-endpoint,CCT,CRT,Gateway com.amazonaws.ca-central-1.s3
+EC2,VPCEndpoint,vpce-0caf954871f504585,ac-cct-crt-cloudwatch-logs-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.logs
+EC2,VPCEndpoint,vpce-01ca837794f7dba2f,ac-cct-crt-secretsmanager-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.secretsmanager
+EC2,VPCEndpoint,vpce-0fc7254a034339db3,ac-cct-crt-ecs-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ecs
+EC2,VPCEndpoint,vpce-0dce697f4b55e363a,ac-cct-crt-ecr-dkr-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.ecr.dkr
+EC2,VPCEndpoint,vpce-0cef7d1bc38e41839,ac-cct-crt-entityresolution-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.entityresolution
+EC2,VPCEndpoint,vpce-08325890e22fb0f20,ac-cct-crt-profile-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.profile
+EC2,VPCEndpoint,vpce-0bd33603e101226ee,ac-cct-crt-monitoring-vpc-endpoint,CCT,CRT,Interface com.amazonaws.ca-central-1.monitoring
+EC2,VPCEndpoint,vpce-0444c2a5536688239,,CCT,CRT,Interface com.amazonaws.ca-central-1.sts
+EC2,VPCEndpoint,vpce-08df24e5a2e771160,,CCT,CRT,Interface com.amazonaws.ca-central-1.lambda
+EC2,VPCEndpoint,vpce-0f6bf5bc216bdffe4,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-05ff51ff575a5189c
+EC2,VPCEndpoint,vpce-0c683a07febbe1117,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-0a268b84d32edc322
+EC2,VPCEndpoint,vpce-05f62d5fae306626f,,CCT,CRT,Interface com.amazonaws.vpce.ca-central-1.vpce-svc-02514fc06cfc4643a
+EC2,SecurityGroup,sg-0c0fd1f80ad5f4ca4,AC-CCT-CRT-ssm-sg,CCT,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0f0eed0c2bbceb796,ac-cct-crt-monitoring-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-049bed8299f3bc58b,ac-cct-kafka-client-sg-crt-cac1,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0a15ac3ad55b97888,cct-glue-historical-crt-CmPassengerCorrMigrationJobCmPassengerCorrMigrationJobSecurityGroup2C7FF71D-5TP7Bal8wgHk,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c2a5d08591264da4,cct-sp-bookingChange-crt-routerSG229C5158-BKAAwyWynghd,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0b0e484a00241aca4,cct-sp-flightStatus-crt-byFINSG8379429F-35r7jWdevYZf,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-03f98955d1c57ba6c,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageFlinkSecurityGroupDAB0E5B3-wRV5c0NObLkV,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0aebcc400e1158ae5,cct-trip-tracer-infra-crt-FargateServiceSGDABE5946-n03XxS5QSTqB,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-08c777203dc1a77ed,ac-cct-crt-case-processor-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0742d297e9e3aea98,ac-cct-crt-ask-ac-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-038325e02cba92cbb,cct-customer-profile-infrastructure-crt-FargateServiceSGDABE5946-GwJhYicZiqMK,Customer Profile,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-03db4ce7dc6947459,cct-glue-snowflake-crt-CancelCodeGlueJobGlueSecurityGroup8F7C4121-EHVQjudc5hDq,Trip Tracer,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0890f862b554327b0,cct-sp-customer-crt-customerprofileSGC0DD199F-wzXmizdNlWuo,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-06563b4418d469bfb,ac-cct-msk-sg-crt-cac1,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0858ea0f228d1c3bd,cct-sp-flightStatus-crt-byflightnumberSG900D010E-a5pdPIDyzVSR,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-037baba6e590e6163,ac-cct-crt-rule-engine-platform-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0f5aeba22aae33767,cct-sp-stepUp-crt-verifyidvcallbackSG953E3485-6eqzlL0y3WHx,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0fe75bb4bca68fbbd,cct-flink-etl-cm-pax-correlation-crt-FlinkHistoricalCMPaxCorrelationFlinkSecurityGroupF8B1DE73-ZoZtt3ejpZ3X,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0dee0db9616c7b7fd,ac-cct-crt-case-mgmt-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-008a73a392b71f659,cct-sp-getTrip-crt-gettripSG5ABB2665-hxmsJa0y0reX,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0206097aac7e38c30,ac-cct-crt-case-mgmt-alb-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-02388227327be33c6,cct-sp-flightStatus-crt-bydepartureairportSGCF46AB50-r6k14wyZ7Fhq,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-02c2e59cf6b7892d3,ac-cct-cmp-lambdas-crt-MessageMetadataEnrichLambdaSG10977187-SuFnxTVA5tov,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-07518285ebccca1ef,cct-flink-etl-stormx-crt-FlinkHistoricalStormXFlinkSecurityGroupE8652A8A-j2HB3nd4vSGj,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-097deb0cbfe6e06a7,ac-cct-cmp-infra-crt-VpcEndpointSG69334BC7-NKUv9AAA5FIt,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-067291d0cea176819,cct-glue-historical-crt-StormxHistoricalMigrationJobStormxHistoricalMigrationJobSecurityGroup23A20AF4-0gmp85dagWcx,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-05c2677e9918e12b1,cct-glue-historical-crt-BaggageHistoricalMigrationJobBaggageHistoricalMigrationJobSecurityGroupA0C14A61-LtEGgyDGYpSP,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0efc84576181ac753,cct-glue-historical-crt-SnowflakeTestJobSnowflakeTestJobSecurityGroupAF4A4F9F-jteJFVOOXtAe,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c91b066f625dcd1b,cct-glue-snowflake-crt-ArrivalCodeGlueJobGlueSecurityGroup9DE5A337-KFLDdSHjOzvV,Trip Tracer,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-00d38a719aca948ea,cct-glue-snowflake-crt-OagGlueJobGlueSecurityGroupB08E32E1-3FpkzWtxwuxr,Trip Tracer,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0bfe3aa8162f0d6b2,ac-cct-crt-acpedia-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-02180e246fd8ce841,cct-sp-flightStatus-crt-byrouteSG28D3CEF2-9ID9TwmeZdVO,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0086a2e6cd4eb9fc2,cct-sp-notifications-crt-notificationsSG4F70B6B1-94iNXh2MXIuh,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0797c16e7a03f1413,cct-flink-etl-fdm-crt-FlinkHistoricalFDMFlinkSecurityGroup85273F9C-tYRXfofMryoW,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0622ae0be92776f85,cct-sp-baggage-crt-byidSG9958DFDE-hHtelIb89KCz,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c32e3586a40d6ed3,ac-cct-rule-engine-crt-cac1-cluster-sg20260414042354487300000001,Customer Care Transformation - Rule Engine RDS,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0ae1fb6caf059dbec,ac-cct-trip-tracer-rds-cluster-crt-cac1-20251224233250480000000001,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0dd01841d494a26cd,cct-flink-etl-tkt-crt-FlinkHistoricalTKTFlinkSecurityGroupE559854D-DkWkuDkk521e,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-065e224a22b7ec179,ac-cct-crt-ecr-dkr-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0cd16cab037e4a151,ac-cct-crt-entityresolution-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0cc3ef469faddefa8,ac-cct-crt-claims-dashboard-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0d26af90edb8978ef,cct-flink-etl-pnr-crt-FlinkHistoricalPNRFlinkSecurityGroup522AA651-CrzwO4F8GA0C,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-00a947a4c9f683c24,cct-sp-flightStatus-crt-byinboundSGB0CA15C1-46RxCkUh2Q6c,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-05095549534343d18,cct-flink-etl-cancel-voucher-crt-FlinkHistoricalCancelVoucherFlinkSecurityGroupB750E5B7-rb06RvsoNjCW,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-09c9238ca1a7ec7e7,ac-cct-case-mgmt-crt-cac1-cluster-sg20260116180243515500000001,Customer Care Transformation - Ask AC,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0163c1b7d011cd66b,cct-trip-tracer-infra-crt-FargateServiceSGDABE5946-XquUC8nyNAZH,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0e5563ba5b0facf3b,ac-cct-ask-ac-crt-cac1-cluster-sg20260113231252640900000001,Customer Care Transformation - Ask AC,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-09554ff72a93dce36,cct-sp-flightStatus-crt-byarrivalairportSG41829921-KwVNPkBpCFBg,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0dd96b655df81e100,cct-sp-bookingChange-crt-eligibilitySG0F5753A7-vNhxx2lzIqa8,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0eeead0f462142392,cct-sp-stepUp-crt-sendotpSG976C7D25-q8FYuXppaJIe,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c2597c3a5040c70b,ac-cct-crt-case-intake-ecs-fargate-service-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-058c2d741586117fa,cct-sp-case-crt-discoverySG7966AE99-h0ahQfjLLPMr,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0addc937d8e7c913f,cct-database-management-crt-CreatePartitionLambdaSG611A4343-zpKJgjsWxlcn,Trip Tracer,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c125e96cc771f726,cct-flink-etl-aacc-crt-FlinkHistoricalAACCFlinkSecurityGroup56EBBE64-PoFqC2nWUYjn,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-04520d4fc3ae97d4b,cct-sp-stepUp-crt-idvcreateinquirySGADCA204C-0xbGU9N29XJ1,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-06b475cc874cf870e,ac-cct-cmp-lambdas-crt-MessageProcessorLambdaSG9191A4C0-Rkt2m30VIguv,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0a2f88b8c2752e00d,ac-cct-cp-msk-connect-sg-crt,Customer Profile,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0b36e6a832503789f,ac-cct-crt-secretsmanager-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0413609317b898e38,cct-glue-historical-crt-IcouponHistoricalMigrationJobIcouponHistoricalMigrationJobSecurityGroupE035C268-DoTkirr9yExt,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0e2439c2f554a2b1a,ac-cct-cmp-lambdas-crt-StartChatLambdaSGEB6233EA-etLl4m2IXYQM,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-04fbdf309539e968c,ac-cct-crt-execute-api-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0b4feb18b68bb2c6c,ac-cct-crt-ecs-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0be0a55d4a2fcb41c,cct-sp-stepUp-crt-getcontactinfoSG8F0FA540-tzt70foKDMdc,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0cf954ae6d342684d,ac-cct-msk-connect-sg-crt,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-03e74c37b0986272c,cct-sp-case-crt-proxySG4F60DB1C-cbWYWkscQizU,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c74a18f8cbf6d48b,cct-flink-etl-icoupon-redemption-crt-FlinkHistoricaliCouponRedemptionFlinkSecurityGroup56374BAA-FSduNlpnTxC3,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-02c4649c964e17f40,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponFlinkSecurityGroup7149899C-ogUeXsUUApqr,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0a0449a3d86568188,cct-flink-etl-pnr-tkt-correlation-crt-FlinkHistoricalPNRTKTCorrelationFlinkSecurityGroupF775BFFE-wMOjIG1p7yW1,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0f464382096f9b559,ac-cct-crt-profile-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-09d4f32c2f06bebec,cct-sp-stepUp-crt-verifyotpSGEBE988D3-JzG6tMq8l7WF,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0c6167026d04b8ce4,ac-cct-cmp-lambdas-crt-AiAgentLambdaSG22040540-qHuUBzzdGL5L,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-06c38becb97ecb167,ac-cct-crt-acpedia-alb-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-041d103c35a86b619,ac-cct-crt-ask-ac-alb-sg,Customer Care Transformation - Case MGMT Service,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-051ad2de8fbf1ff12,cct-sp-validateToken-crt-validatelogintokenSGBF6B02B2-n79BJ9qfhtce,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0250509b48a209f5f,ac-cct-trip-tracer-redshift-sg-crt,Customer Care Transformation - Trip Tracer,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-05cee15ef6fe66efc,cct-flink-etl-cm-crt-FlinkHistoricalCmFlinkSecurityGroupD8A55D3A-4sK4ANp0NSwu,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0d8fdad116f178dbe,arc75-qa-agent-cloudflared,CCT,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0b9efbab289414b16,cct-sp-infra-crt-jwtauthorizerSG466F1FF5-vxE2qUpCjhFB,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-069f45890dc6654df,cct-sp-baggage-crt-bypnrSG83C28F19-zvMASTovhFlz,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0300f76767d5e76ac,cct-sp-stepUp-crt-revokejwtSGABF0D27C-YqncPPUMnZ1E,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0bac009f12d91da34,cct-sp-stepUp-crt-resendotpSGE200B245-XnlyrgYCuGpn,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0aefa686508ab75a6,cct-glue-historical-crt-PnrTicketEmdCorrMigrationJobPnrTicketEmdCorrMigrationJobSecurityGroup8F836D18-iVXKFHEoWoNI,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-075cd0a5bd18568a7,ac-cct-cmp-lambdas-crt-EnableStreamingLambdaSGCCCD8249-MFgKeRU4xzcT,Channel Manager Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-076578d8e9ee07104,ac-cct-crt-cloudwatch-logs-vpc-endpoint-sg,Customer Care Transformation,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-09736227a69d38b3d,default,CCT,CRT,vpc=vpc-074002f57df8a6967
+EC2,SecurityGroup,sg-0f3c8c997aa1364cf,cct-glue-historical-crt-PnrHistoricalMigrationJobPnrHistoricalMigrationJobSecurityGroupC5ED0001-NWsp7UwAZMpc,Service Proxy,CRT,vpc=vpc-074002f57df8a6967
+EC2,Instance,i-0d3ada26f830a5491,test-a,CCT,CRT,t2.micro state=running ip=10.111.196.101
+EC2,Instance,i-04ee64277a4a29f69,ac-cct-kafka-client-crt-cac1,Customer Care Transformation,CRT,t4g.nano state=running ip=10.111.198.144
+ECS,Cluster,ac-cct-crt-ecs-cluster,ac-cct-crt-ecs-cluster,CCT,CRT,
+ECS,Cluster,cct-trip-tracer-cluster-crt,cct-trip-tracer-cluster-crt,CCT,CRT,
+ECS,Cluster,arc75-qa-agent,arc75-qa-agent,CCT,CRT,
+ECS,Cluster,cct-customer-profile-cluster-crt,cct-customer-profile-cluster-crt,CCT,CRT,
+ECS,Service,ac-cct-crt-case-processor-ecs-fargate-service,ac-cct-crt-case-processor-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=0 task=case-processor-crt-fargate-task:1
+ECS,Service,ac-cct-crt-case-intake-ecs-fargate-service,ac-cct-crt-case-intake-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=1 task=case-intake-crt-fargate-task:6
+ECS,Service,ac-cct-crt-acpedia-ecs-fargate-service,ac-cct-crt-acpedia-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=0 task=acpedia-crt-fargate-task:1
+ECS,Service,rule-engine-platform-crt-service,rule-engine-platform-crt-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=1 task=rule-engine-platform-crt-fargate-task:25
+ECS,Service,ac-cct-crt-claims-dashboard-ecs-fargate-service,ac-cct-crt-claims-dashboard-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=0 task=claims-dashboard-crt-fargate-task:2
+ECS,Service,ac-cct-crt-case-mgmt-ecs-fargate-service,ac-cct-crt-case-mgmt-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=0 task=case-mgmt-crt-fargate-task:1
+ECS,Service,ac-cct-crt-ask-ac-ecs-fargate-service,ac-cct-crt-ask-ac-ecs-fargate-service,CCT,CRT,cluster=ac-cct-crt-ecs-cluster desired=1 running=0 task=ask-ac-crt-fargate-task:1
+ECS,Service,cct-customer-profile-gigya-crt,cct-customer-profile-gigya-crt,customer-profile,CRT,cluster=cct-customer-profile-cluster-crt desired=1 running=1 task=cct-customer-profile-gigya-crt:3
+ECS,Service,cct-customer-profile-pnr-crt,cct-customer-profile-pnr-crt,customer-profile,CRT,cluster=cct-customer-profile-cluster-crt desired=1 running=1 task=cct-customer-profile-pnr-crt:11
+ECS,Service,cct-customer-profile-ifly-crt,cct-customer-profile-ifly-crt,customer-profile,CRT,cluster=cct-customer-profile-cluster-crt desired=1 running=1 task=cct-customer-profile-ifly-crt:3
+ECS,Service,arc75-qa-agent-cloudflared,arc75-qa-agent-cloudflared,arc75,CRT,cluster=arc75-qa-agent desired=1 running=1 task=arc75-qa-agent-cloudflared:3
+Lambda,Function,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeployment-JEb6r7tY63mj,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeployment-JEb6r7tY63mj,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-ingestion-tkt-trans-redrive-crt,cct-ingestion-tkt-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,controltower-kinesis-ca-central-1,controltower-kinesis-ca-central-1,CCT,CRT,runtime=nodejs16.x mem=128 vpc=none
+Lambda,Function,cct-shared-infra-crt-LogRetentionaae0aa3c5b4d4f87b-bqsuCgj2W56Q,cct-shared-infra-crt-LogRetentionaae0aa3c5b4d4f87b-bqsuCgj2W56Q,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeployment-t4m5ZatiUQGR,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeployment-t4m5ZatiUQGR,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-tkt-historical--FlinkHistoricalTKTDeploy-o7enCl8Gyvyj,cct-flink-tkt-historical--FlinkHistoricalTKTDeploy-o7enCl8Gyvyj,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHa-DJYTnRgzxMrU,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHa-DJYTnRgzxMrU,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-trip-tracer-infra-crt-LogRetentionaae0aa3c5b4d-pRKavvr0FQ2O,cct-trip-tracer-infra-crt-LogRetentionaae0aa3c5b4d-pRKavvr0FQ2O,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-icoupon-fk-redrive-crt,cct-ingestion-icoupon-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-customer-profile-member-context-crt,cct-customer-profile-member-context-crt,CCT,CRT,runtime=nodejs20.x mem=512 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-customer-profile-merg-LogRetentionaae0aa3c5b4d-u3cc7sVCNGYH,cct-customer-profile-merg-LogRetentionaae0aa3c5b4d-u3cc7sVCNGYH,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-pnr-tkt-corr-trans-redrive-crt,cct-ingestion-pnr-tkt-corr-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-baggage-crt-by-pnr,cct-sp-baggage-crt-by-pnr,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-ingestion-cm-trans-redrive-crt,cct-ingestion-cm-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-getTrip-crt-get-trip,cct-sp-getTrip-crt-get-trip,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-glue-historical-crt-CustomCDKBucketDeployment8-YHYJ1tFg8fS2,cct-glue-historical-crt-CustomCDKBucketDeployment8-YHYJ1tFg8fS2,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-flink-fdm-historical--LogRetentionaae0aa3c5b4d-26oBsC9lxqaD,cct-flink-fdm-historical--LogRetentionaae0aa3c5b4d-26oBsC9lxqaD,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-baggage-crt-by-id,cct-sp-baggage-crt-by-id,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDe-xZECmBgLdCSL,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDe-xZECmBgLdCSL,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-flightStatus-crt-by-FIN,cct-sp-flightStatus-crt-by-FIN,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,aws-controltower-NotificationForwarder,aws-controltower-NotificationForwarder,CCT,CRT,runtime=python3.13 mem=128 vpc=none
+Lambda,Function,cct-entity-resolution-crt-CustomS3AutoDeleteObject-PB3scGKd8eVc,cct-entity-resolution-crt-CustomS3AutoDeleteObject-PB3scGKd8eVc,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-smart-suite-fk-redrive-crt,cct-ingestion-smart-suite-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-historical-icoupon-redemption-redrive-crt,cct-transformer-historical-icoupon-redemption-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCor-AQv2WjTdIbgc,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCor-AQv2WjTdIbgc,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-customer-profile-merg-BucketNotificationsHandl-2GsukLF8vrN1,cct-customer-profile-merg-BucketNotificationsHandl-2GsukLF8vrN1,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-ingestion-cm-bag-trans-redrive-crt,cct-ingestion-cm-bag-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-fdm-historical--FlinkHistoricalFDMDeploy-KehDEwZXihNx,cct-flink-fdm-historical--FlinkHistoricalFDMDeploy-KehDEwZXihNx,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-validateToken-crt-validate-login-token,cct-sp-validateToken-crt-validate-login-token,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVou-O5HnYcdVi68u,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVou-O5HnYcdVi68u,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-fdm-crt-LogRetentionaae0aa3c5b4d4f87b02d-M5ENdyujn0SF,cct-flink-fdm-crt-LogRetentionaae0aa3c5b4d4f87b02d-M5ENdyujn0SF,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-stepUp-crt-resend-otp,cct-sp-stepUp-crt-resend-otp,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDepl-Ej3sYUKGWJGk,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDepl-Ej3sYUKGWJGk,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,ac-cct-cmp-start-chat-crt,ac-cct-cmp-start-chat-crt,CCT,CRT,runtime=python3.11 mem=3000 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-stepUp-crt-get-contact-info,cct-sp-stepUp-crt-get-contact-info,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-create-partition-lambda-crt,cct-create-partition-lambda-crt,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-ingestion-tkt-fk-redrive-crt,cct-ingestion-tkt-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-auth-service-crt-MachineAuthSecretGenerator8DC-UKFOewlPCmjE,cct-auth-service-crt-MachineAuthSecretGenerator8DC-UKFOewlPCmjE,CCT,CRT,runtime=python3.11 mem=512 vpc=none
+Lambda,Function,cct-flink-etl-cm-pax-corr-LogRetentionaae0aa3c5b4d-CM2pPULGCS38,cct-flink-etl-cm-pax-corr-LogRetentionaae0aa3c5b4d-CM2pPULGCS38,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-fdm-fk-redrive-crt,cct-ingestion-fdm-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-cm-historical-c-FlinkHistoricalCMDeploym-FhFTjis3psNn,cct-flink-cm-historical-c-FlinkHistoricalCMDeploym-FhFTjis3psNn,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-pnr-tkt-corr-fk-redrive-crt,cct-ingestion-pnr-tkt-corr-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,entsre-cct-smoke-tester-lambda-crt,entsre-cct-smoke-tester-lambda-crt,CCT,CRT,runtime=nodejs22.x mem=512 vpc=none
+Lambda,Function,cct-transformer-customer-profile-cpid-redrive-crt,cct-transformer-customer-profile-cpid-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-kafka-mirroring-crt-LogRetentionaae0aa3c5b4d4f-9ZFfk8gchhOW,cct-kafka-mirroring-crt-LogRetentionaae0aa3c5b4d4f-9ZFfk8gchhOW,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeployment-GDvBQqY5hUWT,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeployment-GDvBQqY5hUWT,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-bookingChange-crt-router,cct-sp-bookingChange-crt-router,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeployment-ULQgiKQazGzp,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeployment-ULQgiKQazGzp,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-customer-profile-cpid-fk-redrive-crt,cct-ingestion-customer-profile-cpid-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHa-gIogf7hPCbPe,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHa-gIogf7hPCbPe,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-transformer-cm-redrive-crt,cct-transformer-cm-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-baggage-crt-LogRetentionaae0aa3c5b4d-1M3KQWrjM6IC,cct-flink-etl-baggage-crt-LogRetentionaae0aa3c5b4d-1M3KQWrjM6IC,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-stormx-fk-redrive-crt,cct-ingestion-stormx-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-flightStatus-crt-by-inbound,cct-sp-flightStatus-crt-by-inbound,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-cm-historical-c-LogRetentionaae0aa3c5b4d-BKMcY8h6H0vC,cct-flink-cm-historical-c-LogRetentionaae0aa3c5b4d-BKMcY8h6H0vC,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDe-UOc3XPkof4Yh,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDe-UOc3XPkof4Yh,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlink-vKurGDqN2TTW,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlink-vKurGDqN2TTW,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-case-crt-discovery,cct-sp-case-crt-discovery,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-baggage-crt-LogRetentionaae0aa3c5b4d4f87-xnBTsW2iI8OW,cct-flink-baggage-crt-LogRetentionaae0aa3c5b4d4f87-xnBTsW2iI8OW,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-cancel-vouc-LogRetentionaae0aa3c5b4d-p6uxDdm49ReB,cct-flink-etl-cancel-vouc-LogRetentionaae0aa3c5b4d-p6uxDdm49ReB,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDe-H1s8umIeKiBl,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDe-H1s8umIeKiBl,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeployme-vpjmpsWXZAEd,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeployme-vpjmpsWXZAEd,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-aacc-fk-redrive-crt,cct-ingestion-aacc-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDepl-Ju6jQGh7dMdU,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDepl-Ju6jQGh7dMdU,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-auth-service-crt-MachineAuthSecretProviderfram-tkqzHqPT0aFh,cct-auth-service-crt-MachineAuthSecretProviderfram-tkqzHqPT0aFh,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-fdm-crt-LogRetentionaae0aa3c5b4d4f87-uYh3VmV6Es2t,cct-flink-etl-fdm-crt-LogRetentionaae0aa3c5b4d4f87-uYh3VmV6Es2t,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDe-GGj8lcWnNSh6,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDe-GGj8lcWnNSh6,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,ssm-block-public-sharing-ca-central-1,ssm-block-public-sharing-ca-central-1,CCT,CRT,runtime=python3.12 mem=128 vpc=none
+Lambda,Function,cct-ingestion-pnr-fk-redrive-crt,cct-ingestion-pnr-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-notifications-crt-notifications,cct-sp-notifications-crt-notifications,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorr-SDauwt4FyBlK,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorr-SDauwt4FyBlK,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-baggage-crt-FlinkBaggageDeploymentHandle-WGfC2uXnERnA,cct-flink-baggage-crt-FlinkBaggageDeploymentHandle-WGfC2uXnERnA,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDe-vJvDicMQxF3T,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDe-vJvDicMQxF3T,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRe-fDertOTMtMuZ,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRe-fDertOTMtMuZ,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-shared-infra-crt-CustomCDKBucketDeployment8693-WdjP39MTvbOK,cct-shared-infra-crt-CustomCDKBucketDeployment8693-WdjP39MTvbOK,CCT,CRT,runtime=python3.13 mem=128 vpc=none
+Lambda,Function,cct-kafka-mirroring-crt-CustomCDKBucketDeployment8-ltLOQtTw1KO1,cct-kafka-mirroring-crt-CustomCDKBucketDeployment8-ltLOQtTw1KO1,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-sp-stepUp-crt-verify-idv-callback,cct-sp-stepUp-crt-verify-idv-callback,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,ac-cct-cmp-enable-streaming-crt,ac-cct-cmp-enable-streaming-crt,CCT,CRT,runtime=python3.11 mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-ingestion-fdm-trans-redrive-crt,cct-ingestion-fdm-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-cm-crt-LogRetentionaae0aa3c5b4d4f87b02d8-C9G4XgzLcqYE,cct-flink-cm-crt-LogRetentionaae0aa3c5b4d4f87b02d8-C9G4XgzLcqYE,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-aacc-crt-LogRetentionaae0aa3c5b4d4f87b02-C7dapIazzEYq,cct-flink-aacc-crt-LogRetentionaae0aa3c5b4d4f87b02-C7dapIazzEYq,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDe-CNEwEwvRqK6P,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDe-CNEwEwvRqK6P,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-baggage-histori-FlinkHistoricalBaggageDe-AZjURaldKSHR,cct-flink-baggage-histori-FlinkHistoricalBaggageDe-AZjURaldKSHR,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-flightStatus-crt-by-departure-airport,cct-sp-flightStatus-crt-by-departure-airport,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-aacc-crt-LogRetentionaae0aa3c5b4d4f8-VePcEXygIFgO,cct-flink-etl-aacc-crt-LogRetentionaae0aa3c5b4d4f8-VePcEXygIFgO,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,ac-cct-eds-tracing-api-crt,ac-cct-eds-tracing-api-crt,CCT,CRT,runtime=python3.12 mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeployment-xdd0aRldE9nF,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeployment-xdd0aRldE9nF,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeployme-ymle08iEwwiO,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeployme-ymle08iEwwiO,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-ingestion-cm-fk-redrive-crt,cct-ingestion-cm-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-pnr-tkt-corr-redrive-crt,cct-transformer-pnr-tkt-corr-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-pnr-tkt-cor-LogRetentionaae0aa3c5b4d-JuzuaIxhtR9b,cct-flink-etl-pnr-tkt-cor-LogRetentionaae0aa3c5b4d-JuzuaIxhtR9b,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-baggage-histori-LogRetentionaae0aa3c5b4d-nbUu1Oai4Vdg,cct-flink-baggage-histori-LogRetentionaae0aa3c5b4d-nbUu1Oai4Vdg,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-cm-bag-fk-redrive-crt,cct-ingestion-cm-bag-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDepl-MmDDnmMdHTXI,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDepl-MmDDnmMdHTXI,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-stepUp-crt-verify-otp,cct-sp-stepUp-crt-verify-otp,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-glue-snowflake-crt-CustomCDKBucketDeployment86-UNPGxYPlbWNC,cct-glue-snowflake-crt-CustomCDKBucketDeployment86-UNPGxYPlbWNC,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDe-CIn00ldLOVS0,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDe-CIn00ldLOVS0,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-pnr-trans-redrive-crt,cct-ingestion-pnr-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-baggage-histori-FlinkHistoricalBaggageDe-STB7lj88peqN,cct-flink-baggage-histori-FlinkHistoricalBaggageDe-STB7lj88peqN,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-aacc-trans-redrive-crt,cct-ingestion-aacc-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-icoupon-redrive-crt,cct-transformer-icoupon-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-pnr-crt-LogRetentionaae0aa3c5b4d4f87-mqJUypPhpy7j,cct-flink-etl-pnr-crt-LogRetentionaae0aa3c5b4d4f87-mqJUypPhpy7j,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-cm-historical-c-FlinkHistoricalCMDeploym-bgCp4gVmpShj,cct-flink-cm-historical-c-FlinkHistoricalCMDeploym-bgCp4gVmpShj,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-case-crt-proxy,cct-sp-case-crt-proxy,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-stepUp-crt-send-otp,cct-sp-stepUp-crt-send-otp,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-tkt-crt-LogRetentionaae0aa3c5b4d4f87-V1mnJm3pdFUe,cct-flink-etl-tkt-crt-LogRetentionaae0aa3c5b4d4f87-V1mnJm3pdFUe,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeployment-ynK6uEwL31XE,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeployment-ynK6uEwL31XE,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-tkt-historical--LogRetentionaae0aa3c5b4d-Wkk72hyX9aHG,cct-flink-tkt-historical--LogRetentionaae0aa3c5b4d-Wkk72hyX9aHG,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-flightStatus-crt-by-route,cct-sp-flightStatus-crt-by-route,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDe-oabvJiMeGfBC,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDe-oabvJiMeGfBC,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-auth-service-crt,cct-auth-service-crt,CCT,CRT,runtime=python3.11 mem=512 vpc=none
+Lambda,Function,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlink-E3VcB2gySGlq,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlink-E3VcB2gySGlq,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-pnr-crt-LogRetentionaae0aa3c5b4d4f87b02d-4uYPoB43TuRr,cct-flink-pnr-crt-LogRetentionaae0aa3c5b4d4f87b02d-4uYPoB43TuRr,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-aacc-historical-FlinkHistoricalAACCDeplo-ViKZJeczEHef,cct-flink-aacc-historical-FlinkHistoricalAACCDeplo-ViKZJeczEHef,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-historical-icoupon-redemption-trans-redrive-crt,cct-ingestion-historical-icoupon-redemption-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-fdm-historical--FlinkHistoricalFDMDeploy-5up0Axjt8mD3,cct-flink-fdm-historical--FlinkHistoricalFDMDeploy-5up0Axjt8mD3,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-transformer-fdm-redrive-crt,cct-transformer-fdm-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-aacc-historical-FlinkHistoricalAACCDeplo-JXqZjFb9OuUE,cct-flink-aacc-historical-FlinkHistoricalAACCDeplo-JXqZjFb9OuUE,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-ingestion-customer-profile-cpid-trans-redrive-crt,cct-ingestion-customer-profile-cpid-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-tkt-historical--FlinkHistoricalTKTDeploy-YK6ypBXIiAKe,cct-flink-tkt-historical--FlinkHistoricalTKTDeploy-YK6ypBXIiAKe,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-cm-crt-LogRetentionaae0aa3c5b4d4f87b-r3mnQSlnaHkg,cct-flink-etl-cm-crt-LogRetentionaae0aa3c5b4d4f87b-r3mnQSlnaHkg,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,aws-backup-custom-cross-region-account-copy-prod,aws-backup-custom-cross-region-account-copy-prod,CCT,CRT,runtime=python3.13 mem=128 vpc=none
+Lambda,Function,cct-flink-tkt-crt-LogRetentionaae0aa3c5b4d4f87b02d-2caRHRFtfUIM,cct-flink-tkt-crt-LogRetentionaae0aa3c5b4d4f87b02d-2caRHRFtfUIM,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,ac-cct-cmp-ai-agent-crt,ac-cct-cmp-ai-agent-crt,CCT,CRT,runtime=python3.11 mem=3000 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-pnr-redrive-crt,cct-transformer-pnr-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-customer-crt-customer-profile,cct-sp-customer-crt-customer-profile,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-infra-crt-jwt-authorizer,cct-sp-infra-crt-jwt-authorizer,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-flightStatus-crt-by-flight-number,cct-sp-flightStatus-crt-by-flight-number,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-stepUp-crt-revoke-jwt,cct-sp-stepUp-crt-revoke-jwt,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-sp-bookingChange-crt-eligibility,cct-sp-bookingChange-crt-eligibility,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,ac-cct-cmp-message-metadata-enrich-crt,ac-cct-cmp-message-metadata-enrich-crt,CCT,CRT,runtime=python3.11 mem=1024 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDe-T0bFgJQAsPXa,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDe-T0bFgJQAsPXa,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-pnr-historical--FlinkHistoricalPNRDeploy-u2eW3S0ndNW4,cct-flink-pnr-historical--FlinkHistoricalPNRDeploy-u2eW3S0ndNW4,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-transformer-tkt-redrive-crt,cct-transformer-tkt-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-ingestion-smart-suite-trans-redrive-crt,cct-ingestion-smart-suite-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-historical-data-load--CustomCDKBucketDeploymen-8yhUhh9fkN2L,cct-historical-data-load--CustomCDKBucketDeploymen-8yhUhh9fkN2L,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-flink-pnr-historical--LogRetentionaae0aa3c5b4d-815ftYTu4daG,cct-flink-pnr-historical--LogRetentionaae0aa3c5b4d-815ftYTu4daG,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDe-Iybtaqk4IHcP,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDe-Iybtaqk4IHcP,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-historical-data-load--CustomS3AutoDeleteObject-qS7035a73iAG,cct-historical-data-load--CustomS3AutoDeleteObject-qS7035a73iAG,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-customer-profile-merge-processor-crt,cct-customer-profile-merge-processor-crt,CCT,CRT,runtime=nodejs20.x mem=512 vpc=vpc-074002f57df8a6967
+Lambda,Function,entsre-cct-container-logg-AWS679f53fac002430cb0da5-nhvaZaXulE9l,entsre-cct-container-logg-AWS679f53fac002430cb0da5-nhvaZaXulE9l,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-transformer-smart-suite-redrive-crt,cct-transformer-smart-suite-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRe-iDwULzm4izmq,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRe-iDwULzm4izmq,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-aacc-historical-LogRetentionaae0aa3c5b4d-lxy03WvVur4A,cct-flink-aacc-historical-LogRetentionaae0aa3c5b4d-lxy03WvVur4A,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVou-UgZHd204dxx8,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVou-UgZHd204dxx8,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-sp-stepUp-crt-idv-create-inquiry,cct-sp-stepUp-crt-idv-create-inquiry,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDepl-9swBVgrUUktA,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDepl-9swBVgrUUktA,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-sp-infra-crt-logtransform83B01626-DmsByGYa7IE1,cct-sp-infra-crt-logtransform83B01626-DmsByGYa7IE1,CCT,CRT,runtime=nodejs20.x mem=768 vpc=none
+Lambda,Function,cct-flink-etl-icoupon-red-LogRetentionaae0aa3c5b4d-QdUKySBKnEKl,cct-flink-etl-icoupon-red-LogRetentionaae0aa3c5b4d-QdUKySBKnEKl,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-stormx-trans-redrive-crt,cct-ingestion-stormx-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-customer-profile-memb-LogRetentionaae0aa3c5b4d-IPzQGLCJSaDE,cct-customer-profile-memb-LogRetentionaae0aa3c5b4d-IPzQGLCJSaDE,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-flink-baggage-crt-FlinkBaggageDeploymentHandle-WH1RIWZZnE0j,cct-flink-baggage-crt-FlinkBaggageDeploymentHandle-WH1RIWZZnE0j,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorr-SAbulWisrYZJ,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorr-SAbulWisrYZJ,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,ac-cct-cmp-message-processor-crt,ac-cct-cmp-message-processor-crt,CCT,CRT,runtime=python3.11 mem=3000 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-aacc-redrive-crt,cct-transformer-aacc-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-pnr-historical--FlinkHistoricalPNRDeploy-eCswAJDos6ne,cct-flink-pnr-historical--FlinkHistoricalPNRDeploy-eCswAJDos6ne,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-entity-resolution-crt-CustomCDKBucketDeploymen-60hNW312Zq5I,cct-entity-resolution-crt-CustomCDKBucketDeploymen-60hNW312Zq5I,CCT,CRT,runtime=python3.11 mem=128 vpc=none
+Lambda,Function,cct-sp-flightStatus-crt-by-arrival-airport,cct-sp-flightStatus-crt-by-arrival-airport,CCT,CRT,runtime=nodejs20.x mem=128 vpc=vpc-074002f57df8a6967
+Lambda,Function,controltower-LambdaEncryptEbs,controltower-LambdaEncryptEbs,CCT,CRT,runtime=python3.13 mem=128 vpc=none
+Lambda,Function,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCor-yoHeSpBAsFCb,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCor-yoHeSpBAsFCb,CCT,CRT,runtime=python3.11 mem=256 vpc=none
+Lambda,Function,cct-ingestion-historical-icoupon-redemption-fk-redrive-crt,cct-ingestion-historical-icoupon-redemption-fk-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-icoupon-crt-LogRetentionaae0aa3c5b4d-ZrLnx5r4oT5g,cct-flink-etl-icoupon-crt-LogRetentionaae0aa3c5b4d-ZrLnx5r4oT5g,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-ingestion-icoupon-trans-redrive-crt,cct-ingestion-icoupon-trans-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-flink-etl-stormx-crt-LogRetentionaae0aa3c5b4d4-E19pIYPp4Nqa,cct-flink-etl-stormx-crt-LogRetentionaae0aa3c5b4d4-E19pIYPp4Nqa,CCT,CRT,runtime=nodejs22.x mem=128 vpc=none
+Lambda,Function,cct-transformer-stormx-redrive-crt,cct-transformer-stormx-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,cct-transformer-cm-bag-redrive-crt,cct-transformer-cm-bag-redrive-crt,CCT,CRT,runtime=nodejs22.x mem=256 vpc=vpc-074002f57df8a6967
+Lambda,Function,entsre-cct-load-partition-lambda-crt,entsre-cct-load-partition-lambda-crt,CCT,CRT,runtime=nodejs22.x mem=2048 vpc=none
+ECR,Repository,cct-trip-tracer-transformer-tkt-crt,cct-trip-tracer-transformer-tkt-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-trip-tracer-transformer-pnr-crt,cct-trip-tracer-transformer-pnr-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-customer-profile-gigya-crt,cct-customer-profile-gigya-crt,CCT,CRT,created=2026-02-11
+ECR,Repository,cct-customer-profile-membercontext-crt,cct-customer-profile-membercontext-crt,CCT,CRT,created=2026-02-11
+ECR,Repository,cct-trip-tracer-ingestion-aacc-crt,cct-trip-tracer-ingestion-aacc-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-ingestion-icoupon-crt,cct-trip-tracer-ingestion-icoupon-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-customer-profile-cpid-crt,cct-trip-tracer-transformer-customer-profile-cpid-crt,CCT,CRT,created=2026-04-14
+ECR,Repository,cdk-crt-cac1-container-assets-050752605169,cdk-crt-cac1-container-assets-050752605169,CCT,CRT,created=2025-10-30
+ECR,Repository,cct-trip-tracer-ingestion-tkt-crt,cct-trip-tracer-ingestion-tkt-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-trip-tracer-transformer-cm-bag-crt,cct-trip-tracer-transformer-cm-bag-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-smart-suite-crt,cct-trip-tracer-transformer-smart-suite-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-ingestion-pnr-tkt-corr-crt,cct-trip-tracer-ingestion-pnr-tkt-corr-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-cm-crt,cct-trip-tracer-transformer-cm-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,rule-engine-platform-crt-ecr-repository,rule-engine-platform-crt-ecr-repository,CCT,CRT,created=2026-04-03
+ECR,Repository,case-processor-crt-ecr-repository,case-processor-crt-ecr-repository,CCT,CRT,created=2026-04-03
+ECR,Repository,cct-trip-tracer-processor-change-processor-fdm-crt,cct-trip-tracer-processor-change-processor-fdm-crt,CCT,CRT,created=2026-04-09
+ECR,Repository,cct-trip-tracer-processor-live-icoupon-redemption-ingestion-crt,cct-trip-tracer-processor-live-icoupon-redemption-ingestion-crt,CCT,CRT,created=2026-04-14
+ECR,Repository,cct-trip-tracer-processor-disruption-detection-updater-crt,cct-trip-tracer-processor-disruption-detection-updater-crt,CCT,CRT,created=2026-04-14
+ECR,Repository,cct-trip-tracer-ingestion-customer-profile-cpid-crt,cct-trip-tracer-ingestion-customer-profile-cpid-crt,CCT,CRT,created=2026-04-14
+ECR,Repository,cct-trip-tracer-otel-collector-crt,cct-trip-tracer-otel-collector-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-trip-tracer-ingestion-pnr-crt,cct-trip-tracer-ingestion-pnr-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-customer-profile-claims-crt,cct-customer-profile-claims-crt,CCT,CRT,created=2026-02-11
+ECR,Repository,cct-customer-profile-pnr-crt,cct-customer-profile-pnr-crt,CCT,CRT,created=2026-02-11
+ECR,Repository,case-mgmt-crt-ecr-repository,case-mgmt-crt-ecr-repository,CCT,CRT,created=2026-02-23
+ECR,Repository,acpedia-crt-ecr-repository,acpedia-crt-ecr-repository,CCT,CRT,created=2026-02-23
+ECR,Repository,claims-dashboard-crt-ecr-repository,claims-dashboard-crt-ecr-repository,CCT,CRT,created=2026-03-09
+ECR,Repository,ac-cct-rule-engine-ecr,ac-cct-rule-engine-ecr,CCT,CRT,created=2026-03-19
+ECR,Repository,cct-trip-tracer-ingestion-cm-bag-crt,cct-trip-tracer-ingestion-cm-bag-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-ingestion-stormx-crt,cct-trip-tracer-ingestion-stormx-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-stormx-crt,cct-trip-tracer-transformer-stormx-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-pnr-tkt-corr-crt,cct-trip-tracer-transformer-pnr-tkt-corr-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-processor-db-archival-crt,cct-trip-tracer-processor-db-archival-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,case-intake-crt-ecr-repository,case-intake-crt-ecr-repository,CCT,CRT,created=2026-04-03
+ECR,Repository,cct-postgres-sync,cct-postgres-sync,CCT,CRT,created=2025-12-24
+ECR,Repository,cct-trip-tracer-ingestion-fdm-crt,cct-trip-tracer-ingestion-fdm-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,cct-trip-tracer-transformer-fdm-crt,cct-trip-tracer-transformer-fdm-crt,CCT,CRT,created=2026-01-19
+ECR,Repository,entsre-firelens-logging-repo,entsre-firelens-logging-repo,CCT,CRT,created=2026-01-28
+ECR,Repository,cct-customer-profile-ifly-crt,cct-customer-profile-ifly-crt,CCT,CRT,created=2026-02-11
+ECR,Repository,ask-ac-crt-ecr-repository,ask-ac-crt-ecr-repository,CCT,CRT,created=2026-02-23
+ECR,Repository,cct-trip-tracer-ingestion-cm-crt,cct-trip-tracer-ingestion-cm-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-ingestion-historical-icoupon-redemption-crt,cct-trip-tracer-ingestion-historical-icoupon-redemption-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-icoupon-crt,cct-trip-tracer-transformer-icoupon-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-ingestion-smart-suite-crt,cct-trip-tracer-ingestion-smart-suite-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-historical-icoupon-redemption-crt,cct-trip-tracer-transformer-historical-icoupon-redemption-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-transformer-aacc-crt,cct-trip-tracer-transformer-aacc-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-processor-coupon-status-update-crt,cct-trip-tracer-processor-coupon-status-update-crt,CCT,CRT,created=2026-03-26
+ECR,Repository,cct-trip-tracer-processor-change-processor-pnr-crt,cct-trip-tracer-processor-change-processor-pnr-crt,CCT,CRT,created=2026-04-09
+ECR,Repository,cct-trip-tracer-processor-event-detection-updater-crt,cct-trip-tracer-processor-event-detection-updater-crt,CCT,CRT,created=2026-04-14
+ELBv2,LoadBalancer,ac-cct-crt-ecs-alb,ac-cct-crt-ecs-alb,CCT,CRT,application internal dns=internal-ac-cct-crt-ecs-alb-1198835785.ca-central-1.elb.amazonaws.com
+ELBv2,TargetGroup,acpedia-crt-ecs-service-tg,acpedia-crt-ecs-service-tg,CCT,CRT,port=8000 HTTP type=ip
+ELBv2,TargetGroup,ask-ac-crt-ecs-service-tg,ask-ac-crt-ecs-service-tg,CCT,CRT,port=9000 HTTP type=ip
+ELBv2,TargetGroup,case-intake-crt-tg,case-intake-crt-tg,CCT,CRT,port=8000 HTTP type=ip
+ELBv2,TargetGroup,case-mgmt-crt-ecs-service-tg,case-mgmt-crt-ecs-service-tg,CCT,CRT,port=8000 HTTP type=ip
+ELBv2,TargetGroup,case-processor-crt-tg,case-processor-crt-tg,CCT,CRT,port=8000 HTTP type=ip
+ELBv2,TargetGroup,claims-dashboard-crt-ecs-svc-tg,claims-dashboard-crt-ecs-svc-tg,CCT,CRT,port=8000 HTTP type=ip
+ELBv2,TargetGroup,rep-crt-ecs-tg,rep-crt-ecs-tg,CCT,CRT,port=8000 HTTP type=ip
+RDS,Cluster,ac-cct-ask-ac-crt-cac1-rds-cluster,ac-cct-ask-ac-crt-cac1-rds-cluster,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 multiAZ=True encrypted=True
+RDS,Cluster,ac-cct-case-mgmt-crt-cac1-rds-cluster,ac-cct-case-mgmt-crt-cac1-rds-cluster,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 multiAZ=True encrypted=True
+RDS,Cluster,ac-cct-rule-engine-crt-cac1-rds-cluster,ac-cct-rule-engine-crt-cac1-rds-cluster,Customer Care Transformation - Rule Engine RDS,CRT,aurora-postgresql 17.4 multiAZ=True encrypted=True
+RDS,Cluster,ac-cct-trip-tracer-rds-cluster-crt-cac1,ac-cct-trip-tracer-rds-cluster-crt-cac1,Customer Care Transformation,CRT,aurora-postgresql 17.4 multiAZ=True encrypted=True
+RDS,Instance,ac-cct-ask-ac-crt-cac1-rds-cluster-instance1,ac-cct-ask-ac-crt-cac1-rds-cluster-instance1,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-ask-ac-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-ask-ac-crt-cac1-rds-cluster-instance2,ac-cct-ask-ac-crt-cac1-rds-cluster-instance2,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-ask-ac-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-case-mgmt-crt-cac1-rds-cluster-instance1,ac-cct-case-mgmt-crt-cac1-rds-cluster-instance1,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-case-mgmt-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-case-mgmt-crt-cac1-rds-cluster-instance2,ac-cct-case-mgmt-crt-cac1-rds-cluster-instance2,Customer Care Transformation - Ask AC,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-case-mgmt-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-rule-engine-crt-cac1-rds-cluster-instance1,ac-cct-rule-engine-crt-cac1-rds-cluster-instance1,Customer Care Transformation - Rule Engine RDS,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-rule-engine-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-rule-engine-crt-cac1-rds-cluster-instance2,ac-cct-rule-engine-crt-cac1-rds-cluster-instance2,Customer Care Transformation - Rule Engine RDS,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-rule-engine-crt-cac1-rds-cluster
+RDS,Instance,ac-cct-trip-tracer-rds-cluster-crt-cac1-instance1,ac-cct-trip-tracer-rds-cluster-crt-cac1-instance1,Customer Care Transformation,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-trip-tracer-rds-cluster-crt-cac1
+RDS,Instance,ac-cct-trip-tracer-rds-cluster-crt-cac1-instance2,ac-cct-trip-tracer-rds-cluster-crt-cac1-instance2,Customer Care Transformation,CRT,aurora-postgresql 17.4 db.r7g.large cluster=ac-cct-trip-tracer-rds-cluster-crt-cac1
+DynamoDB,Table,ac-cct-cmp-bot-tokens-crt,ac-cct-cmp-bot-tokens-crt,CCT,CRT,
+DynamoDB,Table,ac-cct-cmp-rate-limits-crt,ac-cct-cmp-rate-limits-crt,CCT,CRT,
+DynamoDB,Table,ac-cct-cmp-session-auth-crt,ac-cct-cmp-session-auth-crt,CCT,CRT,
+DynamoDB,Table,cct-er-cache-crt,cct-er-cache-crt,CCT,CRT,
+DynamoDB,Table,cct-sp-infra-crt-SessionJwtTableF35A45F5-1XC6KTR28CIP2,cct-sp-infra-crt-SessionJwtTableF35A45F5-1XC6KTR28CIP2,CCT,CRT,
+S3,Bucket,ac-cct-aco-chat-crt,ac-cct-aco-chat-crt,CCT,CRT,created=2026-03-24
+S3,Bucket,ac-cct-aco-chat-crt-cloudfront-logs,ac-cct-aco-chat-crt-cloudfront-logs,CCT,CRT,created=2026-03-24
+S3,Bucket,ac-cct-cmp-message-logs-bucket-crt,ac-cct-cmp-message-logs-bucket-crt,CCT,CRT,created=2026-03-24
+S3,Bucket,ac-cct-devops-reusable-bucket-crt-cac1,ac-cct-devops-reusable-bucket-crt-cac1,CCT,CRT,created=2025-10-26
+S3,Bucket,acpedia.ac-cct-crt.cloud.aircanada.com,acpedia.ac-cct-crt.cloud.aircanada.com,CCT,CRT,created=2026-02-23
+S3,Bucket,askac.ac-cct-crt.cloud.aircanada.com,askac.ac-cct-crt.cloud.aircanada.com,CCT,CRT,created=2026-02-23
+S3,Bucket,case-management-service-crt-audit-parquet,case-management-service-crt-audit-parquet,CCT,CRT,created=2026-03-09
+S3,Bucket,case-retrieval-webex-crt.ac-cct-crt.cloud.aircanada.com,case-retrieval-webex-crt.ac-cct-crt.cloud.aircanada.com,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-acpedia-crt-attachments,cct-acpedia-crt-attachments,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-acpedia-crt-file-data,cct-acpedia-crt-file-data,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-acpedia-crt-logs,cct-acpedia-crt-logs,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-ask-ac-crt-attachments,cct-ask-ac-crt-attachments,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-ask-ac-crt-file-data,cct-ask-ac-crt-file-data,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-ask-ac-crt-logs,cct-ask-ac-crt-logs,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-case-mgmt-crt-attachments,cct-case-mgmt-crt-attachments,CCT,CRT,created=2026-03-16
+S3,Bucket,cct-case-mgmt-crt-file-data,cct-case-mgmt-crt-file-data,CCT,CRT,created=2026-03-16
+S3,Bucket,cct-case-mgmt-crt-logs,cct-case-mgmt-crt-logs,CCT,CRT,created=2026-02-23
+S3,Bucket,cct-claims-dashboard-crt-attachments,cct-claims-dashboard-crt-attachments,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-claims-dashboard-crt-file-data,cct-claims-dashboard-crt-file-data,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-claims-dashboard-crt-logs,cct-claims-dashboard-crt-logs,CCT,CRT,created=2026-03-12
+S3,Bucket,cct-common-crt,cct-common-crt,CCT,CRT,created=2026-03-26
+S3,Bucket,cct-cp-msk-connect-crt,cct-cp-msk-connect-crt,CCT,CRT,created=2026-03-17
+S3,Bucket,cct-customer-profile-input-crt,cct-customer-profile-input-crt,CCT,CRT,created=2026-04-14
+S3,Bucket,cct-data-feeds-crt,cct-data-feeds-crt,CCT,CRT,created=2026-03-26
+S3,Bucket,cct-entity-resolution-input-crt,cct-entity-resolution-input-crt,CCT,CRT,created=2026-03-18
+S3,Bucket,cct-entity-resolution-output-crt,cct-entity-resolution-output-crt,CCT,CRT,created=2026-03-18
+S3,Bucket,cct-flink-apps-crt,cct-flink-apps-crt,CCT,CRT,created=2026-01-19
+S3,Bucket,cct-glue-historical-scripts-crt,cct-glue-historical-scripts-crt,CCT,CRT,created=2026-03-25
+S3,Bucket,cct-glue-scripts-crt,cct-glue-scripts-crt,CCT,CRT,created=2026-04-16
+S3,Bucket,cct-historical-data-feeds-crt,cct-historical-data-feeds-crt,CCT,CRT,created=2026-03-25
+S3,Bucket,cct-msk-connect-crt,cct-msk-connect-crt,CCT,CRT,created=2026-01-19
+S3,Bucket,cct-otel-logs-crt,cct-otel-logs-crt,CCT,CRT,created=2026-01-19
+S3,Bucket,cct-trip-tracer-db-archive-crt,cct-trip-tracer-db-archive-crt,CCT,CRT,created=2026-03-26
+S3,Bucket,cdk-crt-cac1-assets-050752605169,cdk-crt-cac1-assets-050752605169,CCT,CRT,created=2025-11-08
+S3,Bucket,claims-dashboard.ac-cct-crt.cloud.aircanada.com,claims-dashboard.ac-cct-crt.cloud.aircanada.com,CCT,CRT,created=2026-03-12
+S3,Bucket,entsre-050752605169-crt-container-logging-bucket,entsre-050752605169-crt-container-logging-bucket,CCT,CRT,created=2026-01-28
+S3,Bucket,entsre-customer-cct-050752605169-crt-default-logs,entsre-customer-cct-050752605169-crt-default-logs,CCT,CRT,created=2025-12-10
+S3,Bucket,entsre-customer-cct-050752605169-crt-inventory,entsre-customer-cct-050752605169-crt-inventory,CCT,CRT,created=2025-12-10
+S3,Bucket,entsre-customer-cct-050752605169-crt-large-object-logs,entsre-customer-cct-050752605169-crt-large-object-logs,CCT,CRT,created=2025-12-10
+MSK,Cluster,64cccdaf-7baf-4cf9-9a69-7c0bd1839f58-4,ac-cct-msk-crt-cac1,CCT,CRT,PROVISIONED state=ACTIVE
+MSKConnect,Connector,bee1f49c-4146-426b-b47b-d4dbe4115499-4,cct-kafka-mirroring-crt-GigyaFeedMskConnect-connector-c8406e49,CCT,CRT,state=RUNNING
+MSKConnect,Connector,cc3e3b4d-1d29-45d0-9757-4d83fb891f16-4,cct-kafka-mirroring-crt-GigyaFeedMskConnectS3-connector-c889652c,CCT,CRT,state=RUNNING
+MSKConnect,Connector,c699a24f-6968-44ca-b050-9c9a4deb4920-4,cct-kafka-mirroring-crt-iFlyFeedMskConnect-connector-c885c999,CCT,CRT,state=RUNNING
+MSKConnect,Connector,6315f5a0-e5e4-4034-aa09-263266f13d2d-4,cct-kafka-mirroring-crt-iFlyFeedMskConnectS3-connector-c815adf7,CCT,CRT,state=RUNNING
+MSKConnect,Connector,fb98737e-0f1b-4c6f-a6fc-377f816d1b8b-4,cct-shared-infra-crt-AACCFeedMskConnect-connector-c832e5ae,CCT,CRT,state=RUNNING
+MSKConnect,Connector,f5f56033-826b-4584-a224-62a77ab5a0c6-4,cct-shared-infra-crt-AACCFeedMskConnectS3-connector-c8f508b3,CCT,CRT,state=RUNNING
+MSKConnect,Connector,5acc2d84-09cf-4b59-bc12-46fa975ad2cd-4,cct-shared-infra-crt-BaggageSmartSuiteFeedMskConnect-connector-c8ef5c92,CCT,CRT,state=RUNNING
+MSKConnect,Connector,15d6d860-1af8-49f1-b6e0-517fb032c3cb-4,cct-shared-infra-crt-BaggageSmartSuiteFeedMskConnectS3-connector-c8f717d5,CCT,CRT,state=RUNNING
+MSKConnect,Connector,cd3f9eca-0a88-430e-b029-7fe0b7cc22f3-4,cct-shared-infra-crt-CMFeedMskConnect-connector-c8e32326,CCT,CRT,state=RUNNING
+MSKConnect,Connector,6d6589f3-a64c-4df4-839f-033573873f77-4,cct-shared-infra-crt-CMFeedMskConnectS3-connector-c8eb9ab0,CCT,CRT,state=RUNNING
+MSKConnect,Connector,9bf0455b-6d7f-4f57-aee8-faaef635516a-4,cct-shared-infra-crt-FDMFeedMskConnect-connector-c85bf276,CCT,CRT,state=RUNNING
+MSKConnect,Connector,c3dec064-4675-44e2-869b-316c68325203-4,cct-shared-infra-crt-FDMFeedMskConnectS3-connector-c8552f9c,CCT,CRT,state=RUNNING
+MSKConnect,Connector,2efa6791-6aa3-4939-b466-ff922caee960-4,cct-shared-infra-crt-ICouponFeedMskConnect-connector-c8a22119,CCT,CRT,state=RUNNING
+MSKConnect,Connector,a5104cef-23fe-4bea-8ca6-0a4dc5cf81d3-4,cct-shared-infra-crt-ICouponFeedMskConnectS3-connector-c818286d,CCT,CRT,state=RUNNING
+MSKConnect,Connector,c229e290-c867-4cbc-bfb3-7538d257a7c1-4,cct-shared-infra-crt-PNRFeedMskConnect-connector-c8c43339,CCT,CRT,state=RUNNING
+MSKConnect,Connector,a2903506-868d-48d0-99bf-39dba7b7c0dc-4,cct-shared-infra-crt-PNRFeedMskConnectS3-connector-c8b13b12,CCT,CRT,state=RUNNING
+MSKConnect,Connector,6be25444-72a2-4372-b584-eac4c9e20a0b-4,cct-shared-infra-crt-StormXFeedMskConnect-connector-c8198de4,CCT,CRT,state=RUNNING
+MSKConnect,Connector,906724ea-a3d6-4376-b350-30eac83d2041-4,cct-shared-infra-crt-StormXFeedMskConnectS3-connector-c84a9efa,CCT,CRT,state=RUNNING
+MSKConnect,Connector,ad7b5b30-014f-42f4-be5a-6bf70ec8f529-4,cct-shared-infra-crt-TKTFeedMskConnect-connector-c856a119,CCT,CRT,state=RUNNING
+MSKConnect,Connector,4c3beea1-6f1b-4625-a932-095976d48e39-4,cct-shared-infra-crt-TKTFeedMskConnectS3-connector-c8972bbe,CCT,CRT,state=RUNNING
+SQS,Queue,ac-cct-cmp-raw-message-dlq-crt,ac-cct-cmp-raw-message-dlq-crt,CCT,CRT,
+SQS,Queue,ac-cct-cmp-raw-message-queue-crt,ac-cct-cmp-raw-message-queue-crt,CCT,CRT,
+SQS,Queue,cct-arrival-code-updates-queue-crt,cct-arrival-code-updates-queue-crt,CCT,CRT,
+SQS,Queue,cct-baggage-historical-migration-dlq-crt,cct-baggage-historical-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-cancel-code-updates-queue-crt,cct-cancel-code-updates-queue-crt,CCT,CRT,
+SQS,Queue,cct-cm-passenger-corr-migration-dlq-crt,cct-cm-passenger-corr-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-claims-dlq-crt,cct-customer-profile-claims-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-gigya-dlq-crt,cct-customer-profile-gigya-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-ifly-dlq-crt,cct-customer-profile-ifly-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-membercontext-dlq-crt,cct-customer-profile-membercontext-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-pnr-dlq-crt,cct-customer-profile-pnr-dlq-crt,CCT,CRT,
+SQS,Queue,cct-customer-profile-tt-event-dlq-crt,cct-customer-profile-tt-event-dlq-crt,CCT,CRT,
+SQS,Queue,cct-icoupon-historical-migration-dlq-crt,cct-icoupon-historical-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-aacc-dlq-crt,cct-ingestion-aacc-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-aacc-fk-queue-crt,cct-ingestion-aacc-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-aacc-transient-queue-crt,cct-ingestion-aacc-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-bag-dlq-crt,cct-ingestion-cm-bag-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-bag-fk-queue-crt,cct-ingestion-cm-bag-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-bag-transient-queue-crt,cct-ingestion-cm-bag-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-dlq-crt,cct-ingestion-cm-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-fk-queue-crt,cct-ingestion-cm-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-cm-transient-queue-crt,cct-ingestion-cm-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-customer-profile-cpid-dlq-crt,cct-ingestion-customer-profile-cpid-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-customer-profile-cpid-fk-queue-crt,cct-ingestion-customer-profile-cpid-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-customer-profile-cpid-transient-queue-crt,cct-ingestion-customer-profile-cpid-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-fdm-dlq-crt,cct-ingestion-fdm-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-fdm-fk-queue-crt,cct-ingestion-fdm-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-fdm-transient-queue-crt,cct-ingestion-fdm-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-historical-icoupon-redemption-dlq-crt,cct-ingestion-historical-icoupon-redemption-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-historical-icoupon-redemption-fk-queue-crt,cct-ingestion-historical-icoupon-redemption-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-historical-icoupon-redemption-transient-queue-crt,cct-ingestion-historical-icoupon-redemption-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-icoupon-dlq-crt,cct-ingestion-icoupon-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-icoupon-fk-queue-crt,cct-ingestion-icoupon-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-icoupon-transient-queue-crt,cct-ingestion-icoupon-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-dlq-crt,cct-ingestion-pnr-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-fk-queue-crt,cct-ingestion-pnr-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-tkt-corr-dlq-crt,cct-ingestion-pnr-tkt-corr-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-tkt-corr-fk-queue-crt,cct-ingestion-pnr-tkt-corr-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-tkt-corr-transient-queue-crt,cct-ingestion-pnr-tkt-corr-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-pnr-transient-queue-crt,cct-ingestion-pnr-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-smart-suite-dlq-crt,cct-ingestion-smart-suite-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-smart-suite-fk-queue-crt,cct-ingestion-smart-suite-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-smart-suite-transient-queue-crt,cct-ingestion-smart-suite-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-stormx-dlq-crt,cct-ingestion-stormx-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-stormx-fk-queue-crt,cct-ingestion-stormx-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-stormx-transient-queue-crt,cct-ingestion-stormx-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-tkt-dlq-crt,cct-ingestion-tkt-dlq-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-tkt-fk-queue-crt,cct-ingestion-tkt-fk-queue-crt,CCT,CRT,
+SQS,Queue,cct-ingestion-tkt-transient-queue-crt,cct-ingestion-tkt-transient-queue-crt,CCT,CRT,
+SQS,Queue,cct-oag-status-updates-queue-crt,cct-oag-status-updates-queue-crt,CCT,CRT,
+SQS,Queue,cct-pnr-historical-migration-dlq-crt,cct-pnr-historical-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-pnr-ticket-emd-corr-migration-dlq-crt,cct-pnr-ticket-emd-corr-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-stormx-historical-migration-dlq-crt,cct-stormx-historical-migration-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-aacc-dlq-crt,cct-transformer-aacc-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-aacc-queue-crt,cct-transformer-aacc-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-cm-bag-dlq-crt,cct-transformer-cm-bag-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-cm-bag-queue-crt,cct-transformer-cm-bag-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-cm-dlq-crt,cct-transformer-cm-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-cm-queue-crt,cct-transformer-cm-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-customer-profile-cpid-dlq-crt,cct-transformer-customer-profile-cpid-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-customer-profile-cpid-queue-crt,cct-transformer-customer-profile-cpid-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-fdm-dlq-crt,cct-transformer-fdm-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-fdm-queue-crt,cct-transformer-fdm-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-historical-icoupon-redemption-dlq-crt,cct-transformer-historical-icoupon-redemption-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-historical-icoupon-redemption-queue-crt,cct-transformer-historical-icoupon-redemption-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-icoupon-dlq-crt,cct-transformer-icoupon-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-icoupon-queue-crt,cct-transformer-icoupon-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-pnr-dlq-crt,cct-transformer-pnr-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-pnr-queue-crt,cct-transformer-pnr-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-pnr-tkt-corr-dlq-crt,cct-transformer-pnr-tkt-corr-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-pnr-tkt-corr-queue-crt,cct-transformer-pnr-tkt-corr-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-smart-suite-dlq-crt,cct-transformer-smart-suite-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-smart-suite-queue-crt,cct-transformer-smart-suite-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-stormx-dlq-crt,cct-transformer-stormx-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-stormx-queue-crt,cct-transformer-stormx-queue-crt,CCT,CRT,
+SQS,Queue,cct-transformer-tkt-dlq-crt,cct-transformer-tkt-dlq-crt,CCT,CRT,
+SQS,Queue,cct-transformer-tkt-queue-crt,cct-transformer-tkt-queue-crt,CCT,CRT,
+SQS,Queue,customer-profiles-ac-cct-crt-dlq,customer-profiles-ac-cct-crt-dlq,CCT,CRT,
+SQS,Queue,entsre-cct-050752605169-crt-container-unprocessedlogs,entsre-cct-050752605169-crt-container-unprocessedlogs,CCT,CRT,
+SQS,Queue,entsre-cct-050752605169-crt-container-unprocessedlogs-dlq,entsre-cct-050752605169-crt-container-unprocessedlogs-dlq,CCT,CRT,
+SQS,Queue,entsre-cct-customer-050752605169-crt-unprocessedlogs-default,entsre-cct-customer-050752605169-crt-unprocessedlogs-default,CCT,CRT,
+SQS,Queue,entsre-cct-customer-050752605169-crt-unprocessedlogs-dlq,entsre-cct-customer-050752605169-crt-unprocessedlogs-dlq,CCT,CRT,
+SNS,Topic,ac-cct-cmp-message-interceptor-crt,ac-cct-cmp-message-interceptor-crt,CCT,CRT,
+SNS,Topic,aws-controltower-SecurityNotifications,aws-controltower-SecurityNotifications,CCT,CRT,
+SNS,Topic,cct-arrival-code-updates-dlq-alarm-topic-crt,cct-arrival-code-updates-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-baggage-historical-migration-dlq-alarm-topic-crt,cct-baggage-historical-migration-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-cancel-code-updates-dlq-alarm-topic-crt,cct-cancel-code-updates-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-cm-passenger-corr-migration-dlq-alarm-topic-crt,cct-cm-passenger-corr-migration-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-icoupon-historical-migration-dlq-alarm-topic-crt,cct-icoupon-historical-migration-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-oag-status-updates-dlq-alarm-topic-crt,cct-oag-status-updates-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-pnr-historical-migration-dlq-alarm-topic-crt,cct-pnr-historical-migration-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-pnr-ticket-emd-corr-migration-dlq-alarm-topic-crt,cct-pnr-ticket-emd-corr-migration-dlq-alarm-topic-crt,CCT,CRT,
+SNS,Topic,cct-stormx-historical-migration-dlq-alarm-topic-crt,cct-stormx-historical-migration-dlq-alarm-topic-crt,CCT,CRT,
+EventBridge,Bus,default,default,CCT,CRT,
+EventBridge,Bus,cross-region-copy-eventbus-prod,cross-region-copy-eventbus-prod,CCT,CRT,
+EventBridge,Bus,cross-region-copy-messagebus-prod,cross-region-copy-messagebus-prod,CCT,CRT,
+APIGateway,RestAPI,10c6lig13e,rule-engine-platform-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,1lzq44sch7,case-processor-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,8c3pk9iuy0,cct-auth-service-crt,CCT,CRT,
+APIGateway,RestAPI,ce2xl6jzmi,claims-dashboard-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,f6ou1azcha,case-intake-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,jz18i65199,ac-cct-cmp-api-gateway-crt,CCT,CRT,
+APIGateway,RestAPI,lph92mkuvb,cct-sp-api-crt,CCT,CRT,
+APIGateway,RestAPI,q45hr1z6tc,ask-ac-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,qxb7lvk9xg,acpedia-crt-api-gw,CCT,CRT,
+APIGateway,RestAPI,s2xi4pbtyc,case-mgmt-crt-api-gw,CCT,CRT,
+Glue,Job,cct-arrival-code-glue-job-crt,cct-arrival-code-glue-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-baggage-historical-migration-job-crt,cct-baggage-historical-migration-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-cancel-code-glue-job-crt,cct-cancel-code-glue-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-cm-passenger-pnr-correlation-migration-job-crt,cct-cm-passenger-pnr-correlation-migration-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-historical-d0-processor-crt,cct-historical-d0-processor-crt,CCT,CRT,version=4.0
+Glue,Job,cct-icoupon-historical-migration-job-crt,cct-icoupon-historical-migration-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-oag-status-glue-job-crt,cct-oag-status-glue-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-pnr-historical-migration-job-crt,cct-pnr-historical-migration-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-pnr-ticket-emd-correlation-migration-job-crt,cct-pnr-ticket-emd-correlation-migration-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-snowflake-glue-test-job-crt,cct-snowflake-glue-test-job-crt,CCT,CRT,version=4.0
+Glue,Job,cct-stormx-historical-migration-job-crt,cct-stormx-historical-migration-job-crt,CCT,CRT,version=4.0
+Glue,Database,cct-entity-resolution-db-crt,cct-entity-resolution-db-crt,CCT,CRT,
+Glue,Database,cct-historical-data-load-db-crt,cct-historical-data-load-db-crt,CCT,CRT,
+Glue,Database,cct_otel_logs_crt,cct_otel_logs_crt,CCT,CRT,
+Glue,Database,default,default,CCT,CRT,
+Glue,Database,entsre_cct_container_logging_db,entsre_cct_container_logging_db,CCT,CRT,
+Glue,Database,entsre_cct_container_logging_validation_db,entsre_cct_container_logging_validation_db,CCT,CRT,
+Glue,Database,entsre_logging_db_v7,entsre_logging_db_v7,CCT,CRT,
+IAM,Role,ac-cct-ask-ac-crt-cac1-proxy-role,ac-cct-ask-ac-crt-cac1-proxy-role,CCT,CRT,path=/
+IAM,Role,ac-cct-ask-ac-crt-s3-access-role,ac-cct-ask-ac-crt-s3-access-role,CCT,CRT,path=/
+IAM,Role,ac-cct-ask-ac-enhanced-monitoring-role-crt,ac-cct-ask-ac-enhanced-monitoring-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-case-mgmt-crt-cac1-proxy-role,ac-cct-case-mgmt-crt-cac1-proxy-role,CCT,CRT,path=/
+IAM,Role,ac-cct-case-mgmt-crt-s3-access-role,ac-cct-case-mgmt-crt-s3-access-role,CCT,CRT,path=/
+IAM,Role,ac-cct-case-mgmt-enhanced-monitoring-role-crt,ac-cct-case-mgmt-enhanced-monitoring-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-cmp-infra-crt-CmpLambdaRole2FE87FA8-Un3jzQPa4h2n,ac-cct-cmp-infra-crt-CmpLambdaRole2FE87FA8-Un3jzQPa4h2n,CCT,CRT,path=/
+IAM,Role,ac-cct-cp-msk-connect-role-crt,ac-cct-cp-msk-connect-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-crt-back-end-github-oidc-role,ac-cct-crt-back-end-github-oidc-role,CCT,CRT,path=/
+IAM,Role,ac-cct-crt-ecs-task-execution-role,ac-cct-crt-ecs-task-execution-role,CCT,CRT,path=/
+IAM,Role,ac-cct-kafka-client-role-crt-cac1,ac-cct-kafka-client-role-crt-cac1,CCT,CRT,path=/
+IAM,Role,ac-cct-msk-connect-role-crt,ac-cct-msk-connect-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-rule-engine-crt-cac1-proxy-role,ac-cct-rule-engine-crt-cac1-proxy-role,CCT,CRT,path=/
+IAM,Role,ac-cct-rule-engine-crt-s3-access-role,ac-cct-rule-engine-crt-s3-access-role,CCT,CRT,path=/
+IAM,Role,ac-cct-rule-engine-enhanced-monitoring-role-crt,ac-cct-rule-engine-enhanced-monitoring-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-trip-tracer-rds-enhanced-monitoring-role-crt-cac1,ac-cct-trip-tracer-rds-enhanced-monitoring-role-crt-cac1,CCT,CRT,path=/
+IAM,Role,ac-cct-trip-tracer-rds-proxy-role-crt-cac1,ac-cct-trip-tracer-rds-proxy-role-crt-cac1,CCT,CRT,path=/
+IAM,Role,ac-cct-trip-tracer-redshift-role-crt,ac-cct-trip-tracer-redshift-role-crt,CCT,CRT,path=/
+IAM,Role,ac-cct-trip-tracer-s3-access-role-crt-cac1,ac-cct-trip-tracer-s3-access-role-crt-cac1,CCT,CRT,path=/
+IAM,Role,ac-sre-enterprisetools-cross-acount-crt-role,ac-sre-enterprisetools-cross-acount-crt-role,CCT,CRT,path=/
+IAM,Role,ACCloudTeam,ACCloudTeam,CCT,CRT,path=/
+IAM,Role,aws-controltower-AdministratorExecutionRole,aws-controltower-AdministratorExecutionRole,CCT,CRT,path=/
+IAM,Role,aws-controltower-ConfigRecorderRole,aws-controltower-ConfigRecorderRole,CCT,CRT,path=/
+IAM,Role,aws-controltower-ForwardSnsNotificationRole,aws-controltower-ForwardSnsNotificationRole,CCT,CRT,path=/
+IAM,Role,aws-controltower-ReadOnlyExecutionRole,aws-controltower-ReadOnlyExecutionRole,CCT,CRT,path=/
+IAM,Role,AWS-MDCSetup-HostMgmtRole-ca-central-1-MDCSetup,AWS-MDCSetup-HostMgmtRole-ca-central-1-MDCSetup,CCT,CRT,path=/
+IAM,Role,AWS-SG-Remediation-Execution-Role,AWS-SG-Remediation-Execution-Role,CCT,CRT,path=/
+IAM,Role,AWSControlTowerExecution,AWSControlTowerExecution,CCT,CRT,path=/
+IAM,Role,AWSLZAtlantisAdminExecutionRole,AWSLZAtlantisAdminExecutionRole,CCT,CRT,path=/
+IAM,Role,AWSReservedSSO_AC-DBA-Support_08599b45a05a08cf,AWSReservedSSO_AC-DBA-Support_08599b45a05a08cf,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AC-DEVOPS-NONPROD_351e373ccfc3a5b4,AWSReservedSSO_AC-DEVOPS-NONPROD_351e373ccfc3a5b4,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AC-SRE-NONPROD_3aa0f423bf44db1e,AWSReservedSSO_AC-SRE-NONPROD_3aa0f423bf44db1e,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AdministratorAccess_7513849e5af6e476,AWSReservedSSO_AdministratorAccess_7513849e5af6e476,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AWSAdministratorAccess_43a9a996c568a82c,AWSReservedSSO_AWSAdministratorAccess_43a9a996c568a82c,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AWSOrganizationsFullAccess_3502c888001d2134,AWSReservedSSO_AWSOrganizationsFullAccess_3502c888001d2134,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AWSPowerUserAccess_0ec5e47126b32682,AWSReservedSSO_AWSPowerUserAccess_0ec5e47126b32682,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_AWSReadOnlyAccess_a28a39041cf4906c,AWSReservedSSO_AWSReadOnlyAccess_a28a39041cf4906c,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CCE-Architect_8756b7516baaafe0,AWSReservedSSO_CCE-Architect_8756b7516baaafe0,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CCE-developer-nonprod_838caf9da4d17668,AWSReservedSSO_CCE-developer-nonprod_838caf9da4d17668,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CCE-Developer_bcda3673133cf83a,AWSReservedSSO_CCE-Developer_bcda3673133cf83a,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CCE-QA_68cbf2b301944aad,AWSReservedSSO_CCE-QA_68cbf2b301944aad,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CCE-Support_f48f1ace68bbe5bb,AWSReservedSSO_CCE-Support_f48f1ace68bbe5bb,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSReservedSSO_CloudTeamAdministratorAccess_4f679d1551c1def4,AWSReservedSSO_CloudTeamAdministratorAccess_4f679d1551c1def4,CCT,CRT,path=/aws-reserved/sso.amazonaws.com/
+IAM,Role,AWSServiceRoleForAccessAnalyzer,AWSServiceRoleForAccessAnalyzer,CCT,CRT,path=/aws-service-role/access-analyzer.amazonaws.com/
+IAM,Role,AWSServiceRoleForAmazonConnect_v6vMzfJRqCMuwVj4XaFS,AWSServiceRoleForAmazonConnect_v6vMzfJRqCMuwVj4XaFS,CCT,CRT,path=/aws-service-role/connect.amazonaws.com/
+IAM,Role,AWSServiceRoleForAmazonGuardDuty,AWSServiceRoleForAmazonGuardDuty,CCT,CRT,path=/aws-service-role/guardduty.amazonaws.com/
+IAM,Role,AWSServiceRoleForAmazonSSM,AWSServiceRoleForAmazonSSM,CCT,CRT,path=/aws-service-role/ssm.amazonaws.com/
+IAM,Role,AWSServiceRoleForAPIGateway,AWSServiceRoleForAPIGateway,CCT,CRT,path=/aws-service-role/ops.apigateway.amazonaws.com/
+IAM,Role,AWSServiceRoleForApplicationAutoScaling_ECSService,AWSServiceRoleForApplicationAutoScaling_ECSService,CCT,CRT,path=/aws-service-role/ecs.application-autoscaling.amazonaws.com/
+IAM,Role,AWSServiceRoleForAWSControlTower,AWSServiceRoleForAWSControlTower,CCT,CRT,path=/aws-service-role/controltower.amazonaws.com/
+IAM,Role,AWSServiceRoleForAWSLicenseManagerMemberAccountRole,AWSServiceRoleForAWSLicenseManagerMemberAccountRole,CCT,CRT,path=/aws-service-role/license-manager.member-account.amazonaws.com/
+IAM,Role,AWSServiceRoleForAWSLicenseManagerRole,AWSServiceRoleForAWSLicenseManagerRole,CCT,CRT,path=/aws-service-role/license-manager.amazonaws.com/
+IAM,Role,AWSServiceRoleForBackup,AWSServiceRoleForBackup,CCT,CRT,path=/aws-service-role/backup.amazonaws.com/
+IAM,Role,AWSServiceRoleForCloudFormationStackSetsOrgMember,AWSServiceRoleForCloudFormationStackSetsOrgMember,CCT,CRT,path=/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/
+IAM,Role,AWSServiceRoleForCloudTrail,AWSServiceRoleForCloudTrail,CCT,CRT,path=/aws-service-role/cloudtrail.amazonaws.com/
+IAM,Role,AWSServiceRoleForCloudWatchApplicationSignals,AWSServiceRoleForCloudWatchApplicationSignals,CCT,CRT,path=/aws-service-role/application-signals.cloudwatch.amazonaws.com/
+IAM,Role,AWSServiceRoleForComputeOptimizer,AWSServiceRoleForComputeOptimizer,CCT,CRT,path=/aws-service-role/compute-optimizer.amazonaws.com/
+IAM,Role,AWSServiceRoleForConfig,AWSServiceRoleForConfig,CCT,CRT,path=/aws-service-role/config.amazonaws.com/
+IAM,Role,AWSServiceRoleForConfigMultiAccountSetup,AWSServiceRoleForConfigMultiAccountSetup,CCT,CRT,path=/aws-service-role/config-multiaccountsetup.amazonaws.com/
+IAM,Role,AWSServiceRoleForCostOptimizationHub,AWSServiceRoleForCostOptimizationHub,CCT,CRT,path=/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/
+IAM,Role,AWSServiceRoleForECS,AWSServiceRoleForECS,CCT,CRT,path=/aws-service-role/ecs.amazonaws.com/
+IAM,Role,AWSServiceRoleForElasticLoadBalancing,AWSServiceRoleForElasticLoadBalancing,CCT,CRT,path=/aws-service-role/elasticloadbalancing.amazonaws.com/
+IAM,Role,AWSServiceRoleForIPAM,AWSServiceRoleForIPAM,CCT,CRT,path=/aws-service-role/ipam.amazonaws.com/
+IAM,Role,AWSServiceRoleForKafka,AWSServiceRoleForKafka,CCT,CRT,path=/aws-service-role/kafka.amazonaws.com/
+IAM,Role,AWSServiceRoleForKafkaConnect,AWSServiceRoleForKafkaConnect,CCT,CRT,path=/aws-service-role/kafkaconnect.amazonaws.com/
+IAM,Role,AWSServiceRoleForMarketplaceLicenseManagement,AWSServiceRoleForMarketplaceLicenseManagement,CCT,CRT,path=/aws-service-role/license-management.marketplace.amazonaws.com/
+IAM,Role,AWSServiceRoleForOrganizations,AWSServiceRoleForOrganizations,CCT,CRT,path=/aws-service-role/organizations.amazonaws.com/
+IAM,Role,AWSServiceRoleForProfile_671cb36d0fa849fa8cfc87c1b213837a,AWSServiceRoleForProfile_671cb36d0fa849fa8cfc87c1b213837a,CCT,CRT,path=/aws-service-role/profile.amazonaws.com/
+IAM,Role,AWSServiceRoleForRDS,AWSServiceRoleForRDS,CCT,CRT,path=/aws-service-role/rds.amazonaws.com/
+IAM,Role,AWSServiceRoleForRedshift,AWSServiceRoleForRedshift,CCT,CRT,path=/aws-service-role/redshift.amazonaws.com/
+IAM,Role,AWSServiceRoleForResourceExplorer,AWSServiceRoleForResourceExplorer,CCT,CRT,path=/aws-service-role/resource-explorer-2.amazonaws.com/
+IAM,Role,AWSServiceRoleForSecurityHub,AWSServiceRoleForSecurityHub,CCT,CRT,path=/aws-service-role/securityhub.amazonaws.com/
+IAM,Role,AWSServiceRoleForSecurityIncidentResponse_Triage,AWSServiceRoleForSecurityIncidentResponse_Triage,CCT,CRT,path=/aws-service-role/triage.security-ir.amazonaws.com/
+IAM,Role,AWSServiceRoleForSSO,AWSServiceRoleForSSO,CCT,CRT,path=/aws-service-role/sso.amazonaws.com/
+IAM,Role,AWSServiceRoleForSupport,AWSServiceRoleForSupport,CCT,CRT,path=/aws-service-role/support.amazonaws.com/
+IAM,Role,AWSServiceRoleForTrustedAdvisor,AWSServiceRoleForTrustedAdvisor,CCT,CRT,path=/aws-service-role/trustedadvisor.amazonaws.com/
+IAM,Role,AWSServiceRoleForVPCTransitGateway,AWSServiceRoleForVPCTransitGateway,CCT,CRT,path=/aws-service-role/transitgateway.amazonaws.com/
+IAM,Role,backup-events-cross-account-prod,backup-events-cross-account-prod,CCT,CRT,path=/
+IAM,Role,cct-arrival-code-glue-job-role-crt,cct-arrival-code-glue-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-auth-crt-apigw-cw-role,cct-auth-crt-apigw-cw-role,CCT,CRT,path=/
+IAM,Role,cct-auth-crt-lambda-role,cct-auth-crt-lambda-role,CCT,CRT,path=/
+IAM,Role,cct-auth-service-crt-MachineAuthSecretGeneratorServ-n6d5TWhZaDr1,cct-auth-service-crt-MachineAuthSecretGeneratorServ-n6d5TWhZaDr1,CCT,CRT,path=/
+IAM,Role,cct-auth-service-crt-MachineAuthSecretProviderframe-OmcoPs4YWpZJ,cct-auth-service-crt-MachineAuthSecretProviderframe-OmcoPs4YWpZJ,CCT,CRT,path=/
+IAM,Role,cct-baggage-historical-migration-job-role-crt,cct-baggage-historical-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-cancel-code-glue-job-role-crt,cct-cancel-code-glue-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-cm-passenger-pnr-correlation-migration-job-role-crt,cct-cm-passenger-pnr-correlation-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-memb-LogRetentionaae0aa3c5b4d4-QJj3hnHgSS4V,cct-customer-profile-memb-LogRetentionaae0aa3c5b4d4-QJj3hnHgSS4V,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-member-context-lambda-execution-role-crt,cct-customer-profile-member-context-lambda-execution-role-crt,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-merg-BucketNotificationsHandle-RWcECmQp6OO2,cct-customer-profile-merg-BucketNotificationsHandle-RWcECmQp6OO2,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-merg-LogRetentionaae0aa3c5b4d4-6jT2p13R1nMs,cct-customer-profile-merg-LogRetentionaae0aa3c5b4d4-6jT2p13R1nMs,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-merg-MergeProcessorFunctionSer-stCBIunMeArz,cct-customer-profile-merg-MergeProcessorFunctionSer-stCBIunMeArz,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-task-execution-role-crt,cct-customer-profile-task-execution-role-crt,CCT,CRT,path=/
+IAM,Role,cct-customer-profile-task-role-crt,cct-customer-profile-task-role-crt,CCT,CRT,path=/
+IAM,Role,cct-database-management-c-CreatePartitionLambdaFunc-0l0iXKmfxLYM,cct-database-management-c-CreatePartitionLambdaFunc-0l0iXKmfxLYM,CCT,CRT,path=/
+IAM,Role,cct-db-archival-events-role-crt,cct-db-archival-events-role-crt,CCT,CRT,path=/
+IAM,Role,cct-entity-resolution-crt-CustomCDKBucketDeployment-OBg0wDc5Dzfg,cct-entity-resolution-crt-CustomCDKBucketDeployment-OBg0wDc5Dzfg,CCT,CRT,path=/
+IAM,Role,cct-entity-resolution-crt-CustomS3AutoDeleteObjects-enEbYKhH78T9,cct-entity-resolution-crt-CustomS3AutoDeleteObjects-enEbYKhH78T9,CCT,CRT,path=/
+IAM,Role,cct-entity-resolution-service-role-crt,cct-entity-resolution-service-role-crt,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlinkD-SvFDb375W6yc,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlinkD-SvFDb375W6yc,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlinkD-Zgj4kUYTLgKn,cct-flink-aacc-crt-FlinkAACCDeploymentHandlerFlinkD-Zgj4kUYTLgKn,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-crt-FlinkAACCIAMcctaacccrt4FD54B0E-dQxeLZNlipSc,cct-flink-aacc-crt-FlinkAACCIAMcctaacccrt4FD54B0E-dQxeLZNlipSc,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-crt-LogRetentionaae0aa3c5b4d4f87b02d-GH7EsA3CtIeT,cct-flink-aacc-crt-LogRetentionaae0aa3c5b4d4f87b02d-GH7EsA3CtIeT,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-historical-FlinkHistoricalAACCDeploy-DlvYXlMj6lF4,cct-flink-aacc-historical-FlinkHistoricalAACCDeploy-DlvYXlMj6lF4,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-historical-FlinkHistoricalAACCDeploy-SiEEQ69Bi7t2,cct-flink-aacc-historical-FlinkHistoricalAACCDeploy-SiEEQ69Bi7t2,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-historical-FlinkHistoricalAACCIAMcct-jTn0QkzVJ4FT,cct-flink-aacc-historical-FlinkHistoricalAACCIAMcct-jTn0QkzVJ4FT,CCT,CRT,path=/
+IAM,Role,cct-flink-aacc-historical-LogRetentionaae0aa3c5b4d4-b3sLbmKwI15B,cct-flink-aacc-historical-LogRetentionaae0aa3c5b4d4-b3sLbmKwI15B,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-crt-FlinkBaggageDeploymentHandler-oOSqA4oeheU8,cct-flink-baggage-crt-FlinkBaggageDeploymentHandler-oOSqA4oeheU8,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-crt-FlinkBaggageDeploymentHandler-peG4ENaoC0bK,cct-flink-baggage-crt-FlinkBaggageDeploymentHandler-peG4ENaoC0bK,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-crt-FlinkBaggageIAMcctbaggagecrt4-uVEvKT6eugBn,cct-flink-baggage-crt-FlinkBaggageIAMcctbaggagecrt4-uVEvKT6eugBn,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-crt-LogRetentionaae0aa3c5b4d4f87b-Cc6qKVYljNyV,cct-flink-baggage-crt-LogRetentionaae0aa3c5b4d4f87b-Cc6qKVYljNyV,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-histori-FlinkHistoricalBaggageDep-Suaehk1Gh3lF,cct-flink-baggage-histori-FlinkHistoricalBaggageDep-Suaehk1Gh3lF,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-histori-FlinkHistoricalBaggageDep-w3G3CwMsfIM0,cct-flink-baggage-histori-FlinkHistoricalBaggageDep-w3G3CwMsfIM0,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-histori-FlinkHistoricalBaggageIAM-sGzCwiZhD7Qw,cct-flink-baggage-histori-FlinkHistoricalBaggageIAM-sGzCwiZhD7Qw,CCT,CRT,path=/
+IAM,Role,cct-flink-baggage-histori-LogRetentionaae0aa3c5b4d4-9E0HtKt3yafZ,cct-flink-baggage-histori-LogRetentionaae0aa3c5b4d4-9E0HtKt3yafZ,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDeplo-cdR8UBH46Zw8,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDeplo-cdR8UBH46Zw8,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDeplo-cKJGBUj7JLix,cct-flink-cm-crt-FlinkCMDeploymentHandlerFlinkDeplo-cKJGBUj7JLix,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-crt-FlinkCMIAMcctcmcrt3EAAAB72-7Sj2ILQtkE9M,cct-flink-cm-crt-FlinkCMIAMcctcmcrt3EAAAB72-7Sj2ILQtkE9M,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-crt-LogRetentionaae0aa3c5b4d4f87b02d85-kSObhZ0efTQE,cct-flink-cm-crt-LogRetentionaae0aa3c5b4d4f87b02d85-kSObhZ0efTQE,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-historical-c-FlinkHistoricalCMDeployme-dVixOG8YM7zm,cct-flink-cm-historical-c-FlinkHistoricalCMDeployme-dVixOG8YM7zm,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-historical-c-FlinkHistoricalCMDeployme-Yw3cTJrH5HIM,cct-flink-cm-historical-c-FlinkHistoricalCMDeployme-Yw3cTJrH5HIM,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-historical-c-FlinkHistoricalCMIAMcctcm-znO0Li7lsQhz,cct-flink-cm-historical-c-FlinkHistoricalCMIAMcctcm-znO0Li7lsQhz,CCT,CRT,path=/
+IAM,Role,cct-flink-cm-historical-c-LogRetentionaae0aa3c5b4d4-Nlc15sLoFQnw,cct-flink-cm-historical-c-LogRetentionaae0aa3c5b4d4-Nlc15sLoFQnw,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeploymen-huUwtwPRhPDD,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeploymen-huUwtwPRhPDD,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeploymen-nEeM0sqaO61F,cct-flink-etl-aacc-crt-FlinkHistoricalAACCDeploymen-nEeM0sqaO61F,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-aacc-crt-FlinkHistoricalAACCIAMcctaac-vOoX1Tbz3mdK,cct-flink-etl-aacc-crt-FlinkHistoricalAACCIAMcctaac-vOoX1Tbz3mdK,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-aacc-crt-LogRetentionaae0aa3c5b4d4f87-rsZdl8NBgNIk,cct-flink-etl-aacc-crt-LogRetentionaae0aa3c5b4d4f87-rsZdl8NBgNIk,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDep-a44iZz2o9GMK,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDep-a44iZz2o9GMK,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDep-FgELJ8Zt2wSL,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageDep-FgELJ8Zt2wSL,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageIAM-z3a45WzJG0BX,cct-flink-etl-baggage-crt-FlinkHistoricalBaggageIAM-z3a45WzJG0BX,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-baggage-crt-LogRetentionaae0aa3c5b4d4-mxgcEmfHv9zd,cct-flink-etl-baggage-crt-LogRetentionaae0aa3c5b4d4-mxgcEmfHv9zd,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-2nQzrZuerK5v,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-2nQzrZuerK5v,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-N5SZOiyDo3wP,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-N5SZOiyDo3wP,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-TJ0Aluvpu9E2,cct-flink-etl-cancel-vouc-FlinkHistoricalCancelVouc-TJ0Aluvpu9E2,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cancel-vouc-LogRetentionaae0aa3c5b4d4-1KaapswsdTe9,cct-flink-etl-cancel-vouc-LogRetentionaae0aa3c5b4d4-1KaapswsdTe9,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHan-8lQuiFRBFiXy,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHan-8lQuiFRBFiXy,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHan-DcmY01WawCFG,cct-flink-etl-cm-crt-FlinkHistoricalCmDeploymentHan-DcmY01WawCFG,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-crt-FlinkHistoricalCmIAMcctcmetlcr-fklm7tQfkDUz,cct-flink-etl-cm-crt-FlinkHistoricalCmIAMcctcmetlcr-fklm7tQfkDUz,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-crt-LogRetentionaae0aa3c5b4d4f87b0-uEZW52xgoWJR,cct-flink-etl-cm-crt-LogRetentionaae0aa3c5b4d4f87b0-uEZW52xgoWJR,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-H4zaqjyku7Ue,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-H4zaqjyku7Ue,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-hnOXoZ7kK3yW,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-hnOXoZ7kK3yW,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-wAMJTkScqhDA,cct-flink-etl-cm-pax-corr-FlinkHistoricalCMPaxCorre-wAMJTkScqhDA,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-cm-pax-corr-LogRetentionaae0aa3c5b4d4-NnRpwlOk5Els,cct-flink-etl-cm-pax-corr-LogRetentionaae0aa3c5b4d4-NnRpwlOk5Els,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeploymentH-LoMNp5q0qekg,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeploymentH-LoMNp5q0qekg,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeploymentH-Xei6pn8POz2t,cct-flink-etl-fdm-crt-FlinkHistoricalFDMDeploymentH-Xei6pn8POz2t,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-fdm-crt-FlinkHistoricalFDMIAMcctfdmet-cceoqMEWAcre,cct-flink-etl-fdm-crt-FlinkHistoricalFDMIAMcctfdmet-cceoqMEWAcre,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-fdm-crt-LogRetentionaae0aa3c5b4d4f87b-KETXkyxyD224,cct-flink-etl-fdm-crt-LogRetentionaae0aa3c5b4d4f87b-KETXkyxyD224,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDep-wG2S1DKc4wKO,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDep-wG2S1DKc4wKO,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDep-YiB6kY7mahjU,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponDep-YiB6kY7mahjU,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponIAM-Ol6sejvLqfGr,cct-flink-etl-icoupon-crt-FlinkHistoricaliCouponIAM-Ol6sejvLqfGr,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-crt-LogRetentionaae0aa3c5b4d4-ETG45Tapt222,cct-flink-etl-icoupon-crt-LogRetentionaae0aa3c5b4d4-ETG45Tapt222,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-69UvBwgsEHRY,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-69UvBwgsEHRY,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-9VNPibaaM0Lk,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-9VNPibaaM0Lk,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-iLEwFifH3of9,cct-flink-etl-icoupon-red-FlinkHistoricaliCouponRed-iLEwFifH3of9,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-icoupon-red-LogRetentionaae0aa3c5b4d4-qStSpnL7v1RX,cct-flink-etl-icoupon-red-LogRetentionaae0aa3c5b4d4-qStSpnL7v1RX,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeploymentH-AeIQ0t43nE3u,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeploymentH-AeIQ0t43nE3u,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeploymentH-CbgJrV2lR3Hk,cct-flink-etl-pnr-crt-FlinkHistoricalPNRDeploymentH-CbgJrV2lR3Hk,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-crt-FlinkHistoricalPNRIAMcctpnret-CdrTPkD9AfAf,cct-flink-etl-pnr-crt-FlinkHistoricalPNRIAMcctpnret-CdrTPkD9AfAf,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-crt-LogRetentionaae0aa3c5b4d4f87b-MXmee8ayfzMp,cct-flink-etl-pnr-crt-LogRetentionaae0aa3c5b4d4f87b-MXmee8ayfzMp,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-hFtgY9wa2n6M,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-hFtgY9wa2n6M,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-RiIyo3m6Ftt6,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-RiIyo3m6Ftt6,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-z8qsRxc3tsE9,cct-flink-etl-pnr-tkt-cor-FlinkHistoricalPNRTKTCorr-z8qsRxc3tsE9,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-pnr-tkt-cor-LogRetentionaae0aa3c5b4d4-tI2fplmMbfhF,cct-flink-etl-pnr-tkt-cor-LogRetentionaae0aa3c5b4d4-tI2fplmMbfhF,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDeplo-EP4r7jRdUNwK,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDeplo-EP4r7jRdUNwK,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDeplo-nKUXqkbiPiyi,cct-flink-etl-stormx-crt-FlinkHistoricalStormXDeplo-nKUXqkbiPiyi,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-stormx-crt-FlinkHistoricalStormXIAMcc-JHrLNmTw5jN6,cct-flink-etl-stormx-crt-FlinkHistoricalStormXIAMcc-JHrLNmTw5jN6,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-stormx-crt-LogRetentionaae0aa3c5b4d4f-R3ivGwB1M1FF,cct-flink-etl-stormx-crt-LogRetentionaae0aa3c5b4d4f-R3ivGwB1M1FF,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeploymentH-btuXKZAN1BKl,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeploymentH-btuXKZAN1BKl,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeploymentH-wTUEHZsjselt,cct-flink-etl-tkt-crt-FlinkHistoricalTKTDeploymentH-wTUEHZsjselt,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-tkt-crt-FlinkHistoricalTKTIAMccttktet-NfuGxceKgct9,cct-flink-etl-tkt-crt-FlinkHistoricalTKTIAMccttktet-NfuGxceKgct9,CCT,CRT,path=/
+IAM,Role,cct-flink-etl-tkt-crt-LogRetentionaae0aa3c5b4d4f87b-c8tLNFpbNhWA,cct-flink-etl-tkt-crt-LogRetentionaae0aa3c5b4d4f87b-c8tLNFpbNhWA,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDep-9ksMip4Up5Bg,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDep-9ksMip4Up5Bg,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDep-c0XQM17N7TIQ,cct-flink-fdm-crt-FlinkFDMDeploymentHandlerFlinkDep-c0XQM17N7TIQ,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-crt-FlinkFDMIAMcctfdmcrtF6CB9EED-ZaOGqLAbBmuA,cct-flink-fdm-crt-FlinkFDMIAMcctfdmcrtF6CB9EED-ZaOGqLAbBmuA,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-crt-LogRetentionaae0aa3c5b4d4f87b02d8-VHCsIQTm010P,cct-flink-fdm-crt-LogRetentionaae0aa3c5b4d4f87b02d8-VHCsIQTm010P,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-historical--FlinkHistoricalFDMDeploym-03Eh7dyDldyd,cct-flink-fdm-historical--FlinkHistoricalFDMDeploym-03Eh7dyDldyd,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-historical--FlinkHistoricalFDMDeploym-Wox8MkMDXToZ,cct-flink-fdm-historical--FlinkHistoricalFDMDeploym-Wox8MkMDXToZ,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-historical--FlinkHistoricalFDMIAMcctf-OJPhVKoAHAj9,cct-flink-fdm-historical--FlinkHistoricalFDMIAMcctf-OJPhVKoAHAj9,CCT,CRT,path=/
+IAM,Role,cct-flink-fdm-historical--LogRetentionaae0aa3c5b4d4-8WfWTRk7RzPe,cct-flink-fdm-historical--LogRetentionaae0aa3c5b4d4-8WfWTRk7RzPe,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDep-g3tlPWuj14gR,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDep-g3tlPWuj14gR,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDep-WfLUAIoya4qI,cct-flink-pnr-crt-FlinkPNRDeploymentHandlerFlinkDep-WfLUAIoya4qI,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-crt-FlinkPNRIAMcctpnrcrtF37B3326-rvBumsqPbJNI,cct-flink-pnr-crt-FlinkPNRIAMcctpnrcrtF37B3326-rvBumsqPbJNI,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-crt-LogRetentionaae0aa3c5b4d4f87b02d8-BjMydiVqv4Tm,cct-flink-pnr-crt-LogRetentionaae0aa3c5b4d4f87b02d8-BjMydiVqv4Tm,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-historical--FlinkHistoricalPNRDeploym-D6ITI2fRcj4T,cct-flink-pnr-historical--FlinkHistoricalPNRDeploym-D6ITI2fRcj4T,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-historical--FlinkHistoricalPNRDeploym-q30KhORsvQ3r,cct-flink-pnr-historical--FlinkHistoricalPNRDeploym-q30KhORsvQ3r,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-historical--FlinkHistoricalPNRIAMcctp-GHScbLJeXNL3,cct-flink-pnr-historical--FlinkHistoricalPNRIAMcctp-GHScbLJeXNL3,CCT,CRT,path=/
+IAM,Role,cct-flink-pnr-historical--LogRetentionaae0aa3c5b4d4-qAwaem0U42jt,cct-flink-pnr-historical--LogRetentionaae0aa3c5b4d4-qAwaem0U42jt,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDep-AkVhLHvZB0EO,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDep-AkVhLHvZB0EO,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDep-WvXed0nZc7A1,cct-flink-tkt-crt-FlinkTKTDeploymentHandlerFlinkDep-WvXed0nZc7A1,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-crt-FlinkTKTIAMccttktcrt672DCE4E-92Qjp3eCsBhr,cct-flink-tkt-crt-FlinkTKTIAMccttktcrt672DCE4E-92Qjp3eCsBhr,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-crt-LogRetentionaae0aa3c5b4d4f87b02d8-KDXQiW1Avid7,cct-flink-tkt-crt-LogRetentionaae0aa3c5b4d4f87b02d8-KDXQiW1Avid7,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-historical--FlinkHistoricalTKTDeploym-CqKIT6DE37RG,cct-flink-tkt-historical--FlinkHistoricalTKTDeploym-CqKIT6DE37RG,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-historical--FlinkHistoricalTKTDeploym-QnMF65PnQjgn,cct-flink-tkt-historical--FlinkHistoricalTKTDeploym-QnMF65PnQjgn,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-historical--FlinkHistoricalTKTIAMcctt-hxl2jfau2wuJ,cct-flink-tkt-historical--FlinkHistoricalTKTIAMcctt-hxl2jfau2wuJ,CCT,CRT,path=/
+IAM,Role,cct-flink-tkt-historical--LogRetentionaae0aa3c5b4d4-exvrDLjzFcP7,cct-flink-tkt-historical--LogRetentionaae0aa3c5b4d4-exvrDLjzFcP7,CCT,CRT,path=/
+IAM,Role,cct-glue-historical-crt-CustomCDKBucketDeployment86-LeN2XvS1UD7P,cct-glue-historical-crt-CustomCDKBucketDeployment86-LeN2XvS1UD7P,CCT,CRT,path=/
+IAM,Role,cct-glue-service-role-crt,cct-glue-service-role-crt,CCT,CRT,path=/
+IAM,Role,cct-glue-snowflake-crt-CustomCDKBucketDeployment869-yGpdCYMns5kY,cct-glue-snowflake-crt-CustomCDKBucketDeployment869-yGpdCYMns5kY,CCT,CRT,path=/
+IAM,Role,cct-historical-d0-er-role-crt,cct-historical-d0-er-role-crt,CCT,CRT,path=/
+IAM,Role,cct-historical-d0-glue-job-role-crt,cct-historical-d0-glue-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-historical-data-load--CustomCDKBucketDeployment-a0yQZHKYeHvC,cct-historical-data-load--CustomCDKBucketDeployment-a0yQZHKYeHvC,CCT,CRT,path=/
+IAM,Role,cct-historical-data-load--CustomS3AutoDeleteObjects-iol9LYLxyKh8,cct-historical-data-load--CustomS3AutoDeleteObjects-iol9LYLxyKh8,CCT,CRT,path=/
+IAM,Role,cct-icoupon-historical-migration-job-role-crt,cct-icoupon-historical-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-kafka-mirroring-crt-CustomCDKBucketDeployment86-8yD8tbRnDerl,cct-kafka-mirroring-crt-CustomCDKBucketDeployment86-8yD8tbRnDerl,CCT,CRT,path=/
+IAM,Role,cct-kafka-mirroring-crt-LogRetentionaae0aa3c5b4d4f8-4iUw6mz48b4H,cct-kafka-mirroring-crt-LogRetentionaae0aa3c5b4d4f8-4iUw6mz48b4H,CCT,CRT,path=/
+IAM,Role,cct-live-icoupon-redemption-ingestion-s3-events-role-crt,cct-live-icoupon-redemption-ingestion-s3-events-role-crt,CCT,CRT,path=/
+IAM,Role,cct-oag-status-glue-job-role-crt,cct-oag-status-glue-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-pnr-historical-migration-job-role-crt,cct-pnr-historical-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-pnr-ticket-emd-correlation-migration-job-role-crt,cct-pnr-ticket-emd-correlation-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-redrive-lambda-role-crt,cct-redrive-lambda-role-crt,CCT,CRT,path=/
+IAM,Role,cct-shared-infra-crt-CustomCDKBucketDeployment8693B-SGgO9747if1O,cct-shared-infra-crt-CustomCDKBucketDeployment8693B-SGgO9747if1O,CCT,CRT,path=/
+IAM,Role,cct-shared-infra-crt-LogRetentionaae0aa3c5b4d4f87b0-As8fPtRmsbmn,cct-shared-infra-crt-LogRetentionaae0aa3c5b4d4f87b0-As8fPtRmsbmn,CCT,CRT,path=/
+IAM,Role,cct-snowflake-glue-test-job-role-crt,cct-snowflake-glue-test-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-sp-api-crt-ApiGatewayCloudWatchRole86F22A4D-nROAggwCGRFH,cct-sp-api-crt-ApiGatewayCloudWatchRole86F22A4D-nROAggwCGRFH,CCT,CRT,path=/
+IAM,Role,cct-sp-api-crt-iam-auth-role,cct-sp-api-crt-iam-auth-role,CCT,CRT,path=/
+IAM,Role,cct-sp-baggage-crt-byidFunctionServiceRole58A16845-8y1ARWTptTs5,cct-sp-baggage-crt-byidFunctionServiceRole58A16845-8y1ARWTptTs5,CCT,CRT,path=/
+IAM,Role,cct-sp-baggage-crt-bypnrFunctionServiceRoleD4D6D7B0-EWSUxzXUF3HA,cct-sp-baggage-crt-bypnrFunctionServiceRoleD4D6D7B0-EWSUxzXUF3HA,CCT,CRT,path=/
+IAM,Role,cct-sp-bookingChange-crt-eligibilityFunctionService-hLbOBnzO8j2V,cct-sp-bookingChange-crt-eligibilityFunctionService-hLbOBnzO8j2V,CCT,CRT,path=/
+IAM,Role,cct-sp-bookingChange-crt-routerFunctionServiceRole7-BnjBMOFblpd4,cct-sp-bookingChange-crt-routerFunctionServiceRole7-BnjBMOFblpd4,CCT,CRT,path=/
+IAM,Role,cct-sp-case-crt-discoveryFunctionServiceRole570B7C6-DlZdSZwNcTCw,cct-sp-case-crt-discoveryFunctionServiceRole570B7C6-DlZdSZwNcTCw,CCT,CRT,path=/
+IAM,Role,cct-sp-case-crt-proxyFunctionServiceRole859A3184-o6p2IhO7UQuA,cct-sp-case-crt-proxyFunctionServiceRole859A3184-o6p2IhO7UQuA,CCT,CRT,path=/
+IAM,Role,cct-sp-customer-crt-customerprofileFunctionServiceR-GGsiR8ipE22r,cct-sp-customer-crt-customerprofileFunctionServiceR-GGsiR8ipE22r,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-byarrivalairportFunctionSer-AOtep8A7V1P3,cct-sp-flightStatus-crt-byarrivalairportFunctionSer-AOtep8A7V1P3,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-bydepartureairportFunctionS-jJvZ8yZPufwo,cct-sp-flightStatus-crt-bydepartureairportFunctionS-jJvZ8yZPufwo,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-byFINFunctionServiceRoleD6B-nIu9TFS8jP1g,cct-sp-flightStatus-crt-byFINFunctionServiceRoleD6B-nIu9TFS8jP1g,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-byflightnumberFunctionServi-gTTTGG5ZJfwZ,cct-sp-flightStatus-crt-byflightnumberFunctionServi-gTTTGG5ZJfwZ,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-byinboundFunctionServiceRol-lUXO5BnShmL2,cct-sp-flightStatus-crt-byinboundFunctionServiceRol-lUXO5BnShmL2,CCT,CRT,path=/
+IAM,Role,cct-sp-flightStatus-crt-byrouteFunctionServiceRole0-GSDJ4ZdyHfG3,cct-sp-flightStatus-crt-byrouteFunctionServiceRole0-GSDJ4ZdyHfG3,CCT,CRT,path=/
+IAM,Role,cct-sp-getTrip-crt-gettripFunctionServiceRole6960D7-VE7pfdOqfjRL,cct-sp-getTrip-crt-gettripFunctionServiceRole6960D7-VE7pfdOqfjRL,CCT,CRT,path=/
+IAM,Role,cct-sp-infra-crt-jwtauthorizerFunctionServiceRole5D-Y8He8kQkt3jT,cct-sp-infra-crt-jwtauthorizerFunctionServiceRole5D-Y8He8kQkt3jT,CCT,CRT,path=/
+IAM,Role,cct-sp-infra-crt-LogsToFirehoseRole7B259954-DzrVRo50zmK1,cct-sp-infra-crt-LogsToFirehoseRole7B259954-DzrVRo50zmK1,CCT,CRT,path=/
+IAM,Role,cct-sp-infra-crt-logtransformServiceRole00FC5F89-Ekx5EsRwB0zz,cct-sp-infra-crt-logtransformServiceRole00FC5F89-Ekx5EsRwB0zz,CCT,CRT,path=/
+IAM,Role,cct-sp-infra-crt-SharedLogsFirehoseS3DestinationRol-5rhYW40OwthY,cct-sp-infra-crt-SharedLogsFirehoseS3DestinationRol-5rhYW40OwthY,CCT,CRT,path=/
+IAM,Role,cct-sp-notifications-crt-notificationsFunctionServi-rmvLNdtVK6J1,cct-sp-notifications-crt-notificationsFunctionServi-rmvLNdtVK6J1,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-getcontactinfoFunctionServiceRole-IYMyyNrTWdE7,cct-sp-stepUp-crt-getcontactinfoFunctionServiceRole-IYMyyNrTWdE7,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-idvcreateinquiryFunctionServiceRo-ausZocguriYN,cct-sp-stepUp-crt-idvcreateinquiryFunctionServiceRo-ausZocguriYN,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-resendotpFunctionServiceRole7AC5F-7sM5rIpPNKh7,cct-sp-stepUp-crt-resendotpFunctionServiceRole7AC5F-7sM5rIpPNKh7,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-revokejwtFunctionServiceRole59F9C-XQGgJvlAR04A,cct-sp-stepUp-crt-revokejwtFunctionServiceRole59F9C-XQGgJvlAR04A,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-sendotpFunctionServiceRoleC8E028B-fgtyJUl8XI2C,cct-sp-stepUp-crt-sendotpFunctionServiceRoleC8E028B-fgtyJUl8XI2C,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-verifyidvcallbackFunctionServiceR-tHSRidJHW3qr,cct-sp-stepUp-crt-verifyidvcallbackFunctionServiceR-tHSRidJHW3qr,CCT,CRT,path=/
+IAM,Role,cct-sp-stepUp-crt-verifyotpFunctionServiceRole54B00-GnYVfELuJr19,cct-sp-stepUp-crt-verifyotpFunctionServiceRole54B00-GnYVfELuJr19,CCT,CRT,path=/
+IAM,Role,cct-sp-validate-token-crt-role,cct-sp-validate-token-crt-role,CCT,CRT,path=/
+IAM,Role,cct-stormx-historical-migration-job-role-crt,cct-stormx-historical-migration-job-role-crt,CCT,CRT,path=/
+IAM,Role,cct-trip-tracer-infra-crt-LogRetentionaae0aa3c5b4d4-IrHa25hwmRlJ,cct-trip-tracer-infra-crt-LogRetentionaae0aa3c5b4d4-IrHa25hwmRlJ,CCT,CRT,path=/
+IAM,Role,cct-trip-tracer-task-execution-role-crt,cct-trip-tracer-task-execution-role-crt,CCT,CRT,path=/
+IAM,Role,cct-trip-tracer-task-role-crt,cct-trip-tracer-task-role-crt,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-cfn-exec-role-050752605169,cdk-crt-cac1-cfn-exec-role-050752605169,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-deploy-role-050752605169,cdk-crt-cac1-deploy-role-050752605169,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-file-publishing-role-050752605169,cdk-crt-cac1-file-publishing-role-050752605169,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-image-publishing-role-050752605169,cdk-crt-cac1-image-publishing-role-050752605169,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-lambda-exec-role-050752605169,cdk-crt-cac1-lambda-exec-role-050752605169,CCT,CRT,path=/
+IAM,Role,cdk-crt-cac1-lookup-role-050752605169,cdk-crt-cac1-lookup-role-050752605169,CCT,CRT,path=/
+IAM,Role,controltower-BaselinePipelineRole,controltower-BaselinePipelineRole,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-ca-central-1,controltower-cwl2kinesis-ca-central-1,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-eu-central-1,controltower-cwl2kinesis-eu-central-1,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-eu-west-1,controltower-cwl2kinesis-eu-west-1,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-us-east-1,controltower-cwl2kinesis-us-east-1,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-us-east-2,controltower-cwl2kinesis-us-east-2,CCT,CRT,path=/
+IAM,Role,controltower-cwl2kinesis-us-west-2,controltower-cwl2kinesis-us-west-2,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-ca-central-1,controltower-FirehosetoS3Role-ca-central-1,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-eu-central-1,controltower-FirehosetoS3Role-eu-central-1,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-eu-west-1,controltower-FirehosetoS3Role-eu-west-1,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-us-east-1,controltower-FirehosetoS3Role-us-east-1,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-us-east-2,controltower-FirehosetoS3Role-us-east-2,CCT,CRT,path=/
+IAM,Role,controltower-FirehosetoS3Role-us-west-2,controltower-FirehosetoS3Role-us-west-2,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-ca-central-1,controltower-kinesislambda-ca-central-1,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-eu-central-1,controltower-kinesislambda-eu-central-1,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-eu-west-1,controltower-kinesislambda-eu-west-1,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-us-east-1,controltower-kinesislambda-us-east-1,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-us-east-2,controltower-kinesislambda-us-east-2,CCT,CRT,path=/
+IAM,Role,controltower-kinesislambda-us-west-2,controltower-kinesislambda-us-west-2,CCT,CRT,path=/
+IAM,Role,controltower-LambdaBlockPublicS3-us-east-1,controltower-LambdaBlockPublicS3-us-east-1,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-ca-central-1,controltower-LambdaEncryptEbs-ca-central-1,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-eu-central-1,controltower-LambdaEncryptEbs-eu-central-1,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-eu-west-1,controltower-LambdaEncryptEbs-eu-west-1,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-us-east-1,controltower-LambdaEncryptEbs-us-east-1,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-us-east-2,controltower-LambdaEncryptEbs-us-east-2,CCT,CRT,path=/
+IAM,Role,controltower-LambdaEncryptEbs-us-west-2,controltower-LambdaEncryptEbs-us-west-2,CCT,CRT,path=/
+IAM,Role,CspmMonitorAws,CspmMonitorAws,CCT,CRT,path=/
+IAM,Role,CyeraRole,CyeraRole,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-AgentlessScanner,DefenderForCloud-AgentlessScanner,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-ArcAutoProvisioning,DefenderForCloud-ArcAutoProvisioning,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-Ciem,DefenderForCloud-Ciem,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-DataSecurityPostureDB,DefenderForCloud-DataSecurityPostureDB,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-DataThreatProtectionDB,DefenderForCloud-DataThreatProtectionDB,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-DefenderForServers,DefenderForCloud-DefenderForServers,CCT,CRT,path=/
+IAM,Role,DefenderForCloud-OidcCiem,DefenderForCloud-OidcCiem,CCT,CRT,path=/
+IAM,Role,entsre-cct-container-logg-ContainerLogsDropViewCust-4DNouPihhTo5,entsre-cct-container-logg-ContainerLogsDropViewCust-4DNouPihhTo5,CCT,CRT,path=/
+IAM,Role,entsre-cct-core-logging-cw-lambda-iam-crt,entsre-cct-core-logging-cw-lambda-iam-crt,CCT,CRT,path=/
+IAM,Role,entsre-cct-core-logging-no-cw-lambda-iam-crt,entsre-cct-core-logging-no-cw-lambda-iam-crt,CCT,CRT,path=/
+IAM,Role,harness-cct-crt-deployment-role,harness-cct-crt-deployment-role,CCT,CRT,path=/
+IAM,Role,MDCContainersAgentlessDiscoveryK8sRole,MDCContainersAgentlessDiscoveryK8sRole,CCT,CRT,path=/
+IAM,Role,MDCContainersImageAssessmentRole,MDCContainersImageAssessmentRole,CCT,CRT,path=/
+IAM,Role,MDCContainersK8sCloudWatchToKinesisRole,MDCContainersK8sCloudWatchToKinesisRole,CCT,CRT,path=/
+IAM,Role,MDCContainersK8sDataCollectionRole,MDCContainersK8sDataCollectionRole,CCT,CRT,path=/
+IAM,Role,MDCContainersK8sKinesisToS3Role,MDCContainersK8sKinesisToS3Role,CCT,CRT,path=/
+IAM,Role,MDCContainersK8sRole,MDCContainersK8sRole,CCT,CRT,path=/
+IAM,Role,OrcaSecurityRole,OrcaSecurityRole,CCT,CRT,path=/
+IAM,Role,role-backup,role-backup,CCT,CRT,path=/
+IAM,Role,role-backup-crossregioncopy-eventbridge-prod,role-backup-crossregioncopy-eventbridge-prod,CCT,CRT,path=/service-role/
+IAM,Role,role-backup-crossregioncopy-lambda-prod,role-backup-crossregioncopy-lambda-prod,CCT,CRT,path=/
+IAM,Role,SensitiveDataDiscovery,SensitiveDataDiscovery,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-ca-central-1,ssm-block-public-sharing-role-ca-central-1,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-ca-west-1,ssm-block-public-sharing-role-ca-west-1,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-eu-central-1,ssm-block-public-sharing-role-eu-central-1,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-eu-west-1,ssm-block-public-sharing-role-eu-west-1,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-us-east-1,ssm-block-public-sharing-role-us-east-1,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-us-east-2,ssm-block-public-sharing-role-us-east-2,CCT,CRT,path=/
+IAM,Role,ssm-block-public-sharing-role-us-west-2,ssm-block-public-sharing-role-us-west-2,CCT,CRT,path=/
+IAM,Role,SSMRoleForEC2,SSMRoleForEC2,CCT,CRT,path=/
+IAM,Role,StackSet-CustomControlTower-CfCT-IamPass-LambdaRole-Z1h7dfdPlWju,StackSet-CustomControlTower-CfCT-IamPass-LambdaRole-Z1h7dfdPlWju,CCT,CRT,path=/
+IAM,Role,stacksets-exec-bfc4bd36d75f75dbebcc86ef4a7b3ea5,stacksets-exec-bfc4bd36d75f75dbebcc86ef4a7b3ea5,CCT,CRT,path=/
+IAM,Role,vpc-flow-log-role-20251024183354853600000003,vpc-flow-log-role-20251024183354853600000003,CCT,CRT,path=/
+KMS,Key,7f961fdf-70d2-4047-bb05-752731acce15,alias/DefenderForCloudKey,CCT,CRT,
+KMS,Key,c2c15886-dbb2-4204-842b-797e532fd8bd,alias/DefenderForDatabases,CCT,CRT,
+KMS,Key,9ca9bc38-aeed-410b-9d98-13938efb26ff,alias/ac-cct-msk-kms-key-crt-cac1,CCT,CRT,
+KMS,Key,3248650b-0a5c-4993-8067-40e210d9f2a9,alias/customer-profiles-ac-cct-crt,CCT,CRT,
+KMS,Key,ea2ba4fd-baa3-4f6a-9376-9ecc2d5ed194,alias/kms-memberbackup-prod,CCT,CRT,
+SecretsManager,Secret,/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials,/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials,CCT,CRT,
+SecretsManager,Secret,AmazonMSK_ac-cct-msk-crt-cac1,AmazonMSK_ac-cct-msk-crt-cac1,CCT,CRT,
+SecretsManager,Secret,crt/lambda/authorizer,crt/lambda/authorizer,CCT,CRT,
+SecretsManager,Secret,crt/lambda/flight-status,crt/lambda/flight-status,CCT,CRT,
+SecretsManager,Secret,crt/lambda/baggage-tracker,crt/lambda/baggage-tracker,CCT,CRT,
+SecretsManager,Secret,crt/lambda/case-management-api-key,crt/lambda/case-management-api-key,CCT,CRT,
+SecretsManager,Secret,/crt/emh/msk-cluster-details,/crt/emh/msk-cluster-details,CCT,CRT,
+SecretsManager,Secret,/crtca1/ac-cct-ask-ac-crt-cac1-cluster/db-credentials,/crtca1/ac-cct-ask-ac-crt-cac1-cluster/db-credentials,CCT,CRT,
+SecretsManager,Secret,/crtca1/ac-cct-case-mgmt-crt-cac1-cluster/db-credentials,/crtca1/ac-cct-case-mgmt-crt-cac1-cluster/db-credentials,CCT,CRT,
+SecretsManager,Secret,cct-ask-ac-crt/app-secrets,cct-ask-ac-crt/app-secrets,CCT,CRT,
+SecretsManager,Secret,ASK_AC_SHAREPOINT_CERT_PEM,ASK_AC_SHAREPOINT_CERT_PEM,CCT,CRT,
+SecretsManager,Secret,ac-cct-notifications-kafka,ac-cct-notifications-kafka,CCT,CRT,
+SecretsManager,Secret,/crt-cac1/ac-cct-trip-tracer-historical-data-glue-crt-cac1/snowflake-credentials,/crt-cac1/ac-cct-trip-tracer-historical-data-glue-crt-cac1/snowflake-credentials,CCT,CRT,
+SecretsManager,Secret,ac-cct-trip-tracer-redshift-crt-credentials,ac-cct-trip-tracer-redshift-crt-credentials,CCT,CRT,
+SecretsManager,Secret,/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials,/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials,CCT,CRT,
+SecretsManager,Secret,/cct/auth-service/crt/machine-clients/chatbot-service,/cct/auth-service/crt/machine-clients/chatbot-service,CCT,CRT,
+SecretsManager,Secret,/cct/auth-service/crt/machine-auth/private-key,/cct/auth-service/crt/machine-auth/private-key,CCT,CRT,
+SecretsManager,Secret,arc75/cloudflared/tunnel-token,arc75/cloudflared/tunnel-token,CCT,CRT,
+SSM,Parameter,/cct/crt-cac1/cdk-bootstrap/config,/cct/crt-cac1/cdk-bootstrap/config,CCT,CRT,type=String
+SSM,Parameter,/cct/crt/historical-migration/baggage/checkpoint,/cct/crt/historical-migration/baggage/checkpoint,CCT,CRT,type=String
+SSM,Parameter,/cct/crt/historical-migration/icoupon/checkpoint,/cct/crt/historical-migration/icoupon/checkpoint,CCT,CRT,type=String
+SSM,Parameter,/cct/crt/historical-migration/pnr-ticket-emd-corr/checkpoint,/cct/crt/historical-migration/pnr-ticket-emd-corr/checkpoint,CCT,CRT,type=String
+SSM,Parameter,/cct/crt/historical-migration/pnr/checkpoint,/cct/crt/historical-migration/pnr/checkpoint,CCT,CRT,type=String
+SSM,Parameter,/cct/crt/historical-migration/stormx/checkpoint,/cct/crt/historical-migration/stormx/checkpoint,CCT,CRT,type=String
+SSM,Parameter,/cct/glue/arrival-code/last-run-timestamp-crt,/cct/glue/arrival-code/last-run-timestamp-crt,CCT,CRT,type=String
+SSM,Parameter,/cct/glue/cancel-code/last-run-timestamp-crt,/cct/glue/cancel-code/last-run-timestamp-crt,CCT,CRT,type=String
+SSM,Parameter,/cct/glue/oag-status/last-run-timestamp-crt,/cct/glue/oag-status/last-run-timestamp-crt,CCT,CRT,type=String
+SSM,Parameter,/cdk-bootstrap/crt-cac1/version,/cdk-bootstrap/crt-cac1/version,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-plaintext,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-plaintext,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-sasl,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-sasl,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-tls,/crt-cac1/msk/ac-cct-msk-crt-cac1/bootstrap-string-tls,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/msk-cluster-arn,/crt-cac1/msk/ac-cct-msk-crt-cac1/msk-cluster-arn,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/security-group,/crt-cac1/msk/ac-cct-msk-crt-cac1/security-group,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1a,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1a,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1b,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1b,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1d,/crt-cac1/msk/ac-cct-msk-crt-cac1/subnet-1d,CCT,CRT,type=String
+SSM,Parameter,/crt-cac1/msk/ac-cct-msk-crt-cac1/vpc,/crt-cac1/msk/ac-cct-msk-crt-cac1/vpc,CCT,CRT,type=String
+SSM,Parameter,/crt/layer/entsre-centralized-logging-layer/arn,/crt/layer/entsre-centralized-logging-layer/arn,CCT,CRT,type=String
+ACM,Certificate,ca7ad890-9655-4101-934f-c5447cc87df1,cct-service-proxy-crt.ac-cct-crt.cloud.aircanada.ca,CCT,CRT,status=ISSUED
+ACM,Certificate,f5a0c6dc-c14a-4ae0-b787-2be11ab57aa7,ask-ac-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,682a111f-131f-40ac-9e2b-2e8a68da5b9d,case-mgmt-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,f31ec490-eac9-434f-9b4c-8a433349c382,acpedia-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,e9c34f5d-e50a-4590-ac87-9d131c5dc07e,case-mgmt-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,8d9ce912-22a4-4cfc-b64d-eee1cd6b0903,ask-ac-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,cd4837e2-bffa-4825-be28-a9b5791ceac5,acpedia-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,bf90fff0-bc4f-42a8-a2af-5b2da413a570,claims-dashboard-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,79638c0d-ef3a-4c3c-b4b4-3f8ee09065f0,claims-dashboard-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,e2cdba83-1564-4c73-8933-f8a10321a007,cmp.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,137012ee-0dc8-4a23-a8e1-5d4475952ea7,case-intake-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,1fa1e415-fa7b-4b15-8867-5b4195c468ea,case-processor-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,cfb28dc4-21e2-4f96-a9eb-3083cdfe9c8f,case-processor-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,2eb89068-99f1-4351-adee-90c76e4e99ac,rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,cc2267ee-4b5e-42d5-abab-183788a1d41e,rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,861c7452-98f1-4762-9b7b-bfe1a5eb186e,case-intake-service.ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+ACM,Certificate,2916debb-0e33-4b9b-a81a-79c2e610ce76,ac-cct-crt.cloud.aircanada.com,CCT,CRT,status=ISSUED
+Route53,HostedZone,Z07827301P54REJHH1GAC,ac-cct-crt.cloud.aircanada.ca.,CCT,CRT,private=False records=4
+Route53,HostedZone,Z035896411R82GG2SLUAK,ac-cct-crt.cloud.aircanada.com.,CCT,CRT,private=False records=45
+Route53,HostedZone,Z05718961JRJW2PKQ0Y1,cct-trip-tracer.local.,CCT,CRT,private=True records=3
+Route53Resolver,Rule,rslvr-autodefined-rr-internet-resolver,Internet Resolver,CCT,CRT,type=RECURSIVE owner=Route 53 Resolver
+Route53Resolver,Rule,rslvr-rr-59497e30fedd4f43a,sharedservices-cac-dns-resolver-amazonaws-sys-rule,CCT,CRT,type=SYSTEM owner=378463553233
+Route53Resolver,Rule,rslvr-rr-d7be624ef5254f21b,sharedservices-cac-dns-resolver-dot-fwd-rule,CCT,CRT,type=FORWARD owner=378463553233
+Firehose,DeliveryStream,controltower-centralized-log-APIgw,controltower-centralized-log-APIgw,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-apps,controltower-centralized-log-apps,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-cloudfront,controltower-centralized-log-cloudfront,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-ec2,controltower-centralized-log-ec2,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-lambda,controltower-centralized-log-lambda,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-rds,controltower-centralized-log-rds,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-vpc,controltower-centralized-log-vpc,CCT,CRT,
+Firehose,DeliveryStream,controltower-centralized-log-waf,controltower-centralized-log-waf,CCT,CRT,
+Firehose,DeliveryStream,logs-crt,logs-crt,CCT,CRT,
+CloudFormation,Stack,cct-auth-service-crt,cct-auth-service-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-glue-snowflake-crt,cct-glue-snowflake-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-database-management-crt,cct-database-management-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-pnr-historical-crt,cct-flink-pnr-historical-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-sp-dashboard-crt,cct-sp-dashboard-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-sp-validateToken-crt,cct-sp-validateToken-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-sp-api-crt,cct-sp-api-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-sp-stepUp-crt,cct-sp-stepUp-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-historical-data-load-crt,cct-historical-data-load-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-customer-profile-member-context-crt,cct-customer-profile-member-context-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-AC-SSM-Public-sharing-Remediation-d9ba0a52-0c60-4dc1-aac5-9b27d5a05ba0,StackSet-AC-SSM-Public-sharing-Remediation-d9ba0a52-0c60-4dc1-aac5-9b27d5a05ba0,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-cm-historical-crt,cct-flink-cm-historical-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-fdm-historical-crt,cct-flink-fdm-historical-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-baggage-historical-crt,cct-flink-baggage-historical-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-tkt-historical-crt,cct-flink-tkt-historical-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-pnr-crt,cct-flink-pnr-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-baggage-crt,cct-flink-baggage-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-cm-crt,cct-flink-cm-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-fdm-crt,cct-flink-fdm-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-tkt-crt,cct-flink-tkt-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-flink-aacc-historical-crt,cct-flink-aacc-historical-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-aacc-crt,cct-flink-aacc-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-cm-pax-correlation-crt,cct-flink-etl-cm-pax-correlation-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-cm-crt,cct-flink-etl-cm-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-bookingChange-crt,cct-sp-bookingChange-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-getTrip-crt,cct-sp-getTrip-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-case-crt,cct-sp-case-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-notifications-crt,cct-sp-notifications-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-customer-crt,cct-sp-customer-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-baggage-crt,cct-sp-baggage-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-sp-flightStatus-crt,cct-sp-flightStatus-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-cancel-voucher-crt,cct-flink-etl-cancel-voucher-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-icoupon-redemption-crt,cct-flink-etl-icoupon-redemption-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-icoupon-crt,cct-flink-etl-icoupon-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-stormx-crt,cct-flink-etl-stormx-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-aacc-crt,cct-flink-etl-aacc-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-baggage-crt,cct-flink-etl-baggage-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-pnr-tkt-correlation-crt,cct-flink-etl-pnr-tkt-correlation-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-tkt-crt,cct-flink-etl-tkt-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-fdm-crt,cct-flink-etl-fdm-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-flink-etl-pnr-crt,cct-flink-etl-pnr-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-trip-tracer-dashboard-crt,cct-trip-tracer-dashboard-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-glue-historical-crt,cct-glue-historical-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,ac-cct-cmp-api-crt,ac-cct-cmp-api-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,ac-cct-cmp-lambdas-crt,ac-cct-cmp-lambdas-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,ac-cct-cmp-infra-crt,ac-cct-cmp-infra-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-customer-profile-merge-processor-crt,cct-customer-profile-merge-processor-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-entity-resolution-crt,cct-entity-resolution-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-kafka-mirroring-crt,cct-kafka-mirroring-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-s3-tiering-cr-a347de30-297b-4d01-ac72-4078ef989d39,StackSet-CustomControlTower-member-backup-s3-tiering-cr-a347de30-297b-4d01-ac72-4078ef989d39,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-s3-tiering-local-f8da3de6-dd5e-43f1-9e69-d10757481642,StackSet-CustomControlTower-member-backup-s3-tiering-local-f8da3de6-dd5e-43f1-9e69-d10757481642,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-copy-automation-db8ff3b8-c049-4dfd-bc2b-594d9ab3785b,StackSet-CustomControlTower-member-backup-copy-automation-db8ff3b8-c049-4dfd-bc2b-594d9ab3785b,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-copy-role-54da4699-8d5b-4389-bf8a-3cffe834297c,StackSet-CustomControlTower-member-backup-copy-role-54da4699-8d5b-4389-bf8a-3cffe834297c,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-customer-profile-infrastructure-crt,cct-customer-profile-infrastructure-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,entsre-cct-crt-container-logging-s3,entsre-cct-crt-container-logging-s3,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,entsre-cct-crt-container-logging-sqs,entsre-cct-crt-container-logging-sqs,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,entsre-cct-container-logging-infra-athena-crt,entsre-cct-container-logging-infra-athena-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,FireLens-ECR-CRT-Stack,FireLens-ECR-CRT-Stack,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,cct-sp-infra-crt,cct-sp-infra-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-trip-tracer-infra-crt,cct-trip-tracer-infra-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,cct-shared-infra-crt,cct-shared-infra-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,entsre-cct-core-lambda-logging-app-lambdas-crt,entsre-cct-core-lambda-logging-app-lambdas-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,entsre-cct-core-lambda-logging-infra-athena-crt,entsre-cct-core-lambda-logging-infra-athena-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,entsre-cct-core-lambda-logging-infra-s3-crt,entsre-cct-core-lambda-logging-infra-s3-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,entsre-cct-core-lambda-logging-infra-iam-crt,entsre-cct-core-lambda-logging-infra-iam-crt,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,entsre-cct-core-lambda-logging-infra-sqs-crt,entsre-cct-core-lambda-logging-infra-sqs-crt,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-vault-915edc93-a19e-4ae1-b127-1de1ba55cbd1,StackSet-CustomControlTower-member-backup-vault-915edc93-a19e-4ae1-b127-1de1ba55cbd1,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-member-backup-role-737e4740-d519-4b10-9258-1dfffd7d463f,StackSet-CustomControlTower-member-backup-role-737e4740-d519-4b10-9258-1dfffd7d463f,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,ac-cct-crt-cac1-cdktoolkit,ac-cct-crt-cac1-cdktoolkit,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-Defender-for-cloud-AWS-d173b99c-42ec-45ea-91be-8caac3d7e063,StackSet-Defender-for-cloud-AWS-d173b99c-42ec-45ea-91be-8caac3d7e063,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-controltower-permission-boundary-policy-dc0e1cd9-08fc-43c8-87a3-3a0f7ecada83,StackSet-controltower-permission-boundary-policy-dc0e1cd9-08fc-43c8-87a3-3a0f7ecada83,CCT,CRT,status=UPDATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-CfCT-KinesisLogFirehose-2248cb6f-ec83-4e7a-97ec-ddeb65f8dfd0,StackSet-CustomControlTower-CfCT-KinesisLogFirehose-2248cb6f-ec83-4e7a-97ec-ddeb65f8dfd0,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-CfCT-baseline-role-846b100e-37d7-47d4-9b53-ac9fdf49c16f,StackSet-CustomControlTower-CfCT-baseline-role-846b100e-37d7-47d4-9b53-ac9fdf49c16f,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-CustomControlTower-CfCT-EnableDefaultEbsEncryption-b3403013-ccba-45f4-8939-2867a09317d6,StackSet-CustomControlTower-CfCT-EnableDefaultEbsEncryption-b3403013-ccba-45f4-8939-2867a09317d6,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-AWSControlTowerBP-BASELINE-CONFIG-89093ffd-1a69-4130-a878-8160e286b0d4,StackSet-AWSControlTowerBP-BASELINE-CONFIG-89093ffd-1a69-4130-a878-8160e286b0d4,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-b87023ac-b95b-4b8c-8f27-bc15762f4991,StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-b87023ac-b95b-4b8c-8f27-bc15762f4991,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-OrcaSecurityStackSet-2d525c60-ebb6-413a-a2a9-4e35318164cd,StackSet-OrcaSecurityStackSet-2d525c60-ebb6-413a-a2a9-4e35318164cd,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-Cyera-role-0de56ab5-202b-4119-83cc-4be15df1805c,StackSet-Cyera-role-0de56ab5-202b-4119-83cc-4be15df1805c,CCT,CRT,status=CREATE_COMPLETE
+CloudFormation,Stack,StackSet-AC-SG-Remediation-Roles-3049a6c4-6c21-4eae-a986-bee10a077e45,StackSet-AC-SG-Remediation-Roles-3049a6c4-6c21-4eae-a986-bee10a077e45,CCT,CRT,status=CREATE_COMPLETE
+GuardDuty,Detector,76cac85c27af443fb2c9b79c787d1f7e,76cac85c27af443fb2c9b79c787d1f7e,CCT,CRT,

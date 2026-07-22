@@ -1,0 +1,131 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFE015-2026-06-26",
+  "title": "FD-SIT-015: APPR multi-pax aggregated",
+  "description": "APPR eligible - multiple passengers - single case, aggregated payout",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFE015",
+    "booking_date": "2026-06-26",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YVRAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YVR"
+  },
+  "last_modification_comment": "SIM-FD-SIT-015-INT",
+  "creation_comment": "SIM-FD-SIT-015-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "JOSEPH",
+      "last_name": "HARRIS",
+      "gender": "MALE",
+      "date_of_birth": "1986-03-28",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551014"
+    },
+    {
+      "type": "ADT",
+      "first_name": "SUSAN",
+      "last_name": "CLARK",
+      "gender": "FEMALE",
+      "date_of_birth": "1979-11-22",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551015"
+    },
+    {
+      "type": "ADT",
+      "first_name": "THOMAS",
+      "last_name": "LEWIS",
+      "gender": "MALE",
+      "date_of_birth": "1972-08-14",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551016"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "115",
+      "operating_flight_number": "115",
+      "origin": "YVR",
+      "destination": "YUL",
+      "dep_local": "2026-06-26T10:00:00",
+      "arr_local": "2026-06-26T14:00:00",
+      "dep_utc": "2026-06-26T14:00:00Z",
+      "arr_utc": "2026-06-26T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142410000151",
+      "0142410000152",
+      "0142410000153"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFE015",
+        "pnr_id": "ZFE015-2026-06-26"
+      },
+      "passenger": {
+        "rows": 3
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-015",
+    "appr",
+    "int-env",
+    "appr",
+    "multipax"
+  ]
+}

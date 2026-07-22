@@ -1,0 +1,174 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "QMVXFN-2026-06-15",
+  "pnr": "QMVXFN"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "PTP",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "QMVXFN-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "PTP",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 1840,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 1840,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#1840#2026-06-15#PTP"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "PTP",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "QMVXFN-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "PTP",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 1840,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 1840,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#1840#2026-06-15#PTP"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "QMVXFN-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "1840",
+    "departureAirport": "PTP",
+    "arrivalAirport": "YUL",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 210,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "QMVXFN-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-EU-EL-11",
+     "reason": "EU Guadeloupe Fallback EUR400",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "EUR",
+      "delayBand": "DELAY_3_TO_LT_4_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "QMVXFN-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "1840",
+    "departureAirport": "PTP",
+    "arrivalAirport": "YUL",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 210,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "QMVXFN-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "EU Guadeloupe Fallback EUR400",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "QMVXFN-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "QMVXFN-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 1840,
+   "departureAirport": "PTP",
+   "arrivalAirport": "YUL",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "QMVXFN-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

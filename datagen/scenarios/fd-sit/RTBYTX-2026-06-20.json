@@ -1,0 +1,108 @@
+{
+ "$schema_version": 2,
+ "scenario_id": "RTBYTX-2026-06-20",
+ "title": "SOC_UAT-056 SoC-ASL-NE-04: SOC_UAT-056_ASL \u2013 Not Eligible \u2013 Transit Delay Below 2h - ELIAS STANLEHOLT [RTBYTX] CRT",
+ "description": "SOC_UAT-056 | SoC-ASL-NE-04 | Transit delay below 2 hours | CRT",
+ "canvas": "_canvas/pnr_creation_domestic_ac.json",
+ "contains_pii": false,
+ "identity": {
+  "pnr": "RTBYTX",
+  "booking_date": "2026-06-20",
+  "type": "PNR"
+ },
+ "point_of_sale": {
+  "office_id": "YULAC010V",
+  "iata_number": "01424012",
+  "system_code": "1A",
+  "agent_type": "AIRLINE",
+  "agent_numeric_sign": "0001",
+  "agent_initials": "FD",
+  "duty_code": "SU",
+  "agent_country": "CA",
+  "agent_city": "YUL"
+ },
+ "last_modification_comment": "SIM-SOC_UAT-056-CRT",
+ "creation_comment": "SIM-SOC_UAT-056-CRT",
+ "passengers": [
+  {
+   "type": "ADT",
+   "first_name": "ELIAS",
+   "last_name": "STANLEHOLT",
+   "gender": "U",
+   "date_of_birth": "1986-04-23",
+   "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+   "phone": "+94712534323"
+  }
+ ],
+ "segments": [
+  {
+   "carrier": "AC",
+   "operating_carrier": "AC",
+   "flight_number": "084",
+   "operating_flight_number": "084",
+   "origin": "TLV",
+   "destination": "YYZ",
+   "dep_local": "2026-06-20T10:00:00",
+   "arr_local": "2026-06-20T14:00:00",
+   "dep_utc": "2026-06-20T14:00:00Z",
+   "arr_utc": "2026-06-20T18:00:00Z",
+   "booking_datetime": null,
+   "aircraft": "789",
+   "cabin": "Y",
+   "status": "HK",
+   "arrival_terminal": "1"
+  }
+ ],
+ "ticketing": {
+  "issuance_local_date": "2026-06-01",
+  "fare": {
+   "amount": "350.00",
+   "currency": "CAD"
+  },
+  "ticket_numbers": [
+   "0143620000561"
+  ]
+ },
+ "timeline": [
+  {
+   "version": 0,
+   "at": "2026-06-01T10:00:00Z",
+   "action": "bootstrap",
+   "description": "Pre-ticketing stub"
+  },
+  {
+   "version": 1,
+   "at": "2026-06-01T10:00:01Z",
+   "action": "ticketing_added",
+   "description": "Ticketing reference attached"
+  }
+ ],
+ "expected_cascade": {
+  "db_end_state": {
+   "trip": {
+    "rows": 1,
+    "status": "ACTIVE",
+    "pnr": "RTBYTX",
+    "pnr_id": "RTBYTX-2026-06-20"
+   },
+   "passenger": {
+    "rows": 1
+   },
+   "flight_segment": {
+    "rows": 1
+   }
+  },
+  "total_cascade_budget_ms": 30000
+ },
+ "classification": {
+  "primary_code": "SOC_UAT-056",
+  "primary_name": "SOC UAT SoC-ASL-NE-04 CRT",
+  "confidence": "high"
+ },
+ "tags": [
+  "synthetic",
+  "soc-uat-crt",
+  "asl",
+  "ne"
+ ]
+}

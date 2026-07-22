@@ -1,0 +1,174 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "CMNLLR-2026-06-15",
+  "pnr": "CMNLLR"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "CMNLLR-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 82,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 82,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#082#2026-06-15#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "TLV",
+    "associatedSegments": [
+     {
+      "segmentId": "CMNLLR-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "TLV",
+      "marketingFlightNumber": 82,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 82,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#082#2026-06-15#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "CMNLLR-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "082",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "TLV",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "CREW",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "CMNLLR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-ASL-EL-05",
+     "reason": "ASL No Travel Origin",
+     "compensationDetails": {
+      "amount": 3670,
+      "currency": "ILS",
+      "delayBand": "NOT_APPLICABLE",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "CMNLLR-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "082",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "TLV",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "CREW",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "CMNLLR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "ASL No Travel Origin",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "CMNLLR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "CMNLLR-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 82,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "TLV",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "CMNLLR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

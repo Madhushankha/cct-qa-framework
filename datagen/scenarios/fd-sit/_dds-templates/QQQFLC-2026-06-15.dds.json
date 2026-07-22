@@ -1,0 +1,174 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "QQQFLC-2026-06-15",
+  "pnr": "QQQFLC"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "LHR",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "QQQFLC-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 858,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 858,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#858#2026-06-15#LHR"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "LHR",
+    "destination": "YTZ",
+    "associatedSegments": [
+     {
+      "segmentId": "QQQFLC-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "LHR",
+      "arrivalAirport": "YTZ",
+      "marketingFlightNumber": 858,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 858,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#858#2026-06-15#LHR"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "QQQFLC-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "858",
+    "departureAirport": "LHR",
+    "arrivalAirport": "YTZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 300,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "QQQFLC-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-EU-EL-08",
+     "reason": "EU-UK 4+h Sister+Fallback GBP520",
+     "compensationDetails": {
+      "amount": 520,
+      "currency": "GBP",
+      "delayBand": "DELAY_GTE_4_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "QQQFLC-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "858",
+    "departureAirport": "LHR",
+    "arrivalAirport": "YTZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 300,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "QQQFLC-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "EU-UK 4+h Sister+Fallback GBP520",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "QQQFLC-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "QQQFLC-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 858,
+   "departureAirport": "LHR",
+   "arrivalAirport": "YTZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "QQQFLC-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "EVRLVP-2026-06-20",
+  "pnr": "EVRLVP"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": true,
+   "promisedItinerary": {
+    "origin": "FRA",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "EVRLVP-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 470,
+      "marketingCarrierCode": "LH",
+      "operatingFlightNumber": 470,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#470#2026-06-20#FRA"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "FRA",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "EVRLVP-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T21:00:00+00:00",
+      "arrivalDatetime": "2026-06-21T01:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 470,
+      "marketingCarrierCode": "LH",
+      "operatingFlightNumber": 470,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#470#2026-06-20#FRA"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "EVRLVP-2026-06-20-ST-1",
+    "carrierCode": "LH",
+    "flightNumber": "470",
+    "departureAirport": "FRA",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 420,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "EVRLVP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-02",
+     "reason": "Employee booking OAL",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "EVRLVP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "EVRLVP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "EVRLVP-2026-06-20-ST-1",
+   "carrierCode": "LH",
+   "flightNumber": 470,
+   "departureAirport": "FRA",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 420,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "EVRLVP-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-EU-NE-02",
+     "reason": "Employee booking OAL",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

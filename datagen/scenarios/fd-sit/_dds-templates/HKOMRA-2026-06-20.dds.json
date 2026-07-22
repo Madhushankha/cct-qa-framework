@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "HKOMRA-2026-06-20",
+  "pnr": "HKOMRA"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": true,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "HFA",
+    "associatedSegments": [
+     {
+      "segmentId": "HKOMRA-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "HFA",
+      "marketingFlightNumber": 90,
+      "marketingCarrierCode": "WS",
+      "operatingFlightNumber": 90,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#090#2026-06-20#TLV"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "HFA",
+    "associatedSegments": [
+     {
+      "segmentId": "HKOMRA-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T21:00:00+00:00",
+      "arrivalDatetime": "2026-06-21T01:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "HFA",
+      "marketingFlightNumber": 90,
+      "marketingCarrierCode": "WS",
+      "operatingFlightNumber": 90,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#090#2026-06-20#TLV"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "HKOMRA-2026-06-20-ST-1",
+    "carrierCode": "WS",
+    "flightNumber": "090",
+    "departureAirport": "TLV",
+    "arrivalAirport": "HFA",
+    "isStarSegment": false,
+    "isOalSegment": true
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 420,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "HKOMRA-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "FD-ASL-ND-01",
+     "reason": "Disruption on OAL",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "HKOMRA-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "HKOMRA-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "HKOMRA-2026-06-20-ST-1",
+   "carrierCode": "WS",
+   "flightNumber": 90,
+   "departureAirport": "TLV",
+   "arrivalAirport": "HFA",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 420,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "HKOMRA-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-ASL-ND-01",
+     "reason": "Disruption on OAL",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

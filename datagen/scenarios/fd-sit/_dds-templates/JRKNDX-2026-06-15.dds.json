@@ -1,0 +1,146 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "JRKNDX-2026-06-15",
+  "pnr": "JRKNDX"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "YOW",
+    "associatedSegments": [
+     {
+      "segmentId": "JRKNDX-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YOW",
+      "marketingFlightNumber": 86,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 86,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#086#2026-06-15#TLV"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "YOW",
+    "associatedSegments": [
+     {
+      "segmentId": "JRKNDX-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T14:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "YOW",
+      "marketingFlightNumber": 86,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 86,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#086#2026-06-15#TLV"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "JRKNDX-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "086",
+    "departureAirport": "TLV",
+    "arrivalAirport": "YOW",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "42",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "JRKNDX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "FD-ASL-ND-03",
+     "reason": "New Destination (New contract)",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "JRKNDX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "JRKNDX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "JRKNDX-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 86,
+   "departureAirport": "TLV",
+   "arrivalAirport": "YOW",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "JRKNDX-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

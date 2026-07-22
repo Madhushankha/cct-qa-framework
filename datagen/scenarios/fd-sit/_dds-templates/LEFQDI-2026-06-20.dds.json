@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "LEFQDI-2026-06-20",
+  "pnr": "LEFQDI"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "CDG",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "LEFQDI-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-20#CDG"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "CDG",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "LEFQDI-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "CDG",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 871,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 871,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#871#2026-06-20#CDG"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "LEFQDI-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "871",
+    "departureAirport": "CDG",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "LEFQDI-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NE-17",
+     "reason": "No travel Return - No cancellation",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "LEFQDI-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "LEFQDI-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "LEFQDI-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 871,
+   "departureAirport": "CDG",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 0,
+   "delayCategory": "NO_TRAVEL",
+   "passengerEligibility": [
+    {
+     "passengerId": "LEFQDI-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-EU-NE-13",
+     "reason": "No travel Return - No cancellation",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

@@ -1,0 +1,582 @@
+[
+  {
+    "tc": "FD_TC_199",
+    "src": "FD_TC_199",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "GTJDPJ",
+    "pnr_id": "GTJDPJ-2026-06-15",
+    "ticket": "014714000101",
+    "tickets": [
+      "014714000101"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "ROOKLEBROOK"
+      ]
+    ],
+    "pax": "ZORA ROOKLEBROOK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_146",
+    "src": "FD_TC_146",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "NTTVHW",
+    "pnr_id": "NTTVHW-2026-06-15",
+    "ticket": "014714000201",
+    "tickets": [
+      "014714000201"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-EL-01",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "VESNA",
+        "RUSHOWDEN"
+      ]
+    ],
+    "pax": "VESNA RUSHOWDEN",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_152",
+    "src": "FD_TC_152",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "KCGQHP",
+    "pnr_id": "KCGQHP-2026-06-15",
+    "ticket": "014714000301",
+    "tickets": [
+      "014714000301"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-MIXED-ND-01",
+    "amount": 400,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ZORA",
+        "LINENBROOK"
+      ]
+    ],
+    "pax": "ZORA LINENBROOK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_198",
+    "src": "FD_TC_198",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "YJWXVG",
+    "pnr_id": "YJWXVG-2026-06-15",
+    "ticket": "014714000401",
+    "tickets": [
+      "014714000401"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ULRICH",
+        "BLYANGROVE"
+      ]
+    ],
+    "pax": "ULRICH BLYANGROVE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_091",
+    "src": "FD_TC_091",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "VHVTLS",
+    "pnr_id": "VHVTLS-2026-06-15",
+    "ticket": "014714000501",
+    "tickets": [
+      "014714000501"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-31",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "THEODORA",
+        "FENELBURY"
+      ]
+    ],
+    "pax": "THEODORA FENELBURY",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_145",
+    "src": "FD_TC_145",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "LGDTMN",
+    "pnr_id": "LGDTMN-2026-06-15",
+    "ticket": "014714000601",
+    "tickets": [
+      "014714000601"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-ASL-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "TAMSIN",
+        "ORMERINGHOLT"
+      ]
+    ],
+    "pax": "TAMSIN ORMERINGHOLT",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_067",
+    "src": "FD_TC_067",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "BFBSNK",
+    "pnr_id": "BFBSNK-2026-06-15",
+    "ticket": "014714000701",
+    "tickets": [
+      "014714000701"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-02",
+    "amount": 520,
+    "currency": "GBP",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "FREYA",
+        "WOODMARSH"
+      ]
+    ],
+    "pax": "FREYA WOODMARSH",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_140",
+    "src": "FD_TC_140",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "XHDMYY",
+    "pnr_id": "XHDMYY-2026-06-15",
+    "ticket": "014714000801",
+    "tickets": [
+      "014714000801"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-ASL-ND-02",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YARDLEY",
+        "NORTHOWMERE"
+      ]
+    ],
+    "pax": "YARDLEY NORTHOWMERE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_197",
+    "src": "FD_TC_197",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "RJLDXZ",
+    "pnr_id": "RJLDXZ-2026-06-15",
+    "ticket": "014714000901",
+    "tickets": [
+      "014714000901"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SVEN",
+        "WOODERFIELD"
+      ]
+    ],
+    "pax": "SVEN WOODERFIELD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_171",
+    "src": "FD_TC_171",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "PCDBDR",
+    "pnr_id": "PCDBDR-2026-06-15",
+    "ticket": "014714001001",
+    "tickets": [
+      "014714001001"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "YANNICK",
+        "NORTHELWORTH"
+      ]
+    ],
+    "pax": "YANNICK NORTHELWORTH",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_099",
+    "src": "FD_TC_099",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "ZTWSBS",
+    "pnr_id": "ZTWSBS-2026-06-15",
+    "ticket": "014714001101",
+    "tickets": [
+      "014714001101"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-EU-NE-07",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "CALLUM",
+        "RUSHBURY"
+      ]
+    ],
+    "pax": "CALLUM RUSHBURY",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_179",
+    "src": "FD_TC_179",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "TRMNZT",
+    "pnr_id": "TRMNZT-2026-06-15",
+    "ticket": "014714001201",
+    "tickets": [
+      "014714001201"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "XIMENA",
+        "ROOKANHAM"
+      ]
+    ],
+    "pax": "XIMENA ROOKANHAM",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_134",
+    "src": "FD_TC_134",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "PFPVDH",
+    "pnr_id": "PFPVDH-2026-06-15",
+    "ticket": "014714001301",
+    "tickets": [
+      "014714001301"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-20",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "JASPER",
+        "SHARPINGFORD"
+      ]
+    ],
+    "pax": "JASPER SHARPINGFORD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_158",
+    "src": "FD_TC_158",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "RJVPTK",
+    "pnr_id": "RJVPTK-2026-06-15",
+    "ticket": "014714001401",
+    "tickets": [
+      "014714001401"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-27",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "WINSLOW",
+        "QUENANSHAW"
+      ]
+    ],
+    "pax": "WINSLOW QUENANSHAW",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_124",
+    "src": "FD_TC_124",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "RFGJNW",
+    "pnr_id": "RFGJNW-2026-06-15",
+    "ticket": "014714001501",
+    "tickets": [
+      "014714001501"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-ASL-NE-06",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ORSON",
+        "ORMERERFIELD"
+      ]
+    ],
+    "pax": "ORSON ORMERERFIELD",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_047",
+    "src": "FD_TC_047",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "FKLKBX",
+    "pnr_id": "FKLKBX-2026-06-15",
+    "ticket": "014714001601",
+    "tickets": [
+      "014714001601"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NOT_ELIGIBLE",
+    "syscode": "FD-APPR-NE-21",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "SEBASTIAN",
+        "BRAMLEBECK"
+      ]
+    ],
+    "pax": "SEBASTIAN BRAMLEBECK",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_117",
+    "src": "FD_TC_117",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "LFXZDH",
+    "pnr_id": "LFXZDH-2026-06-15",
+    "ticket": "014714001701",
+    "tickets": [
+      "014714001701"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-ASL-EL-01",
+    "amount": 3670,
+    "currency": "ILS",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "HEIDI",
+        "PRESELMARSH"
+      ]
+    ],
+    "pax": "HEIDI PRESELMARSH",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_116",
+    "src": "FD_TC_116",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "GWXHPG",
+    "pnr_id": "GWXHPG-2026-06-15",
+    "ticket": "014714001801",
+    "tickets": [
+      "014714001801"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "PENDING",
+    "syscode": "FD-EU-PE-01",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-07-14",
+    "pax_names": [
+      [
+        "LARISSA",
+        "FENANSTON"
+      ]
+    ],
+    "pax": "LARISSA FENANSTON",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_058",
+    "src": "FD_TC_058",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "BVBDZY",
+    "pnr_id": "BVBDZY-2026-06-15",
+    "ticket": "014714001901",
+    "tickets": [
+      "014714001901"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "NO_DETERMINATION",
+    "syscode": "FD-APPR-ND-05",
+    "amount": 0,
+    "currency": "",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "ROMILLY",
+        "MEREENVALE"
+      ]
+    ],
+    "pax": "ROMILLY MEREENVALE",
+    "uniq_names": true
+  },
+  {
+    "tc": "FD_TC_087",
+    "src": "FD_TC_087",
+    "donor": "PYMRRX-2026-06-15",
+    "loc": "MHHSZT",
+    "pnr_id": "MHHSZT-2026-06-15",
+    "ticket": "014714002001",
+    "tickets": [
+      "014714002001"
+    ],
+    "npax": 1,
+    "email": "Gimhan.Ranasinghe@aircanada.ca",
+    "phone": "+14168883274",
+    "pin": true,
+    "status": "ELIGIBLE",
+    "syscode": "FD-EU-EL-25",
+    "amount": 600,
+    "currency": "EUR",
+    "group": false,
+    "flight_date": "2026-06-15",
+    "pax_names": [
+      [
+        "QUENTIN",
+        "WRENLEHOLT"
+      ]
+    ],
+    "pax": "QUENTIN WRENLEHOLT",
+    "uniq_names": true
+  }
+]

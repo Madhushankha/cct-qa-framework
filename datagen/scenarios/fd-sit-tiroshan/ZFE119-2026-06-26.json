@@ -1,0 +1,111 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFE119-2026-06-26",
+  "title": "FD-SIT-119: French language",
+  "description": "Customer interacts in a different language (French / other)",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFE119",
+    "booking_date": "2026-06-26",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YULAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+  "last_modification_comment": "SIM-FD-SIT-119-INT",
+  "creation_comment": "SIM-FD-SIT-119-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "PETER",
+      "last_name": "CRUZ",
+      "gender": "MALE",
+      "date_of_birth": "1967-03-16",
+      "email": "tiroshanmbck@gmail.com",
+      "phone": "+14165551110"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "219",
+      "operating_flight_number": "219",
+      "origin": "YUL",
+      "destination": "YYZ",
+      "dep_local": "2026-06-26T10:00:00",
+      "arr_local": "2026-06-26T14:00:00",
+      "dep_utc": "2026-06-26T14:00:00Z",
+      "arr_utc": "2026-06-26T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142410001191"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFE119",
+        "pnr_id": "ZFE119-2026-06-26"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-119",
+    "appr",
+    "int-env",
+    "language",
+    "french"
+  ]
+}

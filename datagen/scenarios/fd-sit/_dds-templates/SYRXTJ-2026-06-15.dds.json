@@ -1,0 +1,152 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "SYRXTJ-2026-06-15",
+  "pnr": "SYRXTJ"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YUL",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "SYRXTJ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 435,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 435,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#435#2026-06-15#YUL"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YUL",
+    "destination": "YHM",
+    "associatedSegments": [
+     {
+      "segmentId": "SYRXTJ-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YHM",
+      "marketingFlightNumber": 436,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 436,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#436#2026-06-15#YUL"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "SYRXTJ-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "436",
+    "departureAirport": "YUL",
+    "arrivalAirport": "YHM",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "31",
+   "customerFriendlyDisruptionReason": "Your flight arrived more than 3 hours late due to a reason within Air Canada's control.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "SYRXTJ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "arrival delay within carrier control",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SYRXTJ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "SYRXTJ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "SYRXTJ-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 436,
+   "departureAirport": "YUL",
+   "arrivalAirport": "YHM",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "SYRXTJ-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

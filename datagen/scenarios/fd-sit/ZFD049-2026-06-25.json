@@ -1,0 +1,112 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFD049-2026-06-25",
+  "title": "FD-SIT-049: OTP fail IDV fallback",
+  "description": "OTP fails five times - IDV fallback succeeds",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFD049",
+    "booking_date": "2026-06-25",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "YYZAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YYZ"
+  },
+  "last_modification_comment": "SIM-FD-SIT-049-INT",
+  "creation_comment": "SIM-FD-SIT-049-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "RONALD",
+      "last_name": "MORGAN",
+      "gender": "MALE",
+      "date_of_birth": "1971-10-11",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165551048"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "149",
+      "operating_flight_number": "149",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-25T10:00:00",
+      "arr_local": "2026-06-25T14:00:00",
+      "dep_utc": "2026-06-25T14:00:00Z",
+      "arr_utc": "2026-06-25T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "CAD"
+    },
+    "ticket_numbers": [
+      "0142400000491"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFD049",
+        "pnr_id": "ZFD049-2026-06-25"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-049",
+    "appr",
+    "int-env",
+    "identification",
+    "otp-fail",
+    "idv"
+  ]
+}

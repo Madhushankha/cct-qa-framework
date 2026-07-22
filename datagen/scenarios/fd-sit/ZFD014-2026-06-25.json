@@ -1,0 +1,111 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZFD014-2026-06-25",
+  "title": "FD-SIT-014: ASL Israel 480min+",
+  "description": "ASL eligible - 480 minute delay or greater - ILS 3,580",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+  "identity": {
+    "pnr": "ZFD014",
+    "booking_date": "2026-06-25",
+    "type": "PNR"
+  },
+  "point_of_sale": {
+    "office_id": "TLVAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "IL",
+    "agent_city": "TLV"
+  },
+  "last_modification_comment": "SIM-FD-SIT-014-INT",
+  "creation_comment": "SIM-FD-SIT-014-INT",
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "BARBARA",
+      "last_name": "WHITE",
+      "gender": "FEMALE",
+      "date_of_birth": "1991-07-03",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+14165551013"
+    }
+  ],
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "114",
+      "operating_flight_number": "114",
+      "origin": "TLV",
+      "destination": "YYZ",
+      "dep_local": "2026-06-25T10:00:00",
+      "arr_local": "2026-06-25T14:00:00",
+      "dep_utc": "2026-06-25T14:00:00Z",
+      "arr_utc": "2026-06-25T18:00:00Z",
+      "booking_datetime": "2026-06-01T10:00:00Z",
+      "aircraft": "77W",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+  "ticketing": {
+    "issuance_local_date": "2026-06-01",
+    "fare": {
+      "amount": "500.00",
+      "currency": "ILS"
+    },
+    "ticket_numbers": [
+      "0142400000141"
+    ]
+  },
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-06-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-06-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {
+        "rows": 1,
+        "status": "ACTIVE",
+        "pnr": "ZFD014",
+        "pnr_id": "ZFD014-2026-06-25"
+      },
+      "passenger": {
+        "rows": 1
+      },
+      "flight_segment": {
+        "rows": 1
+      }
+    },
+    "total_cascade_budget_ms": 30000
+  },
+  "classification": {
+    "primary_code": "FD-SIT",
+    "primary_name": "Flight Disruption SIT INT",
+    "confidence": "high"
+  },
+  "tags": [
+    "synthetic",
+    "fd-sit",
+    "FD-SIT-014",
+    "asl",
+    "int-env",
+    "asl",
+    "israel"
+  ]
+}

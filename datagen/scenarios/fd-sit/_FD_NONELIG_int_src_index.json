@@ -1,0 +1,872 @@
+[
+ {
+  "tc": "FD_TC_035",
+  "pnr_id": "DGFHNT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-01",
+  "amount": 0,
+  "currency": "",
+  "pax": "ROBERT SIMARD",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_036",
+  "pnr_id": "DGZWCG-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-02",
+  "amount": 0,
+  "currency": "",
+  "pax": "THOMAS WEBER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_037",
+  "pnr_id": "FQVKGJ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-05",
+  "amount": 0,
+  "currency": "",
+  "pax": "MICHEL TANGUAY",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_038",
+  "pnr_id": "HJJRKY-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-06",
+  "amount": 0,
+  "currency": "",
+  "pax": "STEPHANE BOUCHER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_039",
+  "pnr_id": "JFWYWF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-07",
+  "amount": 0,
+  "currency": "",
+  "pax": "YVES CHAMPAGNE",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_040",
+  "pnr_id": "JPPPPK-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-08",
+  "amount": 0,
+  "currency": "",
+  "pax": "GASTON RIOUX",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_041",
+  "pnr_id": "JWCBKK-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-10",
+  "amount": 0,
+  "currency": "",
+  "pax": "ARMAND TESSIER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_042",
+  "pnr_id": "JYCYCP-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-12",
+  "amount": 0,
+  "currency": "",
+  "pax": "REJEAN FORTIER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_043",
+  "pnr_id": "KGBQHS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-14",
+  "amount": 0,
+  "currency": "",
+  "pax": "EMILE GAGNON",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_044",
+  "pnr_id": "KGTGMW-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-16",
+  "amount": 0,
+  "currency": "",
+  "pax": "LAURENT MERCIER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_045",
+  "pnr_id": "MTMQQL-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-18",
+  "amount": 0,
+  "currency": "",
+  "pax": "FRANCINE OUELLET",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_046",
+  "pnr_id": "NCTXWP-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-20",
+  "amount": 0,
+  "currency": "",
+  "pax": "CAROLE MENARD",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_047",
+  "pnr_id": "RCMYVX-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-21",
+  "amount": 0,
+  "currency": "",
+  "pax": "NATHALIE FORTIN",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_048",
+  "pnr_id": "SCLHCF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-22",
+  "amount": 0,
+  "currency": "",
+  "pax": "SERGE BLANCHETTE",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_049",
+  "pnr_id": "SSMTVX-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-23",
+  "amount": 0,
+  "currency": "",
+  "pax": "GINETTE CHARRON",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_050",
+  "pnr_id": "THKSXV-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-26",
+  "amount": 0,
+  "currency": "",
+  "pax": "OLIVIER DESCHAMPS",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_051",
+  "pnr_id": "VHZRDJ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "",
+  "pax": "LISE CHARRON",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_052",
+  "pnr_id": "VRNDDK-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-28",
+  "amount": 0,
+  "currency": "",
+  "pax": "DANIEL OUIMET",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_053",
+  "pnr_id": "WJNSPK-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-29",
+  "amount": 0,
+  "currency": "",
+  "pax": "CLAIRE FONTAINE",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_054",
+  "pnr_id": "WWQGYB-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-01",
+  "amount": 0,
+  "currency": "",
+  "pax": "PATRICK LALONDE",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_055",
+  "pnr_id": "XDGSVC-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-02",
+  "amount": 0,
+  "currency": "",
+  "pax": "FRANCINE DUBE",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_056",
+  "pnr_id": "YDMJDB-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-03",
+  "amount": 0,
+  "currency": "",
+  "pax": "REGIS CHAMPOUX",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_057",
+  "pnr_id": "YJHMXZ-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-04",
+  "amount": 0,
+  "currency": "",
+  "pax": "DIANE BRISSON",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_058",
+  "pnr_id": "YYQPTL-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-05",
+  "amount": 0,
+  "currency": "",
+  "pax": "SOPHIE BELANGER",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_059",
+  "pnr_id": "ZKBTWD-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-06",
+  "amount": 0,
+  "currency": "",
+  "pax": "DENISE TREMBLAY",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_060",
+  "pnr_id": "ZPXFZG-2026-06-15",
+  "status": "PENDING",
+  "syscode": "FD-APPR-PE-01",
+  "amount": 0,
+  "currency": "",
+  "pax": "JEAN-FRANCOIS MORIN",
+  "route": ""
+ },
+ {
+  "tc": "FD_TC_061",
+  "pnr_id": "BGMHQB-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "ANNE-MARIE PARADIS",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_062",
+  "pnr_id": "BYRMFH-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "MICHEL LAFLEUR",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_064",
+  "pnr_id": "DMLJXR-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-28",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "CLAUDINE VEZINA",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_065",
+  "pnr_id": "FNJRYZ-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-09",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "GAETAN RIVARD",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_095",
+  "pnr_id": "FVPZWJ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-01",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "JOHN SMITH",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_096",
+  "pnr_id": "HGDDNL-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-02",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "KLAUS FISCHER",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_097",
+  "pnr_id": "HMVBRW-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-05",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "KLAUS WEBER",
+  "route": "YYZ-LHR"
+ },
+ {
+  "tc": "FD_TC_098",
+  "pnr_id": "JJRYDX-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-06",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "SOPHIE LAURENT",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_099",
+  "pnr_id": "JPVGYS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-07",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "ALICE WHITFIELD",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_100",
+  "pnr_id": "LFHGPS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-09",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "FREDERIC GAUTHIER",
+  "route": "CDG-YYZ"
+ },
+ {
+  "tc": "FD_TC_101",
+  "pnr_id": "LGRCCT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-11",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "RAPHAEL DUFRESNE",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_102",
+  "pnr_id": "NPGTCD-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-13",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "ARNAUD PICARD",
+  "route": "CDG-YYZ"
+ },
+ {
+  "tc": "FD_TC_103",
+  "pnr_id": "NYHJBZ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-14",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "MIREILLE CARON",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_104",
+  "pnr_id": "QQMBWF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-15",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "DAMIEN LEROY",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_105",
+  "pnr_id": "QYDLBJ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-16",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "SYLVAIN MERCIER",
+  "route": "CDG-YYZ"
+ },
+ {
+  "tc": "FD_TC_106",
+  "pnr_id": "RQMBDS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-17",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "HELENE BOUVIER",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_107",
+  "pnr_id": "SDCPNS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-18",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "CLEMENT ROUSSEAU",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_108",
+  "pnr_id": "SNWHCT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-19",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "ROBERT TREMBLAY",
+  "route": "YYZ-CDG"
+ },
+ {
+  "tc": "FD_TC_109",
+  "pnr_id": "THKWTH-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-20",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "CATHERINE WALSH",
+  "route": "YYZ-LHR"
+ },
+ {
+  "tc": "FD_TC_110",
+  "pnr_id": "TPGNRV-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-21",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "ADRIEN COLBERT",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_111",
+  "pnr_id": "VBGPHY-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-22",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "JOSEPHINE LAMBERT",
+  "route": "CDG-YVR"
+ },
+ {
+  "tc": "FD_TC_112",
+  "pnr_id": "VGJXSF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-23",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "JULIEN MARCHAND",
+  "route": "CDG-YYZ"
+ },
+ {
+  "tc": "FD_TC_113",
+  "pnr_id": "VGLYJT-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-EU-ND-03",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "ANNETTE BEAUMONT",
+  "route": "LHR-YEG"
+ },
+ {
+  "tc": "FD_TC_114",
+  "pnr_id": "VYLFSN-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-EU-ND-05",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "FRANCOIS GIRARD",
+  "route": "CDG-YYZ"
+ },
+ {
+  "tc": "FD_TC_115",
+  "pnr_id": "WCYDNX-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-EU-ND-06",
+  "amount": 0,
+  "currency": "EUR",
+  "pax": "REGINALD THORNTON",
+  "route": "LHR-MUC"
+ },
+ {
+  "tc": "FD_TC_116",
+  "pnr_id": "WPRYWX-2026-06-15",
+  "status": "PENDING",
+  "syscode": "FD-EU-PE-01",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "BENEDICT HARRINGTON",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_121",
+  "pnr_id": "BJMKZQ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-01",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "DANIEL MIZRAHI",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_122",
+  "pnr_id": "BTHSHM-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-02",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "RUTH KAPLAN",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_123",
+  "pnr_id": "DGMKBP-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-05",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "DAVID LEVY",
+  "route": "TLV-YYZ"
+ },
+ {
+  "tc": "FD_TC_124",
+  "pnr_id": "DHLSYY-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-06",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "SARAH BARUCH",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_125",
+  "pnr_id": "DTYVSF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-08",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "AMIR SEGAL",
+  "route": "TLV-YYZ"
+ },
+ {
+  "tc": "FD_TC_126",
+  "pnr_id": "DZMDCJ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-10",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "ELI NAVON",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_127",
+  "pnr_id": "FFTHYZ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-12",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "TALIA FRIEDMAN",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_128",
+  "pnr_id": "GNCRYD-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-14",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "HADAS MOR",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_129",
+  "pnr_id": "GNNRKD-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-15",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "ITAI BERGMAN",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_130",
+  "pnr_id": "HLVMYF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-16",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "NIRIT GOLAN",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_131",
+  "pnr_id": "HWJPQT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-17",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "YOAV SHAMIR",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_132",
+  "pnr_id": "JVPKGN-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-18",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "KEREN ZILBER",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_133",
+  "pnr_id": "KXBSBF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-19",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "RAZ ELIYAHU",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_134",
+  "pnr_id": "LNVKHG-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-20",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "ADAM ROSEN",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_135",
+  "pnr_id": "MKCSGV-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-21",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "MAYA STEIN",
+  "route": "TLV-YYZ"
+ },
+ {
+  "tc": "FD_TC_136",
+  "pnr_id": "NKHPSC-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-22",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "LIOR HADAD",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_137",
+  "pnr_id": "PRSNTT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-23",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "SHAI BENVENISTI",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_138",
+  "pnr_id": "PZDKQF-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-24",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "BENJAMIN WEISS",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_139",
+  "pnr_id": "QQJNHN-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-01",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "YOSSI BARAK",
+  "route": "TLV-YVR"
+ },
+ {
+  "tc": "FD_TC_140",
+  "pnr_id": "SHVJWX-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-02",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "DANA PERETZ",
+  "route": "TLV-MUC"
+ },
+ {
+  "tc": "FD_TC_141",
+  "pnr_id": "SKXVBL-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-03",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "OMER KATZ",
+  "route": "TLV-YOW"
+ },
+ {
+  "tc": "FD_TC_142",
+  "pnr_id": "VHZKPX-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-04",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "TAMAR WEISS",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_143",
+  "pnr_id": "VJQVSS-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-05",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "OREN NAVON",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_144",
+  "pnr_id": "VJYSXW-2026-06-15",
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-06",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "SHIRA ABRAMOV",
+  "route": "FRA-TLV"
+ },
+ {
+  "tc": "FD_TC_145",
+  "pnr_id": "VTRCHZ-2026-06-15",
+  "status": "PENDING",
+  "syscode": "FD-ASL-PE-01",
+  "amount": 0,
+  "currency": "ILS",
+  "pax": "YONIT ADLER",
+  "route": "YYZ-TLV"
+ },
+ {
+  "tc": "FD_TC_151",
+  "pnr_id": "BKRGJQ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-MIXED-NE-02",
+  "amount": 0,
+  "currency": "GBP",
+  "pax": "ROGER WHITEHALL",
+  "route": "LHR-YYZ"
+ },
+ {
+  "tc": "FD_TC_153",
+  "pnr_id": "CJFKJZ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-DUP-NE-01",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "CATHERINE BOUCHARD",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_154",
+  "pnr_id": "DDWPCD-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-DUP-NE-02",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "CATHERINE BOUCHARD",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_155",
+  "pnr_id": "DXHNTG-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "ANDRE PELLETIER",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_156",
+  "pnr_id": "DXMRNS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "BRIGITTE LAVOIE",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_157",
+  "pnr_id": "FQPDYQ-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "MARC-ANTOINE GAGNON",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_158",
+  "pnr_id": "GMCRXS-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "NATHALIE COTE",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_159",
+  "pnr_id": "GXYLTT-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-27",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "PHILIPPE BOUDREAU",
+  "route": "YUL-YYZ"
+ },
+ {
+  "tc": "FD_TC_180",
+  "pnr_id": "ZFWGYG-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-30",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "ELISE BEAUCHEMIN",
+  "route": "YUL-LHR"
+ },
+ {
+  "tc": "FD_TC_181",
+  "pnr_id": "CNBVSN-2026-06-15",
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-31",
+  "amount": 0,
+  "currency": "CAD",
+  "pax": "MARC-ANDRE PELLETIER",
+  "route": "YUL-CDG"
+ }
+]

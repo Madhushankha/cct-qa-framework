@@ -1,0 +1,197 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "XIRMNC-2026-06-20",
+  "pnr": "XIRMNC"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "FRA",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "XIRMNC-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 837,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 837,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#837#2026-06-20#FRA"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "FRA",
+    "destination": "YYZ",
+    "associatedSegments": [
+     {
+      "segmentId": "XIRMNC-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T21:00:00+00:00",
+      "arrivalDatetime": "2026-06-21T01:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 837,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 837,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#837#2026-06-20#FRA"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "XIRMNC-2026-06-20-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "837",
+    "departureAirport": "FRA",
+    "arrivalAirport": "YYZ",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 420,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "XIRMNC-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-EU-EL-01",
+     "reason": "UK Disruption - Delay at arrival 3 to less than 4 hours + controllable code",
+     "failureReasons": null,
+     "compensationDetails": {
+      "amount": 600,
+      "currency": "EUR",
+      "delayBand": "DELAY_4_HOURS_OR_MORE",
+      "expiryDate": "2027-12-31"
+     }
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "XIRMNC-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "XIRMNC-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "segmentId": "XIRMNC-2026-06-20-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 837,
+   "departureAirport": "FRA",
+   "arrivalAirport": "YYZ",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "delayMinutes": 420,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "XIRMNC-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "SoC-EU-EL-07",
+     "reason": "Transit delay 2 hours or more",
+     "expiryDate": "2027-12-31",
+     "expenseCategories": [
+      {
+       "type": "MEAL",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 30
+      },
+      {
+       "type": "ACCOMMODATION",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 500
+      },
+      {
+       "type": "TRANSPORTATION",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 200
+      },
+      {
+       "type": "COMMUNICATION",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 30
+      },
+      {
+       "type": "PARKING",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 50
+      },
+      {
+       "type": "ESSENTIALS",
+       "region": "EU",
+       "delayBand": "DELAY_6_TO_LT_12_HOURS",
+       "currency": "EUR",
+       "amount": 30
+      }
+     ],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

@@ -1,0 +1,3952 @@
+[
+ {
+  "tc": "SOC-UAT-001",
+  "req": "SoC-APPR-NE-01",
+  "title": "APPR \u2013 Not Eligible \u2013 Employee Booking AC",
+  "loc": "BBYXKC",
+  "pnr_id": "BBYXKC-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000011",
+  "pax": "PRIYA FROSTDALE",
+  "route": "YYZ-YUL",
+  "flight": "AC101",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC101",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-01",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-01",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": true,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PRIYA",
+    "FROSTDALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-002",
+  "req": "SoC-APPR-NE-02",
+  "title": "APPR \u2013 Not Eligible \u2013 Employee Booking OAL",
+  "loc": "LUAUGA",
+  "pnr_id": "LUAUGA-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000021",
+  "pax": "XIMENA WOODANLEY",
+  "route": "FRA-YYZ",
+  "flight": "LH470",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH470",
+    "sector": "FRA-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-02",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-02",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "XIMENA",
+    "WOODANLEY"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-003",
+  "req": "SoC-APPR-NE-03",
+  "title": "APPR \u2013 Not Eligible \u2013 Transit Delay Occurred 12h+ Prior to Travel",
+  "loc": "AFUEEC",
+  "pnr_id": "AFUEEC-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000031",
+  "pax": "PERCY WOODANGATE",
+  "route": "YYZ-YVR",
+  "flight": "AC201",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC201",
+    "sector": "YYZ-YVR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-03",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-20",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 1080,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_12_TO_LT_24_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PERCY",
+    "WOODANGATE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-004",
+  "req": "SoC-APPR-NE-04",
+  "title": "APPR \u2013 Not Eligible \u2013 Transit Delay Below 2 Hours",
+  "loc": "EKWSPZ",
+  "pnr_id": "EKWSPZ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000041",
+  "pax": "KIRA ORMERENSTON",
+  "route": "YYZ-YOW",
+  "flight": "AC301",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC301",
+    "sector": "YYZ-YOW",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-04",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-20",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 90,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_LT_2_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KIRA",
+    "ORMERENSTON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-005",
+  "req": "SoC-APPR-NE-05",
+  "title": "APPR \u2013 Not Eligible \u2013 OAL segment",
+  "loc": "OYBXDA",
+  "pnr_id": "OYBXDA-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000051",
+  "pax": "ROSALIND FENANLOW",
+  "route": "ORD-LAX",
+  "flight": "UA456",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "UA",
+    "flight": "UA456",
+    "sector": "ORD-LAX",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-05",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-05",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 300,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_2_TO_LT_6_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ROSALIND",
+    "FENANLOW"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-007",
+  "req": "SoC-APPR-NE-07",
+  "title": "APPR \u2013 Not Eligible \u2013 Transit Delay \u22652h Outside Carrier Control",
+  "loc": "CSBDUD",
+  "pnr_id": "CSBDUD-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000061",
+  "pax": "PERCY WHITELBECK",
+  "route": "YYZ-YYC",
+  "flight": "AC601",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC601",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-07",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-28",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 420,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PERCY",
+    "WHITELBECK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-008",
+  "req": "SoC-APPR-NE-08",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Origin \u2013 Outside Carrier Control",
+  "loc": "NZQWLJ",
+  "pnr_id": "NZQWLJ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000071",
+  "pax": "ORSON CARLENBECK",
+  "route": "YYZ-YWG",
+  "flight": "AC701",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC701",
+    "sector": "YYZ-YWG",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-08",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-08",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "72",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ORSON",
+    "CARLENBECK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-010",
+  "req": "SoC-APPR-NE-10",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Return \u2013 Outside Carrier Control",
+  "loc": "MKPQBT",
+  "pnr_id": "MKPQBT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000081",
+  "pax": "EAMON HOLLENVALE",
+  "route": "YYZ-YVR",
+  "flight": "AC801",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC801",
+    "sector": "YYZ-YVR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-10",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-10",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "EAMON",
+    "HOLLENVALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-011",
+  "req": "SoC-APPR-NE-11",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Return \u2013 Outside Carrier Control (Fallback)",
+  "loc": "ERFBNG",
+  "pnr_id": "ERFBNG-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000091",
+  "pax": "PRIYA STONEERRIDGE",
+  "route": "YYZ-YVR",
+  "flight": "AC801",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC801",
+    "sector": "YYZ-YVR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-11",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-11",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PRIYA",
+    "STONEERRIDGE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-012",
+  "req": "SoC-APPR-NE-12",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 Outside Carrier Control",
+  "loc": "DFXLIY",
+  "pnr_id": "DFXLIY-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000101",
+  "pax": "ROMILLY IVESENSTON",
+  "route": "YYZ-YYC",
+  "flight": "AC901",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC901",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-12",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-12",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ROMILLY",
+    "IVESENSTON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-013",
+  "req": "SoC-APPR-NE-13",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 Outside Carrier Control (Fallback)",
+  "loc": "JAWQTU",
+  "pnr_id": "JAWQTU-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000111",
+  "pax": "TAMSIN SHARPLEGATE",
+  "route": "YYZ-YYC",
+  "flight": "AC901",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC901",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-13",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-13",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "TAMSIN",
+    "SHARPLEGATE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-014",
+  "req": "SoC-APPR-NE-14",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Origin \u2013 Delay Below 3h",
+  "loc": "KKUTAZ",
+  "pnr_id": "KKUTAZ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000121",
+  "pax": "KENJI CALDLOW",
+  "route": "YYZ-YUL",
+  "flight": "AC111",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC111",
+    "sector": "YYZ-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-14",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-20",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 150,
+  "dcode": "42",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KENJI",
+    "CALDLOW"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-015",
+  "req": "SoC-APPR-NE-15",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Return \u2013 Delay Below 2h",
+  "loc": "SAZNCN",
+  "pnr_id": "SAZNCN-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000131",
+  "pax": "LARISSA CALDERFIELD",
+  "route": "YYZ-YOW",
+  "flight": "AC121",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC121",
+    "sector": "YYZ-YOW",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-15",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-21",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 150,
+  "dcode": "42",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LARISSA",
+    "CALDERFIELD"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-016",
+  "req": "SoC-APPR-NE-16",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 Delay Below 2h",
+  "loc": "QQGOIM",
+  "pnr_id": "QQGOIM-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000141",
+  "pax": "JOELLE OAKENBROOK",
+  "route": "YYZ-YYC",
+  "flight": "AC131",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC131",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-16",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-22",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 150,
+  "dcode": "42",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "JOELLE",
+    "OAKENBROOK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-017",
+  "req": "SoC-APPR-NE-17",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Origin \u2013 No Cancellation",
+  "loc": "QTXPPX",
+  "pnr_id": "QTXPPX-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000151",
+  "pax": "XIMENA BEXRIDGE",
+  "route": "YYZ-YHZ",
+  "flight": "AC141",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC141",
+    "sector": "YYZ-YHZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-17",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-23",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "XIMENA",
+    "BEXRIDGE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-018",
+  "req": "SoC-APPR-NE-18",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Return \u2013 No Cancellation",
+  "loc": "APJBUF",
+  "pnr_id": "APJBUF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000161",
+  "pax": "ADRIAN NETHERHOLT",
+  "route": "YYZ-YWG",
+  "flight": "AC151",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC151",
+    "sector": "YYZ-YWG",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-18",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-24",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "NETHERHOLT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-019",
+  "req": "SoC-APPR-NE-19",
+  "title": "APPR \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 No Cancellation",
+  "loc": "FLVQTC",
+  "pnr_id": "FLVQTC-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000171",
+  "pax": "YARDLEY ROOKINGPOOL",
+  "route": "YYZ-YYC",
+  "flight": "AC161",
+  "regime": "APPR",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC161",
+    "sector": "YYZ-YYC",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-APPR-NE-19",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-APPR-NE-25",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "YARDLEY",
+    "ROOKINGPOOL"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-020",
+  "req": "SoC-APPR-ND-01",
+  "title": "APPR \u2013 No Determination \u2013 Disruption on OAL",
+  "loc": "TPRQEA",
+  "pnr_id": "TPRQEA-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000181",
+  "pax": "ADRIAN CHADOWSTEAD",
+  "route": "YYZ-FRA",
+  "flight": "WS845",
+  "regime": "APPR",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "WS",
+    "flight": "WS845",
+    "sector": "YYZ-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-01",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-01",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "CHADOWSTEAD"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-021",
+  "req": "SoC-APPR-ND-02",
+  "title": "APPR \u2013 No Determination \u2013 Disruption on STAR",
+  "loc": "XNFVLW",
+  "pnr_id": "XNFVLW-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000191",
+  "pax": "WESLEY DUNOWDALE",
+  "route": "YYZ-ORD",
+  "flight": "LH470",
+  "regime": "APPR",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH470",
+    "sector": "YYZ-ORD",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-02",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-02",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "WESLEY",
+    "DUNOWDALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-022",
+  "req": "SoC-APPR-ND-03",
+  "title": "APPR \u2013 No Determination \u2013 No Departure delay code \u2013 14 Days",
+  "loc": "EEXKEY",
+  "pnr_id": "EEXKEY-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000201",
+  "pax": "ROSALIND YEOSTON",
+  "route": "YYZ-YVR",
+  "flight": "AC301",
+  "regime": "APPR",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC301",
+    "sector": "YYZ-YVR",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-APPR-ND-03",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-APPR-ND-04",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ROSALIND",
+    "YEOSTON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-025",
+  "req": "SoC-APPR-EL-01",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Origin \u2013 Required for Safety",
+  "loc": "XNBULV",
+  "pnr_id": "XNBULV-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000211",
+  "pax": "HEIDI YARELWYN",
+  "route": "YYZ-YVR",
+  "flight": "AC501",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC501",
+    "sector": "YYZ-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-01",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "HEIDI",
+    "YARELWYN"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-026",
+  "req": "SoC-APPR-EL-02",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Origin \u2013 Required for Safety (Fallback Code)",
+  "loc": "PNHWAJ",
+  "pnr_id": "PNHWAJ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000221",
+  "pax": "UMBERTO RUSHWICK",
+  "route": "YYZ-YVR",
+  "flight": "AC501",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC501",
+    "sector": "YYZ-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-02",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "UMBERTO",
+    "RUSHWICK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-027",
+  "req": "SoC-APPR-EL-03",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Return \u2013 Required for Safety",
+  "loc": "STXUVX",
+  "pnr_id": "STXUVX-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000231",
+  "pax": "JOELLE EVERERCOTT",
+  "route": "YYZ-YEG",
+  "flight": "AC601",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC601",
+    "sector": "YYZ-YEG",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-03",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "JOELLE",
+    "EVERERCOTT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-028",
+  "req": "SoC-APPR-EL-04",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Return \u2013 Required for Controllable (Fallback)",
+  "loc": "YLMFGC",
+  "pnr_id": "YLMFGC-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000241",
+  "pax": "GARETH BARNELVALE",
+  "route": "YYZ-YEG",
+  "flight": "AC601",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC601",
+    "sector": "YYZ-YEG",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-04",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GARETH",
+    "BARNELVALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-029",
+  "req": "SoC-APPR-EL-05",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Incomplete \u2013 Required for Safety",
+  "loc": "WUTBZK",
+  "pnr_id": "WUTBZK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000251",
+  "pax": "EAMON FROSTELMORE",
+  "route": "YYZ-YYC",
+  "flight": "AC701",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC701",
+    "sector": "YYZ-YYC",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-05",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "EAMON",
+    "FROSTELMORE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-030",
+  "req": "SoC-APPR-EL-06",
+  "title": "APPR \u2013 Eligible \u2013 No Travel Incomplete \u2013 Required for Controllable (Fallback)",
+  "loc": "XADZGY",
+  "pnr_id": "XADZGY-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000261",
+  "pax": "NADEZHDA STONELETON",
+  "route": "YYZ-YYC",
+  "flight": "AC701",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC701",
+    "sector": "YYZ-YYC",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-06",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 0,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "NADEZHDA",
+    "STONELETON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-031",
+  "req": "SoC-APPR-EL-07",
+  "title": "APPR \u2013 Eligible \u2013 Transit Delay \u22652h \u2013 Exception Passenger",
+  "loc": "GKAMYD",
+  "pnr_id": "GKAMYD-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000271",
+  "pax": "JOELLE RUSHERHOLT",
+  "route": "YYZ-YVR",
+  "flight": "AC301",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC301",
+    "sector": "YYZ-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-07",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "77",
+  "dtyp": "UNCONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": true,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "JOELLE",
+    "RUSHERHOLT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-032",
+  "req": "SoC-APPR-EL-08",
+  "title": "APPR \u2013 Eligible \u2013 Transit Delay \u22652h \u2013 Within Carrier Control",
+  "loc": "MVYJPV",
+  "pnr_id": "MVYJPV-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000281",
+  "pax": "NADEZHDA SHARPERMERE",
+  "route": "YYZ-YVR",
+  "flight": "AC301",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC301",
+    "sector": "YYZ-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-08",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "NADEZHDA",
+    "SHARPERMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-033",
+  "req": "SoC-APPR-EL-09",
+  "title": "APPR \u2013 Eligible \u2013 Transit Delay \u22652h \u2013 Within Carrier Control But Required for Safety",
+  "loc": "JGCCJF",
+  "pnr_id": "JGCCJF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000291",
+  "pax": "YARDLEY BEXERDALE",
+  "route": "YYZ-YHZ",
+  "flight": "AC401",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC401",
+    "sector": "YYZ-YHZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-09",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "delay": 240,
+  "dcode": "41",
+  "dtyp": "SAFETY",
+  "cat": "DELAY_2_TO_LT_6_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "YARDLEY",
+    "BEXERDALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-034",
+  "req": "SoC-APPR-PE-01",
+  "title": "APPR \u2013 Pending \u2013 72 Hours",
+  "loc": "GLKNEH",
+  "pnr_id": "GLKNEH-2026-07-10",
+  "date": "2026-07-10",
+  "ticket": "0143580000301",
+  "pax": "WESLEY RAINERTHORPE",
+  "route": "YYZ-YUL",
+  "flight": "AC201",
+  "regime": "APPR",
+  "soc_status_class": "PE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC201",
+    "sector": "YYZ-YUL",
+    "soc_status": "PENDING",
+    "soc_code": "SoC-APPR-PE-01",
+    "role": "PE"
+   }
+  ],
+  "status": "PENDING",
+  "syscode": "FD-APPR-PE-01",
+  "amount": 0,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "WESLEY",
+    "RAINERTHORPE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-035",
+  "req": "SoC-EU-NE-01",
+  "title": "EU \u2013 Not Eligible \u2013 Employee Booking AC",
+  "loc": "YKSGHP",
+  "pnr_id": "YKSGHP-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000311",
+  "pax": "PERCY WILDOWCOTT",
+  "route": "LHR-YYZ",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-01",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-01",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": true,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PERCY",
+    "WILDOWCOTT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-036",
+  "req": "SoC-EU-NE-02",
+  "title": "EU \u2013 Not Eligible \u2013 Employee Booking OAL",
+  "loc": "VERNHJ",
+  "pnr_id": "VERNHJ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000321",
+  "pax": "PERCY CARLLEWOOD",
+  "route": "FRA-YYZ",
+  "flight": "LH470",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH470",
+    "sector": "FRA-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-02",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-02",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "PERCY",
+    "CARLLEWOOD"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-037",
+  "req": "SoC-EU-NE-03",
+  "title": "EU \u2013 Not Eligible \u2013 Transit Delay 15 Days+ Prior",
+  "loc": "SKURXK",
+  "pnr_id": "SKURXK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000331",
+  "pax": "ROMILLY HALLELEY",
+  "route": "CDG-YUL",
+  "flight": "AC871",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC871",
+    "sector": "CDG-YUL",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-03",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-03",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 1080,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_12_TO_LT_24_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ROMILLY",
+    "HALLELEY"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-038",
+  "req": "SoC-EU-NE-04",
+  "title": "EU \u2013 Not Eligible \u2013 Transit Delay Below 2h",
+  "loc": "VRYITA",
+  "pnr_id": "VRYITA-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000341",
+  "pax": "CALLUM CHADERWYN",
+  "route": "LHR-YYZ",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-04",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-13",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 90,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_LT_2_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "CALLUM",
+    "CHADERWYN"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-039",
+  "req": "SoC-EU-NE-05",
+  "title": "EU \u2013 Not Eligible \u2013 OAL Itinerary",
+  "loc": "IPYPZR",
+  "pnr_id": "IPYPZR-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000351",
+  "pax": "SEBASTIAN WHITENBURY",
+  "route": "LHR-JFK",
+  "flight": "BA178",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "BA",
+    "flight": "BA178",
+    "sector": "LHR-JFK",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-05",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-04",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 300,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_2_TO_LT_6_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "WHITENBURY"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-040",
+  "req": "SoC-EU-NE-06",
+  "title": "EU \u2013 Not Eligible \u2013 Itinerary Did Not Start in EU",
+  "loc": "MENOHW",
+  "pnr_id": "MENOHW-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000361",
+  "pax": "FIONA SELANWICK",
+  "route": "YYZ-LHR",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "YYZ-LHR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-06",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-19",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "FIONA",
+    "SELANWICK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-041",
+  "req": "SoC-EU-NE-07",
+  "title": "EU \u2013 Not Eligible \u2013 Itinerary Did Not Start in UK",
+  "loc": "AUVVLX",
+  "pnr_id": "AUVVLX-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000371",
+  "pax": "TAMSIN STONELEMORE",
+  "route": "YYZ-LHR",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "YYZ-LHR",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-07",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-20",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "TAMSIN",
+    "STONELEMORE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-042",
+  "req": "SoC-EU-NE-08",
+  "title": "EU \u2013 Not Eligible \u2013 Outside Limitation Period",
+  "loc": "IJFPIR",
+  "pnr_id": "IJFPIR-2023-06-20",
+  "date": "2023-06-20",
+  "ticket": "0143580000381",
+  "pax": "EAMON WHITELGATE",
+  "route": "BRU-YYZ",
+  "flight": "AC835",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC835",
+    "sector": "BRU-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-08",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-06",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "EAMON",
+    "WHITELGATE"
+   ]
+  ],
+  "uniq_names": true,
+  "claim_exempt": true
+ },
+ {
+  "tc": "SOC-UAT-043",
+  "req": "SoC-EU-NE-09",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Origin \u2013 Delay Below 3h",
+  "loc": "SNJBDL",
+  "pnr_id": "SNJBDL-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000391",
+  "pax": "ROSALIND BROOKENGROVE",
+  "route": "LHR-YYZ",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-09",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-13",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ROSALIND",
+    "BROOKENGROVE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-044",
+  "req": "SoC-EU-NE-10",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Return \u2013 Delay Below 3h",
+  "loc": "TWLMSC",
+  "pnr_id": "TWLMSC-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000401",
+  "pax": "HALLIE IRONELHURST",
+  "route": "CDG-YYZ",
+  "flight": "AC871",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC871",
+    "sector": "CDG-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-10",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-14",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "HALLIE",
+    "IRONELHURST"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-045",
+  "req": "SoC-EU-NE-11",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 Delay Below 3h",
+  "loc": "TNCLBB",
+  "pnr_id": "TNCLBB-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000411",
+  "pax": "SEBASTIAN MARSHELBURY",
+  "route": "LHR-FRA",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-11",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-15",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "MARSHELBURY"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-046",
+  "req": "SoC-EU-NE-12",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Origin \u2013 No Cancellation",
+  "loc": "WHMLWI",
+  "pnr_id": "WHMLWI-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000421",
+  "pax": "GARETH WOLFANRIDGE",
+  "route": "LHR-YYZ",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-12",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-16",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GARETH",
+    "WOLFANRIDGE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-047",
+  "req": "SoC-EU-NE-13",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Return \u2013 No Cancellation",
+  "loc": "CPGOZR",
+  "pnr_id": "CPGOZR-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000431",
+  "pax": "VIOLETA THORNELWYN",
+  "route": "CDG-YYZ",
+  "flight": "AC871",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC871",
+    "sector": "CDG-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-13",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-17",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "VIOLETA",
+    "THORNELWYN"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-048",
+  "req": "SoC-EU-NE-14",
+  "title": "EU \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 No Cancellation",
+  "loc": "FJXKCL",
+  "pnr_id": "FJXKCL-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000441",
+  "pax": "THEODORA EVERSTON",
+  "route": "LHR-FRA",
+  "flight": "AC849",
+  "regime": "EU",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC849",
+    "sector": "LHR-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-EU-NE-14",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-EU-NE-18",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "THEODORA",
+    "EVERSTON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-049",
+  "req": "SoC-EU-ND-01",
+  "title": "EU \u2013 No Determination \u2013 Disruption on OAL",
+  "loc": "SDYVDL",
+  "pnr_id": "SDYVDL-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000451",
+  "pax": "KIRA MEREVALE",
+  "route": "LHR-FRA",
+  "flight": "WS849",
+  "regime": "EU",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "WS",
+    "flight": "WS849",
+    "sector": "LHR-FRA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-EU-ND-01",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-EU-ND-01",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KIRA",
+    "MEREVALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-050",
+  "req": "SoC-EU-ND-02",
+  "title": "EU \u2013 No Determination \u2013 Disruption on STAR",
+  "loc": "HTJOHF",
+  "pnr_id": "HTJOHF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000461",
+  "pax": "LORCAN LANGELRIDGE",
+  "route": "CDG-ORD",
+  "flight": "LH470",
+  "regime": "EU",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH470",
+    "sector": "CDG-ORD",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-EU-ND-02",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-EU-ND-02",
+  "amount": 0,
+  "currency": "EUR",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LORCAN",
+    "LANGELRIDGE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-054",
+  "req": "SoC-EU-EL-01",
+  "title": "EU \u2013 Eligible \u2013 No Travel Origin \u2013 Delay \u22652h",
+  "loc": "TNLUKG",
+  "pnr_id": "TNLUKG-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000471",
+  "pax": "KENJI EVERANWORTH",
+  "route": "LHR-YYZ",
+  "flight": "AC848",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC848",
+    "sector": "LHR-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-01",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 520,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KENJI",
+    "EVERANWORTH"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-055",
+  "req": "SoC-EU-EL-02",
+  "title": "EU \u2013 Eligible \u2013 No Travel Return \u2013 Delay \u22653h",
+  "loc": "XVAUSI",
+  "pnr_id": "XVAUSI-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000481",
+  "pax": "ELIAS WOODINGHAM",
+  "route": "CDG-YUL",
+  "flight": "AC850",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC850",
+    "sector": "CDG-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-02",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 600,
+  "currency": "EUR",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ELIAS",
+    "WOODINGHAM"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-056",
+  "req": "SoC-EU-EL-03",
+  "title": "EU \u2013 Eligible \u2013 No Travel Incomplete \u2013 Delay \u22653h",
+  "loc": "JDOXJH",
+  "pnr_id": "JDOXJH-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000491",
+  "pax": "CEDRICK DALEERCROFT",
+  "route": "LHR-YYZ",
+  "flight": "AC852",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC852",
+    "sector": "LHR-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-03",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 520,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "CEDRICK",
+    "DALEERCROFT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-057",
+  "req": "SoC-EU-EL-04",
+  "title": "EU \u2013 Eligible \u2013 No Travel Origin \u2013 Flight Cancelled",
+  "loc": "TPDPFR",
+  "pnr_id": "TPDPFR-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000501",
+  "pax": "CALLUM GALDLEBY",
+  "route": "LHR-YYZ",
+  "flight": "AC854",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC854",
+    "sector": "LHR-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-04",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 520,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "CALLUM",
+    "GALDLEBY"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-058",
+  "req": "SoC-EU-EL-05",
+  "title": "EU \u2013 Eligible \u2013 No Travel Return \u2013 Flight Cancelled",
+  "loc": "NFEKPT",
+  "pnr_id": "NFEKPT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000511",
+  "pax": "SVEN WOODINGHOLT",
+  "route": "CDG-YUL",
+  "flight": "AC856",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC856",
+    "sector": "CDG-YUL",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-05",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 600,
+  "currency": "EUR",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "SVEN",
+    "WOODINGHOLT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-059",
+  "req": "SoC-EU-EL-06",
+  "title": "EU \u2013 Eligible \u2013 No Travel Incomplete \u2013 Flight Cancelled",
+  "loc": "XICMVK",
+  "pnr_id": "XICMVK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000521",
+  "pax": "BODHI BARNOWHURST",
+  "route": "LHR-YVR",
+  "flight": "AC858",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC858",
+    "sector": "LHR-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-06",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 520,
+  "currency": "GBP",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "BODHI",
+    "BARNOWHURST"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-060",
+  "req": "SoC-EU-EL-07",
+  "title": "EU \u2013 Eligible \u2013 Transit Delay \u22652h",
+  "loc": "NSEYOW",
+  "pnr_id": "NSEYOW-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000531",
+  "pax": "ANNIKA CALDINGHAM",
+  "route": "FRA-YYZ",
+  "flight": "AC837",
+  "regime": "EU",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC837",
+    "sector": "FRA-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-EU-EL-07",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-EU-EL-01",
+  "amount": 600,
+  "currency": "EUR",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ANNIKA",
+    "CALDINGHAM"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-061",
+  "req": "SoC-EU-PE-01",
+  "title": "EU \u2013 Pending \u2013 72 Hours",
+  "loc": "QCYLFK",
+  "pnr_id": "QCYLFK-2026-07-10",
+  "date": "2026-07-10",
+  "ticket": "0143580000541",
+  "pax": "LARISSA REDENLOW",
+  "route": "LHR-YYZ",
+  "flight": "AC848",
+  "regime": "EU",
+  "soc_status_class": "PE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC848",
+    "sector": "LHR-YYZ",
+    "soc_status": "PENDING",
+    "soc_code": "SoC-EU-PE-01",
+    "role": "PE"
+   }
+  ],
+  "status": "PENDING",
+  "syscode": "FD-EU-PE-01",
+  "amount": 0,
+  "currency": "GBP",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LARISSA",
+    "REDENLOW"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-062",
+  "req": "SoC-ASL-NE-01",
+  "title": "ASL \u2013 Not Eligible \u2013 Employee Booking AC",
+  "loc": "SJLBDT",
+  "pnr_id": "SJLBDT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000551",
+  "pax": "ORSON YARBECK",
+  "route": "TLV-YYZ",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-01",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-01",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": true,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ORSON",
+    "YARBECK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-063",
+  "req": "SoC-ASL-NE-02",
+  "title": "ASL \u2013 Not Eligible \u2013 Employee Booking OAL",
+  "loc": "YWACFI",
+  "pnr_id": "YWACFI-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000561",
+  "pax": "DELPHINE BRIGHTERMERE",
+  "route": "TLV-YYZ",
+  "flight": "LY082",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LY",
+    "flight": "LY082",
+    "sector": "TLV-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-02",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-02",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "BRIGHTERMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-064",
+  "req": "SoC-ASL-NE-03",
+  "title": "ASL \u2013 Not Eligible \u2013 Transit Delay 15 Days+ Prior",
+  "loc": "MFUYLO",
+  "pnr_id": "MFUYLO-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000571",
+  "pax": "WINSLOW ASHOWMERE",
+  "route": "TLV-YYZ",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-03",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-04",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 1080,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_12_TO_LT_24_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "WINSLOW",
+    "ASHOWMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-065",
+  "req": "SoC-ASL-NE-04",
+  "title": "ASL \u2013 Not Eligible \u2013 Transit Delay Below 2h",
+  "loc": "ZEIZPZ",
+  "pnr_id": "ZEIZPZ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000581",
+  "pax": "GARETH GALDLELOW",
+  "route": "TLV-YYZ",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-YYZ",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-04",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-14",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 90,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_LT_2_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GARETH",
+    "GALDLELOW"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-066",
+  "req": "SoC-ASL-NE-05",
+  "title": "ASL \u2013 Not Eligible \u2013 OAL Itinerary",
+  "loc": "BJTWYF",
+  "pnr_id": "BJTWYF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000591",
+  "pax": "FREYA DALETON",
+  "route": "TLV-JFK",
+  "flight": "LY001",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LY",
+    "flight": "LY001",
+    "sector": "TLV-JFK",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-05",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-05",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "FREYA",
+    "DALETON"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-067",
+  "req": "SoC-ASL-NE-06",
+  "title": "ASL \u2013 Not Eligible \u2013 Itinerary Did Not Start in Israel",
+  "loc": "CCKEMF",
+  "pnr_id": "CCKEMF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000601",
+  "pax": "HALLIE YEOANWORTH",
+  "route": "YYZ-TLV",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "YYZ-TLV",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-06",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-20",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "HALLIE",
+    "YEOANWORTH"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-068",
+  "req": "SoC-ASL-NE-07",
+  "title": "ASL \u2013 Not Eligible \u2013 Itinerary Did Not End in Israel",
+  "loc": "HYECRT",
+  "pnr_id": "HYECRT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000611",
+  "pax": "DELPHINE OAKGATE",
+  "route": "TLV-FRA",
+  "flight": "AC085",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC085",
+    "sector": "TLV-FRA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-07",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-21",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "OAKGATE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-069",
+  "req": "SoC-ASL-NE-08",
+  "title": "ASL \u2013 Not Eligible \u2013 Outside Limitation Period",
+  "loc": "GUQIJP",
+  "pnr_id": "GUQIJP-2023-06-20",
+  "date": "2023-06-20",
+  "ticket": "0143580000621",
+  "pax": "WESLEY ROOKENBECK",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-08",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-07",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 480,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "WESLEY",
+    "ROOKENBECK"
+   ]
+  ],
+  "uniq_names": true,
+  "claim_exempt": true
+ },
+ {
+  "tc": "SOC-UAT-070",
+  "req": "SoC-ASL-NE-09",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Origin \u2013 Delay Below 3h",
+  "loc": "IXFIAF",
+  "pnr_id": "IXFIAF-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000631",
+  "pax": "LORCAN SELINGBROOK",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-09",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-14",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LORCAN",
+    "SELINGBROOK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-071",
+  "req": "SoC-ASL-NE-10",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Return \u2013 Delay Below 3h",
+  "loc": "DPQVRV",
+  "pnr_id": "DPQVRV-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000641",
+  "pax": "ORSON QUENOWPOOL",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-10",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-15",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ORSON",
+    "QUENOWPOOL"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-072",
+  "req": "SoC-ASL-NE-11",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 Delay Below 3h",
+  "loc": "FILJYI",
+  "pnr_id": "FILJYI-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000651",
+  "pax": "TAMSIN YEOOWHAM",
+  "route": "TLV-HFA",
+  "flight": "AC090",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC090",
+    "sector": "TLV-HFA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-11",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-16",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 150,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "TAMSIN",
+    "YEOOWHAM"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-073",
+  "req": "SoC-ASL-NE-12",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Origin \u2013 No Cancellation",
+  "loc": "SSLKDT",
+  "pnr_id": "SSLKDT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000661",
+  "pax": "ORSON HODOWMERE",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-12",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-17",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ORSON",
+    "HODOWMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-074",
+  "req": "SoC-ASL-NE-13",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Return \u2013 No Cancellation",
+  "loc": "XTDWZA",
+  "pnr_id": "XTDWZA-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000671",
+  "pax": "BRENNA FENELLOW",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-13",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-18",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "BRENNA",
+    "FENELLOW"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-075",
+  "req": "SoC-ASL-NE-14",
+  "title": "ASL \u2013 Not Eligible \u2013 No Travel Incomplete \u2013 No Cancellation",
+  "loc": "UZYOLK",
+  "pnr_id": "UZYOLK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000681",
+  "pax": "GIDEON VANEERCOMBE",
+  "route": "TLV-HFA",
+  "flight": "AC090",
+  "regime": "ASL",
+  "soc_status_class": "NE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC090",
+    "sector": "TLV-HFA",
+    "soc_status": "NOT_ELIGIBLE",
+    "soc_code": "SoC-ASL-NE-14",
+    "role": "NE"
+   }
+  ],
+  "status": "NOT_ELIGIBLE",
+  "syscode": "FD-ASL-NE-19",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GIDEON",
+    "VANEERCOMBE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-076",
+  "req": "SoC-ASL-ND-01",
+  "title": "ASL \u2013 No Determination \u2013 Disruption on OAL",
+  "loc": "UCCNAO",
+  "pnr_id": "UCCNAO-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000691",
+  "pax": "MIRABEL BRAMANMERE",
+  "route": "TLV-HFA",
+  "flight": "WS090",
+  "regime": "ASL",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "WS",
+    "flight": "WS090",
+    "sector": "TLV-HFA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-ASL-ND-01",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-01",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "MIRABEL",
+    "BRAMANMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-077",
+  "req": "SoC-ASL-ND-02",
+  "title": "ASL \u2013 No Determination \u2013 Disruption on STAR",
+  "loc": "MVSOLE",
+  "pnr_id": "MVSOLE-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000701",
+  "pax": "YARDLEY WOLFANVALE",
+  "route": "YYZ-TLV",
+  "flight": "LH470",
+  "regime": "ASL",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "LH",
+    "flight": "LH470",
+    "sector": "YYZ-TLV",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-ASL-ND-02",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-02",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "YARDLEY",
+    "WOLFANVALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-078",
+  "req": "SoC-ASL-ND-03",
+  "title": "ASL \u2013 No Determination \u2013 No Departure delay code \u2013 14 Days",
+  "loc": "QKCLDY",
+  "pnr_id": "QKCLDY-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000711",
+  "pax": "DELPHINE BROOKANCOTT",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-ASL-ND-03",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-04",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "BROOKANCOTT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-079",
+  "req": "SoC-ASL-ND-04",
+  "title": "ASL \u2013 No Determination \u2013 Data Missing \u2013 14 Days",
+  "loc": "XSTCFL",
+  "pnr_id": "XSTCFL-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000721",
+  "pax": "LORCAN STONEERGATE",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-ASL-ND-04",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-05",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LORCAN",
+    "STONEERGATE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-080",
+  "req": "SoC-ASL-ND-05",
+  "title": "ASL \u2013 No Determination \u2013 OAL Data Not Available \u2013 14 Days",
+  "loc": "MVVMSL",
+  "pnr_id": "MVVMSL-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000731",
+  "pax": "FIONA ROOKELMERE",
+  "route": "TLV-HFA",
+  "flight": "WS090",
+  "regime": "ASL",
+  "soc_status_class": "ND",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "WS",
+    "flight": "WS090",
+    "sector": "TLV-HFA",
+    "soc_status": "NO_DETERMINATION",
+    "soc_code": "SoC-ASL-ND-05",
+    "role": "ND"
+   }
+  ],
+  "status": "NO_DETERMINATION",
+  "syscode": "FD-ASL-ND-06",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "FIONA",
+    "ROOKELMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-081",
+  "req": "SoC-ASL-EL-01",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Origin \u2013 Delay \u22653h",
+  "loc": "HVCPNQ",
+  "pnr_id": "HVCPNQ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000741",
+  "pax": "FIONA CARLELBECK",
+  "route": "TLV-YYZ",
+  "flight": "AC085",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC085",
+    "sector": "TLV-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-01",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "FIONA",
+    "CARLELBECK"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-082",
+  "req": "SoC-ASL-EL-02",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Return \u2013 Delay \u22653h",
+  "loc": "VHEAYH",
+  "pnr_id": "VHEAYH-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000751",
+  "pax": "HALLIE HAWOWFORD",
+  "route": "TLV-YYZ",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-02",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "HALLIE",
+    "HAWOWFORD"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-083",
+  "req": "SoC-ASL-EL-03",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Incomplete \u2013 Delay \u22653h",
+  "loc": "AQJIVB",
+  "pnr_id": "AQJIVB-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000761",
+  "pax": "GARETH WEXOWCROFT",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-03",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GARETH",
+    "WEXOWCROFT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-084",
+  "req": "SoC-ASL-EL-04",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Origin \u2013 Flight Cancelled",
+  "loc": "BQVYYT",
+  "pnr_id": "BQVYYT-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000771",
+  "pax": "SEBASTIAN BROOKCOTT",
+  "route": "TLV-YYZ",
+  "flight": "AC085",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC085",
+    "sector": "TLV-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-04",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "BROOKCOTT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-085",
+  "req": "SoC-ASL-EL-05",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Return \u2013 Flight Cancelled",
+  "loc": "WKQVIK",
+  "pnr_id": "WKQVIK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000781",
+  "pax": "GIDEON WHITELHOLT",
+  "route": "TLV-YYZ",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-YYZ",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-05",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "GIDEON",
+    "WHITELHOLT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-086",
+  "req": "SoC-ASL-EL-06",
+  "title": "ASL \u2013 Eligible \u2013 No Travel Incomplete \u2013 Flight Cancelled",
+  "loc": "JMVUGE",
+  "pnr_id": "JMVUGE-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000791",
+  "pax": "MIRABEL IVESANCROFT",
+  "route": "TLV-HFA",
+  "flight": "AC090",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC090",
+    "sector": "TLV-HFA",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-06",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 0,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "NO_TRAVEL",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "MIRABEL",
+    "IVESANCROFT"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-087",
+  "req": "SoC-ASL-EL-07",
+  "title": "ASL \u2013 Eligible \u2013 Transit Delay \u22652h",
+  "loc": "EOEZPJ",
+  "pnr_id": "EOEZPJ-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000801",
+  "pax": "LARISSA WRENLEDALE",
+  "route": "TLV-VDA",
+  "flight": "AC084",
+  "regime": "ASL",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC084",
+    "sector": "TLV-VDA",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-ASL-EL-07",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-ASL-EL-01",
+  "amount": 3670,
+  "currency": "ILS",
+  "delay": 420,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "LARISSA",
+    "WRENLEDALE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-088",
+  "req": "SoC-ASL-PE-01",
+  "title": "ASL \u2013 Pending \u2013 72 Hours",
+  "loc": "FAWOZX",
+  "pnr_id": "FAWOZX-2026-07-10",
+  "date": "2026-07-10",
+  "ticket": "0143580000811",
+  "pax": "KENJI HAWTHORPE",
+  "route": "TLV-YYZ",
+  "flight": "AC085",
+  "regime": "ASL",
+  "soc_status_class": "PE",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC085",
+    "sector": "TLV-YYZ",
+    "soc_status": "PENDING",
+    "soc_code": "SoC-ASL-PE-01",
+    "role": "PE"
+   }
+  ],
+  "status": "PENDING",
+  "syscode": "FD-ASL-PE-01",
+  "amount": 0,
+  "currency": "ILS",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": false,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KENJI",
+    "HAWTHORPE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-089",
+  "req": "SoC-Override-Pending",
+  "title": "Override \u2013 Pending",
+  "loc": "IFDQUX",
+  "pnr_id": "IFDQUX-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000821",
+  "pax": "VESNA FROSTWOOD",
+  "route": "YYZ-YVR",
+  "flight": "AC301",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC301",
+    "sector": "YYZ-YVR",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-08",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": true,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "FROSTWOOD"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-090",
+  "req": "SoC-Override-NoPay",
+  "title": "Override \u2013 No Pay",
+  "loc": "ZJVGGX",
+  "pnr_id": "ZJVGGX-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000831",
+  "pax": "ADRIAN CLIFFANMERE",
+  "route": "YYZ-YEG",
+  "flight": "AC401",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC401",
+    "sector": "YYZ-YEG",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-08",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "delay": 360,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": true,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "CLIFFANMERE"
+   ]
+  ],
+  "uniq_names": true
+ },
+ {
+  "tc": "SOC-UAT-091",
+  "req": "SoC-Override-Pay",
+  "title": "Override \u2013 Pay",
+  "loc": "FHYOGK",
+  "pnr_id": "FHYOGK-2026-06-20",
+  "date": "2026-06-20",
+  "ticket": "0143580000841",
+  "pax": "KENJI THORNENHAM",
+  "route": "YYZ-YYC",
+  "flight": "AC201",
+  "regime": "APPR",
+  "soc_status_class": "EL",
+  "legs": [
+   {
+    "n": 1,
+    "carrier": "AC",
+    "flight": "AC201",
+    "sector": "YYZ-YYC",
+    "soc_status": "ELIGIBLE",
+    "soc_code": "SoC-APPR-EL-08",
+    "role": "EL"
+   }
+  ],
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "delay": 480,
+  "dcode": "64",
+  "dtyp": "CONTROLLABLE",
+  "cat": "DELAY_6_TO_LT_12_HOURS",
+  "emp": false,
+  "exc": false,
+  "override": true,
+  "email": "lahiru.premathilake@aircanada.ca",
+  "phone": "+94712534323",
+  "pin": true,
+  "group": false,
+  "pax_names": [
+   [
+    "KENJI",
+    "THORNENHAM"
+   ]
+  ],
+  "uniq_names": true
+ }
+]

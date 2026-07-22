@@ -1,0 +1,13 @@
+[
+ {
+  "tc": "FD_TC_019",
+  "pnr_id": "QPZWRQ-2026-06-15",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "pax": "PIERRE LAVIGNE",
+  "route": "YUL-YYZ",
+  "title": "Delay 6-<9h AC Wallet ($840)"
+ }
+]

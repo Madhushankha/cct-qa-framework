@@ -1,0 +1,17 @@
+[
+  {
+    "tc": "FD_TC_001_2BOUND",
+    "loc": "XBPCDZ",
+    "pnr_id": "XBPCDZ-2026-06-15",
+    "ticket": "014280100101",
+    "pax": "CATHERINE BOUCHARD",
+    "route": "YUL-YYZ / YYZ-YUL (2 bounds)",
+    "status": "ELIGIBLE",
+    "syscode": "FD-APPR-EL-400",
+    "amount": 400,
+    "currency": "CAD",
+    "email": "lahiru.premathilake@aircanada.ca",
+    "phone": "+94712534323",
+    "pin": true
+  }
+]

@@ -1,0 +1,762 @@
+[
+ {
+  "set": "bulk30",
+  "trio": 1,
+  "label": "Single passenger + AC Wallet",
+  "loc": "QMBZGK",
+  "pnr_id": "QMBZGK-2026-06-15",
+  "tickets": [
+   "014343000101"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916001001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 1,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "DPPKNZ",
+  "pnr_id": "DPPKNZ-2026-06-15",
+  "tickets": [
+   "014343000201",
+   "014343000202",
+   "014343000203"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916002001",
+   "916002002",
+   "916002003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 1,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "WDFSVZ",
+  "pnr_id": "WDFSVZ-2026-06-15",
+  "tickets": [
+   "014343000301",
+   "014343000302",
+   "014343000303"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 2,
+  "label": "Single passenger + AC Wallet",
+  "loc": "BZNXJY",
+  "pnr_id": "BZNXJY-2026-06-15",
+  "tickets": [
+   "014343000401"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916004001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 2,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "BQLSNB",
+  "pnr_id": "BQLSNB-2026-06-15",
+  "tickets": [
+   "014343000501",
+   "014343000502",
+   "014343000503"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916005001",
+   "916005002",
+   "916005003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 2,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "TKNNPQ",
+  "pnr_id": "TKNNPQ-2026-06-15",
+  "tickets": [
+   "014343000601",
+   "014343000602",
+   "014343000603"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 3,
+  "label": "Single passenger + AC Wallet",
+  "loc": "FTQYFF",
+  "pnr_id": "FTQYFF-2026-06-15",
+  "tickets": [
+   "014343000701"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916007001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 3,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "DYPFSQ",
+  "pnr_id": "DYPFSQ-2026-06-15",
+  "tickets": [
+   "014343000801",
+   "014343000802",
+   "014343000803"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916008001",
+   "916008002",
+   "916008003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 3,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "MXMTPS",
+  "pnr_id": "MXMTPS-2026-06-15",
+  "tickets": [
+   "014343000901",
+   "014343000902",
+   "014343000903"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 4,
+  "label": "Single passenger + AC Wallet",
+  "loc": "YGDRHC",
+  "pnr_id": "YGDRHC-2026-06-15",
+  "tickets": [
+   "014343001001"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916010001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 4,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "QLGSTR",
+  "pnr_id": "QLGSTR-2026-06-15",
+  "tickets": [
+   "014343001101",
+   "014343001102",
+   "014343001103"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916011001",
+   "916011002",
+   "916011003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 4,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "PDRNKG",
+  "pnr_id": "PDRNKG-2026-06-15",
+  "tickets": [
+   "014343001201",
+   "014343001202",
+   "014343001203"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 5,
+  "label": "Single passenger + AC Wallet",
+  "loc": "YLYSYQ",
+  "pnr_id": "YLYSYQ-2026-06-15",
+  "tickets": [
+   "014343001301"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916013001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 5,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "GNLTZJ",
+  "pnr_id": "GNLTZJ-2026-06-15",
+  "tickets": [
+   "014343001401",
+   "014343001402",
+   "014343001403"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916014001",
+   "916014002",
+   "916014003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 5,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "QTNSVT",
+  "pnr_id": "QTNSVT-2026-06-15",
+  "tickets": [
+   "014343001501",
+   "014343001502",
+   "014343001503"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 6,
+  "label": "Single passenger + AC Wallet",
+  "loc": "RDLXST",
+  "pnr_id": "RDLXST-2026-06-15",
+  "tickets": [
+   "014343001601"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916016001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 6,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "NYGQDQ",
+  "pnr_id": "NYGQDQ-2026-06-15",
+  "tickets": [
+   "014343001701",
+   "014343001702",
+   "014343001703"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916017001",
+   "916017002",
+   "916017003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 6,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "PNRDBL",
+  "pnr_id": "PNRDBL-2026-06-15",
+  "tickets": [
+   "014343001801",
+   "014343001802",
+   "014343001803"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 7,
+  "label": "Single passenger + AC Wallet",
+  "loc": "FBBBJZ",
+  "pnr_id": "FBBBJZ-2026-06-15",
+  "tickets": [
+   "014343001901"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916019001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 7,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "BSMZQM",
+  "pnr_id": "BSMZQM-2026-06-15",
+  "tickets": [
+   "014343002001",
+   "014343002002",
+   "014343002003"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916020001",
+   "916020002",
+   "916020003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 7,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "SDKNXQ",
+  "pnr_id": "SDKNXQ-2026-06-15",
+  "tickets": [
+   "014343002101",
+   "014343002102",
+   "014343002103"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 8,
+  "label": "Single passenger + AC Wallet",
+  "loc": "BVDYCS",
+  "pnr_id": "BVDYCS-2026-06-15",
+  "tickets": [
+   "014343002201"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916022001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 8,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "VXZZXT",
+  "pnr_id": "VXZZXT-2026-06-15",
+  "tickets": [
+   "014343002301",
+   "014343002302",
+   "014343002303"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916023001",
+   "916023002",
+   "916023003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 8,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "JCGSGT",
+  "pnr_id": "JCGSGT-2026-06-15",
+  "tickets": [
+   "014343002401",
+   "014343002402",
+   "014343002403"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 9,
+  "label": "Single passenger + AC Wallet",
+  "loc": "SPMGHM",
+  "pnr_id": "SPMGHM-2026-06-15",
+  "tickets": [
+   "014343002501"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916025001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 9,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "PDHRNC",
+  "pnr_id": "PDHRNC-2026-06-15",
+  "tickets": [
+   "014343002601",
+   "014343002602",
+   "014343002603"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916026001",
+   "916026002",
+   "916026003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 9,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "SMDTLV",
+  "pnr_id": "SMDTLV-2026-06-15",
+  "tickets": [
+   "014343002701",
+   "014343002702",
+   "014343002703"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 10,
+  "label": "Single passenger + AC Wallet",
+  "loc": "THBGKB",
+  "pnr_id": "THBGKB-2026-06-15",
+  "tickets": [
+   "014343002801"
+  ],
+  "npax": 1,
+  "wallet": true,
+  "memberships": [
+   "916028001"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD"
+ },
+ {
+  "set": "bulk30",
+  "trio": 10,
+  "label": "Multiple passengers + AC Wallet",
+  "loc": "THWPVS",
+  "pnr_id": "THWPVS-2026-06-15",
+  "tickets": [
+   "014343002901",
+   "014343002902",
+   "014343002903"
+  ],
+  "npax": 3,
+  "wallet": true,
+  "memberships": [
+   "916029001",
+   "916029002",
+   "916029003"
+  ],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ },
+ {
+  "set": "bulk30",
+  "trio": 10,
+  "label": "Multiple passengers - No AC Wallet",
+  "loc": "QJZFRJ",
+  "pnr_id": "QJZFRJ-2026-06-15",
+  "tickets": [
+   "014343003001",
+   "014343003002",
+   "014343003003"
+  ],
+  "npax": 3,
+  "wallet": false,
+  "memberships": [],
+  "donor": "PYMRRX-2026-06-15",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pin": true,
+  "pax": "CATHERINE BOUCHARD / MARIE GAGNON / LUC BERGERON"
+ }
+]

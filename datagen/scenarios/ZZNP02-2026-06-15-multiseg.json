@@ -1,0 +1,132 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZNP02-2026-06-15-multiseg",
+  "title": "NonMVP-SIT: Jane Smith + infant Liam multi-segment YUL→YYZ→YVR",
+  "description": "Multi-segment PNR with infant. Jane Smith + Liam Smith. Replaces BKT9W4. Tests: 025,028,029,031",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZNP02",
+    "booking_date": "2026-06-15",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "YULAC010V",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "AA",
+    "duty_code": "SU",
+    "agent_country": "CA",
+    "agent_city": "YUL"
+  },
+
+  "last_modification_comment": "SIM-NMVP-SIT-P2",
+  "creation_comment": "SIM-NMVP-SIT-P2",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "JANE",
+      "last_name": "SMITH",
+      "gender": "FEMALE",
+      "date_of_birth": "1985-07-15",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+15145554321",
+      "passport": {
+        "number": "SIMNMVP02",
+        "expiry": "2036-07-15",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "501234567"
+    },
+    {
+      "type": "INF",
+      "first_name": "LIAM",
+      "last_name": "SMITH",
+      "gender": "MALE",
+      "date_of_birth": "2025-01-10",
+      "passport": {
+        "number": "SIMNMVP02I",
+        "expiry": "2030-01-10",
+        "nationality": "CAN",
+        "issuance_country": "CAN",
+        "gender": "MALE"
+      }
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "430",
+      "operating_flight_number": "430",
+      "origin": "YUL",
+      "destination": "YYZ",
+      "dep_local": "2026-06-15T08:00:00",
+      "arr_local": "2026-06-15T09:30:00",
+      "dep_utc": "2026-06-15T12:00:00Z",
+      "arr_utc": "2026-06-15T13:30:00Z",
+      "booking_datetime": "2026-05-01T10:00:00Z",
+      "aircraft": "320",
+      "cabin": "Y",
+      "status": "HK"
+    },
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "103",
+      "operating_flight_number": "103",
+      "origin": "YYZ",
+      "destination": "YVR",
+      "dep_local": "2026-06-15T11:00:00",
+      "arr_local": "2026-06-15T13:30:00",
+      "dep_utc": "2026-06-15T15:00:00Z",
+      "arr_utc": "2026-06-15T20:30:00Z",
+      "booking_datetime": "2026-05-01T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "M"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-01",
+    "fare": {"amount": "650.00", "currency": "CAD"},
+    "ticket_numbers": ["0142345678902", "0142345678903"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-01T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-01T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZNP02", "pnr_id": "ZZNP02-2026-06-15"},
+      "passenger": {"rows": 2},
+      "flight_segment": {"rows": 2}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "NMVP-SIT", "primary_name": "NonMVP SIT Multi-Segment", "confidence": "high"},
+  "tags": ["synthetic", "nmvp-sit", "multi-segment", "domestic", "2-pax", "infant"]
+}

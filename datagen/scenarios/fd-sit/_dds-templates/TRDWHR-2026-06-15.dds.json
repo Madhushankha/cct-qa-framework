@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "TRDWHR-2026-06-15",
+  "pnr": "TRDWHR"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YUL",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "TRDWHR-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 472,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 472,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#472#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "TRDWHR-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 473,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 473,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#473#2026-06-15#YYZ"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YUL",
+    "destination": "YUL",
+    "associatedSegments": [
+     {
+      "segmentId": "TRDWHR-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "YYZ",
+      "marketingFlightNumber": 472,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 472,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#472#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "TRDWHR-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 473,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 473,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#473#2026-06-15#YYZ"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "TRDWHR-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "473",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YUL",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "SAFETY",
+   "delayCode": "PERF",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "TRDWHR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-16",
+     "reason": "No travel Return - Required for Safety",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "TRDWHR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "TRDWHR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "TRDWHR-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 473,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YUL",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "TRDWHR-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

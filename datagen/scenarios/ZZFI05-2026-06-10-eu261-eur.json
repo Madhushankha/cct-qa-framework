@@ -1,0 +1,102 @@
+{
+  "$schema_version": 2,
+  "scenario_id": "ZZFI05-2026-06-10-eu261-eur",
+  "title": "FD-SIT-010: EU 261 Europe origin 3-4hr delay, EUR 300 (INT)",
+  "description": "EU 261 Tier 1 eligible. CDG->YUL France origin, 3.5-hour delay controllable. Travel completed.",
+  "canvas": "_canvas/pnr_creation_domestic_ac.json",
+  "contains_pii": false,
+
+  "identity": {
+    "pnr": "ZZFI05",
+    "booking_date": "2026-06-10",
+    "type": "PNR"
+  },
+
+  "point_of_sale": {
+    "office_id": "CDGAC08AA",
+    "iata_number": "01424012",
+    "system_code": "1A",
+    "agent_type": "AIRLINE",
+    "agent_numeric_sign": "0001",
+    "agent_initials": "FD",
+    "duty_code": "SU",
+    "agent_country": "FR",
+    "agent_city": "CDG"
+  },
+
+  "last_modification_comment": "SIM-FD-SIT-INT-010",
+  "creation_comment": "SIM-FD-SIT-INT-010",
+
+  "passengers": [
+    {
+      "type": "ADT",
+      "first_name": "MARIE",
+      "last_name": "DUBOIS",
+      "gender": "FEMALE",
+      "date_of_birth": "1975-09-14",
+      "email": "chathuranga.viraj.qa@gmail.com",
+      "phone": "+33612345678",
+      "passport": {
+        "number": "SIMFD105",
+        "expiry": "2031-09-14",
+        "nationality": "FRA",
+        "issuance_country": "FRA",
+        "gender": "FEMALE"
+      },
+      "aeroplan": "705234568"
+    }
+  ],
+
+  "segments": [
+    {
+      "carrier": "AC",
+      "operating_carrier": "AC",
+      "flight_number": "871",
+      "operating_flight_number": "871",
+      "origin": "CDG",
+      "destination": "YUL",
+      "dep_local": "2026-06-10T11:00:00",
+      "arr_local": "2026-06-10T13:30:00",
+      "dep_utc": "2026-06-10T09:00:00Z",
+      "arr_utc": "2026-06-10T17:30:00Z",
+      "booking_datetime": "2026-05-08T10:00:00Z",
+      "aircraft": "789",
+      "cabin": "Y",
+      "status": "HK",
+      "arrival_terminal": "1"
+    }
+  ],
+
+  "ticketing": {
+    "issuance_local_date": "2026-05-08",
+    "fare": {"amount": "750.00", "currency": "EUR"},
+    "ticket_numbers": ["0142400001005"]
+  },
+
+  "timeline": [
+    {
+      "version": 0,
+      "at": "2026-05-08T10:00:00Z",
+      "action": "bootstrap",
+      "description": "Pre-ticketing stub"
+    },
+    {
+      "version": 1,
+      "at": "2026-05-08T10:00:01Z",
+      "action": "ticketing_added",
+      "description": "Ticketing reference attached"
+    }
+  ],
+
+  "expected_cascade": {
+    "db_end_state": {
+      "trip": {"rows": 1, "status": "ACTIVE", "pnr": "ZZFI05", "pnr_id": "ZZFI05-2026-06-10"},
+      "passenger": {"rows": 1},
+      "flight_segment": {"rows": 1}
+    },
+    "total_cascade_budget_ms": 30000
+  },
+
+  "classification": {"primary_code": "FD-SIT", "primary_name": "Flight Disruption SIT INT", "confidence": "high"},
+  "tags": ["synthetic", "fd-sit", "FD-SIT-010", "eu261", "eu-origin", "tier1", "international", "int-env"]
+}

@@ -1,0 +1,288 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "UVGAHM-2026-06-15",
+  "pnr": "UVGAHM"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YYZ",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T15:30:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 123,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 123,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#123#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T19:00:00+00:00",
+      "arrivalDatetime": "2026-06-16T02:30:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 456,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 456,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#456#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-3",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-16T06:00:00+00:00",
+      "arrivalDatetime": "2026-06-16T08:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 789,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 789,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#789#2026-06-15#FRA"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YYZ",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T18:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T19:30:00+00:00",
+      "departureAirport": "YYZ",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 123,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 123,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#123#2026-06-15#YYZ"
+     },
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T20:30:00+00:00",
+      "arrivalDatetime": "2026-06-16T04:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "FRA",
+      "marketingFlightNumber": 456,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 456,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#456#2026-06-15#YUL"
+     },
+     {
+      "segmentId": "UVGAHM-2026-06-15-ST-3",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-16T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-16T12:00:00+00:00",
+      "departureAirport": "FRA",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 789,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 789,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#789#2026-06-15#FRA"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "UVGAHM-2026-06-15-ST-1",
+    "carrierCode": "AC",
+    "flightNumber": "123",
+    "departureAirport": "YYZ",
+    "arrivalAirport": "YUL",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 240,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Your flight arrived more than 3 hours late due to a reason within Air Canada's control.",
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "FD-APPR-EL-400",
+     "reason": "arrival delay within carrier control",
+     "compensationDetails": {
+      "amount": 400,
+      "currency": "CAD",
+      "delayBand": "DELAY_3_TO_LT_6_HOURS",
+      "expiryDate": "2027-06-15"
+     },
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "UVGAHM-2026-06-15-ST-1",
+   "carrierCode": "AC",
+   "flightNumber": 123,
+   "departureAirport": "YYZ",
+   "arrivalAirport": "YUL",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Reasonable meal and hotel expenses are reimbursable.",
+   "delayMinutes": 240,
+   "delayCategory": "DELAY_2_TO_LT_6_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "ELIGIBLE",
+     "systemCode": "SoC-APPR-EL-01",
+     "reason": "Controllable disruption \u2014 meals and accommodation reimbursable",
+     "expiryDate": "2027-12-31",
+     "expenseCategories": [
+      {
+       "type": "MEAL",
+       "region": "CANADA",
+       "delayBand": "DELAY_2_TO_LT_6_HOURS",
+       "currency": "CAD",
+       "amount": 45
+      },
+      {
+       "type": "ACCOMMODATION",
+       "region": "CANADA",
+       "delayBand": "DELAY_2_TO_LT_6_HOURS",
+       "currency": "CAD",
+       "amount": 200
+      },
+      {
+       "type": "TRANSPORTATION",
+       "region": "CANADA",
+       "delayBand": "DELAY_2_TO_LT_6_HOURS",
+       "currency": "CAD",
+       "amount": 60
+      }
+     ],
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "UVGAHM-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 456,
+   "departureAirport": "YUL",
+   "arrivalAirport": "FRA",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "41",
+   "disruptionReason": "OTHER",
+   "customerFriendlyDisruptionReason": "Your flight was delayed by less than 2 hours.",
+   "delayMinutes": 90,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-04",
+     "reason": "Transit delay below 2 hours",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "UVGAHM-2026-06-15-ST-3",
+   "carrierCode": "AC",
+   "flightNumber": 789,
+   "departureAirport": "FRA",
+   "arrivalAirport": "LHR",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "UNCONTROLLABLE",
+   "delayCode": "77",
+   "disruptionReason": "WEATHER",
+   "customerFriendlyDisruptionReason": "The primary reason was severe weather conditions. Weather and other factors outside the airline's control aren't covered under the APPR compensation regulations.",
+   "delayMinutes": 240,
+   "delayCategory": "DELAY_2_TO_LT_6_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "UVGAHM-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-APPR-NE-07",
+     "reason": "Transit delay 2 hours or more - Outside carrier control",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

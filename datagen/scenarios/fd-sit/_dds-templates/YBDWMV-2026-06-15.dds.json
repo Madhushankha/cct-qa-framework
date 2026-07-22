@@ -1,0 +1,172 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-15T09:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "YBDWMV-2026-06-15",
+  "pnr": "YBDWMV"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": false,
+   "promisedItinerary": {
+    "origin": "YOW",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "YBDWMV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YOW",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 1,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 1,
+      "operatingCarrierCode": "VR",
+      "flightId": "VR#1#2026-06-15#YOW"
+     },
+     {
+      "segmentId": "YBDWMV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 848,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 848,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#848#2026-06-15#YUL"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "YOW",
+    "destination": "LHR",
+    "associatedSegments": [
+     {
+      "segmentId": "YBDWMV-2026-06-15-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T10:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T12:00:00+00:00",
+      "departureAirport": "YOW",
+      "arrivalAirport": "YUL",
+      "marketingFlightNumber": 1,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 1,
+      "operatingCarrierCode": "VR",
+      "flightId": "VR#1#2026-06-15#YOW"
+     },
+     {
+      "segmentId": "YBDWMV-2026-06-15-ST-2",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-15T15:00:00+00:00",
+      "arrivalDatetime": "2026-06-15T17:00:00+00:00",
+      "departureAirport": "YUL",
+      "arrivalAirport": "LHR",
+      "marketingFlightNumber": 848,
+      "marketingCarrierCode": "AC",
+      "operatingFlightNumber": 848,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#848#2026-06-15#YUL"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "YBDWMV-2026-06-15-ST-2",
+    "carrierCode": "AC",
+    "flightNumber": "848",
+    "departureAirport": "YUL",
+    "arrivalAirport": "LHR",
+    "isStarSegment": false,
+    "isOalSegment": false
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 0,
+   "delayType": "OTHER",
+   "delayCode": "TRAIN",
+   "customerFriendlyDisruptionReason": "Your flight was disrupted.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "YBDWMV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NE-30",
+     "reason": "Train segment disrupted (non-flight)",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YBDWMV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "YBDWMV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NA-01",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "segmentId": "YBDWMV-2026-06-15-ST-2",
+   "carrierCode": "AC",
+   "flightNumber": 848,
+   "departureAirport": "YUL",
+   "arrivalAirport": "LHR",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "OTHER",
+   "delayCode": "",
+   "disruptionReason": "",
+   "customerFriendlyDisruptionReason": "",
+   "delayMinutes": 0,
+   "delayCategory": "DELAY_LT_2_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "YBDWMV-2026-06-15-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NO_DETERMINATION",
+     "systemCode": "SoC-APPR-ND-04",
+     "reason": "Data missing - 14 days",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}

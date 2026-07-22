@@ -1,0 +1,24 @@
+[
+ {
+  "tc": "FD_TC_002",
+  "pnr_id": "BWDKZW-2026-06-15",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-400",
+  "amount": 400,
+  "currency": "CAD",
+  "pax": "MARIE-CLAIRE DUBOIS",
+  "route": "YUL-YYZ",
+  "title": "APPR 3-<6h AC Wallet (20%) \u2014 Aeroplan->Wallet"
+ },
+ {
+  "tc": "FD_TC_019",
+  "pnr_id": "QPZWRQ-2026-06-15",
+  "status": "ELIGIBLE",
+  "syscode": "FD-APPR-EL-700",
+  "amount": 700,
+  "currency": "CAD",
+  "pax": "PIERRE LAVIGNE",
+  "route": "YUL-YYZ",
+  "title": "APPR 6-<9h AC Wallet (20%)"
+ }
+]

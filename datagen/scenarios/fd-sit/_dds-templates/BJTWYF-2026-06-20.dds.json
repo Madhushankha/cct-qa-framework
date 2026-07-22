@@ -1,0 +1,148 @@
+{
+ "eventMetadata": {
+  "trigger": "DISRUPTION_DETECTION_SERVICE",
+  "timestamp": "2026-06-20T20:05:34.000Z"
+ },
+ "pnrIdentifier": {
+  "pnrId": "BJTWYF-2026-06-20",
+  "pnr": "BJTWYF"
+ },
+ "itineraryDetails": [
+  {
+   "bound": 1,
+   "boundRph": 1,
+   "isOAL": true,
+   "promisedItinerary": {
+    "origin": "TLV",
+    "destination": "JFK",
+    "associatedSegments": [
+     {
+      "segmentId": "BJTWYF-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T14:00:00+00:00",
+      "arrivalDatetime": "2026-06-20T18:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "JFK",
+      "marketingFlightNumber": 1,
+      "marketingCarrierCode": "LY",
+      "operatingFlightNumber": 1,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#001#2026-06-20#TLV"
+     }
+    ]
+   },
+   "actualItinerary": {
+    "origin": "TLV",
+    "destination": "JFK",
+    "associatedSegments": [
+     {
+      "segmentId": "BJTWYF-2026-06-20-ST-1",
+      "segmentStatus": "HK",
+      "departureDatetime": "2026-06-20T20:00:00+00:00",
+      "arrivalDatetime": "2026-06-21T00:00:00+00:00",
+      "departureAirport": "TLV",
+      "arrivalAirport": "JFK",
+      "marketingFlightNumber": 1,
+      "marketingCarrierCode": "LY",
+      "operatingFlightNumber": 1,
+      "operatingCarrierCode": "AC",
+      "flightId": "AC#001#2026-06-20#TLV"
+     }
+    ]
+   }
+  }
+ ],
+ "compensationEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "mslFlight": {
+    "segmentId": "BJTWYF-2026-06-20-ST-1",
+    "carrierCode": "LY",
+    "flightNumber": "001",
+    "departureAirport": "TLV",
+    "arrivalAirport": "JFK",
+    "isStarSegment": false,
+    "isOalSegment": true
+   },
+   "disruptionType": "INVOLUNTARY",
+   "delayMinutes": 360,
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "disruptionReason": "MECHANICAL",
+   "passengerEligibility": [
+    {
+     "passengerId": "BJTWYF-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-ASL-NE-05",
+     "reason": "All OAL Itinerary",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "APPR",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "BJTWYF-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-APPR-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  },
+  {
+   "regime": "EU",
+   "boundRph": 1,
+   "passengerEligibility": [
+    {
+     "passengerId": "BJTWYF-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "FD-EU-NA-01",
+     "reason": "Regime not applicable",
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "socFlightEligibility": [
+  {
+   "regime": "ASL",
+   "boundRph": 1,
+   "segmentId": "BJTWYF-2026-06-20-ST-1",
+   "carrierCode": "LY",
+   "flightNumber": 1,
+   "departureAirport": "TLV",
+   "arrivalAirport": "JFK",
+   "segmentStatus": "HK",
+   "disruptionType": "INVOLUNTARY",
+   "delayType": "CONTROLLABLE",
+   "delayCode": "64",
+   "disruptionReason": "MECHANICAL",
+   "customerFriendlyDisruptionReason": "Based on the applicable regulations, this disruption is not eligible for expense reimbursement.",
+   "delayMinutes": 360,
+   "delayCategory": "DELAY_6_TO_LT_12_HOURS",
+   "passengerEligibility": [
+    {
+     "passengerId": "BJTWYF-2026-06-20-PT-1",
+     "passengerType": "ADT",
+     "bookingClass": null,
+     "cabinClass": "ECONOMY",
+     "eligibilityStatus": "NOT_ELIGIBLE",
+     "systemCode": "SoC-ASL-NE-05",
+     "reason": "OAL Itinerary",
+     "expiryDate": "",
+     "expenseCategories": [],
+     "failureReasons": null
+    }
+   ]
+  }
+ ],
+ "seatFeeRefundEligibility": []
+}
