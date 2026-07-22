@@ -15,3 +15,6 @@ scratch_titles.txt
 
 # vendored datagen: compiled artifacts and scratch work dirs
 datagen/**/__pycache__/
+
+# local run output, not committed for now
+results/2026-07-22/
