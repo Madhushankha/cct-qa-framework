@@ -1,0 +1,25 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD-SIT-001",
+   "locator": "PGN5LD",
+   "pnr_id": "PGN5LD-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-024",
+   "locator": "HMK3V5",
+   "pnr_id": "HMK3V5-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-042",
+   "locator": "PBZ538",
+   "pnr_id": "PBZ538-2026-07-20",
+   "gate": "error",
+   "error": "UndefinedColumn: column \"departure_local_date\" does not exist\nLINE 1: select distinct departure_local_date from flight_segment whe...\n                        ^\n"
+  }
+ ],
+ "skipped": []
+}

@@ -63,6 +63,55 @@ def inject_contact(pnr: dict, email: str) -> int:
     return changed
 
 
+def _ssl_context():
+    """TLS context for the MSK connection, trusting certifi's CA bundle when it is installed."""
+    import ssl
+
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        return ssl.create_default_context()
+
+
+def bump_feed_timestamps(pnr: dict, when: str | None = None) -> int:
+    """Push `lastModification.dateTime` / `originFeedTimeStamp` to `when` (default: now, UTC).
+
+    A version bump alone is not always enough to force reprocessing — the cascade compares the feed
+    timestamps too, and a republish that looks older than the row it would replace is dropped. Used
+    by `republish` when repairing an eds straggler."""
+    import datetime
+
+    stamp = when or datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    pp = pnr.get("processedPnr", {})
+    changed = 0
+    lm = pp.get("lastModification")
+    if isinstance(lm, dict):
+        lm["dateTime"] = stamp
+        changed += 1
+    for key in ("originFeedTimeStamp", "originFeedTimestamp"):
+        if key in pp:
+            pp[key] = stamp
+            changed += 1
+    return changed
+
+
+def republish(env, locators, *, fixtures_dir: str, version: str = "10",
+              contact_email: str | None = None, **kw) -> SeedPlan:
+    """Version-bump republish of the PNR feed only — the fix for an eds straggler.
+
+    Roughly 1 in 239 PNRs cascades trip/passenger/segment but lands ZERO `eds_pnr_output` rows, and
+    the bot reads eds for the booking, so that case is dead until it is reprocessed. Re-publishing
+    the SAME version is deduped by the cascade and changes nothing; bumping the version (and the
+    feed timestamps) forces it through. The same mechanism is required after changing the contact
+    email of an already-cascaded booking.
+
+    Note the cascade nulls `passenger.date_of_birth` on the republish — re-run
+    `finalize.set_dob` (or the whole `finalize_case`) afterwards."""
+    return seed(env, locators, contact_email=contact_email, pnr_version=version,
+                fixtures_dir=fixtures_dir, stages={"PNR"}, **kw)
+
+
 def build_plan(env, locators, *, contact_email: str | None = None,
                pnr_version: str | None = None, fixtures_dir: str | None = None) -> SeedPlan:
     """Read each fixture locator dir and assemble the produce plan. Rewrites the PNR contact email
@@ -78,6 +127,7 @@ def build_plan(env, locators, *, contact_email: str | None = None,
         pnr = json.loads((d / "01_pnr.json").read_text(encoding="utf-8"))
         if pnr_version:
             pnr["processedPnr"]["version"] = str(pnr_version)
+            bump_feed_timestamps(pnr)
         inject_contact(pnr, contact_email)
         plan.pnr.append(SeedMessage(topics["pnr"], pnr, pnr["processedPnr"]["bookingIdentifier"]))
         plan.locators.append(loc)
@@ -111,6 +161,11 @@ def make_producer(env):
         bootstrap_servers=boot.split(","),
         security_protocol="SASL_SSL", sasl_mechanism="SCRAM-SHA-512",
         sasl_plain_username=sec["username"], sasl_plain_password=sec["password"],
+        # Explicit trust store: MSK presents a normal Amazon Root CA 1 chain, but a python.org
+        # framework build ships with NO CA bundle until `Install Certificates.command` is run, so
+        # the default context fails verification here even though boto3 (which vendors its own
+        # bundle) works fine. certifi makes the seeder portable across interpreters.
+        ssl_context=_ssl_context(),
         value_serializer=lambda v: v if isinstance(v, (bytes, bytearray)) else json.dumps(v).encode("utf-8"),
         key_serializer=lambda k: None if k is None else str(k).encode("utf-8"),
         acks="all", retries=3, linger_ms=20,

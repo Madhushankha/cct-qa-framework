@@ -10,7 +10,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
-live = ["boto3>=1.28", "psycopg2-binary>=2.9", "websocket-client>=1.6"]  # P2 seed verify + P3 live chatbot runner
+# P2 seed (Kafka inject + Aurora verify + DDS pin) + P3 live chatbot runner
+# kafka-python is pinned <3: 3.x is an async rewrite whose KafkaProducer contract differs.
+live = ["boto3>=1.28", "psycopg2-binary>=2.9", "websocket-client>=1.6",
+        "kafka-python>=2.0,<3", "certifi>=2024.0"]
 
 [project.scripts]
 cctqa = "core.cli:main"
@@ -20,7 +23,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["core*"]
+include = ["core*", "catalog*", "seed*", "runner*", "evidence*", "metrics*", "analysis*", "quality*", "ui*", "jira*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

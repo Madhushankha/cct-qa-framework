@@ -5,8 +5,8 @@ chatbot:
   endpoint_path: /start-chat
   region: ca-central-1
 aws:
-  profile: bat-sso
-  account: "000000000000"
+  profile: CCE-Developer-BAT   # local SSO profile for BAT (was: bat-sso)
+  account: "209479273605"      # from the profile's sso_account_id (was: 000000000000 placeholder)
 otp:
   strategy: fixed
   code: "123456"

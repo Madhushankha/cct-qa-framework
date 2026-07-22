@@ -1,0 +1,798 @@
+{
+ "feed": "fd",
+ "seeded": [
+  {
+   "case_id": "FD-SIT-001",
+   "locator": "SWC77A",
+   "pnr_id": "SWC77A-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-002",
+   "locator": "A84NJ3",
+   "pnr_id": "A84NJ3-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-003",
+   "locator": "ESN454",
+   "pnr_id": "ESN454-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-004",
+   "locator": "DS7E9F",
+   "pnr_id": "DS7E9F-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-005",
+   "locator": "JJJ9VN",
+   "pnr_id": "JJJ9VN-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-006",
+   "locator": "FB6NPC",
+   "pnr_id": "FB6NPC-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-007",
+   "locator": "KW5CNC",
+   "pnr_id": "KW5CNC-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-008",
+   "locator": "VVRNNM",
+   "pnr_id": "VVRNNM-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-009",
+   "locator": "CEMT3E",
+   "pnr_id": "CEMT3E-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-010",
+   "locator": "ZBRQMT",
+   "pnr_id": "ZBRQMT-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-011",
+   "locator": "PX2NT4",
+   "pnr_id": "PX2NT4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-012",
+   "locator": "DKA3VH",
+   "pnr_id": "DKA3VH-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-013",
+   "locator": "ST74UT",
+   "pnr_id": "ST74UT-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-014",
+   "locator": "A746TU",
+   "pnr_id": "A746TU-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-015",
+   "locator": "SJJM2S",
+   "pnr_id": "SJJM2S-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-016",
+   "locator": "KYNPYA",
+   "pnr_id": "KYNPYA-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-017",
+   "locator": "CNFYCB",
+   "pnr_id": "CNFYCB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-018",
+   "locator": "NJXXXN",
+   "pnr_id": "NJXXXN-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-019",
+   "locator": "BEMXQB",
+   "pnr_id": "BEMXQB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-020",
+   "locator": "E4Z2RG",
+   "pnr_id": "E4Z2RG-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-021",
+   "locator": "PBQJ2E",
+   "pnr_id": "PBQJ2E-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-022",
+   "locator": "KPKJ8Y",
+   "pnr_id": "KPKJ8Y-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-023",
+   "locator": "UA2A5N",
+   "pnr_id": "UA2A5N-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-024",
+   "locator": "QF4Z7P",
+   "pnr_id": "QF4Z7P-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-025",
+   "locator": "UBKZ5R",
+   "pnr_id": "UBKZ5R-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-026",
+   "locator": "R5XJPH",
+   "pnr_id": "R5XJPH-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-028",
+   "locator": "X9D8WA",
+   "pnr_id": "X9D8WA-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-029",
+   "locator": "RLZGA6",
+   "pnr_id": "RLZGA6-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-030",
+   "locator": "PVX443",
+   "pnr_id": "PVX443-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-031",
+   "locator": "WJR6V6",
+   "pnr_id": "WJR6V6-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-032",
+   "locator": "BAULWA",
+   "pnr_id": "BAULWA-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-033",
+   "locator": "KSQYUD",
+   "pnr_id": "KSQYUD-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-035",
+   "locator": "YBV2LY",
+   "pnr_id": "YBV2LY-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-036",
+   "locator": "VP6FCB",
+   "pnr_id": "VP6FCB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-037",
+   "locator": "JMZTTZ",
+   "pnr_id": "JMZTTZ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-038",
+   "locator": "JFMBBQ",
+   "pnr_id": "JFMBBQ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-039",
+   "locator": "MGVQSE",
+   "pnr_id": "MGVQSE-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-040",
+   "locator": "QQVRRW",
+   "pnr_id": "QQVRRW-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-041",
+   "locator": "NNRPY9",
+   "pnr_id": "NNRPY9-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-042",
+   "locator": "G6ZT3F",
+   "pnr_id": "G6ZT3F-2026-07-20",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-043",
+   "locator": "S2W5AM",
+   "pnr_id": "S2W5AM-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-044",
+   "locator": "CUVHVM",
+   "pnr_id": "CUVHVM-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-045",
+   "locator": "EX37E4",
+   "pnr_id": "EX37E4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-046",
+   "locator": "LCSDCF",
+   "pnr_id": "LCSDCF-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-047",
+   "locator": "L2QE5L",
+   "pnr_id": "L2QE5L-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-048",
+   "locator": "JFU3SK",
+   "pnr_id": "JFU3SK-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-049",
+   "locator": "QPQN9A",
+   "pnr_id": "QPQN9A-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-050",
+   "locator": "YTU35S",
+   "pnr_id": "YTU35S-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-051",
+   "locator": "Y8WD8K",
+   "pnr_id": "Y8WD8K-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-052",
+   "locator": "STLTAX",
+   "pnr_id": "STLTAX-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-053",
+   "locator": "WPYP8W",
+   "pnr_id": "WPYP8W-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-054",
+   "locator": "XTKNXB",
+   "pnr_id": "XTKNXB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-055",
+   "locator": "C6JC4J",
+   "pnr_id": "C6JC4J-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-056",
+   "locator": "N9S8E4",
+   "pnr_id": "N9S8E4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-057",
+   "locator": "NYYCY2",
+   "pnr_id": "NYYCY2-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-058",
+   "locator": "ZQPPP2",
+   "pnr_id": "ZQPPP2-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-059",
+   "locator": "EV6RW9",
+   "pnr_id": "EV6RW9-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-060",
+   "locator": "CH5PRJ",
+   "pnr_id": "CH5PRJ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-061",
+   "locator": "U84TXP",
+   "pnr_id": "U84TXP-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-063",
+   "locator": "ALR9GB",
+   "pnr_id": "ALR9GB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-064",
+   "locator": "E54BCG",
+   "pnr_id": "E54BCG-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-065",
+   "locator": "P9DTDW",
+   "pnr_id": "P9DTDW-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-066",
+   "locator": "W55WQZ",
+   "pnr_id": "W55WQZ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-067",
+   "locator": "DQQDFS",
+   "pnr_id": "DQQDFS-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-068",
+   "locator": "QA88EV",
+   "pnr_id": "QA88EV-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-069",
+   "locator": "BRGDT4",
+   "pnr_id": "BRGDT4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-070",
+   "locator": "HWZS86",
+   "pnr_id": "HWZS86-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-071",
+   "locator": "NA53YX",
+   "pnr_id": "NA53YX-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-072",
+   "locator": "XX7W8B",
+   "pnr_id": "XX7W8B-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-074",
+   "locator": "XSHXTN",
+   "pnr_id": "XSHXTN-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-075",
+   "locator": "RMLQVD",
+   "pnr_id": "RMLQVD-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-076",
+   "locator": "P3BZWP",
+   "pnr_id": "P3BZWP-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-077",
+   "locator": "SJU82Q",
+   "pnr_id": "SJU82Q-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-078",
+   "locator": "UEAX4N",
+   "pnr_id": "UEAX4N-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-079",
+   "locator": "K6RXQU",
+   "pnr_id": "K6RXQU-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-080",
+   "locator": "W2GZD6",
+   "pnr_id": "W2GZD6-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-081",
+   "locator": "M8N2T2",
+   "pnr_id": "M8N2T2-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-083",
+   "locator": "C95NG2",
+   "pnr_id": "C95NG2-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-084",
+   "locator": "N9SABH",
+   "pnr_id": "N9SABH-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-085",
+   "locator": "L562BK",
+   "pnr_id": "L562BK-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-086",
+   "locator": "JFYCZ7",
+   "pnr_id": "JFYCZ7-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-087",
+   "locator": "CVALUG",
+   "pnr_id": "CVALUG-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-090",
+   "locator": "JJKXF6",
+   "pnr_id": "JJKXF6-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-091",
+   "locator": "DC2L43",
+   "pnr_id": "DC2L43-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-092",
+   "locator": "UHU6J2",
+   "pnr_id": "UHU6J2-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-093",
+   "locator": "ZJ5PAQ",
+   "pnr_id": "ZJ5PAQ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-094",
+   "locator": "ZKJ3YG",
+   "pnr_id": "ZKJ3YG-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-095",
+   "locator": "EUGGZJ",
+   "pnr_id": "EUGGZJ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-096",
+   "locator": "F5GTBY",
+   "pnr_id": "F5GTBY-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-097",
+   "locator": "HKETER",
+   "pnr_id": "HKETER-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-098",
+   "locator": "XX4PN9",
+   "pnr_id": "XX4PN9-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-099",
+   "locator": "NL54L5",
+   "pnr_id": "NL54L5-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-100",
+   "locator": "HGHF67",
+   "pnr_id": "HGHF67-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-101",
+   "locator": "E6XC6Y",
+   "pnr_id": "E6XC6Y-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-102",
+   "locator": "VMUJAA",
+   "pnr_id": "VMUJAA-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-103",
+   "locator": "DGKA2F",
+   "pnr_id": "DGKA2F-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-104",
+   "locator": "NQ6QBL",
+   "pnr_id": "NQ6QBL-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-105",
+   "locator": "X5HXLA",
+   "pnr_id": "X5HXLA-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-106",
+   "locator": "LDQQMX",
+   "pnr_id": "LDQQMX-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-107",
+   "locator": "J5E4Q6",
+   "pnr_id": "J5E4Q6-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-108",
+   "locator": "LFZN8F",
+   "pnr_id": "LFZN8F-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-109",
+   "locator": "SLAMEC",
+   "pnr_id": "SLAMEC-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-110",
+   "locator": "YCWKBE",
+   "pnr_id": "YCWKBE-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-111",
+   "locator": "J34HHF",
+   "pnr_id": "J34HHF-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-113",
+   "locator": "S8794P",
+   "pnr_id": "S8794P-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-115",
+   "locator": "XFLUEN",
+   "pnr_id": "XFLUEN-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-116",
+   "locator": "VC8FW3",
+   "pnr_id": "VC8FW3-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-117",
+   "locator": "Z2GL3E",
+   "pnr_id": "Z2GL3E-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-119",
+   "locator": "NPDHL4",
+   "pnr_id": "NPDHL4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-121",
+   "locator": "C6UE6U",
+   "pnr_id": "C6UE6U-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-122",
+   "locator": "F484T9",
+   "pnr_id": "F484T9-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-123",
+   "locator": "NYKEBK",
+   "pnr_id": "NYKEBK-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-124",
+   "locator": "WD6ZBQ",
+   "pnr_id": "WD6ZBQ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-125",
+   "locator": "XSYCXX",
+   "pnr_id": "XSYCXX-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-126",
+   "locator": "VGT8TC",
+   "pnr_id": "VGT8TC-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-127",
+   "locator": "YEWJWM",
+   "pnr_id": "YEWJWM-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-128",
+   "locator": "YLMT77",
+   "pnr_id": "YLMT77-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-129",
+   "locator": "Q99WXB",
+   "pnr_id": "Q99WXB-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-130",
+   "locator": "Y69ETY",
+   "pnr_id": "Y69ETY-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-131",
+   "locator": "QTJXSZ",
+   "pnr_id": "QTJXSZ-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-132",
+   "locator": "V726YP",
+   "pnr_id": "V726YP-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-133",
+   "locator": "WW72KP",
+   "pnr_id": "WW72KP-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-134",
+   "locator": "V2QFBM",
+   "pnr_id": "V2QFBM-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-135",
+   "locator": "XFE3WN",
+   "pnr_id": "XFE3WN-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-136",
+   "locator": "AKJCYH",
+   "pnr_id": "AKJCYH-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-137",
+   "locator": "ZHR2N5",
+   "pnr_id": "ZHR2N5-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-138",
+   "locator": "Z8W2W4",
+   "pnr_id": "Z8W2W4-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-139",
+   "locator": "QH8L6K",
+   "pnr_id": "QH8L6K-2026-07-20",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-140",
+   "locator": "GVEM7P",
+   "pnr_id": "GVEM7P-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-141",
+   "locator": "KYMPJ9",
+   "pnr_id": "KYMPJ9-2026-07-14",
+   "gate": "all-pass"
+  },
+  {
+   "case_id": "FD-SIT-142",
+   "locator": "JRPJUN",
+   "pnr_id": "JRPJUN-2026-07-14",
+   "gate": "checkpoint_fail"
+  },
+  {
+   "case_id": "FD-SIT-144",
+   "locator": "DNG9EC",
+   "pnr_id": "DNG9EC-2026-07-14",
+   "gate": "all-pass"
+  }
+ ],
+ "skipped": []
+}

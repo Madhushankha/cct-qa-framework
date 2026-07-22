@@ -5,7 +5,8 @@ chatbot:
   endpoint_path: /start-chat
   region: ca-central-1
 aws:
-  profile: int-sso
+  profile: ARC75-Temp-INT   # local SSO profile for INT account 982081066747, Arc75-temp role
+                            # (was: int-sso). cce-developer-int is the same account, CCE-Developer role.
   account: "982081066747"
 otp:
   # Uniform OTP across every env: seed the mailinator contact and fetch the REAL code.
@@ -14,6 +15,8 @@ otp:
   domain: ae-qa1-aircanada.mailinator.com
   inbox: lahiru
   token_secret: MAILINATOR_TOKEN
+  # Contact phone written onto every seeded booking (see crt.yaml).
+  phone: "+94712534323"
 seed_targets:
   # MSK (Kafka) inject coordinates — the seeder reads EVERYTHING from here, so the seed
   # code stays env-independent. The MSK secret's sourceBootstrapServers wins over `bootstrap`

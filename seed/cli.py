@@ -173,8 +173,73 @@ def preflight_credentials(env) -> tuple[bool, str]:
         return False, f"{type(exc).__name__}: {exc}"
 
 
+# The identification DOB the bot challenges on. Same value the reference pipeline pins, so a case
+# seeded by either tool answers the same challenge; override per env with seed_targets.dob.
+DEFAULT_DOB = "1986-04-23"
+
+
+def _free_ticket_prefix(env) -> str | None:
+    """A ticket prefix whose low serial band is unused in this env, or None if it can't be checked.
+
+    Reusing a consumed prefix does not error: the ticket insert is `on conflict do nothing`, so the
+    row is silently dropped and the case ships ticketless. Scanning up front removes that failure
+    mode; when the DB is unreachable we return None and skip the write-back rather than guess."""
+    from seed import finalize
+    try:
+        conn = finalize.connect_writable(env)
+        try:
+            return finalize.free_ticket_prefix(conn)
+        finally:
+            conn.close()
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [ticket] prefix scan unavailable ({type(exc).__name__}); "
+              f"skipping post-cascade write-back", flush=True)
+        return None
+
+
+def _fresh_names(env, n: int) -> list[str]:
+    """`n` 'FIRST LAST' passenger names whose surnames are certified absent from the passenger
+    table, so the `name_uniqueness` checkpoint has something real to confirm.
+
+    Falls back to the offline generator (distinct, but not DB-checked) when trip-tracer can't be
+    reached — a seed run should not die because the auditing DB is unavailable, but the operator
+    should know the names are uncertified, hence the printed warning."""
+    from seed import identity
+    try:
+        from seed import source as _src
+        src = _src.connect(env)
+        pool = identity.fresh_pool(n, in_db=src.surnames_present)
+    except Exception as exc:  # noqa: BLE001 — DB unreachable/expired creds: degrade, don't abort
+        print(f"  [names] DB check unavailable ({type(exc).__name__}); "
+              f"names are distinct but NOT certified DB-absent", flush=True)
+        pool = identity.fresh_pool(n)
+    return [f"{first} {last}" for first, last in pool]
+
+
+def _finalize_one(e, c, pnr_id: str, *, prefix: str, case_index: int, dob: str) -> dict | None:
+    """Post-cascade write-back for one case: per-passenger tickets, DOB, GROUP context.
+
+    Returns None (and prints) on failure rather than raising — the DDS pin and the checkpoint audit
+    still carry useful signal for the case, and the `ticket`/`dob`/`group_context` areas will
+    report what actually landed."""
+    from seed import finalize
+    from seed.verify import _is_group
+    try:
+        conn = finalize.connect_writable(e)
+        try:
+            return finalize.finalize_case(conn, pnr_id=pnr_id, prefix=prefix,
+                                          case_index=case_index, dob=dob, group=_is_group(c))
+        finally:
+            conn.close()
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [finalize] {c.id} {pnr_id}: {type(exc).__name__}: {exc}", flush=True)
+        return None
+
+
 def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact: str,
-                        clone_dir: str, verify: bool, flight_number: int = 8002) -> dict:
+                        clone_dir: str, verify: bool, flight_number: int = 8002,
+                        ticket_prefix: str | None = None, case_index: int = 1,
+                        dob: str | None = None) -> dict:
     """Pin DDS + (optionally) verify one already-published case. Independent per pnr_id, so the
     whole set can run concurrently. Catches its own errors and returns a gate=error record so one
     transient failure (e.g. an expired SSO token on a single worker) never aborts the whole batch
@@ -186,6 +251,10 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
         if verify and not _trip_landed(e, loc):
             print(f"  [trip] {c.id} {loc}: NOT FOUND — skipping DDS pin", flush=True)
             return {"case_id": c.id, "locator": loc, "gate": "trip_missing"}
+        # Post-cascade write-back BEFORE the audit: tickets/DOB/GROUP are not carried by the Kafka
+        # cascade, so the ticket + dob + group_context checkpoints can only pass once this has run.
+        if ticket_prefix and dob:
+            _finalize_one(e, c, pnr_id, prefix=ticket_prefix, case_index=case_index, dob=dob)
         o, dst = (c.seed.route.split("-") + ["", ""])[:2]
         amt = (c.seed.amount or {}).get("value", 0) or 0
         # Pin the GAP-DOC systemCode for real FD verdicts (auditor expects verify.py `want =
@@ -204,7 +273,7 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
         line = f"  [ok] {c.id} {loc} [{pin_sys}] dds={res['pin']}"
         gate = "seeded"
         if verify:
-            v = dds_pin.verify_by_pnr(e, pnr_id)
+            v = dds_pin.verify_by_pnr(e, pnr_id, s3_key=res.get("s3_key"))
             line += f" by-pnr={v['status_code']} {'ELIGIBLE' if v['eligible'] else '-'} {v['amount']}"
             vec = _audit_checkpoints(e, c, contact, v)
             _write_checkpoints(clone_dir, loc, vec)
@@ -219,7 +288,7 @@ def _pin_and_verify_one(e, c, *, flight_date: str, today: str, ts: str, contact:
 
 def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago: int = 7,
                  verify: bool = True, limit: int | None = None, workers: int = 8,
-                 only: list | None = None) -> int:
+                 only: list | None = None, index: str | None = None) -> int:
     """Seed the WHOLE gap-doc catalog: render each case from the framework base template with its
     own dataset 6-char locator + independent name (seed/render.py), then publish -> pin -> verify.
     Staged: only cases whose DDS family has a registered template are seeded; the rest are reported
@@ -235,6 +304,8 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     ctx = resolve(product, env, feed)
     e = ctx.env
     contact = kafka_seed.mailinator_contact(e)
+    contact_phone = (e.otp or {}).get("phone") or (e.seed_targets or {}).get("contact_phone")
+    dob = (e.seed_targets or {}).get("dob") or DEFAULT_DOB
     templates = set((e.seed_targets.get("dds", {}).get("templates") or {}).keys())
     now = datetime.datetime.now(datetime.timezone.utc)
     flight_date = in_window_date(now, days_ago)
@@ -243,7 +314,14 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     docnum_base = int(now.strftime("%H%M%S")) * 100
     base_dir = "data/fd-templates/base_appr"
 
-    cat = load_catalog(ctx.feed)
+    if index:
+        # Donor index (a reference-pipeline `_FD_*_index.json`): supplies the real systemCodes and
+        # amounts the gap doc lacks. Identities are still minted fresh, so this creates a NEW set.
+        from seed.sit_index import load_sit_index
+        cat = load_sit_index(index, feed_id=feed)
+        print(f"[seed-all] catalog from donor index {index} ({len(cat.cases)} case(s))", flush=True)
+    else:
+        cat = load_catalog(ctx.feed)
     only_set = {x.strip().upper().replace("-", "_") for x in only} if only else None
     seedable, skipped = [], []
     for c in cat.cases:
@@ -265,15 +343,17 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
     # mint a BRAND-NEW locator + independent first/last name for every case each run, so re-seeding
     # never collides with a prior run's trip-tracer row (the stale-INACTIVE-row bug that made the bot
     # report "couldn't find a booking"). The dataset still supplies the scenario; only identity is fresh.
-    used_pnr, used_name = set(), set()
+    used_pnr = set()
+    names = _fresh_names(e, len(seedable))
     by_loc, flight_of, date_of, locs = {}, {}, {}, []
     for i, c in enumerate(seedable):
         c = dataclasses.replace(c, seed=dataclasses.replace(
-            c.seed, pnr=identity.fresh_pnr(used_pnr), passenger=identity.fresh_name(used_name)))
+            c.seed, pnr=identity.fresh_pnr(used_pnr), passenger=names[i]))
         flt = 8000 + (i + 1)  # unique per case so each FDM leg_id is distinct
         fdate = scenario.flight_date_for(c, now)
         d = render.render_case(base_dir, clone_dir, c, contact_email=contact,
-                               flight_date=fdate, index=docnum_base + i, flight_number=flt)
+                               flight_date=fdate, index=docnum_base + i, flight_number=flt,
+                               contact_phone=contact_phone, dob=dob)
         by_loc[c.seed.pnr] = c
         flight_of[c.seed.pnr] = flt
         date_of[c.seed.pnr] = fdate
@@ -300,13 +380,20 @@ def run_seed_all(product: str, env: str, feed: str, *, clone_dir: str, days_ago:
             return 2
         print(f"[seed-all] creds OK ({detail})", flush=True)
 
+    ticket_prefix = _free_ticket_prefix(e) if verify else None
+    if ticket_prefix:
+        print(f"[seed-all] ticket prefix {ticket_prefix} (free band) · DOB {dob}", flush=True)
+
     print(f"[seed-all] pin+verify {len(locs)} case(s) with {workers} workers ...", flush=True)
     cases = [by_loc[loc] for loc in locs]
+    index_of = {c.seed.pnr: i + 1 for i, c in enumerate(cases)}
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         mapping = list(pool.map(
             lambda c: _pin_and_verify_one(e, c, flight_date=date_of[c.seed.pnr], today=today, ts=ts,
                                           contact=contact, clone_dir=clone_dir, verify=verify,
-                                          flight_number=flight_of[c.seed.pnr]),
+                                          flight_number=flight_of[c.seed.pnr],
+                                          ticket_prefix=ticket_prefix,
+                                          case_index=index_of[c.seed.pnr], dob=dob),
             cases))
 
     ok = sum(1 for m in mapping if m.get("gate") in ("seeded", "all-pass"))
@@ -398,6 +485,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--family", default="APPR_CAD_400", help="DDS template family")
     p.add_argument("--days-ago", type=int, default=7, help="flight date = N days ago (FD window 3..14)")
     p.add_argument("--no-verify", action="store_true", help="skip trip-landed + by-pnr verification")
+    p.add_argument("--index", default=None,
+                   help="donor index JSON (a reference-pipeline _FD_*_index.json) to take the real "
+                        "systemCodes/amounts from, instead of the feed's gap doc")
+    p.add_argument("--only", nargs="*", default=None,
+                   help="with --all: restrict to these case ids (e.g. FD-SIT-001 FD-SIT-024)")
     try:
         args = p.parse_args(argv)
     except SystemExit as exc:
@@ -411,7 +503,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.all:
         return run_seed_all(args.product, args.env, args.feed, clone_dir=clone_dir,
                             days_ago=args.days_ago, verify=not args.no_verify, limit=args.limit,
-                            workers=args.workers)
+                            workers=args.workers, only=args.only, index=args.index)
     if not args.mapping:
         print("provide --from SRC:NEW pairs, or --all to seed the whole catalog")
         return 2

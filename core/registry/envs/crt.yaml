@@ -6,13 +6,16 @@ chatbot:
   endpoint_path: /start-chat
   region: ca-central-1
 aws:
-  profile: crt-sso
+  profile: ac-cct-crt   # local SSO profile for CRT account 050752605169 (was: crt-sso)
   account: "050752605169"
 otp:
   strategy: mailinator
   domain: ae-qa1-aircanada.mailinator.com
   inbox: lahiru
   token_secret: MAILINATOR_TOKEN
+  # Contact phone written onto every seeded booking. OTP itself is email-based (mailinator); this
+  # is the number the agent reads back, and what an SMS-OTP env would use.
+  phone: "+94712534323"
 seed_targets:
   # ── Kafka seed (VERIFIED under crt-sso) ──────────────────────────────────────
   msk_secret: AmazonMSK_ac-cct-msk-crt-cac1
@@ -44,7 +47,10 @@ seed_targets:
   dds:
     store_bucket: cct-ask-ac-crt-logs        # VERIFIED exists
     trace_prefix: traces/DDS
-    rule_engine_host: null                   # TODO: CRT rule-engine cluster endpoint (not confirmed)
+    # CONFIRMED 2026-07-21: the cluster exists and execution_traces is reachable over WARP with the
+    # secret's adminuser (dbadmin) — `username` (dbdevuser) is rejected here, so the connection
+    # helper tries both pairs (seed/source.db_connect). 127,928 DDS traces present.
+    rule_engine_host: ac-cct-rule-engine-crt-cac1-rds-cluster.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com
     rule_engine_db: postgres
     ecs_cluster: null                        # TODO: no rule-engine-platform ECS cluster on CRT
     by_pnr_url: https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output  # 403 — needs confirming

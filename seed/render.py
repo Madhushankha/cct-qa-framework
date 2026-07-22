@@ -52,7 +52,8 @@ def _delay_for(case) -> int:
 
 
 def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: str,
-                index: int = 1, flight_number: int | None = None) -> Path:
+                index: int = 1, flight_number: int | None = None,
+                contact_phone: str | None = None, dob: str | None = None) -> Path:
     """Render `case` into `out_root/<locator>/` from the base template at `base_dir`.
 
     Rewrites (source value read from the base `meta.json`):
@@ -63,6 +64,9 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
       - route        -> case.seed.route         (departure/arrival airport codes)
       - delay        -> tier(case amount)       (FDM delayTime minutes)
       - contact email-> contact_email           (the OTP-gating eds contact)
+      - contact phone-> contact_phone           (when given; the number the agent reads back)
+      - birth date   -> dob                     (when given; the bot's identification challenge)
+      - OAL carriers -> AC                      (always; a non-AC leg blocks the cascade)
     Returns the rendered fixture dir.
     """
     base = Path(base_dir)
@@ -123,7 +127,10 @@ def render_case(base_dir, out_root, case, *, contact_email: str, flight_date: st
     dst.mkdir(parents=True, exist_ok=True)
 
     pnr = json.loads(_retext((base / "01_pnr.json").read_text(encoding="utf-8")))
-    _set_contact(pnr, contact_email)
+    _set_contact(pnr, contact_email, contact_phone)
+    _acify_segments(pnr)
+    if dob:
+        _set_dob(pnr, dob)
     (dst / "01_pnr.json").write_text(json.dumps(pnr, ensure_ascii=False), encoding="utf-8")
 
     for tf in sorted(base.glob("02_ticket*.json")):
@@ -206,11 +213,76 @@ def render_from_manifest(feed: str, case, *, out_root, contact_email: str, now,
     return dst
 
 
-def _set_contact(pnr: dict, email: str) -> int:
+def _set_contact(pnr: dict, email: str, phone: str | None = None) -> int:
+    """Rewrite every contact's email address, and its phone number when `phone` is given.
+
+    The bot gates OTP on the email, so that is the one that must always be set; the phone is the
+    contact the agent reads back (and the channel an SMS-OTP env would use), so a seeded booking
+    that keeps the template's phone shows the wrong number to the customer. A contact element with
+    no phone member gets one added, mirroring the reference pipeline's `p["phone"]=PHONE`."""
     changed = 0
     for c in (pnr.get("processedPnr", {}).get("contacts") or []):
         em = c.get("email")
         if isinstance(em, dict):
             em["address"] = email
             changed += 1
+        if phone:
+            ph = c.get("phone")
+            if isinstance(ph, dict):
+                ph["number"] = phone
+            elif isinstance(ph, list):
+                for p in ph:
+                    if isinstance(p, dict):
+                        p["number"] = phone
+            else:
+                c["phone"] = {"number": phone}
+            changed += 1
+    return changed
+
+
+def _set_dob(pnr: dict, dob: str) -> int:
+    """Set every traveler's birth date. The bot challenges on DOB during identification, so a
+    booking whose travelers carry the template's date fails that step. Note the cascade nulls
+    `passenger.date_of_birth` on any republish — `finalize.set_dob` restores it DB-side."""
+    changed = 0
+    for t in (pnr.get("processedPnr", {}).get("travelers") or []):
+        if not isinstance(t, dict):
+            continue
+        for key in ("birthDate", "dateOfBirth", "date_of_birth"):
+            if key in t:
+                t[key] = dob
+                changed += 1
+                break
+        else:
+            t["birthDate"] = dob
+            changed += 1
+    return changed
+
+
+def _acify_segments(pnr: dict) -> int:
+    """Force every booking leg to be AC-operated, returning the number of legs rewritten.
+
+    A non-AC `operatingCarrier` (PAL/WS/LH…) BLOCKS the trip-tracer cascade — the trip row is never
+    created, so the bot reports "I couldn't find a booking" and the case dies before it starts. The
+    real other-airline carrier belongs only in the pinned DDS `mslFlight`, which is what actually
+    drives eligibility. Ported from the reference builder's OAL AC-ify step."""
+    changed = 0
+    pp = pnr.get("processedPnr", {})
+    for key in ("segments", "flights", "airSegments"):
+        for seg in (pp.get(key) or []):
+            if not isinstance(seg, dict):
+                continue
+            for carrier_key in ("operatingCarrier", "operating_carrier", "marketingCarrier",
+                                "carrier", "airline"):
+                cur = seg.get(carrier_key)
+                if isinstance(cur, dict) and cur.get("code") and cur["code"] != "AC":
+                    cur["code"] = "AC"
+                    changed += 1
+                elif isinstance(cur, str) and cur and cur != "AC":
+                    seg[carrier_key] = "AC"
+                    changed += 1
+            # an OAL leg carries its own operating flight number; align it with the AC one so the
+            # leg_id (carrier#flight#origin#date) stays internally consistent.
+            if seg.get("operatingFlightNumber") and seg.get("flightNumber"):
+                seg["operatingFlightNumber"] = seg["flightNumber"]
     return changed

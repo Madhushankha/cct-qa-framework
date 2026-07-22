@@ -326,19 +326,14 @@ def pin_trace(env, pnr_id: str, s3_key: str, *, correlation_id: str = "cctqa-fd"
     """INSERT the execution_traces row via direct psycopg2 to the rule-engine cluster (using
     rule_engine_secret). Deletes any prior cctqa pin for this pnr first (idempotent re-seed).
     Returns 'inserted'. Raises on failure (caller may fall back to ECS-exec)."""
-    import boto3  # lazy
-    import psycopg2  # lazy
+    from seed.source import db_connect, read_secret  # lazy
 
     dds = _dds_cfg(env)
-    secret_id = (env.seed_targets or {}).get("rule_engine_secret")
-    profile = (env.aws or {}).get("profile")
-    sm = boto3.Session(profile_name=profile).client("secretsmanager", region_name=region)
-    sec = json.loads(sm.get_secret_value(SecretId=secret_id)["SecretString"])
-    user = sec.get("username") or sec.get("adminuser") or sec.get("user")
-    pw = sec.get("password") or sec.get("adminpassword")
-    conn = psycopg2.connect(host=dds["rule_engine_host"], port=int(sec.get("port", 5432)),
-                            dbname=dds.get("rule_engine_db", "postgres"), user=user, password=pw,
-                            sslmode="require", connect_timeout=15)
+    sec = read_secret(env, (env.seed_targets or {}).get("rule_engine_secret"))
+    # Try every credential pair the secret carries: the rule-engine cluster rejects `username`
+    # (dbdevuser) and accepts `adminuser` (dbadmin), the reverse of trip-tracer's proxy.
+    conn = db_connect(dds["rule_engine_host"], dds.get("rule_engine_db", "postgres"), sec,
+                      port=int(sec.get("port", 5432)), timeout=15)
     conn.autocommit = True
     cur = conn.cursor()
     cur.execute("delete from execution_traces where entity_id=%s and correlation_id=%s", (pnr_id, correlation_id))
@@ -423,19 +418,127 @@ def extract_verdict(body: str, code: int) -> dict:
     return out
 
 
-def verify_by_pnr(env, pnr_id: str, *, timeout: int = 20) -> dict:
-    """GET the DDS by-pnr endpoint the bot uses; return the extracted verdict (see extract_verdict)."""
+_s3_clients: dict = {}
+
+
+def verify_from_s3(env, s3_key: str, *, region: str = "ca-central-1") -> dict:
+    """Read a pinned determination straight out of the DDS store and extract its verdict.
+
+    The fallback for environments whose by-pnr endpoint is not reachable from here — CRT's returns
+    403 (see envs/crt.yaml), which would otherwise leave every DDS checkpoint unverifiable even
+    though the determination was pinned correctly. This reads the exact object the rule-engine trace
+    points at, so it confirms what the bot would serve, one hop earlier."""
+    import boto3  # lazy
+
+    dds = _dds_cfg(env)
+    profile = (env.aws or {}).get("profile")
+    key = (profile, region)
+    s3 = _s3_clients.get(key)
+    if s3 is None:  # one client per (profile, region) — creating one per case is pure overhead
+        s3 = _s3_clients[key] = boto3.Session(profile_name=profile).client("s3", region_name=region)
+    body = s3.get_object(Bucket=dds["store_bucket"], Key=s3_key)["Body"].read().decode("utf-8")
+    out = extract_verdict(body, 200)
+    out["source"] = "s3"
+    return out
+
+
+# Reused rule-engine connection for key lookups. Opening one per case means a Secrets Manager
+# round-trip plus a TLS Postgres handshake for every PNR — at 132 cases that dominated the whole
+# re-audit. Cached per env id; a dead connection is dropped and reopened on next use.
+_trace_conn: dict = {}
+
+
+def _rule_engine_conn(env):
+    from seed.source import db_connect, read_secret
+
+    dds = _dds_cfg(env)
+    if not dds.get("rule_engine_host"):
+        return None
+    conn = _trace_conn.get(env.id)
+    if conn is not None and getattr(conn, "closed", 0) == 0:
+        return conn
+    try:
+        conn = db_connect(dds["rule_engine_host"], dds.get("rule_engine_db", "postgres"),
+                          read_secret(env, (env.seed_targets or {}).get("rule_engine_secret")))
+        conn.autocommit = True
+    except Exception:  # noqa: BLE001 — no DB access just means no fallback key
+        return None
+    _trace_conn[env.id] = conn
+    return conn
+
+
+def pinned_s3_key(env, pnr_id: str) -> str | None:
+    """The response_s3_key of the most recent DDS trace pinned for this pnr_id, or None.
+
+    Lets the S3 fallback work when the caller does not already hold the key from its own pin (a
+    later re-audit of a set seeded in an earlier run, for example)."""
+    conn = _rule_engine_conn(env)
+    if conn is None:
+        return None
+    try:
+        cur = conn.cursor()
+        cur.execute("select response_s3_key from execution_traces where entity_id=%s "
+                    "and service_type='DDS' order by processed_at desc limit 1", (pnr_id,))
+        row = cur.fetchone()
+        cur.close()
+        return row[0] if row else None
+    except Exception:  # noqa: BLE001 — drop a broken connection so the next call reopens
+        _trace_conn.pop(env.id, None)
+        return None
+
+
+# Sticky endpoint-down latch. The rule-engine API Gateway serves the whole environment behind a
+# resource policy pinned to one VPC endpoint, so depending on how the request egresses (WARP
+# routing) it can 403 — or fail to resolve — for every call at once. Once that is observed, going
+# back to the endpoint for each of 132 cases just buys 132 timeouts, so later calls read the pinned
+# S3 object directly. Mirrors the reference auditor's `_dds_endpoint_down`.
+_endpoint_down = {"down": False}
+
+
+def verify_by_pnr(env, pnr_id: str, *, timeout: int = 20, s3_key: str | None = None) -> dict:
+    """GET the DDS by-pnr endpoint the bot uses; return the extracted verdict (see extract_verdict).
+
+    On ANY endpoint failure — 403, DNS, timeout — falls back to the pinned S3 response, which is
+    the exact object the endpoint would serve. The key comes from `s3_key` when the caller just
+    pinned it, else from `pinned_s3_key()`. Raises only when both paths are unavailable."""
     import urllib.request  # lazy
     from core.secrets import resolve_secret
 
     dds = _dds_cfg(env)
-    api_key = resolve_secret(dds["api_key_secret"])
-    url = f"{dds['by_pnr_url']}/{pnr_id}"
-    req = urllib.request.Request(url, headers={"x-api-key": api_key})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        body = r.read().decode("utf-8")
-        code = r.getcode()
-    return extract_verdict(body, code)
+    key = s3_key
+
+    def _fallback(reason: str):
+        nonlocal key
+        if key is None:
+            key = pinned_s3_key(env, pnr_id)
+        if not key:
+            return None
+        if not _endpoint_down["down"]:
+            _endpoint_down["down"] = True
+            print(f"  [DDS] endpoint unreachable ({reason}) — falling back to pinned S3 responses "
+                  f"({dds.get('store_bucket')})", flush=True)
+        return verify_from_s3(env, key)
+
+    if _endpoint_down["down"]:
+        got = _fallback("cached")
+        if got is not None:
+            return got
+    try:
+        api_key = resolve_secret(dds["api_key_secret"])
+        req = urllib.request.Request(f"{dds['by_pnr_url']}/{pnr_id}",
+                                     headers={"x-api-key": api_key})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            out = extract_verdict(r.read().decode("utf-8"), r.getcode())
+        out["source"] = "endpoint"
+        if out.get("system_code") or out.get("eligible"):
+            return out
+        got = _fallback(f"empty verdict HTTP {out['status_code']}")
+        return got if got is not None else out
+    except Exception as exc:  # noqa: BLE001 — any endpoint failure is a fallback trigger
+        got = _fallback(f"{type(exc).__name__}")
+        if got is None:
+            raise
+        return got
 
 
 def _default_expiry(date: str) -> str:
