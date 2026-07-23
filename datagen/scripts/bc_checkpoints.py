@@ -207,13 +207,15 @@ def rec(a, good, tag, msg=""):
     areas[a][1] += 1
     if good: areas[a][0] += 1
     else: areas[a][2].append((tag, msg))
-# SKIP the live section (leave areas tot=0) when the rule-engine gateway is 403-locked env-wide.
-# Offline fallback for the VOL verdicts: python3 bc_offline_verify.py <index.json>
-_gw_down = C.gateway_down()
-if _gw_down:
-    print(C.skip_area("VOL eligibility (3 areas)", len(vol)))
-    print("  -> offline check available: python3 bc_offline_verify.py " + IDX)
-for r in (vol if not _gw_down else []):
+# Live VOL eligibility when the compute endpoint is reachable; otherwise validate with the offline
+# rule-replica (bc_offline_verify) against the live DB data — a real PASS/FAIL, never a bare SKIP.
+_elig_live = C.eligibility_live_ok("crt")
+if not _elig_live:
+    passed, tail = C.run_offline_eligibility("bc_offline_verify.py", IDX)
+    for ln in tail: print("   ", ln)
+    print(f"  VOL eligibility (offline rule-replica) {'PASS' if passed else 'FAIL'}")
+    if not passed: ok = False
+for r in (vol if _elig_live else []):
     tag = f"{r['tc']}/{r['pnr']}"
     g = B.vol_eligibility(r, conn)
     if "err" in g:

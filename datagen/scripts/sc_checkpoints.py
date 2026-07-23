@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 """SEAT CHANGE PNR post-creation CHECKPOINTS (CRT) — verify every area the bot depends on.
 
 Two verification surfaces (Seat Change has NO pinned DDS; eligibility is computed live and
@@ -189,11 +190,15 @@ FAILRULE = {"SC-NE-01": "ruleCarrierMix", "SC-NE-02": "ruleBookingChannel", "SC-
             "SC-NE-07": "ruleGroupPnr", "SC-NE-08": "ruleCheckinStatus"}
 PERSIST = {"WCHR", "MEDA", "DPNA", "OXYG", "MEQT"}
 
-# SKIP the whole live section (leave all areas tot=0) if the rule-engine gateway is 403-locked env-wide
-_gw_down = C.gateway_down()
-if _gw_down:
-    print(C.skip_area("live eligibility (11 areas)", len(live)))
-for r in (live if not _gw_down else []):
+# Live 11-area eligibility when the compute endpoint is reachable; otherwise validate eligibility
+# with the offline rule-replica (sc_local_eval) against the live DB data — a real PASS/FAIL, no skip.
+_elig_live = C.eligibility_live_ok("crt")
+if not _elig_live:
+    passed, tail = C.run_offline_eligibility("sc_local_eval.py", os.environ.get("SC_OUT", ""))
+    for ln in tail: print("   ", ln)
+    print(f"  eligibility (offline rule-replica) {'PASS' if passed else 'FAIL'}")
+    if not passed: ok = False
+for r in (live if _elig_live else []):
     tag = f"{r['tc']}/{r['pnr']}"
     g = B.eligibility_of(r, conn)
     if "err" in g:

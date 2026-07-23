@@ -73,18 +73,22 @@ print("--- A. trip-tracer cascade (retrieval + OTP) ---")
 for name,offx in checks.items():
     n=len(ids)-len(offx); print(f"  {name:24} {n}/{len(ids)}"+("" if not offx else f"  MISS {len(offx)}: {offx[:8]}"))
     if offx: ok=False
-# B. eligibility endpoint — SKIP gracefully if the rule-engine gateway is 403-locked env-wide
-print("--- B. eligibility endpoint (execute-with-mapping) ---")
-if C.gateway_down():
-    print(C.skip_area("eligibility outcome", len(rows)))
-else:
+# B. eligibility — live compute endpoint when reachable, else the offline rule-replica against the
+# live DB data (never a bare SKIP: every case gets a real verdict from what's actually seeded).
+print("--- B. eligibility (execute-with-mapping, else offline rule-replica) ---")
+if C.eligibility_live_ok("crt"):
     elig_ok=0; bad=[]
     for r in rows:
         good,g=B.verify_one(r)
         if good: elig_ok+=1
         else: bad.append((r["pnr"],f"exp {r['exp_elig']}/{r['exp_win']}/{r['exp_reason']} got {g.get('elig')}/{g.get('win')}/{g.get('reason')}"))
-    print(f"  eligibility outcome      {elig_ok}/{len(rows)}"+("" if not bad else f"  BAD {len(bad)}: {bad[:6]}"))
+    print(f"  eligibility outcome (live) {elig_ok}/{len(rows)}"+("" if not bad else f"  BAD {len(bad)}: {bad[:6]}"))
     if bad: ok=False
+else:
+    passed, tail = C.run_offline_eligibility("nc_offline_verify.py", None)
+    for ln in tail: print("   ", ln)
+    print(f"  eligibility outcome (offline rule-replica) {'PASS' if passed else 'FAIL'}")
+    if not passed: ok=False
 _uniq_enf = any((by.get(i) or {}).get("uniq_names") for i in ids)
 print(f"  {'name uniqueness' if _uniq_enf else 'name uniq (info)':18} {_uniq_clean}/{len(ids)}" + ("" if not _uniq_off else f"  DUP/INDB {len(_uniq_off)}: {_uniq_off[:8]}"))
 if C.print_check(ids, _common): ok=False

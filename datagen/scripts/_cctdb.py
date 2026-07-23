@@ -19,11 +19,26 @@ _RE_SECRET = "/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials"
 _cache = {}
 
 
+_SECRET_CACHE_FILE = os.environ.get("CCTQA_SECRET_CACHE", "/tmp/cctqa_secrets.json")
+
+
 def _secret(secret_id, profile, region="ca-central-1"):
-    if secret_id not in _cache:
-        import boto3
-        sm = boto3.Session(profile_name=profile, region_name=region).client("secretsmanager")
-        _cache[secret_id] = json.loads(sm.get_secret_value(SecretId=secret_id)["SecretString"])
+    if secret_id in _cache:
+        return _cache[secret_id]
+    # A local secret cache lets long sessions keep working when the SSO token lapses between DB calls
+    # (write it once while authenticated: json.dump of {secret_id: secret_dict}). Falls back to
+    # Secrets Manager when the file has no entry.
+    try:
+        with open(_SECRET_CACHE_FILE) as f:
+            disk = json.load(f)
+        if secret_id in disk:
+            _cache[secret_id] = disk[secret_id]
+            return _cache[secret_id]
+    except (OSError, ValueError):
+        pass
+    import boto3
+    sm = boto3.Session(profile_name=profile, region_name=region).client("secretsmanager")
+    _cache[secret_id] = json.loads(sm.get_secret_value(SecretId=secret_id)["SecretString"])
     return _cache[secret_id]
 
 

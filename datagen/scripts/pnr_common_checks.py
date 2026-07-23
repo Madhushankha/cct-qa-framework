@@ -288,6 +288,68 @@ def skip_area(label, n):
     """One-line SKIP marker for a live area that couldn't run (gateway down). Never fails the audit."""
     return f"  {label:24} SKIP 0/{n}  (rule-engine gateway unreachable — not a data defect)"
 
+
+_elig_state = {}
+
+
+def eligibility_live_ok(env="crt"):
+    """True iff the eligibility COMPUTE endpoint (/eligibility-service/execute-with-mapping) actually
+    returns a verdict from here. This is SEPARATE from gateway_down(): the DDS read path
+    (/rule-engine/dds/output) is served by the ALB and works, but the eligibility compute is served
+    only via the API Gateway, whose resource policy 403s depending on WARP egress — and the ALB
+    answers the eligibility path with a bare health "ok". So a working DDS read does NOT imply a
+    working eligibility compute; probe it independently. Cached per env.
+
+    When this returns False, the sc/nc/bc checkpoints validate eligibility with the offline
+    rule-replica against the live DB data instead — a real verdict per case, not a skip."""
+    if env in _elig_state:
+        return _elig_state[env]
+    host = ENVS[env]["dds"].split("/rule-engine/")[0]
+    url = host + "/eligibility-service/execute-with-mapping"
+    ctx = _ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = _ssl.CERT_NONE
+    ok = False
+    try:
+        req = _ur.Request(url, data=b"{}", method="POST",
+                          headers={"Content-Type": "application/json", "x-api-key": API_KEY})
+        body = _ur.urlopen(req, timeout=12, context=ctx).read(64)
+        # a real compute returns JSON with data/boundEligibility; the ALB health handler returns "ok"
+        ok = body.strip() not in (b"ok", b"") and body.lstrip()[:1] in (b"{", b"[")
+    except Exception:
+        ok = False
+    _elig_state[env] = ok
+    if not ok:
+        print(f"  [ELIGIBILITY] compute endpoint not reachable from here ({env}: ALB health-only / "
+              f"API-GW 403) — eligibility validated via the offline rule-replica against live DB data")
+    return ok
+
+
+def run_offline_eligibility(script, index_path, env_extra=None):
+    """Shell out to a domain's offline rule-replica verifier and return (passed, tail_lines).
+
+    Used by the eligibility checkpoints when the live compute endpoint is unreachable, so the
+    eligibility area still yields a real PASS/FAIL from the seeded DB data rather than a SKIP."""
+    import os as _os
+    import subprocess as _sp
+
+    here = _os.path.dirname(_os.path.abspath(__file__))
+    e = dict(_os.environ)
+    if env_extra:
+        e.update(env_extra)
+    args = ["python3", _os.path.join(here, script)]
+    if index_path:
+        args.append(index_path)
+    p = _sp.run(args, capture_output=True, text=True, env=e, cwd=here)
+    out = (p.stdout + p.stderr).strip().splitlines()
+    import re as _re
+    # pass when an explicit PASS marker is present, or every "N/M match" line has N == M, and no FAIL
+    ratios = [(int(m.group(1)), int(m.group(2)))
+              for ln in out for m in [_re.search(r"(\d+)/(\d+)\s+(?:VOL cases |cases )?match", ln)] if m]
+    all_match = bool(ratios) and all(n == m for n, m in ratios)
+    has_pass = any("PASS" in ln for ln in out)
+    has_fail = any("FAIL" in ln or "❌" in ln for ln in out)
+    passed = (has_pass or all_match) and not has_fail and p.returncode == 0
+    return passed, out[-4:]
+
 PENDING_WINDOW_DAYS = 3      # a PENDING verdict only holds while the disruption is still assessed
 CLAIM_WINDOW_DAYS  = 365     # APPR filing limit — a flight older than this can't be claimed
 # eds promisedWindowStart sits ~14d before the flight, but the exact delta depends on the
