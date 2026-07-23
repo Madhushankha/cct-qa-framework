@@ -72,7 +72,7 @@ CRT = dict(
     topic="emh-dev.ALTEA-PNRDATA-UAT",
     tt_host="ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
     tt_db="trip-tracer", tt_user="dbadmin", tt_pass=os.environ.get("CCT_TRIPTRACER_PASSWORD", ""),
-    endpoint="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/eligibility-service/execute-with-mapping",
+    endpoint="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/eligibility-service/execute-with-mapping",
     api_key="6a1a7245-c87b-494f-b53a-e1c4277add62",
 )
 EMAIL   = os.environ.get("CRT_EMAIL", "lahiru@ae-qa1-aircanada.mailinator.com")

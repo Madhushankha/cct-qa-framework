@@ -54,7 +54,7 @@ CRT=dict(profile="ac-cct-crt", region="ca-central-1",
   re_host="ac-cct-rule-engine-crt-cac1-rds-cluster.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
   re_db="postgres", re_secret="/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials",
   s3_bucket="cct-ask-ac-crt-logs",
-  endpoint="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
+  endpoint="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
   api_key=os.environ.get("DDS_API_KEY", ""))
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])

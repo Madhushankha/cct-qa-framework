@@ -47,7 +47,7 @@ IDX=sys.argv[1] if len(sys.argv)>1 else f"{WORK}/_ANC_SEATBAG_crt_index.json"
 TODAY=datetime.date.today()
 TT=dict(host="ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
         db="trip-tracer",user="dbadmin",password=os.environ.get("CCT_TRIPTRACER_PASSWORD", ""))
-DDS="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/"
+DDS="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/"
 API=os.environ.get("DDS_API_KEY", "")
 
 rows=json.load(open(IDX)); ids=[m["pnr_id"] for m in rows]; by={m["pnr_id"]:m for m in rows}

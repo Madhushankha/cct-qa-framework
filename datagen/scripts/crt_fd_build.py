@@ -11,7 +11,7 @@ Discovered CRT specifics (2026-06-30, account 050752605169, profile ac-cct-crt):
   trip-tracer      ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866...  (dbadmin direct)
   rule-engine RDS  ac-cct-rule-engine-crt-cac1-rds-cluster.cluster-cxqe2wacy866...  (adminuser/adminpassword, db=postgres)
   S3 bucket        cct-ask-ac-crt-logs   key=traces/DDS/<date>/<uuid>/response.json
-  endpoint         https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/
+  endpoint         https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/
   api key          $DDS_API_KEY  (same as INT/BAT)
   NOTE: existing pins use processed_at=2027-12-31 -> our pins use 2028 to win ORDER BY DESC.
 
@@ -55,7 +55,7 @@ CRT = dict(
   re_db="postgres",
   re_secret="/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials",
   s3_bucket="cct-ask-ac-crt-logs",
-  endpoint="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
+  endpoint="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
   api_key=os.environ.get("DDS_API_KEY", ""),
 )
 EMAIL=os.environ.get("CRT_EMAIL","lahiru.premathilake@aircanada.ca")

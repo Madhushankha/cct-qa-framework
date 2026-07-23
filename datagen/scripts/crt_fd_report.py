@@ -28,7 +28,7 @@ SETS={
 def env_note(rows):
     contact=f"{rows[0].get('email')} / {rows[0].get('phone')}" if rows else "—"
     return ("CRT — account 050752605169 (profile ac-cct-crt) · trip-tracer cluster crt-cac1 · "
-            "DDS rule-engine endpoint rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com · "
+            "DDS rule-engine endpoint rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com · "
             f"contact {contact} · DOB 1986-04-23")
 
 def load(setname):

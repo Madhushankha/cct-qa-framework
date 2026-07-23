@@ -60,7 +60,7 @@ CRT = dict(
   re_host="ac-cct-rule-engine-crt-cac1-rds-cluster-instance1.cxqe2wacy866.ca-central-1.rds.amazonaws.com",
   re_db="postgres", re_user="dbadmin", re_pass=os.environ.get("CCT_RULEENGINE_PASSWORD", ""),
   s3_bucket="cct-ask-ac-crt-logs",
-  endpoint="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
+  endpoint="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/",
   api_key=os.environ.get("DDS_API_KEY", ""),
 )
 EMAIL=os.environ.get("CRT_EMAIL","lahiru@ae-qa1-aircanada.mailinator.com")

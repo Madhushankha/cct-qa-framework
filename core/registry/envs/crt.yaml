@@ -53,7 +53,7 @@ seed_targets:
     rule_engine_host: ac-cct-rule-engine-crt-cac1-rds-cluster.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com
     rule_engine_db: postgres
     ecs_cluster: null                        # TODO: no rule-engine-platform ECS cluster on CRT
-    by_pnr_url: https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output  # 403 — needs confirming
+    by_pnr_url: https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output  # 403 — needs confirming
     api_key_secret: DDS_API_KEY
     templates:
       APPR_CAD_400: data/dds-templates/appr_cad_400.json

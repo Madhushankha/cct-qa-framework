@@ -22,7 +22,7 @@ WORK="/tmp/cctqa-datagen/bag_work"
 IDX=sys.argv[1] if len(sys.argv)>1 else f"{WORK}/_BAG_crt_index.json"
 TT=dict(host="ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com",
         db="trip-tracer",user="dbadmin",password=os.environ.get("CCT_TRIPTRACER_PASSWORD", ""))
-DDS="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/"
+DDS="https://rule-engine-platform-service-be.ac-cct-crt.cloud.aircanada.com/rule-engine/dds/output/"
 API=os.environ.get("DDS_API_KEY", "")
 EXPECT={
  "open":{"BAG_CREATED","BAG_ACCEPTED","BAG_DELAYED_RECORD_CREATED"},
