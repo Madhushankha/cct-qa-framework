@@ -194,7 +194,7 @@ PERSIST = {"WCHR", "MEDA", "DPNA", "OXYG", "MEQT"}
 # with the offline rule-replica (sc_local_eval) against the live DB data — a real PASS/FAIL, no skip.
 _elig_live = C.eligibility_live_ok("crt")
 if not _elig_live:
-    passed, tail = C.run_offline_eligibility("sc_local_eval.py", os.environ.get("SC_OUT", ""))
+    passed, tail = C.run_offline_eligibility("sc_local_eval.py", IDX)
     for ln in tail: print("   ", ln)
     print(f"  eligibility (offline rule-replica) {'PASS' if passed else 'FAIL'}")
     if not passed: ok = False
