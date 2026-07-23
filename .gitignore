@@ -18,3 +18,7 @@ datagen/**/__pycache__/
 
 # local run output, not committed for now
 results/2026-07-22/
+
+# macOS
+.DS_Store
+**/.DS_Store
