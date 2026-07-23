@@ -93,8 +93,7 @@ def evaluate(r):
     return (True,win,"NC-EL-01")
 
 # ---- DB cross-check: the rule INPUTS that ARE in the normalised tables --------------------------
-conn=psycopg2.connect(host=B.CRT["tt_host"],port=5432,dbname="trip-tracer",user=B.CRT["tt_user"],
-                      password=B.CRT["tt_pass"],sslmode="require",connect_timeout=20)
+conn=B.tt_conn()
 cur=conn.cursor()
 cur.execute("select pnr_id,array_agg(distinct operating_carrier_code) from flight_segment where pnr_id=any(%s) and not is_removed group by pnr_id",(ids,))
 db_ops={p:set(x for x in a if x) for p,a in cur.fetchall()}

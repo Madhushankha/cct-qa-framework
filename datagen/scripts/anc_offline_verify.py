@@ -1,3 +1,4 @@
+import _cctdb
 #!/usr/bin/env python3
 import os
 """Ancillaries OFFLINE DDS verifier — validates the SEEDED seat/bag eligibility straight from the
@@ -20,7 +21,7 @@ TODAY=datetime.date.today()
 s3=boto3.client("s3")
 
 # latest pinned response_s3_key per entity (mirrors the endpoint's ORDER BY processed_at DESC)
-c=psycopg2.connect(host=RE["host"],dbname=RE["db"],user=RE["user"],password=RE["password"],connect_timeout=20)
+c=_cctdb.rule_engine(RE["host"], dbname=RE.get("db","postgres"))
 cur=c.cursor()
 cur.execute("""select distinct on (entity_id) entity_id, response_s3_key
                from execution_traces where service_type='DDS' and correlation_id=%s and entity_id=any(%s)
