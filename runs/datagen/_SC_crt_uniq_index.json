@@ -1,0 +1,4174 @@
+[
+ {
+  "tc": "SeatChange_TC001",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Single-pax single-leg seat change via web + credit card",
+  "pnr": "YDBH4Y",
+  "pnr_id": "YDBH4Y-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "PERCY",
+    "last": "OATLEWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000000"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "SC-01b -> seat map -> SC-03 -> SC-03a",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "PERCY",
+    "OATLEWYN"
+   ]
+  ],
+  "pax": "PERCY OATLEWYN",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC002",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Single-pax single-leg via text channel (conversational search)",
+  "pnr": "8J7C65",
+  "pnr_id": "8J7C65-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "XIMENA",
+    "last": "GREENELGROVE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000010"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "text channel: 'I'd like a window seat' -> best-fit result",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "XIMENA",
+    "GREENELGROVE"
+   ]
+  ],
+  "pax": "XIMENA GREENELGROVE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC003",
+  "pri": "P1",
+  "feat": "Happy Path",
+  "name": "Single-pax multi-leg seat change on both legs",
+  "pnr": "9VMW7D",
+  "pnr_id": "9VMW7D-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "KIRA",
+    "last": "GARELCOMBE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000020"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "seat map shows Leg1/Leg2 tabs + 'Next Flights'",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "KIRA",
+    "GARELCOMBE"
+   ]
+  ],
+  "pax": "KIRA GARELCOMBE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC004",
+  "pri": "P1",
+  "feat": "Happy Path",
+  "name": "Two-passenger PNR, seats changed for both",
+  "pnr": "QTALH9",
+  "pnr_id": "QTALH9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "YARDLEY",
+    "last": "PENINGHURST",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "WINSLOW",
+    "last": "HAWFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000030",
+   "1": "0143851000040"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C",
+   "1": "22D"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "multi-pax Note 1: seat map opens directly",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "YARDLEY",
+    "PENINGHURST"
+   ],
+   [
+    "WINSLOW",
+    "HAWFORD"
+   ]
+  ],
+  "pax": "YARDLEY PENINGHURST",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC005",
+  "pri": "P1",
+  "feat": "Happy Path",
+  "name": "Multi-journey PNR \u2014 user selects RETURN journey",
+  "pnr": "LINP2H",
+  "pnr_id": "LINP2H-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "CDG",
+    "d": "YYZ",
+    "dep": "D12",
+    "dep_iso": "2026-08-04T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VESNA",
+    "last": "DALEENHOLT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000050"
+  },
+  "src": "AC_ONLINE",
+  "bound": 2,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "GenUC-08 journey selection -> selectedBound=2",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "DALEENHOLT"
+   ]
+  ],
+  "pax": "VESNA DALEENHOLT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC006",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Free seat change (Standard->Standard, $0.00, no payment step)",
+  "pnr": "6TTID9",
+  "pnr_id": "6TTID9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DELPHINE",
+    "last": "ORMERERTON",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000060"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22B"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "widget prices standard seat at CA $0.00 -> payment skipped",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "ORMERERTON"
+   ]
+  ],
+  "pax": "DELPHINE ORMERERTON",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC007",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Seat change paid with acWallet",
+  "pnr": "8UKDAG",
+  "pnr_id": "8UKDAG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ROMILLY",
+    "last": "LONGINGBECK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000070"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "acWallet balance CA $100 / fee CA $34",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ROMILLY",
+    "LONGINGBECK"
+   ]
+  ],
+  "pax": "ROMILLY LONGINGBECK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC008",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Seat change paid with FlexPay (amount > $99)",
+  "pnr": "2QYT3R",
+  "pnr_id": "2QYT3R-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BRENNA",
+    "last": "KESOWHOLT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000080"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "premium seat CA $150 -> FlexPay offered",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "BRENNA",
+    "KESOWHOLT"
+   ]
+  ],
+  "pax": "BRENNA KESOWHOLT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC009",
+  "pri": "P1",
+  "feat": "Happy Path",
+  "name": "Already-authenticated user skips OTP",
+  "pnr": "5KJHP9",
+  "pnr_id": "5KJHP9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SEBASTIAN",
+    "last": "WOLDOWTHORPE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000090"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "active session -> GenUC-05 bypassed",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "WOLDOWTHORPE"
+   ]
+  ],
+  "pax": "SEBASTIAN WOLDOWTHORPE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC010",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Identification by ticket number instead of PNR",
+  "pnr": "6YCIZP",
+  "pnr_id": "6YCIZP-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISOLDE",
+    "last": "RAINLEY",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000100"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "GenUC-01 accepts the 014 ticket number (see Ticket column)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ISOLDE",
+    "RAINLEY"
+   ]
+  ],
+  "pax": "ISOLDE RAINLEY",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC011",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Declines payment, re-selects a different seat, pays",
+  "pnr": "EAGTX8",
+  "pnr_id": "EAGTX8-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HEIDI",
+    "last": "BEXENCOTT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000110"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "SC-03 No -> SC-03b Yes -> seat map",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "HEIDI",
+    "BEXENCOTT"
+   ]
+  ],
+  "pax": "HEIDI BEXENCOTT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC012",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Declines payment and abandons",
+  "pnr": "ZEJBTU",
+  "pnr_id": "ZEJBTU-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ROMILLY",
+    "last": "LARKCOMBE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000120"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "SC-03 No -> SC-03b No -> End",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ROMILLY",
+    "LARKCOMBE"
+   ]
+  ],
+  "pax": "ROMILLY LARKCOMBE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC013",
+  "pri": "P1",
+  "feat": "Eligibility Block",
+  "name": "Blocked at ACV booking source",
+  "pnr": "44N2YA",
+  "pnr_id": "44N2YA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BODHI",
+    "last": "NETHEROWFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000130"
+  },
+  "src": "AC_VACATIONS",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "Miro: ACV -> live agent",
+  "runtime": "",
+  "divergence": "Live rule flow accepts AC_VACATIONS as an ELIGIBLE channel (SC-EL-01). The ACV block is a chatbot/identification-layer decision, not an eligibility-service one.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "BODHI",
+    "NETHEROWFORD"
+   ]
+  ],
+  "pax": "BODHI NETHEROWFORD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC014",
+  "pri": "P1",
+  "feat": "Eligibility Block",
+  "name": "Blocked at OTA booking source",
+  "pnr": "L4Q2M5",
+  "pnr_id": "L4Q2M5-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "XIMENA",
+    "last": "SEDGELELOW",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000140"
+  },
+  "src": "OTA",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-03",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "ruleBookingChannel=fail -> 'contact your booking source'",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "XIMENA",
+    "SEDGELELOW"
+   ]
+  ],
+  "pax": "XIMENA SEDGELELOW",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC015",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Blocked because passenger is checked in",
+  "pnr": "C72QFF",
+  "pnr_id": "C72QFF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "FREYA",
+    "last": "WINDERCROFT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000150"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": true,
+  "seats": {},
+  "exp_reason": "SC-NE-08",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "SC-01a checked-in -> My Bookings / SSCI",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "FREYA",
+    "WINDERCROFT"
+   ]
+  ],
+  "pax": "FREYA WINDERCROFT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC016",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Blocked because PNR is a group booking",
+  "pnr": "GNZK75",
+  "pnr_id": "GNZK75-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "YARDLEY",
+    "last": "CHADENFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000160"
+  },
+  "src": "GROUP",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "Miro: group -> 'contact your booking source'",
+  "runtime": "",
+  "divergence": "Live rule flow treats GROUP as an ELIGIBLE channel; ruleGroupPnr only fails when the flight is <6h away (SC-NE-07). A >6h group PNR returns SC-EL-01.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "YARDLEY",
+    "CHADENFORD"
+   ]
+  ],
+  "pax": "YARDLEY CHADENFORD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC017",
+  "pri": "P1",
+  "feat": "Eligibility Block",
+  "name": "Blocked \u2014 flight operated by non-AC carrier (LH)",
+  "pnr": "29Z3W8",
+  "pnr_id": "29Z3W8-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "LH",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JOELLE",
+    "last": "IRONSTON",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000170"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-01",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "ruleCarrierMix=fail",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "JOELLE",
+    "IRONSTON"
+   ]
+  ],
+  "pax": "JOELLE IRONSTON",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC018",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Blocked by EXST SSR",
+  "pnr": "KII2NS",
+  "pnr_id": "KII2NS-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISOLDE",
+    "last": "YARENWORTH",
+    "ptype": "ADT",
+    "ssr": [
+     "EXST"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000180"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-06",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "ruleSsrRestriction=fail -> 'contact Accessibility Services'",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ISOLDE",
+    "YARENWORTH"
+   ]
+  ],
+  "pax": "ISOLDE YARENWORTH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC019",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Blocked by PETC SSR",
+  "pnr": "W38RXV",
+  "pnr_id": "W38RXV-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ELIAS",
+    "last": "REDANFIELD",
+    "ptype": "ADT",
+    "ssr": [
+     "PETC"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000190"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "Miro: PETC blocks",
+  "runtime": "",
+  "divergence": "PETC is NOT in the live sc_blocking_ssr lookup (EXST/CBBG/SVAN/ESAN only) -> SC-EL-01.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ELIAS",
+    "REDANFIELD"
+   ]
+  ],
+  "pax": "ELIAS REDANFIELD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC020",
+  "pri": "P1",
+  "feat": "Eligibility Block",
+  "name": "Blocked \u2014 flight departs in <1 hour",
+  "pnr": "ZKMA3J",
+  "pnr_id": "ZKMA3J-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "M45",
+    "dep_iso": "2026-07-23T15:46:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CALLUM",
+    "last": "ELDEROWHOLT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000200"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-05",
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "chatbot": "ruleTimeWindow=fail; 'last-minute changes not permitted'",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "pax_names": [
+   [
+    "CALLUM",
+    "ELDEROWHOLT"
+   ]
+  ],
+  "pax": "CALLUM ELDEROWHOLT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC021",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Redirected \u2014 flight within 24 hours",
+  "pnr": "IFEYCN",
+  "pnr_id": "IFEYCN-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "H12",
+    "dep_iso": "2026-07-24T03:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DAGNY",
+    "last": "IVESANDEN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000210"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-05",
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "chatbot": "within-24h -> check-in redirect",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "pax_names": [
+   [
+    "DAGNY",
+    "IVESANDEN"
+   ]
+  ],
+  "pax": "DAGNY IVESANDEN",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC022",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Blocked by confirmed eUpgrade",
+  "pnr": "TQHPFM",
+  "pnr_id": "TQHPFM-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LORCAN",
+    "last": "KESINGMARSH",
+    "ptype": "ADT",
+    "ssr": [
+     "EUPG"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000220"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "Miro: confirmed eUpgrade blocks",
+  "runtime": "",
+  "divergence": "EUPG is not an input to any live seat-change rule -> SC-EL-01. eUpgrade must be enforced in the Seat Change Widget.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "LORCAN",
+    "KESINGMARSH"
+   ]
+  ],
+  "pax": "LORCAN KESINGMARSH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC023",
+  "pri": "P1",
+  "feat": "Eligibility Block",
+  "name": "Blocked \u2014 flight already departed",
+  "pnr": "QRVWF6",
+  "pnr_id": "QRVWF6-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "PAST3",
+    "dep_iso": "2026-07-23T12:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CEDRICK",
+    "last": "IVESLEMARSH",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000230"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-05",
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "chatbot": "departed -> OUT_OF_SCOPE",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "pax_names": [
+   [
+    "CEDRICK",
+    "IVESLEMARSH"
+   ]
+  ],
+  "pax": "CEDRICK IVESLEMARSH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC024",
+  "pri": "P2",
+  "feat": "Eligibility Block",
+  "name": "Multi-leg: leg1 AC eligible, leg2 LH ineligible",
+  "pnr": "Z6DA5P",
+  "pnr_id": "Z6DA5P-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   },
+   {
+    "op": "LH",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JASPER",
+    "last": "BLACKOWWORTH",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000240"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-01",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "bound NE; segmentsEligibility[0]=EL, [1]=SC-NE-01",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "JASPER",
+    "BLACKOWWORTH"
+   ]
+  ],
+  "pax": "JASPER BLACKOWWORTH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC025",
+  "pri": "P2",
+  "feat": "ID Failure",
+  "name": "Invalid PNR \u2014 4 failed identification attempts",
+  "pnr": "BPLQZH",
+  "pnr_id": "BPLQZH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GIDEON",
+    "last": "THORNELLOW",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000250"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "tester types the RESERVED locator (see report); it must NOT exist in trip-tracer",
+  "divergence": "",
+  "seed_pnr": false,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "GIDEON",
+    "THORNELLOW"
+   ]
+  ],
+  "pax": "GIDEON THORNELLOW",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC026",
+  "pri": "P2",
+  "feat": "ID Failure",
+  "name": "Correct PNR, completely wrong name (Levenshtein fail)",
+  "pnr": "MXFVK3",
+  "pnr_id": "MXFVK3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LORCAN",
+    "last": "RUSHOWGATE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000260"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "tester enters a wrong surname against the seeded PNR",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "LORCAN",
+    "RUSHOWGATE"
+   ]
+  ],
+  "pax": "LORCAN RUSHOWGATE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC027",
+  "pri": "P2",
+  "feat": "ID Failure",
+  "name": "Third-party (OTA) booking -> MANUAL_HANDLING",
+  "pnr": "U843LZ",
+  "pnr_id": "U843LZ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VESNA",
+    "last": "WOLDELRIDGE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000270"
+  },
+  "src": "OTA",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-03",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "identification detects OTA -> manual handling",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "WOLDELRIDGE"
+   ]
+  ],
+  "pax": "VESNA WOLDELRIDGE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC030",
+  "pri": "P2",
+  "feat": "ID Failure",
+  "name": "Empty last name rejected at GenUC-01",
+  "pnr": "L4JYN4",
+  "pnr_id": "L4JYN4-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ULRICH",
+    "last": "OATELHAM",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000280"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "tester submits an empty last name",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ULRICH",
+    "OATELHAM"
+   ]
+  ],
+  "pax": "ULRICH OATELHAM",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC028",
+  "pri": "P1",
+  "feat": "Auth Failure",
+  "name": "All OTP + IDV attempts exhausted",
+  "pnr": "D666WV",
+  "pnr_id": "D666WV-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "MATEO",
+    "last": "BARNENFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000290"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "15 wrong OTP + 3 wrong IDV against the seeded contact",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "MATEO",
+    "BARNENFORD"
+   ]
+  ],
+  "pax": "MATEO BARNENFORD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC029",
+  "pri": "P1",
+  "feat": "Auth Failure",
+  "name": "OTP expires after 5 minutes",
+  "pnr": "LWNQGJ",
+  "pnr_id": "LWNQGJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VIOLETA",
+    "last": "LONGERWOOD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000300"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "wait >5 min before submitting the OTP",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VIOLETA",
+    "LONGERWOOD"
+   ]
+  ],
+  "pax": "VIOLETA LONGERWOOD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC031",
+  "pri": "P1",
+  "feat": "Seat Map",
+  "name": "Seat map reached but flight is 100% full",
+  "pnr": "FUVXZX",
+  "pnr_id": "FUVXZX-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ELIAS",
+    "last": "TATINGGATE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000310"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: seat inventory comes from the live Seat Change Widget, not the PNR",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ELIAS",
+    "TATINGGATE"
+   ]
+  ],
+  "pax": "ELIAS TATINGGATE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC032",
+  "pri": "P1",
+  "feat": "Seat Map",
+  "name": "Selected seat taken by another user before confirm",
+  "pnr": "AMCVLJ",
+  "pnr_id": "AMCVLJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DELPHINE",
+    "last": "SHARPINGCOTT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000320"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: concurrent seat grab",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "SHARPINGCOTT"
+   ]
+  ],
+  "pax": "DELPHINE SHARPINGCOTT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC033",
+  "pri": "P2",
+  "feat": "Seat Map",
+  "name": "Text channel: 3 failed searches -> My Bookings link",
+  "pnr": "VN5CMQ",
+  "pnr_id": "VN5CMQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "WINSLOW",
+    "last": "CHADDEN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000330"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "text channel, 3 no-match preference searches",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "WINSLOW",
+    "CHADDEN"
+   ]
+  ],
+  "pax": "WINSLOW CHADDEN",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC034",
+  "pri": "P2",
+  "feat": "Seat Map",
+  "name": "User selects their already-assigned seat",
+  "pnr": "A9PHX3",
+  "pnr_id": "A9PHX3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "PRIYA",
+    "last": "STONELEWICK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000340"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "current seat 14A is seeded as an RQST SSR",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "PRIYA",
+    "STONELEWICK"
+   ]
+  ],
+  "pax": "PRIYA STONELEWICK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC035",
+  "pri": "P2",
+  "feat": "Seat Map",
+  "name": "Economy pax tries to select a Business seat",
+  "pnr": "GBXS6J",
+  "pnr_id": "GBXS6J-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISOLDE",
+    "last": "WOODOWTHORPE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000350"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "cabin Y booked; widget blocks J seats",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ISOLDE",
+    "WOODOWTHORPE"
+   ]
+  ],
+  "pax": "ISOLDE WOODOWTHORPE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC036",
+  "pri": "P2",
+  "feat": "Payment",
+  "name": "Payment rejected \u2014 expired credit card",
+  "pnr": "ATMU8V",
+  "pnr_id": "ATMU8V-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SVEN",
+    "last": "HAWMORE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000360"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: expired card 01/2025",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "SVEN",
+    "HAWMORE"
+   ]
+  ],
+  "pax": "SVEN HAWMORE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC037",
+  "pri": "P2",
+  "feat": "Payment",
+  "name": "FlexPay not offered below $99",
+  "pnr": "S4PP5Q",
+  "pnr_id": "S4PP5Q-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HALLIE",
+    "last": "IRONOWBECK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000370"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "total CA $50",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "HALLIE",
+    "IRONOWBECK"
+   ]
+  ],
+  "pax": "HALLIE IRONOWBECK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC038",
+  "pri": "P1",
+  "feat": "Payment",
+  "name": "Network drop mid-payment \u2014 idempotency prevents double charge",
+  "pnr": "SCMBAB",
+  "pnr_id": "SCMBAB-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ADRIAN",
+    "last": "CRESTELMORE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000380"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "CRESTELMORE"
+   ]
+  ],
+  "pax": "ADRIAN CRESTELMORE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC039",
+  "pri": "P1",
+  "feat": "Payment",
+  "name": "Split payment attempt blocked",
+  "pnr": "ETAULT",
+  "pnr_id": "ETAULT-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VESNA",
+    "last": "GALDELCOTT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000390"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "GALDELCOTT"
+   ]
+  ],
+  "pax": "VESNA GALDELCOTT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC040",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Child under 12 blocked from exit row",
+  "pnr": "IFXEKX",
+  "pnr_id": "IFXEKX-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "WINSLOW",
+    "last": "LARKLEDALE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "UMBERTO",
+    "last": "TATANTON",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2021-07-23"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000400",
+   "1": "0143851000410"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "adult on 14A + child age 5 (DOB seeded)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "WINSLOW",
+    "LARKLEDALE"
+   ],
+   [
+    "UMBERTO",
+    "TATANTON"
+   ]
+  ],
+  "pax": "WINSLOW LARKLEDALE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC041",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Child under 12 cannot sit in a far row from the adult",
+  "pnr": "NQWYXY",
+  "pnr_id": "NQWYXY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LARISSA",
+    "last": "BLACKERSTEAD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "HEIDI",
+    "last": "THORNERBURY",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2021-07-23"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000420",
+   "1": "0143851000430"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "widget proximity logic; seat 30F far from row 14",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "LARISSA",
+    "BLACKERSTEAD"
+   ],
+   [
+    "HEIDI",
+    "THORNERBURY"
+   ]
+  ],
+  "pax": "LARISSA BLACKERSTEAD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC042",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Lap infant blocks the adult from an exit row",
+  "pnr": "H9L3N5",
+  "pnr_id": "H9L3N5-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GIDEON",
+    "last": "PENENHOLT",
+    "ptype": "ADT",
+    "ssr": [
+     "INFT"
+    ],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "LARISSA",
+    "last": "UNDERANWYN",
+    "ptype": "INF",
+    "ssr": [],
+    "dob": "2025-11-25"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000440",
+   "1": "0143851000450"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "has_infant=true on the adult",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "GIDEON",
+    "PENENHOLT"
+   ],
+   [
+    "LARISSA",
+    "UNDERANWYN"
+   ]
+  ],
+  "pax": "GIDEON PENENHOLT",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC043",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Unaccompanied Minor blocked from restricted seats",
+  "pnr": "SL7Z5A",
+  "pnr_id": "SL7Z5A-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SEBASTIAN",
+    "last": "BLYENBROOK",
+    "ptype": "CHD",
+    "ssr": [
+     "UMNR"
+    ],
+    "dob": "2016-07-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000460"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "25B"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "passengerEligibility.isUmnr=true (still SC-EL-01)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "SEBASTIAN",
+    "BLYENBROOK"
+   ]
+  ],
+  "pax": "SEBASTIAN BLYENBROOK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC044",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Multi-child PNR proximity across 2 adults + 2 children",
+  "pnr": "8HFKV9",
+  "pnr_id": "8HFKV9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "IVANO",
+    "last": "HAWELDALE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "NADEZHDA",
+    "last": "PRESELSTON",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "ORSON",
+    "last": "LONGDALE",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2019-07-24"
+   },
+   {
+    "first": "OONA",
+    "last": "GALDLECOTT",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2022-07-23"
+   }
+  ],
+  "npax": 4,
+  "tickets": {
+   "0": "0143851000470",
+   "1": "0143851000480",
+   "2": "0143851000490",
+   "3": "0143851000500"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "IVANO",
+    "HAWELDALE"
+   ],
+   [
+    "NADEZHDA",
+    "PRESELSTON"
+   ],
+   [
+    "ORSON",
+    "LONGDALE"
+   ],
+   [
+    "OONA",
+    "GALDLECOTT"
+   ]
+  ],
+  "pax": "IVANO HAWELDALE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC045",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Passenger aged 14 fails the exit-row age requirement",
+  "pnr": "EEPTZT",
+  "pnr_id": "EEPTZT-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ZORA",
+    "last": "WRENOWWORTH",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "NIKOLAI",
+    "last": "FENELFORD",
+    "ptype": "YTH",
+    "ssr": [],
+    "dob": "2012-07-23"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000510",
+   "1": "0143851000520"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "10A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "passengerEligibility.isYouth=true for the YTH pax",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ZORA",
+    "WRENOWWORTH"
+   ],
+   [
+    "NIKOLAI",
+    "FENELFORD"
+   ]
+  ],
+  "pax": "ZORA WRENOWWORTH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC046",
+  "pri": "P2",
+  "feat": "Passenger Rules",
+  "name": "Preferred -> Standard downgrade, no refund",
+  "pnr": "G2B7QP",
+  "pnr_id": "G2B7QP-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HEIDI",
+    "last": "WINDMERE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000530"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "5A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "current paid Preferred seat 5A seeded; widget shows no-refund alert",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "HEIDI",
+    "WINDMERE"
+   ]
+  ],
+  "pax": "HEIDI WINDMERE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC047",
+  "pri": "P1",
+  "feat": "Passenger Rules",
+  "name": "Bassinet seat allowed because an infant is present",
+  "pnr": "EP984P",
+  "pnr_id": "EP984P-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DAGNY",
+    "last": "FENINGFIELD",
+    "ptype": "ADT",
+    "ssr": [
+     "INFT",
+     "BSCT"
+    ],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "YARDLEY",
+    "last": "OATCROFT",
+    "ptype": "INF",
+    "ssr": [],
+    "dob": "2026-01-19"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000540",
+   "1": "0143851000550"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "11A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "DAGNY",
+    "FENINGFIELD"
+   ],
+   [
+    "YARDLEY",
+    "OATCROFT"
+   ]
+  ],
+  "pax": "DAGNY FENINGFIELD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC048",
+  "pri": "P2",
+  "feat": "Disruption",
+  "name": "Disrupted ACV booking -> ACV live agent",
+  "pnr": "JDEB6P",
+  "pnr_id": "JDEB6P-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SVEN",
+    "last": "FAIRERWORTH",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000560"
+  },
+  "src": "AC_VACATIONS",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: disruption raised by FDM, not seedable on the PNR",
+  "divergence": "AC_VACATIONS is an eligible channel for the rule flow; the ACV/LAH transfer is chatbot-side.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "SVEN",
+    "FAIRERWORTH"
+   ]
+  ],
+  "pax": "SVEN FAIRERWORTH",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC049",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Seat ADD \u2014 booking has no pre-assigned seat",
+  "pnr": "UEUT6Z",
+  "pnr_id": "UEUT6Z-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SVEN",
+    "last": "HOLLELHURST",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000570"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "no RQST SSR seeded -> 'change/add your seat(s)'",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "SVEN",
+    "HOLLELHURST"
+   ]
+  ],
+  "pax": "SVEN HOLLELHURST",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC050",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Seat change paid with a gift card",
+  "pnr": "UZGGHA",
+  "pnr_id": "UZGGHA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NIKOLAI",
+    "last": "ALDINGBROOK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000580"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "AC gift card with sufficient balance",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "NIKOLAI",
+    "ALDINGBROOK"
+   ]
+  ],
+  "pax": "NIKOLAI ALDINGBROOK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC051",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Wrong OTP then correct OTP on retry",
+  "pnr": "EYIRVE",
+  "pnr_id": "EYIRVE-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JASPER",
+    "last": "VANEGROVE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000590"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "1 wrong OTP then the correct one",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "JASPER",
+    "VANEGROVE"
+   ]
+  ],
+  "pax": "JASPER VANEGROVE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC052",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "OTP resend then successful authentication",
+  "pnr": "NYRX5E",
+  "pnr_id": "NYRX5E-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "IVANO",
+    "last": "VANEOWHURST",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000600"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "request resend, use the new code",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "IVANO",
+    "VANEOWHURST"
+   ]
+  ],
+  "pax": "IVANO VANEOWHURST",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC053",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "4-passenger PNR, all seats changed at once",
+  "pnr": "QAE4E5",
+  "pnr_id": "QAE4E5-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DELPHINE",
+    "last": "SHARPENPOOL",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "VESNA",
+    "last": "FAIRANFIELD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "MIRABEL",
+    "last": "BEXINGMARSH",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "WINSLOW",
+    "last": "ELDERINGWICK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 4,
+  "tickets": {
+   "0": "0143851000610",
+   "1": "0143851000620",
+   "2": "0143851000630",
+   "3": "0143851000640"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22A",
+   "1": "22B",
+   "2": "22C",
+   "3": "22D"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "SHARPENPOOL"
+   ],
+   [
+    "VESNA",
+    "FAIRANFIELD"
+   ],
+   [
+    "MIRABEL",
+    "BEXINGMARSH"
+   ],
+   [
+    "WINSLOW",
+    "ELDERINGWICK"
+   ]
+  ],
+  "pax": "DELPHINE SHARPENPOOL",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC054",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "3-pax PNR, only one passenger's seat changed",
+  "pnr": "87MTMZ",
+  "pnr_id": "87MTMZ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VESNA",
+    "last": "BLYERFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "PERCY",
+    "last": "GALDERFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "MIRABEL",
+    "last": "WOODOWGATE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 3,
+  "tickets": {
+   "0": "0143851000650",
+   "1": "0143851000660",
+   "2": "0143851000670"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22A",
+   "1": "22B",
+   "2": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "BLYERFORD"
+   ],
+   [
+    "PERCY",
+    "GALDERFORD"
+   ],
+   [
+    "MIRABEL",
+    "WOODOWGATE"
+   ]
+  ],
+  "pax": "VESNA BLYERFORD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC055",
+  "pri": "P3",
+  "feat": "Edge \u2013 Concurrency",
+  "name": "Two browser tabs, only one seat change succeeds",
+  "pnr": "EA7PAE",
+  "pnr_id": "EA7PAE-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GIDEON",
+    "last": "WHITLEFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000680"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "GIDEON",
+    "WHITLEFORD"
+   ]
+  ],
+  "pax": "GIDEON WHITLEFORD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC056",
+  "pri": "P3",
+  "feat": "Edge \u2013 Concurrency",
+  "name": "Chatbot + call-centre edit the same PNR",
+  "pnr": "78N8CZ",
+  "pnr_id": "78N8CZ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "FREYA",
+    "last": "MOSSANCOMBE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000690"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "FREYA",
+    "MOSSANCOMBE"
+   ]
+  ],
+  "pax": "FREYA MOSSANCOMBE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC057",
+  "pri": "P3",
+  "feat": "Edge \u2013 Time Boundary",
+  "name": "Flight at exactly 23h59m59s -> within-24h redirect",
+  "pnr": "AVLATW",
+  "pnr_id": "AVLATW-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "H23M59",
+    "dep_iso": "2026-07-24T15:01:55Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "TAMSIN",
+    "last": "BLACKLEGROVE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000700"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-05",
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "chatbot": "boundary confirmed live: 23:59:59 -> OUT_OF_SCOPE, 24:05 -> NON_VOID",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "pax_names": [
+   [
+    "TAMSIN",
+    "BLACKLEGROVE"
+   ]
+  ],
+  "pax": "TAMSIN BLACKLEGROVE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC058",
+  "pri": "P3",
+  "feat": "Edge \u2013 Session",
+  "name": "Session timeout while on the seat map",
+  "pnr": "6V8LQ8",
+  "pnr_id": "6V8LQ8-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VESNA",
+    "last": "UNDERENBY",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000710"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "VESNA",
+    "UNDERENBY"
+   ]
+  ],
+  "pax": "VESNA UNDERENBY",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC059",
+  "pri": "P3",
+  "feat": "Edge \u2013 Aircraft",
+  "name": "Aircraft swap invalidates the assigned seat",
+  "pnr": "YA28WF",
+  "pnr_id": "YA28WF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "MIRABEL",
+    "last": "YEOOWWICK",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000720"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: A320 -> CRJ-200 swap is a flight-level event",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "MIRABEL",
+    "YEOOWWICK"
+   ]
+  ],
+  "pax": "MIRABEL YEOOWWICK",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC060",
+  "pri": "P3",
+  "feat": "Edge \u2013 Mid-flow",
+  "name": "Flight cancelled by the airline during the flow",
+  "pnr": "8XBDG2",
+  "pnr_id": "8XBDG2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "KENJI",
+    "last": "FAIRERPOOL",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000730"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "KENJI",
+    "FAIRERPOOL"
+   ]
+  ],
+  "pax": "KENJI FAIRERPOOL",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC061",
+  "pri": "P3",
+  "feat": "Edge \u2013 Mid-flow",
+  "name": "Passenger checks in on another channel mid-flow",
+  "pnr": "NCJ8NP",
+  "pnr_id": "NCJ8NP-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DELPHINE",
+    "last": "CHADELHURST",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000740"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "starts NOT checked in (no CHECK_IN row); tester checks in via app mid-flow. Pair with TC015's PNR to see the SC-NE-08 end state.",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "DELPHINE",
+    "CHADELHURST"
+   ]
+  ],
+  "pax": "DELPHINE CHADELHURST",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC062",
+  "pri": "P3",
+  "feat": "Edge \u2013 Max Passengers",
+  "name": "9-passenger PNR",
+  "pnr": "59AUME",
+  "pnr_id": "59AUME-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ADRIAN",
+    "last": "CLIFFELWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "GARETH",
+    "last": "FENINGMORE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "HALLIE",
+    "last": "BEXINGDEN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "ZORA",
+    "last": "ASHENCROFT",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "PERCY",
+    "last": "HARTELWOOD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "PRIYA",
+    "last": "PENANDEN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "JASPER",
+    "last": "TUTLEDALE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "XIMENA",
+    "last": "OATELCOMBE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "SVEN",
+    "last": "CARLENLOW",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 9,
+  "tickets": {
+   "0": "0143851000750",
+   "1": "0143851000760",
+   "2": "0143851000770",
+   "3": "0143851000780",
+   "4": "0143851000790",
+   "5": "0143851000800",
+   "6": "0143851000810",
+   "7": "0143851000820",
+   "8": "0143851000830"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "SC-03 shows 9 line items + combined total",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ADRIAN",
+    "CLIFFELWYN"
+   ],
+   [
+    "GARETH",
+    "FENINGMORE"
+   ],
+   [
+    "HALLIE",
+    "BEXINGDEN"
+   ],
+   [
+    "ZORA",
+    "ASHENCROFT"
+   ],
+   [
+    "PERCY",
+    "HARTELWOOD"
+   ],
+   [
+    "PRIYA",
+    "PENANDEN"
+   ],
+   [
+    "JASPER",
+    "TUTLEDALE"
+   ],
+   [
+    "XIMENA",
+    "OATELCOMBE"
+   ],
+   [
+    "SVEN",
+    "CARLENLOW"
+   ]
+  ],
+  "pax": "ADRIAN CLIFFELWYN",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC063",
+  "pri": "P3",
+  "feat": "Edge \u2013 Infant",
+  "name": "Lap infant needs no separate seat",
+  "pnr": "9CNRSQ",
+  "pnr_id": "9CNRSQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ANNIKA",
+    "last": "QUENENTON",
+    "ptype": "ADT",
+    "ssr": [
+     "INFT"
+    ],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "HALLIE",
+    "last": "RIDGEELCOTT",
+    "ptype": "INF",
+    "ssr": [],
+    "dob": "2025-11-25"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143851000840",
+   "1": "0143851000850"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "infant has no ticket coupon of its own; has_infant=true on the adult",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "ANNIKA",
+    "QUENENTON"
+   ],
+   [
+    "HALLIE",
+    "RIDGEELCOTT"
+   ]
+  ],
+  "pax": "ANNIKA QUENENTON",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC064",
+  "pri": "P3",
+  "feat": "Edge \u2013 Codeshare",
+  "name": "Codeshare: marketing LH, operating AC",
+  "pnr": "XV7IMJ",
+  "pnr_id": "XV7IMJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "LH",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "D7",
+    "dep_iso": "2026-07-30T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "QUENTIN",
+    "last": "ALDOWVALE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000860"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {},
+  "exp_reason": "SC-NE-01",
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "Test case expects eligibility to look only at the OPERATING carrier. The live rule checks BOTH marketing and operating (elig-sc-carrier-validation) -> SC-NE-01.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "QUENTIN",
+    "ALDOWVALE"
+   ]
+  ],
+  "pax": "QUENTIN ALDOWVALE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC065",
+  "pri": "P3",
+  "feat": "Edge \u2013 Browser Nav",
+  "name": "Browser back button on the payment screen",
+  "pnr": "V5U3MY",
+  "pnr_id": "V5U3MY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CEDRICK",
+    "last": "BRENANRIDGE",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000870"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "CEDRICK",
+    "BRENANRIDGE"
+   ]
+  ],
+  "pax": "CEDRICK BRENANRIDGE",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC066",
+  "pri": "P3",
+  "feat": "Edge \u2013 Network",
+  "name": "Session restored after a network drop on the seat map",
+  "pnr": "2VK8C7",
+  "pnr_id": "2VK8C7-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OONA",
+    "last": "WOLDINGSTEAD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000880"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "14A"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "OONA",
+    "WOLDINGSTEAD"
+   ]
+  ],
+  "pax": "OONA WOLDINGSTEAD",
+  "uniq_names": true
+ },
+ {
+  "tc": "SeatChange_TC067",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Insufficient acWallet balance",
+  "pnr": "JLUJXF",
+  "pnr_id": "JLUJXF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T15:01:56Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "CDG",
+    "dep": "D5",
+    "dep_iso": "2026-07-28T15:01:56Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HALLIE",
+    "last": "RAINERDEN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143851000890"
+  },
+  "src": "AC_ONLINE",
+  "bound": 1,
+  "checkin": false,
+  "seats": {
+   "0": "22C"
+  },
+  "exp_reason": "SC-EL-01",
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "chatbot": "",
+  "runtime": "acWallet balance below the seat fee -> fallback payment",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "pax_names": [
+   [
+    "HALLIE",
+    "RAINERDEN"
+   ]
+  ],
+  "pax": "HALLIE RAINERDEN",
+  "uniq_names": true
+ }
+]
