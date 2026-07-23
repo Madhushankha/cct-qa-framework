@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import _cctdb
 """Build BAGGAGE-CLAIM UAT test PNRs in the CRT environment.
 
 UNLIKE FD / SOC / ANC-fee-refund, the baggage-CLAIM flow (delayed bag, lost bag
@@ -94,7 +95,7 @@ def name_pool(offset=0):
             i+=1
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])
-def tt_conn(): return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=25)
+def tt_conn(): return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 def re_conn(): return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],user=CRT["re_user"],password=CRT["re_pass"],sslmode="require",connect_timeout=25)
 
 # ---- routes (leg = origin,dest,marketing_carrier,operating_carrier,flight_no) --

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import _cctdb
 """Build Ancillaries SEAT & BAG fee-refund test PNRs in the CRT environment.
 
 The seat/bag refund bot reads the SAME rule-engine DDS path as FD (S3 +
@@ -98,7 +99,7 @@ def name_pool(offset=0):
             i+=1
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])
-def tt_conn(): return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+def tt_conn(): return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 def re_conn(): return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],user=CRT["re_user"],password=CRT["re_pass"],sslmode="require",connect_timeout=20)
 
 # ---- routes ----------------------------------------------------------------

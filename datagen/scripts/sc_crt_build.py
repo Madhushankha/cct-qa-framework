@@ -50,6 +50,7 @@ Usage: python3 sc_crt_build.py <phase> [--start N] [--end N]   (no AWS creds nee
 """
 import json, os, sys, uuid, subprocess, ssl, urllib.request, urllib.error, argparse, random, datetime
 import psycopg2
+import _cctdb
 from psycopg2.extras import Json
 import crt_uniqnames as U
 
@@ -88,8 +89,7 @@ CORRIDS = "qa-sc-crt"
 UNIQ = os.environ.get("CRT_UNIQ_NAMES") == "1"
 
 def tt_conn():
-    return psycopg2.connect(host=CRT["tt_host"], port=5432, dbname=CRT["tt_db"], user=CRT["tt_user"],
-                            password=CRT["tt_pass"], sslmode="require", connect_timeout=25)
+    return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 
 # ---- time anchors -----------------------------------------------------------
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)

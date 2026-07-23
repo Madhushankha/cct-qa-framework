@@ -35,6 +35,7 @@ Validate with:  AWS_PROFILE=ac-cct-crt python3 nmvp_checkpoints.py
 """
 import json, os, sys, subprocess, argparse, datetime, random, glob
 import psycopg2
+import _cctdb
 import crt_uniqnames as U
 UNIQ = os.environ.get("CRT_UNIQ_NAMES") == "1"   # opt-in: shared unique-name assignment (default OFF)
 
@@ -165,7 +166,7 @@ _LASTS =["OKAFOR","VANCE","LINDGREN","BARRERA","FONTAINE","HALVORSEN","IBARRA","
          "ELLSWORTH","FAIRWEATHER","GALLAGHER","HOLM","IRIARTE","JANSEN","KILBRIDE","LARSSON",
          "MONTALVO","NORDSTROM","ODUYA","PENHALIGON","RADFORD","STRANDBERG","THORNTON","VESTERGAARD"]
 
-def tt_conn(): return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+def tt_conn(): return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 
 def prior_full_names():
     names=set()

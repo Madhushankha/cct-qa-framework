@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import _cctdb
 """Build NAME CORRECTION test PNRs in the CRT environment + verify eligibility.
 
 Unlike FD/ANC (which pin a pre-computed DDS the /dds/output endpoint reads), Name
@@ -99,7 +100,7 @@ OVERLAP_DT=_iso(_NOW+datetime.timedelta(hours=6))   # TC042 NCBND3: "departs in 
 DEP_DT    =_iso(_NOW-datetime.timedelta(hours=30))  # TC041 NCDEP1: already departed
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])
-def tt_conn(): return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+def tt_conn(): return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 
 # ---- CASES ------------------------------------------------------------------
 # pax entry: (first,last,ptype[,opts]); opts: ssr=[..], loyalty=True, corrected=True,

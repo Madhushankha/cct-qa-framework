@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import _cctdb
 """SOC UAT 84-case set in CRT — port of soc_uat_int_build.py (same case derivation
 and DDS shapes, imported from it) onto the CRT infra from crt_fd_build.py:
   topic emh-dev.ALTEA-PNRDATA-UAT · trip-tracer direct dbadmin · rule-engine Aurora
@@ -58,8 +59,7 @@ CRT=dict(profile="ac-cct-crt", region="ca-central-1",
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])
 def tt_conn():
-    return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],
-        user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+    return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 def re_conn():
     s=json.loads(_sess.client("secretsmanager").get_secret_value(SecretId=CRT["re_secret"])["SecretString"])
     return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],
