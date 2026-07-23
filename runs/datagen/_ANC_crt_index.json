@@ -1,0 +1,2678 @@
+[
+ {
+  "tc": "ANC-SEAT-TC-001",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 EMD Already Refunded (Status R)",
+  "loc": "BLHAOJ",
+  "pnr_id": "BLHAOJ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "OLIVIA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-REFUNDED",
+     "coupon": "REFUNDED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 EMD Already Refunded (Status R)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000001",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-002",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 EMD Voided (Status V)",
+  "loc": "MNDGMV",
+  "pnr_id": "MNDGMV-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "LIAM",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-VOID",
+     "coupon": "VOID",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 EMD Voided (Status V)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000002",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-003",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Single Segment \u2014 EMD NOT 014 \u2014 OAL Referral",
+  "loc": "UZOEVZ",
+  "pnr_id": "UZOEVZ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "CDG",
+    "YYZ",
+    "AC",
+    "0871"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "EMMA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-OAL-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "016",
+     "reason": "Seat Refund \u2014 Single Segment \u2014 EMD NOT 014 \u2014 OAL Referral"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000003",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-004",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Single Segment \u2014 EMD NOT 014 \u2014 Customer Disputes",
+  "loc": "HXLMIO",
+  "pnr_id": "HXLMIO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "CDG",
+    "YYZ",
+    "AC",
+    "0871"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "NOAH",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-OAL-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "016",
+     "reason": "Seat Refund \u2014 Single Segment \u2014 EMD NOT 014 \u2014 Customer Disputes \u2192 Dispute"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000004",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-005",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Segment \u2014 EMD NOT 014 \u2014 OAL Referral",
+  "loc": "SQTTSR",
+  "pnr_id": "SQTTSR-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "CDG",
+    "AC",
+    "0870"
+   ],
+   [
+    "CDG",
+    "FRA",
+    "AC",
+    "0871"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "AVA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-OAL-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "016",
+     "reason": "segment 1 OAL"
+    }
+   ],
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-OAL-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "016",
+     "reason": "segment 2 OAL"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000005",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-006",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Segment \u2014 EMD 014 \u2014 ELIGIBLE",
+  "loc": "OJUPYO",
+  "pnr_id": "OJUPYO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YUL",
+    "AC",
+    "4922"
+   ],
+   [
+    "YUL",
+    "CDG",
+    "AC",
+    "0870"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "WILLIAM",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "segment 1 ELIGIBLE"
+    }
+   ],
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "segment 2 ELIGIBLE"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000006",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-007",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Single Segment \u2014 EMD 014 \u2014 ELIGIBLE",
+  "loc": "ISMMRG",
+  "pnr_id": "ISMMRG-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "SOPHIA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Single Segment \u2014 EMD 014 \u2014 ELIGIBLE"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000007",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-008",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 NOT Eligible \u2014 Seat Number Changed Without Char Change",
+  "loc": "PLGMOS",
+  "pnr_id": "PLGMOS-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "BENJAMIN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 NOT Eligible \u2014 Seat Number Changed Without Characteristic Change"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000008",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-009",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 NOT Eligible \u2014 Seat Char Change \u2014 Customer Disputes",
+  "loc": "GJSBXS",
+  "pnr_id": "GJSBXS-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ISABELLA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 NOT Eligible \u2014 Seat Char Change \u2014 Customer Disputes"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000009",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-010",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 NOT Eligible \u2014 No Seat Fee Paid",
+  "loc": "PJGYEQ",
+  "pnr_id": "PJGYEQ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "no_emd",
+  "pax_names": [
+   [
+    "LUCAS",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   []
+  ],
+  "bag": null,
+  "ticket": "014383000010",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-011",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 NOT Eligible \u2014 Already Refunded",
+  "loc": "RAJZYL",
+  "pnr_id": "RAJZYL-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "MIA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-REFUNDED",
+     "coupon": "REFUNDED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 NOT Eligible \u2014 Already Refunded"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000011",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-012",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 NOT Eligible \u2014 Pax Rebooked and Holding Ticket",
+  "loc": "WRXFIO",
+  "pnr_id": "WRXFIO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "HENRY",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 NOT Eligible \u2014 Pax Rebooked and Holding Ticket"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000012",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-013",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Service Downtime",
+  "loc": "ORDYZU",
+  "pnr_id": "ORDYZU-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "downtime",
+  "pax_names": [
+   [
+    "CHARLOTTE",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Service Downtime"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000013",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-014",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 ACV Booking \u2192 Redirected to ACV",
+  "loc": "JXPFJX",
+  "pnr_id": "JXPFJX-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "acv",
+  "pax_names": [
+   [
+    "THEODORE",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 ACV Booking \u2192 Redirected to ACV"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000014",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-015",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Exchanged EMD \u2192 New EMD Located",
+  "loc": "AMOBOM",
+  "pnr_id": "AMOBOM-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "AMELIA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "EXCHANGED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Exchanged EMD \u2192 New EMD Located and Rules Applied"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000015",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-016",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Automatable FOP (AC Wallet)",
+  "loc": "GKMTTV",
+  "pnr_id": "GKMTTV-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "JACK",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "AWLTR",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Automatable FOP (AC Wallet)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000016",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-017",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Passenger PNR \u2014 Mixed Eligibility",
+  "loc": "ZGUOKW",
+  "pnr_id": "ZGUOKW-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 3,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "HARPER",
+    "TREMBLAY"
+   ],
+   [
+    "OLIVER",
+    "TREMBLAY"
+   ],
+   [
+    "EVELYN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 Mixed (Pax1 eligible seat char change)"
+    },
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 Mixed (Pax2 not eligible no change)"
+    },
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 Mixed (Pax3 eligible denied boarding)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000017",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-018",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Segment Parallel Eligibility \u2014 Mixed",
+  "loc": "ZFPOAQ",
+  "pnr_id": "ZFPOAQ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YUL",
+    "AC",
+    "4922"
+   ],
+   [
+    "YUL",
+    "CDG",
+    "AC",
+    "0870"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "JAMES",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "segment 1 ELIGIBLE"
+    }
+   ],
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "segment 2 NOT ELIGIBLE same characteristics"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000018",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-019",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 OAL/STAR Partner Operated Segment",
+  "loc": "AXXMBO",
+  "pnr_id": "AXXMBO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "CDG",
+    "YYZ",
+    "AC",
+    "0871"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ABIGAIL",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-OAL-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "016",
+     "reason": "Seat Refund \u2014 OAL/STAR Partner Operated Segment (at Eligibility)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000019",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-020",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Catch-All Not Eligible",
+  "loc": "VERMIN",
+  "pnr_id": "VERMIN-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ETHAN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Catch-All Not Eligible"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000020",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-021",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Catch-All Not Eligible \u2192 Customer Disputes",
+  "loc": "NMJNBZ",
+  "pnr_id": "NMJNBZ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "EMILY",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Catch-All Not Eligible \u2192 Customer Disputes \u2192 Dispute Flow"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000021",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-022",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Duplicate Claim Prevention",
+  "loc": "NAYNEG",
+  "pnr_id": "NAYNEG-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "dup",
+  "pax_names": [
+   [
+    "ALEXANDER",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Duplicate Claim Prevention (Same PNR + Segment + EMD)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000022",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-023",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Eligible",
+  "loc": "ARRYOV",
+  "pnr_id": "ARRYOV-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 3,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ELIZABETH",
+    "TREMBLAY"
+   ],
+   [
+    "DANIEL",
+    "TREMBLAY"
+   ],
+   [
+    "SOFIA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Eligible (Pax1 seat char downgrade)"
+    },
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Eligible (Pax2 denied boarding)"
+    },
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Eligible (Pax3 no travel due to disruption)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000023",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-024",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Not Eligible",
+  "loc": "CTRARK",
+  "pnr_id": "CTRARK-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 3,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "MATTHEW",
+    "TREMBLAY"
+   ],
+   [
+    "VICTORIA",
+    "TREMBLAY"
+   ],
+   [
+    "JOSEPH",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Not Eligible (Pax1 involuntary upgrade)"
+    },
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Not Eligible (Pax2 no EMD fee paid)"
+    },
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 ALL Not Eligible (Pax3 holding ticket)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000024",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-025",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required",
+  "loc": "SUAWGL",
+  "pnr_id": "SUAWGL-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 2,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "GRACE",
+    "TREMBLAY"
+   ],
+   [
+    "SAMUEL",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required (Pax1)"
+    },
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required (Pax2)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000025",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-026",
+  "suite": "seat",
+  "name": "Denied Boarding \u2013 Eligible for Seat Fee Refund",
+  "loc": "XCBCZG",
+  "pnr_id": "XCBCZG-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "CHLOE",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Denied Boarding \u2013 Eligible for Seat Fee Refund"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000026",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-027",
+  "suite": "seat",
+  "name": "Voluntary Upgrade \u2013 Paid Upgrade \u2013 Eligible",
+  "loc": "UANNTF",
+  "pnr_id": "UANNTF-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "DAVID",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Voluntary Upgrade \u2013 Paid Upgrade \u2013 Eligible for Seat Fee Refund"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000027",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-028",
+  "suite": "seat",
+  "name": "Voluntary Upgrade \u2013 AC Bid Upgrade \u2013 Eligible",
+  "loc": "FKUIBB",
+  "pnr_id": "FKUIBB-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "PENELOPE",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Voluntary Upgrade \u2013 AC Bid Upgrade \u2013 Eligible for Seat Fee Refund"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000028",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-029",
+  "suite": "seat",
+  "name": "Used EMD \u2013 Change in Seat Characteristics (INVOL) \u2013 Eligible",
+  "loc": "BLUUFN",
+  "pnr_id": "BLUUFN-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "CARTER",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Used EMD \u2013 Change in Seat Characteristics (INVOL) \u2013 Eligible for Refund"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000029",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-030",
+  "suite": "seat",
+  "name": "Single Passenger \u2013 Multiple EMDs on Same Segment \u2013 Manual",
+  "loc": "VXQOAI",
+  "pnr_id": "VXQOAI-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "multi_emd",
+  "pax_names": [
+   [
+    "LAYLA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Single Passenger \u2013 Multiple EMDs on Same Segment \u2013 Manual Handling"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000030",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-031",
+  "suite": "seat",
+  "name": "Pre-Travel (Before Expected Arrival) \u2013 Live Agent Handoff",
+  "loc": "XYKASH",
+  "pnr_id": "XYKASH-2026-08-07",
+  "date": "2026-08-07",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": true,
+  "note": "",
+  "pax_names": [
+   [
+    "OWEN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Pre-Travel (Before Expected Arrival) \u2013 Live Agent Handoff"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000031",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-032",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Aeroplan Login \u2014 Name Not on PNR",
+  "loc": "HZIALF",
+  "pnr_id": "HZIALF-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 2,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "0123"
+   ]
+  ],
+  "future": false,
+  "note": "name_not_on_pnr",
+  "pax_names": [
+   [
+    "RILEY",
+    "TREMBLAY"
+   ],
+   [
+    "GABRIEL",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Name Not on PNR (Jordan eligible)"
+    },
+    {
+     "status": "ELIGIBLE",
+     "syscode": "SF-EL-01",
+     "coupon": "USED",
+     "char": true,
+     "amount": 68.85,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Name Not on PNR (Avery eligible)"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000032",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "ANC-SEAT-TC-033",
+  "suite": "seat",
+  "name": "Seat Refund \u2014 Pre-Travel PNR \u2014 Customer Insists on Eligibility",
+  "loc": "UWCGLF",
+  "pnr_id": "UWCGLF-2026-08-07",
+  "date": "2026-08-07",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "0123"
+   ]
+  ],
+  "future": true,
+  "note": "",
+  "pax_names": [
+   [
+    "NORA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": [
+   [
+    {
+     "status": "NOT_ELIGIBLE",
+     "syscode": "SF-NE-01",
+     "coupon": "USED",
+     "char": false,
+     "amount": 0,
+     "fop": "CC",
+     "emd": "014",
+     "reason": "Seat Refund \u2014 Pre-Travel PNR \u2014 Customer Insists on Eligibility"
+    }
+   ]
+  ],
+  "bag": null,
+  "ticket": "014383000033",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC001",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 EMD Already Refunded (Status R)",
+  "loc": "BYWDFM",
+  "pnr_id": "BYWDFM-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "JULIAN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-REFUNDED",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 EMD Already Refunded (Status R)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000034",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC002",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 EMD Voided (Status V)",
+  "loc": "DSFRWU",
+  "pnr_id": "DSFRWU-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "HAZEL",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-VOID",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 EMD Voided (Status V)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000035",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC003",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 No AHL / DPR \u2192 Redirect to Report Bag",
+  "loc": "WYFLBC",
+  "pnr_id": "WYFLBC-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "LEO",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": false,
+     "reportType": "None",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 No AHL / DPR Exists \u2192 Redirect to Report Bag"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000036",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC004",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 AHL Exists \u2014 Eligible \u2014 Manual",
+  "loc": "RYFINK",
+  "pnr_id": "RYFINK-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "AURORA",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 AHL Exists \u2014 Eligible \u2014 Manual Handling \u2014 eligible, routes to manual handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000037",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC005",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 DPR Exists \u2014 Eligible \u2014 Manual",
+  "loc": "RFBSKO",
+  "pnr_id": "RFBSKO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ISAAC",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "DPR",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 DPR Exists \u2014 Eligible \u2014 Manual Handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000038",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC006",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 AHL/DPR \u2014 NOT Eligible \u2014 Dispute Option",
+  "loc": "ZJXLMO",
+  "pnr_id": "ZJXLMO-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "SAVANNAH",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "DPR",
+     "wait": true
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 AHL/DPR Exists \u2014 NOT Eligible \u2014 End Flow with Dispute Option"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000039",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC007",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Service Downtime : Service Error API",
+  "loc": "IBMPXF",
+  "pnr_id": "IBMPXF-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "downtime",
+  "pax_names": [
+   [
+    "LINCOLN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Service Downtime : Service Error API"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000040",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC008",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 OAL-Collected Bag Fee \u2192 Referred to OAL",
+  "loc": "XHSZZU",
+  "pnr_id": "XHSZZU-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "0123"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "BROOKLYN",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-OAL-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "838",
+      "reason": "Bag Refund \u2014 OAL-Collected Bag Fee \u2192 Referred to OAL (WestJet)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000041",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC009",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Overweight + Regular Bag Fee \u2014 Eligible \u2014 Manual",
+  "loc": "MLPFHP",
+  "pnr_id": "MLPFHP-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ANTHONY",
+    "TREMBLAY"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Overweight + Regular Bag Fee \u2014 Eligible \u2014 Manual \u2014 eligible, routes to manual handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000042",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC010",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 USED EMD \u2192 Cover Refund with 72-Hour Wait",
+  "loc": "VFBIZY",
+  "pnr_id": "VFBIZY-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "OLIVIA",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 USED EMD \u2192 Cover Refund with 72-Hour Wait \u2014 eligible, routes to manual handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000043",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC011",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 USED EMD \u2192 72-Hour Wait NOT Satisfied \u2192 Pending",
+  "loc": "VVLNFR",
+  "pnr_id": "VVLNFR-2026-07-21",
+  "date": "2026-07-21",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "LIAM",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": false
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 USED EMD \u2192 72-Hour Wait NOT Satisfied \u2192 Pending"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000044",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true,
+  "ahl_date": "2026-07-22T10:00:00Z"
+ },
+ {
+  "tc": "BAG_TC012",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Automatable FOP (AC wallet) \u2192 Manual",
+  "loc": "NQHHTS",
+  "pnr_id": "NQHHTS-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "EMMA",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "AWLTR",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Automatable FOP (AC wallet) \u2192 Manual \u2014 eligible, routes to manual handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000045",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC013",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Duplicate Claim Prevention",
+  "loc": "NWYGDL",
+  "pnr_id": "NWYGDL-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "dup",
+  "pax_names": [
+   [
+    "NOAH",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Duplicate Claim Prevention"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000046",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC014",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 No Paid EMD Exists \u2192 No Refund",
+  "loc": "QQUCMD",
+  "pnr_id": "QQUCMD-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "no_emd",
+  "pax_names": [
+   [
+    "AVA",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": false,
+     "reportType": "None",
+     "wait": null
+    },
+    []
+   ]
+  ],
+  "ticket": "014383000047",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC015",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Multi-Passenger \u2014 Mixed Eligibility",
+  "loc": "QFWOBK",
+  "pnr_id": "QFWOBK-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 3,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "WILLIAM",
+    "GAGNON"
+   ],
+   [
+    "SOPHIA",
+    "GAGNON"
+   ],
+   [
+    "BENJAMIN",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 Mixed (Pax1 AHL eligible)"
+     },
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 Mixed (Pax2 no AHL not eligible)"
+     },
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 Mixed (Pax3 AHL eligible)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000048",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC016",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Multi-Passenger \u2014 ALL Eligible",
+  "loc": "SODQLJ",
+  "pnr_id": "SODQLJ-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 2,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "ISABELLA",
+    "GAGNON"
+   ],
+   [
+    "LUCAS",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 ALL Eligible (Pax1)"
+     },
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 ALL Eligible (Pax2)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000049",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC017",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required",
+  "loc": "GWXRFX",
+  "pnr_id": "GWXRFX-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 2,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "MIA",
+    "GAGNON"
+   ],
+   [
+    "HENRY",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required (Pax1)"
+     },
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multi-Passenger \u2014 Passenger Selection Required (Pax2)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000050",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC018",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Multiple AHL Records \u2014 Continue (Not Manual)",
+  "loc": "ZBZIOK",
+  "pnr_id": "ZBZIOK-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "CHARLOTTE",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 30.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multiple AHL Records \u2014 Continue \u2014 eligible, routes to manual handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000051",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC019",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Multiple Bags \u2014 Partial Eligibility (2 Highest Fees)",
+  "loc": "RNILPV",
+  "pnr_id": "RNILPV-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "THEODORE",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": true
+    },
+    [
+     {
+      "status": "ELIGIBLE",
+      "syscode": "BF-EL-01",
+      "amount": 125.0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Multiple Bags \u2014 Partial Eligibility (2 Highest: $50 + $75)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000052",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC020",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 Not Eligible \u2192 Customer Disputes \u2192 Manual",
+  "loc": "FYLCQC",
+  "pnr_id": "FYLCQC-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "YYZ",
+    "AC",
+    "4922"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "AMELIA",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "DPR",
+     "wait": true
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-NE-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "014",
+      "reason": "Bag Refund \u2014 Not Eligible \u2192 Customer Disputes \u2192 Manual Handling"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000053",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ },
+ {
+  "tc": "BAG_TC021",
+  "suite": "bag",
+  "name": "Bag Refund \u2014 STAR Alliance Partner Bag Fee \u2192 Referred to STAR",
+  "loc": "QFPNMS",
+  "pnr_id": "QFPNMS-2026-07-02",
+  "date": "2026-07-02",
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "FRA",
+    "AC",
+    "0870"
+   ]
+  ],
+  "future": false,
+  "note": "",
+  "pax_names": [
+   [
+    "JACK",
+    "GAGNON"
+   ]
+  ],
+  "seat": null,
+  "bag": [
+   [
+    {
+     "isAHL": true,
+     "reportType": "AHL",
+     "wait": null
+    },
+    [
+     {
+      "status": "NOT_ELIGIBLE",
+      "syscode": "BF-OAL-01",
+      "amount": 0,
+      "fop": "CC",
+      "emd": "016",
+      "reason": "Bag Refund \u2014 STAR Alliance Partner Bag Fee \u2192 Referred to STAR Partner (Lufthansa)"
+     }
+    ]
+   ]
+  ],
+  "ticket": "014383000054",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pin": true
+ }
+]

@@ -100,7 +100,7 @@ def name_pool(offset=0):
 
 _sess=boto3.Session(profile_name=CRT["profile"], region_name=CRT["region"])
 def tt_conn(): return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
-def re_conn(): return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],user=CRT["re_user"],password=CRT["re_pass"],sslmode="require",connect_timeout=20)
+def re_conn(): return _cctdb.rule_engine(CRT["re_host"], dbname=CRT.get("re_db","postgres"), profile=CRT.get("profile"))
 
 # ---- routes ----------------------------------------------------------------
 DOM =("YUL","YYZ","AC","4922")     # domestic AC single seg

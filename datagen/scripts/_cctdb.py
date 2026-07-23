@@ -14,24 +14,34 @@ Usage in a builder:
 import json
 import os
 
-_SECRET_ID = "/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials"
+_TT_SECRET = "/crt-cac1/ac-cct-trip-tracer-rds-cluster-crt-cac1/db-credentials"
+_RE_SECRET = "/crtca1/ac-cct-rule-engine-crt-cac1-cluster/db-credentials"
 _cache = {}
 
 
-def _secret(profile, region="ca-central-1"):
-    if "sec" not in _cache:
+def _secret(secret_id, profile, region="ca-central-1"):
+    if secret_id not in _cache:
         import boto3
         sm = boto3.Session(profile_name=profile, region_name=region).client("secretsmanager")
-        _cache["sec"] = json.loads(sm.get_secret_value(SecretId=_SECRET_ID)["SecretString"])
-    return _cache["sec"]
+        _cache[secret_id] = json.loads(sm.get_secret_value(SecretId=secret_id)["SecretString"])
+    return _cache[secret_id]
 
 
 def trip_tracer(host, *, dbname="trip-tracer", profile=None, region="ca-central-1", timeout=20):
     """Read-write psycopg2 connection to CRT trip-tracer, trying each credential pair in the secret."""
     import psycopg2
 
-    profile = profile or os.environ.get("AWS_PROFILE") or "ac-cct-crt"
-    sec = _secret(profile, region)
+    return _connect(host, dbname, _secret(_TT_SECRET, profile or os.environ.get("AWS_PROFILE") or "ac-cct-crt", region), timeout)
+
+
+def rule_engine(host, *, dbname="postgres", profile=None, region="ca-central-1", timeout=25):
+    """Read-write psycopg2 connection to the CRT rule-engine cluster (execution_traces / DDS pin)."""
+    return _connect(host, dbname, _secret(_RE_SECRET, profile or os.environ.get("AWS_PROFILE") or "ac-cct-crt", region), timeout)
+
+
+def _connect(host, dbname, sec, timeout):
+    import psycopg2
+
     pairs = [(sec.get("username"), sec.get("password")),
              (sec.get("adminuser"), sec.get("adminpassword"))]
     last = None

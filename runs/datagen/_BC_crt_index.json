@@ -1,0 +1,6077 @@
+[
+ {
+  "tc": "VOL_TC001",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Change to higher fare, pays fare difference",
+  "pnr": "UFIIMY",
+  "pnr_id": "UFIIMY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OLIVIA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000000"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "BCVol-02 Change my flight -> higher fare -> payment",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC002",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Change to lower fare, refund initiated",
+  "pnr": "GCWL8Q",
+  "pnr_id": "GCWL8Q-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LIAM",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000010"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC003",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Change to equal fare, no payment/refund",
+  "pnr": "5DRFLD",
+  "pnr_id": "5DRFLD-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EMMA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000020"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC004",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Rejects all options -> escalate after retry limit",
+  "pnr": "P7DZ7K",
+  "pnr_id": "P7DZ7K-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NOAH",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000030"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: retry threshold is chatbot-side",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC005",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Route change, outbound higher fare (no change fee)",
+  "pnr": "IZTVZC",
+  "pnr_id": "IZTVZC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AVA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000040"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "BCVol alt-criteria = Arrival/Departure Airport",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC006",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Route change, outbound lower fare (change fee applies)",
+  "pnr": "Z6NXIB",
+  "pnr_id": "Z6NXIB-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "WILLIAM",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000050"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC007",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Date outside allowed 7-day window -> retry prompt",
+  "pnr": "AWZDYA",
+  "pnr_id": "AWZDYA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SOPHIA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000060"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "7-day search window is a WIDGET limit; the rule 72h window still accepts the seeded 48h departure -> VBC-EL-01. Retry prompt is chatbot-side.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC008",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Selected flight becomes unavailable (seats blocked)",
+  "pnr": "HS6M7C",
+  "pnr_id": "HS6M7C-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BENJAMIN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000070"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: live inventory refresh",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC009",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Payment fails then succeeds on retry",
+  "pnr": "W6732G",
+  "pnr_id": "W6732G-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISABELLA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000080"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: payment gateway",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC010",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Add ancillaries during change",
+  "pnr": "2LRN2M",
+  "pnr_id": "2LRN2M-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LUCAS",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000090"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC011",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Skip ancillaries, existing removed",
+  "pnr": "Q8AAHY",
+  "pnr_id": "Q8AAHY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "MIA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000100"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": "14A",
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "existing ancillaries attached (seat 14A seeded)",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC012",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Backend failure during booking update (GLOB-09)",
+  "pnr": "D8S7B9",
+  "pnr_id": "D8S7B9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HENRY",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000110"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC013",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Proceeds without selecting a flight -> validation",
+  "pnr": "XXDTVR",
+  "pnr_id": "XXDTVR-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CHARLOTTE",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000120"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC014",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Dynamic waiver removes change fee, no payment",
+  "pnr": "RCFK4Q",
+  "pnr_id": "RCFK4Q-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "THEODORE",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000130"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "ruleDynamicWaiver is a live placeholder (NOT_APPLICABLE); waiver pricing is downstream. PNR is seeded eligible.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC015",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Cabin upgrade Economy -> Business",
+  "pnr": "7EECLI",
+  "pnr_id": "7EECLI-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AMELIA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000140"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "Upgrade my flight -> J cabin available on replacement",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC016",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Cabin downgrade -> accepts live agent transfer",
+  "pnr": "6J82L3",
+  "pnr_id": "6J82L3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JACK",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000150"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "J",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "original cabin Business; downgrade intent -> GLOB-16",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC017",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Cabin downgrade -> declines transfer, flow ends",
+  "pnr": "IIS9SQ",
+  "pnr_id": "IIS9SQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HARPER",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000160"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "O",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "original cabin Premium Economy",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC018",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Cash bid upgrade Economy -> Business (Plusgrade)",
+  "pnr": "W47AVG",
+  "pnr_id": "W47AVG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OLIVER",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000170"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "ADD-71 bid upgrade; Aeroplan member, 014 stock, not basic, no blocking SSR",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC019",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "Multi-pax booking, all rebooked together",
+  "pnr": "NPRPJQ",
+  "pnr_id": "NPRPJQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EVELYN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "JAMES",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 2,
+  "tickets": {
+   "0": "0143821000180",
+   "1": "0143821000190"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC020",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (Eligible)",
+  "name": "2 ADT + 1 CHD + 1 INF (lap infant), full flow",
+  "pnr": "ZVFKMX",
+  "pnr_id": "ZVFKMX-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ABIGAIL",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "ETHAN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "EMILY",
+    "last": "ASHFORD",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2019-07-24"
+   },
+   {
+    "first": "ALEXANDER",
+    "last": "ASHFORD",
+    "ptype": "INF",
+    "ssr": [
+     "INFT"
+    ],
+    "dob": "2025-09-26"
+   }
+  ],
+  "npax": 4,
+  "tickets": {
+   "0": "0143821000200",
+   "1": "0143821000210",
+   "2": "0143821000220",
+   "3": "0143821000230"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC021",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "2 ADT + 1 CHD + 1 INS (infant with seat)",
+  "pnr": "TQHG4P",
+  "pnr_id": "TQHG4P-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ELIZABETH",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "DANIEL",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "SOFIA",
+    "last": "ASHFORD",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2021-07-23"
+   },
+   {
+    "first": "MATTHEW",
+    "last": "ASHFORD",
+    "ptype": "INF",
+    "ssr": [
+     "BSCT"
+    ],
+    "dob": "2025-01-29"
+   }
+  ],
+  "npax": 4,
+  "tickets": {
+   "0": "0143821000240",
+   "1": "0143821000250",
+   "2": "0143821000260",
+   "3": "0143821000270"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "INS = infant occupying seat; gets child fare + own seat",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC022",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "1 ADT + 1 CHD + 1 YTH (YPTU) accompanied youth",
+  "pnr": "FBKF8A",
+  "pnr_id": "FBKF8A-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VICTORIA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "JOSEPH",
+    "last": "ASHFORD",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2017-07-23"
+   },
+   {
+    "first": "GRACE",
+    "last": "ASHFORD",
+    "ptype": "YTH",
+    "ssr": [
+     "YPTU"
+    ],
+    "dob": "2012-07-23"
+   }
+  ],
+  "npax": 3,
+  "tickets": {
+   "0": "0143821000280",
+   "1": "0143821000290",
+   "2": "0143821000300"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "YPTU is not a blocking SSR -> VBC-EL-01. Accompanied-youth allowance is design-correct.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC024",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (Eligible)",
+  "name": "Multi-pax split PNR (not all together) -> live agent",
+  "pnr": "GCY9TT",
+  "pnr_id": "GCY9TT-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SAMUEL",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "CHLOE",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   },
+   {
+    "first": "DAVID",
+    "last": "ASHFORD",
+    "ptype": "CHD",
+    "ssr": [
+     "CHLD"
+    ],
+    "dob": "2016-07-23"
+   }
+  ],
+  "npax": 3,
+  "tickets": {
+   "0": "0143821000310",
+   "1": "0143821000320",
+   "2": "0143821000330"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "BCVol-04 'is everyone rebooked together?' No -> GLOB-16 (chatbot-side split)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC025",
+  "flow": "vol",
+  "pri": "NA",
+  "feat": "Voluntary (Eligible)",
+  "name": "Same-day connect: seg1 flown, seg2 unflown -> change seg2",
+  "pnr": "9TRKW3",
+  "pnr_id": "9TRKW3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "YUL",
+    "d": "YHZ",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "PENELOPE",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000340"
+  },
+  "src": "ACO",
+  "bound": 2,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "mid-journey; seg1 (bound1) flown/USED excluded, GenUC-08 selects the onward journey (bound2) -> only seg2 evaluated -> eligible",
+  "runtime": "",
+  "divergence": "Modelled as two selectable journeys: bound1 = flown YYZ-YUL, bound2 = onward YUL-YHZ. The chatbot's journey selection (GenUC-08) targets bound2. Selecting bound1 would return VBC-NE-01 (its leg has departed).",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC026",
+  "flow": "vol",
+  "pri": "NA",
+  "feat": "Voluntary (Eligible)",
+  "name": "Intl overnight connect: seg1 flown, seg2 unflown",
+  "pnr": "ZDPX3R",
+  "pnr_id": "ZDPX3R-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LHR",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "LHR",
+    "d": "CDG",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CARTER",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000350"
+  },
+  "src": "ACO",
+  "bound": 2,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "onward journey bound2 = LHR-CDG selected",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC027",
+  "flow": "vol",
+  "pri": "NA",
+  "feat": "Voluntary (Eligible)",
+  "name": "Intl overnight, seat 12A + bags NOT loaded -> proceeds",
+  "pnr": "NM9DLX",
+  "pnr_id": "NM9DLX-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LHR",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "LHR",
+    "d": "CDG",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LAYLA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000360"
+  },
+  "src": "ACO",
+  "bound": 2,
+  "checkin": false,
+  "bag": "notloaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": "12A",
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "BagLoadedOnAircraftDeclaration=FALSE -> ruleCheckInBag pass -> VBC-EL-01. Onward journey bound2.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC028",
+  "flow": "vol",
+  "pri": "NA",
+  "feat": "Voluntary (Eligible)",
+  "name": "Same-day connect: seg2 checked in -> cancel check-in first",
+  "pnr": "HWJW62",
+  "pnr_id": "HWJW62-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "YUL",
+    "d": "YHZ",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OWEN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000370"
+  },
+  "src": "ACO",
+  "bound": 2,
+  "checkin": true,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-07",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "BCVol-03 detects check-in on onward bound2 -> SSCI cancel -> ADD-70 re-verify",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC029",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Change departure airport to sister city (YYZ->YTZ)",
+  "pnr": "M8FWKE",
+  "pnr_id": "M8FWKE-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "RILEY",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000380"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC029b",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (Eligible)",
+  "name": "Change arrival airport to sister city (EWR->JFK)",
+  "pnr": "SXC9JH",
+  "pnr_id": "SXC9JH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "EWR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GABRIEL",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000390"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "second VOL_TC019 row in sheet (arrival sister city)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC030",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Non-self-service SSR (OXYG) -> live agent",
+  "pnr": "4PGYXL",
+  "pnr_id": "4PGYXL-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NORA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [
+     "OXYG"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000400"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-05",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC031",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Checked baggage attached -> blocked",
+  "pnr": "MLGB3T",
+  "pnr_id": "MLGB3T-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JULIAN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000410"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": "loaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "ruleCheckInBag did not fire for any seeded baggage shape probed on CRT (baggage_updates BAG_LOADED_ON_AIRCRAFT, seg/pax booleans all -> pass). The checked-bag block (VBC-NE-02) is enforced by the downstream BCVol-03 self-serve check, not the stateless rule endpoint. PNR carries a real BAG_LOADED_ON_AIRCRAFT row for the downstream check.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC032",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Third-party (Expedia) booking -> blocked",
+  "pnr": "84KTW2",
+  "pnr_id": "84KTW2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HAZEL",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000420"
+  },
+  "src": "OTA",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-03",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC033",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Air Canada Vacations booking -> blocked",
+  "pnr": "RWJ3ZC",
+  "pnr_id": "RWJ3ZC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LEO",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000430"
+  },
+  "src": "AC_VACATIONS",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-03",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "AC_VACATIONS is eligible for Seat Change but NOT for Voluntary -> VBC-NE-03.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC034",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "OAL (Lufthansa) segment present -> blocked",
+  "pnr": "IXBAXC",
+  "pnr_id": "IXBAXC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "LH",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AURORA",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000440"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "The VOL rule flow has NO carrier-mix rule (unlike Seat Change). An OAL-operated segment returns VBC-EL-01; the OAL block is enforced in the widget / downstream.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC035",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Group booking -> blocked",
+  "pnr": "9P86G3",
+  "pnr_id": "9P86G3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISAAC",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000450"
+  },
+  "src": "GROUP",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-03",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "GROUP is eligible for Seat Change but NOT for Voluntary -> VBC-NE-03.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC036",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Change within restricted time window (dep 30 min)",
+  "pnr": "CFZA3Z",
+  "pnr_id": "CFZA3Z-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "M30",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-23T14:15:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SAVANNAH",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000460"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "A 30-minute-out departure is still inside the rule's 0<t<=72h15m window -> VBC-EL-01. The last-minute restriction is a widget rule.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC037",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Repeated invalid booking details -> retry blocked",
+  "pnr": "KP9TFD",
+  "pnr_id": "KP9TFD-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LINCOLN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000470"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "reserved locator, never seeded",
+  "divergence": "",
+  "seed_pnr": false,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC038",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Partially correct ID (correct PNR, wrong surname)",
+  "pnr": "W2U8EK",
+  "pnr_id": "W2U8EK-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BROOKLYN",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000480"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "tester enters a wrong surname against this seeded PNR",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC039",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Eligibility service failure -> agent routing",
+  "pnr": "2JCTTG",
+  "pnr_id": "2JCTTG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ANTHONY",
+    "last": "ASHFORD",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000490"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: API outage",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC040",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (inEligible)",
+  "name": "Override attempt on ineligible booking",
+  "pnr": "6L3L6J",
+  "pnr_id": "6L3L6J-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OLIVIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000500"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "BASIC",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-04",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "booking is ineligible (basic fare); override must be blocked",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC041",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (inEligible)",
+  "name": "Rejects legal disclaimer -> flow ends",
+  "pnr": "NQDYKW",
+  "pnr_id": "NQDYKW-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LIAM",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000510"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: disclaimer rejection",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC042",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Aeroplan redemption booking -> blocked",
+  "pnr": "VNAHGX",
+  "pnr_id": "VNAHGX-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EMMA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000520"
+  },
+  "src": "AEROPLAN",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-03",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "AEROPLAN is eligible for Seat Change but NOT for Voluntary -> VBC-NE-03.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC043",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (inEligible)",
+  "name": "Confirmed eUpgrade (EUPG) -> blocked",
+  "pnr": "347EHQ",
+  "pnr_id": "347EHQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NOAH",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "EUPG"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000530"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-08",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC044",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (inEligible)",
+  "name": "Basic fare booking -> blocked",
+  "pnr": "Q5HTSN",
+  "pnr_id": "Q5HTSN-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AVA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000540"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "BASIC",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-04",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC045",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (InEligible)",
+  "name": "Bid upgrade unavailable \u2014 blocking SSR (PETC)",
+  "pnr": "CKLYGJ",
+  "pnr_id": "CKLYGJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "WILLIAM",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "PETC"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000550"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-05",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC046",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Voluntary (InEligible)",
+  "name": "Intl overnight, bag LOADED at connect -> blocked",
+  "pnr": "6QRC8E",
+  "pnr_id": "6QRC8E-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LHR",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 2,
+    "o": "LHR",
+    "d": "CDG",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SOPHIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000560"
+  },
+  "src": "ACO",
+  "bound": 2,
+  "checkin": false,
+  "bag": "loaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": "12A",
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "Same as VOL_TC031 \u2014 checked-bag block (VBC-NE-02) is downstream, not stateless. Onward bound2.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC047",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary - Ineligible",
+  "name": "Two-segment itinerary, BOTH segments flown -> none eligible",
+  "pnr": "HRN7RY",
+  "pnr_id": "HRN7RY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "PAST6",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T07:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "YHZ",
+    "dep": "PAST3",
+    "status": "HK",
+    "coupon": "FLOWN",
+    "dep_iso": "2026-07-23T10:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BENJAMIN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000570"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-06",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "all coupons flown -> zero eligible segments",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "past"
+ },
+ {
+  "tc": "VOL_TC048",
+  "flow": "vol",
+  "pri": "P1",
+  "feat": "Live Agent Handoff (GLOB-16)",
+  "name": "Checked baggage inducted -> blocked (airport agent)",
+  "pnr": "PHYYDF",
+  "pnr_id": "PHYYDF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISABELLA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000580"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": "loaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "Same as VOL_TC031 \u2014 checked-bag/induction block is downstream.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC049",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Voluntary (InEligible)",
+  "name": "Single Youth Passenger (YP, age 14) -> blocked",
+  "pnr": "UL6MP2",
+  "pnr_id": "UL6MP2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LUCAS",
+    "last": "BRENNAC",
+    "ptype": "YTH",
+    "ssr": [],
+    "dob": "2012-07-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000590"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "A lone YTH has no blocking SSR and passenger_type is not a VOL rule input -> VBC-EL-01. The single-youth block is enforced at the chatbot passenger-type check.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "VOL_TC050",
+  "flow": "vol",
+  "pri": "P3",
+  "feat": "Voluntary (InEligible)",
+  "name": "Employee Travel Site (ETS) booking -> blocked",
+  "pnr": "RYFX9S",
+  "pnr_id": "RYFX9S-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "MIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000600"
+  },
+  "src": "ETS",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": "VBC-NE-03",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "ETS maps to an unsupported booking source -> VBC-NE-03.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "SeatChange_TC052",
+  "flow": "vol",
+  "pri": "P2",
+  "feat": "Happy Path",
+  "name": "Voluntary flow seat change with AC flight continues vol flow",
+  "pnr": "6HVTCS",
+  "pnr_id": "6HVTCS-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "D2",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-25T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HENRY",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000610"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": "22C",
+  "exp": "VBC-EL-01",
+  "delay": null,
+  "rebooked": null,
+  "chatbot": "BCVol-07a seat change returns to vol flow",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": true,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC001",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Accepts airline-proposed itinerary after disruption",
+  "pnr": "RG7Q8A",
+  "pnr_id": "RG7Q8A-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CHARLOTTE",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000620"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 180,
+  "rebooked": true,
+  "chatbot": "already rebooked -> Confirm proposed itinerary",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC002",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Rejects proposal, searches alternate flight",
+  "pnr": "6UVYQ2",
+  "pnr_id": "6UVYQ2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "YYC",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "YYC",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "THEODORE",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000630"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 180,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC003",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Changes travel date within waiver window (+/-3 days)",
+  "pnr": "EWML3W",
+  "pnr_id": "EWML3W-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YOW",
+    "d": "YHZ",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YOW",
+    "d": "YHZ",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AMELIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000640"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC004",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "No alternate flights available -> agent escalation",
+  "pnr": "GBCSG3",
+  "pnr_id": "GBCSG3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LAS",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LAS",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JACK",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000650"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: no inventory in search",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC005",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Rejects all alternate options -> support offered",
+  "pnr": "G8EFY5",
+  "pnr_id": "G8EFY5-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "YEG",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "YEG",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HARPER",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000660"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: retry threshold",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC006",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Already-rebooked passenger accepts itinerary",
+  "pnr": "DLJUET",
+  "pnr_id": "DLJUET-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OLIVER",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000670"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 90,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC007",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Rebooked, minor delay (18 min) -> acknowledgment only",
+  "pnr": "RYGD9Q",
+  "pnr_id": "RYGD9Q-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EVELYN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000680"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 18,
+  "rebooked": true,
+  "chatbot": "<30 min -> acknowledgment only",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC008",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "240-min arrival delay -> refund option displayed",
+  "pnr": "Y3BHWJ",
+  "pnr_id": "Y3BHWJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "LHR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "LHR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JAMES",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000690"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 240,
+  "rebooked": true,
+  "chatbot": "delay>179 + ACB source -> Confirm/Change/Cancel&Refund",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC009",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "No-Pro passenger manually searches & confirms alternate",
+  "pnr": "TCCM7J",
+  "pnr_id": "TCCM7J-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ABIGAIL",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000700"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": false,
+  "chatbot": "no automatic rebooking exists",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC010",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Delay under 30 min -> acknowledgment only",
+  "pnr": "VM6DLK",
+  "pnr_id": "VM6DLK-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YEG",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YEG",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ETHAN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000710"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 18,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC011",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Delay 31-179 min -> flight change enabled (no refund)",
+  "pnr": "L37ABG",
+  "pnr_id": "L37ABG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "ORD",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YUL",
+    "d": "ORD",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EMILY",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000720"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 95,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC012",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Delay >=180 min -> refund option enabled",
+  "pnr": "DXUHCB",
+  "pnr_id": "DXUHCB-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "LHR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "LHR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ALEXANDER",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000730"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 240,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC013",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Checked-baggage informational alert after rebooking",
+  "pnr": "NZW62R",
+  "pnr_id": "NZW62R-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYC",
+    "d": "YYZ",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYC",
+    "d": "YYZ",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ELIZABETH",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000740"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": "notloaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "domestic, baggage exists but does not block -> transfer message",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC014",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Only impacted bound shown (round-trip, outbound cancelled)",
+  "pnr": "JYFHM4",
+  "pnr_id": "JYFHM4-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DANIEL",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000750"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "return bound remains locked; add 2nd bound in finalize",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC015",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (Eligible)",
+  "name": "Session restored after device/channel switch",
+  "pnr": "VCGUW2",
+  "pnr_id": "VCGUW2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SOFIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000760"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: session persistence",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC016",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (Eligible)",
+  "name": "Cancel booking -> refund deep-link",
+  "pnr": "6JAQ52",
+  "pnr_id": "6JAQ52-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "SFO",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "SFO",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "MATTHEW",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000770"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 240,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC017",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Duplicate acknowledgment blocked (idempotency)",
+  "pnr": "J2FMM3",
+  "pnr_id": "J2FMM3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "VICTORIA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000780"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: idempotency",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC018",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (Eligible)",
+  "name": "Already-rebooked flight excluded from alt search results",
+  "pnr": "HTWADC",
+  "pnr_id": "HTWADC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JOSEPH",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000790"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: search excludes rebooked flight",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC019",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Eligible)",
+  "name": "Only disrupted segment updated (3-seg multi-city)",
+  "pnr": "AEX336",
+  "pnr_id": "AEX336-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GRACE",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000800"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "seg2 YUL->CDG cancelled; seg1/seg3 active (multi-seg added in finalize)",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC020",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (InEligible)",
+  "name": "Rejects legal disclaimer -> flow terminated",
+  "pnr": "EGHGWT",
+  "pnr_id": "EGHGWT-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SAMUEL",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000810"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: disclaimer rejection",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC021",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (InEligible)",
+  "name": "Repeated invalid booking credentials -> blocked",
+  "pnr": "QQXRGF",
+  "pnr_id": "QQXRGF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CHLOE",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000820"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 240,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "reserved locator, never seeded",
+  "divergence": "",
+  "seed_pnr": false,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC022",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (InEligible)",
+  "name": "Correct PNR, incorrect surname",
+  "pnr": "6UWT3C",
+  "pnr_id": "6UWT3C-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "DAVID",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000830"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "tester enters wrong surname",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC023",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (InEligible)",
+  "name": "Booking not self-reac eligible (selfReac=false)",
+  "pnr": "8Q5AQF",
+  "pnr_id": "8Q5AQF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "PENELOPE",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000840"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "selfReac is a DBaaS/DDS verdict, not seedable on the PNR; seeded as retrievable disruption.",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC024",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "OAL rebooking (Lufthansa) blocked from self-service",
+  "pnr": "5R3Z95",
+  "pnr_id": "5R3Z95-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "FRA",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "CARTER",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000850"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "rebooked seg patched to LH-operated in finalize -> OAL",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC025",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (InEligible)",
+  "name": "Departure too close (<30 min) -> wait advisory",
+  "pnr": "KW4UDG",
+  "pnr_id": "KW4UDG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LAYLA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000860"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 15,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC026",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (InEligible)",
+  "name": "Eligibility API timeout -> agent escalation",
+  "pnr": "7VUE9T",
+  "pnr_id": "7VUE9T-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OWEN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000870"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: API timeout",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC027",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "Third-party OTA disrupted booking -> blocked",
+  "pnr": "ZWGD7N",
+  "pnr_id": "ZWGD7N-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "RILEY",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000880"
+  },
+  "src": "OTA",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC028",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (InEligible)",
+  "name": "Checked baggage blocks self-service before change",
+  "pnr": "LVWX8C",
+  "pnr_id": "LVWX8C-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "GABRIEL",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000890"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": "loaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "Self-Serve Check 1 detects checked bag -> block",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC029",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary Eligible",
+  "name": "Mid-journey: seg1 flown, connecting seg cancelled, bag -> airport agent",
+  "pnr": "JQFNGY",
+  "pnr_id": "JQFNGY-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NORA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000900"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": "loaded",
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": false,
+  "chatbot": "seg1 YYZ->YUL flown; seg2 YUL->LHR cancelled; checked bag -> airport baggage agent",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC030",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "PETC SSR booking -> agent",
+  "pnr": "DQNAP4",
+  "pnr_id": "DQNAP4-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "JULIAN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "PETC"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000910"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC031",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "Upgrade booking (UPGD/UPGO) -> manual handling",
+  "pnr": "5QYEFB",
+  "pnr_id": "5QYEFB-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "HAZEL",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "UPGD"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000920"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC032",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "Aeroplan redemption -> Manage My Booking",
+  "pnr": "CMXGBJ",
+  "pnr_id": "CMXGBJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LEO",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000930"
+  },
+  "src": "AEROPLAN",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC033",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "ACV request -> ACV Contact Us redirect at entry",
+  "pnr": "U5N63Z",
+  "pnr_id": "U5N63Z-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AURORA",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000940"
+  },
+  "src": "AC_VACATIONS",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC034",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "AC Cargo request -> Contact Us redirect at entry",
+  "pnr": "6XHFM2",
+  "pnr_id": "6XHFM2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISAAC",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000950"
+  },
+  "src": "AC_CARGO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "AC Cargo context redirect",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC035",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible)",
+  "name": "Group booking (GRPS SSR) -> blocked",
+  "pnr": "9RGBFW",
+  "pnr_id": "9RGBFW-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SAVANNAH",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "GRPS"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000960"
+  },
+  "src": "GROUP",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC036",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (SPML)",
+  "name": "SPML/VGML special meal -> blocked, routes to agent",
+  "pnr": "SE3S5F",
+  "pnr_id": "SE3S5F-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LINCOLN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "VGML"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000970"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC037",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (KSML)",
+  "name": "KSML kosher meal -> blocked",
+  "pnr": "853PEA",
+  "pnr_id": "853PEA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "JFK",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "JFK",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BROOKLYN",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "KSML"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000980"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC038",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (DBML)",
+  "name": "DBML diabetic meal -> blocked",
+  "pnr": "YULK9G",
+  "pnr_id": "YULK9G-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LAX",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "LAX",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ANTHONY",
+    "last": "BRENNAC",
+    "ptype": "ADT",
+    "ssr": [
+     "DBML"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821000990"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC039",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (InEligible ETS)",
+  "name": "ETS (Employee Travel) booking -> blocked",
+  "pnr": "9MVBXQ",
+  "pnr_id": "9MVBXQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YOW",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YOW",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "OLIVIA",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001000"
+  },
+  "src": "ETS",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC040",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (Error)",
+  "name": "Confirm Alternate Offer API fails twice -> agent",
+  "pnr": "GMIZGC",
+  "pnr_id": "GMIZGC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "LIAM",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001010"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 200,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: confirm API failure",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC041",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible UMNR)",
+  "name": "UMNR (unaccompanied minor) SSR -> agent",
+  "pnr": "ZS86WT",
+  "pnr_id": "ZS86WT-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "YYC",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YVR",
+    "d": "YYC",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "EMMA",
+    "last": "CALDWYN",
+    "ptype": "CHD",
+    "ssr": [
+     "UMNR"
+    ],
+    "dob": "2016-07-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001020"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC042",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible IT/BT)",
+  "name": "IT/BT (industry/bulk) fare -> blocked",
+  "pnr": "6TG3J2",
+  "pnr_id": "6TG3J2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "NOAH",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001030"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ITBT",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC043",
+  "flow": "invol",
+  "pri": "P1",
+  "feat": "Involuntary (InEligible Non-1A GDS)",
+  "name": "Non-Amadeus GDS (Sabre 1S), GDSSelfReacc=N -> blocked",
+  "pnr": "YW4P6I",
+  "pnr_id": "YW4P6I-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "AVA",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001040"
+  },
+  "src": "OTA",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ITBT",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "booking source 1S / GDSSelfReacc=N",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC044",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (InEligible Basic)",
+  "name": "Basic fare disrupted booking",
+  "pnr": "EYGEQD",
+  "pnr_id": "EYGEQD-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "WILLIAM",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001050"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "BASIC",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC045",
+  "flow": "invol",
+  "pri": "P2",
+  "feat": "Involuntary (System)",
+  "name": "Service downtime before disclaimer -> downtime message",
+  "pnr": "F5BJJS",
+  "pnr_id": "F5BJJS-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "SOPHIA",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001060"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 120,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "ENVIRONMENTAL: service error API",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "InVOL_TC046",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Involuntary (InEligible AVIH)",
+  "name": "AVIH (animal in hold) SSR -> agent",
+  "pnr": "ZNNWZQ",
+  "pnr_id": "ZNNWZQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YVR",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "BENJAMIN",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [
+     "AVIH"
+    ],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001070"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ },
+ {
+  "tc": "Booking Change_SeatChange_TC047",
+  "flow": "invol",
+  "pri": "P3",
+  "feat": "Disruption",
+  "name": "Eligible disrupted flight seat change (TK status)",
+  "pnr": "HX7SCS",
+  "pnr_id": "HX7SCS-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T13:45:07Z",
+  "segs": [
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "UN",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   },
+   {
+    "op": "AC",
+    "mkt": "AC",
+    "bound": 1,
+    "o": "YYZ",
+    "d": "YUL",
+    "dep": "INV5",
+    "status": "HK",
+    "coupon": "OPEN",
+    "dep_iso": "2026-07-28T13:45:07Z"
+   }
+  ],
+  "paxs": [
+   {
+    "first": "ISABELLA",
+    "last": "CALDWYN",
+    "ptype": "ADT",
+    "ssr": [],
+    "dob": "1986-04-23"
+   }
+  ],
+  "npax": 1,
+  "tickets": {
+   "0": "0143821001080"
+  },
+  "src": "ACO",
+  "bound": 1,
+  "checkin": false,
+  "bag": null,
+  "fare": "ECO",
+  "cabin": "Y",
+  "seat": null,
+  "exp": null,
+  "delay": 150,
+  "rebooked": true,
+  "chatbot": "original AC870 cancelled, rebooked AC872, seat change",
+  "runtime": "",
+  "divergence": "",
+  "seed_pnr": true,
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "boundary": false,
+  "flight_expect": "future"
+ }
+]

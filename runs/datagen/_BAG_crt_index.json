@@ -1,0 +1,1367 @@
+[
+ {
+  "tc": "UAT_TC001",
+  "feat": "Delayed Bag within 21d, AC last carrier, AHL found -> Bag Recovery",
+  "loc": "BG1CLR",
+  "pnr_id": "BG1CLR-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC12345",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "LIAM",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000001",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC002",
+  "feat": "Delayed Bag past 21d -> End Flow",
+  "loc": "BGNH9E",
+  "pnr_id": "BGNH9E-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10007",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "NOAH",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000002",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC003",
+  "feat": "Delayed Bag, OAL last carrier -> Redirect",
+  "loc": "BGHJA3",
+  "pnr_id": "BGHJA3-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "FRA",
+    "AC",
+    "AC",
+    "870"
+   ],
+   [
+    "FRA",
+    "MUC",
+    "LH",
+    "LH",
+    "1234"
+   ]
+  ],
+  "ahl": "nobag",
+  "ref": "FRAAC10014",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "last carrier OAL",
+  "pax_names": [
+   [
+    "WILLIAM",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000003",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC004",
+  "feat": "Delayed Bag, OAL last carrier, dispute -> Manual",
+  "loc": "BGYKX2",
+  "pnr_id": "BGYKX2-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "FRA",
+    "AC",
+    "AC",
+    "870"
+   ],
+   [
+    "FRA",
+    "MUC",
+    "LH",
+    "LH",
+    "1234"
+   ]
+  ],
+  "ahl": "nobag",
+  "ref": "FRAAC10021",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute",
+  "note": "",
+  "pax_names": [
+   [
+    "BENJAMIN",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000004",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC005",
+  "feat": "Delayed Bag within 21d, no AHL -> Redirect to creation",
+  "loc": "BGW9U7",
+  "pnr_id": "BGW9U7-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "nobag",
+  "ref": "YYZAC10028",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "LUCAS",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000005",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC006",
+  "feat": "Delayed Bag no AHL, dispute -> Manual",
+  "loc": "BGJ379",
+  "pnr_id": "BGJ379-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "nobag",
+  "ref": "YYZAC10035",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute",
+  "note": "",
+  "pax_names": [
+   [
+    "HENRY",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000006",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC007",
+  "feat": "Delayed Bag exactly day 21 -> Accepted",
+  "loc": "BGN92V",
+  "pnr_id": "BGN92V-2026-06-19",
+  "date": "2026-06-19",
+  "off": -21,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10042",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "THEODORE",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000007",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC008",
+  "feat": "Lost Bag Content <SDR single pax Canada Interac -> Payment",
+  "loc": "BGBGOL",
+  "pnr_id": "BGBGOL-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10049",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "Canada/Interac/<SDR",
+  "note": "",
+  "pax_names": [
+   [
+    "JACK",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000008",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC009",
+  "feat": "Lost Bag Content item >$300 proof -> Manual",
+  "loc": "BGOJRJ",
+  "pnr_id": "BGOJRJ-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10056",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "item>$300",
+  "note": "",
+  "pax_names": [
+   [
+    "OLIVER",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000009",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC010",
+  "feat": "Lost Bag duplicate claim -> Blocked",
+  "loc": "BGPB4P",
+  "pnr_id": "BGPB4P-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10063",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "duplicate(prior claim not seedable)",
+  "note": "",
+  "pax_names": [
+   [
+    "JAMES",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000010",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC011",
+  "feat": "Lost Bag but delivered -> Not eligible",
+  "loc": "BGXCBF",
+  "pnr_id": "BGXCBF-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "delivered",
+  "ref": "YYZAC10070",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "ETHAN",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000011",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC012",
+  "feat": "Lost Bag report >51d -> End Flow",
+  "loc": "BG7YTV",
+  "pnr_id": "BG7YTV-2026-05-15",
+  "date": "2026-05-15",
+  "off": -56,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10077",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "ALEXANDER",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000012",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC013",
+  "feat": "Lost Bag item>$300 invalid proof retry -> Manual",
+  "loc": "BGLUTM",
+  "pnr_id": "BGLUTM-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10084",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "item>$300/proof",
+  "note": "",
+  "pax_names": [
+   [
+    "DANIEL",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000013",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC014",
+  "feat": "Lost Bag multi-pax same AHL all<$300 -> Automated",
+  "loc": "BGMAQ5",
+  "pnr_id": "BGMAQ5-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 2,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10091",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "MATTHEW",
+    "OSBORNE"
+   ],
+   [
+    "VICTORIA",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000014",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC015",
+  "feat": "Content+Interim >SDR US bank transfer -> Capped",
+  "loc": "BG6MSG",
+  "pnr_id": "BG6MSG-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10098",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "US/combined>SDR",
+  "note": "",
+  "pax_names": [
+   [
+    "GRACE",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000015",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC016",
+  "feat": "Lost Bag life-event keywords -> Disclaimer -> Automated",
+  "loc": "BG7E4E",
+  "pnr_id": "BG7E4E-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10105",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "life-event kw",
+  "note": "",
+  "pax_names": [
+   [
+    "CHLOE",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000016",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC017",
+  "feat": "Interim Expenses within 21d Nigeria EFT -> Payment",
+  "loc": "BGVQBP",
+  "pnr_id": "BGVQBP-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10112",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "Nigeria/EFT/non-Aeroplan",
+  "note": "",
+  "pax_names": [
+   [
+    "PENELOPE",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000017",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC018",
+  "feat": "Interim past 21d dispute -> Manual",
+  "loc": "BGZKU6",
+  "pnr_id": "BGZKU6-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10119",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute",
+  "note": "",
+  "pax_names": [
+   [
+    "LAYLA",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000018",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC019",
+  "feat": "Interim non-essential rejected -> Partial",
+  "loc": "BGESAG",
+  "pnr_id": "BGESAG-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10126",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "non-essential items",
+  "note": "",
+  "pax_names": [
+   [
+    "RILEY",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000019",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC020",
+  "feat": "Live Tracking single bag -> Real-time status",
+  "loc": "BGCUYA",
+  "pnr_id": "BGCUYA-2026-07-12",
+  "date": "2026-07-12",
+  "off": 2,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "track",
+  "ref": "YYZAC10133",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "OLIVIA",
+    "OSBORNE"
+   ]
+  ],
+  "ticket": "014380000020",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC021",
+  "feat": "Live Tracking multiple bags -> Status cards",
+  "loc": "BG00I8",
+  "pnr_id": "BG00I8-2026-07-12",
+  "date": "2026-07-12",
+  "off": 2,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YUL",
+    "AC",
+    "AC",
+    "456"
+   ],
+   [
+    "YUL",
+    "YVR",
+    "AC",
+    "AC",
+    "789"
+   ]
+  ],
+  "ahl": "track",
+  "ref": "YULAC10140",
+  "extra_refs": [],
+  "nbag": 2,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "EMMA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000021",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC022",
+  "feat": "Live Tracking no record dispute -> Manual",
+  "loc": "BGCN4L",
+  "pnr_id": "BGCN4L-2026-07-12",
+  "date": "2026-07-12",
+  "off": 2,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "track_none",
+  "ref": "YYZAC10147",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute",
+  "note": "",
+  "pax_names": [
+   [
+    "AVA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000022",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC023",
+  "feat": "Live Tracking expired -> End",
+  "loc": "BG2RIZ",
+  "pnr_id": "BG2RIZ-2026-06-10",
+  "date": "2026-06-10",
+  "off": -30,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "track_expired",
+  "ref": "YYZAC10154",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "SOPHIA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000023",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC024",
+  "feat": "Baggage service unavailable -> End",
+  "loc": "BGCT81",
+  "pnr_id": "BGCT81-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10161",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "service downtime (env)",
+  "note": "",
+  "pax_names": [
+   [
+    "ISABELLA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000024",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC025",
+  "feat": "Other airline responsible -> Redirect",
+  "loc": "BGKLSP",
+  "pnr_id": "BGKLSP-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "LAX",
+    "UA",
+    "UA",
+    "456"
+   ]
+  ],
+  "ahl": "nobag",
+  "ref": "YYZAC10168",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "responsible airline OAL (booking-level)",
+  "pax_names": [
+   [
+    "MIA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000025",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC026",
+  "feat": "Bag content dispute -> Manual",
+  "loc": "BGRT4K",
+  "pnr_id": "BGRT4K-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10175",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute amount",
+  "note": "",
+  "pax_names": [
+   [
+    "CHARLOTTE",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000026",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC027",
+  "feat": "Interim expense dispute -> Manual",
+  "loc": "BGIE5C",
+  "pnr_id": "BGIE5C-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10182",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute rejected items",
+  "note": "",
+  "pax_names": [
+   [
+    "AMELIA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000027",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC028",
+  "feat": "Combined claim disputes both -> Manual",
+  "loc": "BGMJJ4",
+  "pnr_id": "BGMJJ4-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10189",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "dispute both",
+  "note": "",
+  "pax_names": [
+   [
+    "HARPER",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000028",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC029",
+  "feat": "Content exceeds SDR items>$300 -> Manual",
+  "loc": "BGI7ZN",
+  "pnr_id": "BGI7ZN-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10196",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "content>SDR/item>$300",
+  "note": "",
+  "pax_names": [
+   [
+    "EVELYN",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000029",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC030",
+  "feat": "Check Delivery Status -> Redirect to Live Tracking",
+  "loc": "BG6QLV",
+  "pnr_id": "BG6QLV-2026-07-12",
+  "date": "2026-07-12",
+  "off": 2,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "track",
+  "ref": "YYZAC10203",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "ABIGAIL",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000030",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC031",
+  "feat": "FD cheque France not supported -> Bank transfer",
+  "loc": "BGUFG3",
+  "pnr_id": "BGUFG3-2026-07-07",
+  "date": "2026-07-07",
+  "off": -3,
+  "npax": 1,
+  "route": [
+   [
+    "YUL",
+    "LHR",
+    "AC",
+    "AC",
+    "100"
+   ]
+  ],
+  "ahl": "fd",
+  "ref": "YULAC10210",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "France",
+  "note": "",
+  "pax_names": [
+   [
+    "EMILY",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000031",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC032",
+  "feat": "FD cheque Canada no Interac -> Automated",
+  "loc": "BGN3JF",
+  "pnr_id": "BGN3JF-2026-07-07",
+  "date": "2026-07-07",
+  "off": -3,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "fd",
+  "ref": "YYZAC10217",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "Canada/no-Interac",
+  "note": "",
+  "pax_names": [
+   [
+    "ELIZABETH",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000032",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC033",
+  "feat": "AHL closed -> End Flow",
+  "loc": "BGJK4O",
+  "pnr_id": "BGJK4O-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "closed",
+  "ref": "YYZAC10224",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "SOFIA",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000033",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC034",
+  "feat": "Interim multi-pax same last name same AHL -> Automated",
+  "loc": "BG7350",
+  "pnr_id": "BG7350-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 3,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC10231",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "VICTORIA",
+    "WHITFIELD"
+   ],
+   [
+    "JOSEPH",
+    "WHITFIELD"
+   ],
+   [
+    "GRACE",
+    "WHITFIELD"
+   ]
+  ],
+  "ticket": "014380000034",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC035",
+  "feat": "Interim multi-pax diff last names 2 AHLs -> Automated",
+  "loc": "BGIGN3",
+  "pnr_id": "BGIGN3-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 2,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC11111",
+  "extra_refs": [
+   "YYZAC22222"
+  ],
+  "nbag": 1,
+  "samelast": false,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "SAMUEL",
+    "WHITFIELD"
+   ],
+   [
+    "OLIVIA",
+    "LANGDON"
+   ]
+  ],
+  "ticket": "014380000035",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC036",
+  "feat": "Delayed>21d bag delivered, interim only -> Manual",
+  "loc": "BG9U7R",
+  "pnr_id": "BG9U7R-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "delivered",
+  "ref": "YYZAC36036",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "EMMA",
+    "LANGDON"
+   ]
+  ],
+  "ticket": "014380000036",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC037",
+  "feat": "Content alone exceeds SDR -> Interim not allowed",
+  "loc": "BG24BR",
+  "pnr_id": "BG24BR-2026-06-12",
+  "date": "2026-06-12",
+  "off": -28,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC37037",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": "content>SDR",
+  "note": "",
+  "pax_names": [
+   [
+    "AVA",
+    "LANGDON"
+   ]
+  ],
+  "ticket": "014380000037",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC038",
+  "feat": "Lost Bag >51d interim -> End Flow",
+  "loc": "BGISHL",
+  "pnr_id": "BGISHL-2026-05-15",
+  "date": "2026-05-15",
+  "off": -56,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "open",
+  "ref": "YYZAC38038",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "SOPHIA",
+    "LANGDON"
+   ]
+  ],
+  "ticket": "014380000038",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "UAT_TC039",
+  "feat": "Short delay 1h20m AHL delivered RDS flag -> Manual",
+  "loc": "BGSVTK",
+  "pnr_id": "BGSVTK-2026-06-30",
+  "date": "2026-06-30",
+  "off": -10,
+  "npax": 1,
+  "route": [
+   [
+    "YYZ",
+    "YVR",
+    "AC",
+    "AC",
+    "456"
+   ]
+  ],
+  "ahl": "rds_short",
+  "ref": "YYZAC39039",
+  "extra_refs": [],
+  "nbag": 1,
+  "samelast": true,
+  "indep": null,
+  "note": "",
+  "pax_names": [
+   [
+    "ISABELLA",
+    "LANGDON"
+   ]
+  ],
+  "ticket": "014380000039",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ }
+]

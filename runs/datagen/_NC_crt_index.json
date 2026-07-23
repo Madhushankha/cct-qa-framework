@@ -1,0 +1,2829 @@
+[
+ {
+  "tc": "NameCorrection_TC001",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "W1 single 0-doc nickname (NCHAP1)",
+  "pnr": "T7FLVA",
+  "pnr_id": "T7FLVA-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "MIRABEL",
+    "OAKHURST",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000000,
+  "ticket": "0143819000000",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "T7FLVA"
+ },
+ {
+  "tc": "NameCorrection_TC002",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "W2 multi-pax 1-doc Persona (NCW2C2)",
+  "pnr": "WEBRBP",
+  "pnr_id": "WEBRBP-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "OSCAR",
+    "OAKHURST",
+    "ADT"
+   ],
+   [
+    "LOUISA",
+    "OAKHURST",
+    "ADT"
+   ],
+   [
+    "NADIA",
+    "OAKHURST",
+    "ADT"
+   ],
+   [
+    "FERDINAND",
+    "OAKHURST",
+    "ADT"
+   ]
+  ],
+  "npax": 4,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000010,
+  "ticket": "0143819000010",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "WEBRBP"
+ },
+ {
+  "tc": "NameCorrection_TC003",
+  "pri": "P1",
+  "feat": "Happy",
+  "name": "W2 single 2-doc legal/marital (NCLGL1)",
+  "pnr": "QA1RJ6",
+  "pnr_id": "QA1RJ6-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "GWENDOLYN",
+    "OAKHURST",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000020,
+  "ticket": "0143819000020",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QA1RJ6"
+ },
+ {
+  "tc": "NameCorrection_TC004",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "W1 single 0-doc first-name typo",
+  "pnr": "LZLJDA",
+  "pnr_id": "LZLJDA-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "FIONA",
+    "OAKHURST",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000030,
+  "ticket": "0143819000030",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "LZLJDA"
+ },
+ {
+  "tc": "NameCorrection_TC005",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "W2 single passport upload",
+  "pnr": "UPOBYJ",
+  "pnr_id": "UPOBYJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "VICTOR",
+    "OAKHURST",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000040,
+  "ticket": "0143819000040",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "UPOBYJ"
+ },
+ {
+  "tc": "NameCorrection_TC018",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "Middle name correction, no docs",
+  "pnr": "VIKYMS",
+  "pnr_id": "VIKYMS-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "HAROLD",
+    "DEAN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000050,
+  "ticket": "0143819000050",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "VIKYMS"
+ },
+ {
+  "tc": "NameCorrection_TC019",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "Multi-pax, second passenger selected",
+  "pnr": "UQN1PF",
+  "pnr_id": "UQN1PF-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "BRIGITTE",
+    "LOUIS",
+    "ADT"
+   ],
+   [
+    "CEDRIC",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 2,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000060,
+  "ticket": "0143819000060",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "UQN1PF"
+ },
+ {
+  "tc": "NameCorrection_TC023",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "Passport upload validation success",
+  "pnr": "T4OEO3",
+  "pnr_id": "T4OEO3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "JOSEPHINE",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000070,
+  "ticket": "0143819000070",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "T4OEO3"
+ },
+ {
+  "tc": "NameCorrection_TC025",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "Successful retry after Persona fail",
+  "pnr": "QE0A38",
+  "pnr_id": "QE0A38-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "WILHELM",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000080,
+  "ticket": "0143819000080",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QE0A38"
+ },
+ {
+  "tc": "NameCorrection_TC027",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "W1 last-name typo, no docs",
+  "pnr": "RUVU8B",
+  "pnr_id": "RUVU8B-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "ADRIAN",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000090,
+  "ticket": "0143819000090",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "RUVU8B"
+ },
+ {
+  "tc": "NameCorrection_TC057",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "0-doc typo/nickname, Persona skipped",
+  "pnr": "OZDME7",
+  "pnr_id": "OZDME7-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "DELIA",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000100,
+  "ticket": "0143819000100",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "OZDME7"
+ },
+ {
+  "tc": "NameCorrection_TC058",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "1 supporting document required",
+  "pnr": "B8H42F",
+  "pnr_id": "B8H42F-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "OTTILIE",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000110,
+  "ticket": "0143819000110",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "B8H42F"
+ },
+ {
+  "tc": "NameCorrection_TC059",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "2 supporting documents required",
+  "pnr": "BL19ES",
+  "pnr_id": "BL19ES-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "HORACE",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000120,
+  "ticket": "0143819000120",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "BL19ES"
+ },
+ {
+  "tc": "NameCorrection_TC065",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "1-doc first attempt fail then success",
+  "pnr": "Z5F6A4",
+  "pnr_id": "Z5F6A4-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "DIANA",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000130,
+  "ticket": "0143819000130",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "Z5F6A4"
+ },
+ {
+  "tc": "NameCorrection_TC066",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "2-doc both pass first attempt",
+  "pnr": "O807RZ",
+  "pnr_id": "O807RZ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "LOUISA",
+    "LOUIS",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000140,
+  "ticket": "0143819000140",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "O807RZ"
+ },
+ {
+  "tc": "SeatChange_TC049",
+  "pri": "P3",
+  "feat": "Happy",
+  "name": "Slight misspelling passes identification (XYZ789)",
+  "pnr": "LFA7ZH",
+  "pnr_id": "LFA7ZH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "TAREQ",
+    "JABER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000150,
+  "ticket": "0143819000150",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "LFA7ZH"
+ },
+ {
+  "tc": "NameCorrection_TC007",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Young Passenger (YP) blocked",
+  "pnr": "FA35LV",
+  "pnr_id": "FA35LV-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "GWENDOLYN",
+    "ALAWI",
+    "YTH"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-05",
+  "chatbot": "rulePassengerType fail (isYouth)",
+  "tbase": 9000160,
+  "ticket": "0143819000160",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "FA35LV"
+ },
+ {
+  "tc": "NameCorrection_TC008",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Unaccompanied Minor (UM) blocked",
+  "pnr": "KKJ4OL",
+  "pnr_id": "KKJ4OL-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "OTTILIE",
+    "ALAWI",
+    "CHD",
+    {
+     "ssr": [
+      "UMNR"
+     ]
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-05",
+  "chatbot": "rulePassengerType fail (isUmnr)",
+  "tbase": 9000170,
+  "ticket": "0143819000170",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "KKJ4OL"
+ },
+ {
+  "tc": "NameCorrection_TC015",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Booking outside supported correction window",
+  "pnr": "LXXVE2",
+  "pnr_id": "LXXVE2-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-07-22",
+  "departed": true,
+  "dep_iso": "2026-07-22T07:44:37Z",
+  "window": "DEP",
+  "paxs": [
+   [
+    "HUMPHREY",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "exp_reason": "NC-NE-04",
+  "chatbot": "",
+  "tbase": 9000180,
+  "ticket": "0143819000180",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "LXXVE2"
+ },
+ {
+  "tc": "NameCorrection_TC020",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Unsupported booking channel (OTA)",
+  "pnr": "UBETT8",
+  "pnr_id": "UBETT8-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "RAFAEL",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "OTA",
+  "office": "OTAXX001",
+  "system": "1B",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "",
+  "tbase": 9000190,
+  "ticket": "0143819000190",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "UBETT8"
+ },
+ {
+  "tc": "NameCorrection_TC029",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Air Canada Vacations -> ACV live agent (NCVAC1)",
+  "pnr": "BLYVFS",
+  "pnr_id": "BLYVFS-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "CASIMIR",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_VACATIONS",
+  "office": "YULAC011V",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "ACV -> Live Agent (ACV queue)",
+  "tbase": 9000200,
+  "ticket": "0143819000200",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "BLYVFS"
+ },
+ {
+  "tc": "NameCorrection_TC030",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Full OAL/Star -> End (NCOAL1)",
+  "pnr": "C9JHCI",
+  "pnr_id": "C9JHCI-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "YVETTE",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "LH",
+    "LH"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-01",
+  "chatbot": "Full non-AC -> End Flow",
+  "tbase": 9000210,
+  "ticket": "0143819000210",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "C9JHCI"
+ },
+ {
+  "tc": "NameCorrection_TC031",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Mixed AC+OAL -> live agent (NCPRT1)",
+  "pnr": "XAEV1U",
+  "pnr_id": "XAEV1U-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "GAVIN",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ],
+   [
+    "LH",
+    "LH"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-01",
+  "chatbot": "Partial non-AC -> Live Agent",
+  "tbase": 9000220,
+  "ticket": "0143819000220",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "XAEV1U"
+ },
+ {
+  "tc": "NameCorrection_TC032",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Group PNR -> Group Travel Desk (NCGRP1)",
+  "pnr": "OZTYKC",
+  "pnr_id": "OZTYKC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "XAVIER",
+    "ALAWI",
+    "ADT"
+   ],
+   [
+    "VERONIKA",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 2,
+  "src": "GROUP",
+  "office": "GC1AC010",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": true,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "Group -> Group Travel Desk",
+  "tbase": 9000230,
+  "ticket": "0143819000230",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "OZTYKC"
+ },
+ {
+  "tc": "NameCorrection_TC033",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "AC Cargo booking blocked (NCCGO1)",
+  "pnr": "KT2394",
+  "pnr_id": "KT2394-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "YASMIN",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_CARGO",
+  "office": "YULCG001",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "",
+  "tbase": 9000240,
+  "ticket": "0143819000240",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "KT2394"
+ },
+ {
+  "tc": "NameCorrection_TC051",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Aeroplan channel -> LAH",
+  "pnr": "FVKKRZ",
+  "pnr_id": "FVKKRZ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "PAOLA",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AEROPLAN",
+  "office": "YULAP001",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "Aeroplan channel -> Live Agent",
+  "tbase": 9000250,
+  "ticket": "0143819000250",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "FVKKRZ"
+ },
+ {
+  "tc": "NameCorrection_TC052",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Employee travel program blocked (OID ES/EP/OT/EC)",
+  "pnr": "C3VW3A",
+  "pnr_id": "C3VW3A-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "IMOGEN",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "EMPLOYEE",
+  "office": "ESYUL001",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "",
+  "tbase": 9000260,
+  "ticket": "0143819000260",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "C3VW3A"
+ },
+ {
+  "tc": "NameCorrection_TC053",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Flight Pass program blocked (OID FP)",
+  "pnr": "VIK7AH",
+  "pnr_id": "VIK7AH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "ZACHARY",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "FLIGHT_PASS",
+  "office": "YULAC01FP",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "",
+  "tbase": 9000270,
+  "ticket": "0143819000270",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "VIK7AH"
+ },
+ {
+  "tc": "NameCorrection_TC054",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Non-1A GDS blocked (OID 1B/1E/.../1S)",
+  "pnr": "RRZHPC",
+  "pnr_id": "RRZHPC-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "HORACE",
+    "ALAWI",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "GDS",
+  "office": "1SGSAB21",
+  "system": "1S",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-03",
+  "chatbot": "",
+  "tbase": 9000280,
+  "ticket": "0143819000280",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "RRZHPC"
+ },
+ {
+  "tc": "NameCorrection_TC010",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Persona validation failure",
+  "pnr": "EV3RVH",
+  "pnr_id": "EV3RVH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "PERCIVAL",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: Persona returns fail",
+  "tbase": 9000290,
+  "ticket": "0143819000290",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "EV3RVH"
+ },
+ {
+  "tc": "NameCorrection_TC011",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "OTP authentication failure",
+  "pnr": "XTEZAN",
+  "pnr_id": "XTEZAN-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "ELENA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: wrong OTP",
+  "tbase": 9000300,
+  "ticket": "0143819000300",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "XTEZAN"
+ },
+ {
+  "tc": "NameCorrection_TC013",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Incorrect surname during identification",
+  "pnr": "C05MWD",
+  "pnr_id": "C05MWD-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "NADIA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: tester enters wrong surname",
+  "tbase": 9000310,
+  "ticket": "0143819000310",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "C05MWD"
+ },
+ {
+  "tc": "NameCorrection_TC014",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Persona upload abandoned",
+  "pnr": "IEUXLD",
+  "pnr_id": "IEUXLD-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "WESLEY",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: user abandons Persona",
+  "tbase": 9000320,
+  "ticket": "0143819000320",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "IEUXLD"
+ },
+ {
+  "tc": "NameCorrection_TC016",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Bedrock cannot classify correction",
+  "pnr": "BLINSA",
+  "pnr_id": "BLINSA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "JOSEPHINE",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: ambiguous correction",
+  "tbase": 9000330,
+  "ticket": "0143819000330",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "BLINSA"
+ },
+ {
+  "tc": "NameCorrection_TC017",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Amadeus update failure after validation",
+  "pnr": "VVHWF8",
+  "pnr_id": "VVHWF8-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "BARNABY",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: Amadeus update fails",
+  "tbase": 9000340,
+  "ticket": "0143819000340",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "VVHWF8"
+ },
+ {
+  "tc": "NameCorrection_TC021",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "OTP expired before submission",
+  "pnr": "D91KU3",
+  "pnr_id": "D91KU3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "THEO",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: OTP expiry",
+  "tbase": 9000350,
+  "ticket": "0143819000350",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "D91KU3"
+ },
+ {
+  "tc": "NameCorrection_TC022",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Persona service unavailable",
+  "pnr": "G8U03U",
+  "pnr_id": "G8U03U-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "VALERIE",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: Persona 5xx",
+  "tbase": 9000360,
+  "ticket": "0143819000360",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "G8U03U"
+ },
+ {
+  "tc": "NameCorrection_TC024",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "Invalid government-issued ID uploaded",
+  "pnr": "ZZOKVI",
+  "pnr_id": "ZZOKVI-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "SIENNA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: invalid ID",
+  "tbase": 9000370,
+  "ticket": "0143819000370",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "ZZOKVI"
+ },
+ {
+  "tc": "NameCorrection_TC026",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "State machine processing timeout",
+  "pnr": "YE9GDH",
+  "pnr_id": "YE9GDH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "URSULA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: >2h timeout",
+  "tbase": 9000380,
+  "ticket": "0143819000380",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "YE9GDH"
+ },
+ {
+  "tc": "NameCorrection_TC028",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "User declines final confirmation",
+  "pnr": "OKKWKJ",
+  "pnr_id": "OKKWKJ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "VERONIKA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: user cancels",
+  "tbase": 9000390,
+  "ticket": "0143819000390",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "OKKWKJ"
+ },
+ {
+  "tc": "NameCorrection_TC060",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "0-doc, Amadeus fails -> live agent",
+  "pnr": "GMO8XO",
+  "pnr_id": "GMO8XO-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W1",
+  "paxs": [
+   [
+    "BIANCA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: 0-doc then Amadeus fail",
+  "tbase": 9000400,
+  "ticket": "0143819000400",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "GMO8XO"
+ },
+ {
+  "tc": "NameCorrection_TC061",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "1-doc Persona fail 3x -> email",
+  "pnr": "ROM6R9",
+  "pnr_id": "ROM6R9-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "ULRICH",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: 3x Persona fail -> namecorrectiondenom@aircanada.ca",
+  "tbase": 9000410,
+  "ticket": "0143819000410",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "ROM6R9"
+ },
+ {
+  "tc": "NameCorrection_TC062",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "2-doc, doc2 fails 3x -> live agent",
+  "pnr": "B5VG2W",
+  "pnr_id": "B5VG2W-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "NIKOLAI",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: doc2 3x fail",
+  "tbase": 9000420,
+  "ticket": "0143819000420",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "B5VG2W"
+ },
+ {
+  "tc": "NameCorrection_TC063",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "1-doc dispute -> live agent",
+  "pnr": "SKNXZH",
+  "pnr_id": "SKNXZH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "OTTILIE",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: user disputes doc requirement",
+  "tbase": 9000430,
+  "ticket": "0143819000430",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "SKNXZH"
+ },
+ {
+  "tc": "NameCorrection_TC064",
+  "pri": "P2",
+  "feat": "Failure",
+  "name": "2-doc dispute -> live agent",
+  "pnr": "OBQ79V",
+  "pnr_id": "OBQ79V-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "YOLANDA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: user disputes docs",
+  "tbase": 9000440,
+  "ticket": "0143819000440",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "OBQ79V"
+ },
+ {
+  "tc": "NameCorrection_TC006",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Previous correction already exists",
+  "pnr": "EF85WG",
+  "pnr_id": "EF85WG-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "GAVIN",
+    "NASSER",
+    "ADT",
+    {
+     "corrected": true
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "prior-correction: DBaaS/chatbot blocks (endpoint EL)",
+  "tbase": 9000450,
+  "ticket": "0143819000450",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "EF85WG"
+ },
+ {
+  "tc": "NameCorrection_TC009",
+  "pri": "P2",
+  "feat": "Ineligible",
+  "name": "Aeroplan-linked booking blocked",
+  "pnr": "I8R8NP",
+  "pnr_id": "I8R8NP-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "BEATRICE",
+    "NASSER",
+    "ADT",
+    {
+     "loyalty": true
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "Aeroplan-linked -> Live Agent (endpoint EL)",
+  "tbase": 9000460,
+  "ticket": "0143819000460",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "I8R8NP"
+ },
+ {
+  "tc": "NameCorrection_TC034",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Checked-in pax -> live agent (W2)",
+  "pnr": "RC0OXK",
+  "pnr_id": "RC0OXK-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "PAOLA",
+    "NASSER",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "checked-in -> Live Agent (endpoint EL)",
+  "tbase": 9000470,
+  "ticket": "0143819000470",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "RC0OXK"
+ },
+ {
+  "tc": "NameCorrection_TC035",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Infant eligible under same rules",
+  "pnr": "YMB8FM",
+  "pnr_id": "YMB8FM-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "LEILA",
+    "SESAY",
+    "ADT"
+   ],
+   [
+    "INFANT",
+    "SESAY",
+    "INF"
+   ]
+  ],
+  "npax": 2,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "infant eligible",
+  "tbase": 9000480,
+  "ticket": "0143819000480",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "YMB8FM"
+ },
+ {
+  "tc": "NameCorrection_TC036",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Romanized Chinese name, 1 doc via email",
+  "pnr": "L93FMQ",
+  "pnr_id": "L93FMQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "MEI",
+    "ZHAO",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "romanized -> 1 doc via email",
+  "tbase": 9000490,
+  "ticket": "0143819000490",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "L93FMQ"
+ },
+ {
+  "tc": "NameCorrection_TC037",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Handwritten doc -> manual review",
+  "pnr": "B8QVGO",
+  "pnr_id": "B8QVGO-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "SIENNA",
+    "ZHANG",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "handwritten -> manual review",
+  "tbase": 9000500,
+  "ticket": "0143819000500",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "B8QVGO"
+ },
+ {
+  "tc": "NameCorrection_TC038",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Special chars in name (Jose Garcia)",
+  "pnr": "RTKRUQ",
+  "pnr_id": "RTKRUQ-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "SOREN",
+    "NADEAU",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "special chars scrubbed in Persona",
+  "tbase": 9000510,
+  "ticket": "0143819000510",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "RTKRUQ"
+ },
+ {
+  "tc": "NameCorrection_TC039",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "EXST/CBBG SSR -> live agent",
+  "pnr": "VCAHYA",
+  "pnr_id": "VCAHYA-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "ZANE",
+    "LEVESQUE",
+    "ADT",
+    {
+     "ssr": [
+      "EXST"
+     ]
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "EXST/CBBG -> Live Agent (endpoint EL)",
+  "tbase": 9000520,
+  "ticket": "0143819000520",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "VCAHYA"
+ },
+ {
+  "tc": "NameCorrection_TC040",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "First segment <24h -> live agent (NCW3S1)",
+  "pnr": "QV7WCH",
+  "pnr_id": "QV7WCH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-07-23",
+  "departed": false,
+  "dep_iso": "2026-07-23T21:44:37Z",
+  "window": "W3future",
+  "paxs": [
+   [
+    "OSCAR",
+    "LEVESQUE",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "exp_reason": "NC-NE-04",
+  "chatbot": "flight departs in ~8h -> Window 3 -> Live Agent. Service enforces (NC-NE-04).",
+  "tbase": 9000530,
+  "ticket": "0143819000530",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QV7WCH"
+ },
+ {
+  "tc": "NameCorrection_TC041",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "First segment departed -> live agent (NCDEP1)",
+  "pnr": "QMGN8A",
+  "pnr_id": "QMGN8A-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-07-22",
+  "departed": true,
+  "dep_iso": "2026-07-22T07:44:37Z",
+  "window": "DEP",
+  "paxs": [
+   [
+    "CORDELIA",
+    "LEVESQUE",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "OUT_OF_SCOPE",
+  "exp_reason": "NC-NE-04",
+  "chatbot": "departed -> Live Agent (Window 3)",
+  "tbase": 9000540,
+  "ticket": "0143819000540",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QMGN8A"
+ },
+ {
+  "tc": "NameCorrection_TC042",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Window 3 priority over Window 1 (NCBND3)",
+  "pnr": "W17HQ7",
+  "pnr_id": "W17HQ7-2026-07-23",
+  "booking_date": "2026-07-23",
+  "created": "2026-07-23T11:44:37Z",
+  "dep_date": "2026-07-23",
+  "departed": false,
+  "dep_iso": "2026-07-23T19:44:37Z",
+  "window": "W3overlap",
+  "paxs": [
+   [
+    "DIANA",
+    "LEVESQUE",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "DIVERGENCE: TC042 expects Window 3 to win, but booked 2h ago + flight in 6h -> service returns VOID/ELIGIBLE (Window 1 wins). W3-over-W1 priority is NOT enforced by the eligibility service; must be gated in the chatbot. Raise with product.",
+  "tbase": 9000550,
+  "ticket": "0143819000550",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "W17HQ7"
+ },
+ {
+  "tc": "NameCorrection_TC043",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Entirely different name (transfer) -> live agent",
+  "pnr": "CBMYTH",
+  "pnr_id": "CBMYTH-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "SETH",
+    "BENNETT",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "name-transfer detected at name capture -> Live Agent",
+  "tbase": 9000560,
+  "ticket": "0143819000560",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "CBMYTH"
+ },
+ {
+  "tc": "NameCorrection_TC044",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Already-corrected pax blocked in new session (NCDUP3)",
+  "pnr": "DMDCZ3",
+  "pnr_id": "DMDCZ3-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "KAMAL",
+    "TAYLOR",
+    "ADT",
+    {
+     "corrected": true
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "prior-correction: DBaaS/chatbot blocks (endpoint EL)",
+  "tbase": 9000570,
+  "ticket": "0143819000570",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "DMDCZ3"
+ },
+ {
+  "tc": "NameCorrection_TC045",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "All 4 pax corrected sequentially, 1 session (NCALL4)",
+  "pnr": "JSWAKM",
+  "pnr_id": "JSWAKM-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "SIENNA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "KATRINA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "HUMPHREY",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "JULIUS",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 4,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000580,
+  "ticket": "0143819000580",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "JSWAKM"
+ },
+ {
+  "tc": "NameCorrection_TC046",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Each pax in separate session (NCSEQ4)",
+  "pnr": "FS7L13",
+  "pnr_id": "FS7L13-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "NORA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "WESLEY",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "BARNABY",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "CONRAD",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 4,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000590,
+  "ticket": "0143819000590",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "FS7L13"
+ },
+ {
+  "tc": "NameCorrection_TC047",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "2 pax session 1, 2 pax session 2 (NCMIX4)",
+  "pnr": "QHXFOM",
+  "pnr_id": "QHXFOM-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "URSULA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "SEBASTIAN",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "THEO",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "IMOGEN",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 4,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000600,
+  "ticket": "0143819000600",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QHXFOM"
+ },
+ {
+  "tc": "NameCorrection_TC048",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "3 pax session 1, 4th in separate (NC3P1S)",
+  "pnr": "LZMUBK",
+  "pnr_id": "LZMUBK-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "EULALIA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "DELIA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "LOUISA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "ANNIKA",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 4,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000610,
+  "ticket": "0143819000610",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "LZMUBK"
+ },
+ {
+  "tc": "NameCorrection_TC049",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Different doc requirements per pax (NCDC31, xlsx: NCDOC31)",
+  "pnr": "LDHW7L",
+  "pnr_id": "LDHW7L-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "BIANCA",
+    "TAYLOR",
+    "ADT"
+   ],
+   [
+    "ROSALIE",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 2,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "",
+  "tbase": 9000620,
+  "ticket": "0143819000620",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "LDHW7L"
+ },
+ {
+  "tc": "NameCorrection_TC050",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Codeshare AC-operated, partner-marketed",
+  "pnr": "CPCP74",
+  "pnr_id": "CPCP74-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "BRIGITTE",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "LH"
+   ]
+  ],
+  "group": false,
+  "exp_elig": false,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-NE-01",
+  "chatbot": "DIVERGENCE: BRD expects eligible (AC-operated codeshare) but service fails carrier-mix on marketing carrier != AC",
+  "tbase": 9000630,
+  "ticket": "0143819000630",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "CPCP74"
+ },
+ {
+  "tc": "NameCorrection_TC055",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "First name corrected, last name still correctable",
+  "pnr": "QOK0IK",
+  "pnr_id": "QOK0IK-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "XIMENA",
+    "TAYLOR",
+    "ADT",
+    {
+     "corrected": true
+    }
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "per-field limit: last-name still allowed (chatbot/DBaaS)",
+  "tbase": 9000640,
+  "ticket": "0143819000640",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "QOK0IK"
+ },
+ {
+  "tc": "NameCorrection_TC056",
+  "pri": "P2",
+  "feat": "Edge",
+  "name": "Session expiry during Persona",
+  "pnr": "T7YMMU",
+  "pnr_id": "T7YMMU-2026-07-13",
+  "booking_date": "2026-07-13",
+  "created": "2026-07-13T10:00:00.000Z",
+  "dep_date": "2026-08-22",
+  "departed": false,
+  "dep_iso": null,
+  "window": "W2",
+  "paxs": [
+   [
+    "FERDINAND",
+    "TAYLOR",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "src": "AC_ONLINE",
+  "office": "YTOAA08AA",
+  "system": "AC",
+  "carriers": [
+   [
+    "AC",
+    "AC"
+   ]
+  ],
+  "group": false,
+  "exp_elig": true,
+  "exp_win": "NON_VOID",
+  "exp_reason": "NC-EL-01",
+  "chatbot": "runtime: chatbot session timeout during Persona",
+  "tbase": 9000650,
+  "ticket": "0143819000650",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323",
+  "pnr_named": "T7YMMU"
+ }
+]

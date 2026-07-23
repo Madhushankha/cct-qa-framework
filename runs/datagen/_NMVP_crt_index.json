@@ -1,0 +1,1180 @@
+[
+ {
+  "tc": "TC-NMVP-001",
+  "name": "Baggage Damage \u2014 Post-Travel (BG)",
+  "pnr": "UBR78O",
+  "pnr_id": "UBR78O-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "PRIYA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000000,
+  "ticket": "0143849000000",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-002",
+  "name": "Baggage Pilferage \u2014 Post-Travel (BG)",
+  "pnr": "WPDE8S",
+  "pnr_id": "WPDE8S-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM_R",
+  "legs": [
+   [
+    "YUL",
+    "YYZ"
+   ]
+  ],
+  "paxs": [
+   [
+    "OSVALDO",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "YUL origin per blurb",
+  "tbase": 9000010,
+  "ticket": "0143849000010",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-003",
+  "name": "Baggage/Special Items \u2014 Insurance Requests (BG)",
+  "pnr": "RKWIHW",
+  "pnr_id": "RKWIHW-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "WESLEY",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000020,
+  "ticket": "0143849000020",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-004",
+  "name": "Baggage/Special Items \u2014 On Board Damages (BG)",
+  "pnr": "YG8PPV",
+  "pnr_id": "YG8PPV-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "PAOLA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000030,
+  "ticket": "0143849000030",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-005",
+  "name": "Non-MVP Topic Must Not Route into Automated Flows",
+  "pnr": "CQF5SK",
+  "pnr_id": "CQF5SK-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "HELENA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "proves manual_path=non_mvp_topic (no DDS)",
+  "tbase": 9000040,
+  "ticket": "0143849000040",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-006",
+  "name": "Denied Boarding \u2014 Post-Travel (CR)",
+  "pnr": "XHQFV3",
+  "pnr_id": "XHQFV3-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "XIMENA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000050,
+  "ticket": "0143849000050",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-007",
+  "name": "Downgrade \u2014 Post-Travel (CR)",
+  "pnr": "FPO5VT",
+  "pnr_id": "FPO5VT-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "ELENA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000060,
+  "ticket": "0143849000060",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-009",
+  "name": "Insurance Request (Travel Disruptions) (CR)",
+  "pnr": "B2V3N9",
+  "pnr_id": "B2V3N9-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "URSULA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000070,
+  "ticket": "0143849000070",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-011",
+  "name": "Service Experience \u2014 Airport & Ground \u2014 Post-Travel (CR)",
+  "pnr": "EZXE60",
+  "pnr_id": "EZXE60-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "JOSEPHINE",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000080,
+  "ticket": "0143849000080",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-012",
+  "name": "Service Experience \u2014 In-Flight \u2014 Post-Travel (CR)",
+  "pnr": "PCAT8H",
+  "pnr_id": "PCAT8H-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "YOSEF",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000090,
+  "ticket": "0143849000090",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-018",
+  "name": "Accessibility \u2014 Seating & Extra Space \u2014 Post-Travel (CR)",
+  "pnr": "IRHK7X",
+  "pnr_id": "IRHK7X-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "FREYA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "pre-travel branch = LAH/CC",
+  "tbase": 9000100,
+  "ticket": "0143849000100",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-019",
+  "name": "Accessibility \u2014 ATPDR/DOT382 \u2014 Post-Travel (CR)",
+  "pnr": "QBZO4N",
+  "pnr_id": "QBZO4N-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "US",
+  "legs": [
+   [
+    "YYZ",
+    "LGA"
+   ]
+  ],
+  "paxs": [
+   [
+    "EMILIO",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "US itinerary invokes DOT382",
+  "tbase": 9000110,
+  "ticket": "0143849000110",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-020",
+  "name": "Accessibility \u2014 Medical Devices \u2014 Post-Travel (CR)",
+  "pnr": "XVUKDJ",
+  "pnr_id": "XVUKDJ-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "ZARA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "pre-travel branch = LAH/CC",
+  "tbase": 9000120,
+  "ticket": "0143849000120",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-021",
+  "name": "Aeroplan \u2014 Account Merges (TO)",
+  "pnr": "XGT4W5",
+  "pnr_id": "XGT4W5-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "NADIA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "TO",
+  "otp": "Aeroplan",
+  "note": "LOYALTY: Aeroplan member (loyalty-service gated)",
+  "tbase": 9000130,
+  "ticket": "0143849000130",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-022",
+  "name": "Aeroplan \u2014 Missing Flight Points \u2014 Post-Travel (TO)",
+  "pnr": "Q592VI",
+  "pnr_id": "Q592VI-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "KAMAL",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "TO",
+  "otp": "Aeroplan",
+  "note": "LOYALTY: Aeroplan member + flown segment for missing points",
+  "tbase": 9000140,
+  "ticket": "0143849000140",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-023",
+  "name": "Aeroplan \u2014 Booking Issues \u2014 Post-Travel (CR)",
+  "pnr": "OJE1AB",
+  "pnr_id": "OJE1AB-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "DIANNE",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "Aeroplan",
+  "note": "LOYALTY: Aeroplan member; routing flip to CR",
+  "tbase": 9000150,
+  "ticket": "0143849000150",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-024",
+  "name": "Aeroplan \u2014 Account Closure (TO)",
+  "pnr": "LCPO4U",
+  "pnr_id": "LCPO4U-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "DELPHINE",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "TO",
+  "otp": "Aeroplan",
+  "note": "LOYALTY: Aeroplan member (loyalty-service gated)",
+  "tbase": 9000160,
+  "ticket": "0143849000160",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-025",
+  "name": "Aeroplan \u2014 Profile Updates (TO)",
+  "pnr": "VTTNNO",
+  "pnr_id": "VTTNNO-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "ROSALIE",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "TO",
+  "otp": "Aeroplan",
+  "note": "LOYALTY: Aeroplan member (loyalty-service gated)",
+  "tbase": 9000170,
+  "ticket": "0143849000170",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-029",
+  "name": "Ancillary Refund (Wi-Fi) \u2014 Post-Travel (CR)",
+  "pnr": "M7KYWT",
+  "pnr_id": "M7KYWT-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "BEATRIX",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000180,
+  "ticket": "0143849000180",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-030",
+  "name": "Death/Imminent Death Refund \u2014 Post-Travel (RS)",
+  "pnr": "B5VG9B",
+  "pnr_id": "B5VG9B-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "ADRIANO",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "RS",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000190,
+  "ticket": "0143849000190",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-031",
+  "name": "Passenger Ticket Refund Request \u2014 Post-Travel (CR)",
+  "pnr": "N4SZ7U",
+  "pnr_id": "N4SZ7U-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "CONRAD",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000200,
+  "ticket": "0143849000200",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-032",
+  "name": "Call to Duty Refund Request (RS)",
+  "pnr": "D4IY3N",
+  "pnr_id": "D4IY3N-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "VICTOR",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "RS",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000210,
+  "ticket": "0143849000210",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-033",
+  "name": "Tax Exemption Refund Request (RS)",
+  "pnr": "LR2VY4",
+  "pnr_id": "LR2VY4-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "THEODORE",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "RS",
+  "otp": "PNR",
+  "note": "",
+  "tbase": 9000220,
+  "ticket": "0143849000220",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-039",
+  "name": "Baggage Damage \u2014 SE Passenger \u2014 SLA 2d \u2014 CR Exec",
+  "pnr": "YC4T7H",
+  "pnr_id": "YC4T7H-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "YOLANDA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR Exec",
+  "otp": "PNR",
+  "note": "LOYALTY: Super Elite -> SLA override 2d (loyalty-service gated)",
+  "tbase": 9000230,
+  "ticket": "0143849000230",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-041",
+  "name": "Baggage Damage \u2014 SE + EU Resident (France) \u2014 BGE LHR",
+  "pnr": "GFBC6N",
+  "pnr_id": "GFBC6N-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "FR",
+  "legs": [
+   [
+    "YYZ",
+    "CDG"
+   ]
+  ],
+  "paxs": [
+   [
+    "ISMAEL",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BGE LHR",
+  "otp": "PNR",
+  "note": "LOYALTY: SE; RESIDENCE: France (chat); itinerary EU",
+  "tbase": 9000240,
+  "ticket": "0143849000240",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-042",
+  "name": "Baggage Pilferage \u2014 EU Resident (Germany) \u2014 BGE LHR",
+  "pnr": "OBUUAD",
+  "pnr_id": "OBUUAD-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DE",
+  "legs": [
+   [
+    "YYZ",
+    "FRA"
+   ]
+  ],
+  "paxs": [
+   [
+    "WENDELL",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BGE LHR",
+  "otp": "PNR",
+  "note": "RESIDENCE: Germany (chat); itinerary EU",
+  "tbase": 9000250,
+  "ticket": "0143849000250",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-043",
+  "name": "SE \u2014 Airport & Ground \u2014 EU Resident (UK) \u2014 CR LHR",
+  "pnr": "CT3WS1",
+  "pnr_id": "CT3WS1-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "UK",
+  "legs": [
+   [
+    "YYZ",
+    "LHR"
+   ]
+  ],
+  "paxs": [
+   [
+    "NORAH",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR LHR",
+  "otp": "PNR",
+  "note": "RESIDENCE: United Kingdom (chat); itinerary UK",
+  "tbase": 9000260,
+  "ticket": "0143849000260",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-044",
+  "name": "Denied Boarding \u2014 US Itinerary \u2014 SLA 1d",
+  "pnr": "DD7JYS",
+  "pnr_id": "DD7JYS-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "US",
+  "legs": [
+   [
+    "YYZ",
+    "LGA"
+   ]
+  ],
+  "paxs": [
+   [
+    "VALENTINA",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "US itinerary (to/from US) -> SLA 24h",
+  "tbase": 9000270,
+  "ticket": "0143849000270",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-045",
+  "name": "Denied Boarding \u2014 Canada/Intl Itinerary \u2014 SLA 2d",
+  "pnr": "PZA0YO",
+  "pnr_id": "PZA0YO-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "GAVINO",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "non-US itinerary -> SLA 48h",
+  "tbase": 9000280,
+  "ticket": "0143849000280",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-046",
+  "name": "Ancillary Refund \u2014 US Itinerary \u2014 SLA 7d",
+  "pnr": "U8F413",
+  "pnr_id": "U8F413-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "US",
+  "legs": [
+   [
+    "YYZ",
+    "LGA"
+   ]
+  ],
+  "paxs": [
+   [
+    "ARTURO",
+    "JANSEN",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "US itinerary -> SLA override 7d",
+  "tbase": 9000290,
+  "ticket": "0143849000290",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-047",
+  "name": "Baggage Damage \u2014 China Itinerary \u2014 SLA 7d",
+  "pnr": "QZF6JT",
+  "pnr_id": "QZF6JT-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "CHINA",
+  "legs": [
+   [
+    "YVR",
+    "PVG"
+   ]
+  ],
+  "paxs": [
+   [
+    "PRIYA",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "China itinerary -> SLA override 7d",
+  "tbase": 9000300,
+  "ticket": "0143849000300",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-048",
+  "name": "Ticket Refund \u2014 China Resident \u2014 SLA 7d",
+  "pnr": "ZEFK20",
+  "pnr_id": "ZEFK20-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "CHINA",
+  "legs": [
+   [
+    "YVR",
+    "PVG"
+   ]
+  ],
+  "paxs": [
+   [
+    "OSVALDO",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "RS",
+  "otp": "PNR",
+  "note": "RESIDENCE: China (chat); itinerary China",
+  "tbase": 9000310,
+  "ticket": "0143849000310",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-049",
+  "name": "Denied Boarding \u2014 Spain Resident \u2014 SLA 15d",
+  "pnr": "C9DIMA",
+  "pnr_id": "C9DIMA-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "ES",
+  "legs": [
+   [
+    "YYZ",
+    "MAD"
+   ]
+  ],
+  "paxs": [
+   [
+    "TOBIAS",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "RESIDENCE: Spain (chat); itinerary EU",
+  "tbase": 9000320,
+  "ticket": "0143849000320",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-050",
+  "name": "Downgrade \u2014 Portugal Resident \u2014 SLA 15d",
+  "pnr": "OGK0ZW",
+  "pnr_id": "OGK0ZW-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "PT",
+  "legs": [
+   [
+    "YYZ",
+    "LIS"
+   ]
+  ],
+  "paxs": [
+   [
+    "XIMENA",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "RESIDENCE: Portugal (chat); itinerary EU",
+  "tbase": 9000330,
+  "ticket": "0143849000330",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-051",
+  "name": "Denied Boarding \u2014 SE + Spain Resident \u2014 SLA 2d (shortest wins)",
+  "pnr": "YSJLDW",
+  "pnr_id": "YSJLDW-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "ES",
+  "legs": [
+   [
+    "YYZ",
+    "MAD"
+   ]
+  ],
+  "paxs": [
+   [
+    "MARCUS",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR Exec",
+  "otp": "PNR",
+  "note": "LOYALTY: SE; RESIDENCE: Spain (chat)",
+  "tbase": 9000340,
+  "ticket": "0143849000340",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-052",
+  "name": "Ancillary Refund \u2014 VIP + US Itinerary \u2014 SLA 2d (shortest wins)",
+  "pnr": "H9ZD55",
+  "pnr_id": "H9ZD55-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "US",
+  "legs": [
+   [
+    "YYZ",
+    "LGA"
+   ]
+  ],
+  "paxs": [
+   [
+    "URSULA",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR Exec",
+  "otp": "PNR",
+  "note": "LOYALTY: VIP; US itinerary",
+  "tbase": 9000350,
+  "ticket": "0143849000350",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-054",
+  "name": "Ancillary Refund Mid-Flow \u2014 Context Parking (mobility question)",
+  "pnr": "R32F2Z",
+  "pnr_id": "R32F2Z-2026-06-08",
+  "booking_date": "2026-06-08",
+  "dep_date": "2026-07-18",
+  "state": "POST",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "YOSEF",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "CR",
+  "otp": "PNR",
+  "note": "multi-intent context-parking test",
+  "tbase": 9000360,
+  "ticket": "0143849000360",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ },
+ {
+  "tc": "TC-NMVP-055",
+  "name": "Delayed Baggage \u2014 Future Travel PNR \u2014 Travel-State Mismatch",
+  "pnr": "JD8DOC",
+  "pnr_id": "JD8DOC-2026-07-18",
+  "booking_date": "2026-07-18",
+  "dep_date": "2026-08-22",
+  "state": "FUT",
+  "itin": "DOM",
+  "legs": [
+   [
+    "YYZ",
+    "YUL"
+   ]
+  ],
+  "paxs": [
+   [
+    "FREYA",
+    "NORDSTROM",
+    "ADT"
+   ]
+  ],
+  "npax": 1,
+  "team": "BG",
+  "otp": "PNR",
+  "note": "UPCOMING travel (not yet departed) -> mismatch handling",
+  "tbase": 9000370,
+  "ticket": "0143849000370",
+  "email": "lahiru@ae-qa1-aircanada.mailinator.com",
+  "phone": "+94712534323"
+ }
+]
