@@ -40,6 +40,7 @@ Areas (all must PASS):
 import json, sys, ssl, urllib.request, datetime, boto3, psycopg2
 import crt_uniqnames as U
 import pnr_common_checks as C
+import _cctdb
 
 WORK="/tmp/cctqa-datagen/anc_work"
 IDX=sys.argv[1] if len(sys.argv)>1 else f"{WORK}/_ANC_SEATBAG_crt_index.json"
@@ -50,8 +51,7 @@ DDS="https://rule-engine-platform-service.ac-cct-crt.cloud.aircanada.com/rule-en
 API=os.environ.get("DDS_API_KEY", "")
 
 rows=json.load(open(IDX)); ids=[m["pnr_id"] for m in rows]; by={m["pnr_id"]:m for m in rows}
-cur=psycopg2.connect(host=TT["host"],port=5432,dbname=TT["db"],user=TT["user"],password=TT["password"],
-                     sslmode="require",connect_timeout=20).cursor()
+cur=_cctdb.trip_tracer(TT["host"]).cursor()
 def col(q):
     cur.execute(q,(ids,)); return {r[0]:r[1] for r in cur.fetchall()}
 trip=col("SELECT pnr_id,status FROM trip WHERE pnr_id=ANY(%s)")

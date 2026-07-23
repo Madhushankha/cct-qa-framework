@@ -16,6 +16,7 @@ Usage: AWS_PROFILE=ac-cct-crt python3 bag_checkpoints.py [index.json]
 import json, sys, ssl, urllib.request, datetime, psycopg2
 import crt_uniqnames as U
 import pnr_common_checks as C
+import _cctdb
 
 WORK="/tmp/cctqa-datagen/bag_work"
 IDX=sys.argv[1] if len(sys.argv)>1 else f"{WORK}/_BAG_crt_index.json"
@@ -36,8 +37,7 @@ EXPECT={
 NEEDS_REF={"open","delivered","closed","rds_short"}
 
 rows=json.load(open(IDX)); ids=[m["pnr_id"] for m in rows]; by={m["pnr_id"]:m for m in rows}
-conn=psycopg2.connect(host=TT["host"],port=5432,dbname=TT["db"],user=TT["user"],password=TT["password"],
-                      sslmode="require",connect_timeout=25); cur=conn.cursor()
+conn=_cctdb.trip_tracer(TT["host"]); cur=conn.cursor()
 def col(q):
     cur.execute(q,(ids,)); return {r[0]:r[1] for r in cur.fetchall()}
 trip=col("SELECT pnr_id,status FROM trip WHERE pnr_id=ANY(%s)")
