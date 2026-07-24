@@ -86,6 +86,17 @@ def gen_locators(n, seed, taken):
         taken.add(loc); out.append(loc)
     return out
 
+# PENDING verdicts only hold while the flight is within +-72h of today, so a PENDING case must be
+# dated NEAR-TERM at build time — not left on the stale BAT source date (which ages out immediately).
+# We date it ~2 days ago (recently flown, determination pending) and clone_one shifts the scenario
+# segments + DDS to match; the cascade then produces a consistent eds promisedWindow automatically.
+import datetime as _dt
+PENDING_DATE = os.environ.get("CRT239_PENDING_DATE",
+                              (_dt.date.today() - _dt.timedelta(days=2)).isoformat())
+
+def _is_pending(status, syscode):
+    return status == "PENDING" or "-PE-" in (syscode or "")
+
 def build_index():
     src=json.load(open(SRC)); taken=all_taken()
     locs=gen_locators(len(src), SEED, taken)
@@ -98,10 +109,14 @@ def build_index():
                                             e.get("currency"),bool(e.get("pin")))
         if forced:   # TC063 pre-travel forced ELIGIBLE (EL-400 shell), matching the validated v1 build
             status,syscode,amount,currency,pin="ELIGIBLE","FD-APPR-EL-400",400,"CAD",True
+        # PENDING -> near-term date; keep the source date so clone_one can shift segments + DDS to it.
+        src_date=date
+        if _is_pending(status,syscode):
+            date=PENDING_DATE; new_pid=f"{loc}-{date}"
         recs.append(dict(
             tc=e.get("tc"), sit=e.get("sit"),
             src_scn=e["src_scn"], src_dds=e["src_dds"],
-            loc=loc, pnr_id=new_pid, date=date,
+            loc=loc, pnr_id=new_pid, date=date, src_date=src_date,
             ticket=f"{TPREFIX}{i+1:06d}", pax=e.get("pax"), route=e.get("route",""),
             status=status, syscode=syscode, amount=amount,
             currency=currency, title=e.get("title",""), email=EMAIL, phone=PHONE,
@@ -123,10 +138,33 @@ def build_index():
 
 def load_index(): return json.load(open(OUT))
 
+def _scn_flight_date(scn):
+    """The scenario's actual flight date (first segment dep_local, date-part) — this is the truth to
+    shift FROM, and it can differ from the index pnr_id date in the BAT source."""
+    for s in scn.get("segments", []):
+        v=s.get("dep_local") or s.get("dep_utc")
+        if isinstance(v,str) and len(v)>=10: return v[:10]
+    return None
+
+def _shift_scn_dates(scn, from_date, to_date):
+    """Shift every segment's flight date from `from_date` to `to_date` on all datetime fields. Used
+    for PENDING so the flight lands in the +-72h window; the cascade then derives a consistent eds
+    promisedWindow from these dates (no post-seed surgery)."""
+    if not from_date or from_date == to_date:
+        return
+    for s in scn.get("segments", []):
+        for k in ("dep_local","arr_local","dep_utc","arr_utc","booking_datetime"):
+            if isinstance(s.get(k), str):
+                s[k]=s[k].replace(from_date, to_date)
+
 def clone_one(r):
     scn=json.load(open(f"{FD}/{r['src_scn']}.json"))
     scn["scenario_id"]=r["pnr_id"]; scn["identity"]["pnr"]=r["loc"]
     scn["identity"]["booking_date"]=r["date"]
+    # PENDING: shift the flight from the scenario's real date to the near-term target so it's in-window.
+    r["_scn_from"]=_scn_flight_date(scn) if _is_pending(r.get("status"), r.get("syscode")) else None
+    if r["_scn_from"]:
+        _shift_scn_dates(scn, r["_scn_from"], r["date"])
     scn["ticketing"]["ticket_numbers"]=[r["ticket"]]
     scn["creation_comment"]=scn["last_modification_comment"]=f"SIM-{r['tc']}-all239-CRT"
     scn["title"]=f"{r['tc']}: {r.get('title') or r['status']} [{r['loc']}]"
@@ -151,6 +189,11 @@ def clone_one(r):
     src_pid=r["src_dds"]; src_loc=src_pid[:6]
     s=open(f"{DDS}/{src_pid}.dds.json").read()
     s=s.replace(src_pid, r["pnr_id"]).replace(f'"pnr": "{src_loc}"', f'"pnr": "{r["loc"]}"')
+    # PENDING: move the DDS itinerary date to the near-term flight date so the pinned verdict and the
+    # booking agree (booking==dds date + PENDING flight<=72h). Shift from the scenario's real flight
+    # date (same value the DDS itinerary uses). Non-PENDING keep their source date.
+    if r.get("_scn_from") and r["_scn_from"] != r["date"]:
+        s=s.replace(r["_scn_from"], r["date"])
     open(f"{DDSW}/{r['pnr_id']}.dds.json","w").write(s)
     assert src_loc not in open(f"{DDSW}/{r['pnr_id']}.dds.json").read(), f"stray {src_loc} in {r['pnr_id']}"
 

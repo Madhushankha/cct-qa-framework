@@ -54,6 +54,28 @@ def rule_engine(host, *, dbname="postgres", profile=None, region="ca-central-1",
     return _connect(host, dbname, _secret(_RE_SECRET, profile or os.environ.get("AWS_PROFILE") or "ac-cct-crt", region), timeout)
 
 
+def free_ticket_prefix(start=14390, end=14460, band=300, conn=None):
+    """First 6-digit ticket prefix ('0<n>') whose low serial band is completely unused in CRT
+    trip-tracer. Reusing a consumed prefix does NOT error — the ticket insert is ON CONFLICT DO
+    NOTHING, so the row is silently dropped and only the `ticket` checkpoint catches it later. Scan
+    up front instead of hardcoding. Raises RuntimeError if none is free in the range."""
+    own = conn is None
+    if own:
+        conn = trip_tracer("ac-cct-trip-tracer-rds-cluster-crt-cac1.cluster-cxqe2wacy866.ca-central-1.rds.amazonaws.com")
+    try:
+        cur = conn.cursor()
+        for n in range(start, end):
+            p = f"0{n}"
+            cur.execute("select count(*) from ticket where primary_document_number between %s and %s",
+                        (p + "000001", p + f"{band:06d}"))
+            if cur.fetchone()[0] == 0:
+                return p
+        raise RuntimeError(f"no free ticket prefix in 0{start}..0{end - 1}")
+    finally:
+        if own:
+            conn.close()
+
+
 def _connect(host, dbname, sec, timeout):
     import psycopg2
 

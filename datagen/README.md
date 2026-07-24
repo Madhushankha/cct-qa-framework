@@ -67,3 +67,45 @@ A set is done **only** when the checkpoint script prints `PASS ✅`.
 `PENDING flight≤72h` fails once the seeded flight drifts outside ±3 days of today — by design, not a
 defect. A PENDING case re-audited more than 3 days after seeding needs its flight re-dated and the
 determination re-pinned. Everything else is stable.
+
+## Seeding checklist (per domain) — run every step, don't skip verify
+
+Baked-in requirements learned from live CRT seeding. The flow per domain:
+
+```
+index  →  publish  →  checkcascade  →  finalize  →  <domain>_checkpoints.py   (MANDATORY)
+```
+
+A set is done only when its checkpoint script prints `PASS ✅`. Checkpoints are not optional —
+they are the definition of "seeded correctly".
+
+**Before building:**
+- **Free ticket prefix** — never reuse a prefix. A consumed prefix does not error; the ticket
+  insert is `ON CONFLICT DO NOTHING`, so tickets are silently dropped. Use
+  `_cctdb.free_ticket_prefix()` (scans trip-tracer) and pass it via the builder's `*_TPREFIX` env.
+- **Unique names** — set `CRT_UNIQ_NAMES=1` for DB-absent unique passenger names (the default is
+  OFF, which reuses canonical names already in the DB). All builders support it, incl.
+  crt_fd_build239 now. When building several sets in one batch, seed each before building the next
+  (or use distinct `*_SEED` values) so their generated name pools don't overlap.
+- **Contact** — `CRT_EMAIL=lahiru@ae-qa1-aircanada.mailinator.com CRT_PHONE=+94712534323`.
+
+**Environment facts (already wired):**
+- DB credentials resolve from Secrets Manager via `_cctdb` (trip_tracer / rule_engine), trying both
+  credential pairs. No password lives in source. `_cctdb` also reads a local secret cache
+  (`/tmp/cctqa_secrets.json`) so a session survives SSO token lapses — write it once while
+  authenticated.
+- DDS/eligibility endpoint host is `rule-engine-platform-service-**be**.ac-cct-crt.cloud.aircanada.com`
+  (the `-be` matters; without it the host does not resolve). DDS reads work live there; the
+  eligibility COMPUTE endpoint (sc/nc/bc) is health-only on the ALB and 403s on the API Gateway, so
+  those checkpoints validate via the offline rule-replica against the live DB — automatic in the
+  checkpoint scripts, not a manual choice.
+- MSK/Kafka TLS uses certifi (a python.org build ships no CA bundle).
+
+**PENDING cases** (FD/SOC PE-*) are time-sensitive: their flight must be within ±72h of today.
+crt_fd_build239 now dates them near-term at clone time (`CRT239_PENDING_DATE`, default today-2) and
+shifts the scenario segments + DDS to match, so the cascade produces a consistent eds
+promisedWindow. They still age out in ~3 days — re-seed (or re-date) before a PENDING test run.
+
+**Long finalize** (239-case) holds a DB connection across the S3-put loop; it reconnects + retries
+on a dropped connection. SSO tokens are short — keep a session alive across the ~28-min finalize, or
+re-run (idempotent: `--start N`).
