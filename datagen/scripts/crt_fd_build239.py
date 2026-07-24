@@ -30,6 +30,7 @@ for d in (SCENW, DDSW, NDJW): os.makedirs(d, exist_ok=True)
 SRC = f"{FD}/_FD_ALL239_bat_index.json"     # BAT built index (has src_scn/src_dds + metadata)
 OUT = os.environ.get("CRT239_OUT", f"{FD}/_FD_ALL239_crt_index.json")
 TPREFIX=os.environ.get("CRT239_TPREFIX","014298"); SEED=int(os.environ.get("CRT239_SEED","982098"))
+UNIQ = os.environ.get("CRT_UNIQ_NAMES") == "1"   # opt-in DB-absent unique passenger names (default OFF)
 
 CRT = dict(
   profile="ac-cct-crt", region="ca-central-1",
@@ -106,6 +107,16 @@ def build_index():
             currency=currency, title=e.get("title",""), email=EMAIL, phone=PHONE,
             group=bool(e.get("group")), forced=forced, oal=bool(e.get("oal")),
             family=e.get("family"), pin=pin))
+    if UNIQ:
+        # DB-absent unique passenger names, same as the domain builders — the 239 flow historically
+        # cloned the canonical BAT names (all long-present in the DB). assign_names sets r["pax_names"]
+        # (applied by clone_one) + r["pax"] + r["uniq_names"]=True so the checkpoint enforces it.
+        import crt_uniqnames as U
+        def _npax(r):
+            try: return max(1, len(json.load(open(f"{FD}/{r['src_scn']}.json"))["passengers"]))
+            except Exception: return 1
+        conn=tt_conn(); U.assign_names(recs, _npax, conn, seed=SEED); conn.close()
+        print(f"[index] assigned unique DB-absent names to {len(recs)} records")
     json.dump(recs, open(OUT,"w"), indent=1)
     print(f"[index] {len(recs)} records -> {OUT}")
     return recs
