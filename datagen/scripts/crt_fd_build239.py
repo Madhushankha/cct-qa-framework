@@ -58,8 +58,8 @@ def secret(sid):
         _seccache[sid]=json.loads(_sess.client("secretsmanager").get_secret_value(SecretId=sid)["SecretString"])
     return _seccache[sid]
 def tt_conn():
-    return psycopg2.connect(host=CRT["tt_host"],port=5432,dbname=CRT["tt_db"],
-                            user=CRT["tt_user"],password=CRT["tt_pass"],sslmode="require",connect_timeout=20)
+    import _cctdb
+    return _cctdb.trip_tracer(CRT["tt_host"], profile=CRT.get("profile"))
 def re_conn():
     s=secret(CRT["re_secret"])
     return psycopg2.connect(host=CRT["re_host"],port=5432,dbname=CRT["re_db"],
@@ -230,9 +230,23 @@ def main():
     elif a.phase=="finalize":
         ttc=tt_conn(); keys={}
         for i,r in enumerate(sl):
-            try: keys[r["pnr_id"]]=finalize_one(r,ttc,r); print(f"  [{a.start+i}] {r['pnr_id']} finalized",flush=True)
-            except Exception as e: print(f"  [{a.start+i}] {r['pnr_id']} ERR {e}",flush=True)
-        ttc.close()
+            try:
+                keys[r["pnr_id"]]=finalize_one(r,ttc,r); print(f"  [{a.start+i}] {r['pnr_id']} finalized",flush=True)
+            except Exception as e:
+                # the trip-tracer connection can be dropped by the server during the slow S3 puts
+                # between DB ops (idle/statement timeout). Reconnect once and retry so the rest of the
+                # batch isn't lost to a single "connection already closed".
+                if "closed" in str(e).lower() or "ssl" in str(e).lower():
+                    try:
+                        try: ttc.close()
+                        except Exception: pass
+                        ttc=tt_conn()
+                        keys[r["pnr_id"]]=finalize_one(r,ttc,r); print(f"  [{a.start+i}] {r['pnr_id']} finalized (reconn)",flush=True)
+                        continue
+                    except Exception as e2: e=e2
+                print(f"  [{a.start+i}] {r['pnr_id']} ERR {e}",flush=True)
+        try: ttc.close()
+        except Exception: pass
         n=pin_all([r for r in sl if r["pnr_id"] in keys], keys)
         full=load_index(); bypid={r["pnr_id"]:r for r in sl}
         for r in full:
